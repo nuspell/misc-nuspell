@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<company>
+  <version>4.0.6</version>
+  <type>1</type>
+  <company-timezone>Europe/Skopje</company-timezone>
+  <creation-time>1500465019364</creation-time>
+  <company-tax-rate>0.0</company-tax-rate>
+  <company-calendar-id>0</company-calendar-id>
+  <task-field-list/>
+  <resource-field-list/>
+  <client-field-list/>
+  <calendar-list>
+    <calendar>
+      <calendar-type>standard</calendar-type>
+      <calendar-name>Standard</calendar-name>
+      <calendar-id>0</calendar-id>
+      <week-pattern-list>
+        <pattern day-in-week="1">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="2">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>28800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>28800000</period-start-date>
+            <period-end-date>43200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>43200000</period-start-date>
+            <period-end-date>46800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>46800000</period-start-date>
+            <period-end-date>61200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>61200000</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="3">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>28800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>28800000</period-start-date>
+            <period-end-date>43200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>43200000</period-start-date>
+            <period-end-date>46800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>46800000</period-start-date>
+            <period-end-date>61200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>61200000</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="4">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>28800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>28800000</period-start-date>
+            <period-end-date>43200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>43200000</period-start-date>
+            <period-end-date>46800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>46800000</period-start-date>
+            <period-end-date>61200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>61200000</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="5">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>28800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>28800000</period-start-date>
+            <period-end-date>43200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>43200000</period-start-date>
+            <period-end-date>46800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>46800000</period-start-date>
+            <period-end-date>61200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>61200000</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="6">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>28800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>28800000</period-start-date>
+            <period-end-date>43200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>43200000</period-start-date>
+            <period-end-date>46800000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>46800000</period-start-date>
+            <period-end-date>61200000</period-end-date>
+          </period-in-day>
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>61200000</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="7">
+          <period-in-day>
+            <period-type>false</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+      </week-pattern-list>
+      <special-pattern-list/>
+    </calendar>
+    <calendar>
+      <calendar-type>24-hours</calendar-type>
+      <calendar-name>24-hours</calendar-name>
+      <calendar-id>1</calendar-id>
+      <week-pattern-list>
+        <pattern day-in-week="1">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="2">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="3">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="4">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="5">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="6">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+        <pattern day-in-week="7">
+          <period-in-day>
+            <period-type>true</period-type>
+            <period-start-date>0</period-start-date>
+            <period-end-date>86400000</period-end-date>
+          </period-in-day>
+        </pattern>
+      </week-pattern-list>
+      <special-pattern-list/>
+    </calendar>
+  </calendar-list>
+  <resource-list>
+    <human-resource-list/>
+    <material-resource-list/>
+    <cost-resource-list/>
+  </resource-list>
+  <client-list/>
+  <task>
+    <project>true</project>
+    <pattern>
+      <period-in-day>
+        <period-type>false</period-type>
+        <period-start-date>0</period-start-date>
+        <period-end-date>28800000</period-end-date>
+      </period-in-day>
+      <period-in-day>
+        <period-type>true</period-type>
+        <period-start-date>28800000</period-start-date>
+        <period-end-date>43200000</period-end-date>
+      </period-in-day>
+      <period-in-day>
+        <period-type>false</period-type>
+        <period-start-date>43200000</period-start-date>
+        <period-end-date>86400000</period-end-date>
+      </period-in-day>
+    </pattern>
+    <default-forced-working>false</default-forced-working>
+    <default-work-driven>false</default-work-driven>
+    <default-fixed-units>true</default-fixed-units>
+    <task-status>Planning</task-status>
+    <project-manager/>
+    <project-code>hun2</project-code>
+    <project-budget>95000.0</project-budget>
+    <project-description/>
+    <project-assumptions/>
+    <project-constraints/>
+    <project-baseline-list/>
+    <project-critical-slack-limit>1</project-critical-slack-limit>
+    <project-critical-slack-unit>d</project-critical-slack-unit>
+    <units-duration>
+      <default-unit>d</default-unit>
+      <default-work-unit>h</default-work-unit>
+      <y>6912000000</y>
+      <mo>576000000</mo>
+      <w>144000000</w>
+      <d>28800000</d>
+      <h>3600000</h>
+      <m>60000</m>
+    </units-duration>
+    <task-name>Hunspell 2</task-name>
+    <task-id>0</task-id>
+    <expanded-gantt>true</expanded-gantt>
+    <task-unit>h</task-unit>
+    <task-currency-unit>$</task-currency-unit>
+    <task-accrual>accrual-prorated</task-accrual>
+    <task-constraint>
+      <snet>19-07-2017, 08:00:00</snet>
+    </task-constraint>
+    <task-start-date>19-07-2017, 08:00:00</task-start-date>
+    <task-end-date>19-07-2017, 17:00:00</task-end-date>
+    <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+    <task-duration>28800000</task-duration>
+    <task-notes>&lt;p&gt;
+      
+    &lt;/p&gt;</task-notes>
+    <task-list>
+      <task>
+        <task-name>Dictionary loading</task-name>
+        <task-id>1</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>Loading .aff</task-name>
+            <task-id>2</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Loading .dic</task-name>
+            <task-id>3</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
+      </task>
+      <task>
+        <task-name>Testing and integration</task-name>
+        <task-id>4</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>CI</task-name>
+            <task-id>5</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Unit testing</task-name>
+            <task-id>6</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
+      </task>
+    </task-list>
+  </task>
+  <task-dependency-list/>
+  <conflict-list/>
+  <assignment-list/>
+</company>
