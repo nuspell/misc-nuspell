@@ -495,7 +495,7 @@
             <task-duration>28800000</task-duration>
           </task>
           <task>
-            <task-name>Investigate reported issues for spelling</task-name>
+            <task-name>Reported issues for spelling</task-name>
             <task-id>20</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
@@ -525,6 +525,302 @@
         <task-end-date>19-07-2017, 17:00:00</task-end-date>
         <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
         <task-duration>28800000</task-duration>
+      </task>
+      <task>
+        <task-name>Spelling error correction</task-name>
+        <task-id>23</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>Specification for suggestions based on v1</task-name>
+            <task-id>24</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Basic algorithm from v1</task-name>
+            <task-id>25</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Keyboard closeness</task-name>
+            <task-id>26</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Manual replacements</task-name>
+            <task-id>27</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Character closeness</task-name>
+            <task-id>28</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Phonetic replacements</task-name>
+            <task-id>29</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Reported issues for suggestions</task-name>
+            <task-id>30</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Alternative algoritms for suggestions</task-name>
+            <task-id>31</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
+      </task>
+      <task>
+        <task-name>Release alpha 3</task-name>
+        <task-id>32</task-id>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+      </task>
+      <task>
+        <task-name>Personal dictionaries</task-name>
+        <task-id>33</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>Filling the dictionary via API, as in v1</task-name>
+            <task-id>34</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Unify personal dictionaries among apps</task-name>
+            <task-id>35</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
+      </task>
+      <task>
+        <task-name>Release beta</task-name>
+        <task-id>36</task-id>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+      </task>
+      <task>
+        <task-name>Tesing framework</task-name>
+        <task-id>37</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>Reuse "make check"</task-name>
+            <task-id>38</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Continous integration</task-name>
+            <task-id>39</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Testing for correctenss</task-name>
+            <task-id>40</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Testing for speed</task-name>
+            <task-id>41</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
+      </task>
+      <task>
+        <task-name>Communication with other projects</task-name>
+        <task-id>42</task-id>
+        <expanded-gantt>true</expanded-gantt>
+        <task-unit>h</task-unit>
+        <task-currency-unit>$</task-currency-unit>
+        <task-accrual>accrual-prorated</task-accrual>
+        <task-start-date>19-07-2017, 08:00:00</task-start-date>
+        <task-end-date>19-07-2017, 17:00:00</task-end-date>
+        <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+        <task-duration>28800000</task-duration>
+        <task-list>
+          <task>
+            <task-name>Mozilla Firefox</task-name>
+            <task-id>43</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Libreoffice</task-name>
+            <task-id>44</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Chromium</task-name>
+            <task-id>45</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Languagetool</task-name>
+            <task-id>46</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Simpler integration with library users</task-name>
+            <task-id>47</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>API stability of C++ api</task-name>
+            <task-id>48</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>API and ABI stability of C api</task-name>
+            <task-id>49</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+          <task>
+            <task-name>Communication with dictionary developers</task-name>
+            <task-id>50</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>19-07-2017, 08:00:00</task-start-date>
+            <task-end-date>19-07-2017, 17:00:00</task-end-date>
+            <task-completion-date>19-07-2017, 08:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+          </task>
+        </task-list>
       </task>
     </task-list>
   </task>
