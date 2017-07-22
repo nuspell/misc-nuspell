@@ -257,7 +257,11 @@
     <project-manager/>
     <project-code>hun2</project-code>
     <project-budget>95000.0</project-budget>
-    <project-description/>
+    <project-description>That aim for Hunspell 2.0 is to recreate the most common functionality in Hunspell 1, and that is detection and correction of spelling errors. The second aim is to create code that is shorter, more readable, more maintainable, faster in execution and should fix some common pitfalls that arose using Hunspell 1. Version 2.0 should not add major new functionality, instead it should be a good base for new functionality in future versions. Version 1.x got to a point where it is very hard to add new functionalities.
+
+More rarely used features in v1 like stemming and morphological analysis will be left out of this project.
+
+More precisely the goals are defined here https://github.com/hunspell/hunspell/wiki/Version-2-Specification</project-description>
     <project-assumptions/>
     <project-constraints/>
     <project-baseline-list/>
