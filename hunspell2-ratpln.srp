@@ -566,6 +566,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>18-09-2017, 12:00:00</task-end-date>
             <task-completion-date>14-09-2017, 13:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
+            <task-notes>&lt;p&gt;
+      Document the checking algorithms in formal way based on the code in 
+      version 1.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Support words direcly from dictionary</task-name>
@@ -576,6 +580,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>19-09-2017, 12:00:00</task-end-date>
             <task-completion-date>18-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Implement checking for root words (words directly in the dictionary).
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Support words from affix file (suffix, prefix and co.)</task-name>
@@ -586,6 +593,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>20-09-2017, 12:00:00</task-end-date>
             <task-completion-date>19-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Implement checking for affixed words (words formed by root word and 
+      prefix or suffix).
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Support word compounds</task-name>
@@ -596,6 +607,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>21-09-2017, 12:00:00</task-end-date>
             <task-completion-date>20-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Implement checking for compounds (complex words formed by two or more 
+      simpler words).
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Support UTF-16 encoding</task-name>
@@ -606,6 +621,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>22-09-2017, 12:00:00</task-end-date>
             <task-completion-date>21-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Provide UTF-16 support in the public API, investigate if using it 
+      internally is a good idea.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Fix any issues related to spell checking</task-name>
@@ -616,6 +635,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>25-09-2017, 12:00:00</task-end-date>
             <task-completion-date>22-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Scan the bugtracker for issues related to spell checking and fix those 
+      that make sense.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Alternative storage data structures </task-name>
@@ -626,6 +649,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>26-09-2017, 12:00:00</task-end-date>
             <task-completion-date>25-09-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Investigate alternative storage data structures to hash-tables.
+    &lt;/p&gt;</task-notes>
           </task>
         </task-list>
       </task>
@@ -663,6 +689,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>28-09-2017, 12:00:00</task-end-date>
             <task-completion-date>26-09-2017, 13:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
+            <task-notes>&lt;p&gt;
+      Document the suggesting algorithms in formal way based on the code in 
+      version 1.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Port basic algorithm from version 1</task-name>
