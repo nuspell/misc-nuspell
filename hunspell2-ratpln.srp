@@ -321,7 +321,8 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
     <task-completion-date>01-09-2017, 08:00:00</task-completion-date>
     <task-duration>979200000</task-duration>
     <task-notes>&lt;p&gt;
-      
+      Hunspell is a library with API which does spell checking (error 
+      detection) and provides suggestions (error correction).
     &lt;/p&gt;</task-notes>
     <task-list>
       <task>
@@ -335,9 +336,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-completion-date>01-09-2017, 08:00:00</task-completion-date>
         <task-duration>273600000</task-duration>
         <task-notes>&lt;p&gt;
-      Main part of Hunspell is a library with API which does the spell 
-      checking and provides suggestions. Here the basic infrastructure of the 
-      API is created.
+      The basic infrastructure of the API is created.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -552,9 +551,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-completion-date>14-09-2017, 13:00:00</task-completion-date>
         <task-duration>230400000</task-duration>
         <task-notes>&lt;p&gt;
-      More advanced spell cheching by improving the library. Support is mainly 
-      extended for the data already available in the affix and dictionary 
-      files. Suggestions are still out of scope.
+      Document and implement spell checking, error detection of misspelled 
+      words. Support is mainly extended for the data already available in the 
+      affix and dictionary files.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -676,8 +675,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-completion-date>26-09-2017, 13:00:00</task-completion-date>
         <task-duration>288000000</task-duration>
         <task-notes>&lt;p&gt;
-      The algorithm for finding suggestions will be ported, documented and 
-      improved.
+      Document and implement spell suggestion, error correction of misspelled 
+      words. The algorithm for finding suggestions will be ported, documented 
+      and improved.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -703,6 +703,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>02-10-2017, 12:00:00</task-end-date>
             <task-completion-date>28-09-2017, 13:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
+            <task-notes>&lt;p&gt;
+      Implement the standard algorithm for suggestions.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Implement keyboard closeness</task-name>
@@ -713,6 +716,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>03-10-2017, 12:00:00</task-end-date>
             <task-completion-date>02-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Add the keyboard closeness factor to the algorithm.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Implement manual replacements</task-name>
@@ -723,6 +729,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>04-10-2017, 12:00:00</task-end-date>
             <task-completion-date>03-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Add support for manually written replacements of character sequences.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Implement character closeness</task-name>
@@ -733,6 +742,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>05-10-2017, 12:00:00</task-end-date>
             <task-completion-date>04-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Add the character closeness factor.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Implement phonetic replacements</task-name>
@@ -743,6 +755,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>06-10-2017, 12:00:00</task-end-date>
             <task-completion-date>05-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Add the phonetic closeness factor.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Fix any issues related to suggestions</task-name>
@@ -753,9 +768,13 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>09-10-2017, 12:00:00</task-end-date>
             <task-completion-date>06-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Scan the bugtracker for issues related to suggesting and fix those that 
+      make sense.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
-            <task-name>Implement alternative algorithms</task-name>
+            <task-name>Investigate alternative algorithms</task-name>
             <task-id>36</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
@@ -763,6 +782,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>10-10-2017, 12:00:00</task-end-date>
             <task-completion-date>09-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Investigate alternative algorithms for spelling suggestions.
+    &lt;/p&gt;</task-notes>
           </task>
         </task-list>
       </task>
