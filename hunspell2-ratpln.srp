@@ -317,9 +317,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       <snet>01-09-2017, 08:00:00</snet>
     </task-constraint>
     <task-start-date>01-09-2017, 08:00:00</task-start-date>
-    <task-end-date>18-10-2017, 17:00:00</task-end-date>
+    <task-end-date>13-10-2017, 12:00:00</task-end-date>
     <task-completion-date>01-09-2017, 08:00:00</task-completion-date>
-    <task-duration>979200000</task-duration>
+    <task-duration>878400000</task-duration>
     <task-notes>&lt;p&gt;
       Hunspell is a library with API which does spell checking (error 
       detection) and provides suggestions (error correction).
@@ -799,20 +799,18 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-duration>28800000</task-duration>
       </task>
       <task>
-        <task-name>4 Sessions and personal dictionaries</task-name>
+        <task-name>Personal dictionaries</task-name>
         <task-id>38</task-id>
         <expanded-gantt>true</expanded-gantt>
         <task-currency-unit>$</task-currency-unit>
         <task-accrual>accrual-prorated</task-accrual>
         <task-start-date>10-10-2017, 13:00:00</task-start-date>
-        <task-end-date>18-10-2017, 17:00:00</task-end-date>
+        <task-end-date>13-10-2017, 12:00:00</task-end-date>
         <task-completion-date>10-10-2017, 13:00:00</task-completion-date>
-        <task-duration>187200000</task-duration>
+        <task-duration>86400000</task-duration>
         <task-notes>&lt;p&gt;
-      Support creation and usage of personal dictionaries in terms of reading 
-      and adding of words. These personal dictionaries can be found at 
-      different locations on different platforms and applications which use 
-      Hunspell. These locations need consoildation.
+      Support creation and usage of personal dictionaries. Those are 
+      dictionaries created bythe user.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -824,52 +822,58 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>12-10-2017, 12:00:00</task-end-date>
             <task-completion-date>10-10-2017, 13:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
+            <task-notes>&lt;p&gt;
+      Fill the personal dictionary in memeory via API, as in version 1. At 
+      this point the library won't manage the personal dictionary files.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
-            <task-name>Ignore words for session only as in version 1</task-name>
+            <task-name>Unify personal dictionaries among applications</task-name>
             <task-id>40</task-id>
+            <task-currency-unit>$</task-currency-unit>
+            <task-accrual>accrual-prorated</task-accrual>
+            <task-start-date>10-10-2017, 13:00:00</task-start-date>
+            <task-end-date>11-10-2017, 12:00:00</task-end-date>
+            <task-completion-date>10-10-2017, 13:00:00</task-completion-date>
+            <task-duration>28800000</task-duration>
+            <task-notes>&lt;p&gt;
+      Personal dictionaries can be found at different locations on different 
+      platforms and applications which use Hunspell. These locations need 
+      consoildation.
+    &lt;/p&gt;</task-notes>
+          </task>
+          <task>
+            <task-name>Support removal of words</task-name>
+            <task-id>41</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>12-10-2017, 13:00:00</task-start-date>
             <task-end-date>13-10-2017, 12:00:00</task-end-date>
             <task-completion-date>12-10-2017, 13:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
-          </task>
-          <task>
-            <task-name>Unify personal dictionaries among applications</task-name>
-            <task-id>41</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>13-10-2017, 13:00:00</task-start-date>
-            <task-end-date>16-10-2017, 12:00:00</task-end-date>
-            <task-completion-date>13-10-2017, 13:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
-          </task>
-          <task>
-            <task-name>Clear session</task-name>
-            <task-id>42</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>16-10-2017, 13:00:00</task-start-date>
-            <task-end-date>16-10-2017, 17:00:00</task-end-date>
-            <task-completion-date>16-10-2017, 13:00:00</task-completion-date>
-            <task-duration>14400000</task-duration>
+            <task-notes>&lt;p&gt;
+      Add possibility for removal of words in the API.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Fix any issues related to personal dictionaries</task-name>
-            <task-id>43</task-id>
+            <task-id>42</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>17-10-2017, 08:00:00</task-start-date>
-            <task-end-date>18-10-2017, 17:00:00</task-end-date>
-            <task-completion-date>17-10-2017, 08:00:00</task-completion-date>
+            <task-start-date>10-10-2017, 13:00:00</task-start-date>
+            <task-end-date>12-10-2017, 12:00:00</task-end-date>
+            <task-completion-date>10-10-2017, 13:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
+            <task-notes>&lt;p&gt;
+      Scan the bugtracker for issues related to personal dictionaries and fix 
+      those that make sense.
+    &lt;/p&gt;</task-notes>
           </task>
         </task-list>
       </task>
       <task>
         <task-name>Beta release</task-name>
-        <task-id>44</task-id>
+        <task-id>43</task-id>
         <task-currency-unit>$</task-currency-unit>
         <task-accrual>accrual-prorated</task-accrual>
         <task-start-date>01-09-2017, 08:00:00</task-start-date>
@@ -879,7 +883,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       </task>
       <task>
         <task-name>Testing and continuous integration framework</task-name>
-        <task-id>45</task-id>
+        <task-id>44</task-id>
         <expanded-gantt>true</expanded-gantt>
         <task-currency-unit>$</task-currency-unit>
         <task-accrual>accrual-prorated</task-accrual>
@@ -894,7 +898,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-list>
           <task>
             <task-name>Reporting code complexity and code style</task-name>
-            <task-id>46</task-id>
+            <task-id>45</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>01-09-2017, 08:00:00</task-start-date>
@@ -904,7 +908,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Generation API documentation</task-name>
-            <task-id>47</task-id>
+            <task-id>46</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>01-09-2017, 13:00:00</task-start-date>
@@ -914,7 +918,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Functional testing (make check and unit testing)</task-name>
-            <task-id>48</task-id>
+            <task-id>47</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>04-09-2017, 08:00:00</task-start-date>
@@ -924,7 +928,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Performance testing for speed and memory</task-name>
-            <task-id>49</task-id>
+            <task-id>48</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>12-09-2017, 08:00:00</task-start-date>
@@ -934,7 +938,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Regression testing function and performance</task-name>
-            <task-id>50</task-id>
+            <task-id>49</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>15-09-2017, 08:00:00</task-start-date>
@@ -944,7 +948,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Continous integration (CI)</task-name>
-            <task-id>51</task-id>
+            <task-id>50</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>19-09-2017, 08:00:00</task-start-date>
@@ -956,7 +960,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       </task>
       <task>
         <task-name>Communicate and support third parties</task-name>
-        <task-id>52</task-id>
+        <task-id>51</task-id>
         <expanded-gantt>true</expanded-gantt>
         <task-currency-unit>$</task-currency-unit>
         <task-accrual>accrual-prorated</task-accrual>
@@ -967,7 +971,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-list>
           <task>
             <task-name>Developers at Mozilla Firefox, Thunderbird and co.</task-name>
-            <task-id>53</task-id>
+            <task-id>52</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>01-09-2017, 08:00:00</task-start-date>
@@ -977,7 +981,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Libreoffice</task-name>
-            <task-id>54</task-id>
+            <task-id>53</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>04-09-2017, 15:00:00</task-start-date>
@@ -987,7 +991,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Google Chrome and Chromium</task-name>
-            <task-id>55</task-id>
+            <task-id>54</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>05-09-2017, 15:00:00</task-start-date>
@@ -997,7 +1001,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Apple Safari</task-name>
-            <task-id>56</task-id>
+            <task-id>55</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>06-09-2017, 08:00:00</task-start-date>
@@ -1007,7 +1011,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Opera</task-name>
-            <task-id>57</task-id>
+            <task-id>56</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>06-09-2017, 10:00:00</task-start-date>
@@ -1017,7 +1021,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Adobe Illustrator, InDesign and co.</task-name>
-            <task-id>58</task-id>
+            <task-id>57</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>06-09-2017, 13:00:00</task-start-date>
@@ -1027,7 +1031,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Developers at Languagetool grammer checking</task-name>
-            <task-id>59</task-id>
+            <task-id>58</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>06-09-2017, 15:00:00</task-start-date>
@@ -1037,7 +1041,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Communicate with dictionary maintainers</task-name>
-            <task-id>60</task-id>
+            <task-id>59</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>07-09-2017, 08:00:00</task-start-date>
@@ -1047,7 +1051,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Simplify integration for library users (developers)</task-name>
-            <task-id>61</task-id>
+            <task-id>60</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>11-09-2017, 08:00:00</task-start-date>
@@ -1057,7 +1061,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Agree on final and stable C++ API</task-name>
-            <task-id>62</task-id>
+            <task-id>61</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>12-09-2017, 08:00:00</task-start-date>
@@ -1067,7 +1071,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
           </task>
           <task>
             <task-name>Agree on final and stable C API and ABI</task-name>
-            <task-id>63</task-id>
+            <task-id>62</task-id>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>13-09-2017, 08:00:00</task-start-date>
@@ -1182,19 +1186,11 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
     </task-dependency>
     <task-dependency>
       <task-predecessor-id>39</task-predecessor-id>
-      <task-successor-id>40</task-successor-id>
-    </task-dependency>
-    <task-dependency>
-      <task-predecessor-id>40</task-predecessor-id>
       <task-successor-id>41</task-successor-id>
     </task-dependency>
     <task-dependency>
-      <task-predecessor-id>41</task-predecessor-id>
-      <task-successor-id>42</task-successor-id>
-    </task-dependency>
-    <task-dependency>
-      <task-predecessor-id>42</task-predecessor-id>
-      <task-successor-id>43</task-successor-id>
+      <task-predecessor-id>45</task-predecessor-id>
+      <task-successor-id>46</task-successor-id>
     </task-dependency>
     <task-dependency>
       <task-predecessor-id>46</task-predecessor-id>
@@ -1213,8 +1209,8 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       <task-successor-id>50</task-successor-id>
     </task-dependency>
     <task-dependency>
-      <task-predecessor-id>50</task-predecessor-id>
-      <task-successor-id>51</task-successor-id>
+      <task-predecessor-id>52</task-predecessor-id>
+      <task-successor-id>53</task-successor-id>
     </task-dependency>
     <task-dependency>
       <task-predecessor-id>53</task-predecessor-id>
@@ -1251,10 +1247,6 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
     <task-dependency>
       <task-predecessor-id>61</task-predecessor-id>
       <task-successor-id>62</task-successor-id>
-    </task-dependency>
-    <task-dependency>
-      <task-predecessor-id>62</task-predecessor-id>
-      <task-successor-id>63</task-successor-id>
     </task-dependency>
   </task-dependency-list>
   <conflict-list/>
