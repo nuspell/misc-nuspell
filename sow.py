@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as ET
-from xml.sax.saxutils import unescape
+from html import unescape
 import re
 
 def process_node(n):
