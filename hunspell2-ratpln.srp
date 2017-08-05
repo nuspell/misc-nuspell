@@ -729,6 +729,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>07-11-2017, 17:00:00</task-end-date>
             <task-completion-date>03-11-2017, 08:00:00</task-completion-date>
             <task-duration>86400000</task-duration>
+            <task-notes>&lt;p&gt;
+      Write spell checking tests.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Fix any issues related to spell checking</task-name>
@@ -873,6 +876,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-end-date>22-12-2017, 17:00:00</task-end-date>
             <task-completion-date>20-12-2017, 08:00:00</task-completion-date>
             <task-duration>86400000</task-duration>
+            <task-notes>&lt;p&gt;
+      Write suggestion tests.
+    &lt;/p&gt;</task-notes>
           </task>
           <task>
             <task-name>Fix any issues related to suggestions</task-name>
