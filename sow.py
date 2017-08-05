@@ -20,10 +20,12 @@ i = 1
 
 for e1 in e.findall('./task-list/task'):
 
-    if str.isalpha(e1.find('task-name').text[0]):
+    name = e1.find('task-name').text.strip()
+    if str.isalpha(name[0]):
         continue
 
-    print('- Milestone {}: '.format(i), end='')
+    #print('- Milestone {}: '.format(i), end='')
+    print('- {}\n  '.format(name), end='')
     process_node(e1)
     i += 1
 
