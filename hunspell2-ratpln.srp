@@ -434,9 +434,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>07-09-2017, 08:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
-  Provide platform-dependant dictionary locator that scans the common 
-  locations for dictionaries.
-&lt;/p&gt;</task-notes>
+      Provide dictionary locator that scans the common locations for 
+      dictionaries.
+    &lt;/p&gt;</task-notes>
             <task-list>
               <task>
                 <task-name>Search dictionaries on GNU/Linux and co.</task-name>
@@ -481,9 +481,8 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>11-09-2017, 08:00:00</task-completion-date>
             <task-duration>144000000</task-duration>
             <task-notes>&lt;p&gt;
-      Provide basic utilities like: command-line tool (mainly used for 
-      dictionary development and testing), string algorithms, encoding 
-      conversion utilities etc.
+      Provide basic utilities like: command-line tool, string algorithms, 
+      encoding conversion utilities etc.
     &lt;/p&gt;</task-notes>
             <task-list>
               <task>
@@ -539,8 +538,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>18-09-2017, 08:00:00</task-completion-date>
             <task-duration>86400000</task-duration>
             <task-notes>&lt;p&gt;
-      An automated testing framework that extends the current &amp;quot;make check&amp;quot; 
-      needs to be used in order to check, test and integrate parts of Hunspell.
+      Use an automated testing framework that extends the current &amp;quot;make check&amp;quot;.
     &lt;/p&gt;</task-notes>
             <task-list>
               <task>
@@ -646,9 +644,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-completion-date>21-09-2017, 08:00:00</task-completion-date>
         <task-duration>1065600000</task-duration>
         <task-notes>&lt;p&gt;
-      Document and implement spell checking, error detection of misspelled 
-      words. Support is mainly extended for the data already available in the 
-      affix and dictionary files.
+      Implement spell checking, error detection of misspelled words.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -743,7 +739,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>08-11-2017, 08:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
-      Scan the bugtracker for issues related to spell checking and fix those 
+      Scan the bug-tracker for issues related to spell checking and fix those 
       that make sense.
     &lt;/p&gt;</task-notes>
           </task>
@@ -783,9 +779,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-completion-date>13-11-2017, 08:00:00</task-completion-date>
         <task-duration>950400000</task-duration>
         <task-notes>&lt;p&gt;
-      Document and implement spell suggestion, error correction of misspelled 
-      words. The algorithm for finding suggestions will be ported, documented 
-      and improved.
+      Implement spell suggestion, error correction of misspelled words.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -890,7 +884,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>25-12-2017, 08:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
-      Scan the bugtracker for issues related to suggesting and fix those that 
+      Scan the bug-tracker for issues related to suggesting and fix those that 
       make sense.
     &lt;/p&gt;</task-notes>
           </task>
@@ -931,7 +925,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-duration>115200000</task-duration>
         <task-notes>&lt;p&gt;
       Support creation and usage of personal dictionaries. Those are 
-      dictionaries created bythe user.
+      dictionaries created by the user.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
@@ -944,8 +938,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>28-12-2017, 08:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
             <task-notes>&lt;p&gt;
-      Fill the personal dictionary in memeory via API, as in version 1. At 
-      this point the library won't manage the personal dictionary files.
+      Fill the personal dictionary in memory via API, as in version 1.
     &lt;/p&gt;</task-notes>
           </task>
           <task>
@@ -958,9 +951,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>29-12-2017, 08:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
-      Personal dictionaries can be found at different locations on different 
-      platforms and applications which use Hunspell. These locations need 
-      consoildation.
+      Unify separete personal dictionaries among different applications. 
     &lt;/p&gt;</task-notes>
           </task>
           <task>
@@ -986,7 +977,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>02-01-2018, 13:00:00</task-completion-date>
             <task-duration>14400000</task-duration>
             <task-notes>&lt;p&gt;
-      Scan the bugtracker for issues related to personal dictionaries and fix 
+      Scan the bug-tracker for issues related to personal dictionaries and fix 
       those that make sense.
     &lt;/p&gt;</task-notes>
           </task>
@@ -1026,7 +1017,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>03-01-2018, 08:00:00</task-completion-date>
             <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
-      Analyze the Mozilla bugtracker.
+      Analyze the Mozilla bug-tracker.
     &lt;/p&gt;</task-notes>
           </task>
           <task>
@@ -1039,7 +1030,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>05-01-2018, 08:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
             <task-notes>&lt;p&gt;
-      Analyze the Libreoffice bugtracker.
+      Analyze the Libreoffice bug-tracker.
     &lt;/p&gt;</task-notes>
           </task>
           <task>
@@ -1052,7 +1043,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>08-01-2018, 08:00:00</task-completion-date>
             <task-duration>5760000</task-duration>
             <task-notes>&lt;p&gt;
-      Analyze the Chromium bugtracker.
+      Analyze the Chromium bug-tracker.
     &lt;/p&gt;</task-notes>
           </task>
           <task>
@@ -1104,7 +1095,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>08-01-2018, 15:24:00</task-completion-date>
             <task-duration>5760000</task-duration>
             <task-notes>&lt;p&gt;
-      Analyze Language tool bugtracker.
+      Analyze Language tool bug-tracker.
     &lt;/p&gt;</task-notes>
           </task>
           <task>

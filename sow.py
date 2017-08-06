@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import xml.etree.ElementTree as ET
 from html import unescape
 import re
@@ -24,11 +25,10 @@ for e1 in e.findall('./task-list/task'):
     if str.isalpha(name[0]):
         continue
 
-    #print('- Milestone {}: '.format(i), end='')
-    print('- {}\n  '.format(name), end='')
+    print('1.  {}\n\n    '.format(name[2:]), end='')
     process_node(e1)
     i += 1
 
     for e2 in e1.findall('./task-list/task'):
-        print('\t- ', end='')
+        print('\t1. ', end='')
         process_node(e2)
