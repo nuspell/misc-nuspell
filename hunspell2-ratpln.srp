@@ -364,6 +364,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>01-09-2017, 12:00:00</task-end-date>
                 <task-completion-date>01-09-2017, 08:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Add documentation in READMEs and Wiki pages for how to develop for 
+      Hunspell.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Update build scripts (autotools)</task-name>
@@ -374,6 +378,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>01-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>01-09-2017, 13:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Setup scripts to configure, compile, link and do other build processes.
+    &lt;/p&gt;</task-notes>
               </task>
             </task-list>
           </task>
@@ -400,6 +407,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>05-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>04-09-2017, 08:00:00</task-completion-date>
                 <task-duration>57600000</task-duration>
+                <task-notes>&lt;p&gt;
+      Load affix file from absolute or relative file path.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Load word list file</task-name>
@@ -410,6 +420,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>06-09-2017, 12:00:00</task-end-date>
                 <task-completion-date>06-09-2017, 08:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Load word list file from absolute or relative file path.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Log error, warning, info and debug messages</task-name>
@@ -420,6 +433,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>06-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>06-09-2017, 13:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Setup standard logging facility for several common levels and set 
+      default logging level.
+    &lt;/p&gt;</task-notes>
               </task>
             </task-list>
           </task>
@@ -447,6 +464,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>07-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>07-09-2017, 08:00:00</task-completion-date>
                 <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
+      Search multiple common (absolute and relative) directories for 
+      dictionary files.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Search dictionaries on macOS</task-name>
@@ -457,6 +478,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>08-09-2017, 12:00:00</task-end-date>
                 <task-completion-date>08-09-2017, 08:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Search multiple common (absolute and relative) directories for 
+      dictionary files.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Search dictionaries on Windows</task-name>
@@ -467,6 +492,10 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>08-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>08-09-2017, 13:00:00</task-completion-date>
                 <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
+      Search multiple common (absolute and relative) directories for 
+      dictionary files.
+    &lt;/p&gt;</task-notes>
               </task>
             </task-list>
           </task>
@@ -494,6 +523,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>11-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>11-09-2017, 08:00:00</task-completion-date>
                 <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
+      Offer command line spell checking with existing range of arguments
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Implement string utilities</task-name>
@@ -504,6 +536,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>12-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>12-09-2017, 08:00:00</task-completion-date>
                 <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
+      Offer string utilities for parsing texts.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Implement stream utilities</task-name>
@@ -514,6 +549,9 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>13-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>13-09-2017, 08:00:00</task-completion-date>
                 <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
+      Offer I/O (input/output) via command line streams for process pipes.
+    &lt;/p&gt;</task-notes>
               </task>
               <task>
                 <task-name>Support locales and encodings</task-name>
@@ -524,13 +562,16 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
                 <task-end-date>15-09-2017, 17:00:00</task-end-date>
                 <task-completion-date>14-09-2017, 08:00:00</task-completion-date>
                 <task-duration>57600000</task-duration>
+                <task-notes>&lt;p&gt;
+      Support characters encodings such as Unicode in UTF-8 and locales such 
+      as English US.
+    &lt;/p&gt;</task-notes>
               </task>
             </task-list>
           </task>
           <task>
             <task-name>Testing and continuous integration framework</task-name>
             <task-id>18</task-id>
-            <expanded-gantt>true</expanded-gantt>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>18-09-2017, 08:00:00</task-start-date>
