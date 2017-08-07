@@ -18,6 +18,7 @@ process_node(e)
 print()
 
 i = 1
+total = int(e.find('task-duration').text)
 
 for e1 in e.findall('./task-list/task'):
 
@@ -25,7 +26,10 @@ for e1 in e.findall('./task-list/task'):
     if str.isalpha(name[0]):
         continue
 
-    print('1.  {}\n\n    '.format(name[2:]), end='')
+    duration = int(e1.find('task-duration').text)
+    percent = duration / total
+
+    print('1.  {} ({:.2%})\n\n    '.format(name[2:],percent),end='')
     process_node(e1)
     i += 1
 
