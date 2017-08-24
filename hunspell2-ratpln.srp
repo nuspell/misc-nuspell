@@ -753,8 +753,8 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
             <task-completion-date>02-11-2017, 08:00:00</task-completion-date>
             <task-duration>28800000</task-duration>
             <task-notes>&lt;p&gt;
-      Provide UTF-16 support in the public API, investigate if using it 
-      internally is a good idea.
+      Provide UTF-16 support in the public API, investigate possible Unicode 
+      issues.
     &lt;/p&gt;</task-notes>
           </task>
           <task>
