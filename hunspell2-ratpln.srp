@@ -955,241 +955,273 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
         <task-duration>0</task-duration>
       </task>
       <task>
-        <task-name>4 Personal dictionaries</task-name>
+        <task-name>4 Personal dictionaries and finalization</task-name>
         <task-id>47</task-id>
         <expanded-gantt>true</expanded-gantt>
         <task-currency-unit>$</task-currency-unit>
         <task-accrual>accrual-prorated</task-accrual>
         <task-start-date>28-12-2017, 08:00:00</task-start-date>
-        <task-end-date>02-01-2018, 17:00:00</task-end-date>
+        <task-end-date>15-01-2018, 17:00:00</task-end-date>
         <task-completion-date>28-12-2017, 08:00:00</task-completion-date>
-        <task-duration>115200000</task-duration>
+        <task-duration>374400000</task-duration>
         <task-notes>&lt;p&gt;
-      Support creation and usage of personal dictionaries. Those are 
-      dictionaries created by the user.
+      Implement personal dictionaries and finalize development.
     &lt;/p&gt;</task-notes>
         <task-list>
           <task>
-            <task-name>Read and extend personal dictionaries as version 1</task-name>
+            <task-name>Personal dictionaries</task-name>
             <task-id>48</task-id>
+            <expanded-gantt>true</expanded-gantt>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>28-12-2017, 08:00:00</task-start-date>
-            <task-end-date>28-12-2017, 17:00:00</task-end-date>
+            <task-end-date>02-01-2018, 17:00:00</task-end-date>
             <task-completion-date>28-12-2017, 08:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
+            <task-duration>115200000</task-duration>
             <task-notes>&lt;p&gt;
+      Support creation and usage of personal dictionaries. Those are 
+      dictionaries created by the user.
+    &lt;/p&gt;</task-notes>
+            <task-list>
+              <task>
+                <task-name>Read and extend personal dictionaries as version 1</task-name>
+                <task-id>49</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>28-12-2017, 08:00:00</task-start-date>
+                <task-end-date>28-12-2017, 17:00:00</task-end-date>
+                <task-completion-date>28-12-2017, 08:00:00</task-completion-date>
+                <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
       Fill the personal dictionary in memory via API, as in version 1.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Unify personal dictionaries among applications</task-name>
-            <task-id>49</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>29-12-2017, 08:00:00</task-start-date>
-            <task-end-date>01-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>29-12-2017, 08:00:00</task-completion-date>
-            <task-duration>57600000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Unify personal dictionaries among applications</task-name>
+                <task-id>50</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>29-12-2017, 08:00:00</task-start-date>
+                <task-end-date>01-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>29-12-2017, 08:00:00</task-completion-date>
+                <task-duration>57600000</task-duration>
+                <task-notes>&lt;p&gt;
       Unify separete personal dictionaries among different applications. 
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Support removal of words</task-name>
-            <task-id>50</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>02-01-2018, 08:00:00</task-start-date>
-            <task-end-date>02-01-2018, 12:00:00</task-end-date>
-            <task-completion-date>02-01-2018, 08:00:00</task-completion-date>
-            <task-duration>14400000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Support removal of words</task-name>
+                <task-id>51</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>02-01-2018, 08:00:00</task-start-date>
+                <task-end-date>02-01-2018, 12:00:00</task-end-date>
+                <task-completion-date>02-01-2018, 08:00:00</task-completion-date>
+                <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
       Add possibility for removal of words in the API.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Fix any issues related to personal dictionaries</task-name>
-            <task-id>51</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>02-01-2018, 13:00:00</task-start-date>
-            <task-end-date>02-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>02-01-2018, 13:00:00</task-completion-date>
-            <task-duration>14400000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Fix any issues related to personal dictionaries</task-name>
+                <task-id>52</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>02-01-2018, 13:00:00</task-start-date>
+                <task-end-date>02-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>02-01-2018, 13:00:00</task-completion-date>
+                <task-duration>14400000</task-duration>
+                <task-notes>&lt;p&gt;
       Scan the bug-tracker for issues related to personal dictionaries and fix 
       those that make sense.
     &lt;/p&gt;</task-notes>
+              </task>
+              <task>
+                <task-name>Beta release</task-name>
+                <task-id>53</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>02-01-2018, 17:00:00</task-start-date>
+                <task-end-date>02-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>02-01-2018, 17:00:00</task-completion-date>
+                <task-duration>0</task-duration>
+              </task>
+            </task-list>
           </task>
-        </task-list>
-      </task>
-      <task>
-        <task-name>Beta release</task-name>
-        <task-id>52</task-id>
-        <task-currency-unit>$</task-currency-unit>
-        <task-accrual>accrual-prorated</task-accrual>
-        <task-start-date>02-01-2018, 17:00:00</task-start-date>
-        <task-end-date>02-01-2018, 17:00:00</task-end-date>
-        <task-completion-date>02-01-2018, 17:00:00</task-completion-date>
-        <task-duration>0</task-duration>
-      </task>
-      <task>
-        <task-name>5 Communicate and support third parties</task-name>
-        <task-id>53</task-id>
-        <expanded-gantt>true</expanded-gantt>
-        <task-currency-unit>$</task-currency-unit>
-        <task-accrual>accrual-prorated</task-accrual>
-        <task-start-date>03-01-2018, 08:00:00</task-start-date>
-        <task-end-date>15-01-2018, 17:00:00</task-end-date>
-        <task-completion-date>03-01-2018, 08:00:00</task-completion-date>
-        <task-duration>259200000</task-duration>
-        <task-notes>&lt;p&gt;
-      Communicate with other developers and finalize the API.
-    &lt;/p&gt;</task-notes>
-        <task-list>
           <task>
-            <task-name>Developers at Mozilla Firefox, Thunderbird and co.</task-name>
+            <task-name>Communicate and support third parties</task-name>
             <task-id>54</task-id>
+            <expanded-gantt>true</expanded-gantt>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>03-01-2018, 08:00:00</task-start-date>
-            <task-end-date>04-01-2018, 17:00:00</task-end-date>
+            <task-end-date>11-01-2018, 17:00:00</task-end-date>
             <task-completion-date>03-01-2018, 08:00:00</task-completion-date>
-            <task-duration>57600000</task-duration>
+            <task-duration>201600000</task-duration>
             <task-notes>&lt;p&gt;
+      Communicate with other developers and simplify the public API.
+    &lt;/p&gt;</task-notes>
+            <task-list>
+              <task>
+                <task-name>Developers at Mozilla Firefox, Thunderbird and co.</task-name>
+                <task-id>55</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>03-01-2018, 08:00:00</task-start-date>
+                <task-end-date>04-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>03-01-2018, 08:00:00</task-completion-date>
+                <task-duration>57600000</task-duration>
+                <task-notes>&lt;p&gt;
       Analyze the Mozilla bug-tracker.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Libreoffice</task-name>
-            <task-id>55</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>05-01-2018, 08:00:00</task-start-date>
-            <task-end-date>05-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>05-01-2018, 08:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Libreoffice</task-name>
+                <task-id>56</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>05-01-2018, 08:00:00</task-start-date>
+                <task-end-date>05-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>05-01-2018, 08:00:00</task-completion-date>
+                <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
       Analyze the Libreoffice bug-tracker.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Google Chrome and Chromium</task-name>
-            <task-id>56</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>08-01-2018, 08:00:00</task-start-date>
-            <task-end-date>08-01-2018, 09:36:00</task-end-date>
-            <task-completion-date>08-01-2018, 08:00:00</task-completion-date>
-            <task-duration>5760000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Google Chrome and Chromium</task-name>
+                <task-id>57</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>08-01-2018, 08:00:00</task-start-date>
+                <task-end-date>08-01-2018, 09:36:00</task-end-date>
+                <task-completion-date>08-01-2018, 08:00:00</task-completion-date>
+                <task-duration>5760000</task-duration>
+                <task-notes>&lt;p&gt;
       Analyze the Chromium bug-tracker.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Apple Safari</task-name>
-            <task-id>57</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>08-01-2018, 09:36:00</task-start-date>
-            <task-end-date>08-01-2018, 11:12:00</task-end-date>
-            <task-completion-date>08-01-2018, 09:36:00</task-completion-date>
-            <task-duration>5760000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Apple Safari</task-name>
+                <task-id>58</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>08-01-2018, 09:36:00</task-start-date>
+                <task-end-date>08-01-2018, 11:12:00</task-end-date>
+                <task-completion-date>08-01-2018, 09:36:00</task-completion-date>
+                <task-duration>5760000</task-duration>
+                <task-notes>&lt;p&gt;
       Ask people at Apple if they have feedback.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Opera</task-name>
-            <task-id>58</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>08-01-2018, 11:12:00</task-start-date>
-            <task-end-date>08-01-2018, 13:48:00</task-end-date>
-            <task-completion-date>08-01-2018, 11:12:00</task-completion-date>
-            <task-duration>5760000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Opera</task-name>
+                <task-id>59</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>08-01-2018, 11:12:00</task-start-date>
+                <task-end-date>08-01-2018, 13:48:00</task-end-date>
+                <task-completion-date>08-01-2018, 11:12:00</task-completion-date>
+                <task-duration>5760000</task-duration>
+                <task-notes>&lt;p&gt;
       Ask people at Opera if they have feedback.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Adobe Illustrator, InDesign and co.</task-name>
-            <task-id>59</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>08-01-2018, 13:48:00</task-start-date>
-            <task-end-date>08-01-2018, 15:24:00</task-end-date>
-            <task-completion-date>08-01-2018, 13:48:00</task-completion-date>
-            <task-duration>5760000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Adobe Illustrator, InDesign and co.</task-name>
+                <task-id>60</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>08-01-2018, 13:48:00</task-start-date>
+                <task-end-date>08-01-2018, 15:24:00</task-end-date>
+                <task-completion-date>08-01-2018, 13:48:00</task-completion-date>
+                <task-duration>5760000</task-duration>
+                <task-notes>&lt;p&gt;
       Ask people at Adobe if they have feedback.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Developers at Languagetool grammer checking</task-name>
-            <task-id>60</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>08-01-2018, 15:24:00</task-start-date>
-            <task-end-date>08-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>08-01-2018, 15:24:00</task-completion-date>
-            <task-duration>5760000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Developers at Languagetool grammer checking</task-name>
+                <task-id>61</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>08-01-2018, 15:24:00</task-start-date>
+                <task-end-date>08-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>08-01-2018, 15:24:00</task-completion-date>
+                <task-duration>5760000</task-duration>
+                <task-notes>&lt;p&gt;
       Analyze Language tool bug-tracker.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Communicate with dictionary maintainers</task-name>
-            <task-id>61</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>09-01-2018, 08:00:00</task-start-date>
-            <task-end-date>10-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>09-01-2018, 08:00:00</task-completion-date>
-            <task-duration>57600000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Communicate with dictionary maintainers</task-name>
+                <task-id>62</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>09-01-2018, 08:00:00</task-start-date>
+                <task-end-date>10-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>09-01-2018, 08:00:00</task-completion-date>
+                <task-duration>57600000</task-duration>
+                <task-notes>&lt;p&gt;
       Communicate with dictionary maintainers.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Simplify integration for library users (developers)</task-name>
-            <task-id>62</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>11-01-2018, 08:00:00</task-start-date>
-            <task-end-date>11-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>11-01-2018, 08:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Simplify integration for library users (developers)</task-name>
+                <task-id>63</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>11-01-2018, 08:00:00</task-start-date>
+                <task-end-date>11-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>11-01-2018, 08:00:00</task-completion-date>
+                <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
       Simplify things in API if needed.
     &lt;/p&gt;</task-notes>
+              </task>
+            </task-list>
           </task>
           <task>
-            <task-name>Agree on final and stable C++ API</task-name>
-            <task-id>63</task-id>
+            <task-name>Stabilize API</task-name>
+            <task-id>64</task-id>
+            <expanded-gantt>true</expanded-gantt>
             <task-currency-unit>$</task-currency-unit>
             <task-accrual>accrual-prorated</task-accrual>
             <task-start-date>12-01-2018, 08:00:00</task-start-date>
-            <task-end-date>12-01-2018, 17:00:00</task-end-date>
+            <task-end-date>15-01-2018, 17:00:00</task-end-date>
             <task-completion-date>12-01-2018, 08:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
+            <task-duration>57600000</task-duration>
             <task-notes>&lt;p&gt;
+      Agree on final and stable API and ABI.
+    &lt;/p&gt;</task-notes>
+            <task-list>
+              <task>
+                <task-name>Agree on final and stable C++ API</task-name>
+                <task-id>65</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>12-01-2018, 08:00:00</task-start-date>
+                <task-end-date>12-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>12-01-2018, 08:00:00</task-completion-date>
+                <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
       Agree on final and stable C++ API.
     &lt;/p&gt;</task-notes>
-          </task>
-          <task>
-            <task-name>Agree on final and stable C API and ABI</task-name>
-            <task-id>64</task-id>
-            <task-currency-unit>$</task-currency-unit>
-            <task-accrual>accrual-prorated</task-accrual>
-            <task-start-date>15-01-2018, 08:00:00</task-start-date>
-            <task-end-date>15-01-2018, 17:00:00</task-end-date>
-            <task-completion-date>15-01-2018, 08:00:00</task-completion-date>
-            <task-duration>28800000</task-duration>
-            <task-notes>&lt;p&gt;
+              </task>
+              <task>
+                <task-name>Agree on final and stable C API and ABI</task-name>
+                <task-id>66</task-id>
+                <task-currency-unit>$</task-currency-unit>
+                <task-accrual>accrual-prorated</task-accrual>
+                <task-start-date>15-01-2018, 08:00:00</task-start-date>
+                <task-end-date>15-01-2018, 17:00:00</task-end-date>
+                <task-completion-date>15-01-2018, 08:00:00</task-completion-date>
+                <task-duration>28800000</task-duration>
+                <task-notes>&lt;p&gt;
       Agree on final and stable C API and ABI.
     &lt;/p&gt;</task-notes>
+              </task>
+            </task-list>
           </task>
         </task-list>
       </task>
@@ -1349,10 +1381,6 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       <task-successor-id>47</task-successor-id>
     </task-dependency>
     <task-dependency>
-      <task-predecessor-id>48</task-predecessor-id>
-      <task-successor-id>49</task-successor-id>
-    </task-dependency>
-    <task-dependency>
       <task-predecessor-id>49</task-predecessor-id>
       <task-successor-id>50</task-successor-id>
     </task-dependency>
@@ -1361,7 +1389,7 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       <task-successor-id>51</task-successor-id>
     </task-dependency>
     <task-dependency>
-      <task-predecessor-id>47</task-predecessor-id>
+      <task-predecessor-id>51</task-predecessor-id>
       <task-successor-id>52</task-successor-id>
     </task-dependency>
     <task-dependency>
@@ -1369,8 +1397,8 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
       <task-successor-id>53</task-successor-id>
     </task-dependency>
     <task-dependency>
-      <task-predecessor-id>54</task-predecessor-id>
-      <task-successor-id>55</task-successor-id>
+      <task-predecessor-id>53</task-predecessor-id>
+      <task-successor-id>54</task-successor-id>
     </task-dependency>
     <task-dependency>
       <task-predecessor-id>55</task-predecessor-id>
@@ -1406,7 +1434,11 @@ More precise goals are defined at https://github.com/hunspell/hunspell/wiki/Vers
     </task-dependency>
     <task-dependency>
       <task-predecessor-id>63</task-predecessor-id>
-      <task-successor-id>64</task-successor-id>
+      <task-successor-id>65</task-successor-id>
+    </task-dependency>
+    <task-dependency>
+      <task-predecessor-id>65</task-predecessor-id>
+      <task-successor-id>66</task-successor-id>
     </task-dependency>
   </task-dependency-list>
   <conflict-list/>
