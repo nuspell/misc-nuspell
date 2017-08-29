@@ -331,6 +331,7 @@ def get_packs():
     
     return packs
 
+exit(0)#TODO refacter all
 packs = get_packs()         
 #pprint(packs)
 #print(packs['sr']['affs']['sr_RS']['links']['sr_ME']['name'])

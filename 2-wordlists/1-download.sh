@@ -6,10 +6,10 @@ then
 fi
 mkdir debs
 
-for package in `ls ../1-usage/packages/`
+for package in `ls ../1-support/packages/`
 do
 #    echo 'package: '$package
-    for language in `find ../1-usage/packages/$package/*/usr/share/hunspell/ -type f -name '*\.aff'|sed 's/.*hunspell\/\(.*\)\.aff$/\1/'`
+    for language in `find ../1-support/packages/$package/*/usr/share/hunspell/ -type f -name '*\.aff'|sed 's/.*hunspell\/\(.*\)\.aff$/\1/'`
     do
 #        echo '  language: '$language
         wordlist=`../0-tools/hunspell_language_support_to_wordlist_name.sh $package $language|sed 's/\(.*\) .*/\1/'`
