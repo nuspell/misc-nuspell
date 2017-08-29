@@ -32,7 +32,7 @@ do
                     for wordlist_path in `find ../2-wordlists/packages/$wordlist_package/$wordlist_version/usr/share/dict/ -type f -name $wordlist_file`  # Use find for file here, not ls. This will break if a dict file is replaced by a symbolic link. That will show up in the results and require changing ../0-tools/hunspell_language_support_to_wordlist_name.sh
                     do
                         echo '      wordlist size: '`wc -l $wordlist_path|awk '{print $1}'`
-                        #TODO../../hunspell/src/tools/bulkcheck $affix $dict $wordlist_path > checks/$package\__$version\__$language\___$wordlist_package\__$wordlist_version\__$wordlist_file\___$hunspell_version.tsv
+                        ../../hunspell/src/tools/bulkcheck $affix $dict $wordlist_path >checks/$package\__$version\__$language\___$wordlist_package\__$wordlist_version\__$wordlist_file\___$hunspell_version.tsv 2>checks/$package\__$version\__$language\___$wordlist_package\__$wordlist_version\__$wordlist_file\___$hunspell_version\___report.tsv
                     done
                 done
             fi

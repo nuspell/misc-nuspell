@@ -46,7 +46,7 @@ ca)
 #FIXME    ca_ES)
 #FIXME    ca_ES-valencia)
     ca)
-        echo 'wcatalan catalan'
+        echo 'wcatalan catala'  #FIXME Reverse symbolic link and file.
         ;;
     *)
         echo 'ERROR: Package '$1' with unsupported language '$2
