@@ -16,4 +16,4 @@ do
 done
 cd ..
 
-rm -rf packages/*/*/usr/share/doc packages/*/*/usr/share/man
+#rm -rf packages/*/*/usr/share/doc packages/*/*/usr/share/man
