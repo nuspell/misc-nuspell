@@ -15,7 +15,6 @@ function diagrams() {
 		for i in *svg
 		do
 		    echo '[![]('$i')]('$i')' >> README.md
-		    echo '[![]('$i'?raw=true)]('$BASE'/'$type'-diagrams/'$i')' >> README.md
 		done
 		cd ..
 	fi
