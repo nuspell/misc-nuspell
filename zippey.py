@@ -106,6 +106,7 @@ def init():
         msvcrt.setmode(sys.stdin.fileno(), os.O_BINARY)
         msvcrt.setmode(sys.stdout.fileno(), os.O_BINARY)
 
+#git clean filter
 def encode(input, output):
     '''Encode into special VCS friendly format from input to output'''
     debug("ENCODE was called")
@@ -113,9 +114,14 @@ def encode(input, output):
     tfp.write(input.read())
     try:
         zfp = zipfile.ZipFile(tfp, "r")
-    except:
-        print tfp
-        raise
+    except zipfile.BadZipfile as e:
+        #input is not a zipfile
+        #output the same file without filtering
+        debug(str(e))
+        tfp.flush()
+        tfp.seek(0)
+        output.write(tfp.read())
+        return
     for name in zfp.namelist():
         data = zfp.read(name)
         text_extentions = ['.txt', '.html', '.xml']
