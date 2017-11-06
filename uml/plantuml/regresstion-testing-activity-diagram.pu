@@ -1,0 +1,35 @@
+@startuml
+!include config.pu
+
+title Hunspell - Regression Testing (speed, memory and correctness)
+
+start
+:manually stop unneeded applications;
+while (git checksum in checksums.txt?) is (yes)
+	if (checksum not in results.tsv for current hostname?) then (yes)
+		:git clone hunspell for checksum;
+		:build hunspell;
+		while (language in languages.txt?) is (yes)
+			while (language in dictionary packages?) is (yes)
+				:get affix and dictionary path;
+				while (language in wordlist packages?) is (yes)
+					:get wordlist path;
+					:run hunspell with affix and dictionary on wordlist;
+					:accumulate speed, memory usage and correctness;
+					:update minumum and maximum\nof speed, memory usage and correctness;
+				endwhile (no)
+			endwhile (no)
+		endwhile (no)
+		:append speed, memory usage and correctness\nand their min. and max. to results.tsv for hostname;
+	else (no)
+	endif
+endwhile (no)
+while (hostname for results.tsv files?) is (yes)
+	if (graph for hostname not existing or outdated?) then (yes)
+		:generate graph with restults.tsv for hostname;
+	else (no)
+	endif
+endwhile (no)
+stop
+
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+!include config.pu
+
+title Hunspell - Top-level
+
+start
+:load dictionary;
+while (input has words?) is (yes)
+	:check spelling word;
+	if (word is misspelled?) then (yes)
+		:get suggestions for word;
+	endif
+endwhile (no)
+stop
+
+@enduml
