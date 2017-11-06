@@ -1,5 +1,4 @@
 @startuml
-!include config.pu
 
 title Hunspell - Regression Testing (speed, memory and correctness)
 
