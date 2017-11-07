@@ -1,0 +1,63 @@
+@startuml
+
+title Hunspell - Search Dictionaries
+
+start
+partition "add default paths" {
+:TODO;
+}
+
+partition "add LibreOffice paths" {
+if (POSIX?) then (yes)
+	:omit symbolic links;
+	:search /usr/local/lib/libreoffice/share/extensions/dict-*;
+	:search /usr/lib/libreoffice/share/extensions/dict-*;
+	:search /opt/libreoffice*/share/extensions/dict-*;
+	:search $HOME/.config/libreoffice/?/user/uno_packages/cache/uno_packages/*/*.oxt/dict*;
+elseif(WIN32?) then (yes)
+	:search %PROGRAMFILES%\\LibreOffice ?\\share\\extensions\\dict-*;
+	:search %PROGRAMFILES(x86)%\\LibreOffice ?\\share\\extensions\\dict-*;
+	:search %APPDATA%\\libreoffice\\?\\user\\uno_packages\\cache\\uno_packages\\*\\*.oxt\\dict*;
+else (no)
+endif
+}
+
+partition "add Mozilla paths" {
+if (POSIX?) then (yes)
+	:omit symbolic links;
+	:search /usr/local/lib/firefox/dictionaries;
+	:search /usr/lib/firefox/dictionaries;
+	:search /usr/local/lib/thunderbird/dictionaries;
+	:search /usr/lib/thunderbird/dictionaries;
+	:search $HOME/.mozilla/firefox/*/extensions/*/dictionaries;
+	:search $HOME/.thunderbird/*/extensions/*/dictionaries;
+elseif(WIN32?) then (yes)
+	:search %PROGRAMFILES%\\Mozilla Firefox\\dictionaries;
+	:search %PROGRAMFILES(x86)%\\Mozilla Firefox\\dictionaries;
+	:search %PROGRAMFILES%\\Mozilla Thunderbird\\dictionaries;
+	:search %PROGRAMFILES(x86)%\\Mozilla Thunderbird\\dictionaries;
+	:search %APPDATA%\\Mozilla\\Firefox\\Profiles\\*\\extensions\\*\\dictionaries;
+	:search %APPDATA%\\Mozilla\\Thunderbird\\Profiles\\*\\extensions\\*\\dictionaries;
+else (no)
+endif
+}
+
+partition "add Apache OpenOffice paths" {
+if (POSIX?) then (yes)
+	:omit symbolic links;
+	:search /usr/local/lib/openoffice/share/extensions/dict-*;
+	:search /usr/lib/openoffice/share/extensions/dict-*;
+	:search /opt/openoffice*/share/extensions/dict-*;
+	:search $HOME//.config/openoffice/?/user/uno_packages/cache/uno_packages/*/*.oxt/dict*;
+elseif(WIN32?) then (yes)
+	:search %PROGRAMFILES%\\OpeneOffice ?\\share\\extensions\\dict-*;
+	:search %PROGRAMFILES(x86)%\\OpenOffice ?\\share\\extensions\\dict-*;
+	:search %APPDATA%\\openoffice\\?\\user\\uno_packages\\cache\\uno_packages\\*\\*.oxt\\dict*;
+else (no)
+endif
+}
+
+:search dictionaries in paths;
+stop
+
+@enduml

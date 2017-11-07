@@ -1,0 +1,14 @@
+@startuml
+
+title Hunspell - Clean Word (cleanword2)
+
+start
+:skip leading spaces ' ';
+:strip trailing persiods '.';
+if (nothing left?) then (yes)
+	:return 0;
+else (no)
+endif
+stop
+
+@enduml
