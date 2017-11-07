@@ -3,13 +3,14 @@ Resources:
 1.  Project management tool: [RationalPlan
     Single](https://www.rationalplan.com/on-premise/#single)
     - Install by double clicking the .deb with Ubuntu software center
-    - https://wiki.mozilla.org/MOSS\#Applicant.2FAwardee\_Resources
+    - https://wiki.mozilla.org/MOSS#Applicant.2FAwardee_Resources
     - start `rationalplan-single &` and open
       `misc-hunspell/hunspell2-ratpln.srp`
     - remove lock file and other user preferences `rm -rf
       ~/.RationalPlan/ ~/.java/.userPrefs/RationalPlan`
-2.  PlantUML. Install with: `sudo apt install plantuml`
-3.  Dataflow for DFD.
+2.  [PlantUML](http://plantuml.com/).
+    - Install with: `sudo apt install plantuml`
+3.  [Dataflow](https://github.com/sonyxperiadev/dataflow) for DFD.
     - Install: `sudo apt install cabal-install && cabal update &&
       cabal install dataflow`
     - Use: `~/.cabal/bin/dataflow`
@@ -20,6 +21,6 @@ After cloning or pulling run this only once to add the zippy filter:
 
     git config filter.zippey.smudge "$PWD/zippey.py d"
     git config filter.zippey.clean "$PWD/zippey.py e"
-    git ls-files -z | xargs -0 rm
+    rm $(git ls-files drakon)
     git checkout -- .
 
