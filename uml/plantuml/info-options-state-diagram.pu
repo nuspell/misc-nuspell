@@ -1,0 +1,13 @@
+@startuml
+
+title Hunspell - Info Options (info)
+
+[*] --> SPELL_COMPOUND
+[*] --> SPELL_FORBIDDEN
+[*] --> SPELL_ALLCAP
+[*] --> SPELL_NOCAP
+[*] --> SPELL_INITCAP : cap = HUHINITCAP or ALLCAP
+[*] --> SPELL_ORIGCAP
+[*] --> SPELL_WARN
+
+@enduml

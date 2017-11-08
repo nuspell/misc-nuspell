@@ -1,0 +1,25 @@
+@startuml
+
+title Hunspell - checkword
+
+start
+
+:get ignore characters from affix manager;
+if (ignore character?) then (yes)
+	:TODO;
+	:TODO;
+	:TODO;
+else (no)
+endif
+
+stop
+
+if (word length == 0?) then (yes)
+	:return NULL;
+else (no)
+endif
+
+:TODO;
+
+stop
+@enduml

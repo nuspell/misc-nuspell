@@ -5,10 +5,14 @@ title Hunspell - Clean Word (cleanword2)
 start
 :skip leading spaces ' ';
 :strip trailing persiods '.';
+:set abbrev;
 if (nothing left?) then (yes)
+	:set captype to NOCAP;
 	:return 0;
 else (no)
 endif
+:set captype;
+:return word length after cleaning;
 stop
 
 @enduml

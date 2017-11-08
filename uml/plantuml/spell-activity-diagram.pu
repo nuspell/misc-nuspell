@@ -26,32 +26,42 @@ partition "input conversion" {
 	else (no)
 		:get word length, captype from cleanword2 for word\nTODO needs work;
 	endif
+
+	if (MOZILLA_CLIENT?) then (yes)
+		:set abbv to 1;
+	else (no)
+	endif
+
+	if (word length == 0 or hash manager is empty?) then (yes)
+		:return TRUE;
+		stop
+	else (no)
+	endif
+	:clear root;
 }
 
-if (MOZILLA_CLIENT?) then (yes)
-	:set abbv to 1;
-else (no)
-endif
+partition "number state" {
+	:set nstate;
+	if (nstate is NNUM?) then (yes)
+		:return TRUE;
+		note left: word consists\nof only numbers
+		stop
+	else (no)
+	endif
+}
 
-if (MOZILLA_CLIENT?) then (yes)
-	:set abbv to 1;
-else (no)
-endif
+partition "check word" {
+	if (captype == HUHCAP?) then (yes)
+	elif (captype == HUHINITCAP?) then (yes)
+		:info += SPELL_ORIGCAP (TODO);
+	elif (captype == NOCAP?) then (yes)
+		:checkword;
+	elif (captype == ALLCAP?) then (yes)
+		:info += SPELL_ORIGCAP (TODO);
+	else (no)
+	endif
+}
 
-if (word length == 0 or hash manager is empty?) then (yes)
-	:return TRUE;
-	stop
-else (no)
-endif
-
-:clear root;
-:set nstate;
-if (nstate is NNUM?) then (yes)
-	:return TRUE;
-	note left: word consists\nof only numbers
-	stop
-else (no)
-endif
 
 
 
