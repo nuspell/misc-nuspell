@@ -52,11 +52,12 @@ partition "number state" {
 
 partition "check word" {
 	if (captype == HUHCAP?) then (yes)
-	elif (captype == HUHINITCAP?) then (yes)
+		:b;
+	elseif (captype == HUHINITCAP?) then (yes)
 		:info += SPELL_ORIGCAP (TODO);
-	elif (captype == NOCAP?) then (yes)
+	elseif (captype == NOCAP?) then (yes)
 		:checkword;
-	elif (captype == ALLCAP?) then (yes)
+	elseif (captype == ALLCAP?) then (yes)
 		:info += SPELL_ORIGCAP (TODO);
 	else (no)
 	endif
