@@ -127,9 +127,9 @@ def report(output, desc, dikt_has, options, doc, option_count):
 
     if options_used_by_all:
         if len(options_used_by_all) == 1:
-            output.write('Option that was used in all of the dictionaries is: ')
+            output.write('{} option that was used in all of the dictionaries above is: '.format(desc))
         else:
-            output.write('Options that were used in all of the dictionaries are: ')
+            output.write('{} options that were used in all of the dictionaries above are: '.format(desc))
         first = True
         for option in options_used_by_all:
             if first:
@@ -140,9 +140,9 @@ def report(output, desc, dikt_has, options, doc, option_count):
         output.write('.\n\n')
     if unused_options:
         if len(unused_options) == 1:
-            output.write('Option that was used in none of the dictionaries is: ')
+            output.write('{} option that was used in none of the dictionaries above is: '.format(desc))
         else:
-            output.write('Options that were used in none of the dictionaries are: ')
+            output.write('{} options that were used in none of the dictionaries above are: '.format(desc))
         first = True
         for option in unused_options:
             if first:
@@ -153,12 +153,66 @@ def report(output, desc, dikt_has, options, doc, option_count):
         output.write('.\n\n')
 
 # followings list are manually obtained from $ man -K 5 hunspell
-options_general = ('SET', 'FLAG', 'COMPLEXPREFIXES', 'LANG', 'IGNORE', 'AF', 'AM', )
-options_suggest = ('KEY', 'TRY', 'NOSUGGEST', 'MAXCPDSUGS', 'MAXNGRAMSUGS', 'MAXDIFF', 'ONLYMAXDIFF', 'NOSPLITSUGS', 'SUGSWITHDOTS', 'REP', 'MAP', 'PHONE', 'WARN', 'FORBIDWARN', )
-options_compounding = ('BREAK', 'COMPOUNDRULE', 'COMPOUNDMIN', 'COMPOUNDFLAG', 'COMPOUNDBEGIN', 'COMPOUNDLAST', 'COMPOUNDMIDDLE', 'ONLYINCOMPOUND', 'COMPOUNDPERMITFLAG', 'COMPOUNDFORBIDFLAG', 'COMPOUNDMORESUFFIXES', 'COMPOUNDROOT', 'COMPOUNDWORDMAX', 'CHECKCOMPOUNDDUP', 'CHECKCOMPOUNDREP', 'CHECKCOMPOUNDCASE', 'CHECKCOMPOUNDTRIPLE', 'SIMPLIFIEDTRIPLE', 'CHECKCOMPOUNDPATTERN', 'FORCEUCASE', 'COMPOUNDSYLLABLE', 'SYLLABLENUM', )  # 'COMPOUND',
-options_affix = ('PFX', 'SFX', )
-options_other = ('CIRCUMFIX', 'FORBIDDENWORD', 'FULLSTRIP', 'KEEPCASE', 'ICONV', 'OCONV', 'NEEDAFFIX', 'SUBSTANDARD', 'WORDCHARS', 'CHECKSHARPS', )
-options_deprecated = ('LEMMA_PRESENT', 'PSEUDOROOT', )
+options_general = ('SET',
+                   'FLAG', #where in affix file?
+                   'COMPLEXPREFIXES',
+                   'LANG',
+                   'IGNORE',
+                   'AF', #where in affix file?
+                   'AM', ) #where in affix file?
+options_suggest = ('KEY',
+                   'TRY',
+                   'NOSUGGEST',
+                   'MAXCPDSUGS',
+                   'MAXNGRAMSUGS',
+                   'MAXDIFF',
+                   'ONLYMAXDIFF',
+                   'NOSPLITSUGS',
+                   'SUGSWITHDOTS',
+                   'REP',
+                   'MAP', # where in affix file?
+                   'PHONE',
+                   'WARN',
+                   'FORBIDWARN', )
+options_compounding = ('BREAK',
+                       'COMPOUNDRULE',
+                       'COMPOUNDMIN',
+                       'COMPOUNDFLAG',
+                       'COMPOUNDBEGIN',
+                       'COMPOUNDLAST',
+                       'COMPOUNDMIDDLE',
+                       'ONLYINCOMPOUND',
+                       'COMPOUNDPERMITFLAG',
+                       'COMPOUNDFORBIDFLAG',
+                       'COMPOUNDMORESUFFIXES',
+                       'COMPOUNDROOT',
+                       'COMPOUNDWORDMAX',
+                       'CHECKCOMPOUNDDUP',
+                       'CHECKCOMPOUNDREP',
+                       'CHECKCOMPOUNDCASE',
+                       'CHECKCOMPOUNDTRIPLE',
+                       'SIMPLIFIEDTRIPLE',
+                       'CHECKCOMPOUNDPATTERN',
+                       'FORCEUCASE',
+                       'COMPOUNDSYLLABLE',
+                       'SYLLABLENUM', )  # 'COMPOUND',
+options_affix = ('PFX',
+                 'SFX', )
+options_other = ('CIRCUMFIX',
+                 'FORBIDDENWORD',
+                 'FULLSTRIP',
+                 'KEEPCASE',
+                 'ICONV',
+                 'OCONV',
+                 'NEEDAFFIX',
+                 'SUBSTANDARD',
+                 'WORDCHARS',
+                 'CHECKSHARPS', )
+options_undocumented = ('VERSION',
+                 'CHECKNUM',
+                 'NONGRAMSUGGEST', )
+options_deprecated = ('LEMMA_PRESENT',
+                      'PSEUDOROOT', )
 
 # self-check
 for option in options_general:
@@ -177,6 +231,9 @@ for option in options_general:
     if option in options_deprecated:
         error('Overlap general and deprecated')
         exit(1)
+    if option in options_undocumented:
+        error('Overlap general and undocumented')
+        exit(1)
 for option in options_suggest:
     if option in options_compounding:
         error('Overlap suggest and compounding')
@@ -190,6 +247,9 @@ for option in options_suggest:
     if option in options_deprecated:
         error('Overlap suggest and deprecated')
         exit(1)
+    if option in options_undocumented:
+        error('Overlap suggest and undocumented')
+        exit(1)
 for option in options_compounding:
     if option in options_affix:
         error('Overlap compounding and affix')
@@ -200,6 +260,9 @@ for option in options_compounding:
     if option in options_deprecated:
         error('Overlap compounding and deprecated')
         exit(1)
+    if option in options_undocumented:
+        error('Overlap compounding and undocumented')
+        exit(1)
 for option in options_affix:
     if option in options_other:
         error('Overlap affix and other')
@@ -207,9 +270,19 @@ for option in options_affix:
     if option in options_deprecated:
         error('Overlap affix and deprecated')
         exit(1)
+    if option in options_undocumented:
+        error('Overlap affix and undocumented')
+        exit(1)
 for option in options_other:
     if option in options_deprecated:
         error('Overlap other and deprecated')
+        exit(1)
+    if option in options_undocumented:
+        error('Overlap other and undocumented')
+        exit(1)
+for option in options_deprecated:
+    if option in options_undocumented:
+        error('Overlap deprecated and undocumented')
         exit(1)
 
 def get_details(packs, pack):
@@ -416,7 +489,6 @@ output.write('Note that the package `hunspell-fr` is a dependency package and is
 
 
 options_found = []
-options_undocumented = []
 option_count = {}  # option / count
 
 doc = {}  # dictionary @ package / option / count
@@ -501,7 +573,7 @@ for pack in sorted(packs):
                 elif option in options_deprecated:
                     if dikt not in dikt_has_deprecated:
                         dikt_has_deprecated.append(dikt)
-                else:
+                elif option in options_undocumented:
                     if dikt not in dikt_has_undocumented:
                         dikt_has_undocumented.append(dikt)
                     if option not in options_undocumented:
