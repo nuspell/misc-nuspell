@@ -17,7 +17,7 @@ do
         then
 #            echo '  wordlist: '$wordlist
             cd debs
-            apt-get download $wordlist
+            apt-get download $wordlist wgerman-medical
             cd ..
         fi
     done

@@ -154,12 +154,12 @@ def report(output, desc, dikt_has, options, doc, option_count):
 
 # followings list are manually obtained from $ man -K 5 hunspell
 options_general = ('SET',
-                   'FLAG', #where in affix file?
+                   'FLAG',
                    'COMPLEXPREFIXES',
                    'LANG',
                    'IGNORE',
-                   'AF', #where in affix file?
-                   'AM', ) #where in affix file?
+                   'AF',
+                   'AM', )
 options_suggest = ('KEY',
                    'TRY',
                    'NOSUGGEST',
@@ -170,7 +170,7 @@ options_suggest = ('KEY',
                    'NOSPLITSUGS',
                    'SUGSWITHDOTS',
                    'REP',
-                   'MAP', # where in affix file?
+                   'MAP',
                    'PHONE',
                    'WARN',
                    'FORBIDWARN', )
@@ -195,7 +195,7 @@ options_compounding = ('BREAK',
                        'CHECKCOMPOUNDPATTERN',
                        'FORCEUCASE',
                        'COMPOUNDSYLLABLE',
-                       'SYLLABLENUM', )  # 'COMPOUND',
+                       'SYLLABLENUM', )
 options_affix = ('PFX',
                  'SFX', )
 options_other = ('CIRCUMFIX',

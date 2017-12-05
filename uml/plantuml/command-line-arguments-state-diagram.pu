@@ -4,7 +4,7 @@ title Hunspell - Command-line Arguments
 
 [*] --> DEFAULT_MODE
 
-DEFAULT_MODE --> DEFAULT_MODE : -d with operand
+DEFAULT_MODE --> DEFAULT_MODE : -d with operand\l-i with operand\l-r
 DEFAULT_MODE --> [*]
 
 DEFAULT_MODE --> PIPE_MODE : -a
@@ -35,7 +35,7 @@ HELP_MODE --> [*]
 DEFAULT_MODE --> VERSION_MODE : -v\l--version
 VERSION_MODE --> [*]
 
-DEFAULT_MODE --> ERROR_MODE : -d without operand,\lany unregonized operand,\lout-of-scope -1 -H -O -P -t -X
+DEFAULT_MODE --> ERROR_MODE : -d without operand,\l-i without operand,\lany unregonized operand,\lout-of-scope -1 -H -O -P -t -X
 ERROR_MODE --> [*]
 ERROR_MODE : returns exit code of 1
 

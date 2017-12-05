@@ -41,3 +41,4 @@ diagrams State
 diagrams Activity
 diagrams Object
 diagrams Class
+diagrams Sequence
