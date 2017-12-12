@@ -3,16 +3,19 @@
 title Hunspell - Clean Word (cleanword2)
 
 start
-:skip leading spaces ' ';
-:strip trailing persiods '.';
-:set abbrev;
-if (nothing left?) then (yes)
-	:set captype to NOCAP;
-	:return 0;
+:create destination string from source string;
+:skip all leading spaces ' ' from destination string;
+:strip all trailing persiods '.' from destination string;
+:set abbreviation to number of removed trailing periods;
+if (destination string is empty?) then (yes)
+	:set captitalization type to no capitalizition;
+	:return:\n- destination string length of 0\n- destination string\n- capitalisation type\n- abbreviation;
+	stop
 else (no)
 endif
-:set captype;
-:return word length after cleaning;
+note left: When 'yes', this is\nonly an optimisation.\nFunctionally, nothing is\ndifferent compared\nto main flow.
+:set capitalization type for destination string;
+:return:\n- destination string length\n- destination string\n- capitalisation type\n- abbreviation;
 stop
 
 @enduml

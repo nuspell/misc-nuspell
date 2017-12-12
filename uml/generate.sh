@@ -20,7 +20,9 @@ function diagrams() {
 		for i in plantuml/*-$type-diagram.pu; do
 			svg=$type-diagrams/`basename $i pu`svg
 			if [ $i -nt $svg ]; then
+				echo 'Processing '$i'...'
 				plantuml -tsvg -o ../$type-diagrams $i
+#				plantuml -tpng -o ../$type-diagrams $i
 			fi
 		done 
 		echo '* [Hunspell - UML '$1' Diagrams]('$type'-diagrams/README.md)' >> README.md
