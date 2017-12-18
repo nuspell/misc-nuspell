@@ -1,0 +1,126 @@
+diagram {
+	title = "Nuspell"
+
+	io file_dic {
+		title = "Dictionary file"
+	}
+
+boundary dic_data {
+	title = "dic_data"
+
+	function read_number {
+		title = "Read number"
+	}
+
+	function read_line {
+		title = "Read line"
+	}
+
+	function parse_line_slash {
+		title = "Parse line with slash"
+	}
+
+	function parse_line_tab {
+		title = "Parse line with tab"
+	}
+
+	function parse_line_colon {
+		title = "Parse line with aa:"
+	}
+
+	function parse_line_simple {
+		title = "Parse simple line"
+	}
+
+	function collect {
+		title = `Collect
+		         (word, flags, morph fields)`
+	}
+
+	function check_capitalization {
+		title = "Check capitalization"
+	}
+
+	database set {
+		title = "Word set D"
+	}
+
+	database flags {
+		title = "Word, Flag relation D,F"
+	}
+
+	database morph {
+		title = "Word, Morph field relation D,M"
+	}
+}
+
+	file_dic -> read_number {
+		operation = "read"
+		data = "first line"
+	}
+
+	file_dic -> read_line {
+		operation = "read"
+		data = "line"
+	}
+
+	read_line -> read_line {
+		operation = "read"
+		data = "line"
+	}
+
+	read_line -> parse_line_slash  {
+		operation = "IF has unescaped slash: parse"
+		data = "line"
+
+	}
+	read_line -> parse_line_tab  {
+		operation = "IF has tab: parse"
+		data = "line"
+	}
+	read_line -> parse_line_colon {
+		operation = "IF has char, char, colon: parse"
+		data = "line"
+	}
+
+	read_line -> parse_line_simple {
+		operation = "ELSE: parse"
+		data = "line"
+	}
+
+	parse_line_slash -> collect  {
+		operation = "collect"
+		data = "(word, flags, morph fields)"
+	}
+
+	parse_line_tab -> collect  {
+		operation = "collect"
+		data = "(word, morph fields)"
+	}
+	parse_line_colon -> collect {
+		operation = "collect"
+		data = "(word, morph fields)"
+	}
+	parse_line_simple -> collect {
+		operation = "collect"
+		data = "word"
+	}
+	collect -> set {
+		operation = "store"
+		data = "word"
+	}
+	collect -> flags {
+		operation = "store"
+		data = "word × flags"
+	}
+	collect -> morph {
+		operation = "store"
+		data = "word × morph fields"
+	}
+
+	collect -> check_capitalization {
+		title = "check capitalization"
+		data = "word"
+	}
+
+}
