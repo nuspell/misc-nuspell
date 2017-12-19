@@ -10,9 +10,9 @@ if (cleaned word is in\n- lower case or\n- lower camel case or\n- upper camel ca
 		:add SPELL_ORIGCAP to info;
 	else (no)
 	endif
-	:set root value to result \ncheck_word(cleaned word, info, root);
+	:set root value to result of\ncheck_word(cleaned word, info, root);
 	if (abbr. count > 0 and no root value exists) then (yes)
-		:set root value to result\ncheck_word(cleaned word with period '.' added at end, info, root);
+		:set root value to result of\ncheck_word(cleaned word with period '.' added at end, info, root);
 	else (no)
 	endif
 else (no)

@@ -18,14 +18,14 @@ partition "input conversion" {
 		:get input conversion list from affix manager;
 		if (input conversion list exists) then (yes)
 			:perform input conversion on word;
-			if (input conversion changes word) then (yes)
-				:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
-			else (no)
-				:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
-			endif
 		else (no)
 		endif
 	else (no)
+	endif
+	if (input conversion has changed word) then (yes)
+		:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
+	else (no)
+		:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
 	endif
 
 	if (client is Mozilla) then (yes)
@@ -53,7 +53,7 @@ partition "number state" {
 }
 
 partition "check word" {
-	:set root value to output check_word\naccording depending on cleaned word case;
+	:set root value to result of check_word\naccording depending on cleaned word case;
 	note left: see other activity diagrams
 }
 
