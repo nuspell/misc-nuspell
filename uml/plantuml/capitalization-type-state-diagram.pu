@@ -1,4 +1,5 @@
 @startuml
+skinparam backgroundcolor White|White
 
 title Hunspell - Capitalization Type (captype)
 

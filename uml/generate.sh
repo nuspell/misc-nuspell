@@ -22,7 +22,7 @@ function diagrams() {
 			if [ $i -nt $svg ]; then
 				echo 'Processing '$i'...'
 				plantuml -tsvg -o ../$type-diagrams $i
-#				plantuml -tpng -o ../$type-diagrams $i
+				plantuml -tpng -o ../$type-diagrams $i
 			fi
 		done 
 		echo '* [Hunspell - UML '$1' Diagrams]('$type'-diagrams/README.md)' >> README.md

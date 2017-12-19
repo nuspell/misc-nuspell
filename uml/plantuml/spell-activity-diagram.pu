@@ -1,48 +1,50 @@
 @startuml
+skinparam backgroundcolor White|White
 
 title Hunspell - Spell (spell)
 
 start
 
-if (size of word >= MAXWORDLEN?) then (yes)
-	:return FALSE;
-	stop
-else (no)
-endif
+partition "limitation" {
+	if (length of word >= maximum word length) then (yes)
+		:return FALSE;
+		stop
+	else (no)
+	endif
+}
 
 partition "input conversion" {
-	if (affix manager?) then (yes)
-		:get iconv table from affix manager
-	else (no)
-	endif
-	if (rep. list exists?) then (yes)
-		:get conversion status for word and update whitespace;
-	else (no)
-		:set converstion status to FALSE;
-	endif
-	if (conversion status?) then (yes)
-		:get word length, captype from cleanword2 for whitespace\nTODO needs work;
-		note left: word length can become 0\nafter cleaning
-	else (no)
-		:get word length, captype from cleanword2 for word\nTODO needs work;
-	endif
-
-	if (MOZILLA_CLIENT?) then (yes)
-		:set abbv to 1;
+	if (affix manager exists) then (yes)
+		:get input conversion list from affix manager;
+		if (input conversion list exists) then (yes)
+			:perform input conversion on word;
+			if (input conversion changes word) then (yes)
+				:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
+			else (no)
+				:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
+			endif
+		else (no)
+		endif
 	else (no)
 	endif
 
-	if (word length == 0 or hash manager is empty?) then (yes)
+	if (client is Mozilla) then (yes)
+		:set abbr. count to 1;
+	else (no)
+	endif
+
+	if (cleaned word length is 0 or hash manager is empty) then (yes)
 		:return TRUE;
 		stop
 	else (no)
 	endif
-	:clear root;
+	:empty root;
+	note left: can this move\nup to initialization?
 }
 
 partition "number state" {
-	:set nstate;
-	if (nstate is NNUM?) then (yes)
+	:determine number state;
+	if (number state is NNUM) then (yes)
 		:return TRUE;
 		note left: word consists\nof only numbers
 		stop
@@ -51,23 +53,23 @@ partition "number state" {
 }
 
 partition "check word" {
-	if (captype == HUHCAP?) then (yes)
-		:b;
-	elseif (captype == HUHINITCAP?) then (yes)
-		:info += SPELL_ORIGCAP (TODO);
-	elseif (captype == NOCAP?) then (yes)
-		:checkword;
-	elseif (captype == ALLCAP?) then (yes)
-		:info += SPELL_ORIGCAP (TODO);
-	else (no)
-	endif
+	:set root value to output check_word\naccording depending on cleaned word case;
+	note left: see other activity diagrams
 }
 
+partition "forbidden words" {
+	:TODO deal with forbidden words;
+}
 
+partition "spell" {
+	:return result recursive call to this spell algorithm depending on break patterns;
+	note left: see other activity diagram
+}
 
+partition "default" {
+	:return FALSE;
+}
 
-
-:return FALSE;
 stop
 
 @enduml
