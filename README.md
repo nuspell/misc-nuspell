@@ -20,7 +20,7 @@ Tools for generating the docs:
 2.  Project management tool: [RationalPlan
     Single](https://www.rationalplan.com/on-premise/#single)
       - Install by double clicking the .deb with Ubuntu software center
-      - https://wiki.mozilla.org/MOSS\#Applicant.2FAwardee\_Resources
+      - <https://wiki.mozilla.org/MOSS#Applicant.2FAwardee_Resources>
       - start `rationalplan-single &` and open
         `misc-hunspell/hunspell2-ratpln.srp`
       - remove lock file and other user preferences `rm -rf
