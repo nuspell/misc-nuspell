@@ -1,0 +1,51 @@
+Internal Specs
+==============
+:stem:
+
+Basic definitions
+-----------------
+
+The following page should document the internal workings of Hunspell
+using plain English, mathematical notation and pseudocode. Let's start.
+
+Let:
+
+* stem:[Σ] be the alphabet of the language.
+* Word (string) be a finite sequence, stem:[w:\[1..n\]→Σ]
+* stem:[Σ^**] be the set of all possible words.
+* stem:[L] be the natural language at morphological level. stem:[L] is a set of
+all the words of the natural language, stem:[L ⊆ Σ^**].
+* stem:[D] be dictionary, i.e. the natural language at lexicographical level.
+stem:[D] contains only base words, lexemes. stem:[D ⊆ L]. stem:[D] corresponds
+to the .dic file.
+* stem:[F] be the flag alphabet, the set of all flags.
+* stem:[M] be the set of all morphological fields.
+* stem:[Flags_(rel)(D, M)] be a binary (many-to-many) relation between words and
+flags. stem:[Flags_(rel) ⊆ D×M]
+** stem:[Flags:D→℘(F)] be a function that maps a word to a flag set.
+stem:[Flags(x) = {f | (x,f) ∈ Flags_(rel)}]
+
+In C++ we usually talk about types or classes and objects. IN pseudocode
+we can say that a type a set of all objects. Conversely a object is a
+value of the set that represents the type. A finite set of objects is a
+subset of the type. Finite set of objects is usually implemented as
+hash-map. E.g. the dictionary D is a finite set of strings.
+
+Let:
+
+* stem:[Bo ol = {0, 1}]
+* stem:[IsUpper:Σ→Bo ol]. Similarly, we define functions like stem:[IsLower,
+IsAlpha], etc.
+* stem:[ToUpper:Σ→Σ. ToLower:Σ→Σ. ToUpperWord:Σ^**→Σ^**.]
+
+In C\++ we use strings, vectors and arrays. In mathematical notation, all
+those are finite sequences. C++ structures can be noted as tuples.
+Basically our pseudocode should use only sets, maps/functions, tuples
+and finite sequences. Additionally, we will use ← as assignment and we
+will use control structures if, for and while.
+
+Error detection
+---------------
+
+The first task of the spellchecker is to detect if a given word w is
+part of the morphological language L or not.
