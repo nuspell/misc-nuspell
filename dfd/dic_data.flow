@@ -9,48 +9,51 @@ boundary dic_data {
 	title = "dic_data"
 
 	function read_number {
-		title = "Read number"
+		title = `Read
+		         number`
 	}
 
 	function read_line {
-		title = "Read line"
+		title = `Read
+		         line`
 	}
 
 	function parse_line_slash {
-		title = "Parse line with slash"
+		title = `Parse line
+                 with slash`
 	}
 
 	function parse_line_tab {
-		title = "Parse line with tab"
+		title = `Parse line
+		         with tab`
 	}
 
 	function parse_line_colon {
-		title = "Parse line with aa:"
+		title = `Parse line
+		         with aa:`
 	}
 
 	function parse_line_simple {
-		title = "Parse simple line"
+		title = `Parse simple
+		         line`
 	}
 
 	function collect {
 		title = `Collect
-		         (word, flags, morph fields)`
+		         (word, flags,
+		          morph fields)`
 	}
 
-	function make_initcap {
-		title = "Make init capital"
-	}
 
-	function add_hidden_homonym_flag {
-		title = "Add hidden homonym flag"
-	}
 
 	function store_overwrite {
-		title = "Store with overwrite"
+		title = `Store with
+		         overwrite`
 	}
 
 	function store_merge {
-		title = "Store wth merge"
+		title = `Store with
+		         merge`
 	}
 
 	database set {
@@ -64,10 +67,25 @@ boundary dic_data {
 	database morph {
 		title = "Word, Morph field relation D,M"
 	}
+}
+
+boundary add_hidden_homonym {
+    title = "Add hidden homonym"
+
+	function make_initcap {
+		title = `Make init
+		         capital`
+	}
+
+	function add_hidden_homonym_flag {
+		title = `Add hidden
+		         homonym flag`
+	}
 
 	function collect2 {
         title = "Collect 2"
 	}
+
 }
 
 	file_dic -> read_number {
