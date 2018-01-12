@@ -1,5 +1,8 @@
 # DFD
 
-## spell.dfd.svg
+## dic_data.svg
 
-![spell.dfd.svg](spell.dfd.svg)
+![dic_data.svg](dic_data.svg)
+## spell.svg
+
+![spell.svg](spell.svg)

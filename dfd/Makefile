@@ -1,5 +1,5 @@
 SOURCES=$(wildcard *.flow)
-DFD_TARGETS=$(SOURCES:%.flow=%.dfd.svg)
+DFD_TARGETS=$(SOURCES:%.flow=%.svg)
 
 DATAFLOW=~/.cabal/bin/dataflow
 K := $(if $(shell which $(DATAFLOW)),,$(error "No dataflow installed. See https://github.com/sonyxperiadev/dataflow for install instructions)))"))
@@ -10,7 +10,7 @@ all: dfd README.md
 
 dfd: $(DFD_TARGETS)
 
-%.dfd.svg: %.flow
+%.svg: %.flow
 	@$(DATAFLOW) dfd $< | dot -Tsvg > $@
 
 .ONESHELL:

@@ -1,189 +1,83 @@
 diagram {
-	title = "Nuspell"
+	title = "function spell"
 
-	io file_dic {
-		title = "Dictionary file"
+	io user {
+		title = "User"
 	}
 
-boundary dic_data {
-	title = "dic_data"
-
-	function read_number {
-		title = "Read number"
+	database iconv_table {
+		title = "ICONV table"
 	}
 
-	function read_line {
-		title = "Read line"
+boundary spell {
+	title = "spell(word)"
+
+	function call_spell {
+		title = "Begin spell()"
 	}
 
-	function parse_line_slash {
-		title = "Parse line with slash"
+	function substring_substitute {
+		title = "Substring substitute"
 	}
 
-	function parse_line_tab {
-		title = "Parse line with tab"
+	function trim_trailing_periods {
+		title = "Trim trailing periods"
 	}
 
-	function parse_line_colon {
-		title = "Parse line with aa:"
+	function count_trailing_periods {
+		title = "Count trailing periods"
 	}
 
-	function parse_line_simple {
-		title = "Parse simple line"
+	function trim_leading_space {
+		title = "Trim leading space"
 	}
 
-	function collect {
-		title = `Collect
-		         (word, flags, morph fields)`
+	function classify_capitalization {
+		title = "Classify capitalization"
 	}
 
-	function make_initcap {
-		title = "Make init capital"
+	database abbreviation {
+		title = "Is abbreviation"
 	}
 
-	function add_hidden_homonym_flag {
-		title = "Add hidden homonym flag"
-	}
-
-	function store_overwrite {
-		title = "Store with overwrite"
-	}
-
-	function store_merge {
-		title = "Store wth merge"
-	}
-
-	database set {
-		title = "Word set D"
-	}
-
-	database flags {
-		title = "Word, Flag relation D,F"
-	}
-
-	database morph {
-		title = "Word, Morph field relation D,M"
-	}
-
-	function collect2 {
-        title = "Collect 2"
-	}
 }
-
-	file_dic -> read_number {
-		operation = "read"
-		data = "first line"
+	user -> call_spell {
+        	operation = "call spell"
+        	data = "word"
 	}
 
-	file_dic -> read_line {
-		operation = "read"
-		data = "line"
+	call_spell -> substring_substitute {
+		operation = "substitute"
+        	data = "word"
 	}
 
-	read_line -> read_line {
-		operation = "read"
-		data = "line"
+	iconv_table -> substring_substitute {
+		operation = "substitute"
+		data = "(from, to) substitutions"
 	}
 
-	read_line -> parse_line_slash  {
-		operation = "IF has unescaped slash: parse"
-		data = "line"
-
-	}
-	read_line -> parse_line_tab  {
-		operation = "IF has tab: parse"
-		data = "line"
-	}
-	read_line -> parse_line_colon {
-		operation = "IF has char, char, colon: parse"
-		data = "line"
-	}
-
-	read_line -> parse_line_simple {
-		operation = "ELSE: parse"
-		data = "line"
-	}
-
-	parse_line_slash -> collect  {
-		operation = "collect"
-		data = "(word, flags, morph fields)"
-	}
-
-	parse_line_tab -> collect  {
-		operation = "collect"
-		data = "(word, morph fields)"
-	}
-	parse_line_colon -> collect {
-		operation = "collect"
-		data = "(word, morph fields)"
-	}
-	parse_line_simple -> collect {
-		operation = "collect"
+	substring_substitute -> trim_trailing_periods {
+		operation = "trim"
 		data = "word"
 	}
 
-	collect -> store_merge {
-        operation = `IF (word exists AND is NOT hidden homonym)
-                        or word NOT exist: store`
-        data = "(word, flags, morph fields)"
-	}
-
-	store_merge -> set {
-		operation = "store"
+	substring_substitute -> count_trailing_periods {
+		operation = "trim"
 		data = "word"
 	}
-	store_merge -> flags {
+
+	count_trailing_periods -> abbreviation {
 		operation = "store"
-		data = "word × flags"
-	}
-	store_merge -> morph {
-		operation = "store"
-		data = "word × morph fields"
+		data = "true if count &gt; 0"
 	}
 
-	collect -> store_overwrite {
-        operation = `IF (word exists AND is hidden homonym):
-                     store`
-        data = "(word, flags, morph fields)"
-	}
-
-	store_overwrite -> set {
-		operation = "store"
+	trim_trailing_periods -> trim_leading_space {
+		operation = "trim"
 		data = "word"
 	}
-	store_overwrite -> flags {
-		operation = "store"
-		data = "word × flags"
-	}
-	store_overwrite -> morph {
-		operation = "store"
-		data = "word × morph fields"
-	}
 
-	collect -> make_initcap {
-		operation = "make initcap"
+	trim_leading_space -> classify_capitalization {
+		operation = "classify"
 		data = "word"
 	}
-	collect -> add_hidden_homonym_flag {
-        operation = "add flag"
-        data = "flags"
-	}
-
-    make_initcap -> collect2 {
-        operation = "collect"
-        data = "homonym initcap word"
-    }
-
-    add_hidden_homonym_flag -> collect2 {
-        operation = "collect"
-        data = "flags + homonym initcap flag"
-    }
-
-    collect2 -> store_merge {
-        operation = `IF (NOT exist homonym) OR
-                        found word is also hidden homonym:
-                    store`
-        data = "(homonym initcap word, flags + homonym initcap flag)"
-    }
-
 }
