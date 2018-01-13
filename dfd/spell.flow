@@ -17,29 +17,71 @@ boundary spell {
 	}
 
 	function substring_substitute {
-		title = "Substring substitute"
+		title = `Substring
+		         substitute`
 	}
 
 	function trim_trailing_periods {
-		title = "Trim trailing periods"
+		title = `Trim trailing
+		         periods`
 	}
 
 	function count_trailing_periods {
-		title = "Count trailing periods"
+		title = `Count trailing
+		         periods`
 	}
 
 	function trim_leading_space {
-		title = "Trim leading space"
+		title = `Trim leading
+		         space`
 	}
 
 	function classify_capitalization {
-		title = "Classify capitalization"
+		title = `Classify
+		         capitalization`
 	}
 
 	database abbreviation {
-		title = "Is abbreviation"
+		title = `Is
+		         abbreviation`
 	}
 
+	function camel_case {
+        title = `camel
+                 Case`
+	}
+
+	function pascal_case {
+        title = `Pascal
+                 Case`
+	}
+
+	function lower_case {
+        title = `lower
+                 case`
+	}
+
+	function title_case {
+        title = `Title
+                 case`
+	}
+
+	function upper_case {
+        title = `UPPER
+                 CASE`
+	}
+
+	function checkword_abc {
+        title = "checkword(abc)"
+	}
+
+	function checkword_abc_dot {
+        title = "checkword(abc.)"
+	}
+
+	database info {
+        title = "Info"
+	}
 }
 	user -> call_spell {
         	operation = "call spell"
@@ -79,5 +121,56 @@ boundary spell {
 	trim_leading_space -> classify_capitalization {
 		operation = "classify"
 		data = "word"
+	}
+
+	classify_capitalization -> camel_case {
+        operation = "case camelCase"
+        data = "word"
+	}
+
+	classify_capitalization -> pascal_case {
+        operation = "case PascalCase"
+        data = "word"
+	}
+
+	classify_capitalization -> lower_case {
+        operation = "case lowercase"
+        data = "word"
+	}
+
+	classify_capitalization -> upper_case {
+        operation = "case UPPERCASE"
+        data = "word"
+	}
+
+	classify_capitalization -> title_case {
+        operation = "case Title case"
+        data = "word"
+	}
+
+	camel_case -> lower_case {
+        operation = ""
+        data = "word"
+	}
+
+	pascal_case -> info {
+        operation = "set bit"
+        data = "SPELL_ORIGCAP"
+	}
+
+	pascal_case -> lower_case {
+	    operation = ""
+        data = "word"
+	}
+
+	lower_case -> checkword_abc {
+	    operation = "check 1"
+        data = "word"
+	}
+
+	lower_case -> checkword_abc_dot {
+	    operation = `IF(check 1 failed
+	                    AND IS abbrev): check 2`
+        data = "word with dot"
 	}
 }
