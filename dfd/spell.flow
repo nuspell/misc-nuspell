@@ -148,7 +148,7 @@ boundary spell {
         data = "word"
 	}
 
-	camel_case -> lower_case {
+	camel_case -> pascal_case {
         operation = ""
         data = "word"
 	}
