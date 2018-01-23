@@ -1,5 +1,5 @@
 diagram {
-	title = "function spell"
+	title = "function spell(word)"
 
 	io user {
 		title = "User"
@@ -9,8 +9,8 @@ diagram {
 		title = "ICONV table"
 	}
 
-boundary spell {
-	title = "spell(word)"
+boundary prepare {
+	title = "prepare"
 
 	function call_spell {
 		title = "Begin spell()"
@@ -36,53 +36,130 @@ boundary spell {
 		         space`
 	}
 
-	function classify_capitalization {
+	function classify_casing {
 		title = `Classify
-		         capitalization`
+		         casing`
 	}
 
 	database abbreviation {
 		title = `Is
 		         abbreviation`
 	}
-
+}
+boundary checkword1 {
+	title = "No case converson"
 	function camel_case {
-        title = `camel
-                 Case`
+		title = `camel
+		         Case`
 	}
 
 	function pascal_case {
-        title = `Pascal
-                 Case`
+		title = `Pascal
+		         Case`
 	}
 
 	function lower_case {
-        title = `lower
-                 case`
+		title = `lower
+		         case`
+	}
+	
+	function check_abc {
+        	title = "check abc"
 	}
 
-	function title_case {
-        title = `Title
-                 case`
-	}
-
-	function upper_case {
-        title = `UPPER
-                 CASE`
-	}
-
-	function checkword_abc {
-        title = "checkword(abc)"
-	}
-
-	function checkword_abc_dot {
-        title = "checkword(abc.)"
-	}
-
-	database info {
-        title = "Info"
+	function check_abc_dot {
+        	title = "check abc."
 	}
 }
+
+	database info1 {
+	        title = "Info1"
+	}
+	
+boundary checkword2 {
+	title = "UPPERCASE"
+	function upper_case {
+		title = `UPPER
+		         CASE`
+	}
+	
+	database info2 {
+		title = "Info2"
+	}
+	
+	function check_ABC {
+		title = "check ABC"
+	}
+	
+	function check_ABC_dot {
+		title = "check ABC."
+	}
+	
+	function check_abc_ap_Xyz {
+		title = "check abc'Xyz"
+	}
+	
+	function check_Abc_ap_Xyz {
+		title = "check Abc'Xyz"
+	}
+	
+	function spellsharps_abc {
+		title = `spellsharps
+		         abcssabcss`
+	}
+
+	function spellsharps_Abc {
+		title = `spellsharps
+		         Abcssabcss`
+	}
+	function spellsharps_abc_dot {
+		title = `spellsharps
+		         Abcssabcss.`
+	}
+	function spellsharps_Abc_dot {
+		title = `spellsharps
+		         Abcssabcss.`
+	}
+	
+	function make_initcap {
+		title = `Initcap lang
+		         sensitive
+		         (dotted i)`
+	}
+	
+	function check_Abc_ALLCAP {
+		title = "check Abc"
+	}
+	
+	function check_abc_ALLCAP {
+		title = "check abc"
+	}
+	
+	function check_abc_dot_ALLCAP {
+		title = "check abc."
+	}
+	
+	function check_Abc_dot_ALLCAP {
+		title = "check Abc."
+	}
+	
+	function keepcase1 {
+		title = `If KEEPCASE
+		         reject`
+	}
+}
+boundary checkword3 {
+	title = "Initcap"
+	function title_case {
+		title = `Title
+		         case`
+	}
+}
+	
+	function end_check {
+		title = "end checks"
+	}
+	
 	user -> call_spell {
         	operation = "call spell"
         	data = "word"
@@ -118,59 +195,213 @@ boundary spell {
 		data = "word"
 	}
 
-	trim_leading_space -> classify_capitalization {
+	trim_leading_space -> classify_casing {
 		operation = "classify"
 		data = "word"
 	}
 
-	classify_capitalization -> camel_case {
-        operation = "case camelCase"
-        data = "word"
+	classify_casing -> camel_case {
+		operation = "case camelCase"
+		data = "word"
 	}
 
-	classify_capitalization -> pascal_case {
-        operation = "case PascalCase"
-        data = "word"
+	classify_casing -> pascal_case {
+		operation = "case PascalCase"
+		data = "word"
 	}
 
-	classify_capitalization -> lower_case {
-        operation = "case lowercase"
-        data = "word"
+	classify_casing -> lower_case {
+		operation = "case lowercase"
+		data = "word"
 	}
 
-	classify_capitalization -> upper_case {
-        operation = "case UPPERCASE"
-        data = "word"
+	classify_casing -> upper_case {
+		operation = "case UPPERCASE"
+		data = "word"
 	}
 
-	classify_capitalization -> title_case {
-        operation = "case Title case"
-        data = "word"
+	classify_casing -> title_case {
+		operation = "case Title case"
+		data = "word"
 	}
 
 	camel_case -> pascal_case {
-        operation = ""
-        data = "word"
+		operation = ""
+		data = "word"
 	}
 
-	pascal_case -> info {
-        operation = "set bit"
-        data = "SPELL_ORIGCAP"
+	pascal_case -> info1 {
+		operation = "set bit"
+		data = "SPELL_ORIGCAP"
 	}
 
 	pascal_case -> lower_case {
-	    operation = ""
-        data = "word"
+		operation = ""
+		data = "word"
 	}
 
-	lower_case -> checkword_abc {
-	    operation = "check 1"
-        data = "word"
+	lower_case -> check_abc {
+		operation = "check 1"
+		data = "word"
+	}
+	
+	check_abc -> end_check {
+		operation = "break on success"
+		data = "word/flag entry"
 	}
 
-	lower_case -> checkword_abc_dot {
-	    operation = `IF(check 1 failed
-	                    AND IS abbrev): check 2`
-        data = "word with dot"
+	lower_case -> check_abc_dot {
+		operation = `IF(check 1 failed
+		                AND IS abbrev): check 2`
+        	data = "word."
+	}
+	
+	check_abc_dot -> end_check {
+		operation = "break on success"
+		data = "word/flag entry"
+	}
+	
+	upper_case -> info2 {
+		operation = "set"
+		data = "SPELL_ORIGCAP"
+	}
+	
+	upper_case -> check_ABC {
+		operation = `IF check 2 failed:
+		             check 3`
+		data = "WORD"
+	}
+	
+	check_ABC -> end_check {
+		operation = "break on success"
+		data = "word/flag entry"
+	}
+
+	upper_case -> check_ABC_dot {
+		operation = `IF check 3 failed:
+		             check 4`
+		data = "WORD."
+	}
+	
+	check_ABC_dot -> end_check {
+		operation = "break on success"
+		data = "word/flag entry"
+	}
+	
+	upper_case -> check_abc_ap_Xyz {
+		operation = `IF check 4 failed
+		             AND word has ':
+		             check 5`
+		data = "word'Word"
+	}
+	
+	check_abc_ap_Xyz -> end_check {
+		operation = "break on success"
+		data = "word/flag entry"
+	}
+	
+	upper_case -> check_Abc_ap_Xyz {
+		operation = `IF check 5 failed
+		             AND word has ':
+		             check 6`
+		data = "Word'Word"
+	}
+	
+	upper_case -> spellsharps_abc {
+		operation = `IF check 6 failed
+		             AND word has SS
+		             AND CHECKSHARPS:
+		             spellsharps 1`
+		data = "wordssw"
+	
+	}
+	upper_case -> spellsharps_Abc {
+		operation = `IF sharps 1 failed
+		             AND word has SS
+		             AND CHECKSHARPS:
+		             spellsharps 2`
+		data = "Wordssw"
+	
+	}
+	upper_case -> spellsharps_abc_dot {
+		operation = `IF sharps 2 failed
+		             AND word has SS
+		             AND CHECKSHARPS:
+		             spellsharps 3`
+		data = "wordssw."
+	
+	}
+	upper_case -> spellsharps_Abc_dot {
+		operation = `IF sharps 3 failed
+		             AND word has SS
+		             AND CHECKSHARPS:
+		             spellsharps 4`
+		data = "Wordssw."
+	}
+	
+	upper_case -> make_initcap {
+		operation = `initcap`
+		data = "word"
+	}
+	
+	make_initcap -> check_Abc_ALLCAP {
+		operation = `IF sharp 4 failed:
+		             check 7`
+		data = "Word"
+	}
+	
+	check_Abc_ALLCAP -> end_check {
+		operation = `IF (FORBIDDENWORD flag present):
+		             break, skip next checks`
+		data = "null"
+	}
+	
+	make_initcap -> check_abc_ALLCAP {
+		operation = `IF check 7 failed:
+		             check 8`
+		data = "word"
+	}
+	
+	make_initcap -> check_abc_dot_ALLCAP {
+		operation = `IF check 8 failed:
+		             check 9`
+		data = "word."
+	}
+	
+	make_initcap -> check_Abc_dot_ALLCAP {
+		operation = `IF check 9 failed:
+		             check 10`
+		data = "Word."
+	}
+	
+	check_Abc_ALLCAP -> keepcase1 {
+		operation = `is KEEPCASE
+		             present`
+		data = "word/flags"
+	}
+	check_abc_ALLCAP -> keepcase1 {
+		operation = `is KEEPCASE
+		             present`
+		data = "word/flags"
+	}
+	check_abc_dot_ALLCAP -> keepcase1 {
+		operation = `is KEEPCASE
+		             present`
+		data = "word/flags"
+	}
+	check_Abc_dot_ALLCAP -> keepcase1 {
+		operation = `is KEEPCASE
+		             present`
+		data = "word/flags"
+	}
+	
+	keepcase1 -> end_check {
+		operation = `IF KEEPCASE present:`
+		data = "none"
+	}
+	
+	keepcase1 -> end_check {
+		operation = `IF KEEPCASE NOT present:`
+		data = "null"
 	}
 }
