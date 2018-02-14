@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2018-02-12T16:10:45.849157463</dc:date><dc:creator>Dimitrij Mijoski</dc:creator><meta:editing-duration>PT2M16S</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="15" meta:paragraph-count="983" meta:word-count="5658" meta:character-count="35972" meta:non-whitespace-character-count="25655"/><meta:generator>LibreOffice/5.4.2.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator></office:meta>
+ <office:meta><dc:date>2018-02-14T11:00:23.571379268</dc:date><meta:editing-duration>PT18M16S</meta:editing-duration><meta:editing-cycles>2</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="16" meta:paragraph-count="983" meta:word-count="5658" meta:character-count="35972" meta:non-whitespace-character-count="25655"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">90</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22756</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">20084</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">49108</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23285</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">3298</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">8207</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">24966</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">140279</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">90</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22754</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">20172</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">49107</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">23283</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -91,7 +91,7 @@
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">1317001</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">1473057</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
    <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
@@ -117,7 +117,9 @@
  </office:settings>
  <office:scripts>
   <office:script script:language="ooo:Basic">
-   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
   </office:script>
  </office:scripts>
  <office:font-face-decls>
@@ -131,15 +133,15 @@
  </office:font-face-decls>
  <office:styles>
   <style:default-style style:family="graphic">
-   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:flow-with-text="false"/>
+   <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.1181in" draw:shadow-offset-y="0.1181in" draw:start-line-spacing-horizontal="0.1114in" draw:start-line-spacing-vertical="0.1114in" draw:end-line-spacing-horizontal="0.1114in" draw:end-line-spacing-vertical="0.1114in" style:flow-with-text="false"/>
    <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="zxx" fo:country="none" style:letter-kerning="true" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none"/>
   </style:default-style>
   <style:default-style style:family="paragraph">
-   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="1.251cm" style:writing-mode="page"/>
-   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="zxx" fo:country="none" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
+   <style:paragraph-properties fo:hyphenation-ladder-count="no-limit" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:tab-stop-distance="0.4925in" style:writing-mode="page"/>
+   <style:text-properties style:use-window-font-color="true" style:font-name="Liberation Serif" fo:font-size="12pt" fo:language="zxx" fo:country="none" style:letter-kerning="true" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" fo:hyphenate="false" fo:hyphenation-remain-char-count="2" fo:hyphenation-push-char-count="2"/>
   </style:default-style>
   <style:default-style style:family="table">
    <style:table-properties table:border-model="collapsing"/>
@@ -149,17 +151,17 @@
   </style:default-style>
   <style:style style:name="Standard" style:family="paragraph" style:class="text"/>
   <style:style style:name="Heading" style:family="paragraph" style:parent-style-name="Standard" style:next-style-name="Text_20_body" style:class="text">
-   <style:paragraph-properties fo:margin-top="0.423cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" fo:keep-with-next="always"/>
+   <style:paragraph-properties fo:margin-top="0.1665in" fo:margin-bottom="0.0835in" loext:contextual-spacing="false" fo:keep-with-next="always"/>
    <style:text-properties style:font-name="Liberation Sans" fo:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable" fo:font-size="14pt" style:font-name-asian="Noto Sans CJK SC Regular" style:font-family-asian="&apos;Noto Sans CJK SC Regular&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-size-asian="14pt" style:font-name-complex="Lohit Devanagari" style:font-family-complex="&apos;Lohit Devanagari&apos;" style:font-family-generic-complex="system" style:font-pitch-complex="variable" style:font-size-complex="14pt"/>
   </style:style>
   <style:style style:name="Text_20_body" style:display-name="Text body" style:family="paragraph" style:parent-style-name="Standard" style:class="text">
-   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0.247cm" loext:contextual-spacing="false" fo:line-height="120%"/>
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0.0972in" loext:contextual-spacing="false" fo:line-height="120%"/>
   </style:style>
   <style:style style:name="List" style:family="paragraph" style:parent-style-name="Text_20_body" style:class="list">
    <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Lohit Devanagari1" style:font-family-complex="&apos;Lohit Devanagari&apos;"/>
   </style:style>
   <style:style style:name="Caption" style:family="paragraph" style:parent-style-name="Standard" style:class="extra">
-   <style:paragraph-properties fo:margin-top="0.212cm" fo:margin-bottom="0.212cm" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
+   <style:paragraph-properties fo:margin-top="0.0835in" fo:margin-bottom="0.0835in" loext:contextual-spacing="false" text:number-lines="false" text:line-number="0"/>
    <style:text-properties fo:font-size="12pt" fo:font-style="italic" style:font-size-asian="12pt" style:font-style-asian="italic" style:font-name-complex="Lohit Devanagari1" style:font-family-complex="&apos;Lohit Devanagari&apos;" style:font-size-complex="12pt" style:font-style-complex="italic"/>
   </style:style>
   <style:style style:name="Index" style:family="paragraph" style:parent-style-name="Standard" style:class="index">
@@ -167,7 +169,7 @@
    <style:text-properties style:font-size-asian="12pt" style:font-name-complex="Lohit Devanagari1" style:font-family-complex="&apos;Lohit Devanagari&apos;"/>
   </style:style>
   <style:style style:name="Preformatted_20_Text" style:display-name="Preformatted Text" style:family="paragraph" style:parent-style-name="Standard" style:class="html">
-   <style:paragraph-properties fo:margin-top="0cm" fo:margin-bottom="0cm" loext:contextual-spacing="false"/>
+   <style:paragraph-properties fo:margin-top="0in" fo:margin-bottom="0in" loext:contextual-spacing="false"/>
    <style:text-properties style:font-name="Liberation Mono" fo:font-family="&apos;Liberation Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed" fo:font-size="10pt" style:font-name-asian="DejaVu Sans Mono" style:font-family-asian="&apos;DejaVu Sans Mono&apos;" style:font-family-generic-asian="modern" style:font-pitch-asian="fixed" style:font-size-asian="10pt" style:font-name-complex="Liberation Mono" style:font-family-complex="&apos;Liberation Mono&apos;" style:font-family-generic-complex="modern" style:font-pitch-complex="fixed" style:font-size-complex="10pt"/>
   </style:style>
   <style:style style:name="Numbering_20_Symbols" style:display-name="Numbering Symbols" style:family="text"/>
@@ -226,116 +228,79 @@
   <text:list-style style:name="Numbering_20_2" style:display-name="Numbering 2">
    <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-format="1">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment" fo:text-align="end">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.499cm" fo:text-indent="-0.499cm" fo:margin-left="0.499cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.1965in" fo:text-indent="-0.1965in" fo:margin-left="0.1965in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="2" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="2">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.998cm" fo:text-indent="-0.499cm" fo:margin-left="0.998cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.3929in" fo:text-indent="-0.1965in" fo:margin-left="0.3929in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="3" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="3">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.998cm" fo:text-indent="-1cm" fo:margin-left="1.998cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="0.7866in" fo:text-indent="-0.3937in" fo:margin-left="0.7866in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="4" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="4">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.249cm" fo:text-indent="-1.251cm" fo:margin-left="3.249cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.2791in" fo:text-indent="-0.4925in" fo:margin-left="1.2791in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="5" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="5">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.748cm" fo:text-indent="-1.499cm" fo:margin-left="4.748cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.8693in" fo:text-indent="-0.5902in" fo:margin-left="1.8693in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="6" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="6">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.549cm" fo:text-indent="-1.801cm" fo:margin-left="6.549cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.5783in" fo:text-indent="-0.7091in" fo:margin-left="2.5783in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="7" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="7">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="8.849cm" fo:text-indent="-2.3cm" fo:margin-left="8.849cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.4839in" fo:text-indent="-0.9055in" fo:margin-left="3.4839in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="8" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="8">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="11.449cm" fo:text-indent="-2.6cm" fo:margin-left="11.449cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.5075in" fo:text-indent="-1.0236in" fo:margin-left="4.5075in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="9" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="9">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="14.25cm" fo:text-indent="-2.801cm" fo:margin-left="14.25cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.6102in" fo:text-indent="-1.1028in" fo:margin-left="5.6102in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
    <text:list-level-style-number text:level="10" text:style-name="Numbering_20_Symbols" style:num-format="1" text:start-value="10">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="17.351cm" fo:text-indent="-3.101cm" fo:margin-left="17.351cm"/>
+     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.8311in" fo:text-indent="-1.2209in" fo:margin-left="6.8311in"/>
     </style:list-level-properties>
    </text:list-level-style-number>
   </text:list-style>
   <text:notes-configuration text:note-class="footnote" style:num-format="1" text:start-value="0" text:footnotes-position="page" text:start-numbering-at="document"/>
   <text:notes-configuration text:note-class="endnote" style:num-format="i" text:start-value="0"/>
-  <text:linenumbering-configuration text:number-lines="false" text:offset="0.499cm" style:num-format="1" text:number-position="left" text:increment="5"/>
+  <text:linenumbering-configuration text:number-lines="false" text:offset="0.1965in" style:num-format="1" text:number-position="left" text:increment="5"/>
  </office:styles>
  <office:automatic-styles>
   <style:style style:name="P1" style:family="paragraph" style:parent-style-name="Preformatted_20_Text" style:list-style-name="Numbering_20_2"/>
-  <text:list-style style:name="L1">
-   <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="2" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" text:style-name="Numbering_20_Symbols" style:num-suffix="." style:num-format="1">
-    <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
-     <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
-    </style:list-level-properties>
-   </text:list-level-style-number>
-  </text:list-style>
+  <style:style style:name="P2" style:family="paragraph" style:parent-style-name="Preformatted_20_Text" style:list-style-name="Numbering_20_2">
+   <style:text-properties fo:background-color="#fff200"/>
+  </style:style>
+  <style:style style:name="T1" style:family="text">
+   <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T2" style:family="text">
+   <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T3" style:family="text">
+   <style:text-properties fo:background-color="#fff200" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T4" style:family="text">
+   <style:text-properties fo:background-color="#fff200" loext:char-shading-value="0"/>
+  </style:style>
   <style:page-layout style:name="pm1">
-   <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="1.3cm" fo:margin-bottom="1.3cm" fo:margin-left="1.499cm" fo:margin-right="1.499cm" style:writing-mode="lr-tb" style:footnote-max-height="0cm">
-    <style:footnote-sep style:width="0.018cm" style:distance-before-sep="0.101cm" style:distance-after-sep="0.101cm" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
+   <style:page-layout-properties fo:page-width="8.2681in" fo:page-height="11.6929in" style:num-format="1" style:print-orientation="portrait" fo:margin-top="0.5118in" fo:margin-bottom="0.5118in" fo:margin-left="0.5902in" fo:margin-right="0.5902in" style:writing-mode="lr-tb" style:footnote-max-height="0in">
+    <style:footnote-sep style:width="0.0071in" style:distance-before-sep="0.0398in" style:distance-after-sep="0.0398in" style:line-style="solid" style:adjustment="left" style:rel-width="25%" style:color="#000000"/>
    </style:page-layout-properties>
    <style:header-style/>
    <style:footer-style/>
@@ -353,7 +318,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:list xml:id="list1340425809" text:style-name="Numbering_20_2">
+   <text:list xml:id="list3039696715" text:style-name="Numbering_20_2">
     <text:list-item>
      <text:p text:style-name="P1">/* ***** BEGIN LICENSE BLOCK *****</text:p>
     </text:list-item>
@@ -550,13 +515,13 @@
      <text:p text:style-name="P1"><text:s/>* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s/>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s/>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s/>* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s/>* SUCH DAMAGE.</text:p>
+     <text:p text:style-name="P1"><text:s/>* SUCH DAMAGE.</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s/>*/</text:p>
@@ -589,7 +554,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">AffEntry::~AffEntry() {</text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T2">AffEntry::~AffEntry()</text:span> {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>if (opts &amp; aeLONGCOND)</text:p>
@@ -616,10 +581,10 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">PfxEntry::PfxEntry(AffixMgr* pmgr)</text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T2">PfxEntry::PfxEntry</text:span>(AffixMgr* pmgr)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// register affix manager</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// register affix manager</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>: pmyMgr(pmgr),</text:p>
@@ -643,10 +608,10 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">// add prefix to this word assuming conditions hold</text:p>
+     <text:p text:style-name="P2">// add prefix to this word assuming conditions hold</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">std::string PfxEntry::add(const char* word, size_t len) {</text:p>
+     <text:p text:style-name="P1">std::string <text:span text:style-name="T2">PfxEntry::add</text:span>(const char* word, size_t len) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>std::string result;</text:p>
@@ -682,7 +647,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">inline char* PfxEntry::nextchar(char* p) {</text:p>
+     <text:p text:style-name="P1">inline char* <text:span text:style-name="T2">PfxEntry::nextchar</text:span>(char* p) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>if (p) {</text:p>
@@ -694,7 +659,7 @@
      <text:p text:style-name="P1"><text:s text:c="4"/>if (opts &amp; aeLONGCOND) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// jump to the 2nd part of the condition</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// jump to the 2nd part of the condition</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>if (p == c.conds + MAXCONDLEN_1)</text:p>
@@ -703,7 +668,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>return c.l.conds2;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// end of the MAXCONDLEN length condition</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// end of the MAXCONDLEN length condition</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>} else if (p == c.conds + MAXCONDLEN)</text:p>
@@ -727,7 +692,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">inline int PfxEntry::test_condition(const char* st) {</text:p>
+     <text:p text:style-name="P1">inline int <text:span text:style-name="T2">PfxEntry::test_condition</text:span>(const char* st) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>const char* pos = NULL; <text:s/>// group with pos input position</text:p>
@@ -745,7 +710,7 @@
      <text:p text:style-name="P1"><text:s text:c="4"/>return 1;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>char* p = c.conds;</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="2"/>char* p = c.conds;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>while (1) {</text:p>
@@ -757,7 +722,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>case &apos;\0&apos;:</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="8"/>return 1;</text:p>
+     <text:p text:style-name="P1"><text:s text:c="8"/>return 1;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>case &apos;[&apos;: {</text:p>
@@ -811,7 +776,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>p = nextchar(p);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="8"/>// skip the next character</text:p>
+     <text:p text:style-name="P1"><text:s text:c="8"/><text:span text:style-name="T4">// skip the next character</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="8"/>if (!ingroup &amp;&amp; *st)</text:p>
@@ -844,7 +809,7 @@
      <text:p text:style-name="P1"><text:s text:c="10"/>p = nextchar(p);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="10"/>// skip the next character</text:p>
+     <text:p text:style-name="P1"><text:s text:c="10"/><text:span text:style-name="T4">// skip the next character</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="10"/>for (st++; (opts &amp; aeUTF8) &amp;&amp; (*st &amp; 0xc0) == 0x80; st++)</text:p>
@@ -940,7 +905,7 @@
      <text:p text:style-name="P1"><text:s text:c="12"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="10"/>}</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="10"/>}</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="8"/>} else if (pos) { <text:s/>// group</text:p>
@@ -958,7 +923,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>}</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/>}</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>if (!p)</text:p>
@@ -979,7 +944,7 @@
      <text:p text:style-name="P1">// check if this prefix entry matches</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">struct hentry* PfxEntry::checkword(const char* word,</text:p>
+     <text:p text:style-name="P1">struct hentry* <text:span text:style-name="T2">PfxEntry::checkword</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="35"/>int len,</text:p>
@@ -997,16 +962,16 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// on entry prefix is 0 length or already matches the beginning of the word.</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// on entry prefix is 0 length or already matches the beginning of the word.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// So if the remaining root word has positive length</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// So if the remaining root word has positive length</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// and if there are enough chars in root word and added back strip chars</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// and if there are enough chars in root word and added back strip chars</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// to meet the number of characters conditions, then test it</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// to meet the number of characters conditions, then test it</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1021,10 +986,10 @@
      <text:p text:style-name="P1"><text:s text:c="2"/>if (tmpl &gt; 0 || (tmpl == 0 &amp;&amp; pmyMgr-&gt;get_fullstrip())) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// generate new root word by removing prefix and adding</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// generate new root word by removing prefix and adding</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// back any characters that would have been stripped</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// back any characters that would have been stripped</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1039,25 +1004,25 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// now make sure all of the conditions on characters</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// now make sure all of the conditions on characters</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// are met. <text:s/>Please see the appendix at the end of</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// are met. <text:s/>Please see the appendix at the end of</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// this file for more info on exactly what is being</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// this file for more info on exactly what is being</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// tested</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// tested</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// if all conditions are met then check if resulting</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// if all conditions are met then check if resulting</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// root word in the dictionary</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// root word in the dictionary</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1108,13 +1073,13 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// prefix matched but no root word was found</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// prefix matched but no root word was found</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// if aeXPRODUCT is allowed, try again but now</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// if aeXPRODUCT is allowed, try again but now</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// ross checked combined with a suffix</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// ross checked combined with a suffix</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1135,7 +1100,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>if (he)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="10"/>return he;</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="10"/>return he;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>}</text:p>
@@ -1159,7 +1124,7 @@
      <text:p text:style-name="P1">// check if this prefix entry matches</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/>struct hentry* PfxEntry::check_twosfx(const char* word,</text:p>
+     <text:p text:style-name="P1">struct hentry* <text:span text:style-name="T2">PfxEntry::check_twosfx</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="38"/>int len,</text:p>
@@ -1171,16 +1136,16 @@
      <text:p text:style-name="P1"><text:s text:c="38"/>const FLAG needflag) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// on entry prefix is 0 length or already matches the beginning of the word.</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// on entry prefix is 0 length or already matches the beginning of the word.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// So if the remaining root word has positive length</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// So if the remaining root word has positive length</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// and if there are enough chars in root word and added back strip chars</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// and if there are enough chars in root word and added back strip chars</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>// to meet the number of characters conditions, then test it</text:p>
+     <text:p text:style-name="P1"><text:s text:c="2"/><text:span text:style-name="T4">// to meet the number of characters conditions, then test it</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1198,10 +1163,10 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>(tmpl + strip.size() &gt;= numconds)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// generate new root word by removing prefix and adding</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// generate new root word by removing prefix and adding</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// back any characters that would have been stripped</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// back any characters that would have been stripped</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1216,25 +1181,25 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// now make sure all of the conditions on characters</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// now make sure all of the conditions on characters</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// are met. <text:s/>Please see the appendix at the end of</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// are met. <text:s/>Please see the appendix at the end of</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// this file for more info on exactly what is being</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// this file for more info on exactly what is being</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// tested</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// tested</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// if all conditions are met then check if resulting</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// if all conditions are met then check if resulting</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// root word in the dictionary</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/><text:span text:style-name="T4">// root word in the dictionary</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1249,13 +1214,13 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// prefix matched but no root word was found</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// prefix matched but no root word was found</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// if aeXPRODUCT is allowed, try again but now</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// if aeXPRODUCT is allowed, try again but now</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>// cross checked combined with a suffix</text:p>
+     <text:p text:style-name="P1"><text:s text:c="6"/><text:span text:style-name="T4">// cross checked combined with a suffix</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1264,7 +1229,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>if ((opts &amp; aeXPRODUCT) &amp;&amp; (in_compound != IN_CPD_BEGIN)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="8"/>// hash entry of root word or NULL</text:p>
+     <text:p text:style-name="P1"><text:s text:c="8"/><text:span text:style-name="T4">// hash entry of root word or NULL</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="8"/>struct hentry* he = pmyMgr-&gt;suffix_check_twosfx(tmpword.c_str(), tmpl, aeXPRODUCT, this,</text:p>
@@ -1300,7 +1265,7 @@
      <text:p text:style-name="P1">// check if this prefix entry matches</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">std::string PfxEntry::check_twosfx_morph(const char* word,</text:p>
+     <text:p text:style-name="P1">std::string <text:span text:style-name="T2">PfxEntry::check_twosfx_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="41"/>int len,</text:p>
@@ -1327,7 +1292,7 @@
      <text:p text:style-name="P1"><text:s text:c="2"/>// to meet the number of characters conditions, then test it</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>int tmpl = len - appnd.size(); // length of tmpword</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="2"/>int tmpl = len - appnd.size(); // length of tmpword</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
@@ -1357,7 +1322,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>// now make sure all of the conditions on characters</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/>// now make sure all of the conditions on characters</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>// are met. <text:s/>Please see the appendix at the end of</text:p>
@@ -1435,7 +1400,7 @@
      <text:p text:style-name="P1">// check if this prefix entry matches</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">std::string PfxEntry::check_morph(const char* word,</text:p>
+     <text:p text:style-name="P1">std::string <text:span text:style-name="T2">PfxEntry::check_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="34"/>int len,</text:p>
@@ -1522,7 +1487,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>if (test_condition(tmpword.c_str())) {</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>if (test_condition(tmpword.c_str())) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>tmpl += strip.size();</text:p>
@@ -1558,7 +1523,7 @@
      <text:p text:style-name="P1"><text:s text:c="12"/>if (morphcode) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="14"/>result.append(&quot; &quot;);</text:p>
+     <text:p text:style-name="P1"><text:s text:c="14"/>result.append(&quot; &quot;);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="14"/>result.append(morphcode);</text:p>
@@ -1690,7 +1655,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">SfxEntry::SfxEntry(AffixMgr* pmgr)</text:p>
+     <text:p text:style-name="P1"><text:span text:style-name="T2">SfxEntry::SfxEntry</text:span>(AffixMgr* pmgr)</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>: pmyMgr(pmgr) <text:s/>// register affix manager</text:p>
@@ -1714,7 +1679,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>l_morph(NULL),</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="6"/>r_morph(NULL),</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="6"/>r_morph(NULL),</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>eq_morph(NULL) {</text:p>
@@ -1729,7 +1694,7 @@
      <text:p text:style-name="P1">// add suffix to this word assuming conditions hold</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">std::string SfxEntry::add(const char* word, size_t len) {</text:p>
+     <text:p text:style-name="P1">std::string <text:span text:style-name="T2">SfxEntry::add</text:span>(const char* word, size_t len) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>std::string result;</text:p>
@@ -1756,7 +1721,7 @@
      <text:p text:style-name="P1"><text:s text:c="4"/>/* we have a match so add suffix */</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>result.replace(len - strip.size(), std::string::npos, appnd);</text:p>
+     <text:p text:style-name="P1"><text:s text:c="4"/>result.replace(len - strip.size(), std::string::npos, appnd);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>}</text:p>
@@ -1771,7 +1736,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">inline char* SfxEntry::nextchar(char* p) {</text:p>
+     <text:p text:style-name="P1">inline char* <text:span text:style-name="T2">SfxEntry::nextchar</text:span>(char* p) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>if (p) {</text:p>
@@ -1816,7 +1781,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">inline int SfxEntry::test_condition(const char* st, const char* beg) {</text:p>
+     <text:p text:style-name="P1">inline int <text:span text:style-name="T2">SfxEntry::test_condition</text:span>(const char* st, const char* beg) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>const char* pos = NULL; <text:s/>// group with pos input position</text:p>
@@ -1909,7 +1874,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="8"/>pos = NULL;</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="8"/>pos = NULL;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="8"/>neg = false;</text:p>
@@ -1957,7 +1922,7 @@
      <text:p text:style-name="P1"><text:s text:c="10"/>if (st &lt; beg) { <text:s/>// word &lt;= condition</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="12"/>if (p)</text:p>
+     <text:p text:style-name="P1"><text:s text:c="12"/>if (p)</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="14"/>return 0;</text:p>
@@ -2104,7 +2069,7 @@
      <text:p text:style-name="P1"><text:s text:c="12"/>if (neg)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="14"/>return 0;</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="14"/>return 0;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="12"/>else if (i == numconds)</text:p>
@@ -2158,7 +2123,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>} else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="10"/>return 0;</text:p>
+     <text:p text:style-name="P1"><text:s text:c="10"/>return 0;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="6"/>}</text:p>
@@ -2185,7 +2150,7 @@
      <text:p text:style-name="P1">// see if this suffix is present in the word</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">struct hentry* SfxEntry::checkword(const char* word,</text:p>
+     <text:p text:style-name="P1">struct hentry* <text:span text:style-name="T2">SfxEntry::checkword</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="35"/>int len,</text:p>
@@ -2299,7 +2264,7 @@
      <text:p text:style-name="P1"><text:s text:c="4"/>const char* endword = tmpword + tmpstring.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"/>
+     <text:p text:style-name="P1"><text:soft-page-break/></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>// now make sure all of the conditions on characters</text:p>
@@ -2359,7 +2324,7 @@
      <text:p text:style-name="P1"><text:s text:c="14"/>(((optflags &amp; aeXPRODUCT) == 0) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="15"/>(ep &amp;&amp; TESTAFF(he-&gt;astr, ep-&gt;getFlag(), he-&gt;alen)) ||</text:p>
+     <text:p text:style-name="P1"><text:s text:c="15"/>(ep &amp;&amp; TESTAFF(he-&gt;astr, ep-&gt;getFlag(), he-&gt;alen)) ||</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="15"/>// enabled by prefix</text:p>
@@ -2428,7 +2393,7 @@
      <text:p text:style-name="P1">// see if two-level suffix is present in the word</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">struct hentry* SfxEntry::check_twosfx(const char* word,</text:p>
+     <text:p text:style-name="P1">struct hentry* <text:span text:style-name="T2">SfxEntry::check_twosfx</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="38"/>int len,</text:p>
@@ -2494,7 +2459,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>(tmpl + strip.size() &gt;= numconds)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// generate new root word by removing suffix and adding</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>// generate new root word by removing suffix and adding</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>// back any characters that would have been stripped or</text:p>
@@ -2560,7 +2525,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>if (ppfx) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="8"/>// handle conditional suffix</text:p>
+     <text:p text:style-name="P1"><text:s text:c="8"/>// handle conditional suffix</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="8"/>if ((contclass) &amp;&amp; TESTAFF(contclass, ep-&gt;getFlag(), contclasslen))</text:p>
@@ -2617,7 +2582,7 @@
      <text:p text:style-name="P1">// see if two-level suffix is present in the word</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">std::string SfxEntry::check_twosfx_morph(const char* word,</text:p>
+     <text:p text:style-name="P1">std::string <text:span text:style-name="T2">SfxEntry::check_twosfx_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="41"/>int len,</text:p>
@@ -2689,7 +2654,7 @@
      <text:p text:style-name="P1"><text:s text:c="6"/>(tmpl + strip.size() &gt;= numconds)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="4"/>// generate new root word by removing suffix and adding</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="4"/>// generate new root word by removing suffix and adding</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>// back any characters that would have been stripped or</text:p>
@@ -2758,7 +2723,7 @@
      <text:p text:style-name="P1"><text:s text:c="8"/>if ((contclass) &amp;&amp; TESTAFF(contclass, ep-&gt;getFlag(), contclasslen)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="10"/>std::string st = pmyMgr-&gt;suffix_check_morph(tmpword.c_str(), tmpl, 0, <text:soft-page-break/>NULL, aflag,</text:p>
+     <text:p text:style-name="P1"><text:s text:c="10"/>std::string st = pmyMgr-&gt;suffix_check_morph(tmpword.c_str(), tmpl, 0, NULL, aflag,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="54"/>needflag);</text:p>
@@ -2851,7 +2816,7 @@
      <text:p text:style-name="P1">// get next homonym with same affix</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">struct hentry* SfxEntry::get_next_homonym(struct hentry* he,</text:p>
+     <text:p text:style-name="P1">struct hentry* <text:span text:style-name="T2">SfxEntry::get_next_homonym</text:span>(struct hentry* he,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="42"/>int optflags,</text:p>
@@ -2875,7 +2840,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="2"/>while (he-&gt;next_homonym) {</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="2"/>while (he-&gt;next_homonym) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="4"/>he = he-&gt;next_homonym;</text:p>
@@ -2935,7 +2900,7 @@
      <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">void SfxEntry::initReverseWord() {</text:p>
+     <text:p text:style-name="P1">void <text:span text:style-name="T2">SfxEntry::initReverseWord</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"><text:s text:c="2"/>rappnd = appnd;</text:p>
@@ -2953,7 +2918,7 @@
      <text:p text:style-name="P1">#if 0</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/></text:p>
+     <text:p text:style-name="P1"/>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1">Appendix: <text:s/>Understanding Affix Code</text:p>
@@ -3070,7 +3035,7 @@
      <text:p text:style-name="P1">Field</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1">-----</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/>-----</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1">1 <text:s text:c="4"/>SFX - indicates this is a suffix</text:p>
@@ -3154,7 +3119,7 @@
      <text:p text:style-name="P1">So how can we encode this information concisely and be able to </text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:soft-page-break/>test for both conditions in a fast manner? <text:s/>The answer is found</text:p>
+     <text:p text:style-name="P1">test for both conditions in a fast manner? <text:s/>The answer is found</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1">but studying the wonderful ispell code of Geoff Kuenning, et.al. </text:p>
@@ -3265,7 +3230,7 @@
      <text:p text:style-name="P1"><text:s text:c="5"/>conds[&apos;e&apos;] = <text:s/>(1 &lt;&lt; 0) <text:s text:c="2"/>(the word must end in an E)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P1"><text:s text:c="5"/>all others are all 0</text:p>
+     <text:p text:style-name="P1"><text:soft-page-break/><text:s text:c="5"/>all others are all 0</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P1"/>
