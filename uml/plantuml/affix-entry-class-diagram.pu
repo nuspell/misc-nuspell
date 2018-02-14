@@ -1,0 +1,37 @@
+@startuml
+skinparam backgroundcolor White|White
+
+title Hunspell - Affix Entry
+
+hide empty attributes
+hide empty methods
+
+AffixEntry <|-- PrefixEntry
+AffixEntry <|-- SuffixEntry
+
+AffixEntry o-- "0..1" AffixEntry : next_flag
+AffixEntry o-- "0..1" AffixEntry : next_char
+AffixEntry o-- "0..1" AffixEntry : next
+AffixEntry o-- "0..1" AffixEntry : next_eq
+AffixEntry o-- "0..1" AffixEntry : next_ne
+
+abstract class AffixEntry {
+	-string flag
+	-string append
+	-string stripping
+	-bool cross_product
+	-regex condition
+	+string getKey() : append
+	+AffixEntry getNextFlag() : next_flag
+	+AffixEntry getNextChar() : next_char
+	+AffixEntry getNext() : next
+	+AffixEntry getNextEQ() : next_eq
+	+AffixEntry getNextNE() : next_ne
+}
+
+class SuffixEntry {
+	-string rappend
+	+string getKey() : reverse_append
+}
+
+@enduml
