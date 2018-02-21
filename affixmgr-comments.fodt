@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2018-02-15T01:39:25.673439692</dc:date><meta:editing-duration>PT51M30S</meta:editing-duration><meta:editing-cycles>7</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="76" meta:paragraph-count="4898" meta:word-count="21539" meta:character-count="166218" meta:non-whitespace-character-count="117761"/></office:meta>
+ <office:meta><dc:date>2018-02-21T15:49:26.408196362</dc:date><meta:editing-duration>PT5H32M20S</meta:editing-duration><meta:editing-cycles>8</meta:editing-cycles><meta:generator>LibreOffice/5.4.2.2$Linux_X86_64 LibreOffice_project/40m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="76" meta:paragraph-count="4898" meta:word-count="21539" meta:character-count="166218" meta:non-whitespace-character-count="117761"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaLeft" config:type="long">1471</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">23656</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">21962</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">2150745</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">49108</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">22518</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">2499</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">1801</config:config-item>
-     <config:config-item config:name="VisibleLeft" config:type="long">1471</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">25125</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">21960</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">22132</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">2164177</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">2150745</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">49107</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">2173261</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -100,7 +100,7 @@
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">2369924</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">2529391</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
    <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
@@ -316,30 +316,15 @@
    <style:text-properties fo:background-color="#fff200"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph" style:parent-style-name="Preformatted_20_Text" style:list-style-name="Numbering_20_2">
-   <style:text-properties fo:background-color="#fff200"/>
-  </style:style>
-  <style:style style:name="P8" style:family="paragraph" style:parent-style-name="Preformatted_20_Text" style:list-style-name="Numbering_20_2">
    <style:text-properties fo:background-color="transparent"/>
   </style:style>
+  <style:style style:name="P8" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties fo:hyphenate="false"/>
+  </style:style>
   <style:style style:name="P9" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
-    <style:tab-stops/>
-   </style:paragraph-properties>
-   <style:text-properties fo:hyphenate="false"/>
-  </style:style>
-  <style:style style:name="P10" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
-    <style:tab-stops/>
-   </style:paragraph-properties>
-   <style:text-properties fo:hyphenate="false"/>
-  </style:style>
-  <style:style style:name="P11" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
-    <style:tab-stops/>
-   </style:paragraph-properties>
-   <style:text-properties fo:hyphenate="false"/>
-  </style:style>
-  <style:style style:name="P12" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" style:writing-mode="lr-tb">
     <style:tab-stops/>
    </style:paragraph-properties>
@@ -349,37 +334,37 @@
    <style:text-properties fo:background-color="#fff200" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T2" style:family="text">
-   <style:text-properties fo:background-color="#fff200" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T3" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" loext:char-shading-value="0" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="T4" style:family="text">
+  <style:style style:name="T3" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" loext:char-shading-value="0" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="T5" style:family="text">
+  <style:style style:name="T4" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Times New Roman" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" loext:char-shading-value="0" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
-  <style:style style:name="T6" style:family="text">
+  <style:style style:name="T5" style:family="text">
    <style:text-properties fo:background-color="#ffffff" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T7" style:family="text">
+  <style:style style:name="T6" style:family="text">
    <style:text-properties fo:font-weight="bold" fo:background-color="#fff200" loext:char-shading-value="0" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
-  <style:style style:name="T8" style:family="text">
+  <style:style style:name="T7" style:family="text">
    <style:text-properties fo:background-color="transparent" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T8" style:family="text">
+   <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T9" style:family="text">
    <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T10" style:family="text">
-   <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
+   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T11" style:family="text">
-   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
+   <style:text-properties fo:background-color="#adc5e7" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T12" style:family="text">
-   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
+   <style:text-properties fo:background-color="#adc5e7" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T13" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Times New Roman" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
@@ -388,12 +373,6 @@
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T15" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="T16" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="T17" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:page-layout style:name="pm1">
@@ -416,7 +395,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:list xml:id="list1594302266" text:style-name="Numbering_20_2">
+   <text:list xml:id="list2093803850" text:style-name="Numbering_20_2">
     <text:list-item>
      <text:p text:style-name="P5">/* ***** BEGIN LICENSE BLOCK *****</text:p>
     </text:list-item>
@@ -676,7 +655,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T9">AffixMgr::AffixMgr</text:span>(const char* affpath,</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T8">AffixMgr::AffixMgr</text:span>(const char* affpath,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="19"/>const std::vector&lt;HashMgr*&gt;&amp; ptr,</text:p>
@@ -953,7 +932,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T9">AffixMgr::~AffixMgr</text:span>() {</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T8">AffixMgr::~AffixMgr</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>// pass through linked prefix entries and clean up</text:p>
@@ -1127,7 +1106,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T8">void </text:span><text:span text:style-name="T9">AffixMgr::finishFileMgr</text:span>(FileMgr* afflst) {</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T7">void </text:span><text:span text:style-name="T8">AffixMgr::finishFileMgr</text:span>(FileMgr* afflst) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>delete afflst;</text:p>
@@ -1154,7 +1133,7 @@
      <text:p text:style-name="P5">// read in aff file and build up prefix and suffix entry objects</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T8">int </text:span><text:span text:style-name="T9">AffixMgr::parse_file</text:span>(const char* affpath, const char* key) {</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T7">int </text:span><text:span text:style-name="T8">AffixMgr::parse_file</text:span>(const char* affpath, const char* key) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -1793,7 +1772,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">/* parse in the flag used by fogemorphemes */</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">/* parse in the flag used by fogemorphemes */</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>if (line.compare(0, 14, &quot;ONLYINCOMPOUND&quot;, 14) == 0) {</text:p>
@@ -2510,7 +2489,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (<office:annotation office:name="__Annotation__89786_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T09:58:50.622402135</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">Allocate initial space for dupflags</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Allocate initial space for dupflags</text:span></text:p>
       </office:annotation>dupflags_ini<office:annotation-end office:name="__Annotation__89786_975352036"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2526,14 +2505,14 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (!<office:annotation office:name="__Annotation__89787_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T09:59:13.958850053</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T13">Parse line and affix type, result is added to affix list and dupflags. Succes of parsing is in boolean return.</text:span></text:p>
+       <text:p text:style-name="P9"><text:span text:style-name="T13">Parse line and affix type, result is added to affix list and dupflags. Succes of parsing is in boolean return.</text:span></text:p>
       </office:annotation>parse_affix<office:annotation-end office:name="__Annotation__89787_975352036"/>(line, ft, afflst, dupflags)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__89791_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:01:32.881397542</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">QUESTION: Why is this call made even though an error has occured?</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">QUESTION: Why is this call made even though an error has occured?</text:span></text:p>
       </office:annotation>finishFileMgr<office:annotation-end office:name="__Annotation__89791_975352036"/>(afflst);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2555,7 +2534,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>f<office:annotation office:name="__Annotation__89792_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:02:03.385884373</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T13">Convert binary trees to sorted lists.</text:span></text:p>
+       <text:p text:style-name="P9"><text:span text:style-name="T13">Convert binary trees to sorted lists.</text:span></text:p>
       </office:annotation>inishFileMgr<office:annotation-end office:name="__Annotation__89792_975352036"/>(afflst);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2607,7 +2586,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// Then to top this off why not </text:span><office:annotation office:name="__Annotation__9950_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:18:01.669266200</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">QUESTION: can this be omitted when we use an exiting datastructure that has optimised lookup functionality? Looks like a C (non-C++) trick.</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">QUESTION: can this be omitted when we use an exiting datastructure that has optimised lookup functionality? Looks like a C (non-C++) trick.</text:span></text:p>
       </office:annotation><text:span text:style-name="T1">examine the first char of the word</text:span><office:annotation-end office:name="__Annotation__9950_104460119"/><text:span text:style-name="T1"> to quickly</text:span></text:p>
     </text:list-item>
     <text:list-item>
@@ -2626,10 +2605,10 @@
      <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// from entry. <text:s/>One to take next if the current prefix is found (call it</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// </text:span><text:span text:style-name="T7">nexteq</text:span><text:span text:style-name="T1">)</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// </text:span><text:span text:style-name="T6">nexteq</text:span><text:span text:style-name="T1">)</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// and one to take next if the current prefix is not found (call it </text:span><text:span text:style-name="T7">nextne</text:span><text:span text:style-name="T1">).</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// and one to take next if the current prefix is not found (call it </text:span><text:span text:style-name="T6">nextne</text:span><text:span text:style-name="T1">).</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -2659,7 +2638,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/><office:annotation office:name="__Annotation__9951_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:19:49.187222115</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">QUESTION: if this is deprecated, we will remove all functionality for wordchars and only report a warning that it is no longer needed to provide.</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">QUESTION: if this is deprecated, we will remove all functionality for wordchars and only report a warning that it is no longer needed to provide.</text:span></text:p>
       </office:annotation>/* get encoding for CHECKCOMPOUNDCASE */<office:annotation-end office:name="__Annotation__9951_104460119"/></text:p>
     </text:list-item>
     <text:list-item>
@@ -2681,7 +2660,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>wordchars.push_back((char)<office:annotation office:name="__Annotation__89843_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:02:46.586592558</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T13">Extent wordchars with ASCII characters that it doesn&apos;t contain yet which have different upper case and lower case representation. Default is ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ</text:span></text:p>
+       <text:p text:style-name="P9"><text:span text:style-name="T13">Extent wordchars with ASCII characters that it doesn&apos;t contain yet which have different upper case and lower case representation. Default is ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ</text:span></text:p>
       </office:annotation>i<office:annotation-end office:name="__Annotation__89843_975352036"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2745,8 +2724,8 @@
      <text:p text:style-name="P5"><office:annotation office:name="__Annotation__9923_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:12:29.993147129</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">May also be void as method always returns 0</text:span></text:p>
-      </office:annotation><text:span text:style-name="T8">int</text:span><office:annotation-end office:name="__Annotation__9923_104460119"/><text:span text:style-name="T8"> </text:span><text:span text:style-name="T9">AffixMgr::build_pfxtree</text:span>(PfxEntry* pfxptr) {</text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">May also be void as method always returns 0</text:span></text:p>
+      </office:annotation><text:span text:style-name="T7">int</text:span><office:annotation-end office:name="__Annotation__9923_104460119"/><text:span text:style-name="T7"> </text:span><text:span text:style-name="T8">AffixMgr::build_pfxtree</text:span>(PfxEntry* pfxptr) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* ptr;</text:p>
@@ -2755,14 +2734,14 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* <office:annotation office:name="__Annotation__9955_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:25:02.585750216</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">Previous pointer</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Previous pointer</text:span></text:p>
       </office:annotation>pptr<office:annotation-end office:name="__Annotation__9955_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* <office:annotation office:name="__Annotation__9956_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:28:46.792817707</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">Entry pointer</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Entry pointer</text:span></text:p>
       </office:annotation>ep<office:annotation-end office:name="__Annotation__9956_104460119"/> = pfxptr;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2775,7 +2754,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>const char* key = ep-&gt;<office:annotation office:name="__Annotation__9898_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:05:06.842084832</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">for prefix this is c_str() of appnd</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">for prefix this is c_str() of appnd</text:span></text:p>
       </office:annotation>getKey()<office:annotation-end office:name="__Annotation__9898_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2854,7 +2833,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (<office:annotation office:name="__Annotation__9954_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:23:44.838598888</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">handle ONLY the first insert. nothing further to process</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">handle ONLY the first insert. nothing further to process</text:span></text:p>
       </office:annotation>!ptr<office:annotation-end office:name="__Annotation__9954_104460119"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2888,7 +2867,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (<office:annotation office:name="__Annotation__9994_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:34:15.815547734</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">ep in superset ptr:</text:span><text:span text:style-name="T16"><text:line-break/></text:span><text:span text:style-name="T16">if ptr has no NextEQ, ep will get NextEQ from previous ptr and stop for-loop</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">ep in superset ptr:</text:span><text:span text:style-name="T14"><text:line-break/></text:span><text:span text:style-name="T14">if ptr has no NextEQ, ep will get NextEQ from previous ptr and stop for-loop</text:span></text:p>
       </office:annotation>strcmp(ep-&gt;getKey(), ptr-&gt;getKey()) &lt;= 0<office:annotation-end office:name="__Annotation__9994_104460119"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2910,8 +2889,8 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>} <office:annotation office:name="__Annotation__9993_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:32:20.538939203</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">ep in subset of ptr:</text:span></text:p>
-       <text:p text:style-name="P11"><text:span text:style-name="T17">if ptr has no NextNE, ep will get NextNE from previous ptr and stop for-loop</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">ep in subset of ptr:</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T15">if ptr has no NextNE, ep will get NextNE from previous ptr and stop for-loop</text:span></text:p>
       </office:annotation>else<office:annotation-end office:name="__Annotation__9993_104460119"/> {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2951,14 +2930,14 @@
      <text:p text:style-name="P6">// both by suffix flag, and sorted by the <office:annotation office:name="__Annotation__9897_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:03:29.176115050</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">QUESTION: we never need to index on the non-reversed suffix string?</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">QUESTION: we never need to index on the non-reversed suffix string?</text:span></text:p>
       </office:annotation>reverse<office:annotation-end office:name="__Annotation__9897_104460119"/> of the</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P6">// suffix string itself; so we need to set up two indexes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T8">int </text:span><text:span text:style-name="T9">AffixMgr::build_sfxtree</text:span>(SfxEntry* sfxptr) {</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T7">int </text:span><text:span text:style-name="T8">AffixMgr::build_sfxtree</text:span>(SfxEntry* sfxptr) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -2967,7 +2946,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>sfxptr-&gt;<office:annotation office:name="__Annotation__9922_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:09:36.978104332</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">Store reversed version pof appnd in rappnd</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Store reversed version pof appnd in rappnd</text:span></text:p>
       </office:annotation>initReverseWord()<office:annotation-end office:name="__Annotation__9922_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2992,7 +2971,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>const char* key = ep-&gt;<office:annotation office:name="__Annotation__9899_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:05:29.923818645</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T17">For suffix this is c_str() of rappnd (the reverse of the suffix)</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T15">For suffix this is c_str() of rappnd (the reverse of the suffix)</text:span></text:p>
       </office:annotation>getKey()<office:annotation-end office:name="__Annotation__9899_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3023,13 +3002,13 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="2"/><text:span text:style-name="T2">// handle the special case of null affix string</text:span></text:p>
+     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="2"/><text:span text:style-name="T1">// handle the special case of null affix string</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (strlen(key) == 0) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// always inset them at head of list at element 0</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// always inset them at head of list at element 0</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>ptr = sStart[0];</text:p>
@@ -3050,7 +3029,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// now handle the normal case</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// now handle the normal case</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>ep-&gt;setNextEQ(NULL);</text:p>
@@ -3071,7 +3050,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// handle the first insert</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// handle the first insert</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (!ptr) {</text:p>
@@ -3089,10 +3068,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// otherwise use binary tree insertion so that a sorted</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// otherwise use binary tree insertion so that a sorted</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// list can easily be generated later</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// list can easily be generated later</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>pptr = NULL;</text:p>
@@ -3158,7 +3137,7 @@
      <text:p text:style-name="P5">// convert from binary tree to sorted list</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::process_pfx_tree_to_list</text:span>() {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::process_pfx_tree_to_list</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>for (int i = 1; i &lt; SETSIZE; i++) {</text:p>
@@ -3179,7 +3158,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">PfxEntry* <text:span text:style-name="T9">AffixMgr::process_pfx_in_order</text:span>(PfxEntry* ptr, PfxEntry* nptr) {</text:p>
+     <text:p text:style-name="P5">PfxEntry* <text:span text:style-name="T8">AffixMgr::process_pfx_in_order</text:span>(PfxEntry* ptr, PfxEntry* nptr) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (ptr) {</text:p>
@@ -3209,7 +3188,7 @@
      <text:p text:style-name="P5">// convert from binary tree to sorted list</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::process_sfx_tree_to_list</text:span>() {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::process_sfx_tree_to_list</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>for (int i = 1; i &lt; SETSIZE; i++) {</text:p>
@@ -3230,7 +3209,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">SfxEntry* <text:span text:style-name="T9">AffixMgr::process_sfx_in_order</text:span>(SfxEntry* ptr, SfxEntry* nptr) {</text:p>
+     <text:p text:style-name="P5">SfxEntry* <text:span text:style-name="T8">AffixMgr::process_sfx_in_order</text:span>(SfxEntry* ptr, SfxEntry* nptr) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (ptr) {</text:p>
@@ -3263,7 +3242,7 @@
      <text:p text:style-name="P5">// using the idea of leading subsets this time</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::process_pfx_order</text:span>() {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::process_pfx_order</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* ptr;</text:p>
@@ -3344,16 +3323,16 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// now clean up by adding smart search termination strings:</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// now clean up by adding smart search termination strings:</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// if you are already a superset of the previous prefix</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// if you are already a superset of the previous prefix</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// but not a subset of the next, search can end here</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// but not a subset of the next, search can end here</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// so set NextNE properly</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// so set NextNE properly</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -3407,13 +3386,13 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// initialize the SfxEntry links NextEQ and NextNE to speed searching</text:p>
+     <text:p text:style-name="P6">// initialize the SfxEntry links NextEQ and NextNE to speed searching</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// using the idea of leading subsets this time</text:p>
+     <text:p text:style-name="P6">// using the idea of leading subsets this time</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:soft-page-break/>int <text:span text:style-name="T9">AffixMgr::process_sfx_order</text:span>() {</text:p>
+     <text:p text:style-name="P5"><text:soft-page-break/>int <text:span text:style-name="T8">AffixMgr::process_sfx_order</text:span>() {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>SfxEntry* ptr;</text:p>
@@ -3434,22 +3413,22 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// look through the remainder of the list</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// look through the remainder of the list</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// <text:s/>and find next entry with affix that</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// <text:s/>and find next entry with affix that</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// the current one is not a subset of</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// the current one is not a subset of</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// mark that as destination for NextNE</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// mark that as destination for NextNE</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// use next in list that you are a subset</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// use next in list that you are a subset</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// of as NextEQ</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// of as NextEQ</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -3494,16 +3473,16 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// now clean up by adding smart search termination strings:</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// now clean up by adding smart search termination strings:</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// if you are already a superset of the previous suffix</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// if you are already a superset of the previous suffix</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// but not a subset of the next, search can end here</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// but not a subset of the next, search can end here</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// so set NextNE properly</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// so set NextNE properly</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -3560,7 +3539,7 @@
      <text:p text:style-name="P5">// add flags to the result for dictionary debugging</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string&amp; <text:span text:style-name="T9">AffixMgr::debugflag</text:span>(std::string&amp; result, unsigned short flag) {</text:p>
+     <text:p text:style-name="P5">std::string&amp; <text:span text:style-name="T8">AffixMgr::debugflag</text:span>(std::string&amp; result, unsigned short flag) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>char* st = encode_flag(flag);</text:p>
@@ -3596,7 +3575,7 @@
      <text:p text:style-name="P5">// calculate the character length of the condition</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::condlen</text:span>(const char* st) {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::condlen</text:span>(const char* st) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>int l = 0;</text:p>
@@ -3641,7 +3620,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::encodeit</text:span>(AffEntry&amp; entry, const char* cs) {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::encodeit</text:span>(AffEntry&amp; entry, const char* cs) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (strcmp(cs, &quot;.&quot;) != 0) {</text:p>
@@ -3662,7 +3641,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (short_part &lt; MAXCONDLEN) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T2">//blank out the remaining space</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T1">//blank out the remaining space</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>memset(entry.c.conds + short_part, 0, MAXCONDLEN - short_part);</text:p>
@@ -3671,10 +3650,10 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>} else if (cs[MAXCONDLEN]) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T2">//there is more conditions than fit in fixed space, so its</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T1">//there is more conditions than fit in fixed space, so its</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T2">//a long condition</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T1">//a long condition</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>entry.opts += aeLONGCOND;</text:p>
@@ -3713,10 +3692,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// return 1 if s1 is a leading subset of s2 (dots are for infixes)</text:p>
+     <text:p text:style-name="P6">// return 1 if s1 is a leading subset of s2 (dots are for infixes)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">inline int <text:span text:style-name="T9">AffixMgr::isSubset</text:span>(const char* s1, const char* s2) {</text:p>
+     <text:p text:style-name="P5">inline int <text:span text:style-name="T8">AffixMgr::isSubset</text:span>(const char* s1, const char* s2) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>while (((*s1 == *s2) || (*s1 == &apos;.&apos;)) &amp;&amp; (*s1 != &apos;\0&apos;)) {</text:p>
@@ -3740,10 +3719,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// check word for prefixes</text:p>
+     <text:p text:style-name="P6">// check word for prefixes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T10">AffixMgr::prefix_check</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::prefix_check</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="38"/>int len,</text:p>
@@ -3776,13 +3755,13 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// first handle the special case of 0 length prefixes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// first handle the special case of 0 length prefixes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pe = <office:annotation office:name="__Annotation__12528_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T01:24:23.073295060</dc:date>
-       <text:p text:style-name="P9"><text:span text:style-name="T14">Zero-length prefixes are always stored iat the beginning.</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Zero-length prefixes are always stored iat the beginning.</text:span></text:p>
       </office:annotation>pStart[0]<office:annotation-end office:name="__Annotation__12528_854338662"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3792,11 +3771,11 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// </text:span><text:span text:style-name="T2"><office:annotation office:name="__Annotation__12526_854338662">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-02-15T01:20:23.627459768</dc:date>
-        <text:p text:style-name="P9"><text:span text:style-name="T14">QUESTION: What is a fogemorpheme?</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T2">fogemorpheme</text:span><office:annotation-end office:name="__Annotation__12526_854338662"/></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// </text:span><office:annotation office:name="__Annotation__12526_854338662">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-02-15T01:20:23.627459768</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">QUESTION: What is a fogemorpheme?</text:span></text:p>
+      </office:annotation><text:span text:style-name="T1">fogemorpheme</text:span><office:annotation-end office:name="__Annotation__12526_854338662"/></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>((in_compound != IN_CPD_NOT) ||</text:p>
@@ -3808,11 +3787,11 @@
      <text:p text:style-name="P5"><text:s text:c="11"/>(<office:annotation office:name="__Annotation__12323_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T00:06:43.527453044</dc:date>
-       <text:p text:style-name="P9"><text:span text:style-name="T14">Do binary_search(pe-&gt;getCont(), pe-&gt;getCont() + pe-&gt;getContLen(), onyincompound)</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">Do binary_search(pe-&gt;getCont(), pe-&gt;getCont() + pe-&gt;getContLen(), onyincompound)</text:span></text:p>
       </office:annotation>TESTAFF<office:annotation-end office:name="__Annotation__12323_854338662"/>(pe-&gt;getCont(), onlyincompound, pe-&gt;getContLen())))) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// permit prefixes in compounds</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// permit prefixes in compounds</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="8"/>((in_compound != IN_CPD_END) ||</text:p>
@@ -3824,11 +3803,11 @@
      <text:p text:style-name="P5"><text:s text:c="10"/>(<office:annotation office:name="__Annotation__12324_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T00:09:08.249771765</dc:date>
-       <text:p text:style-name="P10"><text:span text:style-name="T15">Do binary_search(pe-&gt;getCont(), pe-&gt;getCont() + pe-&gt;getContLen(), compoundpermitflag)</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T15">Do binary_search(pe-&gt;getCont(), pe-&gt;getCont() + pe-&gt;getContLen(), compoundpermitflag)</text:span></text:p>
       </office:annotation>TESTAFF<office:annotation-end office:name="__Annotation__12324_854338662"/>(pe-&gt;getCont(), compoundpermitflag, pe-&gt;getContLen()))))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T2">// check prefix</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T1">// check prefix</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>rv = pe-&gt;checkword(word, len, in_compound, needflag);</text:p>
@@ -3837,7 +3816,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (rv) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>pfx = pe; <text:s/><text:span text:style-name="T12">// BUG: pfx not stateless</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/>pfx = pe; <text:s/><text:span text:style-name="T10">// BUG: pfx not stateless</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>return rv;</text:p>
@@ -3858,7 +3837,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// now handle the general case</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// now handle the general case</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>unsigned char sp = *((const unsigned char*)word);</text:p>
@@ -3879,7 +3858,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T2">// fogemorpheme</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T1">// fogemorpheme</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="10"/>((in_compound != IN_CPD_NOT) ||</text:p>
@@ -3891,11 +3870,11 @@
      <text:p text:style-name="P5"><text:s text:c="13"/>(<office:annotation office:name="__Annotation__12325_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T00:09:47.226850467</dc:date>
-       <text:p text:style-name="P10"><text:span text:style-name="T15">Do binary_search(pptr-&gt;getCont(), pptr-&gt;getCont() + pptr-&gt;getContLen(), onyincompound)</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T15">Do binary_search(pptr-&gt;getCont(), pptr-&gt;getCont() + pptr-&gt;getContLen(), onyincompound)</text:span></text:p>
       </office:annotation>TESTAFF<office:annotation-end office:name="__Annotation__12325_854338662"/>(pptr-&gt;getCont(), onlyincompound, pptr-&gt;getContLen())))) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T2">// permit prefixes in compounds</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T1">// permit prefixes in compounds</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="10"/>((in_compound != IN_CPD_END) ||</text:p>
@@ -3904,14 +3883,14 @@
      <text:p text:style-name="P5"><text:s text:c="11"/>(pptr-&gt;getCont() &amp;&amp; (<office:annotation office:name="__Annotation__12326_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T00:10:17.899375060</dc:date>
-       <text:p text:style-name="P10"><text:span text:style-name="T15">Do binary_search(pptr-&gt;getCont(), pptr-&gt;getCont() + pptr-&gt;getContLen(), compoundpermitflag)</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T15">Do binary_search(pptr-&gt;getCont(), pptr-&gt;getCont() + pptr-&gt;getContLen(), compoundpermitflag)</text:span></text:p>
       </office:annotation>TESTAFF<office:annotation-end office:name="__Annotation__12326_854338662"/>(pptr-&gt;getCont(), compoundpermitflag,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="40"/>pptr-&gt;getContLen()))))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// check prefix</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// check prefix</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>rv = pptr-&gt;checkword(word, len, in_compound, needflag);</text:p>
@@ -3920,7 +3899,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (rv) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>pfx = pptr; <text:s/><text:span text:style-name="T12">// BUG: pfx not stateless</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/>pfx = pptr; <text:s/><text:span text:style-name="T10">// BUG: pfx not stateless</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="10"/>return rv;</text:p>
@@ -3962,7 +3941,7 @@
      <text:p text:style-name="P5">// check word for prefixes and two-level suffixes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T9">AffixMgr::prefix_check_twosfx</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::prefix_check_twosfx</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="45"/>int len,</text:p>
@@ -4022,7 +4001,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="2"/><text:span text:style-name="T2">// now handle the general case</text:span></text:p>
+     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="2"/><text:span text:style-name="T1">// now handle the general case</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>unsigned char sp = *((const unsigned char*)word);</text:p>
@@ -4085,7 +4064,7 @@
      <text:p text:style-name="P5">// check word for prefixes and morph</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::prefix_check_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::prefix_check_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="41"/>int len,</text:p>
@@ -4172,7 +4151,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (!st.empty()) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// fogemorpheme</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// fogemorpheme</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>if ((in_compound != IN_CPD_NOT) ||</text:p>
@@ -4226,7 +4205,7 @@
      <text:p text:style-name="P5">// check word for prefixes and morph and two-level suffixes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::prefix_check_twosfx_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::prefix_check_twosfx_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="48"/>int len,</text:p>
@@ -4256,7 +4235,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// first handle the special case of 0 length prefixes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// first handle the special case of 0 length prefixes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pe = pStart[0];</text:p>
@@ -4349,7 +4328,7 @@
      <text:p text:style-name="P5">// Is word a non-compound with a REP substitution (see checkcompoundrep)?</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::cpdrep_check</text:span>(const char* word, int wl) {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::cpdrep_check</text:span>(const char* word, int wl) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -4373,7 +4352,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>const size_t lenp = reptable[i].pattern.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// search every occurence of the pattern in the word</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// search every occurence of the pattern in the word</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>while ((r = strstr(r, reptable[i].pattern.c_str())) != NULL) {</text:p>
@@ -4424,7 +4403,7 @@
      <text:p text:style-name="P5">// forbid compoundings when there are special patterns at word bound</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::cpdpat_check</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::cpdpat_check</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="27"/>int pos,</text:p>
@@ -4460,10 +4439,10 @@
      <text:p text:style-name="P5"><text:s text:c="9"/>(r2-&gt;astr &amp;&amp; TESTAFF(r2-&gt;astr, checkcpdtable[i].cond2, r2-&gt;alen))) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// zero length pattern =&gt; only TESTAFF</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// zero length pattern =&gt; only TESTAFF</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T2">// zero pattern (0/flag) =&gt; unmodified stem (zero affixes allowed)</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T1">// zero pattern (0/flag) =&gt; unmodified stem (zero affixes allowed)</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>(checkcpdtable[i].pattern.empty() ||</text:p>
@@ -4508,7 +4487,7 @@
      <text:p text:style-name="P5">// bounds</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::cpdcase_check</text:span>(const char* word, int pos) {</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::cpdcase_check</text:span>(const char* word, int pos) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (utf8) {</text:p>
@@ -4580,13 +4559,13 @@
      <text:p text:style-name="P5">struct metachar_data {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/>signed short btpp; <text:s/><text:span text:style-name="T2">// metacharacter (*, ?) position for backtracking</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/>signed short btpp; <text:s/><text:span text:style-name="T1">// metacharacter (*, ?) position for backtracking</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/>signed short btwp; <text:s/><text:span text:style-name="T2">// word position for metacharacters</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/>signed short btwp; <text:s/><text:span text:style-name="T1">// word position for metacharacters</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/>int btnum; <text:s text:c="9"/><text:span text:style-name="T2">// number of matched characters in metacharacter</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/>int btnum; <text:s text:c="9"/><text:span text:style-name="T1">// number of matched characters in metacharacter</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5">};</text:p>
@@ -4598,7 +4577,7 @@
      <text:p text:style-name="P5">// check compound patterns</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::defcpd_check</text:span>(hentry*** words,</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::defcpd_check</text:span>(hentry*** words,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="27"/>short wnum,</text:p>
@@ -4664,7 +4643,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// has the last word COMPOUNDRULE flag?</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// has the last word COMPOUNDRULE flag?</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (rv-&gt;alen == 0) {</text:p>
@@ -4739,10 +4718,10 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>for (size_t i = 0; i &lt; defcpdtable.size(); ++i) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>size_t pp = 0; <text:s/><text:span text:style-name="T2">// pattern position</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>size_t pp = 0; <text:s/><text:span text:style-name="T1">// pattern position</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>signed short wp = 0; <text:s/><text:span text:style-name="T2">// &quot;words&quot; position</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>signed short wp = 0; <text:s/><text:span text:style-name="T1">// &quot;words&quot; position</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>int ok2;</text:p>
@@ -4991,7 +4970,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">inline int <text:span text:style-name="T9">AffixMgr::candidate_check</text:span>(const char* word, int len) {</text:p>
+     <text:p text:style-name="P5">inline int <text:span text:style-name="T8">AffixMgr::candidate_check</text:span>(const char* word, int len) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:soft-page-break/></text:p>
@@ -5039,7 +5018,7 @@
      <text:p text:style-name="P5">// calculate number of syllable for compound-checking</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">short <text:span text:style-name="T9">AffixMgr::get_syllable</text:span>(const std::string&amp; word) {</text:p>
+     <text:p text:style-name="P5">short <text:span text:style-name="T8">AffixMgr::get_syllable</text:span>(const std::string&amp; word) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (cpdmaxsyllable == 0)</text:p>
@@ -5123,7 +5102,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">void <text:span text:style-name="T9">AffixMgr::setcminmax</text:span>(int* cmin, int* cmax, const char* word, int len) {</text:p>
+     <text:p text:style-name="P5">void <text:span text:style-name="T8">AffixMgr::setcminmax</text:span>(int* cmin, int* cmax, const char* word, int len) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (utf8) {</text:p>
@@ -5180,7 +5159,7 @@
      <text:p text:style-name="P5">// hu_mov_rule = spec. Hungarian rule (XXX)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T9">AffixMgr::compound_check</text:span>(const std::string&amp; word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::compound_check</text:span>(const std::string&amp; word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="40"/>short wordnum,</text:p>
@@ -6923,7 +6902,7 @@
      <text:p text:style-name="P5">// hu_mov_rule = spec. Hungarian rule (XXX)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::compound_check_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::compound_check_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="35"/>int len,</text:p>
@@ -8438,7 +8417,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">inline int <text:span text:style-name="T9">AffixMgr::isRevSubset</text:span>(const char* s1,</text:p>
+     <text:p text:style-name="P5">inline int <text:span text:style-name="T8">AffixMgr::isRevSubset</text:span>(const char* s1,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="33"/>const char* end_of_s2,</text:p>
@@ -8474,7 +8453,7 @@
      <text:p text:style-name="P5">// check word for suffixes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T9">AffixMgr::suffix_check</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::suffix_check</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="38"/>int len,</text:p>
@@ -8837,7 +8816,7 @@
      <text:p text:style-name="P5">// check word for two-level suffixes</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T9">AffixMgr::suffix_check_twosfx</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::suffix_check_twosfx</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="45"/>int len,</text:p>
@@ -8972,7 +8951,7 @@
      <text:p text:style-name="P5">// check word for two-level suffixes and morph</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::suffix_check_twosfx_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::suffix_check_twosfx_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="48"/>int len,</text:p>
@@ -9185,7 +9164,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::suffix_check_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::suffix_check_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="41"/>int len,</text:p>
@@ -9638,10 +9617,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// check if word with affixes is correctly spelled</text:p>
+     <text:p text:style-name="P6">// check if word with affixes is correctly spelled</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T9">AffixMgr::affix_check</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">struct hentry* <text:span text:style-name="T8">AffixMgr::affix_check</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="37"/>int len,</text:p>
@@ -9656,7 +9635,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// check all prefixes (also crossed with suffixes if allowed)</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// check all prefixes (also crossed with suffixes if allowed)</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>struct hentry* rv = prefix_check(word, len, in_compound, needflag);</text:p>
@@ -9671,7 +9650,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T2">// if still not found check all suffixes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// if still not found check all suffixes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>rv = suffix_check(word, len, 0, NULL, FLAG_NULL, needflag, in_compound);</text:p>
@@ -9698,7 +9677,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>return rv;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// if still not found check all two-level suffixes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// if still not found check all two-level suffixes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>rv = suffix_check_twosfx(word, len, 0, NULL, needflag);</text:p>
@@ -9713,7 +9692,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>return rv;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T2">// if still not found check all two-level suffixes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><text:span text:style-name="T1">// if still not found check all two-level suffixes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="4"/>rv = prefix_check_twosfx(word, len, IN_CPD_NOT, needflag);</text:p>
@@ -9734,10 +9713,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">// check if word with affixes is correctly spelled</text:p>
+     <text:p text:style-name="P6">// check if word with affixes is correctly spelled</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::affix_check_morph</text:span>(const char* word,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::affix_check_morph</text:span>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="34"/>int len,</text:p>
@@ -10097,7 +10076,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::string <text:span text:style-name="T9">AffixMgr::morphgen</text:span>(const char* ts,</text:p>
+     <text:p text:style-name="P5">std::string <text:span text:style-name="T8">AffixMgr::morphgen</text:span>(const char* ts,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="31"/>int wl,</text:p>
@@ -10340,7 +10319,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::expand_rootword</text:span>(struct guessword* wlst,</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::expand_rootword</text:span>(struct guessword* wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="30"/>int maxn,</text:p>
@@ -10763,70 +10742,70 @@
      <text:p text:style-name="P5">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"/>
+     <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">// return replacing table</text:p>
+     <text:p text:style-name="P7">// return replacing table</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">const std::vector&lt;replentry&gt;&amp; AffixMgr::get_reptable() const {</text:p>
+     <text:p text:style-name="P7">const std::vector&lt;replentry&gt;&amp; AffixMgr::get_reptable() const {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>return reptable;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>return reptable;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">}</text:p>
+     <text:p text:style-name="P7">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"/>
+     <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">// return iconv table</text:p>
+     <text:p text:style-name="P7">// return iconv table</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">RepList* AffixMgr::get_iconvtable() const {</text:p>
+     <text:p text:style-name="P7">RepList* AffixMgr::get_iconvtable() const {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>if (!iconvtable)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>if (!iconvtable)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="4"/>return NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>return NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>return iconvtable;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>return iconvtable;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">}</text:p>
+     <text:p text:style-name="P7">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"/>
+     <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:soft-page-break/>// return oconv table</text:p>
+     <text:p text:style-name="P7"><text:soft-page-break/>// return oconv table</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">RepList* AffixMgr::get_oconvtable() const {</text:p>
+     <text:p text:style-name="P7">RepList* AffixMgr::get_oconvtable() const {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>if (!oconvtable)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>if (!oconvtable)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="4"/>return NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>return NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>return oconvtable;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>return oconvtable;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">}</text:p>
+     <text:p text:style-name="P7">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"/>
+     <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8">// return replacing table</text:p>
+     <text:p text:style-name="P7">// return replacing table</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T8">struct phonetable* AffixMgr::get_phonetable</text:span>() const {</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T7">struct phonetable* AffixMgr::get_phonetable</text:span>() const {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (!phone)</text:p>
@@ -13616,7 +13595,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">void <text:span text:style-name="T9">AffixMgr::reverse_condition</text:span>(std::string&amp; piece) {</text:p>
+     <text:p text:style-name="P5">void <text:span text:style-name="T8">AffixMgr::reverse_condition</text:span>(std::string&amp; piece) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>if (piece.empty())</text:p>
@@ -13877,13 +13856,13 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:span text:style-name="T8">bool </text:span><text:span text:style-name="T9">AffixMgr::parse_affix</text:span>(const std::string&amp; line,</text:p>
+     <text:p text:style-name="P5"><text:span text:style-name="T7">bool </text:span><text:span text:style-name="T8">AffixMgr::parse_affix</text:span>(const std::string&amp; line,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="26"/><office:annotation office:name="__Annotation__9871_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:32:23.674342254</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">affix type, can be inverted value in case of complex type.</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">affix type, can be inverted value in case of complex type.</text:span></text:p>
       </office:annotation>const char at<office:annotation-end office:name="__Annotation__9871_1547195353"/>,</text:p>
     </text:list-item>
     <text:list-item>
@@ -13893,7 +13872,7 @@
      <text:p text:style-name="P5"><text:s text:c="26"/><office:annotation office:name="__Annotation__9907_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T23:13:18.401701348</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">storage for flags that have been encountered for pfx and/or sfx </text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">storage for flags that have been encountered for pfx and/or sfx </text:span></text:p>
       </office:annotation>char* dupflags<office:annotation-end office:name="__Annotation__9907_1547195353"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -13960,7 +13939,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>switch (i) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>// piece 1 - is type of affix</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T9">// piece 1 - is type of affix</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>case 0: {</text:p>
@@ -13978,7 +13957,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>// piece 2 - is affix char</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T9">// piece 2 - is affix char</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>case 1: {</text:p>
@@ -13990,14 +13969,14 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>aflag = <office:annotation office:name="__Annotation__9875_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:38:20.726292228</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">decode flag to internal representation in unsigned short</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">decode flag to internal representation in unsigned short</text:span></text:p>
       </office:annotation>pHMgr-&gt;decode_flag(std::string(start_piece, iter).c_str())<office:annotation-end office:name="__Annotation__9875_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>if (<office:annotation office:name="__Annotation__9881_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:54:40.279791610</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">warm only if this affix flag was used before for this particular affix type</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">warm only if this affix flag was used before for this particular affix type</text:span></text:p>
       </office:annotation>((at == &apos;S&apos;) &amp;&amp; (dupflags[aflag] &amp; dupSFX)) ||</text:p>
     </text:list-item>
     <text:list-item>
@@ -14022,7 +14001,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__9880_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:51:52.844835509</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">store that this flag was used for sfx and/or pfx</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">store that this flag was used for sfx and/or pfx</text:span></text:p>
       </office:annotation>dupflags[aflag] += (char)((at == &apos;S&apos;) ? dupSFX : dupPFX)<office:annotation-end office:name="__Annotation__9880_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -14032,7 +14011,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>// piece 3 - is cross product indicator</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T9">// piece 3 - is cross product indicator</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>case 2: {</text:p>
@@ -14044,7 +14023,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (*start_piece == <office:annotation office:name="__Annotation__9890_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:59:07.997314256</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">usually it regards a cross product</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">usually it regards a cross product</text:span></text:p>
       </office:annotation>&apos;Y&apos;<office:annotation-end office:name="__Annotation__9890_1547195353"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -14060,7 +14039,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>// piece 4 - is number of affentries</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T9">// piece 4 - is number of affentries</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>case 3: {</text:p>
@@ -14072,7 +14051,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__9891_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:59:48.467803685</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">the number of entries that need to follow</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">the number of entries that need to follow</text:span></text:p>
       </office:annotation>numents<office:annotation-end office:name="__Annotation__9891_1547195353"/> = atoi(std::string(start_piece, iter).c_str());</text:p>
     </text:list-item>
     <text:list-item>
@@ -14202,7 +14181,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>std::string <office:annotation office:name="__Annotation__9892_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T23:01:13.709314009</dc:date>
-       <text:p text:style-name="P11"><text:span text:style-name="T16">next line</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T14">next line</text:span></text:p>
       </office:annotation>nl<office:annotation-end office:name="__Annotation__9892_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -14242,7 +14221,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>switch (i) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>// piece 1 - is type</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T9">// piece 1 - is type</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>case 0: {</text:p>
@@ -14266,7 +14245,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>// piece 2 - is affix char</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T9">// piece 2 - is affix char</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>case 1: {</text:p>
@@ -14332,7 +14311,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>// piece 3 - is string to strip or 0 for null</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T9">// piece 3 - is string to strip or 0 for null</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>case 2: {</text:p>
@@ -14380,7 +14359,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>// piece 4 - is affix string or 0 for null</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T9">// piece 4 - is affix string or 0 for null</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>case 3: {</text:p>
@@ -14464,7 +14443,7 @@
      <text:p text:style-name="P5"><text:s text:c="14"/>int index = atoi(dash_str.c_str());</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="14"/>entry-&gt;contclasslen = (unsigned short)pHMgr-&gt;get_aliasf(</text:p>
+     <text:p text:style-name="P5"><text:s text:c="14"/>entry-&gt;contclasslen = (unsigned short)pHMgr-&gt;<text:span text:style-name="T12">get_aliasf</text:span>(</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="18"/>index, &amp;(entry-&gt;contclass), af);</text:p>
@@ -14587,7 +14566,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>// piece 5 - is the conditions descriptions</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><text:span text:style-name="T9">// piece 5 - is the conditions descriptions</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>case 4: {</text:p>
@@ -14881,7 +14860,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">int <text:span text:style-name="T9">AffixMgr::redundant_condition</text:span>(char ft,</text:p>
+     <text:p text:style-name="P5">int <text:span text:style-name="T8">AffixMgr::redundant_condition</text:span>(char ft,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="34"/>const char* strip,</text:p>
@@ -15163,7 +15142,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5">std::vector&lt;std::string&gt; <text:span text:style-name="T9">AffixMgr::get_suffix_words</text:span>(short unsigned* suff,</text:p>
+     <text:p text:style-name="P5">std::vector&lt;std::string&gt; <text:span text:style-name="T8">AffixMgr::get_suffix_words</text:span>(short unsigned* suff,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="31"/>int len,</text:p>
