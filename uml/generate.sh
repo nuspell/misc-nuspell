@@ -39,6 +39,7 @@ function diagrams() {
 BASE='https://raw.githubusercontent.com/hunspell/misc-hunspell/master/uml'
 echo '# Hunspell - UML Diagrams' > README.md
 diagrams Usecase
+diagrams Component
 diagrams State
 diagrams Activity
 diagrams Object
