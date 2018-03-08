@@ -27,6 +27,7 @@ Tools for generating the docs:
         ~/.RationalPlan/ ~/.java/.userPrefs/RationalPlan`
 3.  [PlantUML](http://plantuml.com/).
       - Install with: `sudo apt install plantuml`
+      - If needed, manually upgrade `/usr/share/plantuml/plantuml.jar` to at least version 1.2018.1
 4.  [Dataflow](https://github.com/sonyxperiadev/dataflow) for DFD.
       - Install: `sudo apt install cabal-install && cabal update &&
         cabal install dataflow`

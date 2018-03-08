@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2018-03-07T17:34:22.084640674</dc:date><meta:editing-duration>P1DT2H37M18S</meta:editing-duration><meta:editing-cycles>21</meta:editing-cycles><meta:generator>LibreOffice/5.4.5.1$Linux_X86_64 LibreOffice_project/40m0$Build-1</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="76" meta:paragraph-count="4898" meta:word-count="21539" meta:character-count="166219" meta:non-whitespace-character-count="117761"/></office:meta>
+ <office:meta><dc:date>2018-03-08T19:37:16.338511819</dc:date><meta:editing-duration>P1DT3H3M19S</meta:editing-duration><meta:editing-cycles>24</meta:editing-cycles><meta:generator>LibreOffice/5.4.5.1$Linux_X86_64 LibreOffice_project/40m0$Build-1</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="76" meta:paragraph-count="4898" meta:word-count="21539" meta:character-count="166219" meta:non-whitespace-character-count="117761"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">516565</config:config-item>
-   <config:config-item config:name="ViewAreaLeft" config:type="long">1780</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">1209407</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">1783</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">24901</config:config-item>
    <config:config-item config:name="ViewAreaHeight" config:type="long">23871</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
@@ -14,11 +14,11 @@
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
      <config:config-item config:name="ViewLeft" config:type="long">4198</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">523032</config:config-item>
-     <config:config-item config:name="VisibleLeft" config:type="long">1780</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">516565</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">26679</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">540434</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">1308677</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">1783</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">1209407</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">26682</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">1233276</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -100,7 +100,7 @@
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">4307723</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">4463644</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
    <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
@@ -325,6 +325,18 @@
    <style:text-properties fo:hyphenate="false"/>
   </style:style>
   <style:style style:name="P9" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties fo:hyphenate="false"/>
+  </style:style>
+  <style:style style:name="P10" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
+    <style:tab-stops/>
+   </style:paragraph-properties>
+   <style:text-properties fo:hyphenate="false"/>
+  </style:style>
+  <style:style style:name="P11" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" style:writing-mode="lr-tb">
     <style:tab-stops/>
    </style:paragraph-properties>
@@ -361,24 +373,33 @@
    <style:text-properties fo:background-color="#adc5e7" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T11" style:family="text">
-   <style:text-properties fo:background-color="#adc5e7" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T12" style:family="text">
    <style:text-properties fo:background-color="#e0efd4" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T13" style:family="text">
+  <style:style style:name="T12" style:family="text">
    <style:text-properties fo:background-color="#72bf44" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T14" style:family="text">
+  <style:style style:name="T13" style:family="text">
    <style:text-properties fo:background-color="#bcaed5" loext:char-shading-value="0"/>
   </style:style>
+  <style:style style:name="T14" style:family="text">
+   <style:text-properties fo:background-color="#c7a0cb" loext:char-shading-value="0"/>
+  </style:style>
   <style:style style:name="T15" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Times New Roman" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:background-color="#c7a0cb" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T16" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Times New Roman" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T17" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T18" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T19" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T20" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" fo:color="#000000" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:page-layout style:name="pm1">
@@ -401,7 +422,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:list xml:id="list3243068955" text:style-name="Numbering_20_2">
+   <text:list xml:id="list2916407994" text:style-name="Numbering_20_2">
     <text:list-item>
      <text:p text:style-name="P5">/* ***** BEGIN LICENSE BLOCK *****</text:p>
     </text:list-item>
@@ -670,7 +691,7 @@
      <text:p text:style-name="P5"><text:s text:c="19"/>const char* <office:annotation office:name="__Annotation__89784_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T09:56:02.267367070</dc:date>
-       <text:p><text:span text:style-name="T15">QUESTION: Where is key for?</text:span></text:p>
+       <text:p><text:span text:style-name="T16">QUESTION: Where is key for?</text:span></text:p>
       </office:annotation>key<office:annotation-end office:name="__Annotation__89784_975352036"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -773,7 +794,7 @@
      <text:p text:style-name="P5"><text:s text:c="28"/><text:span text:style-name="T1">// (Schiff+fahrt </text:span><office:annotation office:name="__Annotation__10467_714486967">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-26T12:40:11.096185618</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: What must this example illustrate exactly?</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: What must this example illustrate exactly?</text:span></text:p>
       </office:annotation><text:span text:style-name="T1">-&gt;</text:span><office:annotation-end office:name="__Annotation__10467_714486967"/><text:span text:style-name="T1"> Schiffahrt)</text:span></text:p>
     </text:list-item>
     <text:list-item>
@@ -1185,7 +1206,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>stderr, &quot;<office:annotation office:name="__Annotation__10468_714486967">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-26T12:42:07.226074220</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: Do we use exactly or as close as possible the same error and warning texts? There is in certain places <text:s/>lot of low-level checking and reporting.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: Do we use exactly or as close as possible the same error and warning texts? There is in certain places <text:s/>lot of low-level checking and reporting.</text:span></text:p>
       </office:annotation>error: could not open affix description file %s\n<office:annotation-end office:name="__Annotation__10468_714486967"/>&quot;, affpath);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2503,7 +2524,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (<office:annotation office:name="__Annotation__89786_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T09:58:50.622402135</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Allocate initial space for dupflags</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Allocate initial space for dupflags</text:span></text:p>
       </office:annotation>dupflags_ini<office:annotation-end office:name="__Annotation__89786_975352036"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2519,14 +2540,14 @@
      <text:p text:style-name="P5"><text:s text:c="6"/>if (!<office:annotation office:name="__Annotation__89787_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T09:59:13.958850053</dc:date>
-       <text:p text:style-name="P9"><text:span text:style-name="T15">Parse line and affix type, result is added to affix list and dupflags. Succes of parsing is in boolean return.</text:span></text:p>
+       <text:p text:style-name="P11"><text:span text:style-name="T16">Parse line and affix type, result is added to affix list and dupflags. Succes of parsing is in boolean return.</text:span></text:p>
       </office:annotation>parse_affix<office:annotation-end office:name="__Annotation__89787_975352036"/>(line, ft, afflst, dupflags)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__89791_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:01:32.881397542</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: Why is this call made even though an error has occured?</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: Why is this call made even though an error has occured?</text:span></text:p>
       </office:annotation>finishFileMgr<office:annotation-end office:name="__Annotation__89791_975352036"/>(afflst);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2548,7 +2569,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>f<office:annotation office:name="__Annotation__89792_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:02:03.385884373</dc:date>
-       <text:p text:style-name="P9"><text:span text:style-name="T15">Convert binary trees to sorted lists.</text:span></text:p>
+       <text:p text:style-name="P11"><text:span text:style-name="T16">Convert binary trees to sorted lists.</text:span></text:p>
       </office:annotation>inishFileMgr<office:annotation-end office:name="__Annotation__89792_975352036"/>(afflst);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2600,7 +2621,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/><text:span text:style-name="T1">// Then to top this off why not </text:span><office:annotation office:name="__Annotation__9950_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:18:01.669266200</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: can this be omitted when we use an exiting datastructure that has optimised lookup functionality? Looks like a C (non-C++) trick.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: can this be omitted when we use an exiting datastructure that has optimised lookup functionality? Looks like a C (non-C++) trick.</text:span></text:p>
       </office:annotation><text:span text:style-name="T1">examine the first char of the word</text:span><office:annotation-end office:name="__Annotation__9950_104460119"/><text:span text:style-name="T1"> to quickly</text:span></text:p>
     </text:list-item>
     <text:list-item>
@@ -2652,7 +2673,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/><office:annotation office:name="__Annotation__9951_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:19:49.187222115</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: if this is deprecated, we will remove all functionality for wordchars and only report a warning that it is no longer needed to provide.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: if this is deprecated, we will remove all functionality for wordchars and only report a warning that it is no longer needed to provide.</text:span></text:p>
       </office:annotation>/* get encoding for CHECKCOMPOUNDCASE */<office:annotation-end office:name="__Annotation__9951_104460119"/></text:p>
     </text:list-item>
     <text:list-item>
@@ -2674,7 +2695,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>wordchars.push_back((char)<office:annotation office:name="__Annotation__89843_975352036">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-14T10:02:46.586592558</dc:date>
-       <text:p text:style-name="P9"><text:span text:style-name="T15">Extent wordchars with ASCII characters that it doesn&apos;t contain yet which have different upper case and lower case representation. Default is ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ</text:span></text:p>
+       <text:p text:style-name="P11"><text:span text:style-name="T16">Extent wordchars with ASCII characters that it doesn&apos;t contain yet which have different upper case and lower case representation. Default is ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþ</text:span></text:p>
       </office:annotation>i<office:annotation-end office:name="__Annotation__89843_975352036"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -2738,7 +2759,7 @@
      <text:p text:style-name="P5"><office:annotation office:name="__Annotation__9923_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:12:29.993147129</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">May also be void as method always returns 0</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">May also be void as method always returns 0</text:span></text:p>
       </office:annotation><text:span text:style-name="T7">int</text:span><office:annotation-end office:name="__Annotation__9923_104460119"/><text:span text:style-name="T7"> </text:span><text:span text:style-name="T8">AffixMgr::build_pfxtree</text:span>(PfxEntry* pfxptr) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2748,14 +2769,14 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* <office:annotation office:name="__Annotation__9955_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:25:02.585750216</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Previous pointer</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Previous pointer</text:span></text:p>
       </office:annotation>pptr<office:annotation-end office:name="__Annotation__9955_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* <office:annotation office:name="__Annotation__9956_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:28:46.792817707</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Entry pointer</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Entry pointer</text:span></text:p>
       </office:annotation>ep<office:annotation-end office:name="__Annotation__9956_104460119"/> = pfxptr;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2768,7 +2789,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>const char* key = ep-&gt;<office:annotation office:name="__Annotation__9898_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:05:06.842084832</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">for prefix this is c_str() of appnd</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">for prefix this is c_str() of appnd</text:span></text:p>
       </office:annotation>getKey()<office:annotation-end office:name="__Annotation__9898_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2847,7 +2868,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (<office:annotation office:name="__Annotation__9954_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:23:44.838598888</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">handle ONLY the first insert. nothing further to process</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">handle ONLY the first insert. nothing further to process</text:span></text:p>
       </office:annotation>!ptr<office:annotation-end office:name="__Annotation__9954_104460119"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2881,9 +2902,9 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (<office:annotation office:name="__Annotation__9994_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:34:15.815547734</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If ep is equal or subset ptr:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">- ptr will progress to its NextEQ</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If ep is equal or subset ptr:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">- ptr will progress to its NextEQ</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
       </office:annotation>strcmp(ep-&gt;getKey(), ptr-&gt;getKey()) &lt;= 0<office:annotation-end office:name="__Annotation__9994_104460119"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2905,9 +2926,9 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>} <office:annotation office:name="__Annotation__9993_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:32:20.538939203</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If ep is superset ptr:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- ptr will progress to its NextNE</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If ep is superset ptr:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- ptr will progress to its NextNE</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
       </office:annotation>else<office:annotation-end office:name="__Annotation__9993_104460119"/> {</text:p>
     </text:list-item>
     <text:list-item>
@@ -2947,7 +2968,7 @@
      <text:p text:style-name="P6">// both by suffix flag, and sorted by the <office:annotation office:name="__Annotation__9897_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:03:29.176115050</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: we never need to index on the non-reversed suffix string?</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: we never need to index on the non-reversed suffix string?</text:span></text:p>
       </office:annotation>reverse<office:annotation-end office:name="__Annotation__9897_104460119"/> of the</text:p>
     </text:list-item>
     <text:list-item>
@@ -2963,7 +2984,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>sfxptr-&gt;<office:annotation office:name="__Annotation__9922_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:09:36.978104332</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Store reversed version pof appnd in rappnd</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Store reversed version pof appnd in rappnd</text:span></text:p>
       </office:annotation>initReverseWord()<office:annotation-end office:name="__Annotation__9922_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2988,7 +3009,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>const char* key = ep-&gt;<office:annotation office:name="__Annotation__9899_104460119">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-13T11:05:29.923818645</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">For suffix this is c_str() of rappnd (the reverse of the suffix)</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">For suffix this is c_str() of rappnd (the reverse of the suffix)</text:span></text:p>
       </office:annotation>getKey()<office:annotation-end office:name="__Annotation__9899_104460119"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3103,9 +3124,9 @@
      <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__10765_714486967">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-26T12:54:42.906122436</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">If ep is equal or subset ptr:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- ptr will progress to its NextEQ</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">If ep is equal or subset ptr:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- ptr will progress to its NextEQ</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10765_714486967"/> (strcmp(ep-&gt;getKey(), ptr-&gt;getKey()) &lt;= 0) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -3127,9 +3148,9 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>} <office:annotation office:name="__Annotation__10766_714486967">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-26T12:55:05.818905925</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">If ep is superset ptr:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- ptr will progress to its NextNE</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">If ep is superset ptr:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- ptr will progress to its NextNE</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">- if that doesn&apos;t have a value, it will be set to ep and for-loop will be stopped</text:span></text:p>
       </office:annotation>else<office:annotation-end office:name="__Annotation__10766_714486967"/> {</text:p>
     </text:list-item>
     <text:list-item>
@@ -3727,7 +3748,7 @@
      <text:p text:style-name="P5">inline int <text:span text:style-name="T8">AffixMgr::</text:span><office:annotation office:name="__Annotation__10768_714486967">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-26T12:59:38.131464300</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">QUESTION: Also strcmp is used for building data structures indexes. When to use that or when to use this method?</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">QUESTION: Also strcmp is used for building data structures indexes. When to use that or when to use this method?</text:span></text:p>
       </office:annotation><text:span text:style-name="T8">isSubset</text:span><office:annotation-end office:name="__Annotation__10768_714486967"/>(const char* s1, const char* s2) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -3761,14 +3782,7 @@
      <text:p text:style-name="P5"><text:s text:c="38"/>int len,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="38"/>char <office:annotation office:name="__Annotation__10943_3076130788">
-       <dc:creator>Unknown Author</dc:creator>
-       <dc:date>2018-03-01T15:40:58.976125365</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">The argument in_compound is only used to indicate that the call was made from compounding functionality or not:</text:span><text:span text:style-name="T17"><text:line-break/></text:span><text:span text:style-name="T17">0 IN_CPD_NOT (default)</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">1 IN_CPD_BEGIN</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2 IN_CPD_END</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">3 IN_CPD_OTHER</text:span></text:p>
-      </office:annotation>in_compound<office:annotation-end office:name="__Annotation__10943_3076130788"/>,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="38"/>char in_compound,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="38"/>const FLAG needflag) {</text:p>
@@ -3801,7 +3815,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pe = <office:annotation office:name="__Annotation__12528_854338662">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-15T01:24:23.073295060</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Zero-length prefixes are always stored at the beginning.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Zero-length prefixes are always stored at the beginning.</text:span></text:p>
       </office:annotation>pStart[0]<office:annotation-end office:name="__Annotation__12528_854338662"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3811,15 +3825,15 @@
      <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__10942_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T15:38:50.163420307</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">1.a this method is called from compounding</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">1.b the continuation classes of the prefix entry under consideration does not contain generic onlyincompound flag</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">AND</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2.a this method is not called from compounding or from compounding related to the end part</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2.b continuation classes of the prefix entry under consideration does contain generic compoundpermitflag flag</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">1.a this method is called from compounding</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">OR</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">1.b the continuation classes of the prefix entry under consideration does not contain generic onlyincompound flag</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">AND</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">2.a this method is not called from compounding or from compounding related to the end part</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">OR</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">2.b continuation classes of the prefix entry under consideration does contain generic compoundpermitflag flag</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10942_3076130788"/> (</text:p>
     </text:list-item>
     <text:list-item>
@@ -3835,7 +3849,7 @@
      <text:p text:style-name="P5"><text:s text:c="11"/>(TESTAFF(pe-&gt;getCont(), <office:annotation office:name="__Annotation__11197_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:02:07.674609635</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">ONLYINCOMPOUND Suffixes signed with ONLYINCOMPOUND flag may be only inside of compounds (Fuge-elements in German, fogemorphemes in Swedish). ONLYINCOMPOUND flag works also with words. Note: also valuable to flag compounding parts which are not correct as a word by itself.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">ONLYINCOMPOUND Suffixes signed with ONLYINCOMPOUND flag may be only inside of compounds (Fuge-elements in German, fogemorphemes in Swedish). ONLYINCOMPOUND flag works also with words. Note: also valuable to flag compounding parts which are not correct as a word by itself.</text:span></text:p>
       </office:annotation>onlyincompound<office:annotation-end office:name="__Annotation__11197_3076130788"/>, pe-&gt;getContLen())))) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3851,7 +3865,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/>(TESTAFF(pe-&gt;getCont(), <office:annotation office:name="__Annotation__11196_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:01:54.829887175</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">COMPOUNDPERMITFLAG Prefixes are allowed at the beginning of compounds, suffixes are allowed at the end of compounds by default. Affixes with COMPOUNDPERMITFLAG may be inside of compounds.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">COMPOUNDPERMITFLAG Prefixes are allowed at the beginning of compounds, suffixes are allowed at the end of compounds by default. Affixes with COMPOUNDPERMITFLAG may be inside of compounds.</text:span></text:p>
       </office:annotation>compoundpermitflag<office:annotation-end office:name="__Annotation__11196_3076130788"/>, pe-&gt;getContLen()))))) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -3864,7 +3878,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__11198_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:05:42.768661763</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If the prefix entry under consideration matches the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If the prefix entry under consideration matches the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__11198_3076130788"/> (rv) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -3898,7 +3912,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pptr = pStart[<office:annotation office:name="__Annotation__11333_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:11:18.181815774</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Start iterating with the provided word indexing the prefix entry with matching append value. Iterator will follow NextEQ if prefix entry append value is a subset of the provided word, otherwise the iterator will follow NextNE.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Start iterating with the provided word indexing the prefix entry with matching append value. Iterator will follow NextEQ if prefix entry append value is a subset of the provided word, otherwise the iterator will follow NextNE.</text:span></text:p>
       </office:annotation>sp<office:annotation-end office:name="__Annotation__11333_3076130788"/>];</text:p>
     </text:list-item>
     <text:list-item>
@@ -3914,15 +3928,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__11332_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:10:30.075535537</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">1.a this method is called from compounding</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">1.b the continuation classes of the prefix entry under consideration does not contain generic onlyincompound flag</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">AND</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2.a this method is not called from compounding or from compounding not related to the end part</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2.b continuation classes of the prefix entry under consideration does contain generic compoundpermitflag flag</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">SAME CONDITIONS AS ABOVE</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__11332_3076130788"/> (</text:p>
     </text:list-item>
     <text:list-item>
@@ -3959,7 +3965,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__11331_3076130788">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-01T16:09:39.860416287</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">If the prefix entry under consideration matches the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">If the prefix entry under consideration matches the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__11331_3076130788"/> (rv) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -4041,7 +4047,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pe = pStart[<office:annotation office:name="__Annotation__10634_3129959820">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-02T15:49:20.736589427</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">Zero-length prefixes are always stored at the beginning.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">Zero-length prefixes are always stored at the beginning.</text:span></text:p>
       </office:annotation>0<office:annotation-end office:name="__Annotation__10634_3129959820"/>];</text:p>
     </text:list-item>
     <text:list-item>
@@ -4078,7 +4084,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>PfxEntry* pptr = pStart[<office:annotation office:name="__Annotation__10771_3129959820">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-02T15:49:42.272674651</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">Start iterating with the provided word indexing the prefix entry with matching append value. Iterator will follow NextEQ if suffix entry append value is a subset of the provided word, otherwise the iterator will follow NextNE.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">Start iterating with the provided word indexing the prefix entry with matching append value. Iterator will follow NextEQ if suffix entry append value is a subset of the provided word, otherwise the iterator will follow NextNE.</text:span></text:p>
       </office:annotation>sp<office:annotation-end office:name="__Annotation__10771_3129959820"/>];</text:p>
     </text:list-item>
     <text:list-item>
@@ -4097,7 +4103,7 @@
      <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__10772_3129959820">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-03-02T15:50:22.177233032</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">If the prefix entry under consideration matches for two suffixes for the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">If the prefix entry under consideration matches for two suffixes for the provided word, then return the hash entry of <text:s/>the root word.</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10772_3129959820"/> (rv) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -4503,16 +4509,16 @@
      <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__10303_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T12:53:04.211469853</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If all of the following apply:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">1. TODO</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">2. The hash entry r1 does not exit OR the chech compound table has no conditoins for element i OR hash entry r1 has flags and one of those flags is the condition of element i in the check compound table</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">3. The hash entry r2 does not exit OR the chech compound table has no conditoins for element i OR hash entry r2 has flags and one of those flags is the condition of element i in the check compound table</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">4. TODO OR TODO OR TODO</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T17"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If all of the following apply:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">1. TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">2. The hash entry r1 does not exit OR the chech compound table has no conditoins for element i OR hash entry r1 has flags and one of those flags is the condition of element i in the check compound table</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">3. The hash entry r2 does not exit OR the chech compound table has no conditoins for element i OR hash entry r2 has flags and one of those flags is the condition of element i in the check compound table</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">4. TODO OR TODO OR TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20"/></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10303_3164858689"/> (isSubset(checkcpdtable[i].pattern2.c_str(), word + pos) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -4609,15 +4615,15 @@
      <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__10406_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T12:58:31.642711247</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If the following apply:</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">1. Character a is in upper case OR character b is in upper case.</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">2. Character a is not a hyphen.</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">3. Character b is not a hyphen.</text:span></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16"/></text:p>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">(same description goes for the non-UTF8 if statement below it.)</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If the following apply:</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">1. Character a is in upper case OR character b is in upper case.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">2. Character a is not a hyphen.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">3. Character b is not a hyphen.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19"/></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">(same description goes for the non-UTF8 if statement below it.)</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10406_3164858689"/> (((unicodetoupper(a, langnum) == a) ||</text:p>
     </text:list-item>
     <text:list-item>
@@ -5431,7 +5437,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/><office:annotation office:name="__Annotation__10414_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:03:48.561521565</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>for<office:annotation-end office:name="__Annotation__10414_3164858689"/> (; scpd &lt;= checkcpdtable.size() &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5552,7 +5558,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__10415_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:02.969818832</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>while<office:annotation-end office:name="__Annotation__10415_3164858689"/> ((rv) &amp;&amp; !hu_mov_rule &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5628,7 +5634,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/><office:annotation office:name="__Annotation__10416_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:11.930109618</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10416_3164858689"/> (compoundflag &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5644,7 +5650,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10417_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:18.786290685</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10417_3164858689"/> (((rv = suffix_check(</text:p>
     </text:list-item>
     <text:list-item>
@@ -5693,7 +5699,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/><office:annotation office:name="__Annotation__10418_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:31.186513280</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10418_3164858689"/> (rv ||</text:p>
     </text:list-item>
     <text:list-item>
@@ -5772,7 +5778,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>} else <office:annotation office:name="__Annotation__10419_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:37.594660163</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10419_3164858689"/> (rv-&gt;astr &amp;&amp; (TESTAFF(rv-&gt;astr, forbiddenword, rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
@@ -5809,7 +5815,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__10420_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:49.298919826</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10420_3164858689"/> ((rv) &amp;&amp; !hu_mov_rule &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5843,7 +5849,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__10421_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:04:58.739138578</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10421_3164858689"/> ((rv) &amp;&amp; !checked_prefix &amp;&amp; compoundend &amp;&amp; !hu_mov_rule &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5874,7 +5880,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__10422_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:05:08.019356306</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10422_3164858689"/> ((rv) &amp;&amp; !checked_prefix &amp;&amp; (wordnum == 0) &amp;&amp; compoundmiddle &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5971,7 +5977,7 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="14"/><text:span text:style-name="T13">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="14"/><text:span text:style-name="T15">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="14"/>|| ((langnum == LANG_hu) &amp;&amp; hu_mov_rule &amp;&amp;</text:p>
@@ -5992,7 +5998,7 @@
      <text:p text:style-name="P5"><text:s text:c="19"/>TESTAFF(rv-&gt;astr, &apos;H&apos;, rv-&gt;alen)))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="14"/><text:span text:style-name="T13">// END of LANG_hu section</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="14"/><text:span text:style-name="T15">// END of LANG_hu section</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="14"/>) &amp;&amp;</text:p>
@@ -6034,7 +6040,7 @@
      <text:p text:style-name="P5"><text:s text:c="16"/>cpdcase_check(word.c_str(), i))))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>|| ((!rv) &amp;&amp; (langnum == LANG_hu) &amp;&amp; hu_mov_rule &amp;&amp;</text:p>
@@ -6046,7 +6052,7 @@
      <text:p text:style-name="P5"><text:s text:c="16"/>(sfx &amp;&amp; sfx-&gt;getCont() &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="17"/>( <text:s/><text:span text:style-name="T13">// XXX hardwired Hungarian dic. codes</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="17"/>( <text:s/><text:span text:style-name="T15">// XXX hardwired Hungarian dic. codes</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>TESTAFF(sfx-&gt;getCont(), (unsigned short)&apos;x&apos;,</text:p>
@@ -6067,22 +6073,22 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T13">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T15">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="10"/>if (langnum == LANG_hu) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// calculate syllable number of the word</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// calculate syllable number of the word</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="12"/>numsyllable += get_syllable(st.substr(0, i));</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// + 1 word, if syllable number of the prefix &gt; 1 (hungarian</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// + 1 word, if syllable number of the prefix &gt; 1 (hungarian</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// convention)</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// convention)</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>if (pfx &amp;&amp; (get_syllable(pfx-&gt;getKey()) &gt; 1))</text:p>
@@ -6094,7 +6100,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T13">// END of LANG_hu section</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/><text:span text:style-name="T15">// END of LANG_hu section</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -6157,7 +6163,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10423_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:06:27.253026227</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>while<office:annotation-end office:name="__Annotation__10423_3164858689"/> ((rv) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -6206,7 +6212,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10531_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:08:33.431125626</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10531_3164858689"/> (rv &amp;&amp; forceucase &amp;&amp; (rv) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -6225,7 +6231,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10424_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:06:40.973209438</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">TODO</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">TODO</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10424_3164858689"/> (rv &amp;&amp; words &amp;&amp; words[wnum + 1])</text:p>
     </text:list-item>
     <text:list-item>
@@ -6244,10 +6250,10 @@
      <text:p text:style-name="P5"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// LANG_hu section: spec. Hungarian rule, XXX hardwired dictionary</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// LANG_hu section: spec. Hungarian rule, XXX hardwired dictionary</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// code</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// code</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>if ((rv) &amp;&amp; (langnum == LANG_hu) &amp;&amp;</text:p>
@@ -6265,7 +6271,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// END of LANG_hu section</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// END of LANG_hu section</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"/>
@@ -8644,13 +8650,39 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>while (se) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>if (!cclass || se-&gt;getCont()) {</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__10726_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:15:50.952743454</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">no continuation classes are provided to this method</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">the suffix entry under consideration has continuation classes</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__10726_614441264"/> (!cclass || se-&gt;getCont()) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/><text:span text:style-name="T1">// suffixes are not allowed in beginning of compounds</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>if ((((in_compound != IN_CPD_BEGIN)) || <text:s/>// &amp;&amp; !cclass</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__10725_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:15:28.008359785</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">1.a this method was not called from compounding related to the beginning part</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">1.b continuation classes of the suffix entry under consideration does contain generic compoundpermitflag flag</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">AND</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">2.a there is no generic circumfix flag</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">2.b continuation classes of the provided prefix entry and suffix entry under consideration do not contain generic circumfix flag</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">2.c continuation classes of the provided prefix entry and suffix entry under consideration do both contain generic circumfix flag</text:span><text:span text:style-name="T17"><text:tab/></text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">AND</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">3 the continuation classes of the suffix entry under consideration does not contain generic onlyincompound flag</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">AND</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">4.a continuation class is provided to this method</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">4.b continuation classes of the provided prefix entry does not contain generic needaffix flag</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17"><text:s text:c="4"/></text:span><text:span text:style-name="T17">4.c continuation classes of the suffix entry under consideration does not contain generic needaffix flag</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__10725_614441264"/> ((((in_compound != IN_CPD_BEGIN)) || <text:s/>// &amp;&amp; !cclass</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="11"/><text:span text:style-name="T1">// except when signed with compoundpermitflag flag</text:span></text:p>
@@ -8785,13 +8817,17 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>while (sptr) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>if (<text:span text:style-name="T11">isRevSubset</text:span>(sptr-&gt;getKey(), word + len - 1, len)) {</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>if (<text:span text:style-name="T10">isRevSubset</text:span>(sptr-&gt;getKey(), word + len - 1, len)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="6"/><text:span text:style-name="T1">// suffixes are not allowed in beginning of compounds</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>if ((((in_compound != IN_CPD_BEGIN)) || <text:s/>// &amp;&amp; !cclass</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__10727_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:16:24.776993286</dc:date>
+       <text:p text:style-name="P9"><text:span text:style-name="T18">SAME CONDITIONS AS ABOVE</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__10727_614441264"/> ((((in_compound != IN_CPD_BEGIN)) || <text:s/>// &amp;&amp; !cclass</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="11"/><text:span text:style-name="T1">// except when signed with compoundpermitflag flag</text:span></text:p>
@@ -8872,7 +8908,15 @@
      <text:p text:style-name="P5"><text:s text:c="14"/>TESTAFF(ep-&gt;getCont(), needaffix, ep-&gt;getContLen())))))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>if (in_compound != IN_CPD_END || ppfx ||</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__11116_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:20:57.886310595</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">this method was not called from compounding related to the end part</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">prefix entry was provided</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">OR</text:span></text:p>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">continuation classes of the suffix entry under consideration does not contain generic onlyincompound flag</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__11116_614441264"/> (in_compound != IN_CPD_END || ppfx ||</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>!(sptr-&gt;getCont() &amp;&amp;</text:p>
@@ -8881,7 +8925,7 @@
      <text:p text:style-name="P5"><text:s text:c="14"/>TESTAFF(sptr-&gt;getCont(), onlyincompound, sptr-&gt;getContLen()))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>rv = sptr-&gt;<text:span text:style-name="T11">checkword</text:span>(word, len, sfxopts, ppfx,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/>rv = sptr-&gt;<text:span text:style-name="T10">checkword</text:span>(word, len, sfxopts, ppfx,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="31"/>cclass, needflag,</text:p>
@@ -8899,13 +8943,17 @@
      <text:p text:style-name="P5"><text:s text:c="12"/>sfxflag = sptr-&gt;getFlag(); <text:s/><text:span text:style-name="T9">// BUG: sfxflag not stateless</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/>if (!sptr-&gt;getCont())</text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__11115_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:20:40.366016396</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">the suffix entry under consideration has no continuation classes</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__11115_614441264"/> (!sptr-&gt;getCont())</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="14"/>sfxappnd = sptr-&gt;getKey(); <text:s/><text:span text:style-name="T9">// BUG: sfxappnd not stateless</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// LANG_hu section: spec. Hungarian rule</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>else if (langnum == LANG_hu &amp;&amp; sptr-&gt;getKeyLen() &amp;&amp;</text:p>
@@ -8923,7 +8971,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T13">// END of LANG_hu section</text:span></text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/><text:span text:style-name="T15">// END of LANG_hu section</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>return rv;</text:p>
@@ -8995,7 +9043,11 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>while (se) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>if (contclasses[se-&gt;getFlag()]) {</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/><office:annotation office:name="__Annotation__11117_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:26:39.620525232</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">the flag of the suffix entry under consideration is in the generic continutation classes</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__11117_614441264"/> (contclasses[se-&gt;getFlag()]) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="6"/>rv = se-&gt;<text:span text:style-name="T10">check_twosfx</text:span>(word, len, sfxopts, ppfx, needflag);</text:p>
@@ -9043,7 +9095,11 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (isRevSubset(sptr-&gt;getKey(), word + len - 1, len)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>if (contclasses[sptr-&gt;getFlag()]) {</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/><office:annotation office:name="__Annotation__11253_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:34:46.653490985</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">the flag of the suffix entry under consideration is in the generic continutation classes</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__11253_614441264"/> (contclasses[sptr-&gt;getFlag()]) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>rv = sptr-&gt;<text:span text:style-name="T10">check_twosfx</text:span>(word, len, sfxopts, ppfx, needflag);</text:p>
@@ -9055,7 +9111,11 @@
      <text:p text:style-name="P5"><text:s text:c="10"/>sfxflag = sptr-&gt;getFlag(); <text:s/><text:span text:style-name="T9">// BUG: sfxflag not stateless</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>if (!sptr-&gt;getCont())</text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/><office:annotation office:name="__Annotation__11252_614441264">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-03-08T19:34:33.677317367</dc:date>
+       <text:p text:style-name="P8"><text:span text:style-name="T17">the suffix entry under consideration has no continuation classes</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__11252_614441264"/> (!sptr-&gt;getCont())</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="12"/>sfxappnd = sptr-&gt;getKey(); <text:s/><text:span text:style-name="T9">// BUG: sfxappnd not stateless</text:span></text:p>
@@ -11515,7 +11575,7 @@
      <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="8"/>stderr,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>&quot;<text:span text:style-name="T14">error: line %d: multiple definitions of an affix file parameter</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/>&quot;<text:span text:style-name="T13">error: line %d: multiple definitions of an affix file parameter</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>af-&gt;getlinenum());</text:p>
@@ -11563,7 +11623,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>stderr,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="8"/>&quot;<text:span text:style-name="T14">error: line %d: multiple definitions of an affix file parameter\</text:span>n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="8"/>&quot;<text:span text:style-name="T13">error: line %d: multiple definitions of an affix file parameter\</text:span>n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>af-&gt;getlinenum());</text:p>
@@ -11707,7 +11767,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="21"/>&quot;<text:span text:style-name="T14">error: line %d: missing compoundsyllable information</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="21"/>&quot;<text:span text:style-name="T13">error: line %d: missing compoundsyllable information</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -11743,7 +11803,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (parsedrep) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -12316,7 +12376,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (phone) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -12370,7 +12430,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (num &lt; 1) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="27"/>af-&gt;getlinenum());</text:p>
@@ -12418,7 +12478,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (np != 2) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: missing data</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: missing data</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -12478,7 +12538,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/>if (nl.compare(start_piece - nl.begin(), 5, &quot;PHONE&quot;, 5) != 0) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="14"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:soft-page-break/><text:s text:c="14"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="31"/>af-&gt;getlinenum());</text:p>
@@ -12547,7 +12607,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>if (phone-&gt;rules.size() != old_size + 2) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="6"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="6"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="23"/>af-&gt;getlinenum());</text:p>
@@ -12592,7 +12652,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (parsedcheckcpd) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -12649,7 +12709,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (numcheckcpd &lt; 1) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="27"/>af-&gt;getlinenum());</text:p>
@@ -12694,7 +12754,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (np != 2) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: missing data</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: missing data</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -13498,7 +13558,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (parsedbreaktable) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: multiple table definitions</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -13555,7 +13615,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (numbreak &lt; 0) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="10"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: bad entry number</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="27"/>af-&gt;getlinenum());</text:p>
@@ -13606,7 +13666,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (np != 2) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: missing data</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: missing data</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -13660,7 +13720,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/>if (nl.compare(start_piece - nl.begin(), 5, &quot;BREAK&quot;, 5) != 0) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="12"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="12"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="29"/>af-&gt;getlinenum());</text:p>
@@ -13720,7 +13780,7 @@
      <text:p text:style-name="P5"><text:s text:c="2"/>if (breaktable.size() != static_cast&lt;size_t&gt;(numbreak)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T14">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
+     <text:p text:style-name="P5"><text:s text:c="4"/>HUNSPELL_WARNING(stderr, &quot;<text:span text:style-name="T13">error: line %d: table is corrupt</text:span>\n&quot;,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="21"/>af-&gt;getlinenum());</text:p>
@@ -13747,7 +13807,7 @@
      <text:p text:style-name="P5">void <text:span text:style-name="T8">AffixMgr::</text:span><office:annotation office:name="__Annotation__10814_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:19:51.566381354</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
       </office:annotation><text:span text:style-name="T8">reverse_condition</text:span><office:annotation-end office:name="__Annotation__10814_3164858689"/>(std::string&amp; piece) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -14015,7 +14075,7 @@
      <text:p text:style-name="P5"><text:s text:c="26"/><office:annotation office:name="__Annotation__9871_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:32:23.674342254</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">affix type, can be inverted value in case of complex type.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">affix type, can be inverted value in case of complex type.</text:span></text:p>
       </office:annotation>const char at<office:annotation-end office:name="__Annotation__9871_1547195353"/>,</text:p>
     </text:list-item>
     <text:list-item>
@@ -14025,7 +14085,7 @@
      <text:p text:style-name="P5"><text:s text:c="26"/><office:annotation office:name="__Annotation__9907_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T23:13:18.401701348</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">storage for flags that have been encountered for pfx and/or sfx </text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">storage for flags that have been encountered for pfx and/or sfx </text:span></text:p>
       </office:annotation>char* dupflags<office:annotation-end office:name="__Annotation__9907_1547195353"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -14122,14 +14182,14 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>aflag = <office:annotation office:name="__Annotation__9875_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:38:20.726292228</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">decode flag to internal representation in unsigned short</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">decode flag to internal representation in unsigned short</text:span></text:p>
       </office:annotation>pHMgr-&gt;decode_flag(std::string(start_piece, iter).c_str())<office:annotation-end office:name="__Annotation__9875_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P5"><text:s text:c="8"/>if (<office:annotation office:name="__Annotation__9881_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:54:40.279791610</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">warm only if this affix flag was used before for this particular affix type</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">warm only if this affix flag was used before for this particular affix type</text:span></text:p>
       </office:annotation>((at == &apos;S&apos;) &amp;&amp; (dupflags[aflag] &amp; dupSFX)) ||</text:p>
     </text:list-item>
     <text:list-item>
@@ -14154,7 +14214,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__9880_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:51:52.844835509</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">store that this flag was used for sfx and/or pfx</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">store that this flag was used for sfx and/or pfx</text:span></text:p>
       </office:annotation>dupflags[aflag] += (char)((at == &apos;S&apos;) ? dupSFX : dupPFX)<office:annotation-end office:name="__Annotation__9880_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -14176,7 +14236,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/>if (*start_piece == <office:annotation office:name="__Annotation__9890_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:59:07.997314256</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">usually it regards a cross product</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">usually it regards a cross product</text:span></text:p>
       </office:annotation>&apos;Y&apos;<office:annotation-end office:name="__Annotation__9890_1547195353"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -14204,7 +14264,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__9891_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T22:59:48.467803685</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">the number of entries that need to follow</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">the number of entries that need to follow</text:span></text:p>
       </office:annotation>numents<office:annotation-end office:name="__Annotation__9891_1547195353"/> = atoi(std::string(start_piece, iter).c_str());</text:p>
     </text:list-item>
     <text:list-item>
@@ -14334,7 +14394,7 @@
      <text:p text:style-name="P5"><text:s text:c="4"/>std::string <office:annotation office:name="__Annotation__9892_1547195353">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-12T23:01:13.709314009</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">next line</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">next line</text:span></text:p>
       </office:annotation>nl<office:annotation-end office:name="__Annotation__9892_1547195353"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -14749,7 +14809,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10562_3987638846">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-28T11:08:09.861299783</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
       </office:annotation>reverse_condition<office:annotation-end office:name="__Annotation__10562_3987638846"/>(chunk);</text:p>
     </text:list-item>
     <text:list-item>
@@ -14777,7 +14837,7 @@
      <text:p text:style-name="P5"><text:s text:c="12"/><office:annotation office:name="__Annotation__10563_3987638846">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-28T11:09:20.166686226</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T17">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T20">Dangerous to reverse a regex. Also implementation Hunspell is not safe for ^ at end of input. Reversing input, not regex.</text:span></text:p>
       </office:annotation>reverse_condition<office:annotation-end office:name="__Annotation__10563_3987638846"/>(chunk);</text:p>
     </text:list-item>
     <text:list-item>
@@ -15336,7 +15396,7 @@
      <text:p text:style-name="P5"><text:s text:c="8"/><office:annotation office:name="__Annotation__10532_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:13:13.709767095</dc:date>
-       <text:p text:style-name="P8"><text:span text:style-name="T16">If the </text:span><text:span text:style-name="T17">flag which is provided via parameter suff equals </text:span><text:span text:style-name="T16">the flag of the suffix entry.</text:span></text:p>
+       <text:p text:style-name="P10"><text:span text:style-name="T19">If the </text:span><text:span text:style-name="T20">flag which is provided via parameter suff equals </text:span><text:span text:style-name="T19">the flag of the suffix entry.</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10532_3164858689"/> ((*suff) == ptr-&gt;getFlag()) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -15352,7 +15412,7 @@
      <text:p text:style-name="P5"><text:s text:c="10"/><office:annotation office:name="__Annotation__10533_3164858689">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-02-23T13:15:26.624741840</dc:date>
-       <text:p><text:span text:style-name="T16">Retrieve hash entry which matches the provided root_word that has the suffix found appended to it. Then add that hash entry to the results that will be returned.</text:span></text:p>
+       <text:p><text:span text:style-name="T19">Retrieve hash entry which matches the provided root_word that has the suffix found appended to it. Then add that hash entry to the results that will be returned.</text:span></text:p>
       </office:annotation>if<office:annotation-end office:name="__Annotation__10533_3164858689"/> (ht) {</text:p>
     </text:list-item>
     <text:list-item>

@@ -4,9 +4,9 @@ skinparam backgroundcolor White|White
 title Hunspell - AffixMgr::prefix_check(word)\n"check word for prefixes"\n
 
 start
-floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
+floating note: When called from affix_check(word) default is\nalways used for in_compound, needflag.\nReturn NULL is implied.
 
-#silver:reset compound pointers\npfx, pfxappnd, sfxappnd, sfxextra;
+#silver:reset compound helpers\npfx, pfxappnd, sfxappnd, sfxextra;
 while (iterate zero-length prefixes?) is (yes)
 	if (
     1.a this method is called from compounding
@@ -41,7 +41,6 @@ while (iterate non-zero-length prefixes?) is (yes)
 	endif
 endwhile (no)
 
-:return NULL;
 stop
 
 @enduml

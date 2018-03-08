@@ -4,42 +4,18 @@ skinparam backgroundcolor White|White
 title Hunspell - AffixMgr::suffix_check_twosfx(word)\n"check word for two-level suffixes"\n
 
 start
-floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
+floating note: When called from affix_check(word) default is\nalways used for needflag, sfxopts, ppfx.\nReturn NULL is implied.
 
-#silver:do not reset any compound pointers;
-while (iterate zero-length suffixes?) is (yes)
+#silver:do not reset any compound helpers;
+while (iterate zero-length prefixes?) is (yes)
 	if (
-no continuation classes are provided to this method
-OR
-the suffix entry under consideration has continuation classes
+the flag of the suffix entry under consideration is in the generic continutation classes
 	) then (yes)
-		if (
-    1.a this method was not called from compounding related to the beginning part "suffixes are not allowed in beginning of compounds"
-    OR
-    1.b continuation classes of the suffix entry under consideration does contain generic compoundpermitflag flag
-AND
-    2.a there is no generic circumfix flag
-    OR
-    2.b continuation classes of the provided prefix entry and suffix entry under consideration do not contain generic circumfix flag
-    OR
-    2.c continuation classes of the provided prefix entry and suffix entry under consideration do both contain generic circumfix flag	
-AND
-    3 the continuation classes of the suffix entry under consideration does not contain generic onlyincompound flag "fogemorpheme"
-AND
-    "needaffix on prefix or first suffix"
-    4.a continuation classes are provided to this method
-    OR
-    4.b continuation classes of the provided prefix entry does not contain generic needaffix flag
-    OR
-    4.c continuation classes of the suffix entry under consideration does not contain generic needaffix flag
-		) then (yes)
-			#tomato:root = SuffixEntry::checkword(word,(in_compound?0:onlyincompound));
-			if (root?) then (yes)
-				#silver:set compound helper sfx;
-				:return root;
-				stop
-			else (no)
-			endif
+		#tomato:root = SuffixEntry::check_twosfx(word);
+		if (root?) then (yes)
+			#silver:do not set any compound helpers;
+			:return root;
+			stop
 		else (no)
 		endif
 	else (no)
@@ -47,19 +23,29 @@ AND
 endwhile (no)
 
 if (length of word is 0? "full strip") then (yes)
-	:return NULL;
+	floating note: TODO Figure out what triggers this
+	stop
 else (no)
 endif
 
-:TODO unsigned char sp = *((const unsigned char*)(word + len - 1));
-while (iterate non-zero-length suffixes?) is (yes)
-	if (is SuffixEntry.getKey() a revsubset of word?) then (yes)
-		floating note: getKey() returns rappnd\nbeing reverse append,\nrevsubset is tested with\nAffixMgr::isRevSubset
-		if (SAME CONDITIONS AS ABOVE) then (yes)
-			#tomato:root = SuffixEntry::checkword(word,(in_compound?0:onlyincompound));
+:iterator starts at (word + len - 1) instead of (word);
+floating note: TODO Figure out\nwhat this does,\nprobably to skip\nunimportant part
+while (iterate non-zero-length prefixes?) is (yes)
+	if (
+is SuffixEntry.getKey() a revsubset of word + len - 1
+	) then (yes)
+		if (
+the flag of the suffix entry under consideration is in the generic continutation classes
+		) then (yes)
+			#tomato:root = SuffixEntry::check_twosfx(word);
 			if (root?) then (yes)
-				floating note: sfxappnd is the previous suffix for counting syllables of the suffix
-
+				#silver:set compound helper sfxflag;
+				if (
+the suffix entry under consideration has no continuation classes?
+				) then (yes)
+					#silver:set compound helper sfxappend to SuffixEntry.getKey();
+				else (no)
+				endif
 				:return root;
 				stop
 			else (no)
@@ -70,7 +56,7 @@ while (iterate non-zero-length suffixes?) is (yes)
 	endif
 endwhile (no)
 
-:return NULL;
 stop
+
 
 @enduml

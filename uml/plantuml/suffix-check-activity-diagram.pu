@@ -4,9 +4,9 @@ skinparam backgroundcolor White|White
 title Hunspell - AffixMgr::suffix_check(word)\n"check word for suffixes"\n
 
 start
-floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
+floating note: When called from affix_check(word) default is\nalways used for in_compound, needflag, sfxopts, ppfx, cclass.\nReturn NULL is implied.
 
-#silver:do not reset any compound pointers;
+#silver:do not reset any compound helpers;
 while (iterate zero-length suffixes?) is (yes)
 	if (
 no continuation classes are provided to this method
@@ -27,7 +27,7 @@ AND
     3 the continuation classes of the suffix entry under consideration does not contain generic onlyincompound flag "fogemorpheme"
 AND
     "needaffix on prefix or first suffix"
-    4.a continuation classes are provided to this method
+    4.a continuation class is provided to this method
     OR
     4.b continuation classes of the provided prefix entry does not contain generic needaffix flag
     OR
@@ -47,21 +47,43 @@ AND
 endwhile (no)
 
 if (length of word is 0? "full strip") then (yes)
-	:return NULL;
+	floating note: TODO Figure out what triggers this
+	stop
 else (no)
 endif
 
-:TODO unsigned char sp = *((const unsigned char*)(word + len - 1));
+:iterator starts at (word + len - 1) instead of (word);
+floating note: TODO Figure out\nwhat this does,\nprobably to skip\nunimportant part
 while (iterate non-zero-length suffixes?) is (yes)
-	if (is SuffixEntry.getKey() a revsubset of word?) then (yes)
+	if (
+is SuffixEntry.getKey() a revsubset of word?
+	) then (yes)
 		floating note: getKey() returns rappnd\nbeing reverse append,\nrevsubset is tested with\nAffixMgr::isRevSubset
 		if (SAME CONDITIONS AS ABOVE) then (yes)
-			#tomato:root = SuffixEntry::checkword(word,(in_compound?0:onlyincompound));
-			if (root?) then (yes)
-				floating note: sfxappnd is the previous suffix for counting syllables of the suffix
-
-				:return root;
-				stop
+			if (
+this method was not called from compounding related to the end part
+OR
+prefix entry was provided
+OR
+continuation classes of the suffix entry under consideration does not contain generic onlyincompound flag
+			) then (yes)
+				#tomato:root = SuffixEntry::checkword(word,(in_compound?0:onlyincompound));
+				if (root?) then (yes)
+					#silver:set compound helper sfx, sfxflag;
+					if (
+the suffix entry under consideration has no continuation classes?
+					) then (yes)
+						#silver:set compound helper sfxappend to SuffixEntry.getKey();
+					else (no)
+						if (TODO: SOME HUNGARIAN CONDITION?) then (yes)
+							#violet:set compound helper sfxextra;
+						else (no)
+						endif
+					endif
+					:return root;
+					stop
+				else (no)
+				endif
 			else (no)
 			endif
 		else (no)
@@ -70,7 +92,6 @@ while (iterate non-zero-length suffixes?) is (yes)
 	endif
 endwhile (no)
 
-:return NULL;
 stop
 
 @enduml
