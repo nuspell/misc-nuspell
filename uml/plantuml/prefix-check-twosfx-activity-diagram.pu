@@ -1,7 +1,7 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - AffixMgr::prefix_check_twosfx(word)\ncheck word for prefixes and two-level suffixes\n
+title Hunspell - AffixMgr::prefix_check_twosfx(word)\n"check word for prefixes and two-level suffixes"\n
 
 start
 floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
@@ -17,7 +17,7 @@ while (iterate zero-length prefixes?) is (yes)
 endwhile (no)
 
 while (iterate non-zero-length prefixes?) is (yes)
-	floating note: getKey() returns appnd,\nsubset is tested with\nAffixMgr::isSubset
+	floating note: getKey returns appnd,\nsubset is tested with\nAffixMgr::isSubset
 	if (is PrefixEntry.getKey() a subset of word?) then (yes)
 		#limegreen:root = PrefixEntry::check_twosfx(word);
 		if (root?) then (yes)

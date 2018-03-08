@@ -1,7 +1,7 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - AffixMgr::affix_check(word)\ncheck word with affixes for correct spelling\ncalled from hunspell.checkword(word)\n
+title Hunspell - AffixMgr::affix_check(word)\n"check if word with affixes is correctly spelled"\ncalled from hunspell.checkword(word)\n
 
 start
 floating note: here default is always used for\nin_compound, needflag,  etc.

@@ -1,7 +1,7 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - AffixMgr::suffix_check(word)\ncheck word for suffixes\n
+title Hunspell - AffixMgr::suffix_check(word)\n"check word for suffixes"\n
 
 start
 floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
