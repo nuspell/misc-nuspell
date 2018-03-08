@@ -1,0 +1,47 @@
+@startuml
+skinparam backgroundcolor White|White
+
+title Hunspell - AffixMgr::prefix_check(word)\ncheck word for prefixes\n
+
+start
+floating note: when called from affix_check(word) default is\nalways used for in_compound, needflag, etc.
+
+#silver:reset compound pointers\npfx, pfxappnd, sfxappnd, sfxextra;
+while (iterate zero-length prefixes?) is (yes)
+	if (
+    1.a this method is called from compounding
+    OR
+    1.b the continuation classes of the prefix entry under consideration does not contain generic onlyincompound flag
+AND
+    2.a this method is not called from compounding or from compounding related to the end part
+    OR
+    2.b continuation classes of the prefix entry under consideration does contain generic compoundpermitflag flag
+	) then (yes)
+		#limegreen:root = PrefixEntry::checkword(word);
+		if (root?) then (yes)
+			#silver:set compound helper pfx;
+			:return root;
+			stop
+		else (no)
+		endif
+	else (no)
+	endif
+endwhile (no)
+
+while (iterate non-zero-length prefixes?) is (yes)
+	if (SAME CONDITIONS AS ABOVE) then (yes)
+		#limegreen:root = PrefixEntry::checkword(word);
+		if (root?) then (yes)
+			#silver:set compound helper pfx;
+			:return root;
+			stop
+		else (no)
+		endif
+	else (no)
+	endif
+endwhile (no)
+
+:return NULL;
+stop
+
+@enduml
