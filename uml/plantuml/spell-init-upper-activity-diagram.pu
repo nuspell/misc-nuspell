@@ -5,23 +5,6 @@ title Hunspell - Spell (spell)\n\nCalling check_word for\nupper case (ALLCAP) an
 
 start
 
-:TODO;
-:TODO;
-:TODO;
-
-if (cleaned word is in upper case) then (yes)
-	:add SPELL_ORIGCAP to info;
-	:set root value to result of\ncheck_word(cleaned word, info, root);
-	if (root value does not exist) then (yes)
-		if (abbr. count > 0) then (yes)
-			:set root value to result of\ncheck_word(cleaned word with period '.' added at end, info, root);
-		else (no)
-		endif
-	else (no)
-	endif
-else (no)
-endif
-
 stop
 
 @enduml

@@ -6,8 +6,7 @@ title Hunspell - Check Spelling - bool spell(word, info, root)
 start
 floating note: Return FALSE is implied.
 
-
-partition "initialzation" {
+partition "initialazition" {
 	:reset I/O parameter info;
 	if (word length exceeds maximum?) then (yes)
 		stop
@@ -21,9 +20,9 @@ partition "input conversion" {
 	else (no)
 	endif
 	if (input conversion changed word?) then (yes)
-		:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
+		:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type "captype"\n- abbreviation count "abbv";
 	else (no)
-		:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbreviation count;
+		:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type "captype"\n- abbreviation count "abbv";
 	endif
 
 	if (client is Mozilla) then (yes)
@@ -31,7 +30,7 @@ partition "input conversion" {
 	else (no)
 	endif
 
-	if (cleaned word length is 0 or hash manager is empty?) then (yes)
+	if (cleaned word length is 0 OR hash manager is empty?) then (yes)
 		:return TRUE;
 		stop
 	else (no)
@@ -49,25 +48,101 @@ partition "numbers and numeric separators" {
 }
 
 partition "capitalization type" {
-	:TODO;
-}
-
-partition "check word" {
-	:set root value to result of check_word\naccording depending on cleaned word case;
-	note left: see other activity diagrams
+	if (captype is camel case, pascal case OR lower/neutral case?) then(yes)
+		if (captype is camel case OR pascal case?) then(yes)
+			:add SPELL_ORIGCAP to info;
+		else (no)
+		endif
+		#skyblue:root = check_word(cleaned word, info, root);
+		if (abbv > 0 AND no root?) then (yes)
+			#skyblue:root = check_word(cleaned word period added at end, info, root);
+		else (no)
+		endif
+	else (no)
+		if (captype is all upper case?) then (yes)
+			:add SPELL_ORIGCAP to info;
+			#skyblue:root = check_word(cleaned word, info, root);
+			if (abbv > 0 AND no root?) then (yes)
+				#skyblue:root = check_word(cleaned word period added at end, info, root);
+			else (no)
+			endif
+			if (root?) then (no)
+				if (cleaned word has apostrophe?) then (yes)
+					:handle specific Catalan, French and Italian prefixes separated by apostrophe;
+				else (no)
+				endif
+				if (no root AND generic check sharp s AND SS in cleaned word?) then (yes)
+					:handle German sharp s;
+				else (no)
+				endif
+			else (yes)
+			endif
+		else (no)
+		endif
+		if (captype is capitalized OR (all upper case AND no root)?) then (yes)
+			:add SPELL_ORIGCAP to info;
+			if (captype is all upper case?) then (yes)
+				:make cleaned word all lower case and then make it capitalized;
+				:handle idot;
+			else (no)
+			endif
+			if (captype is capitalized?) then (yes)
+				:add SPELL_INITCAP to info;
+			else (no)
+			endif
+			#skyblue:root = check_word(cleaned word, info, root);
+			if (captype is capitalized?) then (yes)
+				:remove SPELL_INITCAP to info;
+			else (no)
+			endif
+			if (info contains SPELL_FORBIDDEN?) then (yes)
+				:root = NULL;
+				note left
+"forbid bad capitalization
+(for example, ijs -> Ijs
+instead of IJs in Dutch)
+use explicit forms in dic:
+Ijs/F (F = FORBIDDENWORD flag)"
+				end note
+			else (no)
+				if (root AND keepcase(root)??? AND captype is all upper case?) then (yes)
+					:root = NULL;
+				else (no)
+				endif
+				if (no root OR no idot handling needed?) then (yes)
+					:make cleaned word all lower case ;
+					:copy cleaned word to tmp;
+					:make cleaned word capitalized;
+					#skyblue:root = check_word(tmp, info, root);
+					:TODO line 589 abbv && !rv;
+				else (no)
+				endif
+			endif
+		else (no)
+		endif
+	endif
 }
 
 partition "forbidden words" {
-	:TODO deal with forbidden words;
+	if (root?) then (yes)
+		if (TODO AND TODO AND TODO?) then (yes)
+			:add SPELL_WARN to info;
+			if (generic forbid warn?) then (yes)
+				stop
+			else (no)
+			endif
+			:return TRUE;
+			stop
+		else (no)
+		endif
+		:return TRUE;
+		stop
+	else (no)
+	endif
 }
 
-partition "spell" {
-	:return result recursive call to this spell algorithm depending on break patterns;
-	note left: see other activity diagram
-}
-
-partition "default" {
-	:return FALSE;
+partition "recursive breaking at break points" {
+	:TODO;
 }
 
 stop
