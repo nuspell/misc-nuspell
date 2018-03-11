@@ -1,55 +1,55 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - Spell (spell)
+title Hunspell - Check Spelling - bool spell(word, info, root)
 
 start
+floating note: Return FALSE is implied.
 
-partition "limitation" {
-	if (length of word >= maximum word length) then (yes)
-		:return FALSE;
+
+partition "initialzation" {
+	:reset I/O parameter info;
+	if (word length exceeds maximum?) then (yes)
 		stop
 	else (no)
 	endif
 }
 
 partition "input conversion" {
-	if (affix manager exists) then (yes)
-		:get input conversion list from affix manager;
-		if (input conversion list exists) then (yes)
-			:perform input conversion on word;
-		else (no)
-		endif
+	if (input conversion available?) then (yes)
+		:perform input conversion on word;
 	else (no)
 	endif
-	if (input conversion has changed word) then (yes)
+	if (input conversion changed word?) then (yes)
 		:clean converted word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
 	else (no)
-		:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbr. count;
+		:clean (original) word and store:\n- cleaned word length\n- cleaned word\n- capitalization type\n- abbreviation count;
 	endif
 
 	if (client is Mozilla) then (yes)
-		:set abbr. count to 1;
+		:set abbreviation count to 1;
 	else (no)
 	endif
 
-	if (cleaned word length is 0 or hash manager is empty) then (yes)
+	if (cleaned word length is 0 or hash manager is empty?) then (yes)
 		:return TRUE;
 		stop
 	else (no)
 	endif
-	:empty root;
-	note left: can this move\nup to initialization?
+	:reset root;
 }
 
-partition "number state" {
-	:determine number state;
-	if (number state is NNUM) then (yes)
+partition "numbers and numeric separators" {
+	:determine number state for cleaned word;
+	if (cleaned word is a number?) then (yes)
 		:return TRUE;
-		note left: word consists\nof only numbers
 		stop
 	else (no)
 	endif
+}
+
+partition "capitalization type" {
+	:TODO;
 }
 
 partition "check word" {
