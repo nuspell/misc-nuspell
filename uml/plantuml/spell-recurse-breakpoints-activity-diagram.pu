@@ -1,0 +1,10 @@
+@startuml
+skinparam backgroundcolor White|White
+
+title Hunspell - Check Spelling B - recurse breakpoints
+
+start
+
+stop
+
+@enduml

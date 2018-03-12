@@ -1,0 +1,99 @@
+@startuml
+skinparam backgroundcolor White|White
+
+title Hunspell - Check Spelling A - upper case or capitalized
+
+start
+
+if (captype is capitalized OR (all upper case AND no root)?) then (yes)
+	:add SPELL_ORIGCAP to info;
+	if (captype is all upper case?) then (yes)
+		#skyblue:root = check_word(cleaned word, info, root);
+		if (abbv > 0 AND no root?) then (yes)
+			#skyblue:root = check_word(cleaned word period added at end, info, root);
+		else (no)
+		endif
+		if (root?) then (yes)
+			stop
+		else (no)
+		endif
+
+		:handle apostrophe for Catalan, French and Italian prefixes;
+		if (root?) then (yes)
+			stop
+		else (no)
+		endif
+
+		:handle German sharp s;
+		if (root?) then (yes)
+			stop
+		else (no)
+		endif
+
+	else (no)
+	endif
+
+	:initliaze idot;
+	note left
+(entry INITCAP in switch)
+	end note
+	if (captype is capitalized?) then (yes)
+		:make cleaned word all lower case and then make it capitalized;
+		:handle idot;
+	else (no)
+	endif
+	if (captype is capitalized?) then (yes)
+		:add SPELL_INITCAP to info;
+	else (no)
+	endif
+	#skyblue:root = check_word(cleaned word, info, root);
+	if (captype is capitalized?) then (yes)
+		:remove SPELL_INITCAP to info;
+	else (no)
+	endif
+
+	if (info contains SPELL_FORBIDDEN?) then (yes)
+		:root = NULL;
+		stop
+		note left
+"forbid bad capitalization
+(for example, ijs -> Ijs
+instead of IJs in Dutch)
+use explicit forms in dic:
+Ijs/F (F = FORBIDDENWORD flag)"
+		end note
+	else (no)
+	endif
+
+	if (root AND keepcase(root)??? AND captype is all upper case?) then (yes)
+		:root = NULL;
+		stop
+	else (no)
+	endif
+
+	if (root OR idot OR some language specific condition?) then (yes)
+		stop
+	else (no)
+	endif
+
+	:make cleaned word all lower case ;
+	:copy cleaned word to u8buffer;
+	:make cleaned word capitalized;
+	#skyblue:root = check_word(u8buffer, info, root);
+	if (abbv > 0 AND no root?) then (yes)
+		:TODO;
+		:TODO;
+		:TODO;
+	else (no)
+	endif
+	if (root AND keepcase(root)??? AND (captype is all upper case OR German sharp s)?) then (yes)
+		:root = NULL;
+		stop
+	else (no)
+	endif
+else (no)
+endif
+
+stop
+
+@enduml

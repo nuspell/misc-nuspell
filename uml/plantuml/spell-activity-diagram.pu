@@ -59,75 +59,15 @@ partition "capitalization type" {
 		else (no)
 		endif
 	else (no)
-		if (captype is all upper case?) then (yes)
-			:add SPELL_ORIGCAP to info;
-			#skyblue:root = check_word(cleaned word, info, root);
-			if (abbv > 0 AND no root?) then (yes)
-				#skyblue:root = check_word(cleaned word period added at end, info, root);
-			else (no)
-			endif
-			if (root?) then (no)
-				if (cleaned word has apostrophe?) then (yes)
-					:handle specific Catalan, French and Italian prefixes separated by apostrophe;
-				else (no)
-				endif
-				if (no root AND generic check sharp s AND SS in cleaned word?) then (yes)
-					:handle German sharp s;
-				else (no)
-				endif
-			else (yes)
-			endif
-		else (no)
-		endif
-		if (captype is capitalized OR (all upper case AND no root)?) then (yes)
-			:add SPELL_ORIGCAP to info;
-			if (captype is all upper case?) then (yes)
-				:make cleaned word all lower case and then make it capitalized;
-				:handle idot;
-			else (no)
-			endif
-			if (captype is capitalized?) then (yes)
-				:add SPELL_INITCAP to info;
-			else (no)
-			endif
-			#skyblue:root = check_word(cleaned word, info, root);
-			if (captype is capitalized?) then (yes)
-				:remove SPELL_INITCAP to info;
-			else (no)
-			endif
-			if (info contains SPELL_FORBIDDEN?) then (yes)
-				:root = NULL;
-				note left
-"forbid bad capitalization
-(for example, ijs -> Ijs
-instead of IJs in Dutch)
-use explicit forms in dic:
-Ijs/F (F = FORBIDDENWORD flag)"
-				end note
-			else (no)
-				if (root AND keepcase(root)??? AND captype is all upper case?) then (yes)
-					:root = NULL;
-				else (no)
-				endif
-				if (no root OR no idot handling needed?) then (yes)
-					:make cleaned word all lower case ;
-					:copy cleaned word to tmp;
-					:make cleaned word capitalized;
-					#skyblue:root = check_word(tmp, info, root);
-					:TODO line 589 abbv && !rv;
-				else (no)
-				endif
-			endif
-		else (no)
-		endif
+		#skyblue:Check Spelling A\nspell upper or capitalized;
 	endif
 }
 
 partition "forbidden words" {
 	if (root?) then (yes)
-		if (TODO AND TODO AND TODO?) then (yes)
+		if (warning flag is present in root's flags?) then (yes)
 			:add SPELL_WARN to info;
-			if (generic forbid warn?) then (yes)
+			if (generic setting forbids warnings?) then (yes)
 				stop
 			else (no)
 			endif
@@ -142,7 +82,7 @@ partition "forbidden words" {
 }
 
 partition "recursive breaking at break points" {
-	:TODO;
+	#skyblue:Check Spelling B\nrecurse breakpoints;
 }
 
 stop
