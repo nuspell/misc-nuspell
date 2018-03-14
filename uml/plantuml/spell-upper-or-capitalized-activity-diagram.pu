@@ -71,7 +71,7 @@ Ijs/F (F = FORBIDDENWORD flag)"
 	else (no)
 	endif
 
-	if (root OR idot OR some language specific condition?) then (yes)
+	if (root OR idot AND some language specific condition?) then (yes)
 		stop
 	else (no)
 	endif
@@ -81,8 +81,22 @@ Ijs/F (F = FORBIDDENWORD flag)"
 	:make cleaned word capitalized;
 	#skyblue:root = check_word(u8buffer, info, root);
 	if (abbv > 0 AND no root?) then (yes)
-		:TODO;
-		:TODO;
+		:add period to end of u8buffer;
+		#skyblue:root = check_word(u8buffer, info, root);
+		if (root?) then (yes)
+		else (no)
+			:set u8buffer to cleaned word;
+			:add period to end of u8buffer;
+			if (captype is capitalized?) then (yes)
+				:remove SPELL_INITCAP from info;
+			else (no)
+			endif
+			if (root AND keepcase(root)??? and captype is all upper case?) then (yes)
+				:root = NULL;
+				stop
+			else (no)
+			endif
+		endif
 		:TODO;
 	else (no)
 	endif
