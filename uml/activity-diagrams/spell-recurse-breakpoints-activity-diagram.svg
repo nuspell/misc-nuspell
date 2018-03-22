@@ -1,10 +1,87 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="101px" preserveAspectRatio="none" style="width:464px;height:101px;" version="1.1" viewBox="0 0 464 101" width="464px" zoomAndPan="magnify"><defs><linearGradient id="gxnjfi9imtzrn0" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient><filter height="300%" id="fxnjfi9imtzrn" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="url(#gxnjfi9imtzrn0)" height="101" style="stroke: none; stroke-width: 1.0;" width="464" x="0" y="0"/><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="440" x="12" y="26.708">Hunspell - Check Spelling B - recurse breakpoints</text><ellipse cx="232" cy="40.9531" fill="#000000" filter="url(#fxnjfi9imtzrn)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><ellipse cx="232" cy="80.9531" fill="none" filter="url(#fxnjfi9imtzrn)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="232.5" cy="81.4531" fill="#000000" filter="url(#fxnjfi9imtzrn)" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.5;" x1="232" x2="232" y1="50.9531" y2="70.9531"/><polygon fill="#A80036" points="228,60.9531,232,70.9531,236,60.9531,232,64.9531" style="stroke: #A80036; stroke-width: 1.0;"/><!--
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="129px" preserveAspectRatio="none" style="width:938px;height:129px;background:#000000;" version="1.1" viewBox="0 0 938 129" width="938px" zoomAndPan="magnify"><defs/><g><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="931" x="5" y="17.9951">[From /home/sander/workspace/misc-hunspell/uml/plantuml/spell-recurse-breakpoints-activity-diagram.pu (line 24) ]</text><line style="stroke: #33FF02; stroke-width: 1.0;" x1="5" x2="936" y1="26.2969" y2="26.2969"/><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="187" x="5" y="44.292">... (skipping 20 lines) ...</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="236" x="45" y="60.5889">while (iterate TODO?) is (yes)</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="165" x="85" y="76.8857">:increment nbr by 1;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="538" x="85" y="93.1826">:increment pos with length of the word break under consideration;</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="100" x="45" y="109.4795">endwile (no)</text><text fill="#33FF02" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="0" x="10" y="125.7764"/><text fill="#FF0000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="108" x="10" y="125.7764">Syntax Error?</text><!--
 @startuml
 skinparam backgroundcolor White|White
 
 title Hunspell - Check Spelling B - recurse breakpoints
 
 start
+
+if (word breaks are not available OR info holds SPELL_FORBIDDEN) then (yes)
+	stop
+else (no)
+endif
+
+:set number of breaks to 0 "nbr";
+:set word length for cleaned word "wl";
+
+while (iterate word breaks?) is (yes)
+	note left
+"calculate break points for recursion limit"
+	end note
+	:set pos to 0;
+	while (iterate TODO?) is (yes)
+		:increment nbr by 1;
+		:increment pos with length of the word break under consideration;
+	endwile (no)
+
+      while ((pos = scw.find(wordbreak[j], pos)) != std::string::npos) {
+        ++nbr;
+        pos += wordbreak[j].size();
+      }
+endwhile (no)
+
+    // 
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+    }
+    if (nbr >= 10)
+      return false;
+
+    // check boundary patterns (^begin and end$)
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+      size_t plen = wordbreak[j].size();
+      if (plen == 1 || plen > wl)
+        continue;
+
+      if (wordbreak[j][0] == '^' &&
+          scw.compare(0, plen - 1, wordbreak[j], 1, plen -1) == 0 && spell(scw.substr(plen - 1)))
+        return true;
+
+      if (wordbreak[j][plen - 1] == '$' &&
+          scw.compare(wl - plen + 1, plen - 1, wordbreak[j], 0, plen - 1) == 0) {
+        std::string suffix(scw.substr(wl - plen + 1));
+        scw.resize(wl - plen + 1);
+        if (spell(scw))
+          return true;
+        scw.append(suffix);
+      }
+    }
+
+    // other patterns
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+      size_t plen = wordbreak[j].size();
+      size_t found = scw.find(wordbreak[j]);
+      if ((found > 0) && (found < wl - plen)) {
+        if (!spell(scw.substr(found + plen)))
+          continue;
+        std::string suffix(scw.substr(found));
+        scw.resize(found);
+        // examine 2 sides of the break point
+        if (spell(scw))
+          return true;
+        scw.append(suffix);
+
+        // LANG_hu: spec. dash rule
+        if (langnum == LANG_hu && wordbreak[j] == "-") {
+          suffix = scw.substr(found + 1);
+          scw.resize(found + 1);
+          if (spell(scw))
+            return true;  // check the first part with dash
+          scw.append(suffix);
+        }
+        // end of LANG specific region
+      }
+    }
+
 
 stop
 

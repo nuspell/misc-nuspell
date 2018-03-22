@@ -5,6 +5,83 @@ title Hunspell - Check Spelling B - recurse breakpoints
 
 start
 
+if (word breaks are not available OR info holds SPELL_FORBIDDEN) then (yes)
+	stop
+else (no)
+endif
+
+:set number of breaks to 0 "nbr";
+:set word length for cleaned word "wl";
+
+while (iterate word breaks?) is (yes)
+	note left
+"calculate break points for recursion limit"
+	end note
+	:set pos to 0;
+	while (iterate TODO?) is (yes)
+		:increment nbr by 1;
+		:increment pos with length of the word break under consideration;
+	endwile (no)
+
+      while ((pos = scw.find(wordbreak[j], pos)) != std::string::npos) {
+        ++nbr;
+        pos += wordbreak[j].size();
+      }
+endwhile (no)
+
+    // 
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+    }
+    if (nbr >= 10)
+      return false;
+
+    // check boundary patterns (^begin and end$)
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+      size_t plen = wordbreak[j].size();
+      if (plen == 1 || plen > wl)
+        continue;
+
+      if (wordbreak[j][0] == '^' &&
+          scw.compare(0, plen - 1, wordbreak[j], 1, plen -1) == 0 && spell(scw.substr(plen - 1)))
+        return true;
+
+      if (wordbreak[j][plen - 1] == '$' &&
+          scw.compare(wl - plen + 1, plen - 1, wordbreak[j], 0, plen - 1) == 0) {
+        std::string suffix(scw.substr(wl - plen + 1));
+        scw.resize(wl - plen + 1);
+        if (spell(scw))
+          return true;
+        scw.append(suffix);
+      }
+    }
+
+    // other patterns
+    for (size_t j = 0; j < wordbreak.size(); ++j) {
+      size_t plen = wordbreak[j].size();
+      size_t found = scw.find(wordbreak[j]);
+      if ((found > 0) && (found < wl - plen)) {
+        if (!spell(scw.substr(found + plen)))
+          continue;
+        std::string suffix(scw.substr(found));
+        scw.resize(found);
+        // examine 2 sides of the break point
+        if (spell(scw))
+          return true;
+        scw.append(suffix);
+
+        // LANG_hu: spec. dash rule
+        if (langnum == LANG_hu && wordbreak[j] == "-") {
+          suffix = scw.substr(found + 1);
+          scw.resize(found + 1);
+          if (spell(scw))
+            return true;  // check the first part with dash
+          scw.append(suffix);
+        }
+        // end of LANG specific region
+      }
+    }
+
+
 stop
 
 @enduml
