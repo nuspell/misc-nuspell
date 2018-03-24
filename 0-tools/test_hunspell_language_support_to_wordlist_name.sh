@@ -7,168 +7,158 @@
 
 #TODO Optimise this script, also add echo for input.
 
-./hunspell_language_support_to_wordlist_name.sh bg bg_BG
+./hunspell_language_support_to_wordlist_name.sh bg_BG
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh ca ca
+./hunspell_language_support_to_wordlist_name.sh ca
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh ca ca_ES
+#FIXME ./hunspell_language_support_to_wordlist_name.sh ca_ES
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh ca ca_ES-valencia
+#FIXME ./hunspell_language_support_to_wordlist_name.sh ca_ES-valencia
 #FIXME ca_ES-valencia should be ca_ES_valencia
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh da da_DK
+./hunspell_language_support_to_wordlist_name.sh da_DK
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh de-ch de_CH
+./hunspell_language_support_to_wordlist_name.sh de_CH
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh de-ch-frami de_CH_frami
+./hunspell_language_support_to_wordlist_name.sh de_CH_frami
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh de-de de_DE
+./hunspell_language_support_to_wordlist_name.sh de_DE
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh de-de de_BE
+#FIXME ./hunspell_language_support_to_wordlist_name.sh de_BE
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh de-de de_LU
+#FIXME ./hunspell_language_support_to_wordlist_name.sh de_LU
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh de-de-frami de_DE_frami
+./hunspell_language_support_to_wordlist_name.sh de_DE_frami
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#./hunspell_language_support_to_wordlist_name.sh de-ch-frami de_DE
+#./hunspell_language_support_to_wordlist_name.sh de_DE
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh en-ca en_CA
+./hunspell_language_support_to_wordlist_name.sh en_CA
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh en-gb en_GB
+./hunspell_language_support_to_wordlist_name.sh en_GB
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh en-us en_US
+./hunspell_language_support_to_wordlist_name.sh en_US
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh es es_ES
+./hunspell_language_support_to_wordlist_name.sh es_ES
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#TODO./hunspell_language_support_to_wordlist_name.sh fr-classical fr
+./hunspell_language_support_to_wordlist_name.sh fo
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh fr-modern fr
+./hunspell_language_support_to_wordlist_name.sh fr
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh fr-revised fr
+./hunspell_language_support_to_wordlist_name.sh gd_GB
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh fr-comprehensive fr
+./hunspell_language_support_to_wordlist_name.sh gl_ES
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh gd gd_GB
+./hunspell_language_support_to_wordlist_name.sh it_IT
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh gl gl_ES
+#FIXME ./hunspell_language_support_to_wordlist_name.sh it_CH
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh it it_IT
+./hunspell_language_support_to_wordlist_name.sh nl_NL
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh it it_CH
+#FIXME ./hunspell_language_support_to_wordlist_name.sh nl_BE
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh nl nl_NL
+./hunspell_language_support_to_wordlist_name.sh nn_NO
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh nl nl_BE
+./hunspell_language_support_to_wordlist_name.sh nb_NO
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh no nn_NO
+./hunspell_language_support_to_wordlist_name.sh pl_PL
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh no nb_NO
+./hunspell_language_support_to_wordlist_name.sh pt_BR
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh pl pl_PL
+./hunspell_language_support_to_wordlist_name.sh pt_PT
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh pt-br pt_BR
+./hunspell_language_support_to_wordlist_name.sh sv_SE
 if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_wordlist_name.sh pt-pt pt_PT
-if [ $? -ne 0 ]
-then
-    exit 1
-fi
-./hunspell_language_support_to_wordlist_name.sh sv sv_SE
-if [ $? -ne 0 ]
-then
-    exit 1
-fi
-#FIXME ./hunspell_language_support_to_wordlist_name.sh sv sv_FI
+#FIXME ./hunspell_language_support_to_wordlist_name.sh sv_FI
 if [ $? -ne 0 ]
 then
     exit 1
