@@ -1,0 +1,44 @@
+@startuml
+skinparam backgroundcolor White|White
+
+title Hunspell - Prepare Testing Word Lists
+
+start
+:clear directory 'words' from previous results;
+while (iterate available extracted Hunspell affix files?) is (yes)
+	:report language from affix file basename;
+	note left
+Hunspell language packages
+have been downloaded and
+extracted earlier
+	end note
+	:create output directory called 'words/$langauge';
+	:get affix file version;
+	while (iterate words from dictionary file?) is (yes)
+		if (word has:\n- no whitespace\n- no slash\n- no comment\n- no comma\n- not empty?) then (yes)
+			:add word to 'words/$language/dict_$version';
+		else (no)
+		endif
+	endwhile (no)
+	:look up related word list package name for this language;
+	if (extracted word list package exists?) then (yes)
+		:get word list version;
+		note left
+word list packages
+have been downloaded
+and extracted earlier
+		end note
+		while (iterate words from word list file?) is (yes)
+			if (word has:\n- no whitespace\n- no slash\n- no comment\n- no comma\n- not empty?) then (yes)
+				:add word to 'words/$language/list_$version';
+			else (no)
+			endif
+		endwhile (no)
+	else (no)
+	endif
+	:add unique words from 'words/$language/dict_$version'\nand 'words/$language/list_$version'\nto word list 'words/$language/gathered';
+	:report number of words in 'words/$language/gathered';
+endwhile (no)
+stop
+
+@enduml

@@ -4,7 +4,7 @@ skinparam backgroundcolor White|White
 title Hunspell - Regression Testing (speed, memory and correctness)
 
 start
-:manually stop unneeded applications;
+:manually stop CPU-consuming applications;
 while (git checksum in checksums.txt?) is (yes)
 	if (checksum not in results.tsv for current hostname?) then (yes)
 		:git clone hunspell for checksum;

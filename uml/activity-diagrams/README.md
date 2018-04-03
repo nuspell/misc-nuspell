@@ -4,6 +4,7 @@
 [![](cleanword2-activity-diagram.svg)](cleanword2-activity-diagram.svg)
 [![](prefix-check-activity-diagram.svg)](prefix-check-activity-diagram.svg)
 [![](prefix-check-twosfx-activity-diagram.svg)](prefix-check-twosfx-activity-diagram.svg)
+[![](prepare-testing-word-lists-activity-diagram.svg)](prepare-testing-word-lists-activity-diagram.svg)
 [![](regression-testing-activity-diagram.svg)](regression-testing-activity-diagram.svg)
 [![](search-dictionaries-activity-diagram.svg)](search-dictionaries-activity-diagram.svg)
 [![](spell-activity-diagram.svg)](spell-activity-diagram.svg)

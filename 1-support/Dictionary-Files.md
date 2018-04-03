@@ -1,4 +1,4 @@
-This page has been generated on 2018-03-23 at 14:49 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
+This page has been generated on 2018-04-03 at 15:32 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
 
 ## Affix files
 

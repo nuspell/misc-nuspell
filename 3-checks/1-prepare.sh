@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 if [ -e words ]; then
-    rm -rf words
+	rm -rf words/*
+else
+	mkdir words
 fi
-mkdir words
 
 # Crude filtering by skipping:
 # - first line
