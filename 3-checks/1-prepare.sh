@@ -1,9 +1,11 @@
 #!/usr/bin/env bash
 
-if [ -e words ]; then
-	rm -rf words/*
+platform=`../0-tools/platform.sh`
+
+if [ -e words/$platform ]; then
+	rm -rf words/$platform/*
 else
-	mkdir words
+	mkdir -p words/$platform
 fi
 
 # Crude filtering by skipping:
@@ -23,7 +25,6 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	if [ $package == 'ar' -o \
 	$package == 'be' -o \
 	$package == 'br' -o \
-	$package == 'pl' -o \
 	$package == 'sk' -o \
 	$package == 'en-gb' -o \
 	$package == 'uk' -o \
@@ -39,8 +40,8 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	language=`basename $affix .aff`
 	echo -n 'Gathering words for '$language
 
-	mkdir -p words/$language
-	tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|grep -av ','|grep -av '^$'>words/$language/dict_$version
+	mkdir -p words/$platform/$language
+	tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|grep -av ','|grep -av '^$'>words/$platform/$language/dict_$version
 
 	wordlist=`../0-tools/hunspell_language_support_to_wordlist_name.sh $language`
 	if [ `echo $wordlist|grep -c ERROR` == 0 ]; then
@@ -50,13 +51,13 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 #		echo -e '\t\twordfile '$wordfile
 		for list in ../2-wordlists/packages/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
-			cat $list|grep -av '\s'|grep -av '\/'|grep -av '\#'|grep -av ','|grep -av '^$'>words/$language/list_$wordversion
+			cat $list|grep -av '\s'|grep -av '\/'|grep -av '\#'|grep -av ','|grep -av '^$'>words/$platform/$language/list_$wordversion
 		done
 	fi
 
-	#TODO for testing, limit via "sort -R|head -n 128"
-	cat words/$language/*|sort|uniq|sort -R|head -n 128 >words/$language/gathered
-	echo ', totaling '`wc -l words/$language/gathered|awk '{print $1}'`
+	#TODO for testing, limit via "sort -R|head -n 1024"
+	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 1024 >words/$platform/$language/gathered
+	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
 
 	#TODO for testing, limit languages
 	fi
