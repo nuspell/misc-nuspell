@@ -1,9 +1,35 @@
 #!/usr/bin/env bash
 
+if [ $# -ge 2 ]; then
+	echo 'ERROR: Only one optional commit hash as parameter allowed'
+	exit 1
+fi
+
 if [ ! -e regression ]; then
 	mkdir regression
 fi
 
+uname="$(uname -s)"
+case "${uname}" in
+	Linux*)
+	platform=linux;;
+	FreeBSD*)
+	platform=freebsd;;
+	Darwin*)
+	platform=macos;;
+	CYGWIN*)
+	platform=cygwin;;
+	MINGW*)
+	platform=mingw;;
+	*)
+	platform="unknown:${uname}"
+esac
+hostname=`hostname`
+
+if [ $# -eq 1 ]; then
+	echo 'ERROR: Optional parameter for commit hash is not yet supported'
+	exit 1
+fi
 if [ -e nuspell ]; then
 	cd nuspell
 	git pull
@@ -11,26 +37,33 @@ else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
 fi
-commit=`git log|head -n 1|awk '{print $2}'`
+if [ $# -eq 0 ]; then
+	commit=`git log|head -n 1|awk '{print $2}'`
+fi
+
+if [ ( -e ../regression/$platform-functionality.tsv -a `grep -c $commit ../regression/$platform-functionality.tsv` -eq 0 ) -o ( -e ../regression/$platform-$hostname-performance.tsv -a `grep -c $commit ../regression/$platform-$hostname-performance.tsv` -eq 0 ) ]; then
+	TODO
+fi
+
 autoreconf -vfi
 if [ $? -ne 0 ]; then
 	echo 'ERROR: Failed to automatically reconfigure nuspell'
-	exit
+	exit 1
 fi
 ./configure
 if [ $? -ne 0 ]; then
 	echo 'ERROR: Failed to configure nuspell'
-	exit
+	exit 1
 fi
 make
 if [ $? -ne 0 ]; then
 	echo 'ERROR: Failed to build nuspell'
-	exit
+	exit 1
 fi
 make check
 if [ $? -ne 0 ]; then
 	echo 'ERROR: Failed to test nuspell'
-	exit
+	exit 1
 fi
 cd ..
 

@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
 
 if [ -e reference ]; then
-    rm -rf reference
+	rm -rf reference/*
+else
+	mkdir reference
 fi
-mkdir reference
 
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
@@ -14,7 +15,11 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	if [ -e words/$language/gathered ]; then
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$language
-		../../nuspell/src/tools/hunspell -d `echo $path|sed -e 's/\.aff//'` -a words/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$language/gathered
+		if [ $language = 'nl_NL' ]; then
+			../../nuspell/src/tools/hunspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$language/gathered
+		else
+			../../nuspell/src/tools/hunspell -d `echo $path|sed -e 's/\.aff//'` -a words/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$language/gathered
+		fi
 		paste -d"\t" reference/$language/gathered words/$language/gathered > reference/$language/gathered.tsv
 		grep '^&' reference/$language/gathered|wc -l>reference/$language/gathered.bad
 		grep '^*' reference/$language/gathered|wc -l>reference/$language/gathered.good

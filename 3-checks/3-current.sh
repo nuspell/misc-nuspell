@@ -1,9 +1,29 @@
 #!/usr/bin/env bash
 
+exit
+# under cosntruction
+
 if [ -e current ]; then
 	rm -rf current
 fi
 mkdir current
+
+uname="$(uname -s)"
+case "${uname}" in
+	Linux*)
+	platform=linux;;
+	FreeBSD*)
+	platform=freebsd;;
+	Darwin*)
+	platform=macos;;
+	CYGWIN*)
+	platform=cygwin;;
+	MINGW*)
+	platform=mingw;;
+	*)
+	platform="unknown:${uname}"
+esac
+hostname=`hostname`
 
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`

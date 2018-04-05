@@ -13,7 +13,8 @@ if [ -e packages ]; then
 	echo '| Package | Version | Filename | Lines |' >> ../Wordlist-Files.md
 	echo '|---|---|---|--:|' >> ../Wordlist-Files.md
 	for file in `find */*/usr/share/dict -type f|sort`; do
-		echo -n $file|sed -e 's/\/usr\/share\/dict//'|sed -e 's/^/| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/`| `/' >> ../Wordlist-Files.md
+		echo -n $file|sed -e 's/\/usr\/share\/dict//'|sed -e 's/^/| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Wordlist-Files.md
+		echo -n `file $file|sed -e 's/^.*: //'`' | `' >> ../Wordlist-Files.md
 		echo `wc -l $file|awk '{print $1}'`'` |' >> ../Wordlist-Files.md
 	done
 

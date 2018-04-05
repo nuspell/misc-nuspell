@@ -1,4 +1,4 @@
-This page has been generated on 2018-04-03 at 14:45 by `misc-hunspell/2-wordlists/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
+This page has been generated on 2018-04-03 at 20:39 by `misc-hunspell/2-wordlists/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
 
 ## Affix files
 
@@ -6,27 +6,27 @@ A total of 21 different wordlist files are available. Wordlist files which are m
 
 | Package | Version | Filename | Lines |
 |---|---|---|--:|
-| `wamerican` | `2017.01.22-1` | `american-english`| `100411` |
-| `wbrazilian` | `3.0~beta4-19` | `brazilian`| `275502` |
-| `wbritish` | `2017.01.22-1` | `british-english`| `100633` |
-| `wbulgarian` | `4.1-3ubuntu1` | `bulgarian`| `867136` |
-| `wcanadian` | `2017.01.22-1` | `canadian-english`| `101016` |
-| `wcatalan` | `0.20111230b-10` | `catala`| `612509` |
-| `wdanish` | `1.6.36-9` | `danish`| `313013` |
-| `wdutch` | `1%3a2.10-5` | `dutch`| `345339` |
-| `wfaroese` | `0.4.2-11` | `faroese`| `425136` |
-| `wfrench` | `1.2.3-10.1` | `french`| `139719` |
-| `wgaelic` | `0.50-12` | `gaelic`| `15670` |
-| `wgalician-minimos` | `0.5-43` | `galician-minimos`| `515385` |
-| `witalian` | `1.8` | `italian`| `116778` |
-| `wngerman` | `20161207-1` | `ngerman`| `356007` |
-| `wnorwegian` | `2.2-3` | `bokmaal`| `935405` |
-| `wnorwegian` | `2.2-3` | `nynorsk`| `627719` |
-| `wpolish` | `20170707-1` | `polish`| `3802797` |
-| `wportuguese` | `20170814-1` | `portuguese`| `430981` |
-| `wspanish` | `1.0.27` | `spanish`| `86016` |
-| `wswedish` | `1.4.5-2.2` | `swedish`| `121426` |
-| `wswiss` | `20161207-1` | `swiss`| `356107` |
+| `wamerican` | `2017.01.22-1` | `american-english` | UTF-8 Unicode text | `100411` |
+| `wbrazilian` | `3.0~beta4-19` | `brazilian` | ISO-8859 text | `275502` |
+| `wbritish` | `2017.01.22-1` | `british-english` | UTF-8 Unicode text | `100633` |
+| `wbulgarian` | `4.1-3ubuntu1` | `bulgarian` | ISO-8859 text | `867136` |
+| `wcanadian` | `2017.01.22-1` | `canadian-english` | UTF-8 Unicode text | `101016` |
+| `wcatalan` | `0.20111230b-10` | `catala` | UTF-8 Unicode text | `612509` |
+| `wdanish` | `1.6.36-9` | `danish` | UTF-8 Unicode text | `313013` |
+| `wdutch` | `1%3a2.10-5` | `dutch` | UTF-8 Unicode text | `345339` |
+| `wfaroese` | `0.4.2-11` | `faroese` | ISO-8859 text | `425136` |
+| `wfrench` | `1.2.3-10.1` | `french` | UTF-8 Unicode text | `139719` |
+| `wgaelic` | `0.50-12` | `gaelic` | ISO-8859 text | `15670` |
+| `wgalician-minimos` | `0.5-43` | `galician-minimos` | UTF-8 Unicode text | `515385` |
+| `witalian` | `1.8` | `italian` | UTF-8 Unicode text | `116778` |
+| `wngerman` | `20161207-1` | `ngerman` | UTF-8 Unicode text | `356007` |
+| `wnorwegian` | `2.2-3` | `bokmaal` | ISO-8859 text | `935405` |
+| `wnorwegian` | `2.2-3` | `nynorsk` | ISO-8859 text | `627719` |
+| `wpolish` | `20170707-1` | `polish` | UTF-8 Unicode text | `3802797` |
+| `wportuguese` | `20170814-1` | `portuguese` | ISO-8859 text | `430981` |
+| `wspanish` | `1.0.27` | `spanish` | UTF-8 Unicode text | `86016` |
+| `wswedish` | `1.4.5-2.2` | `swedish` | ISO-8859 text | `121426` |
+| `wswiss` | `20161207-1` | `swiss` | UTF-8 Unicode text | `356107` |
 ## File types
 
 The following combinations of affix file and wordlist file have a different file type. This might be a problem in some cases.

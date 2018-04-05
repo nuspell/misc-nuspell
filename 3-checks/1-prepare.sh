@@ -23,10 +23,14 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	if [ $package == 'ar' -o \
 	$package == 'be' -o \
 	$package == 'br' -o \
-	$package == 'es' -o \
-	$package == 'eu' -o \
-	$package == 'nl' -o \
-	$package == 'no' ]; then
+	$package == 'pl' -o \
+	$package == 'sk' -o \
+	$package == 'en-gb' -o \
+	$package == 'uk' -o \
+	$package == 'te' -o \
+	$package == 'uz' -o \
+	$package == 'vi' -o \
+	$package == 'nl' ]; then
 
 	version=`echo $path|awk -F '/' '{print $5}'`
 #	echo -e '\tversion '$version
@@ -50,8 +54,8 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		done
 	fi
 
-	#TODO for testing, limit via "sort -R|head -n 256"
-	cat words/$language/*|sort|uniq|sort -R|head -n 256 >words/$language/gathered
+	#TODO for testing, limit via "sort -R|head -n 128"
+	cat words/$language/*|sort|uniq|sort -R|head -n 128 >words/$language/gathered
 	echo ', totaling '`wc -l words/$language/gathered|awk '{print $1}'`
 
 	#TODO for testing, limit languages
