@@ -39,7 +39,7 @@ if [ $updated -eq 0 ]; then
 		echo 'ERROR: Failed to configure nuspell'
 		exit 1
 	fi
-	make
+	make -j
 	if [ $? -ne 0 ]; then
 		echo 'ERROR: Failed to build nuspell'
 		exit 1
