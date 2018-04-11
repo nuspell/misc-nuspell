@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 platform=`../0-tools/platform.sh`
+hostname=`hostname`
 
 if [ -e words/$platform ]; then
 	rm -rf words/$platform/*
@@ -16,6 +17,7 @@ fi
 # - comma
 # - empy line
 
+total_start=`date +%s`
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 #	echo 'path '$path
 	package=`echo $path|awk -F '/' '{print $4}'`
@@ -55,10 +57,12 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		done
 	fi
 
-	#TODO for testing, limit via "sort -R|head -n 1024"
-	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 1024 >words/$platform/$language/gathered
+	#TODO for testing, limit via "sort -R|head -n 2048"
+	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 2048 >words/$platform/$language/gathered
 	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
 
 	#TODO for testing, limit languages
 	fi
 done
+total_end=`date +%s`
+echo $total_end-$total_start | bc > words/$platform/time-$hostname

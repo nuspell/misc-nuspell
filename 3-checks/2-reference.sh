@@ -9,6 +9,39 @@ else
 	mkdir -p reference/$platform
 fi
 
+updated=0
+if [ -e nuspell ]; then
+	cd nuspell
+	updated=`git pull -r|grep -c 'Already up-to-date.'`
+else
+	git clone https://github.com/hunspell/nuspell.git
+	cd nuspell
+fi
+commit=`git log|head -n 1|awk '{print $2}'`
+if [ $updated -eq 0 ]; then
+	autoreconf -vfi
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Failed to automatically reconfigure nuspell'
+		exit 1
+	fi
+	./configure
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Failed to configure nuspell'
+		exit 1
+	fi
+	make -j
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Failed to build nuspell'
+		exit 1
+	fi
+	make check
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Failed to test nuspell'
+		exit 1
+	fi
+fi
+cd ..
+
 total_start=`date +%s`
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`

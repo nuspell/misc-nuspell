@@ -31,22 +31,22 @@ fi
 if [ $updated -eq 0 ]; then
 	autoreconf -vfi
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to automatically reconfigure nuspell'
+		echo 'ERROR: Failed to automatically reconfigure nuspell/hunspell'
 		exit 1
 	fi
 	./configure
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to configure nuspell'
+		echo 'ERROR: Failed to configure nuspell/hunspell'
 		exit 1
 	fi
 	make -j
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to build nuspell'
+		echo 'ERROR: Failed to build nuspell/hunspell'
 		exit 1
 	fi
 	make check
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to test nuspell'
+		echo 'ERROR: Failed to test nuspell/hunspell'
 		exit 1
 	fi
 fi
@@ -75,9 +75,9 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			mkdir -p regression/$platform/$language/$commit
 			start=`date +%s`
 			if [ $language = 'nl_NL' ]; then
-				../../nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
+				nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
 			else
-				../../nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
+				nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
 			fi
 			end=`date +%s`
 			echo -ne $timestamp'\t'$commit'\t'$handle'\t' >> regression/$platform/$language/time-$hostname.tsv
