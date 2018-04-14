@@ -15,7 +15,7 @@ fi
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
-	updated=`git pull -r|grep -c 'Already up-to-date.'`
+	updated=1 # updated=`git pull -r|grep -c 'Already up-to-date.'`
 else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
@@ -75,9 +75,9 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			mkdir -p regression/$platform/$language/$commit
 			start=`date +%s`
 			if [ $language = 'nl_NL' ]; then
-				nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
+				../../nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
 			else
-				nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
+				../../nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
 			fi
 			end=`date +%s`
 			echo -ne $timestamp'\t'$commit'\t'$handle'\t' >> regression/$platform/$language/time-$hostname.tsv
@@ -87,7 +87,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			rm -f tmp
 			paste -d"\t" regression/$platform/$language/$commit/gathered words/$platform/$language/gathered > regression/$platform/$language/$commit/gathered.tsv
 			grep '^*' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.good
-			grep '^&' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.bad
+			grep '^[&#]' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.bad
 			#TODO check also for not & and not *
 			echo -n ', scoring '
 			echo `cat regression/$platform/$language/$commit/gathered.good`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'

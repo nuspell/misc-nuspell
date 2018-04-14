@@ -12,7 +12,7 @@ fi
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
-	updated=`git pull -r|grep -c 'Already up-to-date.'`
+	updated=1 # updated=`git pull -r|grep -c 'Already up-to-date.'`
 else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
@@ -54,18 +54,23 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
 		if [ $language = 'nl_NL' ]; then
-			nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 		else
-			nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 		fi
 		end=`date +%s`
-		echo $end-$start | bc > reference/$platform/$language/time-$hostname
-		paste -d"\t" reference/$platform/$language/gathered words/$platform/$language/gathered > reference/$platform/$language/gathered.tsv
-		grep '^*' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.good
-		grep '^&' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.bad
-		#TODO check also for not & and not *
-		echo -n ', scoring '
-		echo `cat reference/$platform/$language/gathered.good`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
+		if [ `wc -l words/$platform/$language/gathered|awk '{print $1}'` -eq `wc -l reference/$platform/$language/gathered|awk '{print $1}'` ]; then
+			echo $end-$start | bc > reference/$platform/$language/time-$hostname
+			paste -d"\t" reference/$platform/$language/gathered words/$platform/$language/gathered > reference/$platform/$language/gathered.tsv
+			grep '^*' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.good
+			grep '^&' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.bad
+			#TODO check also for not & and not *
+			echo -n ', scoring '
+			echo `cat reference/$platform/$language/gathered.good`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
+		else
+			echo
+			echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l reference/$platform/$language/gathered|awk '{print $1}'`') do not match for '$language
+		fi
 	fi
 done
 total_end=`date +%s`
