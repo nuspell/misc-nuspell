@@ -1,18 +1,16 @@
-# 2-word-lists
+# 1-support
 
-This directory holds downloaded and processed Ubuntu packages containing word lists.
+This directory holds downloaded and processed Ubuntu packages containing language support for Hunspell and Nuspell. These are packages containing .
 
 ## Download
 
-The script `./1-download.sh` will download all known and practical word list packages. The downloaded DEB files can be found in the directory `debs`. The packages names are collected by iterating all downloaded Hunspell language support packages and looking up the related word list via the custom script `../0-tools/hunspell_language_support_to_word_list_name.sh`.
-
-This script will also mitigate some bugs in the packages, such as incorrect direction of symbolic links. The filename of the word list should be in English and any native filenames for the particular language should be used in symbolic links.
+The script `./1-download.sh` will download all known and practical language support packages. The downloaded DEB files can be found in the directory `debs`. Note that package `myspell-fo` still isn't refactored to a name for Hunspell. This is a bug. Other exceptions are some French packages who are alternative implementation or meta packages. The list of packages is retrieved from `apt-cache search`.
 
 The directory `debs` is excluded from version management.
 
 ## Extract
 
-The script `./2-extract.sh` will process all the downloaded packages and extract the word list files to the directory `packages`. Not that it will use the package version in the path names it creates. This script is very straight forward.
+The script `./2-extract.sh` will process all the downloaded packages and extract the language support files in terms of affix files and dictionary files to the directory `packages`. Not that it will use the package version in the path names it creates. This script is very straight forward, but has to handle the exception for Myspell.
 
 The directory `packages` is excluded from version management.
 

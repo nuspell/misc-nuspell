@@ -1,4 +1,4 @@
-This page has been generated on 2018-04-23 at 15:20 by `misc-hunspell/2-word-lists/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
+This page has been generated on 2018-04-23 at 20:05 by `misc-hunspell/2-word-lists/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
 
 ## Word List Files
 
@@ -34,7 +34,6 @@ The following combinations of affix file and word list file have a different fil
 | Affix File | Affix File Type | Word List File | Word List File Type |
 |---|---|---|---|
 | `ca` | UTF-8 Unicode text, with CRLF line terminators | `catala` | UTF-8 Unicode text |
-| `da_DK` | UTF-8 Unicode text, with very long lines | `danish` | UTF-8 Unicode text |
 | `de_CH` | ISO-8859 text | `swiss` | UTF-8 Unicode text |
 | `de_CH_frami` | ISO-8859 text | `swiss` | UTF-8 Unicode text |
 | `de_DE` | ISO-8859 text | `ngerman` | UTF-8 Unicode text |

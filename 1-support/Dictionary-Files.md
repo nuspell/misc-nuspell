@@ -1,4 +1,4 @@
-This page has been generated on 2018-04-03 at 20:34 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
+This page has been generated on 2018-04-23 at 20:05 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
 
 ## Affix files
 
@@ -162,16 +162,8 @@ The following pairs of affix file and dictionary file have a different file type
 | Language | Affix file type | Dictionary file type |
 |---|---|---|
 | `an_ES` | ISO-8859 text | data |
-| `da_DK` | UTF-8 Unicode text, with very long lines | UTF-8 Unicode text |
-| `en_CA` | UTF-8 Unicode text | ASCII text |
-| `hr_HR` | UTF-8 Unicode text, with very long lines | UTF-8 Unicode (with BOM) text |
-| `hu_HU` | Non-ISO extended-ASCII text, with very long lines, with LF, NEL line terminators | UTF-8 Unicode text |
-| `ko` | UTF-8 Unicode text, with very long lines | UTF-8 Unicode text |
-| `lo_LA` | ASCII text | UTF-8 Unicode text |
-| `ml_IN` | ASCII text | UTF-8 Unicode text |
+| `hr_HR` | UTF-8 Unicode text | UTF-8 Unicode (with BOM) text |
+| `hu_HU` | Non-ISO extended-ASCII text, with LF, NEL line terminators | UTF-8 Unicode text |
 | `ne_NP` | UTF-8 Unicode text | UTF-8 Unicode text, with CRLF, LF line terminators |
 | `pt_BR` | ISO-8859 text, with CRLF line terminators | Non-ISO extended-ASCII text, with CRLF line terminators |
 | `ru_RU` | ISO-8859 text | ISO-8859 text, with CRLF, LF line terminators |
-| `se` | UTF-8 Unicode text, with very long lines | UTF-8 Unicode text |
-| `si_LK` | UTF-8 Unicode text | UTF-8 Unicode text, with very long lines |
-| `uz_UZ` | ASCII text | UTF-8 Unicode text |
