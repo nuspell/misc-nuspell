@@ -53,11 +53,11 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
-		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
+#		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
 			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
-		else
-			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
-		fi
+#		else
+#			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+#		fi
 		end=`date +%s`
 		if [ `wc -l words/$platform/$language/gathered|awk '{print $1}'` -eq `wc -l reference/$platform/$language/gathered|awk '{print $1}'` ]; then
 			echo $end-$start | bc > reference/$platform/$language/time-$hostname

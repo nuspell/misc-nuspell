@@ -49,20 +49,20 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 #	echo -e '\taffix '$affix
 	language=`basename $affix .aff`
 
+
 if [ $language != af_ZA -a $language != bg_BG -a $language != an_ES -a $language != en_MED -a $language != hr_HR -a $language != kk_KZ -a "$language" != pt_BR -a "$language" != th_TH -a "$language" != pl_PL ]; then
 
 	echo -n 'Gathering words for '$language
 
 	mkdir -p words/$platform/$language
 	if [ $language = 'en_GB' ];then
-exit #FIXME use utf8
-		tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		tail -n +2 ../1-support/utf8/$language.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = 'de_AT_frami' -o $language = 'de_AT' -o $language = 'de_CH_frami' -o $language = 'de_CH' -o $language = 'de_DE_frami' -o $language = 'de_DE' ];then
-		tail -n +18 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		tail -n +18 ../1-support/utf8/$language.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $package = 'af' ]; then
-		cat `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		cat ../1-support/utf8/$language.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	else
-		tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		tail -n +2 ../1-support/utf8/$language.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	fi
 
 	word_list=`../0-tools/hunspell_language_support_to_word_list_name.sh $language`
@@ -73,10 +73,10 @@ exit #FIXME use utf8
 #		echo -e '\t\twordfile '$wordfile
 		for list in ../2-word-lists/packages/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
-			if [ $language = 'en_GB' ];then
-				cat $list|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/list_$wordversion
+			if [ $language = 'en_GB' ]; then
+				cat ../2-word-lists/utf8/$wordfile.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			else
-				cat $list|grep -av '\s'|grep -av '\\'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/list_$wordversion
+				cat ../2-word-lists/utf8/$wordfile.txt|grep -v '\s'|grep -v '\\'|grep -v '\/'|grep -v '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			fi
 		done
 	fi
@@ -84,7 +84,7 @@ exit #FIXME use utf8
 	#TODO for testing, limit via "sort -R|head -n 4096"
 #	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 4096 >words/$platform/$language/gathered
 	cat words/$platform/$language/*|sort|uniq >words/$platform/$language/gathered
-	./histogram.py words/$platform/$language/gathered > words/$platform/$language/gathered.info
+	../0-tools/histogram.py words/$platform/$language/gathered > words/$platform/$language/gathered-histogram.tsv
 	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
 
 	#TODO for testing, limit languages
