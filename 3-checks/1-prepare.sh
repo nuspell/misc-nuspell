@@ -30,13 +30,17 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	#TODO for testing, limit languages
 	if [ $package == 'ar' -o \
 	$package == 'be' -o \
+	$package == 'bo' -o \
 	$package == 'br' -o \
-	$package == 'sk' -o \
 	$package == 'en-gb' -o \
+	$package == 'kmr' -o \
+	$package == 'ne' -o \
+	$package == 'nl' -o \
+	$package == 'pl' -o \
+	$package == 'sk' -o \
 	$package == 'uk' -o \
 	$package == 'uz' -o \
-	$package == 'vi' -o \
-	$package == 'nl' ]; then
+	$package == 'vi' ]; then
 
 	version=`echo $path|awk -F '/' '{print $5}'`
 #	echo -e '\tversion '$version
@@ -49,7 +53,10 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	if [ $language = 'en_GB' ];then
 		tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
 	else
-		tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		if [ $package = 'af' ];then
+			cat `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
+		else
+			tail -n +2 `echo $path|sed -e 's/aff$/dic/'`|grep -av '\s'|grep -av '\/'|grep -av '\#'|sed -e 's/ /\n/g'|sed -e 's/,/\n/g'|grep -av '^$'|sort|uniq > words/$platform/$language/dict_$version
 	fi
 
 	wordlist=`../0-tools/hunspell_language_support_to_wordlist_name.sh $language`
@@ -69,7 +76,9 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	fi
 
 	#TODO for testing, limit via "sort -R|head -n 4096"
-	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 4096 >words/$platform/$language/gathered
+#	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 4096 >words/$platform/$language/gathered
+	cat words/$platform/$language/*|sort|uniq >words/$platform/$language/gathered
+	./histogram.py words/$platform/$language/gathered > words/$platform/$language/gathered.info
 	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
 
 	#TODO for testing, limit languages

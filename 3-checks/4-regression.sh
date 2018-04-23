@@ -15,7 +15,7 @@ fi
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
-	updated=1 # updated=`git pull -r|grep -c 'Already up-to-date.'`
+	updated=`git pull -r|grep -c 'Already up-to-date.'`
 else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell

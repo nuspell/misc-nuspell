@@ -12,7 +12,7 @@ fi
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
-	updated=1 # updated=`git pull -r|grep -c 'Already up-to-date.'`
+	updated=`git pull -r|grep -c 'Already up-to-date.'`
 else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
@@ -53,7 +53,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
-		if [ $language = 'nl_NL' ]; then
+		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
 			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 		else
 			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
