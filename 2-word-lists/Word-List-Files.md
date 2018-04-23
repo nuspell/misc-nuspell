@@ -1,8 +1,8 @@
-This page has been generated on 2018-04-03 at 20:39 by `misc-hunspell/2-wordlists/3-report.sh`. Do not edit this page manually. See also `Affix-file-analysis-of-publicly-available-dictionaries.md`, `Dictionaries-and-Contacts.md` and `Dictionary-Packages.md`
+This page has been generated on 2018-04-23 at 15:20 by `misc-hunspell/2-word-lists/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
 
-## Affix files
+## Word List Files
 
-A total of 21 different wordlist files are available. Wordlist files which are made available via symbolic links are excluded. Note that each wordlist file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted.
+A total of 21 different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted.
 
 | Package | Version | Filename | Lines |
 |---|---|---|--:|
@@ -29,9 +29,9 @@ A total of 21 different wordlist files are available. Wordlist files which are m
 | `wswiss` | `20161207-1` | `swiss` | UTF-8 Unicode text | `356107` |
 ## File types
 
-The following combinations of affix file and wordlist file have a different file type. This might be a problem in some cases.
+The following combinations of affix file and word list file have a different file type. This might be a problem in some cases.
 
-| Affix file | Affix file type | Wordlist file | Wordlist file type |
+| Affix File | Affix File Type | Word List File | Word List File Type |
 |---|---|---|---|
 | `ca` | UTF-8 Unicode text, with CRLF line terminators | `catala` | UTF-8 Unicode text |
 | `da_DK` | UTF-8 Unicode text, with very long lines | `danish` | UTF-8 Unicode text |
