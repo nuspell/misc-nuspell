@@ -49,12 +49,13 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered ]; then
+	if [ -e words/$platform/$language/gathered -a $language != sl_SI -a $language != bs_BA -a $language != sr_Latn_RS -a $language != ru_RU ]; then #bn_BD
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
 #		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
-			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered > reference/$platform/$language/gathered.full
+			tail -n +2 reference/$platform/$language/gathered.full | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 #		else
 #			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 #		fi
