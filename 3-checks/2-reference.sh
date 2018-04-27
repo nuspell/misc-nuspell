@@ -49,13 +49,14 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered -a $language != sl_SI -a $language != bs_BA -a $language != sr_Latn_RS -a $language != ru_RU ]; then #bn_BD
+	if [ -e words/$platform/$language/gathered ] && [ $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then #bn_BD
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
 #		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
-			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered > reference/$platform/$language/gathered.full
-			tail -n +2 reference/$platform/$language/gathered.full | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | grep -v '^$' > reference/$platform/$language/gathered.full
+			tail -n +2 reference/$platform/$language/gathered.full | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
+			tail -n +2 reference/$platform/$language/gathered.full | awk '{print $2}' > reference/$platform/$language/gathered.words
 #		else
 #			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 #		fi
@@ -63,11 +64,16 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		if [ `wc -l words/$platform/$language/gathered|awk '{print $1}'` -eq `wc -l reference/$platform/$language/gathered|awk '{print $1}'` ]; then
 			echo $end-$start | bc > reference/$platform/$language/time-$hostname
 			paste -d"\t" reference/$platform/$language/gathered words/$platform/$language/gathered > reference/$platform/$language/gathered.tsv
-			grep '^*' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.good
-			grep '^&' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.bad
+#			grep '^#' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.unknown # unknown
+#			grep '^&' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.nearmiss # near miss
+#			grep '^*' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.okay # okay
+#			grep '^+' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.affixed # from root
+#			grep '^-' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.compound # as compound
+			grep '^[*+-]' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.correct
+#			grep '^[#&]' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.bad
 			#TODO check also for not & and not *
 			echo -n ', scoring '
-			echo `cat reference/$platform/$language/gathered.good`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
+			echo `cat reference/$platform/$language/gathered.correct`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
 		else
 			echo
 			echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l reference/$platform/$language/gathered|awk '{print $1}'`') do not match for '$language

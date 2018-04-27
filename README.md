@@ -42,3 +42,10 @@ Tools for generating the docs:
         git config filter.zippey.clean "$PWD/zippey.py e"
         rm $(git ls-files drakon)
         git checkout -- .
+
+## Testing
+
+See the following README.md files in the following order:
+1. [1-support/README.md](1-support/README.md) on languages support for Hunspell
+2. [2-word-lists/README.md](2-word-lists/README.md) on word lists
+3. [3-checks/README.md](3-checks/README.md) on testing
