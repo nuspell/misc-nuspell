@@ -50,6 +50,8 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	language=`basename $affix .aff`
 
 	if [ -e words/$platform/$language/gathered ] && [ $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then #bn_BD
+##	if [ -e words/$platform/$language/gathered ] && [ $language = hu_HU ]; then
+
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
