@@ -2,8 +2,9 @@
 
 #bug si_LK has invalid unicode character U+0DFE
 
-from sys import argv
 from operator import itemgetter
+from sys import argv
+from unicodedata import category, name
 
 if len(argv) != 2:
 	print('ERROR: Missing filename')
@@ -18,245 +19,184 @@ for line in open(argv[1], 'r'):
 		else:
 			chars[char] = 1
 
+print('| occurs | character |')
+print('|---|---|')
 if ' ' in chars:
-	print('yes\tspace character, ␣')
+	print('| yes | space character, ␣ |')
 else:
-	print('no\tspace character, ␣')
+	print('| no | space character, ␣ |')
 
 if ' ' in chars:
-	print('yes\tfigure space character, ␣')
+	print('| yes | figure space character, ␣ |')
 else:
-	print('no\tfigure space character, ␣')
+	print('| no | figure space character, ␣ |')
 
 if ' ' in chars:
-	print('yes\tpunctuation space character, ␣')
+	print('| yes | punctuation space character, ␣ |')
 else:
-	print('no\tpunctuation space character, ␣')
+	print('| no | punctuation space character, ␣ |')
 
 if ' ' in chars:
-	print('yes\tthin space character, ␣')
+	print('| yes | thin space character, ␣ |')
 else:
-	print('no\tthin space character, ␣')
+	print('| no | thin space character, ␣ |')
 
 if '‌' in chars:
-	print('yes\tzero width non-joiner character')
+	print('| yes | zero width non-joiner character |')
 else:
-	print('no\tzero width non-joiner character')
+	print('| no | zero width non-joiner character |')
 
 if '‍' in chars:
-	print('yes\tzero width joiner character')
+	print('| yes | zero width joiner character |')
 else:
-	print('no\tzero width joiner character')
+	print('| no | zero width joiner character |')
 
 if '‏' in chars:
-	print('yes\tnarrow no-break space character, ␣')
+	print('| yes | narrow no-break space character, ␣ |')
 else:
-	print('no\tnarrow no-break space character, ␣')
+	print('| no | narrow no-break space character, ␣ |')
 
 if '\t' in chars:
-	print('yes\ttab character, ↹')
+	print('| yes | tab character, ↹ |')
 else:
-	print('no\tgab character, ↹')
+	print('| no | gab character, ↹ |')
 
 if '\'' in chars:
-	print('yes\tapostrophe character, \'')
+	print('| yes | apostrophe character, \' |')
 else:
-	print('no\tapostrophe character, \'')
+	print('| no | apostrophe character, \' |')
 
 if '’' in chars:
-	print('yes\tsingle right quotation mark character, ’')
+	print('| yes | single right quotation mark character, ’ |')
 else:
-	print('no\tsingle right quotation mark character, ’')
+	print('| no | single right quotation mark character, ’ |')
 
 if '`' in chars:
-	print('yes\tgrave accent character, `')
+	print('| yes | grave accent character, ` |')
 else:
-	print('no\tgrave accent character, `')
+	print('| no | grave accent character, ` |')
 
 if '-' in chars:
-	print('yes\thyphen character, -')
+	print('| yes | hyphen character, - |')
 else:
-	print('no\thyphen character, -')
+	print('| no | hyphen character, - |')
 
 if '‑' in chars:
-	print('yes\tnon-breaking hyphen character, ‑')
+	print('| yes | non-breaking hyphen character, ‑ |')
 else:
-	print('no\tnon-breaking hyphen character, ‑')
+	print('| no | non-breaking hyphen character, ‑ |')
 
 if '­' in chars:
-	print('yes\tsoft hyphen character')
+	print('| yes | soft hyphen character |')
 else:
-	print('no\tsoft hyphen character')
+	print('| no | soft hyphen character |')
 
 if '_' in chars:
-	print('yes\tunderscore character, _')
+	print('| yes | underscore character, _ |')
 else:
-	print('no\tunderscore character, _')
+	print('| no | underscore character, _ |')
 
 if '.' in chars:
-	print('yes\tperiod character, .')
+	print('| yes | period character, . |')
 else:
-	print('no\tperiod character, .')
+	print('| no | period character, . |')
 
 if ',' in chars:
-	print('yes\tcomma character, ,')
+	print('| yes | comma character, , |')
 else:
-	print('no\tcomma character, ,')
+	print('| no | comma character, , |')
 
 if ':' in chars:
-	print('yes\tcolon character, :')
+	print('| yes | colon character, : |')
 else:
-	print('no\tcolon character, :')
+	print('| no | colon character, : |')
 
 if ';' in chars:
-	print('yes\tsemicolon character, ;')
+	print('| yes | semicolon character, ; |')
 else:
-	print('no\tsemicolon character, ;')
+	print('| no | semicolon character, ; |')
 
 if 'ß' in chars:
-	print('yes\tsharp s character, ß')
+	print('| yes | sharp s character, ß |')
 else:
-	print('no\tsharp s character, ß')
+	print('| no | sharp s character, ß |')
 
 if 'ẞ' in chars:
-	print('yes\tsharp S character, upper case, ẞ')
+	print('| yes | sharp S character, upper case, ẞ |')
 else:
-	print('no\tsharp S character, upper case, ẞ')
+	print('| no | sharp S character, upper case, ẞ |')
 
 if 'ĳ' in chars:
-	print('yes\tij character, ĳ')
+	print('| yes | ij character, ĳ |')
 else:
-	print('no\tij character, ĳ')
+	print('| no | ij character, ĳ |')
 
 if 'Ĳ' in chars:
-	print('yes\tIJ character, upper case, Ĳ')
+	print('| yes | IJ character, upper case, Ĳ |')
 else:
-	print('no\tIJ character, upper case, Ĳ')
+	print('| no | IJ character, upper case, Ĳ |')
 
 if 'İ' in chars:
-	print('yes\tdotted I character, upper case, İ')
+	print('| yes | dotted I character, upper case, İ |')
 else:
-	print('no\tdotted I character, upper case, İ')
+	print('| no | dotted I character, upper case, İ |')
 
 if '₁' in chars:
-	print('yes\tsubscript 1, ₁')
+	print('| yes | subscript 1, ₁ |')
 else:
-	print('no\tsubscript 1, ₁')
+	print('| no | subscript 1, ₁ |')
 
 if '₂' in chars:
-	print('yes\tsubscript 2, ₂')
+	print('| yes | subscript 2, ₂ |')
 else:
-	print('no\tsubscript 2, ₂')
+	print('| no | subscript 2, ₂ |')
 
 if '₃' in chars:
-	print('yes\tsubscript 3, ₃')
+	print('| yes | subscript 3, ₃ |')
 else:
-	print('no\tsubscript 3, ₃')
+	print('| no | subscript 3, ₃ |')
 
 if '·' in chars:
-	print('yes\tcentered dot, ·')
+	print('| yes | centered dot, · |')
 else:
-	print('no\tcentered dot, ·')
+	print('| no | centered dot, · |')
 
 if '¹' in chars:
-	print('yes\tsuperscript 1, ¹')
+	print('| yes | superscript 1, ¹ |')
 else:
-	print('no\tsuperscript 1, ¹')
+	print('| no | superscript 1, ¹ |')
 
 if '²' in chars:
-	print('yes\tsuperscript 2, ²')
+	print('| yes | superscript 2, ² |')
 else:
-	print('no\tsuperscript 2, ²')
+	print('| no | superscript 2, ² |')
 
 if '³' in chars:
-	print('yes\tsuperscript 3, ³')
+	print('| yes | superscript 3, ³ |')
 else:
-	print('no\tsuperscript 3, ³')
+	print('| no | superscript 3, ³ |')
 
 if '+' in chars:
-	print('yes\tplus character, +')
+	print('| yes | plus character, + |')
 else:
-	print('no\tplus character, +')
+	print('| no | plus character, + |')
 
 if '/' in chars:
-	print('yes\tslash character, /')
+	print('| yes | slash character, / |')
 else:
-	print('no\tslash character, /')
+	print('| no | slash character, / |')
 
 if '\\' in chars:
-	print('yes\tbackslash character, \\')
+	print('| yes | backslash character, \\ |')
 else:
-	print('no\tbackslash character, \\')
+	print('| no | backslash character, \\ |')
 
-for char, count in sorted(chars.items(), key=itemgetter(1), reverse=True):
-	code = hex(ord(char))
-	if char == ' ':
-		char = '␣ space character'
-	elif char == ' ':
-		char = '␣ figure space character'
-	elif char == ' ':
-		char = '␣ punctuation character'
-	elif char == ' ':
-		char = '␣ thin space character'
-	elif char == '‌':
-		char = 'zero width non-joiner character'
-	elif char == '‍':
-		char = 'zero width joiner character'
-	elif char == '‏':
-		char = '␣ narrow no-break space character'
-	elif char == '\t':
-		char = '↹ tab character'
-	elif char == '\'':
-		char += ' apostrophe character'
-	elif char == '’':
-		char += ' single right quotation mark character'
-	elif char == '`':
-		char += ' grave accent character'
-	elif char == '-':
-		char += ' hyphen character'
-	elif char == '‑':
-		char += ' non-breaking hyphen character'
-	elif char == '­':
-		char += ' soft hyphen character'
-	elif char == '_':
-		char += ' underscore character'
-	elif char == '.':
-		char += ' period character'
-	elif char == ',':
-		char += ' comma character'
-	elif char == ':':
-		char += ' colon character'
-	elif char == ';':
-		char += ' semicolon character'
-	elif char == 'ß':
-		char += ' sharp s character'
-	elif char == 'ẞ':
-		char += ' sharp S character, upper case'
-	elif char == 'ĳ':
-		char += ' ij character'
-	elif char == 'Ĳ':
-		char += ' IJ character, upper case'
-	elif char == 'İ':
-		char += ' dotted I character, upper case'
-	elif char == '₁':
-		char += ' subscript 1 character'
-	elif char == '₂':
-		char += ' subscript 2 character'
-	elif char == '₃':
-		char += ' subscript 3 character'
-	elif char == '·':
-		char += ' centered dot character'
-	elif char == '¹':
-		char += ' superscript 1 character'
-	elif char == '²':
-		char += ' superscript 2 character'
-	elif char == '³':
-		char += ' superscript 3 character'
-	elif char == '+':
-		char += ' plus character'
-	elif char == '/':
-		char += ' slash character'
-	elif char == '\\':
-		char += ' backslash character'
-	print('{}\t{}\t{}'.format(count, code, char))
+print()
+print('| count | char | code | category | name |')
+print('|--:|---|---|---|---|')
+for char, count in sorted(chars.items(), key=itemgetter(1)):
+	try:
+		print('| {} | {} | {} | {} | {} |'.format(count, char, hex(ord(char)), category(char), name(char).lower()))
+	except ValueError:
+		print('| {} | {} | {} | VALUE ERROR | {} |'.format(count, char, hex(ord(char)), category(char)))
 

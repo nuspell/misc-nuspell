@@ -52,7 +52,7 @@ if [ -e packages ]; then
 				echo 'ERROR: Unsupported file encoding '$encoding' for file '$file
 				exit 1
 			fi
-			../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.tsv
+			../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.md
 			#bug: remove license in dic files, especially with incorrect coding, see all german dic files
 		fi
 	done
