@@ -196,7 +196,7 @@ print('| count | char | code | category | name |')
 print('|--:|---|---|---|---|')
 for char, count in sorted(chars.items(), key=itemgetter(1)):
 	try:
-		print('| {} | {} | {} | {} | {} |'.format(count, char, hex(ord(char)), category(char), name(char).lower()))
+		print('| {} | `{}` | `{}` | {} | {} |'.format(count, char, hex(ord(char)), category(char), name(char).lower()))
 	except ValueError:
-		print('| {} | {} | {} | VALUE ERROR | {} |'.format(count, char, hex(ord(char)), category(char)))
+		print('| {} | `{}` | `{}` | VALUE ERROR | {} |'.format(count, char, hex(ord(char)), category(char)))
 

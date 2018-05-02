@@ -37,21 +37,39 @@ if [ -e packages ]; then
 		encoding=`file $file|sed -e 's/^.*: //'`
 		echo -n $encoding' | `' >> ../Dictionary-Files.md
 		echo `wc -l $file|awk '{print $1}'`'` |' >> ../Dictionary-Files.md
-		if [ $filename != an_ES -a $filename != en_MED -a $filename != hr_HR -a $filename != kk_KZ -a "$filename" != pt_BR -a "$filename" != th_TH -a "$filename" != pl_PL ]; then
-			if [ "$encoding" = 'UTF-8 Unicode text' -o "$encoding" = 'ASCII text' -o "$encoding" = 'UTF-8 Unicode text, with very long lines' ]; then
+		if [ $filename != en_MED -a $filename != de_med -a $filename != kk_KZ ]; then # -a $filename != an_ES -a $filename != hr_HR -a "$filename" != pt_BR -a "$filename" != th_TH -a "$filename" != pl_PL
+			if [ $filename = ar -o $filename = be_BY -o $filename = bn_BD -o $filename = bo -o $filename = br_FR -o $filename = ca -o $filename = ca_ES-valencia -o $filename = da_DK -o $filename = dz -o $filename = en_AU -o $filename = en_CA -o $filename = en_GB -o $filename = en_US -o $filename = en_ZA -o $filename = es_ES -o $filename = fr -o $filename = gd_GB -o $filename = gl_ES -o $filename = gu_IN -o $filename = gug_PY -o $filename = he_IL -o $filename = hi_IN -o $filename = hr_HR -o $filename = hu_HU -o $filename = is_IS -o $filename = kk_KZ -o $filename = kmr_Latn -o $filename = ko -o $filename = lo_LA -o $filename = ml_IN -o $filename = ne_NP -o $filename = nl -o $filename = pt_PT -o $filename = ro_RO -o $filename = se -o $filename = si_LK -o $filename = sk_SK -o $filename = sr_Latn_RS -o $filename = sr_RS -o $filename = sv_FI -o $filename = sv_SE -o $filename = te_IN -o $filename = uk_UA -o $filename = uz_UZ -o $filename = vi_VN ]; then
 				cp $file ../utf8/$filename.txt
-			elif [ "$encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' ]; then
-				cp $file ../utf8/$filename.txt
-				flip -b -u ../utf8/$filename.txt
-			elif [ "$encoding" = 'ISO-8859 text' ]; then
+			elif [ $filename = af_ZA -o $filename = an_ES -o $filename = de_AT -o $filename = de_AT_frami -o $filename = de_CH -o $filename = de_CH_frami -o $filename = de_DE -o $filename = de_DE_frami -o $filename = eu -o $filename = fo -o $filename = nb_NO -o $filename = nn_NO -o $filename = pt_BR -o $filename = sw_TZ ]; then
 				iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-			elif [ "$encoding" = 'ISO-8859 text, with CRLF, LF line terminators' ]; then
-				iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-				flip -b -u ../utf8/$filename.txt
+			elif [ $filename = bs_BA -o $filename = cs_CZ -o $filename = pl_PL -o $filename = sl_SI ]; then
+				iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+			elif [ $filename = el_GR ]; then
+				iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+			elif [ $filename = lt_LT ]; then
+				iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+			elif [ $filename = it_IT -o $filename = oc_FR ]; then
+				iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+			elif [ $filename = bg_BG ]; then
+				iconv -f CP1251 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+			elif [ $filename = th_TH ]; then
+				iconv -f TIS-620 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 			else
 				echo 'ERROR: Unsupported file encoding '$encoding' for file '$file
 				exit 1
 			fi
+
+			new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`
+			if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' ]; then
+				flip -b -u ../utf8/$filename.txt
+			fi
+
+			new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`
+			if [ $filename != an_ES ] && [ "$new_encoding" != 'UTF-8 Unicode text' -a "$new_encoding" != 'ASCII text' -a "$new_encoding" != 'UTF-8 Unicode text, with very long lines' ]; then
+				echo 'ERROR: File enconding conversion from '$encoding' for '$file' to '$new_encoding' for file '$filename' failed'
+				exit 1
+			fi
+
 			../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.md
 			#bug: remove license in dic files, especially with incorrect coding, see all german dic files
 		fi
@@ -79,4 +97,18 @@ if [ -e packages ]; then
 			fi
 		fi
 	done
+
+
+	echo '## Encodings mentioned' >> ../Dictionary-Files.md
+	echo >> ../Dictionary-Files.md
+	echo 'TODO' >> ../Dictionary-Files.md
+	echo >> ../Dictionary-Files.md
+	echo '| File | Encoding |' >> ../Dictionary-Files.md
+	echo '|--|---|' >> ../Dictionary-Files.md
+	for aff in `find . -name '*aff' -type f|sort`; do
+		filename=`basename $aff .aff`
+		enc=`grep SET $aff|sed -e 's/^.*SET //'`
+		echo '| `'$filename'` | '$enc' |' >> ../Dictionary-Files.md
+	done
 fi
+

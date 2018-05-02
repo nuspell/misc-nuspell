@@ -12,8 +12,8 @@ if [ -e packages ]; then
 	echo >> ../Word-List-Files.md
 	rm -rf ../utf8
 	mkdir ../utf8
-	echo '| Package | Version | Filename | Lines |' >> ../Word-List-Files.md
-	echo '|---|---|---|--:|' >> ../Word-List-Files.md
+	echo '| Package | Version | Filename | Filetype | Lines |' >> ../Word-List-Files.md
+	echo '|---|---|---|---|--:|' >> ../Word-List-Files.md
 	for file in `find */*/usr/share/dict -type f|sort`; do
 		echo -n $file|sed -e 's/\/usr\/share\/dict//'|sed -e 's/^/| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Word-List-Files.md
 		filename=`basename $file`
@@ -21,13 +21,21 @@ if [ -e packages ]; then
 		encoding=`file $file|sed -e 's/^.*: //'`
 		echo -n $encoding' | `' >> ../Word-List-Files.md
 		echo `wc -l $file|awk '{print $1}'`'` |' >> ../Word-List-Files.md
-		if [ "$encoding" = 'UTF-8 Unicode text' -o "$encoding" = 'ASCII text' ]; then
-			cp $file ../utf8/$filename.txt
-		elif [ "$encoding" = 'ISO-8859 text' ]; then
+#		if [ "$encoding" = 'UTF-8 Unicode text' -o "$encoding" = 'ASCII text' ]; then
+		if [ $filename = sw_TZ -o $filename = pt_BR -o $filename = nn_NO -o $filename = nb_NO -o $filename = fo -o $filename = eu -o $filename = de_DE_frami -o $filename = de_DE -o $filename = de_CH_frami -o $filename = de_CH -o $filename = de_AT_frami -o $filename = de_AT -o $filename = an_ES -o $filename = af_ZA ]; then
 			iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = sl_SI -o $filename = pl_PL -o $filename = cs_CZ -o $filename = bs_BZ ]; then
+			iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = el_GR ]; then
+			iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = lt_LT ]; then
+			iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = it_IT -o $filename = oc_FR ]; then
+			iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = th_TH ]; then
+			iconv -f TIS-620 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 		else
-			echo 'ERROR: Unsupported file encoding '$encoding
-			exit 1
+			cp $file ../utf8/$filename.txt
 		fi
 		../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.tsv
 	done

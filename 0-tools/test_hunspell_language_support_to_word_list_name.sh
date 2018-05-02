@@ -118,12 +118,13 @@ if [ $? -ne 0 ]
 then
     exit 1
 fi
-./hunspell_language_support_to_word_list_name.sh nl_NL
+./hunspell_language_support_to_word_list_name.sh nl
 if [ $? -ne 0 ]
 then
     exit 1
 fi
 #FIXME ./hunspell_language_support_to_word_list_name.sh nl_BE
+#FIXME ./hunspell_language_support_to_word_list_name.sh nl_NL
 if [ $? -ne 0 ]
 then
     exit 1

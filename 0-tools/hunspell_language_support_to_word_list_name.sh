@@ -118,7 +118,8 @@ it_IT)
 	echo -e $1'\twitalian\titalian'
 	;;
 #FIXME    nl_BE)
-nl_NL)
+#FIXME    nl_NL)
+nl)
 	echo -e $1'\twdutch\tdutch'
 	;;
 nb_NO)
