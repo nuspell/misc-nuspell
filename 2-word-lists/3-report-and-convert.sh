@@ -21,23 +21,34 @@ if [ -e packages ]; then
 		encoding=`file $file|sed -e 's/^.*: //'`
 		echo -n $encoding' | `' >> ../Word-List-Files.md
 		echo `wc -l $file|awk '{print $1}'`'` |' >> ../Word-List-Files.md
-#		if [ "$encoding" = 'UTF-8 Unicode text' -o "$encoding" = 'ASCII text' ]; then
-		if [ $filename = sw_TZ -o $filename = pt_BR -o $filename = nn_NO -o $filename = nb_NO -o $filename = fo -o $filename = eu -o $filename = de_DE_frami -o $filename = de_DE -o $filename = de_CH_frami -o $filename = de_CH -o $filename = de_AT_frami -o $filename = de_AT -o $filename = an_ES -o $filename = af_ZA ]; then
+		if [ $filename = american-english -o $filename = british-english -o $filename = canadian-english -o $filename = catalan -o $filename = catala -o $filename = danish -o $filename = dutch -o $filename = esperanto -o $filename = french -o $filename = galician-minimos -o $filename = italian -o $filename = ngerman -o $filename = polish -o $filename = portuguese -o $filename = spanish -o $filename = swiss -o $filename = ukrainian ]; then #TODO catala can disappear when reversed link bug is fixed
+				cp $file ../utf8/$filename.txt
+		elif [ $filename = brazilian -o $filename = faroese -o $filename = gaelic -o $filename = irish -o $filename = bokmaal -o $filename = nynorsk -o $filename = swedish ]; then
 			iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-		elif [ $filename = sl_SI -o $filename = pl_PL -o $filename = cs_CZ -o $filename = bs_BZ ]; then
-			iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-		elif [ $filename = el_GR ]; then
-			iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-		elif [ $filename = lt_LT ]; then
-			iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-		elif [ $filename = it_IT -o $filename = oc_FR ]; then
-			iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-		elif [ $filename = th_TH ]; then
-			iconv -f TIS-620 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+		elif [ $filename = bulgarian ]; then
+			iconv -f CP1251 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+#		elif [ $filename = sl_SI -o $filename = pl_PL -o $filename = cs_CZ -o $filename = bs_BZ ]; then
+#			iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+#		elif [ $filename = el_GR ]; then
+#			iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+#		elif [ $filename = lt_LT ]; then
+#			iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+#		elif [ $filename = it_IT -o $filename = oc_FR ]; then
+#			iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
+#		elif [ $filename = th_TH ]; then
+#			iconv -f TIS-620 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 		else
-			cp $file ../utf8/$filename.txt
+			echo 'ERROR: Unsupported file encoding '$encoding' for file '$file
+			exit 1
 		fi
-		../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.tsv
+
+		if [ $filename = irish ]; then # bug /E has to go
+			sed -i -e 's/\/.*$//' ../utf8/$filename.txt
+		fi
+
+		#TODO double check all is UTF-8
+
+		../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.md
 	done
 
 	cd ..

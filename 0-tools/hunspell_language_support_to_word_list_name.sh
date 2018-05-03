@@ -62,14 +62,17 @@ de_DE_frami)
 en_CA)
 	# wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small
 	echo -e $1'\twcanadian\tcanadian-english'
-;;
+	;;
 en_GB)
 	# wbritish-huge wbritish-insane wbritish-large wbritish-small
 	echo -e $1'\twbritish\tbritish-english'
-;;
+	;;
 en_US)
 	# wamerican-huge wamerican-insane wamerican-large wamerican-small
 	echo -e $1'\twamerican\tamerican-english'
+	;;
+eo)
+	echo -e $1'\twesperanto\tesperanto'
 	;;
 #FIXME    es_AR)
 #FIXME    es_BO)
@@ -107,6 +110,9 @@ fo)
 fr)
 	echo -e $1'\twfrench\tfrench'
 	;;
+ga_IE)
+	echo -e $1'\twirish\tirish'
+	;;
 gd_GB)
 	echo -e $1'\twgaelic\tgaelic'
 	;;
@@ -140,6 +146,9 @@ pt_PT)
 	;;
 sv_SE)
 	echo -e $1'\twswedish\tswedish'
+	;;
+uk_UA)
+	echo -e $1'\twukrainian\tukrainian'
 	;;
 *)
 	echo 'ERROR: Unsupported package '$1

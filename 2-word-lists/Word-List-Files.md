@@ -1,8 +1,8 @@
-This page has been generated on 2018-05-01 at 15:30 by `misc-hunspell/2-word-lists/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
+This page has been generated on 2018-05-03 at 18:53 by `misc-hunspell/2-word-lists/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
 
 ## Word List Files
 
-A total of 21 different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted.
+A total of 24 different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted.
 
 | Package | Version | Filename | Filetype | Lines |
 |---|---|---|---|--:|
@@ -14,10 +14,12 @@ A total of 21 different word list files are available. Word list files which are
 | `wcatalan` | `0.20111230b-10` | `catala` | UTF-8 Unicode text | `612509` |
 | `wdanish` | `1.6.36-9` | `danish` | UTF-8 Unicode text | `313013` |
 | `wdutch` | `1%3a2.10-6` | `dutch` | UTF-8 Unicode text | `345339` |
+| `wesperanto` | `2.1.2000.02.25-55` | `esperanto` | UTF-8 Unicode text | `1057057` |
 | `wfaroese` | `0.4.2-11` | `faroese` | ISO-8859 text | `425136` |
 | `wfrench` | `1.2.3-11build1` | `french` | UTF-8 Unicode text | `139719` |
 | `wgaelic` | `0.50-12` | `gaelic` | ISO-8859 text | `15670` |
 | `wgalician-minimos` | `0.5-43` | `galician-minimos` | UTF-8 Unicode text | `515385` |
+| `wirish` | `2.0-25` | `irish` | ISO-8859 text | `16370` |
 | `witalian` | `1.8` | `italian` | UTF-8 Unicode text | `116778` |
 | `wngerman` | `20161207-4` | `ngerman` | UTF-8 Unicode text | `356008` |
 | `wnorwegian` | `2.2-3` | `bokmaal` | ISO-8859 text | `935405` |
@@ -27,6 +29,7 @@ A total of 21 different word list files are available. Word list files which are
 | `wspanish` | `1.0.27` | `spanish` | UTF-8 Unicode text | `86016` |
 | `wswedish` | `1.4.5-2.2` | `swedish` | ISO-8859 text | `121426` |
 | `wswiss` | `20161207-4` | `swiss` | UTF-8 Unicode text | `356108` |
+| `wukrainian` | `1.7.1-2` | `ukrainian` | UTF-8 Unicode text | `1485662` |
 ## File types
 
 The following combinations of affix file and word list file have a different file type. This might be a problem in some cases.
@@ -38,6 +41,7 @@ The following combinations of affix file and word list file have a different fil
 | `de_CH_frami` | ISO-8859 text | `swiss` | UTF-8 Unicode text |
 | `de_DE` | ISO-8859 text | `ngerman` | UTF-8 Unicode text |
 | `de_DE_frami` | ISO-8859 text | `ngerman` | UTF-8 Unicode text |
+| `eo` | ISO-8859 text | `esperanto` | UTF-8 Unicode text |
 | `gd_GB` | UTF-8 Unicode text | `gaelic` | ISO-8859 text |
 | `it_IT` | ISO-8859 text | `italian` | UTF-8 Unicode text |
 | `pl_PL` | ISO-8859 text | `polish` | UTF-8 Unicode text |

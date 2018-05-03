@@ -49,7 +49,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 #	echo -e '\taffix '$affix
 	language=`basename $affix .aff`
 
-if [$language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language != bg_BG -a $language != an_ES -a $language != en_MED -a $language != hr_HR -a $language != kk_KZ -a $language != pt_BR -a $language != th_TH -a $language != pl_PL -a $language != ko -a $language != lt_LT -a $language != es_ES -a $language != nn_NO -a $language != te_IN ]; then
+if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language != bg_BG -a $language != an_ES -a $language != en_MED -a $language != hr_HR -a $language != kk_KZ -a $language != pt_BR -a $language != th_TH -a $language != pl_PL -a $language != ko -a $language != lt_LT -a $language != es_ES -a $language != nn_NO -a $language != te_IN ]; then
 
 	echo -n 'Gathering words for '$language
 

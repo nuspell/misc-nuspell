@@ -1,8 +1,8 @@
-This page has been generated on 2018-05-02 at 19:19 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
+This page has been generated on 2018-05-03 at 18:03 by `misc-hunspell/1-support/3-report.sh`. Do not edit this page manually. See also many other markdown documentation.
 
 ## Affix files
 
-A total of 70 different affix files are available for Hunspell. Affix files which are made available via symbolic links are excluded. Note that each affix file has a unique name. Normally, these are installed in `/usr/share/hunspell/`.
+A total of 72 different affix files are available for Hunspell. Affix files which are made available via symbolic links are excluded. Note that each affix file has a unique name. Normally, these are installed in `/usr/share/hunspell/`.
 
 Some available packages are omitted from this overview and testing framework. Package `hunspell-fr` is only a dependency package. Packages `hunspell-fr-classical`, `hunspell-fr-modern` and `hunspell-fr-revised` conflict with `hunspell-fr-comprehensive`, which has a bigger affix file. Package `hunspell-gl` conflicts with `hunspell-gl-es`, which has a bigger affix file.
 
@@ -34,10 +34,12 @@ Some available packages are omitted from this overview and testing framework. Pa
 | `hunspell-en-gb` | `1%3a6.0.3-3` | `en_GB.aff` | UTF-8 Unicode text | `1180` |
 | `hunspell-en-us` | `1%3a2017.08.24` | `en_US.aff` | UTF-8 Unicode text | `205` |
 | `hunspell-en-za` | `1%3a6.0.3-3` | `en_ZA.aff` | UTF-8 Unicode text | `1441` |
+| `hunspell-eo` | `2.1.2000.02.25-55` | `eo.aff` | ISO-8859 text | `1449` |
 | `hunspell-es` | `1%3a6.0.3-3` | `es_ES.aff` | UTF-8 Unicode text | `6891` |
 | `hunspell-eu` | `0.5.20151110-2` | `eu.aff` | ISO-8859 text | `94543` |
-| `hunspell-fo` | `0.4.2-11` | `fo.aff` | ISO-8859 text | `663` |
+| `myspell-fo` | `0.4.2-11` | `fo.aff` | ISO-8859 text | `663` |
 | `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr.aff` | UTF-8 Unicode text | `10918` |
+| `hunspell-ga` | `2.0-25` | `ga_IE.aff` | ISO-8859 text | `611` |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB.aff` | UTF-8 Unicode text | `374` |
 | `hunspell-gl-es` | `13.10-1` | `gl_ES.aff` | UTF-8 Unicode text | `12353` |
 | `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN.aff` | UTF-8 Unicode text | `2` |
@@ -81,7 +83,7 @@ Some available packages are omitted from this overview and testing framework. Pa
 
 ## Dictionary files
 
-A total of 72 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
+A total of 74 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
 
 | Package | Version | Filename | Type | Lines |
 |---|---|---|---|--:|
@@ -113,10 +115,12 @@ A total of 72 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-en-med` | `0.0.20080513-2` | `en_MED.dic` | ISO-8859 text, with CRLF, LF line terminators | `48338` |
 | `hunspell-en-us` | `1%3a2017.08.24` | `en_US.dic` | ASCII text | `49058` |
 | `hunspell-en-za` | `1%3a6.0.3-3` | `en_ZA.dic` | UTF-8 Unicode text | `53542` |
+| `hunspell-eo` | `2.1.2000.02.25-55` | `eo.dic` | ISO-8859 text | `18219` |
 | `hunspell-es` | `1%3a6.0.3-3` | `es_ES.dic` | UTF-8 Unicode text | `58947` |
 | `hunspell-eu` | `0.5.20151110-2` | `eu.dic` | ISO-8859 text | `144690` |
-| `hunspell-fo` | `0.4.2-11` | `fo.dic` | ISO-8859 text | `396161` |
+| `myspell-fo` | `0.4.2-11` | `fo.dic` | ISO-8859 text | `396161` |
 | `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr.dic` | UTF-8 Unicode text | `82599` |
+| `hunspell-ga` | `2.0-25` | `ga_IE.dic` | ISO-8859 text | `65287` |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB.dic` | UTF-8 Unicode text | `331834` |
 | `hunspell-gl-es` | `13.10-1` | `gl_ES.dic` | UTF-8 Unicode text | `53933` |
 | `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN.dic` | UTF-8 Unicode text | `168957` |
@@ -143,3 +147,106 @@ A total of 72 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-pt-pt` | `1%3a6.0.3-3` | `pt_PT.dic` | UTF-8 Unicode text | `44214` |
 | `hunspell-ro` | `1%3a6.0.3-3` | `ro_RO.dic` | UTF-8 Unicode text | `180888` |
 | `hunspell-ru` | `1%3a6.0.3-3` | `ru_RU.dic` | ISO-8859 text, with CRLF, LF line terminators | `146270` |
+| `hunspell-se` | `1.0~beta6.20081222-1.2` | `se.dic` | UTF-8 Unicode text | `527512` |
+| `hunspell-si` | `1%3a6.0.3-3` | `si_LK.dic` | UTF-8 Unicode text, with very long lines | `30320` |
+| `hunspell-sk` | `1%3a6.0.3-3` | `sk_SK.dic` | UTF-8 Unicode text | `247006` |
+| `hunspell-sl` | `1%3a6.0.3-3` | `sl_SI.dic` | ISO-8859 text | `246857` |
+| `hunspell-sr` | `1%3a6.0.3-3` | `sr_Latn_RS.dic` | UTF-8 Unicode text | `222289` |
+| `hunspell-sr` | `1%3a6.0.3-3` | `sr_RS.dic` | UTF-8 Unicode text | `222289` |
+| `hunspell-sv` | `1%3a6.0.3-3` | `sv_FI.dic` | UTF-8 Unicode text | `151839` |
+| `hunspell-sv` | `1%3a6.0.3-3` | `sv_SE.dic` | UTF-8 Unicode text | `152176` |
+| `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ.dic` | ASCII text | `67901` |
+| `hunspell-te` | `1%3a6.0.3-3` | `te_IN.dic` | UTF-8 Unicode text | `125084` |
+| `hunspell-th` | `1%3a6.0.3-3` | `th_TH.dic` | ISO-8859 text | `38870` |
+| `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA.dic` | UTF-8 Unicode text | `111403` |
+| `hunspell-uz` | `0.6-4` | `uz_UZ.dic` | UTF-8 Unicode text | `97001` |
+| `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN.dic` | UTF-8 Unicode text | `6632` |
+## File types
+
+The following pairs of affix file and dictionary file have a different file type. This might be a problem in some cases.
+
+| Language | Affix file type | Dictionary file type |
+|---|---|---|
+| `an_ES` | ISO-8859 text | data |
+| `hu_HU` | Non-ISO extended-ASCII text, with LF, NEL line terminators | UTF-8 Unicode text |
+| `ne_NP` | UTF-8 Unicode text | UTF-8 Unicode text, with CRLF, LF line terminators |
+| `pt_BR` | ISO-8859 text, with CRLF line terminators | Non-ISO extended-ASCII text, with CRLF line terminators |
+| `ru_RU` | ISO-8859 text | ISO-8859 text, with CRLF, LF line terminators |
+## Encodings mentioned
+
+TODO
+
+| File | Encoding |
+|--|---|
+| `af_ZA` | ISO8859-1 |
+| `an_ES` | ISO8859-1 |
+| `ar` | SET UTF-8 |
+| `be_BY` | UTF-8 |
+| `bg_BG` | microsoft-cp1251 |
+| `bn_BD` | UTF-8 |
+| `bo` | UTF-8 |
+| `br_FR` | UTF-8 |
+| `bs_BA` | ISO8859-2 |
+| `ca` | UTF-8 |
+| `ca_ES-valencia` | UTF-8 |
+| `cs_CZ` | ISO8859-2 |
+| `da_DK` | UTF-8 |
+| `de_AT` | ISO8859-1 |
+| `de_AT_frami` | ISO8859-1 |
+| `de_CH` | ISO8859-1 |
+| `de_CH_frami` | ISO8859-1 |
+| `de_DE` | ISO8859-1 |
+| `de_DE_frami` | ISO8859-1 |
+| `dz` | UTF-8 |
+| `el_GR` | ISO8859-7 |
+| `en_AU` | UTF-8 |
+| `en_CA` | UTF-8 |
+| `en_GB` | UTF-8 |
+| `en_US` | UTF-8 |
+| `en_ZA` | UTF-8 |
+| `eo` | ISO8859-3 |
+| `es_ES` | UTF-8 |
+| `eu` | ISO-8859-1 |
+| `fo` | ISO8859-1 |
+| `fr` | UTF-8 |
+| `ga_IE` | ISO8859-1 |
+| `gd_GB` | UTF-8 |
+| `gl_ES` | UTF-8 |
+| `gu_IN` | UTF-8 |
+| `gug_PY` | UTF-8 |
+| `he_IL` | UTF-8 |
+| `hi_IN` | UTF-8 |
+| `hr_HR` | UTF-8 |
+| `hu_HU` | UTF-8 |
+| `is_IS` | UTF-8 |
+| `it_IT` | ISO8859-15 |
+| `kk_KZ` | UTF-8 |
+| `kmr_Latn` | UTF-8 |
+| `ko` | UTF-8 |
+| `lo_LA` | UTF-8 |
+| `lt_LT` | ISO8859-13 |
+| `ml_IN` | UTF-8 |
+| `ne_NP` | UTF-8 |
+| `nl` | UTF-8 |
+| `nb_NO` | ISO8859-1 |
+| `nn_NO` | ISO8859-1 |
+| `oc_FR` | ISO8859-15 |
+| `pl_PL` | ISO8859-2 |
+| `pt_BR` | ISO8859-1 |
+| `pt_PT` | UTF-8 |
+| `ro_RO` | UTF-8 |
+| `ru_RU` | KOI8-R |
+| `se` | UTF-8 |
+| `si_LK` | UTF-8 |
+| `sk_SK` | UTF-8 |
+| `sl_SI` | ISO8859-2 |
+| `sr_Latn_RS` | UTF-8 |
+| `sr_RS` | UTF-8 |
+| `sv_FI` | UTF-8 |
+| `sv_SE` | UTF-8 |
+| `sw_TZ` | ISO8859-1 |
+| `te_IN` | UTF-8 |
+| `th_TH` | TIS-620 |
+| `uk_UA` | UTF-8 |
+| `uz_UZ` | UTF-8 |
+| `vi_VN` | UTF-8 |
