@@ -55,7 +55,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		echo -n 'Running Hunspell on gathered words for '$language
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
-#		if [ $language = 'nl_NL' -o $language = 'pt_PT' ]; then
+#		if [ $language = 'nl' -o $language = 'pt_PT' ]; then
 			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | grep -v '^$' > reference/$platform/$language/gathered.full
 			tail -n +2 reference/$platform/$language/gathered.full | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
 			tail -n +2 reference/$platform/$language/gathered.full | awk '{print $2}' > reference/$platform/$language/gathered.words

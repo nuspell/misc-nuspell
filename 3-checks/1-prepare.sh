@@ -3,11 +3,11 @@
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
-##if [ -e words/$platform ]; then
-##	rm -rf words/$platform/*
-##else
-##	mkdir -p words/$platform
-##fi
+if [ -e words/$platform ]; then
+	rm -rf words/$platform/*
+else
+	mkdir -p words/$platform
+fi
 
 # Crude filtering by skipping:
 # 1. first line of dic file with list size
@@ -54,16 +54,16 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 	echo -n 'Gathering words for '$language
 
 	mkdir -p words/$platform/$language
-	if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo -o $language = se -o $language = af_ZA ];then # split on hyphen
+	if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo -o $language = ga_IE -o $language = se -o $language = af_ZA ];then # split on hyphen
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = gd_GB ];then # split on NON-BREAKING HYPHEN' (U+2011)
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/‑/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	elif [ $language = fr ];then # split on hyphen and ndash
-		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
+	elif [ $language = fr ];then # split on hyphen and ndash and underscore
+		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[_–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = ar ];then # custom # and ::
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|grep -v \# |grep -v :: |sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	elif [ $language = de_AT_frami -o $language = de_AT -o $language = de_CH_frami -o $language = de_CH -o $language = de_DE_frami -o $language = de_DE ];then # also license
-		tail -n +18 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
+	elif [ $language = de_AT_frami -o $language = de_AT -o $language = de_CH_frami -o $language = de_CH -o $language = de_DE_frami -o $language = de_DE ];then # also license # also '(STp'
+		tail -n +18 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|grep -v '(STp' |sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = it_IT ];then # also license
 		tail -n +35 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	else # default
@@ -78,10 +78,10 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 #		echo -e '\t\twordfile '$wordfile
 		for list in ../2-word-lists/packages/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
-			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo ]; then # split on hyphen
+			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo ]; then # split on hyphen
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
-			elif [ $language = fr ]; then # split on hyphen and ndash
-				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
+			elif [ $language = fr ]; then # split on hyphen and ndash and underscore
+				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[_–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			else
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			fi
@@ -94,11 +94,11 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 		cat words/$platform/$language/*|grep -v [:.] |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = da_DK ]; then # omit numerals (also in subscript and superscript) and apostrophe and hyphen begin of word
 		cat words/$platform/$language/*|grep -v "[0-9¹²³₁₂₃']" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = fr ]; then # omit numerals in subscript and superscript and apostrophe and opening and closing braces and hyphen end of word
-		cat words/$platform/$language/*|grep -v "[¹²³₁₂₃'()]" |grep -v "\-$" |sort|uniq >words/$platform/$language/gathered
+	elif [ $language = fr ]; then # omit numerals in subscript and superscript and apostrophe and opening and closing braces and hyphen end of word and &
+		cat words/$platform/$language/*|grep -v "[&¹²³₁₂₃'()]" |grep -v "\-$" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = ro_RO ]; then # omit numerals
 		cat words/$platform/$language/*|grep -v "[0-9]" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = nl_NL ]; then # omit subscript numerals and plus and hyphen begin of word
+	elif [ $language = nl ]; then # omit subscript numerals and plus and hyphen begin of word
 		cat words/$platform/$language/*|grep -v "[+₁₂₃]" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = sv_SE -o $language = sv_FI ]; then # omit subscript numerals and plus and hyphen begin of word
 		cat words/$platform/$language/*|grep -v "[:']" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
@@ -115,8 +115,8 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 	elif [ $language = sr_RS ]; then # omit period and special apostrophe
 		cat words/$platform/$language/*|grep -v "[.’]" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = gd_GB ]; then # omit period and ⁊ TIRONIAN SIGN ET and equals
-		cat words/$platform/$language/*|grep -v "[1⁊.'=]" | grep -v "!" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = it_IT -o $language = kmr_Latn -o $language = fo -o $language = en_CA -o $language = oc_FR ]; then # omit apostrophe
+		cat words/$platform/$language/*|grep -v "[0-9]" | grep -v "!" |sort|uniq >words/$platform/$language/gathered # was ⁊.'=]
+	elif [ $language = it_IT -o $language = kmr_Latn -o $language = fo -o $language = en_CA -o $language = en_AU -o $language = eo -o $language = oc_FR ]; then # omit apostrophe
 		cat words/$platform/$language/*|grep -v "'" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = de_CH_frami -o $language = de_AT_frami ]; then # omit apostrophe and plus
 		cat words/$platform/$language/*|grep -v "[+']" |sort|uniq >words/$platform/$language/gathered

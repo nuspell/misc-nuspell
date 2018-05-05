@@ -75,7 +75,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			echo -n 'Running Nuspell '$handle' on gathered words for '$language
 			mkdir -p regression/$platform/$language/$commit
 			start=`date +%s`
-#			if [ $language = 'nl_NL' ]; then
+#			if [ $language = 'nl' ]; then
 				../../nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
 #			else
 #				../../nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
