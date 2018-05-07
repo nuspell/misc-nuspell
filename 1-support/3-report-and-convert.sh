@@ -38,9 +38,9 @@ if [ -e packages ]; then
 		echo -n $encoding' | `' >> ../Dictionary-Files.md
 		echo `wc -l $file|awk '{print $1}'`'` |' >> ../Dictionary-Files.md
 		if [ $filename != en_MED -a $filename != de_med -a $filename != kk_KZ ]; then # bug with kk_KZ
-			if [ $filename = ar -o $filename = be_BY -o $filename = bn_BD -o $filename = bo -o $filename = br_FR -o $filename = ca -o $filename = ca_ES-valencia -o $filename = da_DK -o $filename = dz -o $filename = en_AU -o $filename = en_CA -o $filename = en_GB -o $filename = en_US -o $filename = en_ZA -o $filename = es_ES -o $filename = fr -o $filename = gd_GB -o $filename = gl_ES -o $filename = gu_IN -o $filename = gug_PY -o $filename = he_IL -o $filename = hi_IN -o $filename = hr_HR -o $filename = hu_HU -o $filename = is_IS -o $filename = kk_KZ -o $filename = kmr_Latn -o $filename = ko -o $filename = lo_LA -o $filename = ml_IN -o $filename = ne_NP -o $filename = nl -o $filename = pt_PT -o $filename = ro_RO -o $filename = se -o $filename = si_LK -o $filename = sk_SK -o $filename = sr_Latn_RS -o $filename = sr_RS -o $filename = sv_FI -o $filename = sv_SE -o $filename = te_IN -o $filename = uk_UA -o $filename = uz_UZ -o $filename = vi_VN ]; then
+			if [ $filename = ar -o $filename = be_BY -o $filename = bn_BD -o $filename = bo -o $filename = br_FR -o $filename = ca -o $filename = ca_ES-valencia -o $filename = da_DK -o $filename = dz -o $filename = en_AU -o $filename = en_CA -o $filename = en_GB -o $filename = en_US -o $filename = en_ZA -o $filename = es_ES -o $filename = fa_IR -o $filename = fr -o $filename = gd_GB -o $filename = gl_ES -o $filename = gu_IN -o $filename = gug_PY -o $filename = he_IL -o $filename = hi_IN -o $filename = hr_HR -o $filename = hu_HU -o $filename = is_IS -o $filename = kk_KZ -o $filename = kmr_Latn -o $filename = ko -o $filename = lo_LA -o $filename = ml_IN -o $filename = ne_NP -o $filename = nl -o $filename = pt_PT -o $filename = ro_RO -o $filename = se -o $filename = si_LK -o $filename = sk_SK -o $filename = sr_Latn_RS -o $filename = sr_RS -o $filename = sv_FI -o $filename = sv_SE -o $filename = te_IN -o $filename = uk_UA -o $filename = uz_UZ -o $filename = vi_VN ]; then
 				cp $file ../utf8/$filename.txt
-			elif [ $filename = af_ZA -o $filename = an_ES -o $filename = de_AT -o $filename = de_AT_frami -o $filename = de_CH -o $filename = de_CH_frami -o $filename = de_DE -o $filename = de_DE_frami -o $filename = eu -o $filename = fo -o $filename = ga_IE -o $filename = nb_NO -o $filename = nn_NO -o $filename = pt_BR -o $filename = sw_TZ ]; then
+			elif [ $filename = af_ZA -o $filename = an_ES -o $filename = de_AT -o $filename = de_AT_frami -o $filename = de_CH -o $filename = de_CH_frami -o $filename = de_DE -o $filename = de_DE_frami -o $filename = eu -o $filename = fo -o $filename = ga_IE -o $filename = gv_GB -o $filename = nb_NO -o $filename = nn_NO -o $filename = pt_BR -o $filename = tl -o $filename = sw_TZ ]; then
 				iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 			elif [ $filename = bs_BA -o $filename = cs_CZ -o $filename = pl_PL -o $filename = sl_SI ]; then
 				iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
@@ -48,9 +48,9 @@ if [ -e packages ]; then
 				iconv -f ISO8859-3 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 			elif [ $filename = el_GR ]; then
 				iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-			elif [ $filename = lt_LT ]; then
+			elif [ $filename = lt_LT -o $filename = lv_LV ]; then
 				iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-			elif [ $filename = it_IT -o $filename = oc_FR ]; then
+			elif [ $filename = it_IT -o $filename = oc_FR -o $filename = et_EE ]; then
 				iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 			elif [ $filename = bg_BG ]; then
 				iconv -f CP1251 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
@@ -117,3 +117,5 @@ if [ -e packages ]; then
 	done
 fi
 
+#TODO header gv_GB.dic
+#TODO missing header ga_IE

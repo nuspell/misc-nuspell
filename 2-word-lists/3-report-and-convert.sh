@@ -27,16 +27,6 @@ if [ -e packages ]; then
 			iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 		elif [ $filename = bulgarian ]; then
 			iconv -f CP1251 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-#		elif [ $filename = sl_SI -o $filename = pl_PL -o $filename = cs_CZ -o $filename = bs_BZ ]; then
-#			iconv -f ISO-8859-2 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-#		elif [ $filename = el_GR ]; then
-#			iconv -f ISO-8859-7 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-#		elif [ $filename = lt_LT ]; then
-#			iconv -f ISO-8859-13 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-#		elif [ $filename = it_IT -o $filename = oc_FR ]; then
-#			iconv -f ISO-8859-15 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
-#		elif [ $filename = th_TH ]; then
-#			iconv -f TIS-620 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
 		else
 			echo 'ERROR: Unsupported file encoding '$encoding' for file '$file
 			exit 1

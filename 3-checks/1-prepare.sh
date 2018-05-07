@@ -28,21 +28,6 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
 #	echo -e '\tpackage '$package
 	
-	#TODO for testing, limit languages
-#	if [ $package == 'ar' -o \
-#	$package == 'be' -o \
-#	$package == 'bo' -o \
-#	$package == 'br' -o \
-#	$package == 'en-gb' -o \
-#	$package == 'kmr' -o \
-#	$package == 'ne' -o \
-#	$package == 'nl' -o \
-#	$package == 'pl' -o \
-#	$package == 'sk' -o \
-#	$package == 'uk' -o \
-#	$package == 'uz' -o \
-#	$package == 'vi' ]; then
-
 	version=`echo $path|awk -F '/' '{print $5}'`
 #	echo -e '\tversion '$version
 	affix=`echo $path|awk -F '/' '{print $9}'`
@@ -54,7 +39,7 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 	echo -n 'Gathering words for '$language
 
 	mkdir -p words/$platform/$language
-	if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo -o $language = ga_IE -o $language = se -o $language = af_ZA ];then # split on hyphen
+	if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = eo -o $language = et_EE -o $language = gv_GB -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = tl -o $language = lv_LV -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo -o $language = ga_IE -o $language = se -o $language = af_ZA ];then # split on hyphen
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = gd_GB ];then # split on NON-BREAKING HYPHEN' (U+2011)
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/‑/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
@@ -78,7 +63,7 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 #		echo -e '\t\twordfile '$wordfile
 		for list in ../2-word-lists/packages/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
-			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo ]; then # split on hyphen
+			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo -o $language = eo ]; then # split on hyphen
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			elif [ $language = fr ]; then # split on hyphen and ndash and underscore
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[_–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
@@ -90,52 +75,54 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 
 	#TODO for testing, limit via "sort -R|head -n 4096"
 #	cat words/$platform/$language/*|sort|uniq|sort -R|head -n 4096 >words/$platform/$language/gathered
-	if [ $language = br_FR ]; then # omit period and colon and 
+	if [ $language = br_FR ]; then # period colon
 		cat words/$platform/$language/*|grep -v [:.] |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = da_DK ]; then # omit numerals (also in subscript and superscript) and apostrophe and hyphen begin of word
+	elif [ $language = da_DK ]; then # numerals (also in subscript and superscript) and apostrophe and hyphen begin of word
 		cat words/$platform/$language/*|grep -v "[0-9¹²³₁₂₃']" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = fr ]; then # omit numerals in subscript and superscript and apostrophe and opening and closing braces and hyphen end of word and &
+	elif [ $language = fr ]; then # numerals in subscript and superscript and apostrophe and opening and closing braces and hyphen end of word and &
 		cat words/$platform/$language/*|grep -v "[&¹²³₁₂₃'()]" |grep -v "\-$" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = ro_RO ]; then # omit numerals
+	elif [ $language = ro_RO ]; then # numerals
 		cat words/$platform/$language/*|grep -v "[0-9]" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = nl ]; then # omit subscript numerals and plus and hyphen begin of word
+	elif [ $language = nl ]; then # subscriptnumerals plus -BOL
 		cat words/$platform/$language/*|grep -v "[+₁₂₃]" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = sv_SE -o $language = sv_FI ]; then # omit subscript numerals and plus and hyphen begin of word
+	elif [ $language = sv_SE -o $language = sv_FI ]; then # subscriptnumerals plus -BOL
 		cat words/$platform/$language/*|grep -v "[:']" |grep -v "^-" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = en_GB ]; then # omit period and apostrophe and plus
+	elif [ $language = en_GB ]; then # omit period apostrophe plus
 		cat words/$platform/$language/*|grep -v "[+.']" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = en_US ]; then # omit period and apostrophe
+	elif [ $language = en_US ]; then # omit period apostrophe
 		cat words/$platform/$language/*|grep -v "[.']" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = gl_ES -o $language = nb_NO ]; then # omit period
+	elif [ $language = gl_ES -o $language = nb_NO -o $language = et_EE ]; then # period
 		cat words/$platform/$language/*|grep -v "\." |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = sw_TZ ]; then # omit period and apostrophe and numerals
+	elif [ $language = sw_TZ ]; then # period apostrophe numerals
 		cat words/$platform/$language/*|grep -v "[0-9.']" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = en_ZA -o $language = af_ZA ]; then # omit period and apostrophe and numerals and exclamation mark
+	elif [ $language = en_ZA -o $language = af_ZA ]; then # omit period apostrophe numerals exclamationmark
 		cat words/$platform/$language/*|grep -v "[0-9.']" |grep -v ! |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = sr_RS ]; then # omit period and special apostrophe
+	elif [ $language = sr_RS ]; then # period specialapostrophe
 		cat words/$platform/$language/*|grep -v "[.’]" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = gd_GB ]; then # omit period and ⁊ TIRONIAN SIGN ET and equals
-		cat words/$platform/$language/*|grep -v "[0-9]" | grep -v "!" |sort|uniq >words/$platform/$language/gathered # was ⁊.'=]
-	elif [ $language = it_IT -o $language = kmr_Latn -o $language = fo -o $language = en_CA -o $language = en_AU -o $language = eo -o $language = oc_FR ]; then # omit apostrophe
+	elif [ $language = gd_GB ]; then # period and ⁊ TIRONIAN SIGN ET and equals and numerals underscore
+		cat words/$platform/$language/*|grep -v "[0-9⁊.=_]" | grep -v "!" |sort|uniq >words/$platform/$language/gathered
+	elif [ $language = it_IT -o $language = tl -o $language = ga_IE -o $language = kmr_Latn -o $language = fo -o $language = en_CA -o $language = en_AU -o $language = eo -o $language = gv_GB -o $language = oc_FR ]; then # apostrophe
 		cat words/$platform/$language/*|grep -v "'" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = de_CH_frami -o $language = de_AT_frami ]; then # omit apostrophe and plus
+	elif [ $language = de_CH_frami -o $language = de_AT_frami ]; then # apostrophe plus
 		cat words/$platform/$language/*|grep -v "[+']" |sort|uniq >words/$platform/$language/gathered
+	elif [ $language = lv_LV ]; then # period braceopen braceclose
+		cat words/$platform/$language/*|grep -v "[.()]" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = hu_HU ]; then # omit misc
 		cat words/$platform/$language/*|grep -v "[@$€}:=§%{|±+'()]" |grep -v "^-"|grep -v "\-$"|sort|uniq >words/$platform/$language/gathered
-	elif [ $language = de_DE_frami ]; then # omit apostrophe
+	elif [ $language = de_DE_frami ]; then # apostrophe
 # Trög°litz is probably an error
 		cat words/$platform/$language/*|grep -v "[+'°]" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = ca -o $language = ca_ES-valencia ]; then # omit numerals (also in subscript and superscript) and apostrophe and plus
+	elif [ $language = ca -o $language = ca_ES-valencia ]; then # numerals subscriptnumerals superscriptnumerals apostrophe plus
 		cat words/$platform/$language/*|grep -v "[0-9¹²³₁₂₃+']" |sort|uniq >words/$platform/$language/gathered
-#	elif [ $language = te_IN ]; then # omit Uxc02 ం
+#	elif [ $language = te_IN ]; then # Uxc02 ం
 #		cat words/$platform/$language/*|grep -v "[ ంు]"  |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = se ]; then # no start -, no end -, no underscore _, no ampersand &
+	elif [ $language = se ]; then # -BOL EOL- underscore ampersand
 		cat words/$platform/$language/*|grep -v [_\&] |grep -v "^-"|grep -v "\-$"|sort|uniq >words/$platform/$language/gathered
 	else
 		cat words/$platform/$language/*|sort|uniq >words/$platform/$language/gathered
 	fi
 	for file in words/$platform/$language/*; do
-		../0-tools/histogram.py $file > words/$platform/$language/`basename $file`-histogram.tsv
+		../0-tools/histogram.py $file > words/$platform/$language/`basename $file`-histogram.md
 	done
 	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
 

@@ -15,4 +15,4 @@ for i in *.deb; do
 done
 cd ..
 
-rm -rf packages/*/*/usr/share/doc packages/*/*/usr/share/myspell
+rm -rf packages/*/*/usr/share/doc packages/*/*/usr/share/myspell packages/*/*/usr/share/hyphen
