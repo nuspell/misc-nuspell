@@ -8,18 +8,21 @@ fi
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
-if [ ! -e regression/$platform ]; then
+if [ -e regression/$platform ]; then
+	rm -rf regression/$platform/*
+else
 	mkdir -p regression/$platform
 fi
 
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
-	updated=`git pull -r|grep -c 'Already up-to-date.'`
+	updated=`git pull -r|grep -c 'Already up to date.'`
 else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
 fi
+
 if [ $# -eq 0 ]; then
 	commit=`git log|head -n 1|awk '{print $2}'`
 	timestamp=`git log --date=raw|head -n 3|tail -n 1|awk '{print $2}'`
@@ -27,26 +30,27 @@ else
 	commit=$1
 	timestamp=`git log $commit --date=raw|head -n 3|tail -n 1|awk '{print $2}'`
 fi
-	handle=`echo $commit|sed -e 's/^\(.......\).*/\1/'`
+handle=`echo $commit|sed -e 's/^\(.......\).*/\1/'`
+
 if [ $updated -eq 0 ]; then
 	autoreconf -vfi
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to automatically reconfigure nuspell/hunspell'
+		echo 'ERROR: Failed to automatically reconfigure nuspell/nuspell'
 		exit 1
 	fi
 	./configure
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to configure nuspell/hunspell'
+		echo 'ERROR: Failed to configure nuspell/nuspell'
 		exit 1
 	fi
 	make -j
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to build nuspell/hunspell'
+		echo 'ERROR: Failed to build nuspell/nuspell'
 		exit 1
 	fi
 	make check
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to test nuspell/hunspell'
+		echo 'ERROR: Failed to test nuspell/nuspell'
 		exit 1
 	fi
 fi
@@ -59,7 +63,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered ] && [ $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then #bn_BD
+	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then
 		test=1
 #		if [ -e regression/$platform/$language/time-$hostname.tsv ]; then
 #			if [ "`grep -c $commit regression/$platform/$language/time-$hostname.tsv`" = 1 ]; then
@@ -72,7 +76,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 #			fi
 #		fi
 		if [ $test -eq 1 ]; then
-			echo -n 'Running Nuspell '$handle' on gathered words for '$language
+			echo -n 'Running Nuspell '$handle' for '$language' on '`wc -l words/$platform/$language/gathered|awk '{print $1}'`' gathered words'
 			mkdir -p regression/$platform/$language/$commit
 			start=`date +%s`
 #			if [ $language = 'nl' ]; then

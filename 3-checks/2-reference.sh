@@ -17,26 +17,28 @@ else
 	git clone https://github.com/hunspell/nuspell.git
 	cd nuspell
 fi
+
 commit=`git log|head -n 1|awk '{print $2}'`
+
 if [ $updated -eq 0 ]; then
 	autoreconf -vfi
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to automatically reconfigure nuspell'
+		echo 'ERROR: Failed to automatically reconfigure nuspell/hunspell'
 		exit 1
 	fi
 	./configure
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to configure nuspell'
+		echo 'ERROR: Failed to configure nuspell/hunspell'
 		exit 1
 	fi
 	make -j
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to build nuspell'
+		echo 'ERROR: Failed to build nuspell/hunspell'
 		exit 1
 	fi
 	make check
 	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to test nuspell'
+		echo 'ERROR: Failed to test nuspell/hunspell'
 		exit 1
 	fi
 fi
@@ -50,7 +52,6 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	language=`basename $affix .aff`
 
 	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then
-##	if [ -e words/$platform/$language/gathered ] && [ $language = hu_HU ]; then
 
 		echo -n 'Running Hunspell for '$language' on '`wc -l words/$platform/$language/gathered|awk '{print $1}'`' gathered words'
 		mkdir -p reference/$platform/$language
