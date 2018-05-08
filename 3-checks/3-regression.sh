@@ -63,7 +63,10 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then
+	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then # fail in ref
+#	if [ $language != af_ZA -a $language != be_BY -a $language != bo -a $language != br_FR -a $language != dz -a $language != en_AU -a $language != en_CA -a $language != en_GB -a $language != en_US -a $language != en_ZA -a $language != et_EE -a $language != fo -a $language != ga_IE -a $language != gd_GB -a $language != gug_PY -a $language != gv_GB -a $language != he_IL -a $language != is_IS -a $language != lo_LA -a $language != ro_RO -a $language != sk_SK -a $language != sr_RS -a $language != sv_FI -a $language != tl -a $language != sw_TZ -a $language != uz_UZ -a $language != vi_VN ]; then # disable dev
+	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != fr -a $language != gl_ES -a $language != se -a $language != sv_SE -a $language != uk_UA ]; then # long dev
+	if [ $language != it_IT -a $language != kmr_Latn -a $language != lv_LV -a $language != nl -a $language != nb_NO -a $language != oc_FR ]; then # error dev
 		test=1
 #		if [ -e regression/$platform/$language/time-$hostname.tsv ]; then
 #			if [ "`grep -c $commit regression/$platform/$language/time-$hostname.tsv`" = 1 ]; then
@@ -113,6 +116,9 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 				echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l regression/$platform/$language/$commit/gathered|awk '{print $1}'`') do not match for '$language
 			fi
 		fi
+	fi
+	fi
+#	fi
 	fi
 done
 total_end=`date +%s`

@@ -52,6 +52,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	language=`basename $affix .aff`
 
 	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then
+	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != fr -a $language != gl_ES -a $language != se -a $language != sv_SE -a $language != uk_UA ]; then # long dev
 
 		echo -n 'Running Hunspell for '$language' on '`wc -l words/$platform/$language/gathered|awk '{print $1}'`' gathered words'
 		mkdir -p reference/$platform/$language
@@ -81,6 +82,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			echo
 			echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l reference/$platform/$language/gathered|awk '{print $1}'`') do not match for '$language
 		fi
+	fi
 	fi
 done
 total_end=`date +%s`
