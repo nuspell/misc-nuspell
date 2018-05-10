@@ -9,3 +9,4 @@ cd ../2-word-lists
 cd ../3-checks
 ./1-prepare.sh
 ./2-reference.sh
+./3-regression.sh

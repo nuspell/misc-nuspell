@@ -45,45 +45,67 @@ fi
 cd ..
 
 total_start=`date +%s`
+
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
 	version=`echo $path|awk -F '/' '{print $5}'`
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then
-	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != fr -a $language != gl_ES -a $language != se -a $language != sv_SE -a $language != uk_UA ]; then # long dev
+	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then # errors that need fixing
 
-		echo -n 'Running Hunspell for '$language' on '`wc -l words/$platform/$language/gathered|awk '{print $1}'`' gathered words'
+		echo -n 'Running Hunspell for '$language' on '`cat words/$platform/$language/gathered.total`' gathered words'
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
-#		if [ $language = 'nl' -o $language = 'pt_PT' ]; then
-			../../nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | grep -v '^$' > reference/$platform/$language/gathered.full
-			tail -n +2 reference/$platform/$language/gathered.full | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
-			tail -n +2 reference/$platform/$language/gathered.full | awk '{print $2}' > reference/$platform/$language/gathered.words
-#		else
-#			../../nuspell/src/tools/hunspell -Y -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered | tail -n +2 | grep -v '^$' | sed -e 's/^\(.\).*/\1/' > reference/$platform/$language/gathered
-#		fi
+		nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered 2> reference/$platform/$language/stderr | grep -v 'International Ispell Version'|grep -v '^$' > reference/$platform/$language/gathered.full
 		end=`date +%s`
-		if [ `wc -l words/$platform/$language/gathered|awk '{print $1}'` -eq `wc -l reference/$platform/$language/gathered|awk '{print $1}'` ]; then
-			echo $end-$start | bc > reference/$platform/$language/time-$hostname
-			paste -d"\t" reference/$platform/$language/gathered words/$platform/$language/gathered > reference/$platform/$language/gathered.tsv
-#			grep '^#' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.unknown # unknown
-#			grep '^&' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.nearmiss # near miss
-#			grep '^*' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.okay # okay
-#			grep '^+' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.affixed # from root
-#			grep '^-' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.compound # as compound
-			grep '^[*+-]' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.correct
-#			grep '^[#&]' reference/$platform/$language/gathered|wc -l>reference/$platform/$language/gathered.bad
-			#TODO check also for not & and not *
+		echo $end-$start|bc > reference/$platform/$language/time-$hostname
+
+		# get list of output words
+		awk '{print $2}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered
+		# get list of spelling result
+		awk '{print $1}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered.spelling
+		# calculate total
+		wc -l reference/$platform/$language/gathered.spelling|awk '{print $1}'>reference/$platform/$language/gathered.total
+
+		# compare list of input words with list of output words
+		if [ -z `diff -q words/$platform/$language/gathered reference/$platform/$language/gathered|awk '{print $1}'` ]; then
+			# recombine list of output words and list of spelling result
+			paste -d"\t" reference/$platform/$language/gathered.spelling words/$platform/$language/gathered > reference/$platform/$language/gathered.tsv
+
+			# filter and calculate totals
+
+			# correct
+			grep '^[*+-]' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.correct
+			wc -l reference/$platform/$language/gathered.correct|awk '{print $1}'>reference/$platform/$language/gathered.total_correct
+			# incorrect
+			grep '^[#&]' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.incorrect
+			wc -l reference/$platform/$language/gathered.incorrect|awk '{print $1}'>reference/$platform/$language/gathered.total_incorrect
+			# okay
+			grep '^*' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.okay
+			wc -l reference/$platform/$language/gathered.okay|awk '{print $1}'>reference/$platform/$language/gathered.total_okay
+			# affixed
+			grep '^+' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.affixed
+			wc -l reference/$platform/$language/gathered.affixed|awk '{print $1}'>reference/$platform/$language/gathered.total_affixed
+			# compounded
+			grep '^-' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.compounded
+			wc -l reference/$platform/$language/gathered.compounded|awk '{print $1}'>reference/$platform/$language/gathered.total_compounded
+			#unknown
+			grep '^#' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.unknown
+			wc -l reference/$platform/$language/gathered.unknown|awk '{print $1}'>reference/$platform/$language/gathered.total_unknown
+			# near miss
+			grep '^&' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.nearmiss
+			wc -l reference/$platform/$language/gathered.nearmiss|awk '{print $1}'>reference/$platform/$language/gathered.total_nearmiss
+
 			echo -n ', scoring '
-			echo `cat reference/$platform/$language/gathered.correct`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
+			echo `cat reference/$platform/$language/gathered.total_correct`'/'`cat words/$platform/$language/gathered.total`'*100'|bc -l|sed -e 's/\(\....\).*$/\1%/'
 		else
 			echo
-			echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l reference/$platform/$language/gathered|awk '{print $1}'`') do not match for '$language
+			echo 'ERROR: Number of words in ('`cat words/$platform/$language/gathered.total`') and number of results out ('`cat reference/$platform/$language/gathered.total|awk '{print $1}'`') do not match for '$language
 		fi
-	fi
-	fi
+
+	fi # errors that need fixing
 done
+
 total_end=`date +%s`
-echo $total_end-$total_start | bc > reference/$platform/time-$hostname
+echo $total_end-$total_start|bc > reference/$platform/time-$hostname

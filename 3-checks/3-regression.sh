@@ -57,69 +57,82 @@ fi
 cd ..
 
 total_start=`date +%s`
+
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
 	version=`echo $path|awk -F '/' '{print $5}'`
 	affix=`echo $path|awk -F '/' '{print $9}'`
 	language=`basename $affix .aff`
 
-	if [ -e words/$platform/$language/gathered ] && [ $language != bg_BG -a $language != ar -a $language != bn_BD -a $language != sl_SI -a $language != cs_CZ -a $language != bs_BA -a $language != fa_IR -a $language != sr_Latn_RS -a $language != ru_RU -a $language != pt_PT -a $language != eu -a $language != ml_IN -a $language != si_LK -a $language != ne_NP -a $language != gu_IN -a $language != hi_IN -a $language != hu_HU ]; then # fail in ref
-#	if [ $language != af_ZA -a $language != be_BY -a $language != bo -a $language != br_FR -a $language != dz -a $language != en_AU -a $language != en_CA -a $language != en_GB -a $language != en_US -a $language != en_ZA -a $language != et_EE -a $language != fo -a $language != ga_IE -a $language != gd_GB -a $language != gug_PY -a $language != gv_GB -a $language != he_IL -a $language != is_IS -a $language != lo_LA -a $language != ro_RO -a $language != sk_SK -a $language != sr_RS -a $language != sv_FI -a $language != tl -a $language != sw_TZ -a $language != uz_UZ -a $language != vi_VN ]; then # disable dev
-	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != fr -a $language != gl_ES -a $language != se -a $language != sv_SE -a $language != uk_UA ]; then # long dev
-	if [ $language != it_IT -a $language != kmr_Latn -a $language != lv_LV -a $language != nl -a $language != nb_NO -a $language != oc_FR ]; then # error dev
-		test=1
+	if [ -e words/$platform/$language/gathered ]; then
+
+	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != eu -a $language != fr -a $language != se -a $language != uk_UA ]; then # to speed up development of this script
+
+	if [ $language != gl_ES -a $language != hu_HU -a $language != it_IT -a $language != kmr_Latn  -a $language != nb_NO -a $language != oc_FR -a $language != sk_SK -a $language != sr_Latn_RS -a $language != sv_FI -a $language != sv_SE ]; then # warnings or errors in stderr
+
+		run_test=1
 #		if [ -e regression/$platform/$language/time-$hostname.tsv ]; then
 #			if [ "`grep -c $commit regression/$platform/$language/time-$hostname.tsv`" = 1 ]; then
-#				test=0
+#				reun_test=0
 #			fi
 #		fi
 #		if [ -e regression/$platform/$language/correctness.tsv ]; then
 #			if [ "`grep -c $commit regression/$platform/$language/correctness.tsv`" = 1 ]; then
-#				test=0
+#				reun_test=0
 #			fi
 #		fi
-		if [ $test -eq 1 ]; then
+		if [ $run_test -eq 1 ]; then
 			echo -n 'Running Nuspell '$handle' for '$language' on '`wc -l words/$platform/$language/gathered|awk '{print $1}'`' gathered words'
-			mkdir -p regression/$platform/$language/$commit
+			mkdir -p regression/$platform/$commit\_$timestamp/$language
 			start=`date +%s`
-#			if [ $language = 'nl' ]; then
-				../../nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
-#			else
-#				../../nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$language/$commit/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$language/$commit/gathered
-#			fi
+			nuspell/src/nuspell/nuspell -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` words/$platform/$language/gathered 2> regression/$platform/$commit\_$timestamp/$language/stderr | sed -e 's/^\(.\).*/\1/' > regression/$platform/$commit\_$timestamp/$language/gathered.spelling
 			end=`date +%s`
-			if [ `wc -l words/$platform/$language/gathered|awk '{print $1}'` -eq `wc -l regression/$platform/$language/$commit/gathered|awk '{print $1}'` ]; then
-#				echo -ne $timestamp'\t'$commit'\t'$handle'\t' >> regression/$platform/$language/time-$hostname.tsv
-				echo $end-$start | bc >> regression/$platform/$language/time-$hostname.tsv
-				paste -d"\t" regression/$platform/$language/$commit/gathered words/$platform/$language/gathered > regression/$platform/$language/$commit/gathered.tsv
-#				grep '^[*+-]' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.correct
-#				echo -n ', scoring '
-#				echo `cat regression/$platform/$language/$commit/gathered.correct`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
-#			sort -n regression/$platform/$language/time-$hostname.tsv > tmp
-#			mv -f tmp regression/$platform/$language/time-$hostname.tsv
-#			rm -f tmp
-#			paste -d"\t" regression/$platform/$language/$commit/gathered words/$platform/$language/gathered > regression/$platform/$language/$commit/gathered.tsv
-#			grep '^*' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.good
-#			grep '^[&#]' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.bad
-				grep '^[*+-]' regression/$platform/$language/$commit/gathered|wc -l>regression/$platform/$language/$commit/gathered.correct
-				#TODO check also for not & and not *
-				echo -n ', scoring '
-			echo `cat regression/$platform/$language/$commit/gathered.correct`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
+			echo $end-$start|bc >> regression/$platform/$commit\_$timestamp/$language/time-$hostname.tsv
 
-#				echo `cat regression/$platform/$language/$commit/gathered.good`'/'`wc -l words/$platform/$language/gathered|awk '{print $1}'`'*100' | bc -l | sed -e 's/\(\....\).*$/\1%/'
-#				echo -e $timestamp'\t'$commit'\t'$handle'\t'`cat regression/$platform/$language/$commit/gathered.good`'\t'`cat regression/$platform/$language/$commit/gathered.bad` >> regression/$platform/$language/correctness.tsv
-#			sort -n regression/$platform/$language/correctness.tsv > tmp
-#			mv -f tmp regression/$platform/$language/correctness.tsv
-#			rm -f tmp
+			# calculate total
+			wc -l regression/$platform/$commit\_$timestamp/$language/gathered.spelling|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total
+
+			if [ `cat words/$platform/$language/gathered.total` -eq `cat regression/$platform/$commit\_$timestamp/$language/gathered.total` ]; then
+				# recombine list of output words and list of spelling result
+				paste -d"\t" regression/$platform/$commit\_$timestamp/$language/gathered.spelling words/$platform/$language/gathered > regression/$platform/$commit\_$timestamp/$language/gathered.tsv
+
+				# filter and calculate totals
+
+				# correct
+				grep '^[*+-]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.correct
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.correct|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_correct
+				# incorrect
+				grep '^[#&]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.incorrect
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.incorrect|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_incorrect
+				# okay
+				grep '^*' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.okay
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.okay|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_okay
+				# affixed
+				grep '^+' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.affixed
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.affixed|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_affixed
+				# compounded
+				grep '^-' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.compounded
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.compounded|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_compounded
+				#unknown
+				grep '^#' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.unknown
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.unknown|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_unknown
+				# near miss
+				grep '^&' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_nearmiss
+
+				echo -n ', scoring '
+			echo `cat regression/$platform/$commit\_$timestamp/$language/gathered.total_correct`'/'`cat words/$platform/$language/gathered.total`'*100'|bc -l|sed -e 's/\(\....\).*$/\1%/'
 			else
 				echo
-				echo 'ERROR: Number of words in ('`wc -l words/$platform/$language/gathered|awk '{print $1}'`') and number of results out ('`wc -l regression/$platform/$language/$commit/gathered|awk '{print $1}'`') do not match for '$language
+				echo 'ERROR: Number of words in ('`cat words/$platform/$language/gathered.total`') and number of results out ('`cat regression/$platform/$commit\_$timestamp/$language/gathered.total`') do not match for '$language
 			fi
 		fi
-	fi
-	fi
-#	fi
+
+	fi # warnings or errors in stderr
+
+	fi # to speed up development of this script
+
 	fi
 done
 total_end=`date +%s`
-echo $total_end-$total_start | bc > regression/$platform/time-$hostname
+echo $total_end-$total_start|bc > regression/$platform/$commit\_$timestamp/time-$hostname

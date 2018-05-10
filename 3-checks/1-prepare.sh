@@ -23,23 +23,19 @@ fi
 # 7. emtpy line
 
 total_start=`date +%s`
+
 for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
-#	echo 'path '$path
 	package=`echo $path|awk -F '/' '{print $4}'`
-#	echo -e '\tpackage '$package
-	
 	version=`echo $path|awk -F '/' '{print $5}'`
-#	echo -e '\tversion '$version
 	affix=`echo $path|awk -F '/' '{print $9}'`
-#	echo -e '\taffix '$affix
 	language=`basename $affix .aff`
 
-if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language != bg_BG -a $language != an_ES -a $language != en_MED -a $language != hr_HR -a $language != kk_KZ -a $language != pt_BR -a $language != th_TH -a $language != pl_PL -a $language != ko -a $language != lt_LT -a $language != es_ES -a $language != nn_NO -a $language != te_IN ]; then
-	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != fr -a $language != gl_ES -a $language != se -a $language != sv_SE -a $language != uk_UA ]; then # long dev
+if [ $language != an_ES -a $language != bg_BG -a $language != cs_CZ -a $language != el_GR -a $language != en_MED -a $language != es_ES -a $language != sl_SI -a $language != hr_HR -a $language != kk_KZ -a $language != pt_BR -a $language != th_TH -a $language != pl_PL -a $language != ko -a $language != lt_LT -a $language != nn_NO -a $language != te_IN ]; then # errors that need fixing
 
 	echo -n 'Gathering words for '$language
-
 	mkdir -p words/$platform/$language
+	start=`date +%s`
+
 	if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = eo -o $language = et_EE -o $language = gv_GB -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = tl -o $language = lv_LV -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = fo -o $language = ga_IE -o $language = se -o $language = af_ZA ];then # split on hyphen
 		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 	elif [ $language = gd_GB ];then # split on NON-BREAKING HYPHEN' (U+2011)
@@ -92,7 +88,9 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 		cat words/$platform/$language/*|grep -v "[+.']" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = en_US ]; then # omit period apostrophe
 		cat words/$platform/$language/*|grep -v "[.']" |sort|uniq >words/$platform/$language/gathered
-	elif [ $language = gl_ES -o $language = nb_NO -o $language = et_EE ]; then # period
+	elif [ $language = gl_ES ]; then # period numerals
+		cat words/$platform/$language/*|grep -v "[0-9.]" |sort|uniq >words/$platform/$language/gathered
+	elif [ $language = nb_NO -o $language = et_EE ]; then # period
 		cat words/$platform/$language/*|grep -v "\." |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = sw_TZ ]; then # period apostrophe numerals
 		cat words/$platform/$language/*|grep -v "[0-9.']" |sort|uniq >words/$platform/$language/gathered
@@ -101,7 +99,7 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 	elif [ $language = sr_RS ]; then # period specialapostrophe
 		cat words/$platform/$language/*|grep -v "[.’]" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = gd_GB ]; then # period and ⁊ TIRONIAN SIGN ET and equals and numerals underscore
-		cat words/$platform/$language/*|grep -v "[0-9⁊.=_]" | grep -v "!" |sort|uniq >words/$platform/$language/gathered
+		cat words/$platform/$language/*|grep -v "[0-9⁊.=_]"|grep -v "!" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = it_IT -o $language = tl -o $language = ga_IE -o $language = kmr_Latn -o $language = fo -o $language = en_CA -o $language = en_AU -o $language = eo -o $language = gv_GB -o $language = oc_FR ]; then # apostrophe
 		cat words/$platform/$language/*|grep -v "'" |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = de_CH_frami -o $language = de_AT_frami ]; then # apostrophe plus
@@ -118,19 +116,21 @@ if [ $language != sl_SI -a $language != cs_CZ -a $language != el_GR -a $language
 #	elif [ $language = te_IN ]; then # Uxc02 ం
 #		cat words/$platform/$language/*|grep -v "[ ంు]"  |sort|uniq >words/$platform/$language/gathered
 	elif [ $language = se ]; then # -BOL EOL- underscore ampersand
-		cat words/$platform/$language/*|grep -v [_\&] |grep -v "^-"|grep -v "\-$"|sort|uniq >words/$platform/$language/gathered
+		cat words/$platform/$language/*|grep -v [_\&²³] |grep -v "^-"|grep -v "\-$"|sort|uniq >words/$platform/$language/gathered
 	else
 		cat words/$platform/$language/*|sort|uniq >words/$platform/$language/gathered
 	fi
 	for file in words/$platform/$language/*; do
 		../0-tools/histogram.py $file > words/$platform/$language/`basename $file`-histogram.md
 	done
-	echo ', totaling '`wc -l words/$platform/$language/gathered|awk '{print $1}'`
+	wc -l words/$platform/$language/gathered|awk '{print $1}' > words/$platform/$language/gathered.total
 
-	#TODO for testing, limit languages
-#	fi
-fi
-fi
+	echo ', totaling '`cat words/$platform/$language/gathered.total`
+	end=`date +%s`
+	echo $end-$start|bc > words/$platform/$language/time-$hostname
+
+fi # errors that need fixing
 done
+
 total_end=`date +%s`
-echo $total_end-$total_start | bc > words/$platform/time-$hostname
+echo $total_end-$total_start|bc > words/$platform/time-$hostname
