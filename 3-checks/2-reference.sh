@@ -90,12 +90,12 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			# compounded
 			grep '^-' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.compounded
 			wc -l reference/$platform/$language/gathered.compounded|awk '{print $1}'>reference/$platform/$language/gathered.total_compounded
-			#unknown
-			grep '^#' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.unknown
-			wc -l reference/$platform/$language/gathered.unknown|awk '{print $1}'>reference/$platform/$language/gathered.total_unknown
 			# near miss
 			grep '^&' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.nearmiss
 			wc -l reference/$platform/$language/gathered.nearmiss|awk '{print $1}'>reference/$platform/$language/gathered.total_nearmiss
+			#unknown
+			grep '^#' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.unknown
+			wc -l reference/$platform/$language/gathered.unknown|awk '{print $1}'>reference/$platform/$language/gathered.total_unknown
 
 			echo -n ', scoring '
 			echo `cat reference/$platform/$language/gathered.total_correct`'/'`cat words/$platform/$language/gathered.total`'*100'|bc -l|sed -e 's/\(\....\).*$/\1%/'

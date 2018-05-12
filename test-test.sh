@@ -10,3 +10,4 @@ cd ../3-checks
 ./1-prepare.sh
 ./2-reference.sh
 ./3-regression.sh
+./4-report.sh

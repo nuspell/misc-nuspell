@@ -113,23 +113,42 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 				# compounded
 				grep '^-' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.compounded
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.compounded|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_compounded
-				#unknown
-				grep '^#' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.unknown
-				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.unknown|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_unknown
 				# near miss
 				grep '^&' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_nearmiss
+				#unknown
+				grep '^#' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.unknown
+				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.unknown|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_unknown
 
-                # diff with reference
-                if [ -e reference/$platform/$language ]; then
-    				diff reference/$platform/$language/gathered.correct regression/$platform/$commit\_$timestamp/$language/gathered.correct>regression/$platform/$commit\_$timestamp/$language/gathered.diff_correct
-    				diff reference/$platform/$language/gathered.incorrect regression/$platform/$commit\_$timestamp/$language/gathered.incorrect>regression/$platform/$commit\_$timestamp/$language/gathered.diff_incorrect
-    				diff reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.okay>regression/$platform/$commit\_$timestamp/$language/gathered.diff_okay
-    				diff reference/$platform/$language/gathered.affixed regression/$platform/$commit\_$timestamp/$language/gathered.affixed>regression/$platform/$commit\_$timestamp/$language/gathered.diff_affixed
-    				diff reference/$platform/$language/gathered.compounded regression/$platform/$commit\_$timestamp/$language/gathered.compounded>regression/$platform/$commit\_$timestamp/$language/gathered.diff_compounded
-    				diff reference/$platform/$language/gathered.unknown regression/$platform/$commit\_$timestamp/$language/gathered.unknown>regression/$platform/$commit\_$timestamp/$language/gathered.diff_unknown
-    				diff reference/$platform/$language/gathered.nearmiss regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss>regression/$platform/$commit\_$timestamp/$language/gathered.diff_nearmiss
-                fi
+				# diff with reference
+				if [ -e reference/$platform/$language ]; then
+
+
+
+
+					cp -f reference/$platform/$language/gathered.total_correct regression/$platform/$commit\_$timestamp/$language/gathered.total_correct_src
+					cp -f reference/$platform/$language/gathered.total_incorrect regression/$platform/$commit\_$timestamp/$language/gathered.total_incorrect_src
+
+					comm -1 -2 reference/$platform/$language/gathered.correct regression/$platform/$commit\_$timestamp/$language/gathered.correct|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.confusion_true_pos
+					diff reference/$platform/$language/gathered.correct regression/$platform/$commit\_$timestamp/$language/gathered.correct|grep '>'|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.confusion_false_pos
+
+					diff reference/$platform/$language/gathered.incorrect regression/$platform/$commit\_$timestamp/$language/gathered.incorrect|grep '>'|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.confusion_false_neg
+					comm -1 -2 reference/$platform/$language/gathered.incorrect regression/$platform/$commit\_$timestamp/$language/gathered.incorrect|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.confusion_true_neg
+
+
+
+
+
+
+#					diff reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.okay>regression/$platform/$commit\_$timestamp/$language/gathered.diff_okay
+#					diff reference/$platform/$language/gathered.affixed regression/$platform/$commit\_$timestamp/$language/gathered.affixed>regression/$platform/$commit\_$timestamp/$language/gathered.diff_affixed
+#					diff reference/$platform/$language/gathered.compounded regression/$platform/$commit\_$timestamp/$language/gathered.compounded>regression/$platform/$commit\_$timestamp/$language/gathered.diff_compounded
+#					diff reference/$platform/$language/gathered.unknown regression/$platform/$commit\_$timestamp/$language/gathered.unknown>regression/$platform/$commit\_$timestamp/$language/gathered.diff_unknown
+#					diff reference/$platform/$language/gathered.nearmiss regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss>regression/$platform/$commit\_$timestamp/$language/gathered.diff_nearmiss
+
+
+
+				fi
 
 				echo -n ', scoring '
 			echo `cat regression/$platform/$commit\_$timestamp/$language/gathered.total_correct`'/'`cat words/$platform/$language/gathered.total`'*100'|bc -l|sed -e 's/\(\....\).*$/\1%/'
