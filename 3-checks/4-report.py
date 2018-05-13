@@ -170,25 +170,25 @@ for platform_path in glob('regression/*'):
             false_neg = None
             true_neg = None
 
-            with open('{}/gathered.total'.format(lang_path), 'r') as f:
+            with open('{}/gathered.total'.format(lang_path)) as f:
                 tot_pop = int(f.readline().strip())
-            with open('{}/gathered.total_correct_src'.format(lang_path), 'r') as f:
+            with open('{}/gathered.total_correct_src'.format(lang_path)) as f:
                 con_pos = int(f.readline().strip())
-            with open('{}/gathered.total_incorrect_src'.format(lang_path), 'r') as f:
+            with open('{}/gathered.total_incorrect_src'.format(lang_path)) as f:
                 con_neg = int(f.readline().strip())
 
-            with open('{}/gathered.total_correct'.format(lang_path), 'r') as f:
+            with open('{}/gathered.total_correct'.format(lang_path)) as f:
                 pre_con_pos = int(f.readline().strip())
-            with open('{}/gathered.confusion_true_pos'.format(lang_path), 'r') as f:
+            with open('{}/gathered.confusion_true_pos'.format(lang_path)) as f:
                 true_pos = int(f.readline().strip())
-            with open('{}/gathered.confusion_false_pos'.format(lang_path), 'r') as f:
+            with open('{}/gathered.confusion_false_pos'.format(lang_path)) as f:
                 false_pos = int(f.readline().strip())
 
-            with open('{}/gathered.total_incorrect'.format(lang_path), 'r') as f:
+            with open('{}/gathered.total_incorrect'.format(lang_path)) as f:
                 pre_con_neg = int(f.readline().strip())
-            with open('{}/gathered.confusion_false_neg'.format(lang_path), 'r') as f:
+            with open('{}/gathered.confusion_false_neg'.format(lang_path)) as f:
                 false_neg = int(f.readline().strip())
-            with open('{}/gathered.confusion_true_neg'.format(lang_path), 'r') as f:
+            with open('{}/gathered.confusion_true_neg'.format(lang_path)) as f:
                 true_neg = int(f.readline().strip())
 
             tot_tot_pop += tot_pop

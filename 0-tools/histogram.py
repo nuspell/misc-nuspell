@@ -43,7 +43,7 @@ if len(argv) != 2:
 
 chars = {}
 starts_hyphen = False
-for line in open(argv[1], 'r'):
+for line in open(argv[1]):
 	line = line[:-1]
 	if len(line) > 0 and line[0] == '-':
 		starts_hyphen = True

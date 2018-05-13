@@ -405,7 +405,7 @@ def get_packs():
                     if links:
                         packs[pack]['dics'][dic_name]['links'] = links
                     path = base.format(pack, vers) + dic
-                    dic_file = open(path, 'r')
+                    dic_file = open(path)
                     first = True
                     count = 0
                     entries = 0
@@ -433,7 +433,7 @@ def get_packs():
                         if 'error' not in packs[pack]['dics'][dic_name]:
                             packs[pack]['dics'][dic_name]['error'] = []
                         packs[pack]['dics'][dic_name]['error'].append('Should be in UTF-8, not in ISO-8859-1')
-                        dic_file = open(path, 'r', encoding='ISO-8859-1')  #FIXME File encoding should be UTF-8
+                        dic_file = open(path, encoding='ISO-8859-1')  #FIXME File encoding should be UTF-8
                         for line in dic_file:
                             line = line[:-1]
                             if first:
@@ -522,10 +522,10 @@ for pack in sorted(packs):
         input = None
 #        info('filename ' + filename)
         if basename in ('de_AT_frami', 'de_CH_frami', 'de_DE_frami', 'de_DE', 'en_US', 'pt_BR', 'sl_SI', 'th_TH', 'ru_RU', 'nn_NO', 'an_ES', 'af_ZA', 'el_GR', 'bg_BG', 'de_CH', 'it_IT', 'hu_HU', 'pl_PL', 'cs_CZ', 'eu', 'lt_LT', 'nb_NO', 'oc_FR', 'bs_BA', 'de_AT', ):
-            input = open(filepath, 'r', encoding='ISO-8859-1')
+            input = open(filepath, encoding='ISO-8859-1')
             #TODO error!
         else:
-            input = open(filepath, 'r')
+            input = open(filepath)
         dikt = '{}@{}'.format(basename, pack)#filename.replace('.aff', '')
         info('Analyzing affix file {}'.format(filepath))
         if dikt in doc:
