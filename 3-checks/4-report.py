@@ -4,12 +4,18 @@ from glob import glob
 from os.path import isdir, isfile
 
 #TODO support handle and timestamp            
-def write_matrix_2(path, tot_pop, con_pos, con_neg, pre_con_pos, true_pos, false_pos, pre_con_neg, false_neg, true_neg, lang=None):
+def write_matrix_2(path, tot_pop, con_pos, con_neg, pre_con_pos, true_pos, false_pos, pre_con_neg, false_neg, true_neg, lang=None, langs=None):
     out = open('{}/confusion_matrix.md'.format(path), 'w')
     if lang:
         out.write('# Confusion matrix language {}\n'.format(lang))
     else:
         out.write('# Confusion matrix over all languages\n')
+    if langs:
+        ls = set()
+        for l in langs:
+            ls.add('[{}]({}/confusion_matrix.md)'.format(l, l))
+        out.write('Reported for languages: {}\n'.format(', '.join(ls)))
+        out.write('\n')
     out.write('\n')
     out.write('## Confusion matrix correct vs. incorrect spelling\n')
     out.write('\n')
@@ -142,6 +148,7 @@ for platform_path in glob('regression/*'):
         tot_false_neg = 0
         tot_true_neg = 0
         
+        langs = set()
         # iterate languages
         for lang_path in glob('{}/*'.format(commit_path)):
             if isfile(lang_path):
@@ -152,6 +159,7 @@ for platform_path in glob('regression/*'):
                 continue
             lang_dir = lang_path.split('/')[-1]
             print('lang dir: {}'.format(lang_dir))
+            langs.add(lang_dir)
 
             # read counts
             
@@ -207,5 +215,5 @@ for platform_path in glob('regression/*'):
             write_matrix_2(lang_path, tot_pop, con_pos, con_neg, pre_con_pos, true_pos, false_pos, pre_con_neg, false_neg, true_neg, lang_dir)
 
         # write overall confusion matrix correct vs. incorrect spelling
-        write_matrix_2(commit_path, tot_tot_pop, tot_con_pos, tot_con_neg, tot_pre_con_pos, tot_true_pos, tot_false_pos, tot_pre_con_neg, tot_false_neg, tot_true_neg)
+        write_matrix_2(commit_path, tot_tot_pop, tot_con_pos, tot_con_neg, tot_pre_con_pos, tot_true_pos, tot_false_pos, tot_pre_con_neg, tot_false_neg, tot_true_neg, None, langs)
 
