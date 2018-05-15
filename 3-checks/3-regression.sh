@@ -138,13 +138,45 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 
 
 
+					cp -f reference/$platform/$language/gathered.total_okay regression/$platform/$commit\_$timestamp/$language/gathered.total_okay_src
+					cp -f reference/$platform/$language/gathered.total_affixed regression/$platform/$commit\_$timestamp/$language/gathered.total_affixed_src
+					cp -f reference/$platform/$language/gathered.total_compounded regression/$platform/$commit\_$timestamp/$language/gathered.total_compounded_src
+					cp -f reference/$platform/$language/gathered.total_nearmiss regression/$platform/$commit\_$timestamp/$language/gathered.total_nearmiss_src
+					cp -f reference/$platform/$language/gathered.total_unknown regression/$platform/$commit\_$timestamp/$language/gathered.total_unknown_src
 
 
-#					diff reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.okay>regression/$platform/$commit\_$timestamp/$language/gathered.diff_okay
-#					diff reference/$platform/$language/gathered.affixed regression/$platform/$commit\_$timestamp/$language/gathered.affixed>regression/$platform/$commit\_$timestamp/$language/gathered.diff_affixed
-#					diff reference/$platform/$language/gathered.compounded regression/$platform/$commit\_$timestamp/$language/gathered.compounded>regression/$platform/$commit\_$timestamp/$language/gathered.diff_compounded
-#					diff reference/$platform/$language/gathered.unknown regression/$platform/$commit\_$timestamp/$language/gathered.unknown>regression/$platform/$commit\_$timestamp/$language/gathered.diff_unknown
-#					diff reference/$platform/$language/gathered.nearmiss regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss>regression/$platform/$commit\_$timestamp/$language/gathered.diff_nearmiss
+					comm -1 -2 reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.okay|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.okay_true_pos
+#					diff reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.correct|grep '>'|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.confusion_false_pos
+
+
+
+
+
+
+
+					comm -1 -2 reference/$platform/$language/gathered.okay regression/$platform/$commit\_$timestamp/$language/gathered.okay|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.okay_true_pos
+
+
+
+
+
+					comm -1 -2 reference/$platform/$language/gathered.affixed regression/$platform/$commit\_$timestamp/$language/gathered.affixed|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.affixed_true_pos
+
+
+
+
+					comm -1 -2 reference/$platform/$language/gathered.compounded regression/$platform/$commit\_$timestamp/$language/gathered.compounded|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.compounded_true_pos
+
+
+
+
+					comm -1 -2 reference/$platform/$language/gathered.nearmiss regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss_true_pos
+
+
+
+
+					comm -1 -2 reference/$platform/$language/gathered.unknown regression/$platform/$commit\_$timestamp/$language/gathered.unknown|wc -l>regression/$platform/$commit\_$timestamp/$language/gathered.unknown_true_pos
+
 
 
 
