@@ -18,6 +18,7 @@ Examples of these words are:
 * `a.u.b.` Dutch
 * `mms:` Swedish
 * `km/h` Dutch
+* `Sállán/Glimta` Swedish
 * `d'Azur` English
 * `suppehøns's` Danish
 * `Surname'` (when Surname ends with an `s`)
@@ -28,6 +29,17 @@ Examples of these words are:
 * `*e*h*b*o` Basque (Euskera)
 * `*pcmcia` Basque (Euskera)
 * `p*h-adierazle` Basque (Euskera)
+* `NOC*NSF` Dutch
+* `@teneo` Andalusian
+* `Yahoo!` Hungarian
+* `%-nyi` Hungarian
+* `;` Portugese, Hungarian
+* Váljoht` Swedish (the back tick is part of the word)
+* `nej, men` Swedish
+* `!tzaile` Esperanto
+* `!kak` Afrikaans
+
+Some of these special characters are only used for one or two words.
 
 Typical special charactors that are often forgotten to be included in `WORDCHARS` in the affix file are:
 * `0` `1` `2` `3` `4` `5` `6` `7` `8` `9` numerals
@@ -40,9 +52,14 @@ Typical special charactors that are often forgotten to be included in `WORDCHARS
 * `&` ampersand
 * `*` asterisk
 * `(` `)` brackets
+* `–` n-dash
+* `!` exclamation mark
+* `%` percent
+* `,` comma (often incorrect usage)
 * `_` underscore (often incorrect usage)
 * `=` equals (often incorrect usage)
-* `–` n-dash (often incorrect usage)
+
+A special special character is the space. More on this later.
 
 This directory contains tests to illustrate that certain special characters do need to be listed in `WORDCHARS` in an affix file.
 
