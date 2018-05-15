@@ -1,16 +1,18 @@
-2c2
+2,12c2
 < # xxxx 0
+< *
+< *
+< *
+< # yyy 5
+< # xxxx 0
+< *
+< # xxxx 0
+< # yyy 5
+< *
+< *
 ---
 > # xxxx- 0
-4,10c4,6
-< *
-< *
-< # yyy 5
-< # xxxx 0
-< *
-< # xxxx 0
-< # yyy 5
----
+13a4,6
 > & aaaa-yyy 1 0: aaaa-
 > # xxxx-bbb 0
 > # xxxx-yyy 0
