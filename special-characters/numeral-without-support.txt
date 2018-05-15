@@ -1,0 +1,12 @@
+*
+# xxxx 0
+*
+# yyy 1
+*
+*
+*
+# yyy 5
+# xxxx 0
+*
+# xxxx 0
+# yyy 5

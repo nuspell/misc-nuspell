@@ -1,0 +1,6 @@
+*
+# xxxx- 0
+*
+& aaaa-yyy 1 0: aaaa-
+# xxxx-bbb 0
+# xxxx-yyy 0

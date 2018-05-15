@@ -1,0 +1,6 @@
+& km 1 0: km²
+& km 1 0: km²
+& H 1 0: H₂O
+& O 1 2: H₂O
+& HNO 1 0: HNO₃
+& CO 1 0: CO₂
