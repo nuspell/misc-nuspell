@@ -6,7 +6,12 @@ Examples of these words are:
 * `km²`
 * `H₂O`
 * `HNO₃`
-* `R&D`
+* `POP3`
+* `H.265`
+* `MP4`
+* `UTF-8`
+* `6th` English
+* `R&D` English
 * `south-Easterly` English (suggestion might be `South` for `south` when word is split)
 * `C++` Dutch
 * `Notepad++` Catalan
@@ -30,13 +35,14 @@ Typical special charactors that are often forgotten to be included in `WORDCHARS
 * `+` plus
 * `.` period
 * `-` hyphen
-* `_` underscore
-* `/` slash
+* `/` slash (should be escaped in the dictionary file)
 * `:` colon
 * `&` ampersand
 * `*` asterisk
-* `–` n-dash
 * `(` `)` brackets
+* `_` underscore (often incorrect usage)
+* `=` equals (often incorrect usage)
+* `–` n-dash (often incorrect usage)
 
 This directory contains tests to illustrate that certain special characters do need to be listed in `WORDCHARS` in an affix file.
 
