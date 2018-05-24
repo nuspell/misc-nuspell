@@ -11,7 +11,7 @@ First, run this:
     ./2-extract.sh
     ./3-report-and-convert.sh
 
-## Prepare word lists
+## 1 Prepare word lists
 
 Prepare word lists from Hunspell language support dictionary files and from word lists to do regression testing on with:
 
@@ -78,7 +78,7 @@ The output of the script is:
     Gathering words for vi_VN, totaling 6631
 
 
-## Create reference test
+## 2 Create reference test
 
 Run Hunspell on gathered word lists to get reference for word correctness and speed
 
@@ -136,7 +136,7 @@ The output of the script is:
     Running Hunspell on gathered words for vi_VN, scoring 100.000%
 
 
-## Regression test
+## 3 Regression test
 
 UNDER DEVELOPMENT:
 
@@ -147,3 +147,36 @@ Run current local (and uncommitted) development version of Nuspell (from `../nus
 Run regression test with Nuspell for latest commit or any specific commit on gathered word lists and compare with results from reference
 
     ./4-regression.sh
+
+## 4 Reporting
+
+TODO
+
+
+## 5 Profiling
+
+Profiling by means of perf and vallgrind (callgrind) is done by running the script:
+
+    ./5-profiling.sh
+
+The software needed is installed with:
+
+    sudo apt-get install valgrind kcachegrind linux-tools-common linux-tools-generic linux-tools-4.15.0-20-generic
+
+Before running the profiling script, make sure that at least the gathered word lists have been generated, see above. Note that here the development version of Nuspell is used!
+
+
+### Perf and hotspot
+
+First, go to a specific directory such as `./profiling/de_DE_frami`. The results for perf are in `perf.data` and can be viewed by:
+
+    perf report
+    perf list
+
+A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot).
+
+
+### Callgrind and kcachegrind
+
+To view the results from callgrind, go as well to a specific directory such as `./profiling/de_DE_frami` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
+
