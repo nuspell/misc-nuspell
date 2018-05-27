@@ -26,19 +26,14 @@ if [ $updated -eq 0 ]; then
 		echo 'ERROR: Failed to automatically reconfigure nuspell/hunspell'
 		exit 1
 	fi
-	./configure
+	./configure CXXFLAGS='-O2 -fno-omit-frame-pointer'
 	if [ $? -ne 0 ]; then
 		echo 'ERROR: Failed to configure nuspell/hunspell'
 		exit 1
 	fi
-	make -j
+	make -j CXXFLAGS='-O2 -fno-omit-frame-pointer'
 	if [ $? -ne 0 ]; then
 		echo 'ERROR: Failed to build nuspell/hunspell'
-		exit 1
-	fi
-	make check
-	if [ $? -ne 0 ]; then
-		echo 'ERROR: Failed to test nuspell/hunspell'
 		exit 1
 	fi
 fi

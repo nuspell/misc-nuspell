@@ -163,7 +163,7 @@ The software needed is installed with:
 
     sudo apt-get install valgrind kcachegrind linux-tools-common linux-tools-generic linux-tools-4.15.0-20-generic
 
-Before running the profiling script, make sure that at least the gathered word lists have been generated, see above. Note that here the development version of Nuspell is used!
+Before running the profiling script, make sure that at least the gathered word lists have been generated, see above.
 
 
 ### Perf and hotspot
@@ -179,4 +179,8 @@ A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot).
 ### Callgrind and kcachegrind
 
 To view the results from callgrind, go as well to a specific directory such as `./profiling/de_DE_frami` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
+
+#### Qt Creator
+
+TODO, see http://doc.qt.io/qtcreator/creator-cpu-usage-analyzer.html
 
