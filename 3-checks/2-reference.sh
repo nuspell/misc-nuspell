@@ -3,6 +3,11 @@
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
+if [ ! -d words/$platform ]; then
+	echo 'ERROR: Run the script ./1-prepare.sh first.'
+    exit 1
+fi
+
 if [ -e reference/$platform ]; then
 	rm -rf reference/$platform/*
 else

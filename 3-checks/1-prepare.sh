@@ -1,5 +1,14 @@
 #!/usr/bin/env bash
 
+if [ ! -d ../1-support/packages -o ! -d ../1-support/utf8 ]; then
+	echo 'ERROR: Run the scripts in ../1-support/ first.'
+    exit 1
+fi
+if [ ! -d ../2-word-lists/packages -o ! -d ../2-word-lists/utf8 ]; then
+	echo 'ERROR: Run the scripts in ../2-word-lists/ first.'
+    exit 1
+fi
+
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 

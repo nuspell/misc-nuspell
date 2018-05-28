@@ -166,9 +166,19 @@ The software needed is installed with:
 Before running the profiling script, make sure that at least the gathered word lists have been generated, see above.
 
 
+
+g by users without CAP_SYS_ADMIN
+
+To make this setting permanent, edit /etc/sysctl.conf too, e.g.:
+
+	kernel.perf_event_paranoid = -1
+
+
+
+
 ### Perf and hotspot
 
-First, go to a specific directory such as `./profiling/de_DE_frami`. The results for perf are in `perf.data` and can be viewed by:
+First, go to a specific directory such as `./profiling/linux/de_DE_frami` or  `./profiling/linux/en_US`. The results for perf are in `perf.data` and can be viewed by:
 
     perf report
     perf list
@@ -178,7 +188,7 @@ A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot).
 
 ### Callgrind and kcachegrind
 
-To view the results from callgrind, go as well to a specific directory such as `./profiling/de_DE_frami` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
+To view the results from callgrind, go as well to a specific directory such as `./profiling/linux/de_DE_frami` or `./profiling/linux/en_US` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
 
 #### Qt Creator
 

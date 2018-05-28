@@ -8,6 +8,11 @@ fi
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
+if [ ! -d reference/$platform ]; then
+	echo 'ERROR: Run the script ./2-reference.sh first.'
+    exit 1
+fi
+
 if [ -e regression/$platform ]; then
 	rm -rf regression/$platform/*
 else

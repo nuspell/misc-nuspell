@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
+if [ ! -d debs ]; then
+	echo 'ERROR: Run the script ./1-download.sh first.'
+    exit 1
+fi
+
 if [ -e packages ]; then
 	rm -rf packages
 fi
