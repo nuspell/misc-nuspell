@@ -155,7 +155,7 @@ TODO
 
 ## 5 Profiling
 
-Profiling by means of perf and vallgrind (callgrind) is done by running the script:
+Profiling by means of [perf](https://perf.wiki.kernel.org/index.php/Main_Page) and [vallgrind](http://valgrind.org/) ([callgrind](http://valgrind.org/docs/manual/cl-manual.html)) is done by running the script:
 
     ./5-profiling.sh
 
@@ -163,34 +163,37 @@ The software needed is installed with:
 
     sudo apt-get install valgrind kcachegrind linux-tools-common linux-tools-generic linux-tools-4.15.0-20-generic
 
-Before running the profiling script, make sure that at least the gathered word lists have been generated, see above.
+In order to run perf, the following change has to be made to the operating system. Add to the file `/etc/sysctl.conf` the follwing line, save and reboot: 
+
+    kernel.perf_event_paranoid = -1
 
 
-
-g by users without CAP_SYS_ADMIN
-
-To make this setting permanent, edit /etc/sysctl.conf too, e.g.:
-
-	kernel.perf_event_paranoid = -1
-
-
-
-
-### Perf and hotspot
+### 5.1 Perf and hotspot
 
 First, go to a specific directory such as `./profiling/linux/de_DE_frami` or  `./profiling/linux/en_US`. The results for perf are in `perf.data` and can be viewed by:
 
     perf report
     perf list
 
-A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot).
+A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot), which will also open the `perf.data` file from the directry from which it is started.
+
+Below is an impression of the overviews and visualisations offered by hotspot.
+
+[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png)
 
 
-### Callgrind and kcachegrind
 
-To view the results from callgrind, go as well to a specific directory such as `./profiling/linux/de_DE_frami` or `./profiling/linux/en_US` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
+### 5.2 Callgrind and KCachegrind
 
-#### Qt Creator
+Use [Kcachegrind](https://kcachegrind.github.io/) to view the results from callgrind. go as well to a specific directory such as `./profiling/linux/de_DE_frami` or `./profiling/linux/en_US` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
+
+Below is an impression of the overviews and visualisations offered by kcachegrind.
+
+[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png)
+
+[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png)
+
+
+### 5.3 Qt Creator
 
 TODO, see http://doc.qt.io/qtcreator/creator-cpu-usage-analyzer.html
-
