@@ -179,7 +179,9 @@ A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot), 
 
 Below is an impression of the overviews and visualisations offered by hotspot.
 
-[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_screenshot.png)
+[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png)
+
+[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png)
 
 
 
