@@ -151,6 +151,12 @@ for platform_path in glob('regression/*'):
         time_path = None
         time_file = None
 
+        # o = okay
+        # a = affixed
+        # c = compounded
+        # n = nearmiss
+        # u = unknown
+
         tot_oo = 0
         tot_oa = 0
         tot_oc = 0

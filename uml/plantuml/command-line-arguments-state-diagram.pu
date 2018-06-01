@@ -5,11 +5,11 @@ title Hunspell - Command-line Arguments
 
 [*] --> DEFAULT_MODE
 
-DEFAULT_MODE --> DEFAULT_MODE : -d with operand\l-i with operand\l-r
+DEFAULT_MODE --> DEFAULT_MODE : -d with operand\l-i with operand
 DEFAULT_MODE --> [*]
 
-DEFAULT_MODE --> PIPE_MODE : -a
-PIPE_MODE --> [*]
+DEFAULT_MODE --> NO_SUGGEST_MODE : -U
+NO_SUGGEST_MODE --> [*]
 
 DEFAULT_MODE --> LIST_DICTIONARIES_MODE : -D
 LIST_DICTIONARIES_MODE --> [*]
@@ -36,7 +36,7 @@ HELP_MODE --> [*]
 DEFAULT_MODE --> VERSION_MODE : -v\l--version
 VERSION_MODE --> [*]
 
-DEFAULT_MODE --> ERROR_MODE : -d without operand,\l-i without operand,\lany unregonized operand,\lout-of-scope -1 -H -O -P -t -X
+DEFAULT_MODE --> ERROR_MODE : arguments -d or -i without operand,\lunsupported operands,\linvalid (combination of) arguments,\larguments out of scope -1 -H -m -O -P -t -X,\larguments to be implemented -a -m -r -s -w\l  -vv -check-apostrophe -check-url
 ERROR_MODE --> [*]
 ERROR_MODE : returns exit code of 1
 

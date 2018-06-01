@@ -48,6 +48,11 @@ if [ $updated -eq 0 ]; then
 		echo 'ERROR: Failed to configure nuspell/nuspell'
 		exit 1
 	fi
+	make clean
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Failed to build nuspell/nuspell'
+		exit 1
+	fi
 	make -j CXXFLAGS='-O2 -fno-omit-frame-pointer'
 	if [ $? -ne 0 ]; then
 		echo 'ERROR: Failed to build nuspell/nuspell'
@@ -66,7 +71,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 
 	if [ -e words/$platform/$language/gathered ]; then
 
-	if [ $language != ca -a $language != ca_ES-valencia -a $language != da_DK -a $language != de_CH -a $language != de_AT -a $language != de_CH_frami -a $language != de_AT_frami -a $language != de_DE -a $language != de_DE_frami -a $language != eo -a $language != eu -a $language != fr -a $language != se -a $language != uk_UA ]; then # to speed up development of this script
+	if [ $language != eu -a $language != ca -a $language != ca_ES-valencia ]; then # to speed up development of this script
 
 	if [ $language != lv_LV -a $language != gl_ES -a $language != hu_HU -a $language != it_IT -a $language != kmr_Latn -a $language != nb_NO -a $language != oc_FR -a $language != sk_SK -a $language != sr_Latn_RS -a $language != sv_FI -a $language != sv_SE ]; then # warnings or errors in stderr
 

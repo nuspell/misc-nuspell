@@ -12,6 +12,6 @@ cd 3-checks
 ./1-prepare.sh
 ./2-reference.sh
 ./3-regression.sh
-./4-report.sh
+./4-report.py
 ./5-profile.sh
 cd ..

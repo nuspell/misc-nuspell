@@ -65,12 +65,28 @@ dst=af_ZA
 dic=$pre/af/1%3a6.0.3-3/usr/share/hunspell/$dst
 run_profilers
 
+dst=ca
+dic=$pre/ca/3.0.2+repack1-2/usr/share/hunspell/$dst
+run_profilers
+
+dst=da_DK
+dic=$pre/da/1%3a6.0.3-3/usr/share/hunspell/$dst
+run_profilers
+
 dst=de_DE_frami
 dic=$pre/de-de-frami/1%3a6.0.3-3/usr/share/hunspell/$dst
 run_profilers
 
 dst=en_US
 dic=$pre/en-us/1%3a2017.08.24/usr/share/hunspell/$dst
+run_profilers
+
+dst=se
+dic=$pre/se/1.0~beta6.20081222-1.2/usr/share/hunspell/$dst
+run_profilers
+
+dst=uk_UA
+dic=$pre/uk/1%3a6.0.3-3/usr/share/hunspell/$dst
 run_profilers
 
 total_end=`date +%s`
