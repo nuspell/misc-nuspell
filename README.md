@@ -1,16 +1,21 @@
 # Misc Docs and Charts
 
-## Docs
+This repository contains miscellaneous documentation, charts, tools and test scripts for Hunspell and, its successor, Nuspell.
 
-  - [Internal Specs](internal-specs.html)
-    ([Source](internal-specs.adoc))
 
-## Charts
+## 1 Written documentation
 
-  - [UML](uml/)
-  - [DFD](dfd/)
+* [Internal Specifications](internal-specs.html) ([Source](internal-specs.adoc))
 
-## Tools
+## 2 Charts
+
+Charts with documentation can be found in:
+
+* [UML Diagrams](uml/README.md)
+* [DFD](dfd/)
+
+
+## 3 Tools
 
 Tools for generating the docs:
 
@@ -43,9 +48,10 @@ Tools for generating the docs:
         rm $(git ls-files drakon)
         git checkout -- .
 
-## Testing
 
-See the following README.md files in the following order:
-1. [1-support/README.md](1-support/README.md) on languages support for Hunspell
-2. [2-word-lists/README.md](2-word-lists/README.md) on word lists
-3. [3-checks/README.md](3-checks/README.md) on testing
+## 4 Testing
+
+See the following README.md files on testing in the following order:
+1. [1-support/README.md](1-support/README.md) on language support for Hunspell
+2. [2-word-lists/README.md](2-word-lists/README.md) on word lists which can be used for testing
+3. [3-checks/README.md](3-checks/README.md) on performance and regression testing
