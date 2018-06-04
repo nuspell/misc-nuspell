@@ -13,12 +13,6 @@ if [ ! -d reference/$platform ]; then
     exit 1
 fi
 
-if [ -e regression/$platform ]; then
-	rm -rf regression/$platform/*
-else
-	mkdir -p regression/$platform
-fi
-
 updated=0
 if [ -e nuspell ]; then
 	cd nuspell
@@ -36,6 +30,12 @@ else
 	timestamp=`git log $commit --date=raw|head -n 3|tail -n 1|awk '{print $2}'`
 fi
 handle=`echo $commit|sed -e 's/^\(.......\).*/\1/'`
+
+if [ ! -e regression/$platform ]; then
+	rm -rf regression/$platform/$commit\_$timestamp
+else
+	mkdir -p regression/$platform
+fi
 
 if [ $updated -eq 0 ]; then
 	autoreconf -vfi
