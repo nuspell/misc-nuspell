@@ -32,8 +32,10 @@ The current roadmap for [Nuspell](https://en.wikipedia.org/wiki/Hunspell) is as 
 Potential funding organisations are:
 * [Adobe](https://www.adobe.com/about-adobe/sponsorship.html) (and in [Dutch](https://www.adobe.com/about-adobe/sponsorship.html))
 * [Mozilla](https://wiki.mozilla.org/MOSS)
-* Apple
-* Google
+* [Apple](https://developer.apple.com/)
+* [Google](https://developers.google.com/web/tools/chrome-devtools/)
+
+Current and previous sponsors:
 
 [![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/images/320px-Mozilla_logo.svg.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/images/320px-Mozilla_logo.svg.png)](https://www.mozilla.org/en-US/moss/)
 
