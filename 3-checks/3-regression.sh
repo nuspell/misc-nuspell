@@ -32,7 +32,7 @@ fi
 handle=`echo $commit|sed -e 's/^\(.......\).*/\1/'`
 
 if [ ! -e regression/$platform ]; then
-	rm -rf regression/$platform/$commit\_$timestamp
+	rm -rf TODOregression/$platform/$commit\_$timestamp
 else
 	mkdir -p regression/$platform
 fi

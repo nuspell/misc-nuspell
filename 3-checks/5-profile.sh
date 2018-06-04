@@ -5,8 +5,8 @@ function run_profilers {
     cd $dst
     head -n $num ../../../words/linux/$dst/gathered > gathered
     start=`date +%s`
-    perf record -g ../../../nuspell/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> perf_stderr > /dev/null
-    valgrind --tool=callgrind ../../../nuspell/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> callgrind_stderr > /dev/null
+    perf record -g ../../../nuspell_profiling/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> perf_stderr > /dev/null
+    valgrind --tool=callgrind ../../../nuspell_profiling/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> callgrind_stderr > /dev/null
     end=`date +%s`
     echo $end-$start|bc > time-$hostname
     cd ..
@@ -27,12 +27,14 @@ else
 fi
 
 updated=0
-if [ -e nuspell ]; then
-	cd nuspell
+if [ -e nuspell_profiling ]; then
+	cd nuspell_profiling
 	updated=`git pull -r|grep -c 'Already up to date.'`
 else
+	rm -rf nuspell
 	git clone https://github.com/hunspell/nuspell.git
-	cd nuspell
+	mv nuspell nuspell_profiling
+	cd nuspell_profiling
 fi
 
 commit=`git log|head -n 1|awk '{print $2}'`

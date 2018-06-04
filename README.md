@@ -6,6 +6,7 @@ This repository contains miscellaneous documentation, charts, tools and test scr
 ## 1 Written documentation
 
 * [Internal Specifications](internal-specs.html) ([Source](internal-specs.adoc))
+* Annotated source code in FODT files in the top-level directory. These cannot be viewed in GitHub or a browser and need LibreOffice for proper viewing.
 
 ## 2 Charts
 
