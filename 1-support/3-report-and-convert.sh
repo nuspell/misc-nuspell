@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# author: Sander van Geloven
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# description: reports on Hunspell language support
+
 if [ ! -d packages ]; then
 	echo 'ERROR: Run the script ./2-extract.sh first.'
     exit 1
@@ -106,7 +110,6 @@ for aff in `find . -type f -name '*.aff'|sort`; do
 		fi
 	fi
 done
-
 
 echo '## Encodings mentioned' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md

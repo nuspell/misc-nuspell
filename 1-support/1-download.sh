@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+# author: Sander van Geloven
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# description: downloads Debian packages with Hunspell language support
+
 if [ -e debs ]; then
 	rm -rf debs
 fi
