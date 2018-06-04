@@ -50,9 +50,6 @@ The output of the script is:
     an_ES
     ar
     ...
-    tl
-    uk_UA
-    uz_UZ
     vi_VN
 
 
