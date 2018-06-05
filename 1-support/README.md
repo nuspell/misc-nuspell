@@ -2,6 +2,10 @@
 
 This directory holds downloaded and processed Ubuntu packages containing language support for Hunspell and Nuspell. These are packages containing dictionary files and affix files.
 
+Install the following packages:
+
+     iconv python3
+
 
 ## 1.1 Download
 
