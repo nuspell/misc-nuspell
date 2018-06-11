@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-if [ ! -d ../1-support/packages -o ! -d ../1-support/utf8 ]; then
+if [ ! -d ../1-support/files -o ! -d ../1-support/utf8 ]; then
 	echo 'ERROR: Run the scripts in ../1-support/ first.'
     exit 1
 fi
-if [ ! -d ../2-word-lists/packages -o ! -d ../2-word-lists/utf8 ]; then
+if [ ! -d ../2-word-lists/files -o ! -d ../2-word-lists/utf8 ]; then
 	echo 'ERROR: Run the scripts in ../2-word-lists/ first.'
     exit 1
 fi
@@ -33,7 +33,7 @@ fi
 
 total_start=`date +%s`
 
-for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
+for path in `find ../1-support/files -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
 	version=`echo $path|awk -F '/' '{print $5}'`
 	affix=`echo $path|awk -F '/' '{print $9}'`
@@ -67,7 +67,7 @@ if [ $language != an_ES -a $language != bg_BG -a $language != cs_CZ -a $language
 		wordfile=`echo $word_list|awk '{print $3}'`
 #		echo -e '\t\twordpackage '$wordpackage
 #		echo -e '\t\twordfile '$wordfile
-		for list in ../2-word-lists/packages/$wordpackage/*/usr/share/dict/$wordfile; do
+		for list in ../2-word-lists/files/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
 			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo -o $language = eo ]; then # split on hyphen
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
