@@ -104,25 +104,25 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 				# filter and calculate totals
 
 				# correct
-				grep '^[*+-]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.correct
+				grep '^[*+-]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.correct
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.correct|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_correct
 				# incorrect
-				grep '^[#&]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.incorrect
+				grep '^[#&]' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.incorrect
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.incorrect|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_incorrect
 				# okay
-				grep '^*' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.okay
+				grep '^*' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.okay
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.okay|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_okay
 				# affixed
-				grep '^+' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.affixed
+				grep '^+' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.affixed
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.affixed|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_affixed
 				# compounded
-				grep '^-' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.compounded
+				grep '^-' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.compounded
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.compounded|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_compounded
 				# near miss
-				grep '^&' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss
+				grep '^&' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.nearmiss|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_nearmiss
 				#unknown
-				grep '^#' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.unknown
+				grep '^#' regression/$platform/$commit\_$timestamp/$language/gathered.tsv|awk -F '\t' '{print $2}'>regression/$platform/$commit\_$timestamp/$language/gathered.unknown
 				wc -l regression/$platform/$commit\_$timestamp/$language/gathered.unknown|awk '{print $1}'>regression/$platform/$commit\_$timestamp/$language/gathered.total_unknown
 
 				# diff with reference

@@ -14,8 +14,13 @@ echo '## Word List Files' >> ../Word-List-Files.md
 echo >> ../Word-List-Files.md
 echo 'A total of '`find */*/usr/share/dict -type f|wc -l`' different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted.' >> ../Word-List-Files.md
 echo >> ../Word-List-Files.md
-rm -rf ../utf8
-mkdir ../utf8
+
+if [ -d ../utf8 ]; then
+    rm -f ../utf8/*
+else
+    mkdir ../utf8
+fi
+
 echo '| Package | Version | Filename | Filetype | Lines |' >> ../Word-List-Files.md
 echo '|---|---|---|---|--:|' >> ../Word-List-Files.md
 for file in `find */*/usr/share/dict -type f|sort`; do

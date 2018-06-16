@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
@@ -57,14 +57,14 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 		echo -n 'Running Hunspell for '$language' on '`cat words/$platform/$language/gathered.total`' gathered words'
 		mkdir -p reference/$platform/$language
 		start=`date +%s`
-		nuspell/src/tools/hunspell -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered 2> reference/$platform/$language/stderr | grep -v 'International Ispell Version'|grep -v '^$' > reference/$platform/$language/gathered.full
+		    nuspell/src/tools/hunspell -2 -Y -i UTF-8 -d `echo $path|sed -e 's/\.aff//'` -a words/$platform/$language/gathered 2> reference/$platform/$language/stderr | grep -v 'International Ispell Version'|grep -v '^$' > reference/$platform/$language/gathered.full
 		end=`date +%s`
 		echo $end-$start|bc > reference/$platform/$language/time-$hostname
 
 		# get list of output words
-		awk '{print $2}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered
+		awk -F '\t' '{print $2}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered
 		# get list of spelling result
-		awk '{print $1}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered.spelling
+		awk -F '\t' '{print $1}' reference/$platform/$language/gathered.full > reference/$platform/$language/gathered.spelling
 		# calculate total
 		wc -l reference/$platform/$language/gathered.spelling|awk '{print $1}'>reference/$platform/$language/gathered.total
 
@@ -76,25 +76,25 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 			# filter and calculate totals
 
 			# correct
-			grep '^[*+-]' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.correct
+			grep '^[*+-]' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.correct
 			wc -l reference/$platform/$language/gathered.correct|awk '{print $1}'>reference/$platform/$language/gathered.total_correct
 			# incorrect
-			grep '^[#&]' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.incorrect
+			grep '^[#&]' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.incorrect
 			wc -l reference/$platform/$language/gathered.incorrect|awk '{print $1}'>reference/$platform/$language/gathered.total_incorrect
 			# okay
-			grep '^*' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.okay
+			grep '^*' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.okay
 			wc -l reference/$platform/$language/gathered.okay|awk '{print $1}'>reference/$platform/$language/gathered.total_okay
 			# affixed
-			grep '^+' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.affixed
+			grep '^+' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.affixed
 			wc -l reference/$platform/$language/gathered.affixed|awk '{print $1}'>reference/$platform/$language/gathered.total_affixed
 			# compounded
-			grep '^-' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.compounded
+			grep '^-' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.compounded
 			wc -l reference/$platform/$language/gathered.compounded|awk '{print $1}'>reference/$platform/$language/gathered.total_compounded
 			# near miss
-			grep '^&' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.nearmiss
+			grep '^&' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.nearmiss
 			wc -l reference/$platform/$language/gathered.nearmiss|awk '{print $1}'>reference/$platform/$language/gathered.total_nearmiss
 			#unknown
-			grep '^#' reference/$platform/$language/gathered.tsv|awk '{print $2}'>reference/$platform/$language/gathered.unknown
+			grep '^#' reference/$platform/$language/gathered.tsv|awk -F '\t' '{print $2}'>reference/$platform/$language/gathered.unknown
 			wc -l reference/$platform/$language/gathered.unknown|awk '{print $1}'>reference/$platform/$language/gathered.total_unknown
 
 			echo -n ', scoring '
