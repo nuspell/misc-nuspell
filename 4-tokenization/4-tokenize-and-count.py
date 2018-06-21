@@ -12,17 +12,28 @@ from uniseg.wordbreak import words, word_break
 # http://www.nltk.org/api/nltk.tokenize.html#nltk.tokenize.sent_tokenize
 # http://www.nltk.org/api/nltk.tokenize.html#nltk.tokenize.word_tokenize
 
-for combined in glob('combined-*.txt'):
-	lang = combined[9:-4]
+def process_file(input):
 	histogram = {}
-	out = open('word-count-{}.txt'.format(lang), 'w')
 	i = 0
-
-	for line in open(combined):
+	opening = False
+	for line in open(combined, lang):
 		i += 1
 		if i % 1000 == 0:
 			print('INFO: Processing {} paragraph {}...'.format(lang, i))
-		paragraph = line[:-1]
+			
+		if line.startswith('<doc'):
+			opening = True
+			# skip line with opening doc element
+			continue
+		elif opening == True:
+			opening = False
+			# skip line with title
+			continue
+		elif line.startswith('</doc'):
+			# skip line with closing doc element
+			continue
+
+
 		for word in words(paragraph):
 			if len(word) == 1 and word_break(word) == 'ALetter':
 				if word in histogram:
@@ -37,7 +48,17 @@ for combined in glob('combined-*.txt'):
 						else:
 							histogram[word] = 1
 						break
-	
+
+def main():
+	for input in glob('combined-*.txt'):
+	lang = input[9:-4]
+	if lang == 'nl':
+		pass
+	else:
+		process_file(input, lang)
+
+
+	out = open('word-count-{}.txt'.format(lang), 'w')
 	for word, count in sorted(histogram.items(), key=itemgetter(1), reverse=True):
 		out.write('{}\t{}\n'.format(count, word))
 
@@ -88,3 +109,6 @@ for combined in glob('combined-*.txt'):
 # 
 # 
 # ИИЯЯББ
+
+if __name__ == "__main__":
+    main()
