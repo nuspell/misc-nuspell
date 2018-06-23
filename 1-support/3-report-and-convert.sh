@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 # author: Sander van Geloven
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # description: reports on Hunspell language support
@@ -20,11 +18,16 @@ echo 'A total of '`find . -type f -name '*.aff'|wc -l`' different affix files ar
 echo >> ../Dictionary-Files.md
 echo 'Some available packages are omitted from this overview and testing framework. Package `hunspell-fr` is only a dependency package. Packages `hunspell-fr-classical`, `hunspell-fr-modern` and `hunspell-fr-revised` conflict with `hunspell-fr-comprehensive`, which has a bigger affix file. Package `hunspell-gl` conflicts with `hunspell-gl-es`, which has a bigger affix file.' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
-echo '| Package | Version | Filename | Type | Lines |' >> ../Dictionary-Files.md
-echo '|---|---|---|---|--:|' >> ../Dictionary-Files.md
+echo '| Package | Version | Filename | File Type | Intended Encoding | Lines |' >> ../Dictionary-Files.md
+echo '|---|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.aff'|sort`; do
-	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `hunspell-/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
-	echo -n `file $file|sed -e 's/^.*: //'`' | `' >> ../Dictionary-Files.md
+    # package, version and filename
+	echo -n $file|sed -e 's/\/usr\/share\/hunspell\(.*\)\.aff/\1/'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
+    # file type
+	echo -n `file $file|sed -e 's/^.*: //'|sed -e 's/ text//'|sed -e 's/ Unicode//'`' | ' >> ../Dictionary-Files.md
+    # intended encoding
+    echo -n `grep SET $file|grep -v ^#|head -n 1|awk '{print $2}'|tr -d '[:space:]'`' | `' >>  ../Dictionary-Files.md
+    # lines
 	echo `wc -l $file|awk '{print $1}'`'` |' >> ../Dictionary-Files.md
 done
 
@@ -34,42 +37,45 @@ echo '## Dictionary files' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
 echo 'A total of '`find . -type f -name '*.dic'|wc -l`' different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
-rm -rf ../utf8
-mkdir ../utf8
-echo '| Package | Version | Filename | Type | Lines |' >> ../Dictionary-Files.md
+
+if [ -e ../utf8 ]; then
+    rm -f ../utf8/*
+else
+    mkdir ../utf8
+fi
+
+echo '| Package | Version | Filename | File Type | Lines |' >> ../Dictionary-Files.md
 echo '|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.dic'|sort`; do
-	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `hunspell-/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
+	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
 	filename=`basename $file .dic`
 	echo $filename
-	encoding=`file $file|sed -e 's/^.*: //'`
+    # crude encoding
+	encoding=`file $file|sed -e 's/^.*: //'|sed -e 's/ text//'|sed -e 's/ Unicode//'`
 	echo -n $encoding' | `' >> ../Dictionary-Files.md
 	echo `wc -l $file|awk '{print $1}'`'` |' >> ../Dictionary-Files.md
-	if [ $filename != en_MED -a $filename != de_med -a $filename != kk_KZ ]; then # bug with kk_KZ
-		if [ $filename = ar -o $filename = be_BY -o $filename = bn_BD -o $filename = bo -o $filename = br_FR -o $filename = ca -o $filename = ca_ES-valencia -o $filename = da_DK -o $filename = dz -o $filename = en_AU -o $filename = en_CA -o $filename = en_GB -o $filename = en_GB-ise -o $filename = en_US -o $filename = en_ZA -o $filename = es_ES -o $filename = fa_IR -o $filename = fr -o $filename = fr_FR -o $filename = gd_GB -o $filename = gl_ES -o $filename = gu_IN -o $filename = gug_PY -o $filename = he_IL -o $filename = hi_IN -o $filename = hr_HR -o $filename = hu_HU -o $filename = is_IS -o $filename = kk_KZ -o $filename = kmr_Latn -o $filename = ko -o $filename = lo_LA -o $filename = ml_IN -o $filename = ne_NP -o $filename = nl -o $filename = pt_PT -o $filename = ro_RO -o $filename = se -o $filename = si_LK -o $filename = sk_SK -o $filename = sr_Latn_RS -o $filename = sr_RS -o $filename = sv_FI -o $filename = sv_SE -o $filename = te_IN -o $filename = uk_UA -o $filename = uz_UZ -o $filename = vi_VN ]; then
-			cp $file ../utf8/$filename.txt
-		elif [ $filename = af_ZA -o $filename = an_ES -o $filename = de_AT -o $filename = de_AT_frami -o $filename = de_CH -o $filename = de_CH_frami -o $filename = de_DE -o $filename = de_DE_frami -o $filename = eu -o $filename = fo -o $filename = ga_IE -o $filename = gv_GB -o $filename = nb_NO -o $filename = nn_NO -o $filename = pt_BR -o $filename = tl -o $filename = sw_TZ ]; then
-			iconv -f ISO-8859-1 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = bs_BA -o $filename = cs_CZ -o $filename = pl_PL -o $filename = sl_SI ]; then
-			iconv -f ISO-8859-2 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = eo ]; then
-			iconv -f ISO8859-3 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = el_GR ]; then
-			iconv -f ISO-8859-7 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = lt_LT -o $filename = lv_LV ]; then
-			iconv -f ISO-8859-13 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = it_IT -o $filename = oc_FR -o $filename = et_EE ]; then
-			iconv -f ISO-8859-15 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = bg_BG ]; then
-			iconv -f CP1251 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = th_TH ]; then
-			iconv -f TIS-620 -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		elif [ $filename = ru_RU ]; then
-			iconv -f KOI8-R -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		else
-			echo 'ERROR: Unsupported file encoding '$encoding' for file '$file
-			exit 1
+	if [ $filename != kk_KZ ]; then # bug with kk_KZ
+        affix=`echo $file|sed -e 's/\.dic$/\.aff/'`
+        if [ -e $affix ]; then
+            # intended encoding
+            # bug bg_BG.aff:SET microsoft-cp1251
+            Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
+
+            # autoskip medial when no aff file exists
+            #TODO check match crude
+            #TODO check iconv
+        elif [ $filename = de_med -o $filename = en_MED ]; then
+			Encoding=ISO8859-1
+        else
+            echo 'ERROR'
+            exit 1
 		fi
+        echo '   '$Encoding
+        if [ $Encoding = UTF-8 ]; then
+			cp $file ../utf8/$filename.txt
+        else
+			iconv -f $Encoding -t UTF-8//IGNORE $file > ../utf8/$filename.txt
+        fi
 
 		new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`
 		if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' ]; then
@@ -82,14 +88,10 @@ for file in `find . -type f -name '*.dic'|sort`; do
 			exit 1
 		fi
 
-		../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.md
+#		../../0-tools/histogram.py ../utf8/$filename.txt > ../utf8/$filename-historgram.md
 		#bug: remove license in dic files, especially with incorrect coding, see all german dic files
 	fi
 done
-
-sed -i -e 's/hunspell-eo/myspell-eo/' ../Dictionary-Files.md
-sed -i -e 's/hunspell-fo/myspell-fo/' ../Dictionary-Files.md
-sed -i -e 's/hunspell-ga/myspell-ga/' ../Dictionary-Files.md
 
 echo '## File types' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
