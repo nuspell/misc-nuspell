@@ -1,6 +1,7 @@
 <!DOCTYPE html
   PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html><script type="text/javascript" xml:space="preserve">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head>
+<html>
+   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="generator" content="Railroad Diagram Generator 1.48.1593"><style type="text/css" xml:space="preserve">
     ::-moz-selection
@@ -170,279 +171,44 @@
   </style></head>
    <body>
       
-      <p style="font-size: 14px; font-weight:bold"><a name="PositiveNumeral">PositiveNumeral:</a></p>
-      <img border="0" src="diagram/PositiveNumeral.png" height="36" width="120">
+      <p style="font-size: 14px; font-weight:bold"><a name="AffixFile">AffixFile:</a></p>
+      <img border="0" src="diagram/AffixFile.png" height="36" width="160" usemap="#AffixFile.map"><map name="AffixFile.map">
+         <area shape="rect" coords="29,1,131,33" href="#Compounding" title="Compounding"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#PositiveNumeral" title="PositiveNumeral" shape="rect">PositiveNumeral</a>
-         ::= [1-9]</pre></div>
+         <div class="ebnf"><pre><a href="#AffixFile" title="AffixFile" shape="rect">AffixFile</a>
+         ::= <a href="#Compounding" title="Compounding" shape="rect">Compounding</a></pre></div>
          
       </p>
       
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#Integer" title="Integer">Integer</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Numeral">Numeral:</a></p>
-      <img border="0" src="diagram/Numeral.png" height="36" width="120">
+      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="Compounding">Compounding:</a></p>
+      <img border="0" src="diagram/Compounding.png" height="434" width="992" usemap="#Compounding.map"><map name="Compounding.map">
+         <area shape="rect" coords="49,67,157,99" href="#BreakDefinition" title="BreakDefinition">
+         <area shape="rect" coords="217,1,327,33" href="#CompoundRule" title="CompoundRule">
+         <area shape="rect" coords="387,67,493,99" href="#CompoundMin" title="CompoundMin">
+         <area shape="rect" coords="553,67,663,99" href="#CompoundFlag" title="CompoundFlag">
+         <area shape="rect" coords="723,67,841,99" href="#CompoundBegin" title="CompoundBegin">
+         <area shape="rect" coords="52,149,162,181" href="#CompoundLast" title="CompoundLast">
+         <area shape="rect" coords="222,149,344,181" href="#CompoundMiddle" title="CompoundMiddle">
+         <area shape="rect" coords="404,149,526,181" href="#OnlyinCompound" title="OnlyinCompound">
+         <area shape="rect" coords="586,149,734,181" href="#CompoundPermitFlag" title="CompoundPermitFlag">
+         <area shape="rect" coords="794,149,940,181" href="#CompoundForbidFlag" title="CompoundForbidFlag">
+         <area shape="rect" coords="43,231,157,263" href="#CompoundRoot" title="CompoundRoot">
+         <area shape="rect" coords="217,231,359,263" href="#CompoundWordMax" title="CompoundWordMax">
+         <area shape="rect" coords="419,231,525,263" href="#SimplifiedTriple" title="SimplifiedTriple">
+         <area shape="rect" coords="585,231,737,263" href="#CheckCompoundTriple" title="CheckCompoundTriple">
+         <area shape="rect" coords="797,231,949,263" href="#CheckCompoundCase" title="CheckCompoundCase">
+         <area shape="rect" coords="113,313,257,345" href="#CheckCompoundRep" title="CheckCompoundRep">
+         <area shape="rect" coords="317,313,463,345" href="#CheckCompoundDup" title="CheckCompoundDup">
+         <area shape="rect" coords="523,313,689,345" href="#CheckCompoundPattern" title="CheckCompoundPattern">
+         <area shape="rect" coords="749,313,879,345" href="#CompoundSyllable" title="CompoundSyllable">
+         <area shape="rect" coords="851,399,943,431" href="#SyllableNum" title="SyllableNum"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#Numeral" title="Numeral" shape="rect">Numeral</a>  ::= [0-9]</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#AnyCharacter" title="AnyCharacter">AnyCharacter</a></li>
-            
-            <li><a href="#Integer" title="Integer">Integer</a></li>
-            
-            <li><a href="#LanguageCharacter" title="LanguageCharacter">LanguageCharacter</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Integer">Integer:</a></p>
-      <img border="0" src="diagram/Integer.png" height="102" width="342" usemap="#Integer.map"><map name="Integer.map">
-         <area shape="rect" coords="49,1,119,33" href="#Numeral" title="Numeral">
-         <area shape="rect" coords="49,67,163,99" href="#PositiveNumeral" title="PositiveNumeral">
-         <area shape="rect" coords="203,67,273,99" href="#Numeral" title="Numeral"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Integer" title="Integer" shape="rect">Integer</a>  ::= <a href="#Numeral" title="Numeral" shape="rect">Numeral</a>
-           | <a href="#PositiveNumeral" title="PositiveNumeral" shape="rect">PositiveNumeral</a> <a href="#Numeral" title="Numeral" shape="rect">Numeral</a>+</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#DictionaryEntry" title="DictionaryEntry">DictionaryEntry</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Lowercase">Lowercase:</a></p>
-      <img border="0" src="diagram/Lowercase.png" height="1576" width="158">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Lowercase" title="Lowercase" shape="rect">Lowercase</a>
-         ::= [a-záäâãāåæçčćđïñóòöôõōøőœšúùüûũūűýÿžðþ]</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#KeyCharacter" title="KeyCharacter">KeyCharacter</a></li>
-            
-            <li><a href="#Letter" title="Letter">Letter</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Uppercase">Uppercase:</a></p>
-      <img border="0" src="diagram/Uppercase.png" height="1576" width="160">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Uppercase" title="Uppercase" shape="rect">Uppercase</a>
-         ::= [A-ZÁÄÂÃĀÅÆÇČĆĐÏÑÓÒÖÔÕŌØŐŒŠÚÙÜÛŨŪŰÝŸŽÐÞ]</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#Letter" title="Letter">Letter</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Letter">Letter:</a></p>
-      <img border="0" src="diagram/Letter.png" height="80" width="182" usemap="#Letter.map"><map name="Letter.map">
-         <area shape="rect" coords="49,1,133,33" href="#Lowercase" title="Lowercase">
-         <area shape="rect" coords="49,45,131,77" href="#Uppercase" title="Uppercase"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Letter" title="Letter" shape="rect">Letter</a>   ::= <a href="#Lowercase" title="Lowercase" shape="rect">Lowercase</a>
-           | <a href="#Uppercase" title="Uppercase" shape="rect">Uppercase</a></pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#AnyCharacter" title="AnyCharacter">AnyCharacter</a></li>
-            
-            <li><a href="#DictionaryEntry" title="DictionaryEntry">DictionaryEntry</a></li>
-            
-            <li><a href="#LanguageCharacter" title="LanguageCharacter">LanguageCharacter</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Punctuation">Punctuation:</a></p>
-      <img border="0" src="diagram/Punctuation.png" height="1356" width="132">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Punctuation" title="Punctuation" shape="rect">Punctuation</a>
-         ::= '`'
-           | '~'
-           | '!'
-           | '@'
-           | '#'
-           | '$'
-           | '%'
-           | '^'
-           | '&amp;'
-           | '*'
-           | '('
-           | ')'
-           | '-'
-           | '_'
-           | '='
-           | '+'
-           | '['
-           | '}'
-           | ']'
-           | '\'
-           | ';'
-           | ':'
-           | "'"
-           | '"'
-           | ','
-           | '&lt;'
-           | '.'
-           | '&gt;'
-           | '/'
-           | '?'
-           | '␣'</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#AnyCharacter" title="AnyCharacter">AnyCharacter</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="AnyCharacter">AnyCharacter:</a></p>
-      <img border="0" src="diagram/AnyCharacter.png" height="124" width="188" usemap="#AnyCharacter.map"><map name="AnyCharacter.map">
-         <area shape="rect" coords="49,1,103,33" href="#Letter" title="Letter">
-         <area shape="rect" coords="49,45,119,77" href="#Numeral" title="Numeral">
-         <area shape="rect" coords="49,89,139,121" href="#Punctuation" title="Punctuation"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#AnyCharacter" title="AnyCharacter" shape="rect">AnyCharacter</a>
-         ::= <a href="#Letter" title="Letter" shape="rect">Letter</a>
-           | <a href="#Numeral" title="Numeral" shape="rect">Numeral</a>
-           | <a href="#Punctuation" title="Punctuation" shape="rect">Punctuation</a></pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#Comment" title="Comment">Comment</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="LanguageCharacter">LanguageCharacter:</a></p>
-      <img border="0" src="diagram/LanguageCharacter.png" height="256" width="168" usemap="#LanguageCharacter.map"><map name="LanguageCharacter.map">
-         <area shape="rect" coords="49,1,103,33" href="#Letter" title="Letter">
-         <area shape="rect" coords="49,45,119,77" href="#Numeral" title="Numeral"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#LanguageCharacter" title="LanguageCharacter" shape="rect">LanguageCharacter</a>
-         ::= <a href="#Letter" title="Letter" shape="rect">Letter</a>
-           | <a href="#Numeral" title="Numeral" shape="rect">Numeral</a>
-           | "'"
-           | '-'
-           | '.'
-           | '·'</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#LanguageWord" title="LanguageWord">LanguageWord</a></li>
-            
-            <li><a href="#Try" title="Try">Try</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="LanguageWord">LanguageWord:</a></p>
-      <img border="0" src="diagram/LanguageWord.png" height="52" width="232" usemap="#LanguageWord.map"><map name="LanguageWord.map">
-         <area shape="rect" coords="49,17,183,49" href="#LanguageCharacter" title="LanguageCharacter"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#LanguageWord" title="LanguageWord" shape="rect">LanguageWord</a>
-         ::= <a href="#LanguageCharacter" title="LanguageCharacter" shape="rect">LanguageCharacter</a>+</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#DictionaryEntry" title="DictionaryEntry">DictionaryEntry</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Whitespace">Whitespace:</a></p>
-      <img border="0" src="diagram/Whitespace.png" height="96" width="172">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a>
-         ::= ( '␣' | '\t' )+</pre></div>
-         
-      </p>
-      
-      <p>referenced by:
-         
-         <ul>
-            
-            <li><a href="#Comment" title="Comment">Comment</a></li>
-            
-            <li><a href="#Encoding" title="Encoding">Encoding</a></li>
-            
-            <li><a href="#Flag" title="Flag">Flag</a></li>
-            
-            <li><a href="#Key" title="Key">Key</a></li>
-            
-            <li><a href="#Try" title="Try">Try</a></li>
-            
-         </ul>
-         
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Comment">Comment:</a></p>
-      <img border="0" src="diagram/Comment.png" height="114" width="304" usemap="#Comment.map"><map name="Comment.map">
-         <area shape="rect" coords="99,45,199,77" href="#AnyCharacter" title="AnyCharacter">
-         <area shape="rect" coords="99,1,187,33" href="#Whitespace" title="Whitespace"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#Comment" title="Comment" shape="rect">Comment</a>  ::= '#' ( <a href="#AnyCharacter" title="AnyCharacter" shape="rect">AnyCharacter</a> | <a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a> )* '\n'</pre></div>
+         <div class="ebnf"><pre><a href="#Compounding" title="Compounding" shape="rect">Compounding</a>
+         ::= <a href="#BreakDefinition" title="BreakDefinition" shape="rect">BreakDefinition</a>? <a href="#CompoundRule" title="CompoundRule" shape="rect">CompoundRule</a>* <a href="#CompoundMin" title="CompoundMin" shape="rect">CompoundMin</a>? <a href="#CompoundFlag" title="CompoundFlag" shape="rect">CompoundFlag</a>? <a href="#CompoundBegin" title="CompoundBegin" shape="rect">CompoundBegin</a>? <a href="#CompoundLast" title="CompoundLast" shape="rect">CompoundLast</a>? <a href="#CompoundMiddle" title="CompoundMiddle" shape="rect">CompoundMiddle</a>? <a href="#OnlyinCompound" title="OnlyinCompound" shape="rect">OnlyinCompound</a>? <a href="#CompoundPermitFlag" title="CompoundPermitFlag" shape="rect">CompoundPermitFlag</a>? <a href="#CompoundForbidFlag" title="CompoundForbidFlag" shape="rect">CompoundForbidFlag</a>? <a href="#CompoundRoot" title="CompoundRoot" shape="rect">CompoundRoot</a>? <a href="#CompoundWordMax" title="CompoundWordMax" shape="rect">CompoundWordMax</a>? <a href="#SimplifiedTriple" title="SimplifiedTriple" shape="rect">SimplifiedTriple</a>? <a href="#CheckCompoundTriple" title="CheckCompoundTriple" shape="rect">CheckCompoundTriple</a>? <a href="#CheckCompoundCase" title="CheckCompoundCase" shape="rect">CheckCompoundCase</a>? <a href="#CheckCompoundRep" title="CheckCompoundRep" shape="rect">CheckCompoundRep</a>? <a href="#CheckCompoundDup" title="CheckCompoundDup" shape="rect">CheckCompoundDup</a>? <a href="#CheckCompoundPattern" title="CheckCompoundPattern" shape="rect">CheckCompoundPattern</a>? <a href="#CompoundSyllable" title="CompoundSyllable" shape="rect">CompoundSyllable</a>? <a href="#SyllableNum" title="SyllableNum" shape="rect">SyllableNum</a>?</pre></div>
          
       </p>
       
@@ -452,20 +218,21 @@
             
             <li><a href="#AffixFile" title="AffixFile">AffixFile</a></li>
             
-            <li><a href="#DictionaryFile" title="DictionaryFile">DictionaryFile</a></li>
-            
-            <li><a href="#PersonalDictionaryFile" title="PersonalDictionaryFile">PersonalDictionaryFile</a></li>
-            
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="DictionaryCount">DictionaryCount:</a></p>
-      <img border="0" src="diagram/DictionaryCount.png" height="36" width="180" usemap="#DictionaryCount.map"><map name="DictionaryCount.map">
-         <area shape="rect" coords="29,1,95,33" href="#Number" title="Number"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="BreakDefinition">BreakDefinition:</a></p>
+      <img border="0" src="diagram/BreakDefinition.png" height="112" width="770" usemap="#BreakDefinition.map"><map name="BreakDefinition.map">
+         <area shape="rect" coords="115,77,155,109" href="#WS" title="WS">
+         <area shape="rect" coords="175,77,311,109" href="#PosNumberInclZero" title="PosNumberInclZero">
+         <area shape="rect" coords="351,77,385,109" href="#LE" title="LE">
+         <area shape="rect" coords="371,33,453,65" href="#BreakChar" title="BreakChar">
+         <area shape="rect" coords="493,1,575,33" href="#BreakChar" title="BreakChar">
+         <area shape="rect" coords="595,1,635,33" href="#WS" title="WS"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#DictionaryCount" title="DictionaryCount" shape="rect">DictionaryCount</a>
-         ::= <a href="#Number" title="Number" shape="rect">Number</a> '\n'</pre></div>
+         <div class="ebnf"><pre><a href="#BreakDefinition" title="BreakDefinition" shape="rect">BreakDefinition</a>
+         ::= 'BREAK' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberInclZero" title="PosNumberInclZero" shape="rect">PosNumberInclZero</a> <a href="#LE" title="LE" shape="rect">LE</a> ( 'BREAK' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#BreakChar" title="BreakChar" shape="rect">BreakChar</a> <a href="#BreakChar" title="BreakChar" shape="rect">BreakChar</a>? <a href="#LE" title="LE" shape="rect">LE</a> )*</pre></div>
          
       </p>
       
@@ -473,24 +240,21 @@
          
          <ul>
             
-            <li><a href="#DictionaryFile" title="DictionaryFile">DictionaryFile</a></li>
-            
-            <li><a href="#PersonalDictionaryFile" title="PersonalDictionaryFile">PersonalDictionaryFile</a></li>
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
             
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="DictionaryEntry">DictionaryEntry:</a></p>
-      <img border="0" src="diagram/DictionaryEntry.png" height="222" width="626" usemap="#DictionaryEntry.map"><map name="DictionaryEntry.map">
-         <area shape="rect" coords="117,17,225,49" href="#LanguageWord" title="LanguageWord">
-         <area shape="rect" coords="353,17,407,49" href="#Letter" title="Letter">
-         <area shape="rect" coords="353,83,407,115" href="#Letter" title="Letter">
-         <area shape="rect" coords="427,83,481,115" href="#Letter" title="Letter">
-         <area shape="rect" coords="353,171,415,203" href="#Integer" title="Integer"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundRule">CompoundRule:</a></p>
+      <img border="0" src="diagram/CompoundRule.png" height="80" width="712" usemap="#CompoundRule.map"><map name="CompoundRule.map">
+         <area shape="rect" coords="183,45,223,77" href="#WS" title="WS">
+         <area shape="rect" coords="243,45,379,77" href="#PosNumberInclZero" title="PosNumberInclZero">
+         <area shape="rect" coords="419,45,453,77" href="#LE" title="LE">
+         <area shape="rect" coords="419,1,505,33" href="#Compound" title="Compound"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#DictionaryEntry" title="DictionaryEntry" shape="rect">DictionaryEntry</a>
-         ::= '*'? <a href="#LanguageWord" title="LanguageWord" shape="rect">LanguageWord</a> ( '/' ( <a href="#Letter" title="Letter" shape="rect">Letter</a>+ | ( <a href="#Letter" title="Letter" shape="rect">Letter</a> <a href="#Letter" title="Letter" shape="rect">Letter</a> )+ | <a href="#Integer" title="Integer" shape="rect">Integer</a> ( ',' <a href="#Integer" title="Integer" shape="rect">Integer</a> )* ) )? '\n'</pre></div>
+         <div class="ebnf"><pre><a href="#CompoundRule" title="CompoundRule" shape="rect">CompoundRule</a>
+         ::= 'COMPOUNDRULE' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberInclZero" title="PosNumberInclZero" shape="rect">PosNumberInclZero</a> <a href="#LE" title="LE" shape="rect">LE</a> ( 'COMPOUNDRULE ' <a href="#Compound" title="Compound" shape="rect">Compound</a> <a href="#LE" title="LE" shape="rect">LE</a> )*</pre></div>
          
       </p>
       
@@ -498,58 +262,20 @@
          
          <ul>
             
-            <li><a href="#DictionaryFile" title="DictionaryFile">DictionaryFile</a></li>
-            
-            <li><a href="#PersonalDictionaryFile" title="PersonalDictionaryFile">PersonalDictionaryFile</a></li>
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
             
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="DictionaryFile">DictionaryFile:</a></p>
-      <img border="0" src="diagram/DictionaryFile.png" height="114" width="546" usemap="#DictionaryFile.map"><map name="DictionaryFile.map">
-         <area shape="rect" coords="49,45,129,77" href="#Comment" title="Comment">
-         <area shape="rect" coords="169,79,283,111" href="#DictionaryCount" title="DictionaryCount">
-         <area shape="rect" coords="323,45,403,77" href="#Comment" title="Comment">
-         <area shape="rect" coords="323,1,433,33" href="#DictionaryEntry" title="DictionaryEntry">
-         <area shape="rect" coords="473,79,517,111" href="#EOF" title="EOF"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundMin">CompoundMin:</a></p>
+      <img border="0" src="diagram/CompoundMin.png" height="36" width="458" usemap="#CompoundMin.map"><map name="CompoundMin.map">
+         <area shape="rect" coords="179,1,219,33" href="#WS" title="WS">
+         <area shape="rect" coords="239,1,375,33" href="#PosNumberInclZero" title="PosNumberInclZero">
+         <area shape="rect" coords="395,1,429,33" href="#LE" title="LE"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#DictionaryFile" title="DictionaryFile" shape="rect">DictionaryFile</a>
-         ::= <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#DictionaryCount" title="DictionaryCount" shape="rect">DictionaryCount</a> ( <a href="#Comment" title="Comment" shape="rect">Comment</a> | <a href="#DictionaryEntry" title="DictionaryEntry" shape="rect">DictionaryEntry</a> )* <a href="#EOF" title="EOF" shape="rect">EOF</a></pre></div>
-         
-      </p>
-      
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="PersonalDictionaryFile">PersonalDictionaryFile:</a></p>
-      <img border="0" src="diagram/PersonalDictionaryFile.png" height="114" width="546" usemap="#PersonalDictionaryFile.map"><map name="PersonalDictionaryFile.map">
-         <area shape="rect" coords="49,45,129,77" href="#Comment" title="Comment">
-         <area shape="rect" coords="169,79,283,111" href="#DictionaryCount" title="DictionaryCount">
-         <area shape="rect" coords="323,45,403,77" href="#Comment" title="Comment">
-         <area shape="rect" coords="323,1,433,33" href="#DictionaryEntry" title="DictionaryEntry">
-         <area shape="rect" coords="473,79,517,111" href="#EOF" title="EOF"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#PersonalDictionaryFile" title="PersonalDictionaryFile" shape="rect">PersonalDictionaryFile</a>
-         ::= <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#DictionaryCount" title="DictionaryCount" shape="rect">DictionaryCount</a> ( <a href="#Comment" title="Comment" shape="rect">Comment</a> | <a href="#DictionaryEntry" title="DictionaryEntry" shape="rect">DictionaryEntry</a> )* <a href="#EOF" title="EOF" shape="rect">EOF</a></pre></div>
-         
-      </p>
-      
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="EncodingValue">EncodingValue:</a></p>
-      <img border="0" src="diagram/EncodingValue.png" height="432" width="234">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#EncodingValue" title="EncodingValue" shape="rect">EncodingValue</a>
-         ::= 'UTF-8'
-           | 'ISO-8859-1'
-           | 'ISO8859-1'
-           | 'ISO8859-2'
-           | 'ISO8859-7'
-           | 'ISO8859-13'
-           | 'ISO8859-15'
-           | 'microsoft-cp1251'
-           | 'TIS-620'
-           | 'KOI8-R'</pre></div>
+         <div class="ebnf"><pre><a href="#CompoundMin" title="CompoundMin" shape="rect">CompoundMin</a>
+         ::= 'COMPOUNDMIN ' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberInclZero" title="PosNumberInclZero" shape="rect">PosNumberInclZero</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
          
       </p>
       
@@ -557,62 +283,470 @@
          
          <ul>
             
-            <li><a href="#Encoding" title="Encoding">Encoding</a></li>
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
             
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Encoding">Encoding:</a></p>
-      <img border="0" src="diagram/Encoding.png" height="36" width="390" usemap="#Encoding.map"><map name="Encoding.map">
-         <area shape="rect" coords="93,1,181,33" href="#Whitespace" title="Whitespace">
-         <area shape="rect" coords="201,1,305,33" href="#EncodingValue" title="EncodingValue"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundFlag">CompoundFlag:</a></p>
+      <img border="0" src="diagram/CompoundFlag.png" height="36" width="370" usemap="#CompoundFlag.map"><map name="CompoundFlag.map">
+         <area shape="rect" coords="183,1,223,33" href="#WS" title="WS">
+         <area shape="rect" coords="243,1,287,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="307,1,341,33" href="#LE" title="LE"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#Encoding" title="Encoding" shape="rect">Encoding</a> ::= 'SET' <a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a> <a href="#EncodingValue" title="EncodingValue" shape="rect">EncodingValue</a> '\n'</pre></div>
-         
-      </p>
-      
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="FlagValue">FlagValue:</a></p>
-      <img border="0" src="diagram/FlagValue.png" height="124" width="158">
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#FlagValue" title="FlagValue" shape="rect">FlagValue</a>
-         ::= 'num'
-           | 'long'
-           | 'UTF-8'</pre></div>
+         <div class="ebnf"><pre><a href="#CompoundFlag" title="CompoundFlag" shape="rect">CompoundFlag</a>
+         ::= 'COMPOUNDFLAG' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
          
       </p>
       
       <p>referenced by:
          
          <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundBegin">CompoundBegin:</a></p>
+      <img border="0" src="diagram/CompoundBegin.png" height="36" width="376" usemap="#CompoundBegin.map"><map name="CompoundBegin.map">
+         <area shape="rect" coords="189,1,229,33" href="#WS" title="WS">
+         <area shape="rect" coords="249,1,293,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="313,1,347,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundBegin" title="CompoundBegin" shape="rect">CompoundBegin</a>
+         ::= 'COMPOUNDBEGIN' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundLast">CompoundLast:</a></p>
+      <img border="0" src="diagram/CompoundLast.png" height="36" width="368" usemap="#CompoundLast.map"><map name="CompoundLast.map">
+         <area shape="rect" coords="181,1,221,33" href="#WS" title="WS">
+         <area shape="rect" coords="241,1,285,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="305,1,339,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundLast" title="CompoundLast" shape="rect">CompoundLast</a>
+         ::= 'COMPOUNDLAST' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundMiddle">CompoundMiddle:</a></p>
+      <img border="0" src="diagram/CompoundMiddle.png" height="36" width="386" usemap="#CompoundMiddle.map"><map name="CompoundMiddle.map">
+         <area shape="rect" coords="199,1,239,33" href="#WS" title="WS">
+         <area shape="rect" coords="259,1,303,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="323,1,357,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundMiddle" title="CompoundMiddle" shape="rect">CompoundMiddle</a>
+         ::= 'COMPOUNDMIDDLE' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="OnlyinCompound">OnlyinCompound:</a></p>
+      <img border="0" src="diagram/OnlyinCompound.png" height="36" width="386" usemap="#OnlyinCompound.map"><map name="OnlyinCompound.map">
+         <area shape="rect" coords="199,1,239,33" href="#WS" title="WS">
+         <area shape="rect" coords="259,1,303,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="323,1,357,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#OnlyinCompound" title="OnlyinCompound" shape="rect">OnlyinCompound</a>
+         ::= 'ONLYINCOMPOUND' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundPermitFlag">CompoundPermitFlag:</a></p>
+      <img border="0" src="diagram/CompoundPermitFlag.png" height="36" width="422" usemap="#CompoundPermitFlag.map"><map name="CompoundPermitFlag.map">
+         <area shape="rect" coords="235,1,275,33" href="#WS" title="WS">
+         <area shape="rect" coords="295,1,339,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="359,1,393,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundPermitFlag" title="CompoundPermitFlag" shape="rect">CompoundPermitFlag</a>
+         ::= 'COMPOUNDPERMITFLAG' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundForbidFlag">CompoundForbidFlag:</a></p>
+      <img border="0" src="diagram/CompoundForbidFlag.png" height="36" width="422" usemap="#CompoundForbidFlag.map"><map name="CompoundForbidFlag.map">
+         <area shape="rect" coords="235,1,275,33" href="#WS" title="WS">
+         <area shape="rect" coords="295,1,339,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="359,1,393,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundForbidFlag" title="CompoundForbidFlag" shape="rect">CompoundForbidFlag</a>
+         ::= 'COMPOUNDFORBIDFLAG' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundRoot">CompoundRoot:</a></p>
+      <img border="0" src="diagram/CompoundRoot.png" height="36" width="372" usemap="#CompoundRoot.map"><map name="CompoundRoot.map">
+         <area shape="rect" coords="185,1,225,33" href="#WS" title="WS">
+         <area shape="rect" coords="245,1,289,33" href="#Flag" title="Flag">
+         <area shape="rect" coords="309,1,343,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundRoot" title="CompoundRoot" shape="rect">CompoundRoot</a>
+         ::= 'COMPOUNDROOT' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundWordMax">CompoundWordMax:</a></p>
+      <img border="0" src="diagram/CompoundWordMax.png" height="36" width="502" usemap="#CompoundWordMax.map"><map name="CompoundWordMax.map">
+         <area shape="rect" coords="219,1,259,33" href="#WS" title="WS">
+         <area shape="rect" coords="279,1,419,33" href="#PosNumberExclZero" title="PosNumberExclZero">
+         <area shape="rect" coords="439,1,473,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundWordMax" title="CompoundWordMax" shape="rect">CompoundWordMax</a>
+         ::= 'COMPOUNDWORDMAX' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a> <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="SimplifiedTriple">SimplifiedTriple:</a></p>
+      <img border="0" src="diagram/SimplifiedTriple.png" height="36" width="262" usemap="#SimplifiedTriple.map"><map name="SimplifiedTriple.map">
+         <area shape="rect" coords="199,1,233,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#SimplifiedTriple" title="SimplifiedTriple" shape="rect">SimplifiedTriple</a>
+         ::= 'SIMPLIFIEDTRIPLE' <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CheckCompoundTriple">CheckCompoundTriple:</a></p>
+      <img border="0" src="diagram/CheckCompoundTriple.png" height="36" width="304" usemap="#CheckCompoundTriple.map"><map name="CheckCompoundTriple.map">
+         <area shape="rect" coords="241,1,275,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CheckCompoundTriple" title="CheckCompoundTriple" shape="rect">CheckCompoundTriple</a>
+         ::= 'CHECKCOMPOUNDTRIPLE' <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CheckCompoundCase">CheckCompoundCase:</a></p>
+      <img border="0" src="diagram/CheckCompoundCase.png" height="36" width="290" usemap="#CheckCompoundCase.map"><map name="CheckCompoundCase.map">
+         <area shape="rect" coords="227,1,261,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CheckCompoundCase" title="CheckCompoundCase" shape="rect">CheckCompoundCase</a>
+         ::= 'CHECKCOMPOUNDCASE' <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CheckCompoundRep">CheckCompoundRep:</a></p>
+      <img border="0" src="diagram/CheckCompoundRep.png" height="36" width="282" usemap="#CheckCompoundRep.map"><map name="CheckCompoundRep.map">
+         <area shape="rect" coords="219,1,253,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CheckCompoundRep" title="CheckCompoundRep" shape="rect">CheckCompoundRep</a>
+         ::= 'CHECKCOMPOUNDREP' <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CheckCompoundDup">CheckCompoundDup:</a></p>
+      <img border="0" src="diagram/CheckCompoundDup.png" height="36" width="282" usemap="#CheckCompoundDup.map"><map name="CheckCompoundDup.map">
+         <area shape="rect" coords="219,1,253,33" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CheckCompoundDup" title="CheckCompoundDup" shape="rect">CheckCompoundDup</a>
+         ::= 'CHECKCOMPOUNDDUP' <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CheckCompoundPattern">CheckCompoundPattern:</a></p>
+      <img border="0" src="diagram/CheckCompoundPattern.png" height="134" width="544" usemap="#CheckCompoundPattern.map"><map name="CheckCompoundPattern.map">
+         <area shape="rect" coords="255,1,295,33" href="#WS" title="WS">
+         <area shape="rect" coords="315,1,451,33" href="#PosNumberInclZero" title="PosNumberInclZero">
+         <area shape="rect" coords="287,83,327,115" href="#WS" title="WS">
+         <area shape="rect" coords="347,83,475,115" href="#CompoundPattern" title="CompoundPattern"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CheckCompoundPattern" title="CheckCompoundPattern" shape="rect">CheckCompoundPattern</a>
+         ::= 'CHECKCOMPOUNDPATTERN' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberInclZero" title="PosNumberInclZero" shape="rect">PosNumberInclZero</a> ( 'CHECKCOMPOUNDPATTERN' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#CompoundPattern" title="CompoundPattern" shape="rect">CompoundPattern</a> )*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundSyllable">CompoundSyllable:</a></p>
+      <img border="0" src="diagram/CompoundSyllable.png" height="52" width="666" usemap="#CompoundSyllable.map"><map name="CompoundSyllable.map">
+         <area shape="rect" coords="215,17,255,49" href="#WS" title="WS">
+         <area shape="rect" coords="275,17,415,49" href="#PosNumberExclZero" title="PosNumberExclZero">
+         <area shape="rect" coords="435,17,475,49" href="#WS" title="WS">
+         <area shape="rect" coords="515,17,563,49" href="#Char" title="Char">
+         <area shape="rect" coords="603,17,637,49" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CompoundSyllable" title="CompoundSyllable" shape="rect">CompoundSyllable</a>
+         ::= 'COMPOUNDSYLLABLE' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a> <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Char" title="Char" shape="rect">Char</a>+ <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="SyllableNum">SyllableNum:</a></p>
+      <img border="0" src="diagram/SyllableNum.png" height="52" width="394" usemap="#SyllableNum.map"><map name="SyllableNum.map">
+         <area shape="rect" coords="167,17,207,49" href="#WS" title="WS">
+         <area shape="rect" coords="247,17,291,49" href="#Flag" title="Flag">
+         <area shape="rect" coords="331,17,365,49" href="#LE" title="LE"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#SyllableNum" title="SyllableNum" shape="rect">SyllableNum</a>
+         ::= 'SYLLABLENUM' <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Flag" title="Flag" shape="rect">Flag</a>+ <a href="#LE" title="LE" shape="rect">LE</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compounding" title="Compounding">Compounding</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="BreakChar">BreakChar:</a></p>
+      <img border="0" src="diagram/BreakChar.png" height="36" width="232" usemap="#BreakChar.map"><map name="BreakChar.map">
+         <area shape="rect" coords="29,1,203,33" href="#NonWhiteSpaceCharASCII" title="NonWhiteSpaceCharASCII"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#BreakChar" title="BreakChar" shape="rect">BreakChar</a>
+         ::= <a href="#NonWhiteSpaceCharASCII" title="NonWhiteSpaceCharASCII" shape="rect">NonWhiteSpaceCharASCII</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#BreakDefinition" title="BreakDefinition">BreakDefinition</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Compound">Compound:</a></p>
+      <img border="0" src="diagram/Compound.png" height="216" width="570" usemap="#Compound.map"><map name="Compound.map">
+         <area shape="rect" coords="69,17,145,49" href="#FlagASCII" title="FlagASCII">
+         <area shape="rect" coords="69,61,143,93" href="#FlagUTF8" title="FlagUTF8">
+         <area shape="rect" coords="135,105,211,137" href="#FlagASCII" title="FlagASCII">
+         <area shape="rect" coords="251,137,327,169" href="#FlagASCII" title="FlagASCII">
+         <area shape="rect" coords="135,181,275,213" href="#PosNumberExclZero" title="PosNumberExclZero"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#Compound" title="Compound" shape="rect">Compound</a> ::= ( ( <a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a> | <a href="#FlagUTF8" title="FlagUTF8" shape="rect">FlagUTF8</a> | '(' ( <a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a> <a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a>? | <a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a> ) ')' ) ( '*' | '?' )? )+</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#CompoundRule" title="CompoundRule">CompoundRule</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Flag">Flag:</a></p>
+      <img border="0" src="diagram/Flag.png" height="200" width="310" usemap="#Flag.map"><map name="Flag.map">
+         <area shape="rect" coords="49,1,125,33" href="#FlagASCII" title="FlagASCII">
+         <area shape="rect" coords="165,33,241,65" href="#FlagASCII" title="FlagASCII">
+         <area shape="rect" coords="49,77,123,109" href="#FlagUTF8" title="FlagUTF8">
+         <area shape="rect" coords="69,165,209,197" href="#PosNumberExclZero" title="PosNumberExclZero"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#Flag" title="Flag" shape="rect">Flag</a>     ::= <a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a> <a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a>?
+           | <a href="#FlagUTF8" title="FlagUTF8" shape="rect">FlagUTF8</a>
+           | <a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a> ( ',' <a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a> )*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#CompoundBegin" title="CompoundBegin">CompoundBegin</a></li>
+            
+            <li><a href="#CompoundFlag" title="CompoundFlag">CompoundFlag</a></li>
+            
+            <li><a href="#CompoundForbidFlag" title="CompoundForbidFlag">CompoundForbidFlag</a></li>
+            
+            <li><a href="#CompoundLast" title="CompoundLast">CompoundLast</a></li>
+            
+            <li><a href="#CompoundMiddle" title="CompoundMiddle">CompoundMiddle</a></li>
+            
+            <li><a href="#CompoundPermitFlag" title="CompoundPermitFlag">CompoundPermitFlag</a></li>
+            
+            <li><a href="#CompoundRoot" title="CompoundRoot">CompoundRoot</a></li>
+            
+            <li><a href="#OnlyinCompound" title="OnlyinCompound">OnlyinCompound</a></li>
+            
+            <li><a href="#Pattern" title="Pattern">Pattern</a></li>
+            
+            <li><a href="#SyllableNum" title="SyllableNum">SyllableNum</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="FlagASCII">FlagASCII:</a></p>
+      <img border="0" src="diagram/FlagASCII.png" height="36" width="232" usemap="#FlagASCII.map"><map name="FlagASCII.map">
+         <area shape="rect" coords="29,1,203,33" href="#NonWhiteSpaceCharASCII" title="NonWhiteSpaceCharASCII"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#FlagASCII" title="FlagASCII" shape="rect">FlagASCII</a>
+         ::= <a href="#NonWhiteSpaceCharASCII" title="NonWhiteSpaceCharASCII" shape="rect">NonWhiteSpaceCharASCII</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compound" title="Compound">Compound</a></li>
             
             <li><a href="#Flag" title="Flag">Flag</a></li>
             
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Flag">Flag:</a></p>
-      <img border="0" src="diagram/Flag.png" height="36" width="372" usemap="#Flag.map"><map name="Flag.map">
-         <area shape="rect" coords="103,1,191,33" href="#Whitespace" title="Whitespace">
-         <area shape="rect" coords="211,1,287,33" href="#FlagValue" title="FlagValue"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="FlagUTF8">FlagUTF8:</a></p>
+      <img border="0" src="diagram/FlagUTF8.png" height="36" width="230" usemap="#FlagUTF8.map"><map name="FlagUTF8.map">
+         <area shape="rect" coords="29,1,201,33" href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#Flag" title="Flag" shape="rect">Flag</a>     ::= 'FLAG' <a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a> <a href="#FlagValue" title="FlagValue" shape="rect">FlagValue</a> '\n'</pre></div>
-         
-      </p>
-      
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="KeyCharacter">KeyCharacter:</a></p>
-      <img border="0" src="diagram/KeyCharacter.png" height="124" width="182" usemap="#KeyCharacter.map"><map name="KeyCharacter.map">
-         <area shape="rect" coords="49,1,133,33" href="#Lowercase" title="Lowercase"></map>
-      
-      <p>
-         
-         <div class="ebnf"><pre><a href="#KeyCharacter" title="KeyCharacter" shape="rect">KeyCharacter</a>
-         ::= <a href="#Lowercase" title="Lowercase" shape="rect">Lowercase</a>
-           | ','
-           | '.'</pre></div>
+         <div class="ebnf"><pre><a href="#FlagUTF8" title="FlagUTF8" shape="rect">FlagUTF8</a> ::= <a href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8" shape="rect">NonWhiteSpaceCharUTF8</a></pre></div>
          
       </p>
       
@@ -620,53 +754,375 @@
          
          <ul>
             
-            <li><a href="#Key" title="Key">Key</a></li>
+            <li><a href="#Compound" title="Compound">Compound</a></li>
+            
+            <li><a href="#Flag" title="Flag">Flag</a></li>
             
          </ul>
          
-      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Key">Key:</a></p>
-      <img border="0" src="diagram/Key.png" height="102" width="468" usemap="#Key.map"><map name="Key.map">
-         <area shape="rect" coords="95,67,183,99" href="#Whitespace" title="Whitespace">
-         <area shape="rect" coords="243,67,343,99" href="#KeyCharacter" title="KeyCharacter"></map>
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CompoundPattern">CompoundPattern:</a></p>
+      <img border="0" src="diagram/CompoundPattern.png" height="68" width="594" usemap="#CompoundPattern.map"><map name="CompoundPattern.map">
+         <area shape="rect" coords="29,17,91,49" href="#Pattern" title="Pattern">
+         <area shape="rect" coords="111,17,151,49" href="#WS" title="WS">
+         <area shape="rect" coords="171,17,233,49" href="#Pattern" title="Pattern">
+         <area shape="rect" coords="273,17,313,49" href="#WS" title="WS">
+         <area shape="rect" coords="353,17,525,49" href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#Key" title="Key" shape="rect">Key</a>      ::= 'KEY' <a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a> <a href="#KeyCharacter" title="KeyCharacter" shape="rect">KeyCharacter</a>+ ( '|' <a href="#KeyCharacter" title="KeyCharacter" shape="rect">KeyCharacter</a>+ )* '\n'</pre></div>
+         <div class="ebnf"><pre><a href="#CompoundPattern" title="CompoundPattern" shape="rect">CompoundPattern</a>
+         ::= <a href="#Pattern" title="Pattern" shape="rect">Pattern</a> <a href="#WS" title="WS" shape="rect">WS</a> <a href="#Pattern" title="Pattern" shape="rect">Pattern</a> ( <a href="#WS" title="WS" shape="rect">WS</a> <a href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8" shape="rect">NonWhiteSpaceCharUTF8</a>+ )?</pre></div>
          
       </p>
       
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="Try">Try:</a></p>
-      <img border="0" src="diagram/Try.png" height="52" width="462" usemap="#Try.map"><map name="Try.map">
-         <area shape="rect" coords="95,17,183,49" href="#Whitespace" title="Whitespace">
-         <area shape="rect" coords="223,17,357,49" href="#LanguageCharacter" title="LanguageCharacter"></map>
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#CheckCompoundPattern" title="CheckCompoundPattern">CheckCompoundPattern</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Pattern">Pattern:</a></p>
+      <img border="0" src="diagram/Pattern.png" height="114" width="502" usemap="#Pattern.map"><map name="Pattern.map">
+         <area shape="rect" coords="49,1,221,33" href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8">
+         <area shape="rect" coords="281,35,453,67" href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8">
+         <area shape="rect" coords="329,79,373,111" href="#Flag" title="Flag"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#Try" title="Try" shape="rect">Try</a>      ::= 'TRY' <a href="#Whitespace" title="Whitespace" shape="rect">Whitespace</a> <a href="#LanguageCharacter" title="LanguageCharacter" shape="rect">LanguageCharacter</a>+ '\n'</pre></div>
+         <div class="ebnf"><pre><a href="#Pattern" title="Pattern" shape="rect">Pattern</a>  ::= <a href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8" shape="rect">NonWhiteSpaceCharUTF8</a>* ( <a href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8" shape="rect">NonWhiteSpaceCharUTF8</a> | '/' <a href="#Flag" title="Flag" shape="rect">Flag</a> )</pre></div>
          
       </p>
       
-      <p>no references</p><br><p style="font-size: 14px; font-weight:bold"><a name="AffixFile">AffixFile:</a></p>
-      <img border="0" src="diagram/AffixFile.png" height="234" width="916" usemap="#AffixFile.map"><map name="AffixFile.map">
-         <area shape="rect" coords="49,1,129,33" href="#Comment" title="Comment">
-         <area shape="rect" coords="189,67,303,99" href="#EncodingSetting" title="EncodingSetting">
-         <area shape="rect" coords="363,1,443,33" href="#Comment" title="Comment">
-         <area shape="rect" coords="503,67,589,99" href="#FlagSetting" title="FlagSetting">
-         <area shape="rect" coords="649,1,729,33" href="#Comment" title="Comment">
-         <area shape="rect" coords="789,67,873,99" href="#KeySetting" title="KeySetting">
-         <area shape="rect" coords="443,133,523,165" href="#Comment" title="Comment">
-         <area shape="rect" coords="583,199,663,231" href="#TrySetting" title="TrySetting">
-         <area shape="rect" coords="723,133,803,165" href="#Comment" title="Comment">
-         <area shape="rect" coords="843,167,887,199" href="#EOF" title="EOF"></map>
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#CompoundPattern" title="CompoundPattern">CompoundPattern</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="LE">LE:</a></p>
+      <img border="0" src="diagram/LE.png" height="84" width="280" usemap="#LE.map"><map name="LE.map">
+         <area shape="rect" coords="69,49,149,81" href="#Comment" title="Comment">
+         <area shape="rect" coords="189,17,231,49" href="#EOL" title="EOL"></map>
       
       <p>
          
-         <div class="ebnf"><pre><a href="#AffixFile" title="AffixFile" shape="rect">AffixFile</a>
-         ::= <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#EncodingSetting" title="EncodingSetting" shape="rect">EncodingSetting</a>? <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#FlagSetting" title="FlagSetting" shape="rect">FlagSetting</a>? <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#KeySetting" title="KeySetting" shape="rect">KeySetting</a>? <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#TrySetting" title="TrySetting" shape="rect">TrySetting</a>? <a href="#Comment" title="Comment" shape="rect">Comment</a>* <a href="#EOF" title="EOF" shape="rect">EOF</a></pre></div>
+         <div class="ebnf"><pre><a href="#LE" title="LE" shape="rect">LE</a>       ::= ( <a href="#Comment" title="Comment" shape="rect">Comment</a>? <a href="#EOL" title="EOL" shape="rect">EOL</a> )+</pre></div>
          
       </p>
       
-      <p>no references</p><br><hr>
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#BreakDefinition" title="BreakDefinition">BreakDefinition</a></li>
+            
+            <li><a href="#CheckCompoundCase" title="CheckCompoundCase">CheckCompoundCase</a></li>
+            
+            <li><a href="#CheckCompoundDup" title="CheckCompoundDup">CheckCompoundDup</a></li>
+            
+            <li><a href="#CheckCompoundRep" title="CheckCompoundRep">CheckCompoundRep</a></li>
+            
+            <li><a href="#CheckCompoundTriple" title="CheckCompoundTriple">CheckCompoundTriple</a></li>
+            
+            <li><a href="#CompoundBegin" title="CompoundBegin">CompoundBegin</a></li>
+            
+            <li><a href="#CompoundFlag" title="CompoundFlag">CompoundFlag</a></li>
+            
+            <li><a href="#CompoundForbidFlag" title="CompoundForbidFlag">CompoundForbidFlag</a></li>
+            
+            <li><a href="#CompoundLast" title="CompoundLast">CompoundLast</a></li>
+            
+            <li><a href="#CompoundMiddle" title="CompoundMiddle">CompoundMiddle</a></li>
+            
+            <li><a href="#CompoundMin" title="CompoundMin">CompoundMin</a></li>
+            
+            <li><a href="#CompoundPermitFlag" title="CompoundPermitFlag">CompoundPermitFlag</a></li>
+            
+            <li><a href="#CompoundRoot" title="CompoundRoot">CompoundRoot</a></li>
+            
+            <li><a href="#CompoundRule" title="CompoundRule">CompoundRule</a></li>
+            
+            <li><a href="#CompoundSyllable" title="CompoundSyllable">CompoundSyllable</a></li>
+            
+            <li><a href="#CompoundWordMax" title="CompoundWordMax">CompoundWordMax</a></li>
+            
+            <li><a href="#OnlyinCompound" title="OnlyinCompound">OnlyinCompound</a></li>
+            
+            <li><a href="#SimplifiedTriple" title="SimplifiedTriple">SimplifiedTriple</a></li>
+            
+            <li><a href="#SyllableNum" title="SyllableNum">SyllableNum</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="Comment">Comment:</a></p>
+      <img border="0" src="diagram/Comment.png" height="86" width="504" usemap="#Comment.map"><map name="Comment.map">
+         <area shape="rect" coords="49,35,89,67" href="#WS" title="WS">
+         <area shape="rect" coords="129,1,207,33" href="#CharUTF8" title="CharUTF8">
+         <area shape="rect" coords="357,1,435,33" href="#CharUTF8" title="CharUTF8"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#Comment" title="Comment" shape="rect">Comment</a>  ::= ( <a href="#WS" title="WS" shape="rect">WS</a> <a href="#CharUTF8" title="CharUTF8" shape="rect">CharUTF8</a>* )? ( '#' <a href="#CharUTF8" title="CharUTF8" shape="rect">CharUTF8</a>* )?</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#LE" title="LE">LE</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="CharUTF8">CharUTF8:</a></p>
+      <img border="0" src="diagram/CharUTF8.png" height="36" width="112" usemap="#CharUTF8.map"><map name="CharUTF8.map">
+         <area shape="rect" coords="29,1,83,33" href="#TODO" title="TODO"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#CharUTF8" title="CharUTF8" shape="rect">CharUTF8</a> ::= <a href="#TODO" title="TODO" shape="rect">TODO</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Comment" title="Comment">Comment</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="NonWhiteSpaceCharUTF8">NonWhiteSpaceCharUTF8:</a></p>
+      <img border="0" src="diagram/NonWhiteSpaceCharUTF8.png" height="36" width="112" usemap="#NonWhiteSpaceCharUTF8.map"><map name="NonWhiteSpaceCharUTF8.map">
+         <area shape="rect" coords="29,1,83,33" href="#TODO" title="TODO"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#NonWhiteSpaceCharUTF8" title="NonWhiteSpaceCharUTF8" shape="rect">NonWhiteSpaceCharUTF8</a>
+         ::= <a href="#TODO" title="TODO" shape="rect">TODO</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#CompoundPattern" title="CompoundPattern">CompoundPattern</a></li>
+            
+            <li><a href="#FlagUTF8" title="FlagUTF8">FlagUTF8</a></li>
+            
+            <li><a href="#Pattern" title="Pattern">Pattern</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="NonWhiteSpaceCharASCII">NonWhiteSpaceCharASCII:</a></p>
+      <img border="0" src="diagram/NonWhiteSpaceCharASCII.png" height="36" width="202">
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#NonWhiteSpaceCharASCII" title="NonWhiteSpaceCharASCII" shape="rect">NonWhiteSpaceCharASCII</a>
+         ::= [#x0021-#x007e]</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#BreakChar" title="BreakChar">BreakChar</a></li>
+            
+            <li><a href="#FlagASCII" title="FlagASCII">FlagASCII</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="PosNumberInclZero">PosNumberInclZero:</a></p>
+      <img border="0" src="diagram/PosNumberInclZero.png" height="114" width="348" usemap="#PosNumberInclZero.map"><map name="PosNumberInclZero.map">
+         <area shape="rect" coords="49,35,145,67" href="#DigitExclZero" title="DigitExclZero">
+         <area shape="rect" coords="185,1,279,33" href="#DigitInclZero" title="DigitInclZero"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#PosNumberInclZero" title="PosNumberInclZero" shape="rect">PosNumberInclZero</a>
+         ::= '0'
+           | <a href="#DigitExclZero" title="DigitExclZero" shape="rect">DigitExclZero</a> <a href="#DigitInclZero" title="DigitInclZero" shape="rect">DigitInclZero</a>*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#BreakDefinition" title="BreakDefinition">BreakDefinition</a></li>
+            
+            <li><a href="#CheckCompoundPattern" title="CheckCompoundPattern">CheckCompoundPattern</a></li>
+            
+            <li><a href="#CompoundMin" title="CompoundMin">CompoundMin</a></li>
+            
+            <li><a href="#CompoundRule" title="CompoundRule">CompoundRule</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="PosNumberExclZero">PosNumberExclZero:</a></p>
+      <img border="0" src="diagram/PosNumberExclZero.png" height="70" width="308" usemap="#PosNumberExclZero.map"><map name="PosNumberExclZero.map">
+         <area shape="rect" coords="29,35,125,67" href="#DigitExclZero" title="DigitExclZero">
+         <area shape="rect" coords="165,1,259,33" href="#DigitInclZero" title="DigitInclZero"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#PosNumberExclZero" title="PosNumberExclZero" shape="rect">PosNumberExclZero</a>
+         ::= <a href="#DigitExclZero" title="DigitExclZero" shape="rect">DigitExclZero</a> <a href="#DigitInclZero" title="DigitInclZero" shape="rect">DigitInclZero</a>*</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#Compound" title="Compound">Compound</a></li>
+            
+            <li><a href="#CompoundSyllable" title="CompoundSyllable">CompoundSyllable</a></li>
+            
+            <li><a href="#CompoundWordMax" title="CompoundWordMax">CompoundWordMax</a></li>
+            
+            <li><a href="#Flag" title="Flag">Flag</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="DigitInclZero">DigitInclZero:</a></p>
+      <img border="0" src="diagram/DigitInclZero.png" height="80" width="194" usemap="#DigitInclZero.map"><map name="DigitInclZero.map">
+         <area shape="rect" coords="49,45,145,77" href="#DigitExclZero" title="DigitExclZero"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#DigitInclZero" title="DigitInclZero" shape="rect">DigitInclZero</a>
+         ::= '0'
+           | <a href="#DigitExclZero" title="DigitExclZero" shape="rect">DigitExclZero</a></pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#PosNumberExclZero" title="PosNumberExclZero">PosNumberExclZero</a></li>
+            
+            <li><a href="#PosNumberInclZero" title="PosNumberInclZero">PosNumberInclZero</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="DigitExclZero">DigitExclZero:</a></p>
+      <img border="0" src="diagram/DigitExclZero.png" height="36" width="120">
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#DigitExclZero" title="DigitExclZero" shape="rect">DigitExclZero</a>
+         ::= [1-9]</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#DigitInclZero" title="DigitInclZero">DigitInclZero</a></li>
+            
+            <li><a href="#PosNumberExclZero" title="PosNumberExclZero">PosNumberExclZero</a></li>
+            
+            <li><a href="#PosNumberInclZero" title="PosNumberInclZero">PosNumberInclZero</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="WS">WS:</a></p>
+      <img border="0" src="diagram/WS.png" height="52" width="222" usemap="#WS.map"><map name="WS.map">
+         <area shape="rect" coords="49,17,173,49" href="#WhiteSpaceChars" title="WhiteSpaceChars"></map>
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#WS" title="WS" shape="rect">WS</a>       ::= <a href="#WhiteSpaceChars" title="WhiteSpaceChars" shape="rect">WhiteSpaceChars</a>+</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#BreakDefinition" title="BreakDefinition">BreakDefinition</a></li>
+            
+            <li><a href="#CheckCompoundPattern" title="CheckCompoundPattern">CheckCompoundPattern</a></li>
+            
+            <li><a href="#Comment" title="Comment">Comment</a></li>
+            
+            <li><a href="#CompoundBegin" title="CompoundBegin">CompoundBegin</a></li>
+            
+            <li><a href="#CompoundFlag" title="CompoundFlag">CompoundFlag</a></li>
+            
+            <li><a href="#CompoundForbidFlag" title="CompoundForbidFlag">CompoundForbidFlag</a></li>
+            
+            <li><a href="#CompoundLast" title="CompoundLast">CompoundLast</a></li>
+            
+            <li><a href="#CompoundMiddle" title="CompoundMiddle">CompoundMiddle</a></li>
+            
+            <li><a href="#CompoundMin" title="CompoundMin">CompoundMin</a></li>
+            
+            <li><a href="#CompoundPattern" title="CompoundPattern">CompoundPattern</a></li>
+            
+            <li><a href="#CompoundPermitFlag" title="CompoundPermitFlag">CompoundPermitFlag</a></li>
+            
+            <li><a href="#CompoundRoot" title="CompoundRoot">CompoundRoot</a></li>
+            
+            <li><a href="#CompoundRule" title="CompoundRule">CompoundRule</a></li>
+            
+            <li><a href="#CompoundSyllable" title="CompoundSyllable">CompoundSyllable</a></li>
+            
+            <li><a href="#CompoundWordMax" title="CompoundWordMax">CompoundWordMax</a></li>
+            
+            <li><a href="#OnlyinCompound" title="OnlyinCompound">OnlyinCompound</a></li>
+            
+            <li><a href="#SyllableNum" title="SyllableNum">SyllableNum</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="WhiteSpaceChars">WhiteSpaceChars:</a></p>
+      <img border="0" src="diagram/WhiteSpaceChars.png" height="80" width="188">
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#WhiteSpaceChars" title="WhiteSpaceChars" shape="rect">WhiteSpaceChars</a>
+         ::= [#x0009#x0020]</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#WS" title="WS">WS</a></li>
+            
+         </ul>
+         
+      </p><br><p style="font-size: 14px; font-weight:bold"><a name="EOL">EOL:</a></p>
+      <img border="0" src="diagram/EOL.png" height="112" width="334">
+      
+      <p>
+         
+         <div class="ebnf"><pre><a href="#EOL" title="EOL" shape="rect">EOL</a>      ::= #x000d #x000a?
+           | #x000a</pre></div>
+         
+      </p>
+      
+      <p>referenced by:
+         
+         <ul>
+            
+            <li><a href="#LE" title="LE">LE</a></li>
+            
+         </ul>
+         
+      </p><br><hr>
       
       <p>
          
@@ -683,7 +1139,7 @@
                </td>
                
                <td><a name="Railroad-Diagram-Generator" title="http://www.bottlecaps.de/rr/ui" href="http://www.bottlecaps.de/rr/ui" target="_blank">
-                     <img border="0" src="diagram/Railroad-Diagram-Generator.png" height="16" width="16"></a></td>
+                     <img border="0" src="diagram/rr-1.48.1593.png" height="16" width="16"></a></td>
                
             </tr>
             

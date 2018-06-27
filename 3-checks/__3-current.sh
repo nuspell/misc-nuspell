@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 exit
 # under cosntruction
@@ -32,7 +32,7 @@ for path in `find ../1-support/packages -type f -name '*.aff'|sort`; do
 	language=`basename $affix .aff`
 
 	if [ -e words/$language/gathered ]; then
-		echo -en 'Running current Nuspell on gathered words for '$language
+		echo -n 'Running current Nuspell on gathered words for '$language
 		mkdir -p current/$language
 		../../nuspell/src/nuspell/nuspell -d `echo $path|sed -e 's/\.aff//'` words/$language/gathered > current/$language/gathered 2> /dev/null
 		paste -d"\t" current/$language/gathered words/$language/gathered > current/$language/gathered.tsv

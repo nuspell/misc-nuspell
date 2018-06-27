@@ -1,3 +1,9 @@
+#!/usr/bin/env sh
+
+# author: Sander van Geloven
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# description: downloads Wikipedia exports
+
 download() {
 	xml_name=`basename $2 .bz2`
 	if [ -e $2 -o -e $xml_name ]; then
@@ -7,6 +13,31 @@ download() {
 		wget -q $1/$2
 	fi
 }
+
+
+# English
+
+#download https://dumps.wikimedia.org/enwiki/latest \
+#	enwiki-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwiktionary/latest \
+#	enwiktionary-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikivoyage/latest \
+#	enwikivoyage-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikimedia/latest \
+#	enwikimedia-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikinews/latest \
+#	enwikinews-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikiversity/latest \
+#	enwikiversity-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/enwikibooks/latest \
+##	enwikibooks-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/enwikiquote/latest \
+##	enwikiquote-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/enwikisource/latest \
+##	enwikisource-latest-pages-articles-multistream.xml.bz2
+
+
+# Dutch
 
 download https://dumps.wikimedia.org/nlwiki/latest \
 	nlwiki-latest-pages-articles-multistream.xml.bz2
@@ -24,6 +55,9 @@ download https://dumps.wikimedia.org/nlwikinews/latest \
 ##	nlwikiquote-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/nlwikisource/latest \
 ##	nlwikisource-latest-pages-articles-multistream.xml.bz2
+
+
+# Macedonian
 
 download https://dumps.wikimedia.org/mkwiki/latest \
 	mkwiki-latest-pages-articles-multistream.xml.bz2

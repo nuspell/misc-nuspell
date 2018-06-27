@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 rm -f *.txt *.diff
 
 for file in *aff; do

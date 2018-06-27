@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if [ ! -e checks ]
 then
@@ -16,7 +16,7 @@ do
         do
             language=`echo $affix|sed 's/.*hunspell\/\(.*\)\.aff$/\1/'`
             wordlist=`../0-tools/hunspell_language_support_to_wordlist_name.sh $package $language`
-            if [ `echo $wordlist|grep -c ERROR` == 0 ]; then
+            if [ `echo $wordlist|grep -c ERROR` = 0 ]; then
                 echo '    language: '$language
                 dict=`echo $affix|sed 's/\.aff$/\.dic/'`
                 echo '    affix: '$affix

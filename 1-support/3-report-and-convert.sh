@@ -1,6 +1,8 @@
-# author: Sander van Geloven
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+#!/usr/bin/env sh
+
 # description: reports on Hunspell language support
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 if [ ! -d files ]; then
 	echo 'ERROR: Run the script ./2-extract.sh first.'
@@ -49,7 +51,7 @@ echo '|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.dic'|sort`; do
 	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
 	filename=`basename $file .dic`
-	echo $filename
+	echo -n $filename
     # crude encoding
 	encoding=`file $file|sed -e 's/^.*: //'|sed -e 's/ text//'|sed -e 's/ Unicode//'`
 	echo -n $encoding' | `' >> ../Dictionary-Files.md
@@ -58,7 +60,8 @@ for file in `find . -type f -name '*.dic'|sort`; do
         affix=`echo $file|sed -e 's/\.dic$/\.aff/'`
         if [ -e $affix ]; then
             # intended encoding
-            # bug bg_BG.aff:SET microsoft-cp1251
+            # https://bugs.documentfoundation.org/show_bug.cgi?id=117392
+            # bug bg_BG.aff:SET microsoft-cp1251 -> CP1251
             Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
 
             # autoskip medial when no aff file exists
@@ -70,7 +73,7 @@ for file in `find . -type f -name '*.dic'|sort`; do
             echo 'ERROR'
             exit 1
 		fi
-        echo '   '$Encoding
+        echo '\t'$Encoding
         if [ $Encoding = UTF-8 ]; then
 			cp $file ../utf8/$filename.txt
         else

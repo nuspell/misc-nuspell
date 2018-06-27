@@ -1,16 +1,17 @@
-# See https://github.com/attardi/wikiextractor
+#!/usr/bin/env sh
+
+# author: Sander van Geloven
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# description: extracts documents from Wikipedia exports
 
 extract() {
 	if [ -e $1 ]; then
-		echo 'INFO: Extracting '$1'...'
 		bunzip2 $1
-	else
-		echo 'INFO: Skipping '$1'...'
 	fi
 	xml_name=`basename $1 .bz2`
 	base_name=`basename $xml_name .xml`
+    echo $xml_name
 	if [ -e $xml_name ]; then
-		echo 'INFO: Wiki extracting '$xml_name'...'
 		rm -rf $base_name
 		WikiExtractor.py \
 --output $base_name \

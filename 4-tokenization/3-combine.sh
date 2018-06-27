@@ -1,3 +1,9 @@
+#!/usr/bin/env sh
+
+# author: Sander van Geloven
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# description: combines articles from Wikipedia exports
+
 rm -f combined-*.txt
 
 for i in *-latest-pages-articles-multistream/*/*; do

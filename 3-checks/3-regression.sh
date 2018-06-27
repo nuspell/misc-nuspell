@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
+
+# description: regression test specific git commit for function and speed
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 if [ $# -ge 2 ]; then
 	echo 'ERROR: Only one optional parameter indicating specific commit is allowed'

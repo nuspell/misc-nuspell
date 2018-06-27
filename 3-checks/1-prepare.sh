@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 if [ ! -d ../1-support/files -o ! -d ../1-support/utf8 ]; then
 	echo 'ERROR: Run the scripts in ../1-support/ first.'
@@ -51,24 +51,54 @@ if [ $language != an_ES -a $language != bg_BG -a $language != cs_CZ -a $language
 #		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'| sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/‑/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
 #	elif [ $language = fr ];then # split on hyphen and ndash and underscore
 #		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/[_–-]/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	if [ $language = ar ];then # custom # and ::
-		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|grep -v \# |grep -v :: |sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	elif [ $language = de_AT_frami -o $language = de_AT -o $language = de_CH_frami -o $language = de_CH -o $language = de_DE_frami -o $language = de_DE ];then # also license # also '(STp'
-		tail -n +18 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|grep -v '(STp' |sort|uniq > words/$platform/$language/dict_$version
-	elif [ $language = it_IT ];then # also license
-		tail -n +35 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	else # default
-		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
-	fi
+#	if [ $language = ar ];then # custom # and ::
+#		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|grep -v \# |grep -v :: |sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
+#	if [ $language = de_AT_frami -o $language = de_AT -o $language = de_CH_frami -o $language = de_CH -o $language = de_DE_frami -o $language = de_DE ];then # also license # also '(STp'
+#		tail -n +18 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|grep -v '(STp' |sort|uniq > words/$platform/$language/dict_$version
+#	elif [ $language = it_IT ];then # also license
+#		tail -n +35 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
+#	else # default
+
+
+# 1) remove end of line
+#    " ts:transitiva / pronominal VOLG: t pr al:zólar"
+#
+# 2) remove all after non-escaped slash, including that slash
+#    "t\/m/!" -> "t\/m"
+#
+# 3) unescape escaped slashes
+#    "t\/m" -> "t/m"
+#
+# 4) remove all after a tab or after a hash, including tab and hash
+#
+# 5) remove question mark at beginning of line
+#    "!boerbul" -> "boerbul"
+#    https://bugs.documentfoundation.org/show_bug.cgi?id=118344
+#
+# 6) remove lines starting with two colons
+#    "::::::::::::::"
+#    https://bugs.documentfoundation.org/show_bug.cgi?id=117389
+#
+# 7) Remove (Stp frmo German dictionary files
+#    https://bugs.documentfoundation.org/show_bug.cgi?id=118343
+#    "(STp" -> ""
+#
+# 8) remove empty lines
+#    https://bugs.documentfoundation.org/show_bug.cgi?id=117408
+
+		tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/[\t#].*//'|sed -e 's/^!//'|grep -v '^::'|grep -v '(STp'|grep -v '^$'|sort|uniq > words/$platform/$language/dict_$version
+#	fi
 
 	word_list=`../0-tools/hunspell_language_support_to_word_list_name.sh $language`
-	if [ `echo $word_list|grep -c ERROR` == 0 ]; then
+	if [ `echo $word_list|grep -c ERROR` = 0 ]; then
 		wordpackage=`echo $word_list|awk '{print $2}'`
 		wordfile=`echo $word_list|awk '{print $3}'`
-#		echo -e '\t\twordpackage '$wordpackage
-#		echo -e '\t\twordfile '$wordfile
+echo
+echo $wordpackage
+echo $wordfile
 		for list in ../2-word-lists/files/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
+echo $wordversion
 			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo -o $language = eo ]; then # split on hyphen
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			else

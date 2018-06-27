@@ -1,9 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# Name: test_hunspell_language_support_to_word_list_name.sh
-# Description: Test the script hunspell_language_support_to_word_list_name.sh
-# License: MPL 1.1/GPL 2.0/LGPL 2.1
-# Author: Pander <pander@users.sourceforge.net>
+# description: Test the script hunspell_language_support_to_word_list_name.sh
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Pander <pander@users.sourceforge.net>
 
 #TODO Optimise this script, also add echo for input.
 

@@ -1,4 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
+
+# description: report on extracted dictionaries and convert .dic files to UTF-8
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 if [ ! -d packages ]; then
 	echo 'ERROR: Run the script ./2-extract.sh first.'
@@ -62,7 +66,7 @@ for aff in `find ../1-support/packages/ -type f -name '*.aff'|sort`; do
 	language=`basename $aff .aff`
 	aff_type=`file $aff|sed -e 's/^.*: //'|sed -e 's/, with very long lines//'`
 	word_list=`../0-tools/hunspell_language_support_to_word_list_name.sh $language`
-	if [ `echo $word_list|grep -c ERROR` == 0 ]; then
+	if [ `echo $word_list|grep -c ERROR` = 0 ]; then
 		package=`echo $word_list|awk '{print $2}'`
 		filename=`echo $word_list|awk '{print $3}'`
 		for wl in `find packages/$package/*/usr/share/dict/$filename -type f|sort`; do

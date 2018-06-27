@@ -1,8 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
-# author: Sander van Geloven
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # description: extract packages with word lists
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 platform=`../0-tools/platform.sh`
 
@@ -12,22 +12,28 @@ if [ ! -d packages ]; then
 fi
 
 if [ -e files ]; then
-	rm -rf files
+	rm -rf files/*
+else
+    mkdir files
 fi
-mkdir files
+cd files
 
-cd packages
 if [ $platform = linux ]; then
-	for i in *.deb; do
-		VERSION=`echo $i|sed 's/.*_\(.*\)_.*/\1/'`
-		DIRECTORY=`echo $i|sed 's/\([^_]\)_.*/\1/'`
-		echo -e $DIRECTORY'\t'$VERSION
-		mkdir -p ../files/$DIRECTORY/$VERSION
-		dpkg -x $i ../files/$DIRECTORY/$VERSION
-	done
-elif [ $platform = freebsd ]; then
-	echo
-fi
-cd ..
 
-rm -rf files/*/*/usr/share/doc files/*/*/usr/share/man
+	for i in `ls ../packages/*.deb|sort`; do
+		DIRECTORY=`echo $i|sed 's/\([^_]\)_.*/\1/'`
+		VERSION=`echo $i|sed 's/.*_\(.*\)_.*/\1/'`
+		echo $DIRECTORY'\t'$VERSION
+		mkdir -p $DIRECTORY/$VERSION
+		dpkg -x $i $DIRECTORY/$VERSION
+        rm -rf $DIRECTORY/$VERSION/usr/share/doc \
+        $DIRECTORY/$VERSION/usr/share/man
+	done
+
+elif [ $platform = freebsd ]; then
+
+	echo TODO
+
+fi
+
+cd ..

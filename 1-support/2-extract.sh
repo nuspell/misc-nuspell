@@ -1,6 +1,8 @@
-# author: Sander van Geloven
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+#!/usr/bin/env sh
+
 # description: extracts downloaded packages with Hunspell language support
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 platform=`../0-tools/platform.sh`
 
@@ -21,12 +23,13 @@ if [ $platform = linux ]; then
 	for i in `ls ../packages/*.deb|sort`; do
 		DIRECTORY=`basename $i|awk -F _ '{print $1}'`
 		VERSION=`basename $i|awk -F _ '{print $2}'`
-		echo -e $DIRECTORY'\t'$VERSION
+		echo $DIRECTORY'\t'$VERSION
 		mkdir -p $DIRECTORY/$VERSION
 		dpkg -x $i $DIRECTORY/$VERSION
 	    rm -rf $DIRECTORY/$VERSION/usr/share/doc \
-        $DIRECTORY/$VERSION/usr/share/myspell #\
-#        $DIRECTORY/$VERSION/usr/share/hyphen
+        $DIRECTORY/$VERSION/usr/share/myspell \
+        $DIRECTORY/$VERSION/usr/share/hyphen \
+        $DIRECTORY/$VERSION/usr/share/man
 	done
 
 elif [ $platform = freebsd ]; then
@@ -35,7 +38,7 @@ elif [ $platform = freebsd ]; then
 	for i in `ls ../packages/*.txz|sort`; do
 		DIRECTORY=`basename $i .txz|awk -F '-hunspell-' '{print $1}'|awk -F '-myspell-' '{print $1}'`
 		VERSION=`basename $i .txz|awk -F '-hunspell-' '{print $2}'|awk -F '-myspell-' '{print $2}'`
-		echo -e $DIRECTORY'\t'$VERSION
+		echo $DIRECTORY'\t'$VERSION
 		mkdir -p $DIRECTORY/$VERSION
 		tar xf $i -C $DIRECTORY/$VERSION 2> /dev/null
 		mv $DIRECTORY/$VERSION/usr/local/* $DIRECTORY/$VERSION/usr

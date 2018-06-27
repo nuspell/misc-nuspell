@@ -99,7 +99,7 @@ Some available packages are omitted from this overview and testing framework. Pa
 
 ## Dictionary files
 
-A total of 94 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
+A total of 90 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
 
 | Package | Version | Filename | File Type | Lines |
 |---|---|---|---|--:|
@@ -176,4 +176,131 @@ A total of 94 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN.dic` | UTF-8 | `6632` |
 | `myspell-eo` | `2.1.2000.02.25-55` | `eo.dic` | ISO-8859 | `18219` |
 | `myspell-et` | `1%3a20030606-27` | `et_EE.dic` | ISO-8859 | `282174` |
-| `myspell-et` | `1%3a20030606-27` | `usr` | `share` | `hyphen` | `hyph_et_EE.dic` | ISO-8859 | `3692` |
+| `myspell-fa` | `0.20070816-3` | `fa_IR.dic` | UTF-8 | `331789` |
+| `myspell-fo` | `0.4.2-11` | `fo.dic` | ISO-8859 | `396161` |
+| `myspell-ga` | `2.0-25` | `ga_IE.dic` | ISO-8859 | `65287` |
+| `myspell-gv` | `0.50-13` | `gv_GB.dic` | ISO-8859 | `32359` |
+| `myspell-hy` | `0.20.0-2` | `hy_AM.dic` | UTF-8 | `63808` |
+| `myspell-lv` | `0.9.6-5` | `lv_LV.dic` | ISO-8859 | `156215` |
+| `myspell-nr` | `20070206-4ubuntu3` | `nr_ZA.dic` | ASCII | `12747` |
+| `myspell-ns` | `20070206-4ubuntu3` | `ns_ZA.dic` | ASCII | `4935` |
+| `myspell-sq` | `1.6.4-1` | `sq_AL.dic` | ISO-8859 | `229506` |
+| `myspell-ss` | `20070206-4ubuntu3` | `ss_ZA.dic` | ASCII | `18970` |
+| `myspell-st` | `20070206-5ubuntu2` | `st_ZA.dic` | ASCII | `6457` |
+| `myspell-tl` | `0.4-0-17` | `tl.dic` | ISO-8859 | `16428` |
+| `myspell-tn` | `20070206-4ubuntu3` | `tn_ZA.dic` | ASCII | `10866` |
+| `myspell-ts` | `20070207-4ubuntu3` | `ts_ZA.dic` | ASCII | `28355` |
+| `myspell-ve` | `20070206-3ubuntu2` | `ve_ZA.dic` | UTF-8 | `8787` |
+| `myspell-xh` | `20070206-4ubuntu3` | `xh_ZA.dic` | ASCII | `18122` |
+| `myspell-zu` | `20070207-5ubuntu2` | `zu_ZA.dic` | ASCII | `73250` |
+## File types
+
+The following pairs of affix file and dictionary file have a different file type. This might be a problem in some cases.
+
+| Language | Affix file type | Dictionary file type |
+|---|---|---|
+| `an_ES` | ISO-8859 text | data |
+| `hu_HU` | Non-ISO extended-ASCII text, with LF, NEL line terminators | UTF-8 Unicode text |
+| `ne_NP` | UTF-8 Unicode text | UTF-8 Unicode text, with CRLF, LF line terminators |
+| `pt_BR` | ISO-8859 text, with CRLF line terminators | Non-ISO extended-ASCII text, with CRLF line terminators |
+| `ru_RU` | ISO-8859 text | ISO-8859 text, with CRLF, LF line terminators |
+| `gv_GB` | ASCII text | ISO-8859 text |
+| `ns_ZA` | ISO-8859 text | ASCII text |
+| `ss_ZA` | ISO-8859 text | ASCII text |
+| `st_ZA` | ISO-8859 text | ASCII text |
+| `tn_ZA` | ISO-8859 text | ASCII text |
+| `ve_ZA` | ISO-8859 text | UTF-8 Unicode text |
+## Encodings mentioned
+
+TODO
+
+| File | Encoding |
+|--|---|
+| `af_ZA` | ISO8859-1 |
+| `an_ES` | ISO8859-1 |
+| `ar` | SET UTF-8 |
+| `be_BY` | UTF-8 |
+| `bg_BG` | microsoft-cp1251 |
+| `bn_BD` | UTF-8 |
+| `bo` | UTF-8 |
+| `br_FR` | UTF-8 |
+| `bs_BA` | ISO8859-2 |
+| `ca` | UTF-8 |
+| `ca_ES-valencia` | UTF-8 |
+| `cs_CZ` | ISO8859-2 |
+| `da_DK` | UTF-8 |
+| `de_AT` | ISO8859-1 |
+| `de_AT_frami` | ISO8859-1 |
+| `de_CH` | ISO8859-1 |
+| `de_CH_frami` | ISO8859-1 |
+| `de_DE` | ISO8859-1 |
+| `de_DE_frami` | ISO8859-1 |
+| `dz` | UTF-8 |
+| `el_GR` | ISO8859-7 |
+| `en_AU` | UTF-8 |
+| `en_CA` | UTF-8 |
+| `en_GB` | UTF-8 |
+| `en_US` | UTF-8 |
+| `en_ZA` | UTF-8 |
+| `es_ES` | UTF-8 |
+| `eu` | ISO-8859-1 |
+| `fr` | UTF-8 |
+| `gd_GB` | UTF-8 |
+| `gl_ES` | UTF-8 |
+| `gu_IN` | UTF-8 |
+| `gug_PY` | UTF-8 |
+| `he_IL` | UTF-8 |
+| `hi_IN` | UTF-8 |
+| `hr_HR` | UTF-8 |
+| `hu_HU` | UTF-8 |
+| `is_IS` | UTF-8 |
+| `it_IT` | ISO8859-15 |
+| `kk_KZ` | UTF-8 |
+| `kmr_Latn` | UTF-8 |
+| `ko` | UTF-8 |
+| `lo_LA` | UTF-8 |
+| `lt_LT` | ISO8859-13 |
+| `ml_IN` | UTF-8 |
+| `ne_NP` | UTF-8 |
+| `nl` | UTF-8 |
+| `nb_NO` | ISO8859-1 |
+| `nn_NO` | ISO8859-1 |
+| `oc_FR` | ISO8859-15 |
+| `pl_PL` | ISO8859-2 |
+| `pt_BR` | ISO8859-1 |
+| `pt_PT` | UTF-8 |
+| `ro_RO` | UTF-8 |
+| `ru_RU` | KOI8-R |
+| `se` | UTF-8 |
+| `si_LK` | UTF-8 |
+| `sk_SK` | UTF-8 |
+| `sl_SI` | ISO8859-2 |
+| `sr_Latn_RS` | UTF-8 |
+| `sr_RS` | UTF-8 |
+| `sv_FI` | UTF-8 |
+| `sv_SE` | UTF-8 |
+| `sw_TZ` | ISO8859-1 |
+| `te_IN` | UTF-8 |
+| `th_TH` | TIS-620 |
+| `uk_UA` | UTF-8 |
+| `uz_UZ` | UTF-8 |
+| `vi_VN` | UTF-8 |
+| `eo` | ISO8859-3 |
+| `et_EE` | ISO8859-15 |
+| `fa_IR` | UTF-8 |
+| `fo` | ISO8859-1 |
+| `ga_IE` | ISO8859-1 |
+| `gv_GB` | ISO8859-1 |
+| `hy_AM` | UTF-8 |
+| `lv_LV` | ISO8859-13 |
+| `nr_ZA` | ISO8859-1 |
+| `ns_ZA` | ISO8859-15 |
+| `sq_AL` | ISO8859-1 |
+| `ss_ZA` | ISO8859-1 |
+| `st_ZA` | ISO8859-1 |
+| `tl` | ISO8859-1 |
+| `tn_ZA` | ISO8859-2 |
+| `ts_ZA` | ISO8859-1 |
+| `ve_ZA` | UTF-8 |
+| `xh_ZA` | ISO8859-1 |
+| `zu_ZA` | ISO8859-1 |

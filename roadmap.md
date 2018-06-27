@@ -10,25 +10,26 @@ The current roadmap for [Nuspell](https://en.wikipedia.org/wiki/Hunspell) is as 
     * [ ] 2018Q3 **Milestone 4** - personal dictionary and release API and ABI
 * [ ] **Version 2.1**
     * [ ] 2018Q2 Funding application at ???
-    * [ ] 2018Q? Milestone e - documented language bindings
-    * [ ] 2021Q? Milestone f - support (medical) extension dictionaries
-    * [ ] 2019Q? Milestone g - speed optimization with cacheing
-    * [ ] 2019Q? Milestone h - data optimization with triegraphs
+    * [ ] 2018Q? Milestone e - orchestrate porting and packaging
+    * [ ] 2018Q? Milestone f - documented language bindings
+    * [ ] 2021Q? Milestone g - support (medical) extension dictionaries
+    * [ ] 2019Q? Milestone h - speed optimization with cacheing
+    * [ ] 2019Q? Milestone i - data optimization with triegraphs
 * [ ] **Version 2.2**
     * [ ] 2019Q1 Funding application at ???
-    * [ ] 2019Q? Milestone i - speed optimization with multi-threading
-    * [ ] 2019Q? Milestone j - support warnings on words
-    * [ ] 2020Q? Milestone k - support URLs for more spelling information
-    * [ ] 2020Q? Milestone l - support stemming of words
+    * [ ] 2019Q? Milestone j - speed optimization with multi-threading
+    * [ ] 2019Q? Milestone k - support warnings on words
+    * [ ] 2020Q? Milestone l - support URLs for more spelling information
+    * [ ] 2020Q? Milestone m - support stemming of words
 * [ ] **Version 2.3**
     * [ ] 2021Q? Funding application at ???
-    * [ ] 2021Q? Milestone m - web service
-    * [ ] 2021Q? Milestone n - support part-of-speech tags
-    * [ ] 2021Q? Milestone o - ...
+    * [ ] 2021Q? Milestone n - web service
+    * [ ] 2021Q? Milestone o - support part-of-speech tags
+    * [ ] 2021Q? Milestone p - ...
 * [ ] **Version 3.0**
     * [ ] 2022Q? Funding application at ???
-    * [ ] 2022Q? Milestone p - strickter dictionary file format, e.g. YAML
-    * [ ] 2022Q? Milestone q - ...
+    * [ ] 2022Q? Milestone q - strickter dictionary file format, e.g. YAML
+    * [ ] 2022Q? Milestone r - ...
 
 Note that milestones from unfunded versions can be reordered.
 

@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo '# Spell checking the following words:'
 echo
 cat words-with-symbols.txt

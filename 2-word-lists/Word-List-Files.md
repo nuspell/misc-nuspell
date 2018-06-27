@@ -36,14 +36,3 @@ The following combinations of affix file and word list file have a different fil
 
 | Affix File | Affix File Type | Word List File | Word List File Type |
 |---|---|---|---|
-| `ca` | UTF-8 Unicode text, with CRLF line terminators | `catala` | UTF-8 Unicode text |
-| `de_CH` | ISO-8859 text | `swiss` | UTF-8 Unicode text |
-| `de_CH_frami` | ISO-8859 text | `swiss` | UTF-8 Unicode text |
-| `de_DE` | ISO-8859 text | `ngerman` | UTF-8 Unicode text |
-| `de_DE_frami` | ISO-8859 text | `ngerman` | UTF-8 Unicode text |
-| `eo` | ISO-8859 text | `esperanto` | UTF-8 Unicode text |
-| `gd_GB` | UTF-8 Unicode text | `gaelic` | ISO-8859 text |
-| `it_IT` | ISO-8859 text | `italian` | UTF-8 Unicode text |
-| `pl_PL` | ISO-8859 text | `polish` | UTF-8 Unicode text |
-| `pt_BR` | ISO-8859 text, with CRLF line terminators | `brazilian` | ISO-8859 text |
-| `sv_SE` | UTF-8 Unicode text | `swedish` | ISO-8859 text |

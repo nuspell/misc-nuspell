@@ -1,6 +1,8 @@
-# author: Sander van Geloven
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+#!/usr/bin/env sh
+
 # description: downloads packages with Hunspell language support
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 platform=`../0-tools/platform.sh`
 

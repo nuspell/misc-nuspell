@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env sh
 
 function diagrams() {
 	type=`echo $1|sed -e 's/\(.*\)/\L\1/'`
