@@ -34,10 +34,13 @@ The current roadmap for [Nuspell](https://en.wikipedia.org/wiki/Hunspell) is as 
 Note that milestones from unfunded versions can be reordered.
 
 Potential funding organisations are:
-* [Adobe](https://www.adobe.com/about-adobe/sponsorship.html) (and in [Dutch](https://www.adobe.com/about-adobe/sponsorship.html))
+* [Adobe](https://www.adobe.com/about-adobe/sponsorship.html) (and in [Dutch](https://www.adobe.com/about-adobe/sponsorship.html)) and [Matching Grants](https://www.adobe.com/corporate-responsibility/community/matching-grants.html)
 * [Mozilla](https://wiki.mozilla.org/MOSS)
 * [Apple](https://developer.apple.com/)
-* [Google](https://developers.google.com/web/tools/chrome-devtools/)
+* [Google](https://opensource.google.com/docs/growing/funding/)
+* [Opera](https://www.operasoftware.com/press/contact)
+* [The Document Foundation](https://www.documentfoundation.org/contacts/get-in-touch/) for LibreOffice
+* [Canonical](https://community.ubuntu.com/t/ubuntu-donations-funding/29) for Ubuntu
 
 Current and previous sponsors:
 
