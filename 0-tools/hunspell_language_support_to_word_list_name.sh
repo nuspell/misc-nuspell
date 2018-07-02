@@ -118,6 +118,9 @@ gd_GB)
 gl_ES)
 	echo $1'\twgalician-minimos\tgalician-minimos'
 	;;
+gv_GB)
+    echo $1'\twmanx\tmanx'
+    ;;
 #FIXME    it_CH)
 it_IT)
 	echo $1'\twitalian\titalian'

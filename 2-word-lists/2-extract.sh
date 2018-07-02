@@ -21,7 +21,8 @@ cd files
 if [ $platform = linux ]; then
 
 	for i in `ls ../packages/*.deb|sort`; do
-		DIRECTORY=`echo $i|sed 's/\([^_]\)_.*/\1/'`
+        filename=`basename $i`
+		DIRECTORY=`echo $filename|sed 's/\([^_]\)_.*/\1/'`
 		VERSION=`echo $i|sed 's/.*_\(.*\)_.*/\1/'`
 		echo $DIRECTORY'\t'$VERSION
 		mkdir -p $DIRECTORY/$VERSION

@@ -17,18 +17,18 @@ download() {
 
 # English
 
-#download https://dumps.wikimedia.org/enwiki/latest \
-#	enwiki-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/enwiktionary/latest \
-#	enwiktionary-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/enwikivoyage/latest \
-#	enwikivoyage-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/enwikimedia/latest \
-#	enwikimedia-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/enwikinews/latest \
-#	enwikinews-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/enwikiversity/latest \
-#	enwikiversity-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwiki/latest \
+	enwiki-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwiktionary/latest \
+	enwiktionary-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwikivoyage/latest \
+	enwikivoyage-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwikimedia/latest \
+	enwikimedia-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwikinews/latest \
+	enwikinews-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/enwikiversity/latest \
+	enwikiversity-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/enwikibooks/latest \
 ##	enwikibooks-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/enwikiquote/latest \
@@ -39,16 +39,16 @@ download() {
 
 # Dutch
 
-download https://dumps.wikimedia.org/nlwiki/latest \
-	nlwiki-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/nlwiktionary/latest \
-	nlwiktionary-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/nlwikivoyage/latest \
-	nlwikivoyage-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/nlwikimedia/latest \
-	nlwikimedia-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/nlwikinews/latest \
-	nlwikinews-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/nlwiki/latest \
+#	nlwiki-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/nlwiktionary/latest \
+#	nlwiktionary-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/nlwikivoyage/latest \
+#	nlwikivoyage-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/nlwikimedia/latest \
+#	nlwikimedia-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/nlwikinews/latest \
+#	nlwikinews-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/nlwikibooks/latest \
 ##	nlwikibooks-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/nlwikiquote/latest \
@@ -59,13 +59,13 @@ download https://dumps.wikimedia.org/nlwikinews/latest \
 
 # Macedonian
 
-download https://dumps.wikimedia.org/mkwiki/latest \
-	mkwiki-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/mkwiktionary/latest \
-	mkwiktionary-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/mkwikimedia/latest \
-	mkwikimedia-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/mkwikibooks/latest \
-#	mkwikibooks-latest-pages-articles-multistream.xml.bz2
-#download https://dumps.wikimedia.org/mkwikisource/latest \
-#	mkwikisource-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/mkwiki/latest \
+#	mkwiki-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/mkwiktionary/latest \
+#	mkwiktionary-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/mkwikimedia/latest \
+#	mkwikimedia-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/mkwikibooks/latest \
+##	mkwikibooks-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/mkwikisource/latest \
+##	mkwikisource-latest-pages-articles-multistream.xml.bz2
