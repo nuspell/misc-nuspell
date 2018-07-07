@@ -59,7 +59,7 @@ print('')
 print('| special characters ocurring |   |')
 print('|---|---|')
 
-# order below is partly optmized by overall frequency in dic files
+# order below is partly optimized by overall frequency in dic files
 
 
 if '/' in chars:
@@ -166,7 +166,13 @@ print('| count | char | code | category | name |')
 print('|--:|---|--:|---|---|')
 for char, count in sorted(chars.items(), key=itemgetter(1)):
 	try:
-		print('| {} | `{}` | `{}` | {} | {} |'.format(count, char, hex(ord(char)), decode_category(char), name(char).lower()))
+		if char == '|':
+			print('| {} | <code>&#124;</code> | `{}` | {} | {} |'.format(count, hex(ord(char)), decode_category(char), name(char).lower()))
+		else:
+			print('| {} | `{}` | `{}` | {} | {} |'.format(count, char, hex(ord(char)), decode_category(char), name(char).lower()))
 	except ValueError:
-		print('| {} | `{}` | `{}` | VALUE ERROR | {} |'.format(count, char, hex(ord(char)), decode_category(char)))
+		if char == '\t':
+			print('| {} | `{}` | `{}` | {} | character tabulation |'.format(count, char, hex(ord(char)), decode_category(char)))
+		else:
+			print('| {} | `{}` | `{}` | {} | VALUE ERROR |'.format(count, char, hex(ord(char)), decode_category(char)))
 
