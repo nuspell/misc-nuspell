@@ -1,6 +1,6 @@
 # Roadmap
 
-The current roadmap for [Nuspell](https://en.wikipedia.org/wiki/Hunspell) is as follows:
+The current **CONCEPT** roadmap for [Nuspell](https://en.wikipedia.org/wiki/Hunspell) is as follows:
 
 * [ ] **Version 2.0**
     * [x] 2017Q3 Funding application at [Mozilla Open Source Support (MOSS)](https://www.mozilla.org/en-US/moss/)¹²
