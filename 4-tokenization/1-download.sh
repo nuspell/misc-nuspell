@@ -17,24 +17,44 @@ download() {
 
 # English
 
-download https://dumps.wikimedia.org/enwiki/latest \
-	enwiki-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/enwiktionary/latest \
-	enwiktionary-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/enwikivoyage/latest \
-	enwikivoyage-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/enwikimedia/latest \
-	enwikimedia-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/enwikinews/latest \
-	enwikinews-latest-pages-articles-multistream.xml.bz2
-download https://dumps.wikimedia.org/enwikiversity/latest \
-	enwikiversity-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwiki/latest \
+#	enwiki-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwiktionary/latest \
+#	enwiktionary-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikivoyage/latest \
+#	enwikivoyage-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikimedia/latest \
+#	enwikimedia-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikinews/latest \
+#	enwikinews-latest-pages-articles-multistream.xml.bz2
+#download https://dumps.wikimedia.org/enwikiversity/latest \
+#	enwikiversity-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/enwikibooks/latest \
 ##	enwikibooks-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/enwikiquote/latest \
 ##	enwikiquote-latest-pages-articles-multistream.xml.bz2
 ##download https://dumps.wikimedia.org/enwikisource/latest \
 ##	enwikisource-latest-pages-articles-multistream.xml.bz2
+
+
+# German
+
+download https://dumps.wikimedia.org/dewiki/latest \
+	dewiki-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/dewiktionary/latest \
+	dewiktionary-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/dewikivoyage/latest \
+	dewikivoyage-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/dewikiversity/latest \
+	dewikiversity-latest-pages-articles-multistream.xml.bz2
+download https://dumps.wikimedia.org/dewikinews/latest \
+	dewikinews-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/dewikibooks/latest \
+##	dewikibooks-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/dewikiquote/latest \
+##	dewikiquote-latest-pages-articles-multistream.xml.bz2
+##download https://dumps.wikimedia.org/dewikisource/latest \
+##	dewikisource-latest-pages-articles-multistream.xml.bz2
 
 
 # Dutch

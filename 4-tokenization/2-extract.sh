@@ -5,12 +5,12 @@
 # description: extracts documents from Wikipedia exports
 
 extract() {
+	xml_name=`basename $1 .bz2`
+	base_name=`basename $xml_name .xml`
+	echo $xml_name
 	if [ -e $1 ]; then
 		bunzip2 $1
 	fi
-	xml_name=`basename $1 .bz2`
-	base_name=`basename $xml_name .xml`
-    echo $xml_name
 	if [ -e $xml_name ]; then
 		rm -rf $base_name
 		WikiExtractor.py \
@@ -51,17 +51,32 @@ $xml_name
 	fi
 }
 
-extract nlwiki-latest-pages-articles-multistream.xml.bz2
-extract nlwiktionary-latest-pages-articles-multistream.xml.bz2
-extract nlwikivoyage-latest-pages-articles-multistream.xml.bz2
-extract nlwikimedia-latest-pages-articles-multistream.xml.bz2
-extract nlwikinews-latest-pages-articles-multistream.xml.bz2
+# German
+extract dewiki-latest-pages-articles-multistream.xml.bz2
+extract dewiktionary-latest-pages-articles-multistream.xml.bz2
+extract dewikivoyage-latest-pages-articles-multistream.xml.bz2
+extract dewikiversity-latest-pages-articles-multistream.xml.bz2
+extract dewikinews-latest-pages-articles-multistream.xml.bz2
+##extract dewikibooks-latest-pages-articles-multistream.xml.bz2
+##extract dewikiquote-latest-pages-articles-multistream.xml.bz2
+##extract dewikisource-latest-pages-articles-multistream.xml.bz2
+
+
+# Dutch
+
+#extract nlwiki-latest-pages-articles-multistream.xml.bz2
+#extract nlwiktionary-latest-pages-articles-multistream.xml.bz2
+#extract nlwikivoyage-latest-pages-articles-multistream.xml.bz2
+#extract nlwikimedia-latest-pages-articles-multistream.xml.bz2
+#extract nlwikinews-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikibooks-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikiquote-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikisource-latest-pages-articles-multistream.xml.bz2
 
-extract mkwiki-latest-pages-articles-multistream.xml.bz2
-extract mkwiktionary-latest-pages-articles-multistream.xml.bz2
-extract mkwikimedia-latest-pages-articles-multistream.xml.bz2
+# Macedonian
+
+#extract mkwiki-latest-pages-articles-multistream.xml.bz2
+#extract mkwiktionary-latest-pages-articles-multistream.xml.bz2
+#extract mkwikimedia-latest-pages-articles-multistream.xml.bz2
 ##extract mkwikibooks-latest-pages-articles-multistream.xml.bz2
 ##extract mkwikisource-latest-pages-articles-multistream.xml.bz2
