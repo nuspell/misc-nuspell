@@ -8,6 +8,8 @@
 [![](regression-testing-activity-diagram.svg)](regression-testing-activity-diagram.svg)
 [![](search-dictionaries-activity-diagram.svg)](search-dictionaries-activity-diagram.svg)
 [![](spell-activity-diagram.svg)](spell-activity-diagram.svg)
+[![](spell_break-activity-diagram.svg)](spell_break-activity-diagram.svg)
+[![](spell_priv-activity-diagram.svg)](spell_priv-activity-diagram.svg)
 [![](spell-recurse-breakpoints-activity-diagram.svg)](spell-recurse-breakpoints-activity-diagram.svg)
 [![](spell-upper-or-capitalized-activity-diagram.svg)](spell-upper-or-capitalized-activity-diagram.svg)
 [![](suffix-check-activity-diagram.svg)](suffix-check-activity-diagram.svg)

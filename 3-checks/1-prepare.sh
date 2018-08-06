@@ -93,12 +93,8 @@ if [ $language != an_ES -a $language != bg_BG -a $language != cs_CZ -a $language
 	if [ `echo $word_list|grep -c ERROR` = 0 ]; then
 		wordpackage=`echo $word_list|awk '{print $2}'`
 		wordfile=`echo $word_list|awk '{print $3}'`
-echo
-echo $wordpackage
-echo $wordfile
 		for list in ../2-word-lists/files/$wordpackage/*/usr/share/dict/$wordfile; do
 			wordversion=`echo $list|awk -F '/' '{print $5}'`
-echo $wordversion
 			if [ $language = br_FR -o $language = en_CA -o $language = en_GB -o $language = en_US -o $language = en_ZA -o $language = nn_NO -o $language = nb_NO -o $language = oc_FR -o $language = ro_RO -o $language = sv_SE -o $language = sv_FI -o $language = sk_SK -o $language = sw_TZ -o $language = ga_IE -o $language = fo -o $language = eo ]; then # split on hyphen
 				cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/\t.*//g'|sed -e 's/#.*//g'|sed -e 's/\s/\n/g'|sed -e 's/,/\n/g'|sed -e 's/-/\n/g'|grep -v [_\&]|grep -v '^$'|sort|uniq > words/$platform/$language/list_$wordversion
 			else

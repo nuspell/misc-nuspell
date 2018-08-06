@@ -1,0 +1,53 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - Check Spelling - ""spell_priv(string s)""**\n
+
+start
+
+if (length **""s""** is greater or equal to global __""WORDMAXLENGTH""__?) then (yes)
+    :return __""BAD_WORD""__;
+	stop
+else (no)
+endif
+
+#skyblue:do on **""s""** global input conversion;
+
+partition "handle abbreviations and numbers  " {
+    if (**""s""** is empty?) then (yes)
+        :return __""GOOD_WORD""__;
+	    stop
+    elseif (last character **""s""** is __"".""__?) then (yes)
+        :set **""abbreviation""** to __""TRUE""__;
+    else (no)
+        :set **""abbreviation""** to __""FALSE""__;
+    endif
+
+    if (**""abbreviation""** is __""TRUE""__?) then (yes)
+        :remove from **""s""** trailing characters __"".""__;
+        if (**""s""** is empty?) then (yes)
+            :return __""GOOD_WORD""__;
+	        stop
+        else (no)
+        endif
+    elseif (<back:skyblue>//""is_number(s)""//</back> is __""TRUE""__?) then (yes)
+        :return __""GOOD_WORD""__;
+	    stop
+    else (no)
+    endif
+} 
+partition "handle break patterns  " {
+    #skyblue:remove from **""s""** global ignored characters;
+    :copy **""s""** to **""c""**;
+    :set **""ret""** to <back:skyblue>//""spell_break(s)""//</back>;
+    if (**""ret""** is not __""TRUE""__ and **""abbreviation""** is __""TRUE""__?) then (yes)
+        :append to **""s""** character __"".""__;
+        :set **""ret""** to <back:skyblue>//""spell_break(s)""//</back>;
+    else (no)
+    endif
+    :return **""ret""**;
+}
+
+stop
+
+@enduml

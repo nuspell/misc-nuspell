@@ -11,7 +11,7 @@ fi
 
 cd utf8
 
-for i in *.dic; do
+for i in *.txt; do
     filename=`basename $i .dic`
     echo $filename
     ../../0-tools/histogram.py $i > $filename-historgram.md

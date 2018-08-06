@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-
 function diagrams() {
 	type=`echo $1|sed -e 's/\(.*\)/\L\1/'`
 	if [ `find plantuml -name '*-'$type'-diagram.pu'|wc -l` -ne 0 ]; then

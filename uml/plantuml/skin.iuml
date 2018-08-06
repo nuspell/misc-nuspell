@@ -1,0 +1,10 @@
+skinparam BackgroundColor White|White
+skinparam ArrowColor Black
+
+skinparam NoteBackgroundColor White
+skinparam NoteBorderColor Black
+
+skinparam ActivityBackgroundColor White
+skinparam ActivityDiamondBackgroundColor White
+skinparam ActivityBorderColor Black
+skinparam ActivityDiamondBorderColor Black
