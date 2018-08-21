@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# description: analyses Hunspell language support
+# description: create histograms for word lists
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # author: Sander van Geloven
 
@@ -12,9 +12,10 @@ fi
 cd utf8
 
 for i in *.txt; do
-    filename=`basename $i .dic`
+    filename=`basename $i .txt`
     echo $filename
     ../../0-tools/histogram.py $i > $filename-historgram.md
 done
 
 cd ..
+

@@ -32,3 +32,8 @@ See also https://github.com/attardi/wikiextractor
     sudo pip3 install uniseg
 
 See also https://pypi.org/project/uniseg
+
+
+## Tokenize and count
+
+Counting of unique words will stop at 1048576 (2<sup>20</sup>) to limit the processing power needed. On contemporary computers, this still takes over 48 hours to complete!

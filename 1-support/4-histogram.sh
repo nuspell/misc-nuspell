@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# description: analysed word lists
+# description: create histograms for Hunspell language support
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # author: Sander van Geloven
 
@@ -18,4 +18,3 @@ for i in *.txt; do
 done
 
 cd ..
-

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# description: report on extracted dictionaries and convert .dic files to UTF-8
+# description: report on word lists and convert files to UTF-8
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # author: Sander van Geloven
 

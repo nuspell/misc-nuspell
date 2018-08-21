@@ -25,11 +25,19 @@ def count(word, histogram):
 				histogram[word] += 1
 			else:
 				histogram[word] = 1
+			if len(histogram) >= 1048576:
+				# histrogram limit is reached
+				# (compared to ==, using >= is extra safe)
+				return True
 			break
+	return False
 
 def process_uniseg(line, histogram):
 	for word in words(line):
-		count(word, histogram)
+		if count(word, histogram):
+			# histrogram limit is reached
+			return True
+	return False
 
 def process_nltk_uniseg(text, histogram):
 	# https://github.com/nltk/nltk/issues/1968
@@ -37,24 +45,27 @@ def process_nltk_uniseg(text, histogram):
 	for sentence in sent_tokenize(text, 'dutch'):
 		for word in word_tokenize(text, 'dutch'):
 			word = word.replace("ИЯЯБ", "'s").replace("БЯЯИ", "'d")
-			count(word, histogram)
+			if count(word, histogram):
+				# histrogram limit is reached
+				return True
+	return False
 
 def main():
 	for input in glob('combined-*.txt'):
 		lang = input[9:-4]
-		if lang != 'nl':#TODO
-			continue #TODO
-		histogram = {}
+		print('INFO: Processing {}'.format(lang))
+ 		histogram = {}
 		i = 0
 		opening = False
 		text = None
 		for line in open(input):
 			i += 1
 			if i % 1000 == 0:
-				print('INFO: Processing {} paragraph {}...'.format(lang, i))
+				print('INFO: Processing {} paragraph {}, found {} unique words...'.format(lang, i, len(histogram)))
 				
 			if line.startswith('<doc'):
 				opening = True
+				# start accumulating text
 				text = ''
 				# skip line with opening doc element
 				continue
@@ -63,15 +74,20 @@ def main():
 				# skip line with title
 				continue
 			elif line.startswith('</doc'):
-				# skip line with closing doc element
+				# processed accumulated text
 				if lang == 'nl':
-					process_nltk_uniseg(text, histogram)
+					if process_nltk_uniseg(text, histogram):
+						# histrogram limit is reached
+						break
+				# skip line with closing doc element
 				continue
-
 			if lang == 'nl':
+				# accumulate text
 				text += line
 			else:
-				process_uniseg(line, histogram)
+				if process_uniseg(line, histogram):
+					# histrogram limit is reached
+					break
 		report(histogram, lang)
 
 if __name__ == "__main__":

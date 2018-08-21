@@ -64,19 +64,19 @@ extract dewikinews-latest-pages-articles-multistream.xml.bz2
 
 # Dutch
 
-#extract nlwiki-latest-pages-articles-multistream.xml.bz2
-#extract nlwiktionary-latest-pages-articles-multistream.xml.bz2
-#extract nlwikivoyage-latest-pages-articles-multistream.xml.bz2
-#extract nlwikimedia-latest-pages-articles-multistream.xml.bz2
-#extract nlwikinews-latest-pages-articles-multistream.xml.bz2
+extract nlwiki-latest-pages-articles-multistream.xml.bz2
+extract nlwiktionary-latest-pages-articles-multistream.xml.bz2
+extract nlwikivoyage-latest-pages-articles-multistream.xml.bz2
+extract nlwikimedia-latest-pages-articles-multistream.xml.bz2
+extract nlwikinews-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikibooks-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikiquote-latest-pages-articles-multistream.xml.bz2
 ##extract nlwikisource-latest-pages-articles-multistream.xml.bz2
 
 # Macedonian
 
-#extract mkwiki-latest-pages-articles-multistream.xml.bz2
-#extract mkwiktionary-latest-pages-articles-multistream.xml.bz2
-#extract mkwikimedia-latest-pages-articles-multistream.xml.bz2
+extract mkwiki-latest-pages-articles-multistream.xml.bz2
+extract mkwiktionary-latest-pages-articles-multistream.xml.bz2
+extract mkwikimedia-latest-pages-articles-multistream.xml.bz2
 ##extract mkwikibooks-latest-pages-articles-multistream.xml.bz2
 ##extract mkwikisource-latest-pages-articles-multistream.xml.bz2
