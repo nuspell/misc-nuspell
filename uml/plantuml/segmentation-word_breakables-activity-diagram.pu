@@ -1,0 +1,60 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - segmentation - //""word_breakables(s)""//**\n
+
+start
+
+:**""s""** contains input string;
+floating note left
+    1 for "break" and 0 for "do not break".  The length of iteration 
+    will be the same as ``len(s)``.
+    
+    ""assert(list(word_breakables(u"ABC")) ==""
+    "        [1, 0, 0]);""
+
+    ""assert(list(word_breakables(u"Hello, world.")) ==""
+    ""       [1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1]);""
+
+    ""assert(list(word_breakables(u"\x01\u0308\x01")) ==""
+    ""       [1, 0, 1]);""
+end note
+
+if (**""s**"" is empty?) then (yes)
+    :return nothing;
+    stop
+else (no)
+endif
+
+:set **""primitive_boundaties**"" to list of //""preprocess_boundaries(s)""//;
+:set **""prev_prev_wb""** to __""nullptr""__;
+:set **""prev_wb""** to __""nullptr""__;
+:set **""prev_pos""** to __""0""__;
+
+while (iterate **""c""** over <back:skyblue>//""code_points(s)""//</back>?) is (yes)
+    :set **""prop""** to <back:skyblue>//""word_break(c)""//</back>;
+    if (**""prop""** is in (Newline, CR, LF)?) then (yes)
+        :yield(i, prop);
+        :set **""prev_prop""** to __""None""__;
+    elseif (**""prop""** in (Extend, Format)?) then (yes)
+        if (**""prev_prop""** is __""None""__?) then (yes)
+            :yield(i, prop);
+            :set **""prev_prop""** to **""prop""**;
+        else (no)
+        endif
+    else (no)
+        :yield(i, prop);
+        :set **""prev_prop""** to **""prop""**;
+    endif
+
+    while (iterate **""j""** over //""range(next_pos-pos)""//?) is (yes)
+        :yield(i, prop);
+    endwhile (no)
+    :set **""prev_pos""** to **""pos""**;
+    :set **""prev_prev_wb""** to **""prev_wb""**;
+    :set **""prev_wb""** to **""wb""**;
+endwhile (no)
+
+stop
+
+@enduml

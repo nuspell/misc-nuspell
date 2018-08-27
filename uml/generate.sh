@@ -16,11 +16,15 @@ function diagrams() {
 		fi
 		# Only generate if PlantUML file is new or is newer than SVG file
 		for i in plantuml/*-$type-diagram.pu; do
+			png=$type-diagrams/`basename $i pu`png
+			if [ $i -nt $png ]; then
+				echo 'Processing '$i'...'
+				plantuml -tpng -o ../$type-diagrams $i
+			fi
 			svg=$type-diagrams/`basename $i pu`svg
 			if [ $i -nt $svg ]; then
 				echo 'Processing '$i'...'
 				plantuml -tsvg -o ../$type-diagrams $i
-				plantuml -tpng -o ../$type-diagrams $i
 			fi
 		done 
 		echo '* [Hunspell - UML '$1' Diagrams]('$type'-diagrams/README.md)' >> README.md

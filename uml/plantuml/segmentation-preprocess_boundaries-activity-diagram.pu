@@ -1,0 +1,46 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - segmentation - //""preprocess_boundaries(s)""//**\n
+
+start
+
+:**""s""** contains input string;
+floating note left
+    ""result = list(preprocess_boundaries("\r\n"));""
+    ""assert(result == [(0, "CR"), (1, "LF")]);""
+
+    ""result = list(_preprocess_boundaries("A\u0308A"));""
+    ""assert(result == [(0, "ALetter"), (2, "ALetter")]);""
+
+    ""result = list(_preprocess_boundaries("\n\u2060"));""
+    ""assert(result == [(0, "LF"), (1, "Format")]);""
+
+    ""result = list(_preprocess_boundaries("\x01\u0308\x01"));""
+    ""assert(result == [(0, "Other"), (2, "Other")]);""
+end note
+
+:set **""prev_prop""** to __""nullptr""__;
+:set **""i""** to __""0""__;
+
+while (iterate **""c""** over <back:skyblue>//""code_points(s)""//</back>?) is (yes)
+    :set **""prop""** to //""word_break(c)""//;
+    if (**""prop""** is __"""Newline"""__, __"""CR"""__ or __"""LF"""__?) then (yes)
+        ://""yield(i, prop)""//;
+        :set **""prev_prop""** to __""nullptr""__;
+    elseif (**""prop""** is __"""Extend"""__ or __"""Format"""__?) then (yes)
+        if (**""prev_prop""** is __""nullptr""__?) then (yes)
+            ://""yield(i, prop)""//;
+            :set **""prev_prop""** to **""prop""**;
+        else (no)
+        endif
+    else (no)
+        ://""yield(i, prop)""//;
+        :set **""prev_prop""** to **""prop""**;
+    endif
+    :increment **""i""** with length of **""c""**;
+endwhile (no)
+
+stop
+
+@enduml

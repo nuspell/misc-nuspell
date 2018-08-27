@@ -1,0 +1,27 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - segmentation - //""code_points(s)""//**\n
+
+start
+
+:**""s""** contains input string;
+floating note left
+    Iterate every Unicode code points of the unicode string s
+    
+    ""s = "hello";""
+    ""assert(list(code_points(s)) ==""
+    ""       ["h", "e", "l", "l", "o"]);""
+    
+    The number of iteration may differ from the size(s), because some 
+    code points may be represented as a couple of other code points 
+    ("surrogate pair") on a narrow-build system.
+    
+    ""s = "abc\\U00020b9f\\u3042";""
+    ""assert(list(code_points(s)) ==""
+    ""       ["a", "b", "c", "\\U00020b9f", "\\u3042"]);""
+end note
+
+stop
+
+@enduml
