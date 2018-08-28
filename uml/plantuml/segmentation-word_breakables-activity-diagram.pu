@@ -31,20 +31,28 @@ endif
 :set **""prev_wb""** to __""nullptr""__;
 :set **""prev_pos""** to __""0""__;
 
-while (iterate **""c""** over <back:skyblue>//""code_points(s)""//</back>?) is (yes)
-    :set **""prop""** to <back:skyblue>//""word_break(c)""//</back>;
-    if (**""prop""** is in (Newline, CR, LF)?) then (yes)
-        :yield(i, prop);
-        :set **""prev_prop""** to __""None""__;
-    elseif (**""prop""** in (Extend, Format)?) then (yes)
-        if (**""prev_prop""** is __""None""__?) then (yes)
-            :yield(i, prop);
-            :set **""prev_prop""** to **""prop""**;
-        else (no)
-        endif
+while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primitive_boundaries)""//</back>?) is (yes)
+    :set **""next_pos, next_wb""** to <back:skyblue>//""<TODO>""//</back>;
+    if (**""prev_wn""** is in ""__(Newline, CR, LF)__"" or **""wb""** is in __""(Newline, CR, LF)""__?) then (yes)
+        :set **""do_break""** to __""TODO""__;
+    elseif (**""prev_wb""** equals **""wb""** equals __""ALetter""__?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
+    elseif (TODO?) then (yes)
+        :TODO;
     else (no)
-        :yield(i, prop);
-        :set **""prev_prop""** to **""prop""**;
+        :TODO;
     endif
 
     while (iterate **""j""** over //""range(next_pos-pos)""//?) is (yes)
