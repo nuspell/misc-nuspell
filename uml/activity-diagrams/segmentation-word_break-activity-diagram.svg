@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="402px" preserveAspectRatio="none" style="width:520px;height:402px;" version="1.1" viewBox="0 0 520 402" width="520px" zoomAndPan="magnify"><defs><linearGradient id="g1bl00hvjlb4190" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient><filter height="300%" id="f1bl00hvjlb419" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><filter height="1" id="b1bl00hvjlb4190" width="1" x="0" y="0"><feFlood flood-color="#87CEEB" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><rect fill="url(#g1bl00hvjlb4190)" height="402" style="stroke: none; stroke-width: 1.0;" width="520" x="0" y="0"/><text fill="#000000" font-family="sans-serif" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="248" x="12" y="26.708">Nuspell - segmentation -</text><text fill="#000000" font-family="monospace" font-size="18" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="242" x="266" y="26.708">word_break(c, index=0)</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="0" x="263" y="47.6611"/><path d="M19,51.9063 L19,304.0313 L325,304.0313 L325,61.9063 L315,51.9063 L19,51.9063 " fill="#FFFFFF" filter="url(#f1bl00hvjlb419)" style="stroke: #000000; stroke-width: 1.0;"/><path d="M315,51.9063 L315,61.9063 L325,61.9063 L315,51.9063 " fill="#FFFFFF" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="210" x="25" y="68.9731">Returns the word break property.</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="29" y="84.106"/><text fill="#000000" font-family="monospace" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="25" y="99.2388">c</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="273" x="37" y="99.2388">must be a single Unicode code point string</text><text fill="#000000" font-family="monospace" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="40" x="25" y="114.3716">index</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="215" x="69" y="114.3716">is optional integer with start index</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="29" y="129.5044"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="112" x="25" y="144.6372">assert("CR" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="25" y="159.77">word_break("\x0d"));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="29" y="174.9028"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="25" y="190.0356">assert("Newline" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="25" y="205.1685">word_break("\x0b"));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="29" y="220.3013"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="25" y="235.4341">assert("Katakana" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="176" x="25" y="250.5669">word_break("\u30a2"));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="29" y="265.6997"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="25" y="280.8325">assert("Katakana" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="208" x="25" y="295.9653">word_break("A\u30a2", 1));</text><ellipse cx="355" cy="177.9688" fill="#000000" filter="url(#f1bl00hvjlb419)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FFFFFF" filter="url(#f1bl00hvjlb419)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="294" x="208" y="317.4653"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="218" y="338.604">return</text><text fill="#000000" filter="url(#b1bl00hvjlb4190)" font-family="monospace" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="231" x="261" y="338.604">_word_break(code_point(c, index))</text><ellipse cx="355" cy="381.4341" fill="none" filter="url(#f1bl00hvjlb419)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="355.5" cy="381.9341" fill="#000000" filter="url(#f1bl00hvjlb419)" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="355" x2="355" y1="187.9688" y2="317.4653"/><polygon fill="#000000" points="351,307.4653,355,317.4653,359,307.4653,355,311.4653" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="355" x2="355" y1="351.4341" y2="371.4341"/><polygon fill="#000000" points="351,361.4341,355,371.4341,359,361.4341,355,365.4341" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml
+skinparam BackgroundColor White|White
+skinparam ArrowColor Black
+
+skinparam NoteBackgroundColor White
+skinparam NoteBorderColor Black
+
+skinparam ActivityBackgroundColor White
+skinparam ActivityDiamondBackgroundColor White
+skinparam ActivityBorderColor Black
+skinparam ActivityDiamondBorderColor Black
+
+title **Nuspell - segmentation - //""word_break(c, index=0)""//**\n
+
+start
+
+floating note left
+    Returns the word break property.
+
+    **""c""** must be a single Unicode code point string
+    **""index""** is optional integer with start index
+
+    ""assert("CR" ==""
+    ""word_break("\x0d"));""
+
+    ""assert("Newline" ==""
+    ""word_break("\x0b"));""
+
+    ""assert("Katakana" == ""
+    ""word_break("\u30a2"));""
+
+    ""assert("Katakana" == ""
+    ""word_break("A\u30a2", 1));""
+end note
+
+:return <back:skyblue>//""_word_break(code_point(c, index))""//</back>;
+
+stop
+
+@enduml
+
+PlantUML version 1.2018.06(Mon May 21 12:34:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 10.0.2+13-Ubuntu-1ubuntu0.18.04.1
+Operating System: Linux
+OS Version: 4.15.0-33-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

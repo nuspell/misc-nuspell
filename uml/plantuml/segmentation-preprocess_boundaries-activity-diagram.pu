@@ -1,45 +1,50 @@
 @startuml
 !include skin.iuml
 
-title **Nuspell - segmentation - //""preprocess_boundaries(s)""//**\n
+title **Nuspell - segmentation - //""_preprocess_boundaries(s)""//**\n
 
 start
 
-:**""s""** contains input string;
 floating note left
-    ""result = list(preprocess_boundaries("\r\n"));""
-    ""assert(result == [(0, "CR"), (1, "LF")]);""
+    Preprocesses WB4.
 
-    ""result = list(_preprocess_boundaries("A\u0308A"));""
-    ""assert(result == [(0, "ALetter"), (2, "ALetter")]);""
+    **""s""** must be a Unicode code point string
 
-    ""result = list(_preprocess_boundaries("\n\u2060"));""
-    ""assert(result == [(0, "LF"), (1, "Format")]);""
+    ""assert({(0, "CR"), (1, "LF")} ==""
+    ""_preprocess_boundaries("\r\n"));""
 
-    ""result = list(_preprocess_boundaries("\x01\u0308\x01"));""
-    ""assert(result == [(0, "Other"), (2, "Other")]);""
+    ""assert({(0, "ALetter"), (2, "ALetter")} ==""
+    ""_preprocess_boundaries("A\u0308A"));""
+
+    ""assert({(0, "LF"), (1, "Format")} == ""
+    ""_preprocess_boundaries("\n\u2060"));""
+
+    ""assert({(0, "Other"), (2, "Other")} ==""
+    ""_preprocess_boundaries("\x01\u0308\x01"));""
 end note
 
-:set **""prev_prop""** to __""nullptr""__;
-:set **""i""** to __""0""__;
+:initialize pointer **""prev_prop""** to __""nullptr""__;
+:initialize integer **""i""** to __""0""__;
+:initialize empty vector **""result""** which can hold pairs of integer and string;
 
-while (iterate **""c""** over <back:skyblue>//""code_points(s)""//</back>?) is (yes)
+while (for **""c""** in <back:skyblue>//""code_points(s)""//</back>?) is (yes)
     :set **""prop""** to //""word_break(c)""//;
     if (**""prop""** is __"""Newline"""__, __"""CR"""__ or __"""LF"""__?) then (yes)
-        ://""yield(i, prop)""//;
+        :add pair **""i, prop""** to **""result""**;
         :set **""prev_prop""** to __""nullptr""__;
     elseif (**""prop""** is __"""Extend"""__ or __"""Format"""__?) then (yes)
         if (**""prev_prop""** is __""nullptr""__?) then (yes)
-            ://""yield(i, prop)""//;
+            :add pair **""i, prop""** to **""result""**;
             :set **""prev_prop""** to **""prop""**;
         else (no)
         endif
     else (no)
-        ://""yield(i, prop)""//;
+        :add pair **""i, prop""** to **""result""**;
         :set **""prev_prop""** to **""prop""**;
     endif
     :increment **""i""** with length of **""c""**;
 endwhile (no)
+:return **""result""**;
 
 stop
 

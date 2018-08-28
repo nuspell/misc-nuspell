@@ -5,22 +5,24 @@ title **Nuspell - segmentation - //""code_points(s)""//**\n
 
 start
 
-:**""s""** contains input string;
 floating note left
-    Iterate every Unicode code points of the unicode string s
+    Iterate every Unicode code points of the Unicode string s.
+
+    **""s""** must be a Unicode string
+    **""index""** is optional integer with start index
     
-    ""s = "hello";""
-    ""assert(list(code_points(s)) ==""
-    ""       ["h", "e", "l", "l", "o"]);""
+    ""assert({"h", "e", "l", "l", "o"}""
+    ""== code_points("hello"));""
     
     The number of iteration may differ from the size(s), because some 
     code points may be represented as a couple of other code points 
     ("surrogate pair") on a narrow-build system.
     
-    ""s = "abc\\U00020b9f\\u3042";""
-    ""assert(list(code_points(s)) ==""
-    ""       ["a", "b", "c", "\\U00020b9f", "\\u3042"]);""
+    ""assert({"a", "b", "c", "\\U00020b9f", "\\u3042"}""
+    ""== code_points("abc\\U00020b9f\\u3042"));""
 end note
+
+:return <back:skyblue>//""code_points_impl(s)""//</back>;
 
 stop
 

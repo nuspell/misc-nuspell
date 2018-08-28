@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="402px" preserveAspectRatio="none" style="width:520px;height:402px;" version="1.1" viewBox="0 0 520 402" width="520px" zoomAndPan="magnify"><defs><linearGradient id="gcwe86a9f369x0" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient><filter height="300%" id="fcwe86a9f369x" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter><filter height="1" id="bcwe86a9f369x0" width="1" x="0" y="0"><feFlood flood-color="#87CEEB" result="flood"/><feComposite in="SourceGraphic" in2="flood" operator="over"/></filter></defs><g><rect fill="url(#gcwe86a9f369x0)" height="402" style="stroke: none; stroke-width: 1.0;" width="520" x="0" y="0"/><text fill="#000000" font-family="sans-serif" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="248" x="12" y="26.708">Nuspell - segmentation -</text><text fill="#000000" font-family="monospace" font-size="18" font-style="italic" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="242" x="266" y="26.708">code_point(s, index=0)</text><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacingAndGlyphs" textLength="0" x="263" y="47.6611"/><path d="M39.75,51.9063 L39.75,304.0313 L356.75,304.0313 L356.75,61.9063 L346.75,51.9063 L39.75,51.9063 " fill="#FFFFFF" filter="url(#fcwe86a9f369x)" style="stroke: #000000; stroke-width: 1.0;"/><path d="M346.75,51.9063 L346.75,61.9063 L356.75,61.9063 L346.75,51.9063 " fill="#FFFFFF" style="stroke: #000000; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="196" x="45.75" y="68.9731">Returns code point at s[index].</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="49.75" y="84.106"/><text fill="#000000" font-family="monospace" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="8" x="45.75" y="99.2388">s</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="161" x="57.75" y="99.2388">must be a Unicode string</text><text fill="#000000" font-family="monospace" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="40" x="45.75" y="114.3716">index</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="215" x="89.75" y="114.3716">is optional integer with start index</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="49.75" y="129.5044"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="45.75" y="144.6372">assert("A" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="45.75" y="159.77">code_point("ABC"));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="49.75" y="174.9028"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="45.75" y="190.0356">assert("B" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="176" x="45.75" y="205.1685">code_point("ABC", 1));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="49.75" y="220.3013"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="184" x="45.75" y="235.4341">assert("\\U00020b9f" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="272" x="45.75" y="250.5669">code_point("\\U00020b9f\\u3042"));</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="0" x="49.75" y="265.6997"/><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="152" x="45.75" y="280.8325">assert("\\u3042" ==</text><text fill="#000000" font-family="monospace" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="296" x="45.75" y="295.9653">code_point("\\U00020b9f\\u3042", 1));</text><ellipse cx="386.75" cy="177.9688" fill="#000000" filter="url(#fcwe86a9f369x)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FFFFFF" filter="url(#fcwe86a9f369x)" height="33.9688" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="189" x="292.25" y="317.4653"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="39" x="302.25" y="338.604">return</text><text fill="#000000" filter="url(#bcwe86a9f369x0)" font-family="monospace" font-size="12" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="126" x="345.25" y="338.604">code_point_impl(s)</text><ellipse cx="386.75" cy="381.4341" fill="none" filter="url(#fcwe86a9f369x)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="387.25" cy="381.9341" fill="#000000" filter="url(#fcwe86a9f369x)" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="386.75" x2="386.75" y1="187.9688" y2="317.4653"/><polygon fill="#000000" points="382.75,307.4653,386.75,317.4653,390.75,307.4653,386.75,311.4653" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="386.75" x2="386.75" y1="351.4341" y2="371.4341"/><polygon fill="#000000" points="382.75,361.4341,386.75,371.4341,390.75,361.4341,386.75,365.4341" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml
+skinparam BackgroundColor White|White
+skinparam ArrowColor Black
+
+skinparam NoteBackgroundColor White
+skinparam NoteBorderColor Black
+
+skinparam ActivityBackgroundColor White
+skinparam ActivityDiamondBackgroundColor White
+skinparam ActivityBorderColor Black
+skinparam ActivityDiamondBorderColor Black
+
+title **Nuspell - segmentation - //""code_point(s, index=0)""//**\n
+
+start
+
+floating note left
+    Returns code point at s[index].
+
+    **""s""** must be a Unicode string
+    **""index""** is optional integer with start index
+    
+    ""assert("A" ==""
+    ""code_point("ABC"));""
+    
+    ""assert("B" ==""
+    ""code_point("ABC", 1));""
+    
+    ""assert("\\U00020b9f" ==""
+    ""code_point("\\U00020b9f\\u3042"));""
+    
+    ""assert("\\u3042" ==""
+    ""code_point("\\U00020b9f\\u3042", 1));""
+end note
+
+:return <back:skyblue>//""code_point_impl(s)""//</back>;
+
+stop
+
+@enduml
+
+PlantUML version 1.2018.06(Mon May 21 12:34:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 10.0.2+13-Ubuntu-1ubuntu0.18.04.1
+Operating System: Linux
+OS Version: 4.15.0-33-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

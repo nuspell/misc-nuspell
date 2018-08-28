@@ -11,13 +11,13 @@ floating note left
     will be the same as ``len(s)``.
     
     ""assert(list(word_breakables(u"ABC")) ==""
-    "        [1, 0, 0]);""
+    "        {1, 0, 0});""
 
     ""assert(list(word_breakables(u"Hello, world.")) ==""
-    ""       [1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1]);""
+    ""       {1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0, 0, 1});""
 
     ""assert(list(word_breakables(u"\x01\u0308\x01")) ==""
-    ""       [1, 0, 1]);""
+    ""       {1, 0, 1});""
 end note
 
 if (**""s**"" is empty?) then (yes)
@@ -40,19 +40,35 @@ while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primiti
     elseif (TODO?) then (yes)
         :TODO;
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB6;
+        :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB7;
+        :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB8;
+        :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB9;
+        :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB10;
+        :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
-        :TODO;
+        -[#black]-> WB11;
+        :set **""do_break""** to __""false__"";
+    elseif (TODO?) then (yes)
+        -[#black]-> WB12;
+        :set **""do_break""** to __""false__"";
+    elseif (TODO?) then (yes)
+        -[#black]-> WB13, WB13a, WB13b;
+        :set **""do_break""** to __""false__"";
+    elseif (**""prev_wn""** is in ""__(Newline, CR, LF)__""\nor **""wb""** is in __""(Newline, CR, LF)""__?) then (yes)
+        -[#black]-> WB13c;
+        :set **""do_break""** to __""false__"";
     else (no)
-        :TODO;
+        -[#black]-> WB14;
+        :set **""do_break""** to __""true__"";
     endif
 
     while (iterate **""j""** over //""range(next_pos-pos)""//?) is (yes)

@@ -1,0 +1,31 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - segmentation - //""word_break(c, index=0)""//**\n
+
+start
+
+floating note left
+    Returns the word break property.
+
+    **""c""** must be a single Unicode code point string
+    **""index""** is optional integer with start index
+
+    ""assert("CR" ==""
+    ""word_break("\x0d"));""
+
+    ""assert("Newline" ==""
+    ""word_break("\x0b"));""
+
+    ""assert("Katakana" == ""
+    ""word_break("\u30a2"));""
+
+    ""assert("Katakana" == ""
+    ""word_break("A\u30a2", 1));""
+end note
+
+:return <back:skyblue>//""_word_break(code_point(c, index))""//</back>;
+
+stop
+
+@enduml

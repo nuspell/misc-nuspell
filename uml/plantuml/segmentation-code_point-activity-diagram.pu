@@ -1,0 +1,31 @@
+@startuml
+!include skin.iuml
+
+title **Nuspell - segmentation - //""code_point(s, index=0)""//**\n
+
+start
+
+floating note left
+    Returns code point at s[index].
+
+    **""s""** must be a Unicode string
+    **""index""** is optional integer with start index
+    
+    ""assert("A" ==""
+    ""code_point("ABC"));""
+    
+    ""assert("B" ==""
+    ""code_point("ABC", 1));""
+    
+    ""assert("\\U00020b9f" ==""
+    ""code_point("\\U00020b9f\\u3042"));""
+    
+    ""assert("\\u3042" ==""
+    ""code_point("\\U00020b9f\\u3042", 1));""
+end note
+
+:return <back:skyblue>//""code_point_impl(s)""//</back>;
+
+stop
+
+@enduml
