@@ -4,6 +4,9 @@
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # author: Sander van Geloven
 
+
+# Initialization
+
 platform=`../0-tools/platform.sh`
 
 if [ ! -d packages ]; then
@@ -16,6 +19,10 @@ if [ -e files ]; then
 else
     mkdir files
 fi
+
+
+# Extracting files from packages
+
 cd files
 
 if [ $platform = linux ]; then
