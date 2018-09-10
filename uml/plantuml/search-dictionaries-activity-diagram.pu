@@ -1,7 +1,7 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - Search Dictionaries
+title Nuspell - Search Dictionaries
 
 start
 partition "add default paths" {

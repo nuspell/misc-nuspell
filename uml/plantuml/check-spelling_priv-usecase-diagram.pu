@@ -1,0 +1,29 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Check spelling of shrunken converted word
+
+usecase check_sc as "check spelling of
+shrunken converted word"
+
+usecase convert as "do input conversion
+on word"
+usecase trim as "trim trailing
+periods from word"
+usecase test as "test if word
+is a number"
+usecase remove as "remove ignored
+characters from word"
+usecase check_break as "check spelling with
+break patterns of word"
+usecase restore as "restore trailing
+period from word"
+
+(check_sc) -up-> (test)
+(check_sc) -up-> (trim)
+(check_sc) -up-> (convert)
+(check_sc) --> (remove)
+(check_sc) --> (check_break)
+(check_sc) --> (restore)
+
+@enduml

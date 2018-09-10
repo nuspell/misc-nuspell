@@ -20,5 +20,4 @@ if (A) then (yes)
     endif
 
 stop
-
 @enduml

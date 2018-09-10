@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title **Nuspell - segmentation - //""code_point(s, index=0)""//**\n
+title Nuspell - segmentation - //""code_point(s, index=0)""//\n
 
 start
 

@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title **Nuspell - Check Spelling - ""spell_priv(string s)""**\n
+title Nuspell - Check Spelling - ""spell_priv(string s)""\n
 
 start
 

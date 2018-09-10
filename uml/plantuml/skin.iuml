@@ -1,8 +1,18 @@
 skinparam BackgroundColor White|White
 skinparam ArrowColor Black
+skinparam DefaultFontName Roboto Condensed
+skinparam TitleFontStyle Bold
 
 skinparam NoteBackgroundColor White
 skinparam NoteBorderColor Black
+
+skinparam UsecaseBackgroundColor White
+skinparam ActorBackgroundColor White
+skinparam UsecaseBorderColor Black
+skinparam ActorBorderColor Black
+
+skinparam StateBackgroundColor White
+skinparam StateBorderColor Black
 
 skinparam ActivityBackgroundColor White
 skinparam ActivityDiamondBackgroundColor White

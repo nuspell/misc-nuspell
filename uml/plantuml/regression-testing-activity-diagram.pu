@@ -1,7 +1,7 @@
 @startuml
 skinparam backgroundcolor White|White
 
-title Hunspell - Regression Testing (speed, memory and correctness)
+title Nuspell - Regression Testing (speed, memory and correctness)
 
 start
 :manually stop CPU-consuming applications;

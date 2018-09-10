@@ -1,0 +1,18 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Check spelling of word
+
+usecase check as "check spelling
+of word"
+
+usecase convert as "convert encoding for word"
+usecase shrink as "shrink word"
+usecase check_sc as "check spelling of
+shrunken converted word"
+
+(check) --> (convert)
+(check) --> (shrink)
+(check) --> (check_sc)
+
+@enduml

@@ -1,6 +1,8 @@
 #!/usr/bin/env sh
 
-function run_profilers {
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+
+run_profilers() {
     mkdir $dst
     cd $dst
     head -n $num ../../../words/linux/$dst/gathered > gathered

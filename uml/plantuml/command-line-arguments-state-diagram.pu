@@ -1,7 +1,7 @@
 @startuml
-skinparam backgroundcolor White|White
+!include skin.iuml
 
-title Hunspell - Command-line Arguments
+title Nuspell - Command-line Arguments
 
 [*] --> DEFAULT_MODE
 
@@ -10,6 +10,12 @@ DEFAULT_MODE --> [*]
 
 DEFAULT_MODE --> NO_SUGGEST_MODE : -U
 NO_SUGGEST_MODE --> [*]
+NO_SUGGEST_MODE --> CRUDE_PARSE_NO_SUGGEST_MODE : -C
+
+DEFAULT_MODE --> CRUDE_PARSE_MODE : -C
+CRUDE_PARSE_MODE --> [*]
+CRUDE_PARSE_MODE --> CRUDE_PARSE_NO_SUGGEST_MODE : -U
+CRUDE_PARSE_NO_SUGGEST_MODE --> [*]
 
 DEFAULT_MODE --> LIST_DICTIONARIES_MODE : -D
 LIST_DICTIONARIES_MODE --> [*]

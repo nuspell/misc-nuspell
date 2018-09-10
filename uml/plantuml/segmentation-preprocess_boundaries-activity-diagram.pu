@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title **Nuspell - segmentation - //""_preprocess_boundaries(s)""//**\n
+title Nuspell - segmentation - //""_preprocess_boundaries(s)""//\n
 
 start
 

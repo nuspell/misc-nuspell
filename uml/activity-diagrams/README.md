@@ -1,4 +1,4 @@
-# Hunspell - UML Activity Diagrams
+# Nuspell - UML Activity Diagrams
 [![](affix-check-activity-diagram.svg)](affix-check-activity-diagram.svg)
 [![](checkword-activity-diagram.svg)](checkword-activity-diagram.svg)
 [![](cleanword2-activity-diagram.svg)](cleanword2-activity-diagram.svg)
@@ -10,13 +10,13 @@
 [![](segmentation-code_point-activity-diagram.svg)](segmentation-code_point-activity-diagram.svg)
 [![](segmentation-code_points-activity-diagram.svg)](segmentation-code_points-activity-diagram.svg)
 [![](segmentation-preprocess_boundaries-activity-diagram.svg)](segmentation-preprocess_boundaries-activity-diagram.svg)
-[![](segmentation-word_breakables-activity-diagram.svg)](segmentation-word_breakables-activity-diagram.svg)
 [![](segmentation-word_break-activity-diagram.svg)](segmentation-word_break-activity-diagram.svg)
+[![](segmentation-word_breakables-activity-diagram.svg)](segmentation-word_breakables-activity-diagram.svg)
 [![](spell-activity-diagram.svg)](spell-activity-diagram.svg)
-[![](spell_break-activity-diagram.svg)](spell_break-activity-diagram.svg)
-[![](spell_priv-activity-diagram.svg)](spell_priv-activity-diagram.svg)
 [![](spell-recurse-breakpoints-activity-diagram.svg)](spell-recurse-breakpoints-activity-diagram.svg)
 [![](spell-upper-or-capitalized-activity-diagram.svg)](spell-upper-or-capitalized-activity-diagram.svg)
+[![](spell_break-activity-diagram.svg)](spell_break-activity-diagram.svg)
+[![](spell_priv-activity-diagram.svg)](spell_priv-activity-diagram.svg)
 [![](suffix-check-activity-diagram.svg)](suffix-check-activity-diagram.svg)
 [![](suffix-check-twosfx-activity-diagram.svg)](suffix-check-twosfx-activity-diagram.svg)
 [![](test-activity-diagram.svg)](test-activity-diagram.svg)
