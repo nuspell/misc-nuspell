@@ -19,5 +19,4 @@
 [![](spell_priv-activity-diagram.svg)](spell_priv-activity-diagram.svg)
 [![](suffix-check-activity-diagram.svg)](suffix-check-activity-diagram.svg)
 [![](suffix-check-twosfx-activity-diagram.svg)](suffix-check-twosfx-activity-diagram.svg)
-[![](test-activity-diagram.svg)](test-activity-diagram.svg)
 [![](top-level-activity-diagram.svg)](top-level-activity-diagram.svg)

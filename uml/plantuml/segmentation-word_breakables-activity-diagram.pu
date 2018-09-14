@@ -5,10 +5,18 @@ title Nuspell - segmentation - //""word_breakables(s)""//\n
 
 start
 
-:**""s""** contains input string;
+:initialize empty vector **""result""** which can hold integers;
+if (**""s""** is empty?) then (yes)
+    :return **""result""**;
+    stop
+else (no)
+endif
+
 floating note left
-    1 for "break" and 0 for "do not break".  The length of iteration 
-    will be the same as ``len(s)``.
+    __""1""__ for "break" and __""0""__ for "do not break". The length of
+    the vector will be the same as len(s).
+
+    **""s""** must be a Unicode string
     
     ""assert(list(word_breakables(u"ABC")) ==""
     "        {1, 0, 0});""
@@ -20,13 +28,7 @@ floating note left
     ""       {1, 0, 1});""
 end note
 
-if (**""s**"" is empty?) then (yes)
-    :return nothing;
-    stop
-else (no)
-endif
-
-:set **""primitive_boundaties**"" to list of //""preprocess_boundaries(s)""//;
+:set **""primitive_boundaties""** to list of //""preprocess_boundaries(s)""//;
 :set **""prev_prev_wb""** to __""nullptr""__;
 :set **""prev_wb""** to __""nullptr""__;
 :set **""prev_pos""** to __""0""__;
@@ -51,7 +53,10 @@ while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primiti
     elseif (TODO?) then (yes)
         -[#black]-> WB9;
         :set **""do_break""** to __""false__"";
-    elseif (TODO?) then (yes)
+    else (no)
+    endif
+
+    if (TODO?) then (yes)
         -[#black]-> WB10;
         :set **""do_break""** to __""false__"";
     elseif (TODO?) then (yes)
@@ -60,10 +65,12 @@ while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primiti
     elseif (TODO?) then (yes)
         -[#black]-> WB12;
         :set **""do_break""** to __""false__"";
-    elseif (TODO?) then (yes)
+    elseif (**""prev_wb""** is **""wb""** is __""Katakana""__
+            or (**""prev_wb""** is in __""(ALetter, Numeric, Katakana, ExtendNumLet)""__ and **""wb""** is __""ExtendNumLet""__)
+            or (**""prev_wb""** is __""ExtendNumLet""__ and **""wb""** is in __""(ALetter, Numeric, Katakana)""__?) then (yes)
         -[#black]-> WB13, WB13a, WB13b;
         :set **""do_break""** to __""false__"";
-    elseif (**""prev_wn""** is in ""__(Newline, CR, LF)__""\nor **""wb""** is in __""(Newline, CR, LF)""__?) then (yes)
+    elseif (**""prev_wb""** is **""wb""** is __""Regional_Indicator""__?) then (yes)
         -[#black]-> WB13c;
         :set **""do_break""** to __""false__"";
     else (no)
@@ -72,12 +79,14 @@ while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primiti
     endif
 
     while (iterate **""j""** over //""range(next_pos-pos)""//?) is (yes)
-        :yield(i, prop);
+        :add pair **""i, prop""** to **""result""**;
     endwhile (no)
     :set **""prev_pos""** to **""pos""**;
     :set **""prev_prev_wb""** to **""prev_wb""**;
     :set **""prev_wb""** to **""wb""**;
 endwhile (no)
+
+    :return **""result""**;
 
 stop
 

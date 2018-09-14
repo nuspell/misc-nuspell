@@ -9,7 +9,6 @@ floating note left
     Iterate every Unicode code points of the Unicode string s.
 
     **""s""** must be a Unicode string
-    **""index""** is optional integer with start index
     
     ""assert({"h", "e", "l", "l", "o"}""
     ""== code_points("hello"));""
