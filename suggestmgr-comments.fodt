@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><dc:date>2018-09-18T16:40:32.148917930</dc:date><meta:editing-duration>P1DT10H8M32S</meta:editing-duration><meta:editing-cycles>38</meta:editing-cycles><meta:generator>LibreOffice/6.0.3.2$Linux_X86_64 LibreOffice_project/00m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="34" meta:paragraph-count="2159" meta:word-count="10316" meta:character-count="71096" meta:non-whitespace-character-count="52773"/></office:meta>
+ <office:meta><dc:date>2018-09-20T12:14:15.169728462</dc:date><meta:editing-duration>P1DT10H12M30S</meta:editing-duration><meta:editing-cycles>39</meta:editing-cycles><meta:generator>LibreOffice/6.0.3.2$Linux_X86_64 LibreOffice_project/00m0$Build-2</meta:generator><meta:document-statistic meta:table-count="0" meta:image-count="0" meta:object-count="0" meta:page-count="34" meta:paragraph-count="2159" meta:word-count="10316" meta:character-count="71096" meta:non-whitespace-character-count="52773"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">429682</config:config-item>
-   <config:config-item config:name="ViewAreaLeft" config:type="long">1787</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">463412</config:config-item>
+   <config:config-item config:name="ViewAreaLeft" config:type="long">1783</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">24901</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">24790</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">23982</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">7594</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">436127</config:config-item>
-     <config:config-item config:name="VisibleLeft" config:type="long">1787</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">429682</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">26686</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">454470</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">8019</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">470849</config:config-item>
+     <config:config-item config:name="VisibleLeft" config:type="long">1783</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">463412</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">26682</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">487392</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -101,7 +101,7 @@
    <config:config-item config:name="UnxForceZeroExtLeading" config:type="boolean">false</config:config-item>
    <config:config-item config:name="TabAtLeftIndentForParagraphsInList" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrintRightPages" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">5986317</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">6202309</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
    <config:config-item config:name="MsWordCompTrailingBlanks" config:type="boolean">false</config:config-item>
    <config:config-item config:name="InvertBorderSpacing" config:type="boolean">false</config:config-item>
@@ -344,12 +344,6 @@
    </style:paragraph-properties>
    <style:text-properties fo:hyphenate="false"/>
   </style:style>
-  <style:style style:name="P14" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0in" fo:margin-right="0in" fo:margin-top="0in" fo:margin-bottom="0in" fo:line-height="100%" fo:text-align="start" fo:text-indent="0in" style:text-autospace="ideograph-alpha" style:punctuation-wrap="hanging" style:line-break="strict" style:writing-mode="lr-tb">
-    <style:tab-stops/>
-   </style:paragraph-properties>
-   <style:text-properties fo:hyphenate="false"/>
-  </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:background-color="#fff200" loext:char-shading-value="0"/>
   </style:style>
@@ -381,54 +375,39 @@
    <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T11" style:family="text">
-   <style:text-properties fo:background-color="#faa61a" loext:char-shading-value="0"/>
+   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
   </style:style>
   <style:style style:name="T12" style:family="text">
-   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T13" style:family="text">
-   <style:text-properties fo:background-color="#ef413d" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T14" style:family="text">
    <style:text-properties fo:background-color="#adc5e7" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T15" style:family="text">
+  <style:style style:name="T13" style:family="text">
    <style:text-properties fo:background-color="#e0efd4" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T16" style:family="text">
+  <style:style style:name="T14" style:family="text">
    <style:text-properties fo:background-color="#72bf44" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T17" style:family="text">
-   <style:text-properties fo:background-color="#72bf44" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T18" style:family="text">
+  <style:style style:name="T15" style:family="text">
    <style:text-properties fo:background-color="#bcaed5" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T19" style:family="text">
+  <style:style style:name="T16" style:family="text">
    <style:text-properties fo:background-color="#c7a0cb" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T20" style:family="text">
+  <style:style style:name="T17" style:family="text">
    <style:text-properties fo:background-color="#b2b2b2" loext:char-shading-value="0"/>
   </style:style>
-  <style:style style:name="T21" style:family="text">
+  <style:style style:name="T18" style:family="text">
    <style:text-properties fo:background-color="#7da7d8" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T19" style:family="text">
+   <style:text-properties fo:background-color="#7da7d8" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T20" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+  </style:style>
+  <style:style style:name="T21" style:family="text">
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T22" style:family="text">
-   <style:text-properties fo:background-color="#7da7d8" loext:char-shading-value="0"/>
-  </style:style>
-  <style:style style:name="T23" style:family="text">
-   <style:text-properties fo:background-color="#ffffff"/>
-  </style:style>
-  <style:style style:name="T24" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="T25" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Liberation Serif" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="T26" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Courier New" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="T27" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:text-position="0% 100%" style:font-name="Courier New" fo:font-size="10pt" fo:letter-spacing="normal" fo:language="zxx" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC Regular" style:font-size-asian="10.5pt" style:language-asian="zxx" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Lohit Devanagari" style:font-size-complex="12pt" style:language-complex="zxx" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:text-scale="100%" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:page-layout style:name="pm1">
@@ -451,228 +430,228 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Text"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
    </text:sequence-decls>
-   <text:list xml:id="list3637668599" text:style-name="Numbering_20_2">
+   <text:list xml:id="list3121169007" text:style-name="Numbering_20_2">
     <text:list-item>
-     <text:p text:style-name="P9">/* ***** BEGIN LICENSE BLOCK *****</text:p>
+     <text:p text:style-name="P8">/* ***** BEGIN LICENSE BLOCK *****</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Version: MPL 1.1/GPL 2.0/LGPL 2.1</text:p>
+     <text:p text:style-name="P8"><text:s/>* Version: MPL 1.1/GPL 2.0/LGPL 2.1</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Copyright (C) 2002-2017 Németh László</text:p>
+     <text:p text:style-name="P8"><text:s/>* Copyright (C) 2002-2017 Németh László</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* The contents of this file are subject to the Mozilla Public License Version</text:p>
+     <text:p text:style-name="P8"><text:s/>* The contents of this file are subject to the Mozilla Public License Version</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* 1.1 (the &quot;License&quot;); you may not use this file except in compliance with</text:p>
+     <text:p text:style-name="P8"><text:s/>* 1.1 (the &quot;License&quot;); you may not use this file except in compliance with</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* the License. You may obtain a copy of the License at</text:p>
+     <text:p text:style-name="P8"><text:s/>* the License. You may obtain a copy of the License at</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* http://www.mozilla.org/MPL/</text:p>
+     <text:p text:style-name="P8"><text:s/>* http://www.mozilla.org/MPL/</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Software distributed under the License is distributed on an &quot;AS IS&quot; basis,</text:p>
+     <text:p text:style-name="P8"><text:s/>* Software distributed under the License is distributed on an &quot;AS IS&quot; basis,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License</text:p>
+     <text:p text:style-name="P8"><text:s/>* WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* for the specific language governing rights and limitations under the</text:p>
+     <text:p text:style-name="P8"><text:s/>* for the specific language governing rights and limitations under the</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* License.</text:p>
+     <text:p text:style-name="P8"><text:s/>* License.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Hunspell is based on MySpell which is Copyright (C) 2002 Kevin Hendricks.</text:p>
+     <text:p text:style-name="P8"><text:s/>* Hunspell is based on MySpell which is Copyright (C) 2002 Kevin Hendricks.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Contributor(s): David Einstein, Davide Prina, Giuseppe Modugno,</text:p>
+     <text:p text:style-name="P8"><text:s/>* Contributor(s): David Einstein, Davide Prina, Giuseppe Modugno,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Gianluca Turconi, Simon Brouwer, Noll János, Bíró Árpád,</text:p>
+     <text:p text:style-name="P8"><text:s/>* Gianluca Turconi, Simon Brouwer, Noll János, Bíró Árpád,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Goldman Eleonóra, Sarlós Tamás, Bencsáth Boldizsár, Halácsy Péter,</text:p>
+     <text:p text:style-name="P8"><text:s/>* Goldman Eleonóra, Sarlós Tamás, Bencsáth Boldizsár, Halácsy Péter,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Dvornik László, Gefferth András, Nagy Viktor, Varga Dániel, Chris Halls,</text:p>
+     <text:p text:style-name="P8"><text:s/>* Dvornik László, Gefferth András, Nagy Viktor, Varga Dániel, Chris Halls,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Rene Engelhard, Bram Moolenaar, Dafydd Jones, Harri Pitkänen</text:p>
+     <text:p text:style-name="P8"><text:s/>* Rene Engelhard, Bram Moolenaar, Dafydd Jones, Harri Pitkänen</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Alternatively, the contents of this file may be used under the terms of</text:p>
+     <text:p text:style-name="P8"><text:s/>* Alternatively, the contents of this file may be used under the terms of</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* either the GNU General Public License Version 2 or later (the &quot;GPL&quot;), or</text:p>
+     <text:p text:style-name="P8"><text:s/>* either the GNU General Public License Version 2 or later (the &quot;GPL&quot;), or</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* the GNU Lesser General Public License Version 2.1 or later (the &quot;LGPL&quot;),</text:p>
+     <text:p text:style-name="P8"><text:s/>* the GNU Lesser General Public License Version 2.1 or later (the &quot;LGPL&quot;),</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* in which case the provisions of the GPL or the LGPL are applicable instead</text:p>
+     <text:p text:style-name="P8"><text:s/>* in which case the provisions of the GPL or the LGPL are applicable instead</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* of those above. If you wish to allow use of your version of this file only</text:p>
+     <text:p text:style-name="P8"><text:s/>* of those above. If you wish to allow use of your version of this file only</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* under the terms of either the GPL or the LGPL, and not to allow others to</text:p>
+     <text:p text:style-name="P8"><text:s/>* under the terms of either the GPL or the LGPL, and not to allow others to</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* use your version of this file under the terms of the MPL, indicate your</text:p>
+     <text:p text:style-name="P8"><text:s/>* use your version of this file under the terms of the MPL, indicate your</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* decision by deleting the provisions above and replace them with the notice</text:p>
+     <text:p text:style-name="P8"><text:s/>* decision by deleting the provisions above and replace them with the notice</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* and other provisions required by the GPL or the LGPL. If you do not delete</text:p>
+     <text:p text:style-name="P8"><text:s/>* and other provisions required by the GPL or the LGPL. If you do not delete</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* the provisions above, a recipient may use your version of this file under</text:p>
+     <text:p text:style-name="P8"><text:s/>* the provisions above, a recipient may use your version of this file under</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* the terms of any one of the MPL, the GPL or the LGPL.</text:p>
+     <text:p text:style-name="P8"><text:s/>* the terms of any one of the MPL, the GPL or the LGPL.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* ***** END LICENSE BLOCK ***** */</text:p>
+     <text:p text:style-name="P8"><text:s/>* ***** END LICENSE BLOCK ***** */</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">/*</text:p>
+     <text:p text:style-name="P8">/*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Copyright 2002 Kevin B. Hendricks, Stratford, Ontario, Canada</text:p>
+     <text:p text:style-name="P8"><text:s/>* Copyright 2002 Kevin B. Hendricks, Stratford, Ontario, Canada</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* And Contributors. <text:s/>All rights reserved.</text:p>
+     <text:p text:style-name="P8"><text:s/>* And Contributors. <text:s/>All rights reserved.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* Redistribution and use in source and binary forms, with or without</text:p>
+     <text:p text:style-name="P8"><text:s/>* Redistribution and use in source and binary forms, with or without</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* modification, are permitted provided that the following conditions</text:p>
+     <text:p text:style-name="P8"><text:s/>* modification, are permitted provided that the following conditions</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* are met:</text:p>
+     <text:p text:style-name="P8"><text:s/>* are met:</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* 1. Redistributions of source code must retain the above copyright</text:p>
+     <text:p text:style-name="P8"><text:s/>* 1. Redistributions of source code must retain the above copyright</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>notice, this list of conditions and the following disclaimer.</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>notice, this list of conditions and the following disclaimer.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* 2. Redistributions in binary form must reproduce the above copyright</text:p>
+     <text:p text:style-name="P8"><text:s/>* 2. Redistributions in binary form must reproduce the above copyright</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>notice, this list of conditions and the following disclaimer in the</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>notice, this list of conditions and the following disclaimer in the</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>documentation and/or other materials provided with the distribution.</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>documentation and/or other materials provided with the distribution.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* 3. All modifications to the source code must be clearly marked as</text:p>
+     <text:p text:style-name="P8"><text:s/>* 3. All modifications to the source code must be clearly marked as</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>such. <text:s/>Binary redistributions based on modified source code</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>such. <text:s/>Binary redistributions based on modified source code</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>must be clearly marked as modified versions in the documentation</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>must be clearly marked as modified versions in the documentation</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* <text:s text:c="3"/>and/or other materials provided with the distribution.</text:p>
+     <text:p text:style-name="P8"><text:s/>* <text:s text:c="3"/>and/or other materials provided with the distribution.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*</text:p>
+     <text:p text:style-name="P8"><text:s/>*</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS</text:p>
+     <text:p text:style-name="P8"><text:s/>* THIS SOFTWARE IS PROVIDED BY KEVIN B. HENDRICKS AND CONTRIBUTORS</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* ``AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</text:p>
+     <text:p text:style-name="P8"><text:s/>* ``AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</text:p>
+     <text:p text:style-name="P8"><text:s/>* LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* FOR A PARTICULAR PURPOSE ARE DISCLAIMED. <text:s/>IN NO EVENT SHALL</text:p>
+     <text:p text:style-name="P8"><text:s/>* FOR A PARTICULAR PURPOSE ARE DISCLAIMED. <text:s/>IN NO EVENT SHALL</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</text:p>
+     <text:p text:style-name="P8"><text:s/>* KEVIN B. HENDRICKS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</text:p>
+     <text:p text:style-name="P8"><text:s/>* INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</text:p>
+     <text:p text:style-name="P8"><text:s/>* BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</text:p>
+     <text:p text:style-name="P8"><text:s/>* LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</text:p>
+     <text:p text:style-name="P8"><text:s/>* HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:soft-page-break/><text:s/>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</text:p>
+     <text:p text:style-name="P8"><text:soft-page-break/><text:s/>* LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</text:p>
+     <text:p text:style-name="P8"><text:s/>* OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>* SUCH DAMAGE.</text:p>
+     <text:p text:style-name="P8"><text:s/>* SUCH DAMAGE.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s/>*/</text:p>
+     <text:p text:style-name="P8"><text:s/>*/</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"/>
+     <text:p text:style-name="P8"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">#include &lt;stdlib.h&gt;</text:p>
+     <text:p text:style-name="P8">#include &lt;stdlib.h&gt;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">#include &lt;string.h&gt;</text:p>
+     <text:p text:style-name="P8">#include &lt;string.h&gt;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">#include &lt;stdio.h&gt;</text:p>
+     <text:p text:style-name="P8">#include &lt;stdio.h&gt;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">#include &lt;ctype.h&gt;</text:p>
+     <text:p text:style-name="P8">#include &lt;ctype.h&gt;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -699,15 +678,15 @@
      <text:p text:style-name="P7">SuggestMgr::<office:annotation office:name="__Annotation__10618_3335985759">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:02:32.486093822</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">Construct and initialize</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Construct and initialize</text:span></text:p>
       </office:annotation><text:span text:style-name="T10">SuggestMgr</text:span><office:annotation-end office:name="__Annotation__10618_3335985759"/>(<office:annotation office:name="__Annotation__10617_3335985759">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:01:04.476462057</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">For </text:span><text:span text:style-name="T27">en_US</text:span><text:span text:style-name="T24">.aff the value for </text:span><text:span text:style-name="T27">TRY</text:span><text:span text:style-name="T24"> is </text:span><text:span text:style-name="T27">esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ&apos;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">For </text:span><text:span text:style-name="T22">en_US</text:span><text:span text:style-name="T20">.aff the value for </text:span><text:span text:style-name="T22">TRY</text:span><text:span text:style-name="T20"> is </text:span><text:span text:style-name="T22">esianrtolcdugmphbyfvkwzESIANRTOLCDUGMPHBYFVKWZ&apos;</text:span></text:p>
       </office:annotation>const char* tryme<office:annotation-end office:name="__Annotation__10617_3335985759"/>, <office:annotation office:name="__Annotation__10616_3335985759">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T09:58:30.297607383</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MAXSUGGESTION 15</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MAXSUGGESTION 15</text:span></text:p>
       </office:annotation>unsigned int maxn<office:annotation-end office:name="__Annotation__10616_3335985759"/>, AffixMgr* aptr) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -747,7 +726,7 @@
      <text:p text:style-name="P8"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P8"><text:s text:c="2"/>utf8<text:span text:style-name="T23"> =</text:span> 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>utf8<text:span text:style-name="T7"> =</text:span> 0;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>langnum = 0;</text:p>
@@ -768,8 +747,8 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__10615_3335985759">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T09:56:08.935057657</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MAXNGRAMSUGS 4</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MAXPHONSUGS 2</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MAXNGRAMSUGS 4</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MAXPHONSUGS 2</text:span></text:p>
       </office:annotation><text:s text:c="2"/>maxngramsugs = MAXNGRAMSUGS;</text:p>
     </text:list-item>
     <text:list-item>
@@ -782,46 +761,46 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>if (pAMgr) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>langnum = pAMgr-&gt;<text:span text:style-name="T22">get_langnum</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>langnum = pAMgr-&gt;<text:span text:style-name="T18">get_langnum</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>ckey = pAMgr-&gt;<text:span text:style-name="T22"><office:annotation office:name="__Annotation__6076_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:01:37.654305018</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T26">#define SPELL_KEYSTRING &quot;qwertyuiop|asdfghjkl|zxcvbnm&quot;</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Overwritten by </text:span><text:span text:style-name="T26">KEY</text:span><text:span text:style-name="T25"> definitiona in affix file.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T22">get_key_string</text:span><office:annotation-end office:name="__Annotation__6076_2571519391"/>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>ckey = pAMgr-&gt;<office:annotation office:name="__Annotation__6076_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:01:37.654305018</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define SPELL_KEYSTRING &quot;qwertyuiop|asdfghjkl|zxcvbnm&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Overwritten by </text:span><text:span text:style-name="T22">KEY</text:span><text:span text:style-name="T20"> definitiona in affix file.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T18">get_key_string</text:span><office:annotation-end office:name="__Annotation__6076_2571519391"/>();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>nosplitsugs = pAMgr-&gt;<text:span text:style-name="T22">get_nosplitsugs</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>nosplitsugs = pAMgr-&gt;<text:span text:style-name="T18">get_nosplitsugs</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (pAMgr-&gt;<text:span text:style-name="T22">get_maxngramsugs</text:span>() &gt;= 0)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if (pAMgr-&gt;<text:span text:style-name="T18">get_maxngramsugs</text:span>() &gt;= 0)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>maxngramsugs = pAMgr-&gt;<text:span text:style-name="T22">get_maxngramsugs</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>maxngramsugs = pAMgr-&gt;<text:span text:style-name="T18">get_maxngramsugs</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P8"><text:s text:c="4"/>utf8 = pAMgr-&gt;get_utf8();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (pAMgr-&gt;<text:span text:style-name="T22">get_maxcpdsugs</text:span>() &gt;= 0)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if (pAMgr-&gt;<text:span text:style-name="T18">get_maxcpdsugs</text:span>() &gt;= 0)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>maxcpdsugs = pAMgr-&gt;<text:span text:style-name="T22">get_maxcpdsugs</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>maxcpdsugs = pAMgr-&gt;<text:span text:style-name="T18">get_maxcpdsugs</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P8"><text:s text:c="4"/>if (!utf8) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>csconv = get_current_cs(pAMgr-&gt;<text:span text:style-name="T22">get_encoding</text:span>());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>csconv = get_current_cs(pAMgr-&gt;<text:span text:style-name="T18">get_encoding</text:span>());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>complexprefixes = pAMgr-&gt;<text:span text:style-name="T22">get_complexprefixes</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>complexprefixes = pAMgr-&gt;<text:span text:style-name="T18">get_complexprefixes</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>}</text:p>
@@ -887,7 +866,7 @@
      <text:p text:style-name="P7">SuggestMgr::<office:annotation office:name="__Annotation__10619_3335985759">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:02:44.662291256</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">Destruct and free memory</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Destruct and free memory</text:span></text:p>
       </office:annotation><text:span text:style-name="T10">~SuggestMgr</text:span><office:annotation-end office:name="__Annotation__10619_3335985759"/>() {</text:p>
     </text:list-item>
     <text:list-item>
@@ -936,11 +915,11 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">void SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5076_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T14:03:35.058291526</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Add a candidate word to list of suggestion only if it checks out to be a correct word and maximum of canidates hasn&apos;t been reached yet</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">testsug</text:span><office:annotation-end office:name="__Annotation__5076_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">void SuggestMgr::<office:annotation office:name="__Annotation__5076_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T14:03:35.058291526</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Add a candidate word to list of suggestion only if it checks out to be a correct word and maximum of canidates hasn&apos;t been reached yet</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">testsug</text:span><office:annotation-end office:name="__Annotation__5076_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="24"/>const std::string&amp; candidate,</text:p>
@@ -982,7 +961,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>if ((cwrd) &amp;&amp; <text:span text:style-name="T12">checkword</text:span>(candidate, cpdsuggest, timer, timelimit)) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>if ((cwrd) &amp;&amp; <text:span text:style-name="T11">checkword</text:span>(candidate, cpdsuggest, timer, timelimit)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>wlst.push_back(candidate);</text:p>
@@ -1006,13 +985,13 @@
      <text:p text:style-name="P11">// onlycompoundsug: probably bad suggestions (need for ngram sugs, too)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">void SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5077_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T14:04:28.083188617</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">This method attempts to find canidates by using several techniques for finding candidates in a specific order. For each technique, certain conditions have to be met.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">This method is the entry point for getting suggestions.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">suggest</text:span><office:annotation-end office:name="__Annotation__5077_2571519391"/>(std::vector&lt;std::string&gt;&amp; slst,</text:p>
+     <text:p text:style-name="P7">void SuggestMgr::<office:annotation office:name="__Annotation__5077_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T14:04:28.083188617</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">This method attempts to find canidates by using several techniques for finding candidates in a specific order. For each technique, certain conditions have to be met.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">This method is the entry point for getting suggestions.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">suggest</text:span><office:annotation-end office:name="__Annotation__5077_2571519391"/>(std::vector&lt;std::string&gt;&amp; slst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="24"/>const char* w,</text:p>
@@ -1063,7 +1042,7 @@
      <text:p text:style-name="P8"><text:s text:c="4"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T16">reverseword(w2);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T14">reverseword(w2);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>word = w2.c_str();</text:p>
@@ -1129,7 +1108,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">capchars</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">capchars</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1144,7 +1123,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if ((slst.size() &lt; maxSug) &amp;&amp; (!cpdsuggest || (slst.size() &lt; oldSug + maxcpdsugs))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T13">replchars</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">replchars</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1162,7 +1141,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>(!cpdsuggest || (slst.size() &lt; oldSug + maxcpdsugs))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T13">mapchars</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">mapchars</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1198,7 +1177,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">swapchar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">swapchar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1222,7 +1201,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">longswapchar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">longswapchar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1246,7 +1225,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">badcharkey</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">badcharkey</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1270,7 +1249,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">extrachar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">extrachar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1294,7 +1273,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">forgotchar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">forgotchar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1318,7 +1297,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">movechar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">movechar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1342,7 +1321,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">badchar</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">badchar</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1366,7 +1345,7 @@
      <text:p text:style-name="P8"><text:s text:c="6"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T13">doubletwochars</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">doubletwochars</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1384,7 +1363,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>(!cpdsuggest || (slst.size() &lt; oldSug + maxcpdsugs))) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T13">twowords</text:span>(slst, word, cpdsuggest);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">twowords</text:span>(slst, word, cpdsuggest);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -1465,11 +1444,11 @@
      <text:p text:style-name="P7"><text:s text:c="2"/><office:annotation office:name="__Annotation__5075_2571519391">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-18T14:03:05.473590886</dc:date>
-       <text:p text:style-name="P13"><text:span text:style-name="T25">Simply try word in all capitals</text:span></text:p>
-      </office:annotation><text:span text:style-name="T17">mkallcap</text:span>(candidate, csconv);<office:annotation-end office:name="__Annotation__5075_2571519391"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Simply try word in all capitals</text:span></text:p>
+      </office:annotation><text:span text:style-name="T14">mkallcap</text:span>(candidate, csconv);<office:annotation-end office:name="__Annotation__5075_2571519391"/></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/><text:span text:style-name="T13">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7">}</text:p>
@@ -1517,8 +1496,8 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>const std::vector&lt;mapentry&gt;&amp; <office:annotation office:name="__Annotation__5248_2571519391">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-18T14:18:46.467295793</dc:date>
-       <text:p text:style-name="P13"><text:span text:style-name="T25">The </text:span><text:span text:style-name="T26">MAP</text:span><text:span text:style-name="T25"> definitons of the affix file are loaded here</text:span></text:p>
-      </office:annotation>maptable<office:annotation-end office:name="__Annotation__5248_2571519391"/> = pAMgr-&gt;<text:span text:style-name="T22">get_maptable</text:span>();</text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">The </text:span><text:span text:style-name="T22">MAP</text:span><text:span text:style-name="T20"> definitons of the affix file are loaded here</text:span></text:p>
+      </office:annotation>maptable<office:annotation-end office:name="__Annotation__5248_2571519391"/> = pAMgr-&gt;<text:span text:style-name="T18">get_maptable</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>if (maptable.empty())</text:p>
@@ -1536,11 +1515,11 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>timer = <office:annotation office:name="__Annotation__4373_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:19:07.544474330</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MINTIMER 100</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MINTIMER 100</text:span></text:p>
       </office:annotation>MINTIMER<office:annotation-end office:name="__Annotation__4373_3395360522"/>;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>return <text:span text:style-name="T13">map_related</text:span>(word, candidate, 0, wlst, cpdsuggest,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>return <text:span text:style-name="T11">map_related</text:span>(word, candidate, 0, wlst, cpdsuggest,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="21"/>maptable, &amp;timer, &amp;timelimit);</text:p>
@@ -1552,17 +1531,17 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T11"><office:annotation office:name="__Annotation__5246_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T14:16:07.504524926</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Note that this is a recursive method. The running duration is limited by a timer.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Here is where the actual mapping is done and all correclt spelled words are added to a list.</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">For example for French, there are 25 mapping definitions. One of these is </text:span><text:span text:style-name="T26">eéèêëEÉÈÊË</text:span></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T26"/></text:p>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Note that </text:span><text:span text:style-name="T26">testsug</text:span><text:span text:style-name="T25"> is not used here, but check is done directly.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T11">map_related</text:span><office:annotation-end office:name="__Annotation__5246_2571519391"/>(const char* word,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__5246_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T14:16:07.504524926</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Note that this is a recursive method. The running duration is limited by a timer.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Here is where the actual mapping is done and all correclt spelled words are added to a list.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">For example for French, there are 25 mapping definitions. One of these is </text:span><text:span text:style-name="T22">eéèêëEÉÈÊË</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Note that </text:span><text:span text:style-name="T22">testsug</text:span><text:span text:style-name="T20"> is not used here, but check is done directly.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">map_related</text:span><office:annotation-end office:name="__Annotation__5246_2571519391"/>(const char* word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="28"/>std::string&amp; candidate,</text:p>
@@ -1610,7 +1589,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if ((cwrd) &amp;&amp; <text:span text:style-name="T12">checkword</text:span>(candidate, cpdsuggest, timer, timelimit)) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if ((cwrd) &amp;&amp; <text:span text:style-name="T11">checkword</text:span>(candidate, cpdsuggest, timer, timelimit)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (wlst.size() &lt; maxSug) {</text:p>
@@ -1661,7 +1640,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/>candidate.append(maptable[j][l]);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T13">map_related</text:span>(word, candidate, wn + len, wlst,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T11">map_related</text:span>(word, candidate, wn + len, wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="27"/>cpdsuggest, maptable, timer, timelimit);</text:p>
@@ -1691,7 +1670,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>candidate.push_back(*(word + wn));</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T13">map_related</text:span>(word, candidate, wn + 1, wlst, cpdsuggest,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T11">map_related</text:span>(word, candidate, wn + 1, wlst, cpdsuggest,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="16"/>maptable, timer, timelimit);</text:p>
@@ -1715,17 +1694,17 @@
      <text:p text:style-name="P11">// differs with more, than 1 letter from the right form.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5250_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T14:26:08.507552518</dc:date>
-        <text:p text:style-name="P14"><text:span text:style-name="T25">Replacement definitions </text:span><text:span text:style-name="T26">REP</text:span><text:span text:style-name="T25"> are used to find suggestions.</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25">For example for Ameirican, there are 90 replacement definitions. Two of these are </text:span><text:span text:style-name="T26">k qu</text:span><text:span text:style-name="T25"> and </text:span><text:span text:style-name="T26">qu k</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25">Note that opposite to </text:span><text:span text:style-name="T26">MAP</text:span><text:span text:style-name="T25"> definiton, a </text:span><text:span text:style-name="T26">REP</text:span><text:span text:style-name="T25"> definition is directional and need to be processed as such. Hence, using mappings can result in much more combination and additionally with a recursion, a time limit is needed there, but not here.</text:span></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25"/></text:p>
-        <text:p text:style-name="P14"><text:span text:style-name="T25">Iterate over all replacement patterns and see if they turn up with valid suggestions.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">replchars</text:span><office:annotation-end office:name="__Annotation__5250_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__5250_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T14:26:08.507552518</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Replacement definitions </text:span><text:span text:style-name="T22">REP</text:span><text:span text:style-name="T20"> are used to find suggestions.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">For example for Ameirican, there are 90 replacement definitions. Two of these are </text:span><text:span text:style-name="T22">k qu</text:span><text:span text:style-name="T20"> and </text:span><text:span text:style-name="T22">qu k</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Note that opposite to </text:span><text:span text:style-name="T22">MAP</text:span><text:span text:style-name="T20"> definiton, a </text:span><text:span text:style-name="T22">REP</text:span><text:span text:style-name="T20"> definition is directional and need to be processed as such. Hence, using mappings can result in much more combination and additionally with a recursion, a time limit is needed there, but not here.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Iterate over all replacement patterns and see if they turn up with valid suggestions.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">replchars</text:span><office:annotation-end office:name="__Annotation__5250_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="26"/>const char* word,</text:p>
@@ -1746,7 +1725,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>return wlst.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>const std::vector&lt;replentry&gt;&amp; reptable = pAMgr-&gt;<text:span text:style-name="T22">get_reptable</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>const std::vector&lt;replentry&gt;&amp; reptable = pAMgr-&gt;<text:span text:style-name="T18">get_reptable</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>for (size_t i = 0; i &lt; reptable.size(); ++i) {</text:p>
@@ -1803,7 +1782,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>candidate.append(r + reptable[i].pattern.size());</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T13">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T1">// check REP suggestions with space</text:span></text:p>
@@ -1827,8 +1806,8 @@
      <text:p text:style-name="P7"><text:s text:c="10"/><office:annotation office:name="__Annotation__5472_2571519391">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-18T14:30:22.368291054</dc:date>
-       <text:p text:style-name="P13"><text:span text:style-name="T25">Also try the candidate with applied replacement of which all the parts separated by spaces are valid suggestions.</text:span></text:p>
-      </office:annotation>if<office:annotation-end office:name="__Annotation__5472_2571519391"/> (<text:span text:style-name="T12">checkword</text:span>(prev_chunk, 0, NULL, NULL)) {</text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Also try the candidate with applied replacement of which all the parts separated by spaces are valid suggestions.</text:span></text:p>
+      </office:annotation>if<office:annotation-end office:name="__Annotation__5472_2571519391"/> (<text:span text:style-name="T11">checkword</text:span>(prev_chunk, 0, NULL, NULL)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>size_t oldns = wlst.size();</text:p>
@@ -1837,7 +1816,7 @@
      <text:p text:style-name="P7"><text:s text:c="12"/>std::string post_chunk = candidate.substr(sp + 1);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T12">testsug</text:span>(wlst, post_chunk, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T11">testsug</text:span>(wlst, post_chunk, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>if (oldns &lt; wlst.size()) {</text:p>
@@ -1888,11 +1867,11 @@
      <text:p text:style-name="P11">// -&gt; vacacation)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5608_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T14:47:19.026579137</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Add correct word without the doubled two characters to the list of suggestions. The arrows in the examples point in direction of the spelling mistake.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">doubletwochars</text:span><office:annotation-end office:name="__Annotation__5608_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__5608_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T14:47:19.026579137</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Add correct word without the doubled two characters to the list of suggestions. The arrows in the examples point in direction of the spelling mistake.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">doubletwochars</text:span><office:annotation-end office:name="__Annotation__5608_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="31"/>const char* word,</text:p>
@@ -1931,7 +1910,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>candidate.insert(candidate.end(), word + i + 1, word + wl);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>state = 0;</text:p>
@@ -2048,11 +2027,11 @@
      <text:p text:style-name="P11">// version)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5931_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T15:55:15.727174852</dc:date>
-        <text:p><text:span text:style-name="T25">Will iterate over all characters and try upper casing that characters to find suggestion. Then (after restoring that character) it will try all other characters from the related part from ckey, see also top of this file relating </text:span><text:span text:style-name="T26">KEY</text:span><text:span text:style-name="T25">.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">badcharkey</text:span><office:annotation-end office:name="__Annotation__5931_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__5931_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T15:55:15.727174852</dc:date>
+       <text:p><text:span text:style-name="T20">Will iterate over all characters and try upper casing that characters to find suggestion. Then (after restoring that character) it will try all other characters from the related part from ckey, see also top of this file relating </text:span><text:span text:style-name="T22">KEY</text:span><text:span text:style-name="T20">.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">badcharkey</text:span><office:annotation-end office:name="__Annotation__5931_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="27"/>const char* word,</text:p>
@@ -2082,13 +2061,13 @@
      <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T1">// check with uppercase letters</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>candidate[i] = csconv[((unsigned char)tmpc)].<text:span text:style-name="T16">cupper</text:span>;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>candidate[i] = csconv[((unsigned char)tmpc)].<text:span text:style-name="T14">cupper</text:span>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>if (tmpc != candidate[i]) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>candidate[i] = tmpc;</text:p>
@@ -2118,7 +2097,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>candidate[i] = *(loc - 1);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>}</text:p>
@@ -2130,7 +2109,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>candidate[i] = *(loc + 1);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>}</text:p>
@@ -2295,11 +2274,11 @@
      <text:p text:style-name="P11">// error is wrong char in place of correct one</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6221_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:13:34.115508709</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">The try characters are loaded in a similar way as the key characters. The try characters can be a long list, therefore a time limit is used here. General consideration is to add different time limits where time limits are needed as this one is less intensive than e.g. MAP. Other general consideration is to use character frequency (and ngram frequencies) to optimise the order of iteration (Both are feature requests of version after 2.0)</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">badchar</text:span><office:annotation-end office:name="__Annotation__6221_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst, const char* word, int cpdsuggest) {</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__6221_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:13:34.115508709</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">The try characters are loaded in a similar way as the key characters. The try characters can be a long list, therefore a time limit is used here. General consideration is to add different time limits where time limits are needed as this one is less intensive than e.g. MAP. Other general consideration is to use character frequency (and ngram frequencies) to optimise the order of iteration (Both are feature requests of version after 2.0)</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">badchar</text:span><office:annotation-end office:name="__Annotation__6221_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst, const char* word, int cpdsuggest) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>std::string candidate(word);</text:p>
@@ -2311,7 +2290,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>int timer = <office:annotation office:name="__Annotation__4474_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:51:31.298588674</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MINTIMER 100</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MINTIMER 100</text:span></text:p>
       </office:annotation>MINTIMER<office:annotation-end office:name="__Annotation__4474_3395360522"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2339,7 +2318,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>*aI = ctry[j];</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, &amp;timer, &amp;timelimit);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, &amp;timer, &amp;timelimit);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (!timer)</text:p>
@@ -2513,11 +2492,11 @@
      <text:p text:style-name="P11">// error is word has an extra letter it does not need</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6222_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:18:03.480525264</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Enumerate omitting each character and seeing of suggestion results. General consideration, document order of each suggestion method.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">extrachar</text:span><office:annotation-end office:name="__Annotation__6222_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__6222_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:18:03.480525264</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Enumerate omitting each character and seeing of suggestion results. General consideration, document order of each suggestion method.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">extrachar</text:span><office:annotation-end office:name="__Annotation__6222_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="26"/>const char* word,</text:p>
@@ -2550,7 +2529,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>candidate.erase(candidate.begin() + index);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>candidate.insert(candidate.begin() + index, tmpc);</text:p>
@@ -2571,11 +2550,11 @@
      <text:p text:style-name="P11">// error is missing a letter it needs</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6323_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:25:22.864671596</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">The opposite of the extrachar method, however, this method is restricted in execution time. Reason is that not one character is changed, but each character is changed time all characters from TRY.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">forgotchar</text:span><office:annotation-end office:name="__Annotation__6323_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__6323_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:25:22.864671596</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">The opposite of the extrachar method, however, this method is restricted in execution time. Reason is that not one character is changed, but each character is changed time all characters from TRY.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">forgotchar</text:span><office:annotation-end office:name="__Annotation__6323_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="27"/>const char* word,</text:p>
@@ -2593,7 +2572,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>int timer = <office:annotation office:name="__Annotation__4472_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:51:16.866326017</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MINTIMER 100</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MINTIMER 100</text:span></text:p>
       </office:annotation>MINTIMER<office:annotation-end office:name="__Annotation__4472_3395360522"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -2618,7 +2597,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>candidate.insert(candidate.begin() + index, ctry[k]);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, &amp;timer, &amp;timelimit);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, &amp;timer, &amp;timelimit);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (!timer)</text:p>
@@ -2762,11 +2741,11 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>if (<office:annotation office:name="__Annotation__6478_2571519391">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-18T16:29:41.877391371</dc:date>
-       <text:p text:style-name="P13"><text:span text:style-name="T25">Why only for Hungarian? These exceptions have to be reviewed in later releases.</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Why only for Hungarian? These exceptions have to be reviewed in later releases.</text:span></text:p>
       </office:annotation>langnum == LANG_hu<office:annotation-end office:name="__Annotation__6478_2571519391"/>)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>forbidden = <text:span text:style-name="T13">check_forbidden</text:span>(word, wl);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>forbidden = <text:span text:style-name="T11">check_forbidden</text:span>(word, wl);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -2817,13 +2796,13 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>*p = &apos;\0&apos;;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>int c1 = <text:span text:style-name="T12">checkword</text:span>(candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>int c1 = <text:span text:style-name="T11">checkword</text:span>(candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>if (c1) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>c2 = <text:span text:style-name="T12">checkword</text:span>((p + 1), cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>c2 = <text:span text:style-name="T11">checkword</text:span>((p + 1), cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (c2) {</text:p>
@@ -2850,11 +2829,11 @@
      <text:p text:style-name="P7"><text:s text:c="14"/>(((p &gt; candidate + 1) &amp;&amp; (p[-1] == p[-2])) || (p[-1] == p[2]))) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="13"/><text:span text:style-name="T1">// or multiple compounding, with more, than 6 </text:span><text:span text:style-name="T1"><office:annotation office:name="__Annotation__6480_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:32:03.496065419</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">How are syllables detected?</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T1">syllables</text:span><office:annotation-end office:name="__Annotation__6480_2571519391"/></text:p>
+     <text:p text:style-name="P7"><text:s text:c="13"/><text:span text:style-name="T1">// or multiple compounding, with more, than 6 </text:span><office:annotation office:name="__Annotation__6480_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:32:03.496065419</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">How are syllables detected?</text:span></text:p>
+      </office:annotation><text:span text:style-name="T1">syllables</text:span><office:annotation-end office:name="__Annotation__6480_2571519391"/></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="13"/>((c1 == 3) &amp;&amp; (c2 &gt;= 2))))</text:p>
@@ -2923,7 +2902,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>if (ctry &amp;&amp; (<office:annotation office:name="__Annotation__6479_2571519391">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-18T16:31:47.527691010</dc:date>
-       <text:p text:style-name="P13"><text:span text:style-name="T25">Why &apos;a&apos;? Need some examples. Or is it to detect a Latin script?</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Why &apos;a&apos;? Need some examples. Or is it to detect a Latin script?</text:span></text:p>
       </office:annotation>strchr(ctry, &apos;a&apos;<office:annotation-end office:name="__Annotation__6479_2571519391"/>) || strchr(ctry, &apos;-&apos;)) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3002,11 +2981,11 @@
      <text:p text:style-name="P11">// error is adjacent letter were swapped</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6481_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:36:25.549002241</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Note the support for double swapping of two characters. That does not need to be adjecent! Could perhaps be reimplemented in a more generic way.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">swapchar</text:span><office:annotation-end office:name="__Annotation__6481_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__6481_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:36:25.549002241</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Note the support for double swapping of two characters. That does not need to be adjecent! Could perhaps be reimplemented in a more generic way.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">swapchar</text:span><office:annotation-end office:name="__Annotation__6481_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="25"/>const char* word,</text:p>
@@ -3036,7 +3015,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>std::swap(candidate[i], candidate[i+1]);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>std::swap(candidate[i], candidate[i+1]);</text:p>
@@ -3072,7 +3051,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>candidate[candidate.size() - 1] = word[candidate.size() - 2];</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:soft-page-break/><text:s text:c="4"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:soft-page-break/><text:s text:c="4"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>if (candidate.size() == 5) {</text:p>
@@ -3087,7 +3066,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>candidate[2] = word[1];</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -3228,11 +3207,11 @@
      <text:p text:style-name="P11">// error is not adjacent letter were swapped</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6592_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:38:38.223353264</dc:date>
-        <text:p text:style-name="P13"><text:span text:style-name="T25">Striaght forward. Question for later releases, is swapping over long distances useful? Perhaps limit algorithm or iterate in such as way that distance is increased gradually.</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">longswapchar</text:span><office:annotation-end office:name="__Annotation__6592_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<office:annotation office:name="__Annotation__6592_2571519391">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-18T16:38:38.223353264</dc:date>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">Striaght forward. Question for later releases, is swapping over long distances useful? Perhaps limit algorithm or iterate in such as way that distance is increased gradually.</text:span></text:p>
+      </office:annotation><text:span text:style-name="T10">longswapchar</text:span><office:annotation-end office:name="__Annotation__6592_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="29"/>const char* word,</text:p>
@@ -3259,7 +3238,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>std::swap(*p, *q);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>std::swap(*p, *q);</text:p>
@@ -3349,11 +3328,7 @@
      <text:p text:style-name="P11">// error is a letter was moved</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__6593_2571519391">
-        <dc:creator>Unknown Author</dc:creator>
-        <dc:date>2018-09-18T16:40:14.129263655</dc:date>
-        <text:p><text:span text:style-name="T25">TODO</text:span></text:p>
-       </office:annotation></text:span><text:span text:style-name="T10">movechar</text:span><office:annotation-end office:name="__Annotation__6593_2571519391"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10">movechar</text:span>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="25"/>const char* word,</text:p>
@@ -3380,19 +3355,23 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>for (std::string::iterator p = candidate.begin(); p &lt; candidate.end(); ++p) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>for (std::string::iterator q = p + 1; q &lt; candidate.end() &amp;&amp; std::distance(p, q) &lt; 10; ++q) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>for (std::string::iterator q = p + 1; q &lt; candidate.end() &amp;&amp; <office:annotation office:name="__Annotation__5284_166794943">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-20T11:51:40.508585642</dc:date>
+       <text:p text:style-name="P13"><text:span text:style-name="T21">Character has to be moved two or more places but less than ten places.</text:span></text:p>
+      </office:annotation>std::distance(p, q) &lt; 10; ++q) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>std::swap(*q, *(q - 1));</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>if (std::distance(p, q) &lt; 2)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>if (std::distance(p, q) &lt; 2<office:annotation-end office:name="__Annotation__5284_166794943"/>)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>continue; <text:s/>// omit swap char</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>continue; <text:s/><text:span text:style-name="T2">// omit swap char</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -3407,7 +3386,11 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>for (std::string::reverse_iterator p = candidate.rbegin(), pEnd = candidate.rend() - 1; p != pEnd; ++p) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>for (std::string::<office:annotation office:name="__Annotation__5285_166794943">
+       <dc:creator>Unknown Author</dc:creator>
+       <dc:date>2018-09-20T11:52:07.676954912</dc:date>
+       <text:p text:style-name="P13"><text:span text:style-name="T21">Attempt the same but starting from the other end of the word, i.e. the reverse approach.</text:span></text:p>
+      </office:annotation>reverse_iterator<office:annotation-end office:name="__Annotation__5285_166794943"/> p = candidate.rbegin(), pEnd = candidate.rend() - 1; p != pEnd; ++p) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>for (std::string::reverse_iterator q = p + 1, qEnd = candidate.rend(); q != qEnd &amp;&amp; std::distance(p, q) &lt; 10; ++q) {</text:p>
@@ -3422,7 +3405,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>continue; <text:s/><text:span text:style-name="T1">// omit swap char</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T12">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T11">testsug</text:span>(wlst, candidate, cpdsuggest, NULL, NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -3560,7 +3543,11 @@
      <text:p text:style-name="P11">// generate a set of suggestions for very poorly spelled words</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">void SuggestMgr::<text:span text:style-name="T10">ngsuggest</text:span>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
+     <text:p text:style-name="P7">void SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5413_166794943">
+        <dc:creator>Unknown Author</dc:creator>
+        <dc:date>2018-09-20T12:08:04.654833323</dc:date>
+        <text:p text:style-name="P13"><text:span text:style-name="T21">Called after all conventional techniques have </text:span></text:p>
+       </office:annotation></text:span><text:span text:style-name="T10">ngsuggest</text:span><office:annotation-end office:name="__Annotation__5413_166794943"/>(std::vector&lt;std::string&gt;&amp; wlst,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="26"/>const char* w,</text:p>
@@ -3593,8 +3580,8 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4538_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:22:15.301567265</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MAX_ROOTS 100</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MAX_ROOTS 100</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22"/></text:p>
       </office:annotation><text:s text:c="2"/>struct hentry* roots[MAX_ROOTS];</text:p>
     </text:list-item>
     <text:list-item>
@@ -3634,7 +3621,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>int low = <office:annotation office:name="__Annotation__4539_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:22:44.854004753</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_LOWERING<office:annotation-end office:name="__Annotation__4539_3395360522"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3668,7 +3655,7 @@
      <text:p text:style-name="P8"><text:s text:c="4"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T16">reverseword(w2);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T14">reverseword(w2);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>word = w2.c_str();</text:p>
@@ -3686,7 +3673,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>int nc = strlen(word);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>int n = <text:span text:style-name="T20">(utf8) ? u8_u16(u8, word)</text:span> : nc;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>int n = <text:span text:style-name="T17">(utf8) ? u8_u16(u8, word)</text:span> : nc;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -3725,7 +3712,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>int col = -1;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>phonetable* ph = (pAMgr) ? pAMgr-&gt;<text:span text:style-name="T22">get_phonetable</text:span>() : NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>phonetable* ph = (pAMgr) ? pAMgr-&gt;<text:span text:style-name="T18">get_phonetable</text:span>() : NULL;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>std::string target;</text:p>
@@ -3761,7 +3748,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>if (!nonbmp)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T17">mkallcap</text:span>(candidate, csconv);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T14">mkallcap</text:span>(candidate, csconv);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -3776,16 +3763,16 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG forbiddenword = pAMgr ? pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>() : FLAG_NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG forbiddenword = pAMgr ? pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>() : FLAG_NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG nosuggest = pAMgr ? pAMgr-&gt;<text:span text:style-name="T22">get_nosuggest</text:span>() : FLAG_NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG nosuggest = pAMgr ? pAMgr-&gt;<text:span text:style-name="T18">get_nosuggest</text:span>() : FLAG_NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG nongramsuggest = pAMgr ? pAMgr-&gt;<text:span text:style-name="T22">get_nongramsuggest</text:span>() : FLAG_NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG nongramsuggest = pAMgr ? pAMgr-&gt;<text:span text:style-name="T18">get_nongramsuggest</text:span>() : FLAG_NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG onlyincompound = pAMgr ? pAMgr-&gt;<text:span text:style-name="T22">get_onlyincompound</text:span>() : FLAG_NULL;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>FLAG onlyincompound = pAMgr ? pAMgr-&gt;<text:span text:style-name="T18">get_onlyincompound</text:span>() : FLAG_NULL;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -3884,7 +3871,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>int leftcommon = <text:span text:style-name="T13">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>int leftcommon = <text:span text:style-name="T11">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>if (low) {</text:p>
@@ -3893,7 +3880,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T1">// lowering dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T16">mkallsmall(f, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T14">mkallsmall(f, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>}</text:p>
@@ -3902,7 +3889,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>sc = ngram(3, word, f, <office:annotation office:name="__Annotation__4540_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:23:22.886746343</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_LONGER_WORSE<office:annotation-end office:name="__Annotation__4540_3395360522"/>) + leftcommon;</text:p>
     </text:list-item>
     <text:list-item>
@@ -3957,7 +3944,7 @@
      <text:p text:style-name="P8"><text:s text:c="8"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>int leftcommon = <text:span text:style-name="T13">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>int leftcommon = <text:span text:style-name="T11">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>if (low) {</text:p>
@@ -3966,17 +3953,17 @@
      <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T1">// lowering dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T16">mkallsmall(f, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T14">mkallsmall(f, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>sc2 = <text:span text:style-name="T13">ngram</text:span>(3, word, f, <office:annotation office:name="__Annotation__4541_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="10"/>sc2 = <text:span text:style-name="T11">ngram</text:span>(3, word, f, <office:annotation office:name="__Annotation__4541_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:23:38.695030850</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22"/></text:p>
       </office:annotation>NGRAM_LONGER_WORSE<office:annotation-end office:name="__Annotation__4541_3395360522"/>) + leftcommon;</text:p>
     </text:list-item>
     <text:list-item>
@@ -4019,7 +4006,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/>candidate = HENTRY_WORD(hp);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T17">mkallcap</text:span>(candidate, csconv);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T14">mkallcap</text:span>(candidate, csconv);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>}</text:p>
@@ -4043,13 +4030,13 @@
      <text:p text:style-name="P8"><text:s text:c="8"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>scphon = 2 * <text:span text:style-name="T13">ngram</text:span>(3, target, f,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>scphon = 2 * <text:span text:style-name="T11">ngram</text:span>(3, target, f,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:soft-page-break/><text:s text:c="29"/><office:annotation office:name="__Annotation__4543_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:23:59.943470032</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_LONGER_WORSE<office:annotation-end office:name="__Annotation__4543_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -4212,7 +4199,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T1">// lowering dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T16">mkallsmall(mw, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T14">mkallsmall(mw, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>}</text:p>
@@ -4221,10 +4208,10 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>thresh += <text:span text:style-name="T13">ngram</text:span>(n, word, mw, <office:annotation office:name="__Annotation__4547_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="6"/>thresh += <text:span text:style-name="T11">ngram</text:span>(n, word, mw, <office:annotation office:name="__Annotation__4547_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:26:40.058413852</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH<office:annotation-end office:name="__Annotation__4547_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -4255,7 +4242,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4424_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T10:36:28.002009628</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MAX_GUESS 200</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MAX_GUESS 200</text:span></text:p>
       </office:annotation><text:s text:c="2"/>char* guess[MAX_GUESS];</text:p>
     </text:list-item>
     <text:list-item>
@@ -4337,7 +4324,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/>field = f.c_str();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>int nw = pAMgr-&gt;<text:span text:style-name="T22">expand_rootword</text:span>(</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>int nw = pAMgr-&gt;<text:span text:style-name="T18">expand_rootword</text:span>(</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>glst, MAX_WORDS, HENTRY_WORD(rp), rp-&gt;blen, rp-&gt;astr, rp-&gt;alen, word,</text:p>
@@ -4391,7 +4378,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>int leftcommon = <text:span text:style-name="T13">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>int leftcommon = <text:span text:style-name="T11">leftcommonsubstring</text:span>(word, f.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>if (low) {</text:p>
@@ -4400,7 +4387,7 @@
      <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T1">// lowering dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T16">mkallsmall(f, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T14">mkallsmall(f, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>}</text:p>
@@ -4409,10 +4396,10 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>sc = <text:span text:style-name="T13">ngram</text:span>(n, word, f, <office:annotation office:name="__Annotation__4548_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="10"/>sc = <text:span text:style-name="T11">ngram</text:span>(n, word, f, <office:annotation office:name="__Annotation__4548_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:26:46.826573824</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH<office:annotation-end office:name="__Annotation__4548_3395360522"/>) + leftcommon;</text:p>
     </text:list-item>
     <text:list-item>
@@ -4563,7 +4550,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>if (pAMgr) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>int maxd = pAMgr-&gt;<text:span text:style-name="T22">get_maxdiff</text:span>();</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>int maxd = pAMgr-&gt;<text:span text:style-name="T18">get_maxdiff</text:span>();</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>if (maxd &gt;= 0)</text:p>
@@ -4617,7 +4604,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>if (!nonbmp)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T16">mkallsmall(gl, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T14">mkallsmall(gl, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>len = strlen(guess[i]);</text:p>
@@ -4698,10 +4685,10 @@
      <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T1">//gl is lowercase already at this point</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>re = <text:span text:style-name="T13">ngram</text:span>(2, word, gl, <office:annotation office:name="__Annotation__4549_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="8"/>re = <text:span text:style-name="T11">ngram</text:span>(2, word, gl, <office:annotation office:name="__Annotation__4549_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:26:57.402777793</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH + NGRAM_WEIGHTED<office:annotation-end office:name="__Annotation__4549_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -4714,23 +4701,23 @@
      <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T1">// lowering dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T16">mkallsmall(f, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T14">mkallsmall(f, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>re += <text:span text:style-name="T13">ngram</text:span>(2, gl, f, <office:annotation office:name="__Annotation__4551_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="10"/>re += <text:span text:style-name="T11">ngram</text:span>(2, gl, f, <office:annotation office:name="__Annotation__4551_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:27:08.699085171</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH + NGRAM_WEIGHTED<office:annotation-end office:name="__Annotation__4551_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>re += <text:span text:style-name="T13">ngram</text:span>(2, gl, word, <office:annotation office:name="__Annotation__4552_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="10"/>re += <text:span text:style-name="T11">ngram</text:span>(2, gl, word, <office:annotation office:name="__Annotation__4552_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:27:13.163133444</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH + NGRAM_WEIGHTED<office:annotation-end office:name="__Annotation__4552_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -4764,10 +4751,10 @@
      <text:p text:style-name="P7"><text:s text:c="8"/><text:span text:style-name="T1">//gl is lowercase already at this point</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>ngram_score = <text:span text:style-name="T13">ngram</text:span>(4, word, gl, <office:annotation office:name="__Annotation__4553_3395360522">
+     <text:p text:style-name="P7"><text:s text:c="8"/>ngram_score = <text:span text:style-name="T11">ngram</text:span>(4, word, gl, <office:annotation office:name="__Annotation__4553_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:27:18.619214634</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH<office:annotation-end office:name="__Annotation__4553_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -4795,7 +4782,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T1">// weight equal character positions</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>(!nonbmp &amp;&amp; <text:span text:style-name="T13">commoncharacterpositions</text:span>(word, gl.c_str(), &amp;is_swap)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>(!nonbmp &amp;&amp; <text:span text:style-name="T11">commoncharacterpositions</text:span>(word, gl.c_str(), &amp;is_swap)</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="15"/>? 1</text:p>
@@ -4888,7 +4875,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/>if (!nonbmp)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T16">mkallsmall(gl, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/><text:span text:style-name="T14">mkallsmall(gl, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>len = strlen(rootsphon[i]);</text:p>
@@ -4990,7 +4977,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/><text:span text:style-name="T1">// keep the best ngram suggestions, unless in ONLYMAXDIFF mode</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>if (wlst.size() &gt; oldns || (pAMgr &amp;&amp; pAMgr-&gt;<text:span text:style-name="T22">get_onlymaxdiff</text:span>())) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>if (wlst.size() &gt; oldns || (pAMgr &amp;&amp; pAMgr-&gt;<text:span text:style-name="T18">get_onlymaxdiff</text:span>())) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>free(guess[i]);</text:p>
@@ -5029,7 +5016,7 @@
      <text:p text:style-name="P7"><text:s text:c="14"/><text:span text:style-name="T1">// check forbidden words</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="14"/>!<text:span text:style-name="T12">checkword</text:span>(guess[i], 0, NULL, NULL)) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="14"/>!<text:span text:style-name="T11">checkword</text:span>(guess[i], 0, NULL, NULL)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>unique = 0;</text:p>
@@ -5131,7 +5118,7 @@
      <text:p text:style-name="P7"><text:s text:c="16"/><text:span text:style-name="T1">// check forbidden words</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="16"/>!<text:span text:style-name="T12">checkword</text:span>(rootsphon[i], 0, NULL, NULL)) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="16"/>!<text:span text:style-name="T11">checkword</text:span>(rootsphon[i], 0, NULL, NULL)) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="14"/>unique = 0;</text:p>
@@ -5197,7 +5184,11 @@
      <text:p text:style-name="P11">// `3&apos; marks roots without suffix</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10">checkword</text:span>(const std::string&amp; word,</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5286_166794943">
+        <dc:creator>Unknown Author</dc:creator>
+        <dc:date>2018-09-20T11:54:40.975787501</dc:date>
+        <text:p text:style-name="P13"><text:span text:style-name="T21">Special checkwork for finding suggestions</text:span></text:p>
+       </office:annotation></text:span><text:span text:style-name="T10">checkword</text:span><office:annotation-end office:name="__Annotation__5286_166794943"/>(const std::string&amp; word,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="26"/>int cpdsuggest,</text:p>
@@ -5224,9 +5215,9 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>if ((clock() - *timelimit) &gt; <office:annotation office:name="__Annotation__4515_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:15:50.430177863</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">// timelimit: max ~1/4 sec (process time on Linux) for a time consuming function</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27"/></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define TIMELIMIT (CLOCKS_PER_SEC / 4)</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">// timelimit: max ~1/4 sec (process time on Linux) for a time consuming function</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define TIMELIMIT (CLOCKS_PER_SEC / 4)</text:span></text:p>
       </office:annotation>TIMELIMIT<office:annotation-end office:name="__Annotation__4515_3395360522"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -5260,7 +5251,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if (cpdsuggest == 1) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>if (pAMgr-&gt;<text:span text:style-name="T22">get_compound</text:span>()) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>if (pAMgr-&gt;<text:span text:style-name="T18">get_compound</text:span>()) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>struct hentry* rv2 = NULL;</text:p>
@@ -5269,19 +5260,19 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>struct hentry* rwords[100]; <text:s/><text:span text:style-name="T1">// buffer for COMPOUND pattern checking</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>rv = pAMgr-&gt;<text:span text:style-name="T21">compound_check</text:span>(word, 0, 0, 100, 0, NULL, (hentry**)&amp;rwords, 0, 1, 0); <text:s/><text:span text:style-name="T1">// EXT</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>rv = pAMgr-&gt;<text:span text:style-name="T18">compound_check</text:span>(word, 0, 0, 100, 0, NULL, (hentry**)&amp;rwords, 0, 1, 0); <text:s/><text:span text:style-name="T1">// EXT</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>if (rv &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/>(!(rv2 = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(word.c_str())) || !rv2-&gt;astr ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/>(!(rv2 = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(word.c_str())) || !rv2-&gt;astr ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="13"/>!(TESTAFF(rv2-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>(), rv2-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="13"/>!(TESTAFF(rv2-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>(), rv2-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="15"/>TESTAFF(rv2-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_nosuggest</text:span>(), rv2-&gt;alen))))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="15"/>TESTAFF(rv2-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_nosuggest</text:span>(), rv2-&gt;alen))))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>return 3; <text:s/><text:span text:style-name="T1">// XXX obsolote categorisation + only ICONV needs affix</text:span></text:p>
@@ -5302,7 +5293,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>rv = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(word.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>rv = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(word.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -5314,10 +5305,10 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>if ((rv-&gt;astr) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="11"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_nosuggest</text:span>(), rv-&gt;alen)))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="11"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_nosuggest</text:span>(), rv-&gt;alen)))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>return 0;</text:p>
@@ -5329,13 +5320,13 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>if (rv-&gt;astr &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_needaffix</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_needaffix</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="13"/>TESTAFF(rv-&gt;astr, ONLYUPCASEFLAG, rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="13"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_onlyincompound</text:span>(), rv-&gt;alen))) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="13"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_onlyincompound</text:span>(), rv-&gt;alen))) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>rv = rv-&gt;next_homonym;</text:p>
@@ -5353,7 +5344,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>} else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T21">prefix_check</text:span>(word.c_str(), word.size(),</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T18">prefix_check</text:span>(word.c_str(), word.size(),</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="31"/>0); <text:s/><text:span text:style-name="T1">// only prefix, and prefix + suffix XXX</text:span></text:p>
@@ -5371,7 +5362,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T21">suffix_check</text:span>(word.c_str(), word.size(), 0, NULL,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T18">suffix_check</text:span>(word.c_str(), word.size(), 0, NULL,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="31"/>FLAG_NULL, FLAG_NULL, IN_CPD_NOT); <text:s/><text:span text:style-name="T1">// only suffix</text:span></text:p>
@@ -5383,16 +5374,16 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (!rv &amp;&amp; pAMgr-&gt;<text:span text:style-name="T22">have_contclass</text:span>()) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if (!rv &amp;&amp; pAMgr-&gt;<text:span text:style-name="T18">have_contclass</text:span>()) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T21">suffix_check_twosfx</text:span>(word.c_str(), word.size(), 0, NULL, FLAG_NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T18">suffix_check_twosfx</text:span>(word.c_str(), word.size(), 0, NULL, FLAG_NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (!rv)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>rv = pAMgr-&gt;<text:span text:style-name="T21">prefix_check_twosfx</text:span>(word.c_str(), word.size(), 1, FLAG_NULL);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>rv = pAMgr-&gt;<text:span text:style-name="T18">prefix_check_twosfx</text:span>(word.c_str(), word.size(), 1, FLAG_NULL);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -5407,16 +5398,16 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if ((rv) &amp;&amp; (rv-&gt;astr) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, ONLYUPCASEFLAG, rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_nosuggest</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_nosuggest</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_onlyincompound</text:span>(), rv-&gt;alen)))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_onlyincompound</text:span>(), rv-&gt;alen)))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>return 0;</text:p>
@@ -5428,10 +5419,10 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if (rv) { <text:s/><text:span text:style-name="T1">// XXX obsolote</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>if ((pAMgr-&gt;<text:span text:style-name="T22">get_compoundflag</text:span>()) &amp;&amp;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>if ((pAMgr-&gt;<text:span text:style-name="T18">get_compoundflag</text:span>()) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_compoundflag</text:span>(), rv-&gt;alen))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_compoundflag</text:span>(), rv-&gt;alen))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>return 2 + nosuffix;</text:p>
@@ -5455,31 +5446,35 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10">check_forbidden</text:span>(const char* word, int len) {</text:p>
+     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5287_166794943">
+        <dc:creator>Unknown Author</dc:creator>
+        <dc:date>2018-09-20T11:55:03.232158220</dc:date>
+        <text:p text:style-name="P13"><text:span text:style-name="T21">Special check for forbidden words for suggestions</text:span></text:p>
+       </office:annotation></text:span><text:span text:style-name="T10">check_forbidden</text:span><office:annotation-end office:name="__Annotation__5287_166794943"/>(const char* word, int len) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>if (pAMgr) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>struct hentry* rv = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(word);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>struct hentry* rv = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(word);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>if (rv &amp;&amp; rv-&gt;astr &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_needaffix</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_needaffix</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_onlyincompound</text:span>(), rv-&gt;alen)))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="9"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_onlyincompound</text:span>(), rv-&gt;alen)))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>rv = NULL;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (!(pAMgr-&gt;<text:span text:style-name="T21">prefix_check</text:span>(word, len, 1)))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if (!(pAMgr-&gt;<text:span text:style-name="T18">prefix_check</text:span>(word, len, 1)))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T21">suffix_check</text:span>(word, len, 0, NULL,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>rv = pAMgr-&gt;<text:span text:style-name="T18">suffix_check</text:span>(word, len, 0, NULL,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="31"/>FLAG_NULL, FLAG_NULL, IN_CPD_NOT); <text:s/><text:span text:style-name="T1">// prefix+suffix, suffix</text:span></text:p>
@@ -5491,7 +5486,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if ((rv) &amp;&amp; (rv-&gt;astr) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>(), rv-&gt;alen))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>(), rv-&gt;alen))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>return 1;</text:p>
@@ -5509,7 +5504,11 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">std::string SuggestMgr::<text:span text:style-name="T10">suggest_morph</text:span>(const std::string&amp; in_w) {</text:p>
+     <text:p text:style-name="P7">std::string SuggestMgr::<text:span text:style-name="T10"><office:annotation office:name="__Annotation__5288_166794943">
+        <dc:creator>Unknown Author</dc:creator>
+        <dc:date>2018-09-20T11:55:27.376780411</dc:date>
+        <text:p text:style-name="P13"><text:span text:style-name="T21">These and other morph methods are out of scope for version 2.0</text:span></text:p>
+       </office:annotation></text:span><text:span text:style-name="T10">suggest_morph</text:span><office:annotation-end office:name="__Annotation__5288_166794943"/>(const std::string&amp; in_w) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>std::string result;</text:p>
@@ -5554,7 +5553,7 @@
      <text:p text:style-name="P8"><text:s text:c="4"/>else</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T16">reverseword(w);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T14">reverseword(w);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>}</text:p>
@@ -5563,7 +5562,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>rv = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(w.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>rv = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(w.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -5575,13 +5574,13 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if ((!rv-&gt;astr) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="8"/>!(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="8"/>!(TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_forbiddenword</text:span>(), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_needaffix(</text:span>), rv-&gt;alen) ||</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_needaffix(</text:span>), rv-&gt;alen) ||</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T22">get_onlyincompound</text:span>(), rv-&gt;alen))) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>TESTAFF(rv-&gt;astr, pAMgr-&gt;<text:span text:style-name="T18">get_onlyincompound</text:span>(), rv-&gt;alen))) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>if (!HENTRY_FIND(rv, MORPH_STEM)) {</text:p>
@@ -5593,7 +5592,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>result.append(<office:annotation office:name="__Annotation__4766_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:14:36.893711759</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_STEM &quot;st:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_STEM &quot;st:&quot;</text:span></text:p>
       </office:annotation>MORPH_STEM<office:annotation-end office:name="__Annotation__4766_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -5621,7 +5620,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>rv = rv-&gt;next_homonym;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>rv = rv-&gt;<text:span text:style-name="T19">next_homonym</text:span>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>}</text:p>
@@ -5630,7 +5629,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>std::string st = pAMgr-&gt;<text:span text:style-name="T21">affix_check_morph</text:span>(w.c_str(), w.size());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>std::string st = pAMgr-&gt;<text:span text:style-name="T18">affix_check_morph</text:span>(w.c_str(), w.size());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="2"/>if (!st.empty()) {</text:p>
@@ -5645,13 +5644,13 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>if (pAMgr-&gt;<text:span text:style-name="T22">get_compound</text:span>() &amp;&amp; result.empty()) {</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>if (pAMgr-&gt;<text:span text:style-name="T18">get_compound</text:span>() &amp;&amp; result.empty()) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>struct hentry* rwords[100]; <text:s/><text:span text:style-name="T1">// buffer for COMPOUND pattern checking</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>pAMgr-&gt;<text:span text:style-name="T21">compound_check_morph</text:span>(w.c_str(), w.size(), 0, 0, 100, 0, NULL, (hentry**)&amp;rwords, 0, result,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>pAMgr-&gt;<text:span text:style-name="T18">compound_check_morph</text:span>(w.c_str(), w.size(), 0, 0, 100, 0, NULL, (hentry**)&amp;rwords, 0, result,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="32"/>NULL);</text:p>
@@ -5663,7 +5662,7 @@
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>line_uniq(result, MSEP_REC);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/><text:span text:style-name="T19">line_uniq</text:span>(result, MSEP_REC);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -5696,9 +5695,9 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4765_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:13:44.125131228</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_DERI_PFX &quot;dp:&quot;</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_INFL_PFX &quot;ip:&quot;</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_TERM_PFX &quot;tp:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_DERI_PFX &quot;dp:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_INFL_PFX &quot;ip:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_TERM_PFX &quot;tp:&quot;</text:span></text:p>
       </office:annotation><text:s text:c="2"/>morph = strstr(morph, MORPH_DERI_SFX);</text:p>
     </text:list-item>
     <text:list-item>
@@ -5759,13 +5758,13 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>std::string result;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>int sfxcount = <text:span text:style-name="T13">get_sfxcount</text:span>(pattern);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>int sfxcount = <text:span text:style-name="T11">get_sfxcount</text:span>(pattern);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>if (<text:span text:style-name="T13">get_sfxcount</text:span>(HENTRY_DATA(rv)) &gt; sfxcount)</text:p>
+     <text:p text:style-name="P7"><text:s text:c="2"/>if (<text:span text:style-name="T11">get_sfxcount</text:span>(HENTRY_DATA(rv)) &gt; sfxcount)</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>return result;</text:p>
@@ -5777,7 +5776,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>if (HENTRY_DATA(rv)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>std::string aff = pAMgr-&gt;<text:span text:style-name="T22">morphgen</text:span>(HENTRY_WORD(rv), rv-&gt;blen, rv-&gt;astr, rv-&gt;alen,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>std::string aff = pAMgr-&gt;<text:span text:style-name="T18">morphgen</text:span>(HENTRY_WORD(rv), rv-&gt;blen, rv-&gt;astr, rv-&gt;alen,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="38"/>HENTRY_DATA(rv), pattern, 0);</text:p>
@@ -5813,7 +5812,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>p = (char*)strstr(HENTRY_DATA2(rv), <office:annotation office:name="__Annotation__4768_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:15:13.262359497</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_ALLOMORPH &quot;al:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_ALLOMORPH &quot;al:&quot;</text:span></text:p>
       </office:annotation>MORPH_ALLOMORPH<office:annotation-end office:name="__Annotation__4768_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -5823,8 +5822,8 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>p += <office:annotation office:name="__Annotation__4887_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:19:41.251372044</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_STEM &quot;st:&quot;</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_TAG_LEN strlen(MORPH_STEM)</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_STEM &quot;st:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_TAG_LEN strlen(MORPH_STEM)</text:span></text:p>
       </office:annotation>MORPH_TAG_LEN<office:annotation-end office:name="__Annotation__4887_3395360522"/>;</text:p>
     </text:list-item>
     <text:list-item>
@@ -5834,7 +5833,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>std::string allomorph(p, plen);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>struct hentry* rv2 = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(allomorph.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>struct hentry* rv2 = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(allomorph.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>while (rv2) {</text:p>
@@ -5858,7 +5857,7 @@
      <text:p text:style-name="P7"><text:s text:c="27"/>fieldlen(st + MORPH_TAG_LEN)) == 0)) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>std::string aff = pAMgr-&gt;<text:span text:style-name="T22">morphgen</text:span>(HENTRY_WORD(rv2), rv2-&gt;blen, rv2-&gt;astr,</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>std::string aff = pAMgr-&gt;<text:span text:style-name="T18">morphgen</text:span>(HENTRY_WORD(rv2), rv2-&gt;blen, rv2-&gt;astr,</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="44"/>rv2-&gt;alen, HENTRY_DATA(rv2), pattern, 0);</text:p>
@@ -5957,8 +5956,8 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>const char* part = strstr(s, <office:annotation office:name="__Annotation__4890_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:20:38.596202892</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T27">#define MORPH_PART &quot;pa:&quot;</text:span></text:p>
-       <text:p text:style-name="P12"><text:span text:style-name="T27"/></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22">#define MORPH_PART &quot;pa:&quot;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T22"/></text:p>
       </office:annotation>MORPH_PART<office:annotation-end office:name="__Annotation__4890_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -6019,7 +6018,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>std::vector&lt;std::string&gt; pl = line_tok(tok,<office:annotation office:name="__Annotation__4891_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T17:21:05.204783791</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">#define MSEP_ALT &apos;\v&apos;</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">#define MSEP_ALT &apos;\v&apos;</text:span></text:p>
       </office:annotation> MSEP_ALT<office:annotation-end office:name="__Annotation__4891_3395360522"/>);</text:p>
     </text:list-item>
     <text:list-item>
@@ -6062,7 +6061,7 @@
      <text:p text:style-name="P7"><text:s text:c="10"/>copy_field(tok, st, MORPH_STEM);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>rv = pAMgr-&gt;<text:span text:style-name="T21">lookup</text:span>(tok.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>rv = pAMgr-&gt;<text:span text:style-name="T18">lookup</text:span>(tok.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="10"/>while (rv) {</text:p>
@@ -6074,13 +6073,13 @@
      <text:p text:style-name="P7"><text:s text:c="12"/>newpat.append(pattern);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="12"/>std::string sg = <text:span text:style-name="T13">suggest_hentry_gen</text:span>(rv, newpat.c_str());</text:p>
+     <text:p text:style-name="P7"><text:s text:c="12"/>std::string sg = <text:span text:style-name="T11">suggest_hentry_gen</text:span>(rv, newpat.c_str());</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>if (sg.empty())</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="14"/>sg = <text:span text:style-name="T13">suggest_hentry_gen</text:span>(rv, pattern);</text:p>
+     <text:p text:style-name="P7"><text:s text:c="14"/>sg = <text:span text:style-name="T11">suggest_hentry_gen</text:span>(rv, pattern);</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="12"/>if (!sg.empty()) {</text:p>
@@ -6167,160 +6166,160 @@
      <text:p text:style-name="P7">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"/>
+     <text:p text:style-name="P8"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">// generate an n-gram score comparing s1 and s2, UTF16 version</text:p>
+     <text:p text:style-name="P8">// generate an n-gram score comparing s1 and s2, UTF16 version</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">int SuggestMgr::ngram(int n,</text:p>
+     <text:p text:style-name="P8">int SuggestMgr::ngram(int n,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="22"/>const std::vector&lt;w_char&gt;&amp; su1,</text:p>
+     <text:p text:style-name="P8"><text:s text:c="22"/>const std::vector&lt;w_char&gt;&amp; su1,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="22"/>const std::vector&lt;w_char&gt;&amp; su2,</text:p>
+     <text:p text:style-name="P8"><text:s text:c="22"/>const std::vector&lt;w_char&gt;&amp; su2,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="22"/>int opt) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="22"/>int opt) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>int nscore = 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>int nscore = 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>int ns;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>int ns;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>int l1;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>int l1;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>int l2;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>int l2;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>int test = 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>int test = 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"/>
+     <text:p text:style-name="P8"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>l1 = su1.size();</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>l1 = su1.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>l2 = su2.size();</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>l2 = su2.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>if (l2 == 0)</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>if (l2 == 0)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>return 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>return 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>for (int j = 1; j &lt;= n; j++) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>for (int j = 1; j &lt;= n; j++) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>ns = 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>ns = 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>for (int i = 0; i &lt;= (l1 - j); i++) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>for (int i = 0; i &lt;= (l1 - j); i++) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>int k = 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>int k = 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>for (int l = 0; l &lt;= (l2 - j); l++) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>for (int l = 0; l &lt;= (l2 - j); l++) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>for (k = 0; k &lt; j; k++) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>for (k = 0; k &lt; j; k++) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:soft-page-break/><text:s text:c="10"/>const w_char&amp; c1 = su1[i + k];</text:p>
+     <text:p text:style-name="P8"><text:soft-page-break/><text:s text:c="10"/>const w_char&amp; c1 = su1[i + k];</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="10"/>const w_char&amp; c2 = su2[l + k];</text:p>
+     <text:p text:style-name="P8"><text:s text:c="10"/>const w_char&amp; c2 = su2[l + k];</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="10"/>if ((c1.l != c2.l) || (c1.h != c2.h))</text:p>
+     <text:p text:style-name="P8"><text:s text:c="10"/>if ((c1.l != c2.l) || (c1.h != c2.h))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="12"/>break;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="12"/>break;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>if (k == j) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>if (k == j) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="10"/>ns++;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="10"/>ns++;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="10"/>break;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="10"/>break;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>if (k != j &amp;&amp; opt &amp; NGRAM_WEIGHTED) {</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>if (k != j &amp;&amp; opt &amp; NGRAM_WEIGHTED) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>ns--;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>ns--;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>test++;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>test++;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="8"/>if (i == 0 || i == l1 - j)</text:p>
+     <text:p text:style-name="P8"><text:s text:c="8"/>if (i == 0 || i == l1 - j)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="10"/>ns--; <text:s/>// side weight</text:p>
+     <text:p text:style-name="P8"><text:s text:c="10"/>ns--; <text:s/>// side weight</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>nscore = nscore + ns;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>nscore = nscore + ns;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>if (ns &lt; 2 &amp;&amp; !(opt &amp; NGRAM_WEIGHTED))</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>if (ns &lt; 2 &amp;&amp; !(opt &amp; NGRAM_WEIGHTED))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="6"/>break;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="6"/>break;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>}</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"/>
+     <text:p text:style-name="P8"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>ns = 0;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>ns = 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>if (opt &amp; NGRAM_LONGER_WORSE)</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>if (opt &amp; NGRAM_LONGER_WORSE)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>ns = (l2 - l1) - 2;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>ns = (l2 - l1) - 2;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>if (opt &amp; NGRAM_ANY_MISMATCH)</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>if (opt &amp; NGRAM_ANY_MISMATCH)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="4"/>ns = abs(l2 - l1) - 2;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="4"/>ns = abs(l2 - l1) - 2;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>ns = (nscore - ((ns &gt; 0) ? ns : 0));</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>ns = (nscore - ((ns &gt; 0) ? ns : 0));</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9"><text:s text:c="2"/>return ns;</text:p>
+     <text:p text:style-name="P8"><text:s text:c="2"/>return ns;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P9">}</text:p>
+     <text:p text:style-name="P8">}</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -6392,7 +6391,7 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>} else if (opt &amp; <office:annotation office:name="__Annotation__4558_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:27:59.692016567</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_WEIGHTED<office:annotation-end office:name="__Annotation__4558_3395360522"/>) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -6405,7 +6404,7 @@
      <text:p text:style-name="P7"><text:s text:c="8"/>if (i == 0 || i == l1 - j)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="10"/>ns--; <text:s/><text:span text:style-name="T2">// side weight</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="10"/>ns--; <text:s/><text:span text:style-name="T1">// side weight</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>}</text:p>
@@ -6420,7 +6419,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/>if (ns &lt; 2 &amp;&amp; !(opt &amp; <office:annotation office:name="__Annotation__4557_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:27:54.699918926</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_WEIGHTED<office:annotation-end office:name="__Annotation__4557_3395360522"/>))</text:p>
     </text:list-item>
     <text:list-item>
@@ -6439,7 +6438,7 @@
      <text:p text:style-name="P7"><text:soft-page-break/><text:s text:c="2"/>if (opt &amp; <office:annotation office:name="__Annotation__4545_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:25:54.281584866</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_LONGER_WORSE<office:annotation-end office:name="__Annotation__4545_3395360522"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -6449,7 +6448,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/>if (opt &amp; <office:annotation office:name="__Annotation__4546_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:25:59.257860747</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">bitmasked flag NGRAM_...</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">bitmasked flag NGRAM_...</text:span></text:p>
       </office:annotation>NGRAM_ANY_MISMATCH<office:annotation-end office:name="__Annotation__4546_3395360522"/>)</text:p>
     </text:list-item>
     <text:list-item>
@@ -6465,79 +6464,79 @@
      <text:p text:style-name="P7">}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"/>
+     <text:p text:style-name="P9"/>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P11">// length of the left common substring of s1 and (decapitalised) s2, UTF version</text:p>
+     <text:p text:style-name="P9">// length of the left common substring of s1 and (decapitalised) s2, UTF version</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">int SuggestMgr::<text:span text:style-name="T10">leftcommonsubstring</text:span>(</text:p>
+     <text:p text:style-name="P9">int SuggestMgr::leftcommonsubstring(</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>const std::vector&lt;w_char&gt;&amp; su1,</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>const std::vector&lt;w_char&gt;&amp; su1,</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>const std::vector&lt;w_char&gt;&amp; su2) {</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>const std::vector&lt;w_char&gt;&amp; su2) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>int l1 = su1.size();</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>int l1 = su1.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>int l2 = su2.size();</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>int l2 = su2.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/><text:span text:style-name="T1">// decapitalize dictionary word</text:span></text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>// decapitalize dictionary word</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>if (complexprefixes) {</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>if (complexprefixes) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (su1[l1 - 1] == su2[l2 - 1])</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>if (su1[l1 - 1] == su2[l2 - 1])</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>return 1;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="6"/>return 1;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>} else {</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>unsigned short idx = su2.empty() ? 0 : (su2[0].h &lt;&lt; 8) + su2[0].l;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>unsigned short idx = su2.empty() ? 0 : (su2[0].h &lt;&lt; 8) + su2[0].l;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>unsigned short otheridx = su1.empty() ? 0 : (su1[0].h &lt;&lt; 8) + su1[0].l;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>unsigned short otheridx = su1.empty() ? 0 : (su1[0].h &lt;&lt; 8) + su1[0].l;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if (otheridx != idx &amp;&amp; (otheridx != unicodetolower(idx, langnum)))</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>if (otheridx != idx &amp;&amp; (otheridx != unicodetolower(idx, langnum)))</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>return 0;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="6"/>return 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>int i;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>int i;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>for (i = 1; (i &lt; l1) &amp;&amp; (i &lt; l2) &amp;&amp; (su1[i].l == su2[i].l) &amp;&amp;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>for (i = 1; (i &lt; l1) &amp;&amp; (i &lt; l2) &amp;&amp; (su1[i].l == su2[i].l) &amp;&amp;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="16"/>(su1[i].h == su2[i].h);</text:p>
+     <text:p text:style-name="P9"><text:s text:c="16"/>(su1[i].h == su2[i].h);</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="9"/>i++)</text:p>
+     <text:p text:style-name="P9"><text:s text:c="9"/>i++)</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="6"/>;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>return i;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="4"/>return i;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>}</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>}</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="2"/>return 0;</text:p>
+     <text:p text:style-name="P9"><text:s text:c="2"/>return 0;</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7">}</text:p>
+     <text:p text:style-name="P9">}</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"/>
@@ -6579,7 +6578,7 @@
      <text:p text:style-name="P7"><text:s text:c="4"/><text:span text:style-name="T1">// decapitalise dictionary word</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="4"/>if ((*s1 != *s2) &amp;&amp; (*s1 != csconv[((unsigned char)*s2)].<text:span text:style-name="T16">clower</text:span>))</text:p>
+     <text:p text:style-name="P7"><text:s text:c="4"/>if ((*s1 != *s2) &amp;&amp; (*s1 != csconv[((unsigned char)*s2)].<text:span text:style-name="T14">clower</text:span>))</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="6"/>return 0;</text:p>
@@ -6735,13 +6734,13 @@
      <text:p text:style-name="P7"><text:s text:c="6"/>size_t l2 = t.size();</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>t[l2 - 1] = csconv[(unsigned char)t[l2 - 1]].<text:span text:style-name="T16">clower</text:span>;</text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>t[l2 - 1] = csconv[(unsigned char)t[l2 - 1]].<text:span text:style-name="T14">clower</text:span>;</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>} else {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T16">mkallsmall(t, csconv);</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/><text:span text:style-name="T14">mkallsmall(t, csconv);</text:span></text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>}</text:p>
@@ -6801,7 +6800,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4691_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:46:33.440865909</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">determine length of string</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">determine length of string</text:span></text:p>
       </office:annotation>int SuggestMgr::mystrlen(const char* word) {<office:annotation-end office:name="__Annotation__4691_3395360522"/></text:p>
     </text:list-item>
     <text:list-item>
@@ -6832,7 +6831,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4690_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:45:53.984141754</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">standard implementation will be used, not a custom implementation</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">These and methods following are simple helper functions.</text:span><text:span text:style-name="T20"><text:line-break/></text:span><text:span text:style-name="T20"><text:line-break/></text:span><text:span text:style-name="T20">standard implementation will be used, not a custom implementation</text:span></text:p>
       </office:annotation>void SuggestMgr::<text:span text:style-name="T10">bubblesort</text:span>(char** rword, char** rword2, int* rsc, int n) {<office:annotation-end office:name="__Annotation__4690_3395360522"/></text:p>
     </text:list-item>
     <text:list-item>
@@ -6980,7 +6979,7 @@
      <text:p text:style-name="P7"><text:s text:c="2"/><office:annotation office:name="__Annotation__4687_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:42:35.212425909</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">validation of useful allocation</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">validation of useful allocation</text:span></text:p>
       </office:annotation>if (!c || !b) {</text:p>
     </text:list-item>
     <text:list-item>
@@ -7008,7 +7007,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4688_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:43:24.653309710</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">initalization</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">initalization</text:span></text:p>
       </office:annotation><text:s text:c="2"/>for (i = 1; i &lt;= m; i++)</text:p>
     </text:list-item>
     <text:list-item>
@@ -7024,17 +7023,17 @@
      <text:p text:style-name="P7"><text:s text:c="2"/><office:annotation office:name="__Annotation__4689_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:43:36.221548491</dc:date>
-       <text:p text:style-name="P12"><text:span text:style-name="T24">the actual algorithm for finding longest common subsequence</text:span></text:p>
+       <text:p text:style-name="P12"><text:span text:style-name="T20">the actual algorithm for finding longest common subsequence</text:span></text:p>
       </office:annotation>for (i = 1; i &lt;= m; i++) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="4"/>for (j = 1; j &lt;= n; j++) {</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:s text:c="6"/>if (<text:span text:style-name="T20">((utf8) &amp;&amp; (su[i - 1] == su2[j - 1])) ||</text:span></text:p>
+     <text:p text:style-name="P7"><text:s text:c="6"/>if (<text:span text:style-name="T17">((utf8) &amp;&amp; (su[i - 1] == su2[j - 1])) ||</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P7"><text:span text:style-name="T20"><text:s text:c="10"/>((!utf8) &amp;&amp;</text:span> (s[i - 1] == s2[j - 1]))) {</text:p>
+     <text:p text:style-name="P7"><text:span text:style-name="T17"><text:s text:c="10"/>((!utf8) &amp;&amp;</text:span> (s[i - 1] == s2[j - 1]))) {</text:p>
     </text:list-item>
     <text:list-item>
      <text:p text:style-name="P7"><text:s text:c="8"/>c[i * (n + 1) + j] = c[(i - 1) * (n + 1) + j - 1] + 1;</text:p>
@@ -7091,7 +7090,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4623_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:39:52.809424572</dc:date>
-       <text:p><text:span text:style-name="T24">longest common subsequence for c_str</text:span></text:p>
+       <text:p><text:span text:style-name="T20">longest common subsequence for c_str</text:span></text:p>
       </office:annotation>int SuggestMgr::<text:span text:style-name="T10">lcslen</text:span>(const char* s, const char* s2) {<office:annotation-end office:name="__Annotation__4623_3395360522"/></text:p>
     </text:list-item>
     <text:list-item>
@@ -7173,7 +7172,7 @@
      <text:p text:style-name="P7"><office:annotation office:name="__Annotation__4624_3395360522">
        <dc:creator>Unknown Author</dc:creator>
        <dc:date>2018-09-17T11:40:08.441655344</dc:date>
-       <text:p><text:span text:style-name="T24">longest common subsequence for C++ string</text:span></text:p>
+       <text:p><text:span text:style-name="T20">longest common subsequence for C++ string</text:span></text:p>
       </office:annotation>int SuggestMgr::<text:span text:style-name="T10">lcslen</text:span>(const std::string&amp; s, const std::string&amp; s2) {<office:annotation-end office:name="__Annotation__4624_3395360522"/></text:p>
     </text:list-item>
     <text:list-item>
