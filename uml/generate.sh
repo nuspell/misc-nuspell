@@ -55,5 +55,13 @@ diagrams Component
 diagrams State
 diagrams Activity
 diagrams Object
-diagrams Class
 diagrams Sequence
+diagrams Class
+# add Nuspell class diagram
+if [ -e ../../nuspell/checks/hpp2plantuml.png ]; then
+    cp -f ../../nuspell/checks/hpp2plantuml.png class-diagrams/nuspell.png
+fi
+if [ -e ../../nuspell/checks/hpp2plantuml.svg ]; then
+    cp -f ../../nuspell/checks/hpp2plantuml.svg class-diagrams/nuspell.svg
+    echo '[![](nuspell.svg)](nuspell.svg)' >> class-diagrams/README.md
+fi

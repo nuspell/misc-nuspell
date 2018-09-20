@@ -22,3 +22,6 @@ skinparam ActivityBackgroundColor White
 skinparam ActivityDiamondBackgroundColor White
 skinparam ActivityBorderColor Black
 skinparam ActivityDiamondBorderColor Black
+
+skinparam ClassBackgroundColor White
+skinparam ClassBorderColor Black
