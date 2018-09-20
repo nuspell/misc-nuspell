@@ -7,10 +7,16 @@ diagrams() {
 	type=`echo $1|sed -e 's/\(.*\)/\L\1/'`
 	if [ `find plantuml -name '*-'$type'-diagram.pu'|wc -l` -ne 0 ]; then
 		if [ -e $type-diagrams ]; then
-			# Delete SVG files which have no PlantUML source file
+			# Delete SVG and PNG files which have no PlantUML source file
 			cd $type-diagrams
 			for i in *.svg; do
 				source=`basename $i svg`pu
+				if [ `find ../plantuml -name $source|wc -l` -eq 0 ]; then
+					rm -f $i
+				fi
+			done
+			for i in *.png; do
+				source=`basename $i png`pu
 				if [ `find ../plantuml -name $source|wc -l` -eq 0 ]; then
 					rm -f $i
 				fi
@@ -35,8 +41,7 @@ diagrams() {
 		echo '* [Nuspell - UML '$1' Diagrams]('$type'-diagrams/README.md)' >> README.md
 		cd $type-diagrams
 		echo '# Nuspell - UML '$1' Diagrams' > README.md
-		for i in *svg
-		do
+		for i in `ls *svg|sort`; do
 		    echo '[![]('$i')]('$i')' >> README.md
 		done
 		cd ..

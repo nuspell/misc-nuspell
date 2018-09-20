@@ -11,6 +11,10 @@ skinparam ActorBackgroundColor White
 skinparam UsecaseBorderColor Black
 skinparam ActorBorderColor Black
 
+skinparam usecase {
+	BackgroundColor<<for now out of scope>> Gray
+}
+
 skinparam StateBackgroundColor White
 skinparam StateBorderColor Black
 

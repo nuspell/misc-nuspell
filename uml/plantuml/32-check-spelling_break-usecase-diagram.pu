@@ -1,0 +1,30 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Check spelling with break patterns of word
+
+usecase spell_break as "check spelling with
+break patterns of word"
+
+usecase spell_casing as "check spelling with
+casing of word"
+usecase forbidden as "handle
+forbidden words"
+usecase limit as "limit
+recursion"
+usecase spell_start as "handle break pattern
+start of word"
+usecase spell_end as "handle break pattern
+end of word"
+usecase spell_middle as "handle break pattern
+middle of word"
+
+(spell_break) --> (spell_break) : recursion
+(spell_break) --> (spell_casing)
+(spell_break) --> (forbidden)
+(spell_break) --> (limit)
+(spell_break) --> (spell_start)
+(spell_break) --> (spell_end)
+(spell_break) --> (spell_middle)
+
+@enduml

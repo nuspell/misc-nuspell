@@ -5,19 +5,22 @@ title Nuspell - Top-level functionality
 
 actor user as "user" <<application>>
 
+usecase list as "list installed
+dictionaries"
 usecase load as "load affix and
 dictionary files"
-usecase check as "check spelling
+usecase spell as "check spelling
 of word"
 usecase suggest as "get suggestions
 for word"
 usecase personal as "add word to
 personal dictionary"
-usecase session as "store and apply
+usecase session <<for now out of scope>> as "store and apply
 exceptions in session"
 
+user --> (list)
 user --> (load)
-user --> (check)
+user --> (spell)
 user --> (suggest)
 user --> (personal)
 user --> (session)
