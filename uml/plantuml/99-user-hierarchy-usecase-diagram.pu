@@ -14,7 +14,7 @@ actor office as "writer of document" <<office suite>>
 actor command as "power user or script" <<command-line tool>>
 
 actor graphics as "graphical designer" <<graphics editor>>
-actor dtp as "typesetter" <<desktop publisher>>
+actor dtp as "typesetter" <<DTP software>>
 actor brwsr as "user of online form" <<web browser>>
 
 user <|-left- dynamic
