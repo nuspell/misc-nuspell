@@ -91,16 +91,16 @@ for file in `find . -type f -name '*.dic'|sort`; do
 
         affix=`echo $file|sed -e 's/\.dic$/\.aff/'`
         if [ -e $affix ]; then
-            # intended encoding
-            # https://bugs.documentfoundation.org/show_bug.cgi?id=117392
-            # bug bg_BG.aff:SET microsoft-cp1251 -> CP1251
-            Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
+		# intended encoding
+		# https://bugs.documentfoundation.org/show_bug.cgi?id=117392
+		# bug bg_BG.aff:SET microsoft-cp1251 -> CP1251
+		Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
 
-            # autoskip medial when no aff file exists
-            #TODO check match crude
-            #TODO check iconv
+		# autoskip medial when no aff file exists
+		#TODO check match crude
+		#TODO check iconv
         elif [ $filename = de_med -o $filename = en_MED ]; then
-			Encoding=ISO8859-1
+		Encoding=ISO8859-1
         else
 		echo 'ERROR'
 		exit 1
@@ -108,6 +108,7 @@ for file in `find . -type f -name '*.dic'|sort`; do
         echo '\t'$Encoding
         if [ $Encoding = UTF-8 ]; then
 		cp $file ../utf8/$filename.txt
+		cp $affix ../utf8/
         else
 		iconv -f $Encoding -t UTF-8//IGNORE $file > ../utf8/$filename.txt
         fi
