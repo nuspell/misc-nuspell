@@ -12,11 +12,16 @@ fi
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
-if [ -e words ]; then
-	rm -rf words/*
+if [ -e gathered ]; then
+	rm -rf gathered/*
 else
-	mkdir -p words
+	mkdir -p gathered
 fi
+
+echo 'For testing purposes, words are gathered from word lists and from dictinary root words. Below is a table showing how many words have been gathered for each language.' >> Gathered-Words.md
+echo > Gathered-Words.md
+echo '| Language | Number Of Words |' >> Gathered-Words.md
+echo '|----------|-----------------|' >> Gathered-Words.md
 
 # Crude filtering by skipping:
 # 1. first line of dic file with list size
@@ -31,8 +36,6 @@ fi
 # Crude filtering by skipping:
 # 7. emtpy line
 
-#total_start=`date +%s`
-
 for path in `find ../1-support/files -type f -name '*.aff'|sort`; do
 	package=`echo $path|awk -F '/' '{print $4}'`
 	version=`echo $path|awk -F '/' '{print $5}'`
@@ -43,8 +46,8 @@ if [ $language != ko -a $language != te_IN -a $language != th_TH ]; then # too s
 # # #if [ $language != an_ES -a $language != bg_BG -a $language != cs_CZ -a $language != el_GR -a $language != en_MED -a $language != es_ES -a $language != sl_SI -a $language != hr_HR -a $language != kk_KZ -a $language != pt_BR -a $language != th_TH -a $language != pl_PL -a $language != ko -a $language != lt_LT -a $language != te_IN ]; then # errors that need fixing
 # # #-a $language != nn_NO 
 	echo -n 'Gathering words for '$language
-	mkdir -p words/$language
-#	start=`date +%s`
+	echo -n '| `'$language'` | ' >> Gathered-Words.md
+	mkdir -p gathered/$language
 
 	# Words from dictionary file
 
@@ -91,7 +94,7 @@ if [ $language != ko -a $language != te_IN -a $language != th_TH ]; then # too s
 # 10) remove empty lines
 #    https://bugs.documentfoundation.org/show_bug.cgi?id=117408
 
-	tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/^!//'|grep -v '^::'|grep -v '(STp'|grep -v '^/'|sed -e 's/[\t#].*//'|grep -v '^$'|sort|uniq > words/$language/dict_$version
+	tail -n +2 ../1-support/utf8/$language.txt|sed -e 's/[ \t][a-z][a-z]:.*$//g'|sed -e 's/\([^\]\)\/.*/\1/g'|sed -e 's/\\\//\//g'|sed -e 's/^!//'|grep -v '^::'|grep -v '(STp'|grep -v '^/'|sed -e 's/[\t#].*//'|grep -v '^$'|sort|uniq > gathered/$language/dict_$version
 #	fi
 
 
@@ -113,7 +116,7 @@ if [ $language != ko -a $language != te_IN -a $language != th_TH ]; then # too s
 # 2) remove empty lines
 #    https://bugs.documentfoundation.org/show_bug.cgi?id=117408
 
-			cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/[\t#].*//g'|grep -v '^$'|sort|uniq > words/$language/list_$wordversion
+			cat ../2-word-lists/utf8/$wordfile.txt|sed -e 's/[\t#].*//g'|grep -v '^$'|sort|uniq > gathered/$language/list_$wordversion
 ###			fi
 		done
 	fi
@@ -170,19 +173,17 @@ if [ $language != ko -a $language != te_IN -a $language != th_TH ]; then # too s
 ## 	elif [ $language = se ]; then # -BOL EOL- underscore ampersand
 ## 		cat words/$language/*|grep -v [_\&²³] |grep -v "^-"|grep -v "\-$"|sort|uniq >words/$language/gathered
 ## 	else
-		cat words/$language/*|sort|uniq >words/$language/gathered
+		cat gathered/$language/*|sort|uniq >gathered/$language/words
 ## 	fi
-	for file in words/$language/*; do
-		../0-tools/histogram.py $file > words/$language/`basename $file`-histogram.md
-	done
-	wc -l words/$language/gathered|awk '{print $1}' > words/$language/gathered.total
 
-	echo ', totaling '`cat words/$language/gathered.total`
-#	end=`date +%s`
-#	echo $end-$start|bc > words/$language/time-$hostname
+### FOR ANALYSIS PURPOSES ONLY
+#	for file in gathered/$language/*; do
+#		../0-tools/histogram.py $file > gathered/$language/`basename $file`-histogram.md
+#	done
+
+	wc -l gathered/$language/words|awk '{print $1}' > gathered/$language/words.total
+	echo ', totaling '`cat gathered/$language/words.total`
+	echo '`'`cat gathered/$language/words.total`'` |' >> Gathered-Words.md
 
 fi # errors that need fixing
 done
-
-#total_end=`date +%s`
-#echo $total_end-$total_start|bc > words/time-$hostname

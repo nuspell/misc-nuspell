@@ -1,8 +1,12 @@
 /checks
-/words
+/gathered
 /reference
 /current
 /nuspell
 /nuspell_profiling
 /regression
 /profiling
+/worklist
+/whitelist.tmp
+/blacklist.tmp
+/log

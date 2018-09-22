@@ -15,12 +15,22 @@ The directory `debs` is excluded from version management.
 
 The output of the script is:
 
-    Get:1 http://nl.archive.ubuntu.com/ubuntu artful/main amd64 hunspell-af all 1:5.2.5-1 [535 kB]
-    Get:2 http://nl.archive.ubuntu.com/ubuntu artful/main amd64 hunspell-an all 0.2-2 [75.2 kB]
-    Get:3 http://nl.archive.ubuntu.com/ubuntu artful/main amd64 hunspell-ar all 3.2-1 [824 kB]
+    Skipping package myspell-bg...
+    Skipping package myspell-cs...
+    Skipping package myspell-da...
     ...
-    Get:67 http://nl.archive.ubuntu.com/ubuntu artful/universe amd64 hunspell-fr-comprehensive all 1:6.1-1 [328 kB] 
-    Fetched 36.3 MB in 2min 42s (223 kB/s) 
+    Skipping package hunspell-gl...
+    Get:1 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 hunspell-af all 1:6.0.3-3 [535 kB]
+    Get:2 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 hunspell-an all 0.2-2 [75.2 kB]
+    Get:3 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 hunspell-ar all 3.2-1 [824 kB]
+    ...
+    Get:64 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 hunspell-vi all 1:6.0.3-3 [51.4 kB]
+    Get:65 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 myspell-eo all 2.1.2000.02.25-55 [83.6 kB]
+    Get:66 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 myspell-et all 1:20030606-27 [637 kB]
+    Get:67 http://nl.archive.ubuntu.com/ubuntu bionic/main amd64 myspell-fa all 0.20070816-3 [921 kB]
+    ...
+    Get:86 http://nl.archive.ubuntu.com/ubuntu bionic/universe amd64 myspell-tl all 0.4-0-17 [50.6 kB]
+    Fetched 38.3 MB in 18s (2,166 kB/s)
 
 
 ## 1.2 Extract
@@ -31,16 +41,21 @@ The directory `packages` is excluded from version management.
 
 The output of the script is:
 
-    af	1%3a6.0.3-3
-    an	0.2-2
-    ar	3.2-1
+    hunspell-af 1%3a6.0.3-3
+    hunspell-an 0.2-2
+    hunspell-ar 3.2-1
     ...
-    tl	0.4-0-17
+    hunspell-vi 1%3a6.0.3-3
+    myspell-eo  2.1.2000.02.25-55
+    myspell-et  1%3a20030606-27
+    myspell-fa  0.20070816-3
+    ...
+    myspell-zu  20070207-5ubuntu2
 
 
 ## 1.3 Report and Convert
 
-The script `./3-report-and-convert.sh` reports on the affix and dictionary files and and, where needed, converts them to UTF-8. The report can be found in `Dictionary-Files.md`. The report also mentions encoding differences between the affix file and the dictionary file. All word list files in UTF-8 format can be found in the directory `utf8`.
+The script `./3-report-and-convert.sh` reports on the affix and dictionary files and, where needed, converts them to UTF-8. The report can be found in `Dictionary-Files.md`. The report also mentions encoding differences between the affix file and the dictionary file. All word list files in UTF-8 format can be found in the directory `utf8` as `.txt` files.
 
 Additionally, in the `utf8` directory are also histogram files in order to assess which characters are used in the dictionary file. These file have a name ending with `-histogram.tsv` and cointain tab characters for separtion of values.
 
@@ -50,13 +65,30 @@ The directory `utf8` is excluded from version management.
 
 The output of the script is:
 
+    af_ZA       ISO8859-1
+    an_ES       ISO8859-1
+    ar  UTF-8
+    ...
+    zu_ZA	ISO8859-1
+    WARNING: Removing trailing slash in ./hunspell-an/0.2-2/usr/share/hunspell/an_ES.dic
+    WARNING: Fixing line terminators in ./hunspell-ca/3.0.2+repack1-2/usr/share/hunspell/ca.dic
+    WARNING: Fixing line terminators in ./hunspell-ca/3.0.2+repack1-2/usr/share/hunspell/ca_ES-valencia.dic
+    ...
+    WARNING: Removing trailing slash in ./myspell-lv/0.9.6-5/usr/share/hunspell/lv_LV.dic
+
+The displayed warnings can also be found in a file called `warnings.txt`.
+
+
+## 1.4 Histogram
+
+Histrograms can be made of the dictionary files which are placed as `.txt` files in the `utf8` directory. Running the script `./4-histogram.sh` will create histograms in `-histogram.md` files in Markdown format in the `utf8` directory. Examples are `utf8/en_US-histogram.md` and `utf8/zu_ZA-histogram.md`.
+
+The histograms will first report the presence of special characters such as slashed et cetera and then provide a table on how many times a character was counted. Information is provided per character on its count, its Unicode representation, its Unicode codepoint, its Unicode catergory and its Unicode name.
+
+The output of the script is:
+
     af_ZA
     an_ES
     ar
     ...
-    vi_VN
-
-
-## 1.4 Analysis
-
-The script `4-analyse_under_development.py` is currently being refactored. Do not use it yet.
+    zu_ZA

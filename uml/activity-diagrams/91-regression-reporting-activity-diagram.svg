@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="546px" preserveAspectRatio="none" style="width:351px;height:546px;" version="1.1" viewBox="0 0 351 546" width="351px" zoomAndPan="magnify"><defs><linearGradient id="gn96x2hisgvcu0" x1="0%" x2="100%" y1="50%" y2="50%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#FFFFFF"/></linearGradient><filter height="300%" id="fn96x2hisgvcu" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="url(#gn96x2hisgvcu0)" height="546" style="stroke: none; stroke-width: 1.0;" width="351" x="0" y="0"/><text fill="#000000" font-family="Roboto Condensed" font-size="18" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="229" x="60" y="28.8613">Nuspell - Regression Reporting</text><ellipse cx="179.5" cy="43.7393" fill="#000000" filter="url(#fn96x2hisgvcu)" rx="10" ry="10" style="stroke: none; stroke-width: 1.0;"/><rect fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" height="35.8262" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="100" x="129.5" y="250.2993"/><text fill="#000000" font-family="Roboto Condensed" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="80" x="139.5" y="272.8735">read test results</text><polygon fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" points="107.5,193.2729,251.5,193.2729,263.5,205.2729,251.5,217.2729,107.5,217.2729,95.5,205.2729,107.5,193.2729" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="15" x="183.5" y="228.7993">yes</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="144" x="107.5" y="209.5457">languages with test results exist?</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="11" x="84.5" y="202.292">no</text><rect fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" height="35.8262" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="243" x="58" y="343.1255"/><text fill="#000000" font-family="Roboto Condensed" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="223" x="68" y="365.6997">calculate average results for specific commit</text><polygon fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" points="104,136.2466,255,136.2466,267,148.2466,255,160.2466,104,160.2466,92,148.2466,104,136.2466" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="15" x="183.5" y="171.7729">yes</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="151" x="104" y="152.5193">commit IDs with test results exist?</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="11" x="81" y="145.2656">no</text><rect fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" height="35.8262" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="254" x="52.5" y="420.9517"/><text fill="#000000" font-family="Roboto Condensed" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="234" x="62.5" y="443.5259">calculate average results for specific hostname</text><rect fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" height="35.8262" rx="12.5" ry="12.5" style="stroke: #000000; stroke-width: 1.5;" width="205" x="77" y="476.7778"/><text fill="#000000" font-family="Roboto Condensed" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="185" x="87" y="499.3521">generate graph for specific hostname</text><polygon fill="#FFFFFF" filter="url(#fn96x2hisgvcu)" points="105.5,73.7393,253.5,73.7393,265.5,85.7393,253.5,97.7393,105.5,97.7393,93.5,85.7393,105.5,73.7393" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="15" x="183.5" y="109.2656">yes</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="148" x="105.5" y="90.012">hostnames with test results exist?</text><text fill="#000000" font-family="Roboto Condensed" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="11" x="82.5" y="82.7583">no</text><ellipse cx="24" cy="131.7393" fill="none" filter="url(#fn96x2hisgvcu)" rx="10" ry="10" style="stroke: #000000; stroke-width: 1.0;"/><ellipse cx="24.5" cy="132.2393" fill="#000000" filter="url(#fn96x2hisgvcu)" rx="6" ry="6" style="stroke: none; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="217.2729" y2="250.2993"/><polygon fill="#000000" points="175.5,240.2993,179.5,250.2993,183.5,240.2993,179.5,244.2993" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="286.1255" y2="296.1255"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="275.5" y1="296.1255" y2="296.1255"/><polygon fill="#000000" points="271.5,258.9587,275.5,248.9587,279.5,258.9587,275.5,254.9587" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="275.5" x2="275.5" y1="205.2729" y2="296.1255"/><line style="stroke: #000000; stroke-width: 1.5;" x1="275.5" x2="263.5" y1="205.2729" y2="205.2729"/><polygon fill="#000000" points="273.5,201.2729,263.5,205.2729,273.5,209.2729,269.5,205.2729" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="95.5" x2="83.5" y1="205.2729" y2="205.2729"/><polygon fill="#000000" points="79.5,244.9587,83.5,254.9587,87.5,244.9587,83.5,248.9587" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="83.5" x2="83.5" y1="205.2729" y2="308.1255"/><line style="stroke: #000000; stroke-width: 1.5;" x1="83.5" x2="179.5" y1="308.1255" y2="308.1255"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="308.1255" y2="343.1255"/><polygon fill="#000000" points="175.5,333.1255,179.5,343.1255,183.5,333.1255,179.5,337.1255" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="160.2466" y2="193.2729"/><polygon fill="#000000" points="175.5,183.2729,179.5,193.2729,183.5,183.2729,179.5,187.2729" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="378.9517" y2="388.9517"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="313" y1="388.9517" y2="388.9517"/><polygon fill="#000000" points="309,275.1182,313,265.1182,317,275.1182,313,271.1182" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="313" x2="313" y1="148.2466" y2="388.9517"/><line style="stroke: #000000; stroke-width: 1.5;" x1="313" x2="267" y1="148.2466" y2="148.2466"/><polygon fill="#000000" points="277,144.2466,267,148.2466,277,152.2466,273,148.2466" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="92" x2="46" y1="148.2466" y2="148.2466"/><polygon fill="#000000" points="42,261.1182,46,271.1182,50,261.1182,46,265.1182" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="46" x2="46" y1="148.2466" y2="400.9517"/><line style="stroke: #000000; stroke-width: 1.5;" x1="46" x2="179.5" y1="400.9517" y2="400.9517"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="400.9517" y2="420.9517"/><polygon fill="#000000" points="175.5,410.9517,179.5,420.9517,183.5,410.9517,179.5,414.9517" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="456.7778" y2="476.7778"/><polygon fill="#000000" points="175.5,466.7778,179.5,476.7778,183.5,466.7778,179.5,470.7778" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="97.7393" y2="136.2466"/><polygon fill="#000000" points="175.5,126.2466,179.5,136.2466,183.5,126.2466,179.5,130.2466" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="512.604" y2="522.604"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="325" y1="522.604" y2="522.604"/><polygon fill="#000000" points="321,324.6907,325,314.6907,329,324.6907,325,320.6907" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="325" x2="325" y1="85.7393" y2="522.604"/><line style="stroke: #000000; stroke-width: 1.5;" x1="325" x2="265.5" y1="85.7393" y2="85.7393"/><polygon fill="#000000" points="275.5,81.7393,265.5,85.7393,275.5,89.7393,271.5,85.7393" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="93.5" x2="24" y1="85.7393" y2="85.7393"/><line style="stroke: #000000; stroke-width: 1.5;" x1="24" x2="24" y1="85.7393" y2="121.7393"/><polygon fill="#000000" points="20,111.7393,24,121.7393,28,111.7393,24,115.7393" style="stroke: #000000; stroke-width: 1.0;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="179.5" x2="179.5" y1="53.7393" y2="73.7393"/><polygon fill="#000000" points="175.5,63.7393,179.5,73.7393,183.5,63.7393,179.5,67.7393" style="stroke: #000000; stroke-width: 1.0;"/><!--
+@startuml
+skinparam BackgroundColor White|White
+skinparam ArrowColor Black
+skinparam DefaultFontName Roboto Condensed
+skinparam TitleFontStyle Bold
+
+skinparam NoteBackgroundColor White
+skinparam NoteBorderColor Black
+
+skinparam UsecaseBackgroundColor White
+skinparam ActorBackgroundColor White
+skinparam UsecaseBorderColor Black
+skinparam ActorBorderColor Black
+
+skinparam usecase {
+	BackgroundColor<<for now out of scope>> Gray
+}
+
+skinparam StateBackgroundColor White
+skinparam StateBorderColor Black
+
+skinparam ActivityBackgroundColor White
+skinparam ActivityDiamondBackgroundColor White
+skinparam ActivityBorderColor Black
+skinparam ActivityDiamondBorderColor Black
+
+skinparam ClassBackgroundColor White
+skinparam ClassBorderColor Black
+
+title Nuspell - Regression Reporting
+
+start
+
+while (hostnames with test results exist?) is (yes)
+	while (commit IDs with test results exist?) is (yes)
+		while (languages with test results exist?) is (yes)
+			:read test results;
+		endwhile (no)
+		:calculate average results for specific commit;
+	endwhile (no)
+	:calculate average results for specific hostname;
+	:generate graph for specific hostname;
+endwhile (no)
+
+stop
+
+@enduml
+
+PlantUML version 1.2018.06(Mon May 21 12:34:53 CEST 2018)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 10.0.2+13-Ubuntu-1ubuntu0.18.04.2
+Operating System: Linux
+OS Version: 4.15.0-34-generic
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

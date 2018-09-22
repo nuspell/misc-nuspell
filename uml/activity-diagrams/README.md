@@ -1,4 +1,6 @@
 # Nuspell - UML Activity Diagrams
+[![](90-regression-testing-activity-diagram.svg)](90-regression-testing-activity-diagram.svg)
+[![](91-regression-reporting-activity-diagram.svg)](91-regression-reporting-activity-diagram.svg)
 [![](affix-check-activity-diagram.svg)](affix-check-activity-diagram.svg)
 [![](checkword-activity-diagram.svg)](checkword-activity-diagram.svg)
 [![](cleanword2-activity-diagram.svg)](cleanword2-activity-diagram.svg)

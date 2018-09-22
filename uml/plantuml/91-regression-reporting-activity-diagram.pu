@@ -1,0 +1,21 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Regression Reporting
+
+start
+
+while (hostnames with test results exist?) is (yes)
+	while (commit IDs with test results exist?) is (yes)
+		while (languages with test results exist?) is (yes)
+			:read test results;
+		endwhile (no)
+		:calculate average results for specific commit;
+	endwhile (no)
+	:calculate average results for specific hostname;
+	:generate graph for specific hostname;
+endwhile (no)
+
+stop
+
+@enduml

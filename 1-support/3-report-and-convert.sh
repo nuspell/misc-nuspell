@@ -63,6 +63,7 @@ echo '| Package | Version | Filename | File Type | Lines |' >> ../Dictionary-Fil
 echo '|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.dic'|sort`; do
 	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
+	affname=`basename $file .aff`
 	filename=`basename $file .dic`
 	echo -n $filename
 
@@ -108,15 +109,27 @@ for file in `find . -type f -name '*.dic'|sort`; do
         echo '\t'$Encoding
         if [ $Encoding = UTF-8 ]; then
 		cp $file ../utf8/$filename.txt
-		cp $affix ../utf8/
+		if [ $filename != de_med -a $filename != en_MED ]; then
+			cp $affix ../utf8/
+		fi
         else
 		iconv -f $Encoding -t UTF-8//IGNORE $file > ../utf8/$filename.txt
+		if [ $filename != de_med -a $filename != en_MED ]; then
+			iconv -f $Encoding -t UTF-8//IGNORE $affix > ../utf8/$affname
+		fi
         fi
 
 	new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`
 	if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF, LF line terminators' ]; then
 		flip -b -u ../utf8/$filename.txt
 		echo 'WARNING: Fixing line terminators in '$file >> ../warnings.txt
+	fi
+	if [ $filename != de_med -a $filename != en_MED ]; then
+	new_encoding=`file ../utf8/$affname|sed -e 's/^.*: //'`
+	if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF, LF line terminators' ]; then
+		flip -b -u ../utf8/$affname
+#		echo 'WARNING: Fixing line terminators in '$file >> ../warnings.txt
+	fi
 	fi
 
 	new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`

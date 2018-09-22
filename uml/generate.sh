@@ -59,9 +59,9 @@ diagrams Sequence
 diagrams Class
 # add Nuspell class diagram
 if [ -e ../../nuspell/checks/hpp2plantuml.png ]; then
-    cp -f ../../nuspell/checks/hpp2plantuml.png class-diagrams/nuspell.png
+    cp -f ../../nuspell/checks/hpp2plantuml.png class-diagrams/99-source-generated-class-diagram.png
 fi
 if [ -e ../../nuspell/checks/hpp2plantuml.svg ]; then
-    cp -f ../../nuspell/checks/hpp2plantuml.svg class-diagrams/nuspell.svg
-    echo '[![](nuspell.svg)](nuspell.svg)' >> class-diagrams/README.md
+    cp -f ../../nuspell/checks/hpp2plantuml.svg class-diagrams/99-source-generated-class-diagram.svg
+    echo '[![](99-source-generated-class-diagram.svg)](99-source-generated-class-diagram.svg)' >> class-diagrams/README.md
 fi

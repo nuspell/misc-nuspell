@@ -11,21 +11,34 @@ First, run this:
     ./2-extract.sh
     ./3-report-and-convert.sh
 
-## 1 Prepare word lists
 
-Prepare word lists from Hunspell language support dictionary files and from word lists to do regression testing on with:
+## 1 Gather words
 
-    ./1-prepare.sh
+Gathering words from dictionary files and from word lists to do regression testing on with:
 
-This will create a word list called `words/PLATFORM/LANGUAGE/gathered` such as `words/linux/nl_NL/gathered`. Note that in that directory are also some other files and histograms. In `words/linux/time-HOSTNAME` will be the time in seconds that it took to prepare all word lists.
+    ./1-gather.sh
+
+This will create a word list called `gathered/LANGUAGE/words` such as `gathered/nl_NL/words`. Note that the directory also will contain intermediate words list from the dictionary or source word list file. A file called `words.total` will contian the total word count of the file `words`. The script can be tuned also generate histograms for analysis purposes.
 
 The output of the script is:
 
-    Gathering words for ar, totaling 108364
-    Gathering words for be_BY, totaling 81516
-    Gathering words for bn_BD, totaling 110750
+    Gathering words for af_ZA, totaling 125470
+    Gathering words for an_ES, totaling 20535
+    Gathering words for ar, totaling 108362
     ...
-    Gathering words for vi_VN, totaling 6631
+    Gathering words for zu_ZA, totaling 73194
+
+The file `Gathered-Words.md` will contain a table with the same information.
+
+
+### 1.1 Note
+
+Sorting is used via `sort` in order to merge source word lists with `uniq`. However, for the following languages, sorting takes extremely long:
+    * `ko`
+    * `te_IN`
+    * `th_TH`
+
+Therefore these language are not included in further testing at the moment.
 
 
 ## 2 Create reference test
@@ -94,50 +107,3 @@ The output of the script is:
     lang dir: be_BY
     ...
     lang dir: vi_VN
-
-
-## 5 Profiling
-
-Profiling by means of [perf](https://perf.wiki.kernel.org/index.php/Main_Page) and [vallgrind](http://valgrind.org/) ([callgrind](http://valgrind.org/docs/manual/cl-manual.html)) is done by running the script:
-
-    ./5-profiling.sh
-
-The software needed is installed with:
-
-    sudo apt-get install valgrind kcachegrind linux-tools-common linux-tools-generic linux-tools-4.15.0-20-generic
-
-In order to run perf, the following change has to be made to the operating system. Add to the file `/etc/sysctl.conf` the follwing line, save and reboot: 
-
-    kernel.perf_event_paranoid = -1
-
-
-### 5.1 Perf and hotspot
-
-First, go to a specific directory such as `./profiling/linux/de_DE_frami` or  `./profiling/linux/en_US`. The results for perf are in `perf.data` and can be viewed by:
-
-    perf report
-    perf list
-
-A gui for viewing perf's results is [hotspot](https://github.com/KDAB/hotspot), which will also open the `perf.data` file from the directry from which it is started.
-
-Below is an impression of the overviews and visualisations offered by hotspot.
-
-[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_graphflame.png)
-
-[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/hotspot_topdown.png)
-
-
-### 5.2 Callgrind and KCachegrind
-
-Use [Kcachegrind](https://kcachegrind.github.io/) to view the results from callgrind. go as well to a specific directory such as `./profiling/linux/de_DE_frami` or `./profiling/linux/en_US` and run `kcachegrind`. It will open for the results in `callgrind.out.NUMBER`.
-
-Below is an impression of the overviews and visualisations offered by kcachegrind.
-
-[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_screenshot.png)
-
-[![https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png)](https://raw.githubusercontent.com/hunspell/misc-hunspell/master/3-checks/images/kcachegrind_callgraph.png)
-
-
-### 5.3 Qt Creator
-
-Qt Creator can also offer profiling. For Nuspell, this has not been setup yet. See http://doc.qt.io/qtcreator/creator-cpu-usage-analyzer.html for more information.
