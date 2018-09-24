@@ -13,9 +13,7 @@ if [ ! -d gathered ]; then
     exit 1
 fi
 
-if [ -e regression/$machine ]; then
-	rm -rf regression/$machine/*
-else
+if [ ! -e regression/$machine ]; then
 	mkdir -p regression/$machine
 fi
 
