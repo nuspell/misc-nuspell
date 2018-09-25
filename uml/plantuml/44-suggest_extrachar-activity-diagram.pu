@@ -1,0 +1,20 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Get Suggestions - ""extra_char""\n
+
+start
+
+while (reverse iterate over characters in word?) is (yes)
+	:remove that character from the word;
+	if (resulting word is spelled correctly?) then (yes)
+		:add resulted word to suggestions;
+	else (no)
+	endif
+	:restore removed character;
+endwhile (no)
+:return suggestions;
+
+stop
+
+@enduml

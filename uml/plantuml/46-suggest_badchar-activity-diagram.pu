@@ -1,0 +1,25 @@
+@startuml
+!include skin.iuml
+
+title Nuspell - Get Suggestions - ""bad_char""\n
+
+start
+
+while (iterate over TRY characters?) is (yes)
+	while (iterate over characters in word?) is (yes)
+		if (TRY character is identitical to word character?) then (yes)
+		else (no)
+			:replace word character with TRY character;
+			if (resulting word is spelled correctly?) then (yes)
+				:add resulted word to suggestions;
+			else (no)
+			endif
+		endif
+		:restore replaced character;
+	endwhile (no)
+endwhile (no)
+:return suggestions;
+
+stop
+
+@enduml
