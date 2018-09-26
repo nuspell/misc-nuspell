@@ -65,9 +65,7 @@ while (iterate **""i, pair<pos, wb>""** over <back:skyblue>//""enumerate(primiti
     elseif (TODO?) then (yes)
         -[#black]-> WB12;
         :set **""do_break""** to __""false__"";
-    elseif (**""prev_wb""** is **""wb""** is __""Katakana""__
-            or (**""prev_wb""** is in __""(ALetter, Numeric, Katakana, ExtendNumLet)""__ and **""wb""** is __""ExtendNumLet""__)
-            or (**""prev_wb""** is __""ExtendNumLet""__ and **""wb""** is in __""(ALetter, Numeric, Katakana)""__?) then (yes)
+    elseif (**""prev_wb""** is **""wb""** is __""Katakana""__\nor (**""prev_wb""** is in __""(ALetter, Numeric, Katakana, ExtendNumLet)""__ and **""wb""** is __""ExtendNumLet""__)\nor (**""prev_wb""** is __""ExtendNumLet""__ and **""wb""** is in __""(ALetter, Numeric, Katakana)""__?) then (yes)
         -[#black]-> WB13, WB13a, WB13b;
         :set **""do_break""** to __""false__"";
     elseif (**""prev_wb""** is **""wb""** is __""Regional_Indicator""__?) then (yes)

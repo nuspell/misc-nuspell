@@ -1,12 +1,8 @@
-/checks
 /gathered
-/reference
-/current
-/nuspell
-/nuspell_profiling
-/regression
-/profiling
+/lock
 /worklist
 /whitelist.tmp
 /blacklist.tmp
+/nuspell
 /log
+/errors

@@ -21,15 +21,19 @@ while (iterate word breaks?) is (yes)
 	while (iterate TODO?) is (yes)
 		:increment nbr by 1;
 		:increment pos with length of the word break under consideration;
-	endwile (no)
+	endwhile (no)
 
-      while ((pos = scw.find(wordbreak[j], pos)) != std::string::npos) {
-        ++nbr;
-        pos += wordbreak[j].size();
-      }
+	:all below is TODO;
+	while ({pos = scw.find{wordbreak[j], pos}} != std::string::npos) is (yes)
+		:++nbr;
+		:pos += wordbreak[j].size();
+	endwhile (no)
 endwhile (no)
 
-    // 
+stop
+
+@enduml
+
     for (size_t j = 0; j < wordbreak.size(); ++j) {
     }
     if (nbr >= 10)
@@ -82,6 +86,3 @@ endwhile (no)
     }
 
 
-stop
-
-@enduml
