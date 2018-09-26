@@ -4,6 +4,7 @@
 [![](32-spell_break-activity-diagram.svg)](32-spell_break-activity-diagram.svg)
 [![](41-suggest_priv-activity-diagram.svg)](41-suggest_priv-activity-diagram.svg)
 [![](44-suggest_extrachar-activity-diagram.svg)](44-suggest_extrachar-activity-diagram.svg)
+[![](45-suggest_keyboard-activity-diagram.svg)](45-suggest_keyboard-activity-diagram.svg)
 [![](46-suggest_badchar-activity-diagram.svg)](46-suggest_badchar-activity-diagram.svg)
 [![](90-regression-testing-activity-diagram.svg)](90-regression-testing-activity-diagram.svg)
 [![](91-regression-reporting-activity-diagram.svg)](91-regression-reporting-activity-diagram.svg)

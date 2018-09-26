@@ -15,7 +15,7 @@ while (iterate over TRY characters?) is (yes)
 			else (no)
 			endif
 		endif
-		:restore replaced character;
+		:restore replaced word character;
 	endwhile (no)
 endwhile (no)
 :return suggestions;
