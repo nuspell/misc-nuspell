@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title Nuspell - Get Suggestions - ""extra_char""\n
+title Nuspell - Get Suggestions - ""extra_char""
 
 start
 

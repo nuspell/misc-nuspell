@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title Nuspell - Get Suggestions - ""spell_suggest(string s)""\n
+title Nuspell - Get Suggestions - ""spell_suggest(string s)""
 
 start
 

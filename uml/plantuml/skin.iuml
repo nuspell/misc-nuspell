@@ -25,3 +25,4 @@ skinparam ActivityDiamondBorderColor Black
 
 skinparam ClassBackgroundColor White
 skinparam ClassBorderColor Black
+hide empty members

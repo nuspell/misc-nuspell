@@ -1,7 +1,7 @@
 @startuml
 !include skin.iuml
 
-title Nuspell - Check Spelling - ""spell_break(string s, integer depth)""\n
+title Nuspell - Check Spelling - ""spell_break(string s, integer depth)""
 
 start
 
