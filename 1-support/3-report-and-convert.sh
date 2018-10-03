@@ -9,7 +9,7 @@
 
 if [ ! -d files ]; then
 	echo 'ERROR: Run the script ./2-extract.sh first.'
-    exit 1
+	exit 1
 fi
 rm -f warnings.txt
 
@@ -29,6 +29,22 @@ echo 'Some available packages are omitted from this overview and testing framewo
 
 echo >> ../Dictionary-Files.md
 
+echo '## Languages' >> ../Dictionary-Files.md
+echo >> ../Dictionary-Files.md
+echo 'A total of '`find . -type f -name '*.aff'|wc -l`' different languages are available for Hunspell.' >> ../Dictionary-Files.md
+echo >> ../Dictionary-Files.md
+echo '| Package | Version | Filename | Language |' >> ../Dictionary-Files.md
+echo '|---|---|---|---|' >> ../Dictionary-Files.md
+for file in `find . -type f -name '*.aff'|sort`; do
+	# package, version and filename
+	filename=`basename $file .aff`
+	echo -n $file|sed -e 's/\/usr\/share\/hunspell\(.*\)\.aff/\1/'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
+	# language
+	echo `../../0-tools/language_support_to_word_list_name.sh $filename | awk '{print $4" "$5}'`' |' >> ../Dictionary-Files.md
+done
+
+echo >> ../Dictionary-Files.md
+
 echo '## Affix files' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
 echo 'A total of '`find . -type f -name '*.aff'|wc -l`' different affix files are available for Hunspell. Affix files which are made available via symbolic links are excluded. Note that each affix file has a unique name. Normally, these are installed in `/usr/share/hunspell/`.' >> ../Dictionary-Files.md
@@ -36,13 +52,13 @@ echo >> ../Dictionary-Files.md
 echo '| Package | Version | Filename | File Type | Intended Encoding | Lines |' >> ../Dictionary-Files.md
 echo '|---|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.aff'|sort`; do
-    # package, version and filename
+	# package, version and filename
 	echo -n $file|sed -e 's/\/usr\/share\/hunspell\(.*\)\.aff/\1/'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
-    # file type
+	# file type
 	echo -n `file $file|sed -e 's/^.*: //'|sed -e 's/ text//'|sed -e 's/ Unicode//'`' | ' >> ../Dictionary-Files.md
-    # intended encoding
-    echo -n `grep SET $file|grep -v ^#|head -n 1|awk '{print $2}'|tr -d '[:space:]'`' | `' >>  ../Dictionary-Files.md
-    # lines
+	# intended encoding
+	echo -n `grep SET $file|grep -v ^#|head -n 1|awk '{print $2}'|tr -d '[:space:]'`' | `' >>  ../Dictionary-Files.md
+	# lines
 	echo `wc -l $file|awk '{print $1}'`'` |' >> ../Dictionary-Files.md
 done
 
@@ -54,9 +70,9 @@ echo 'A total of '`find . -type f -name '*.dic'|wc -l`' different dictionary fil
 echo >> ../Dictionary-Files.md
 
 if [ -e ../utf8 ]; then
-    rm -f ../utf8/*
+	rm -f ../utf8/*
 else
-    mkdir ../utf8
+	mkdir ../utf8
 fi
 
 echo '| Package | Version | Filename | File Type | Lines |' >> ../Dictionary-Files.md
@@ -90,8 +106,8 @@ for file in `find . -type f -name '*.dic'|sort`; do
 		sed -i -e 's/\/$//' $file
 	fi
 
-        affix=`echo $file|sed -e 's/\.dic$/\.aff/'`
-        if [ -e $affix ]; then
+	affix=`echo $file|sed -e 's/\.dic$/\.aff/'`
+	if [ -e $affix ]; then
 		# intended encoding
 		# https://bugs.documentfoundation.org/show_bug.cgi?id=117392
 		# bug bg_BG.aff:SET microsoft-cp1251 -> CP1251
@@ -100,24 +116,24 @@ for file in `find . -type f -name '*.dic'|sort`; do
 		# autoskip medial when no aff file exists
 		#TODO check match crude
 		#TODO check iconv
-        elif [ $filename = de_med -o $filename = en_MED ]; then
+	elif [ $filename = de_med -o $filename = en_MED ]; then
 		Encoding=ISO8859-1
-        else
+	else
 		echo 'ERROR'
 		exit 1
 	fi
-        echo '\t'$Encoding
-        if [ $Encoding = UTF-8 ]; then
+	echo '\t'$Encoding
+	if [ $Encoding = UTF-8 ]; then
 		cp $file ../utf8/$filename.txt
 		if [ $filename != de_med -a $filename != en_MED ]; then
 			cp $affix ../utf8/
 		fi
-        else
+	else
 		iconv -f $Encoding -t UTF-8//IGNORE $file > ../utf8/$filename.txt
 		if [ $filename != de_med -a $filename != en_MED ]; then
 			iconv -f $Encoding -t UTF-8//IGNORE $affix > ../utf8/$affname
 		fi
-        fi
+	fi
 
 	new_encoding=`file ../utf8/$filename.txt|sed -e 's/^.*: //'`
 	if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF, LF line terminators' ]; then

@@ -100,7 +100,7 @@ if [ $language != ko -a $language != te_IN -a $language != th_TH ]; then # too s
 
 	# Words from word lists
 
-	word_list=`../0-tools/hunspell_language_support_to_word_list_name.sh $language`
+	word_list=`../0-tools/language_support_to_word_list_name.sh $language`
 	if [ `echo $word_list|grep -c ERROR` = 0 ]; then
 		wordpackage=`echo $word_list|awk '{print $2}'`
 		wordfile=`echo $word_list|awk '{print $3}'`

@@ -73,7 +73,7 @@ echo '|---|---|---|---|' >> Word-List-Files.md
 for aff in `find ../1-support/files/ -type f -name '*.aff'|sort`; do
 	language=`basename $aff .aff`
 	aff_type=`file $aff|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'|sed -e 's/, with very long lines//'`
-	word_list=`../0-tools/hunspell_language_support_to_word_list_name.sh $language`
+	word_list=`../0-tools/language_support_to_word_list_name.sh $language`
 	if [ `echo $word_list|grep -c ERROR` = 0 ]; then
 		package=`echo $word_list|awk '{print $2}'`
 		filename=`echo $word_list|awk '{print $3}'`

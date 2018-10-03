@@ -5,7 +5,7 @@ This directory holds downloaded and processed Ubuntu packages containing word li
 
 ## 2.1 Download
 
-The script `./1-download.sh` will download all known and practical word list packages. The downloaded DEB files can be found in the directory `debs`. The packages names are collected by iterating all downloaded Hunspell language support packages and looking up the related word list via the custom script `../0-tools/hunspell_language_support_to_word_list_name.sh`.
+The script `./1-download.sh` will download all known and practical word list packages. The downloaded DEB files can be found in the directory `debs`. The packages names are collected by iterating all downloaded Hunspell language support packages and looking up the related word list via the custom script `../0-tools/language_support_to_word_list_name.sh`.
 
 This script will also mitigate some bugs in the packages, such as incorrect direction of symbolic links. The filename of the word list should be in English and any native filenames for the particular language should be used in symbolic links.
 
