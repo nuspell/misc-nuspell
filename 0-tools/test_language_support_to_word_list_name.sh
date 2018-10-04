@@ -16,7 +16,7 @@ if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./language_support_to_word_list_name.sh ca_ES
+./language_support_to_word_list_name.sh ca_ES
 if [ $? -ne 0 ]
 then
     exit 1
@@ -62,7 +62,7 @@ if [ $? -ne 0 ]
 then
     exit 1
 fi
-#./language_support_to_word_list_name.sh de_DE
+./language_support_to_word_list_name.sh de_DE
 if [ $? -ne 0 ]
 then
     exit 1
@@ -122,8 +122,12 @@ if [ $? -ne 0 ]
 then
     exit 1
 fi
-#FIXME ./language_support_to_word_list_name.sh nl_BE
-#FIXME ./language_support_to_word_list_name.sh nl_NL
+./language_support_to_word_list_name.sh nl_BE
+if [ $? -ne 0 ]
+then
+    exit 1
+fi
+./language_support_to_word_list_name.sh nl_NL
 if [ $? -ne 0 ]
 then
     exit 1

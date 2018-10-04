@@ -40,7 +40,7 @@ for file in `find . -type f -name '*.aff'|sort`; do
 	filename=`basename $file .aff`
 	echo -n $file|sed -e 's/\/usr\/share\/hunspell\(.*\)\.aff/\1/'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
 	# language
-	echo `../../0-tools/language_support_to_word_list_name.sh $filename | awk '{print $4" "$5}'`' |' >> ../Dictionary-Files.md
+	echo `../../0-tools/language_support_to_language_name.sh $filename`' |' >> ../Dictionary-Files.md
 done
 
 echo >> ../Dictionary-Files.md

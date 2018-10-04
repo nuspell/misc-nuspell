@@ -12,94 +12,94 @@ A total of 88 different languages are available for Hunspell.
 
 | Package | Version | Filename | Language |
 |---|---|---|---|
-| `hunspell-af` | `1%3a6.0.3-3` | `af_ZA` | Afrikaans  |
-| `hunspell-an` | `0.2-2` | `an_ES` | Aragonese  |
-| `hunspell-ar` | `3.2-1` | `ar` | Arabic  |
-| `hunspell-be` | `0.53-3` | `be_BY` | Belarusian  |
-| `hunspell-bg` | `1%3a6.0.3-3` | `bg_BG` | Bulgarian  |
-| `hunspell-bn` | `1%3a6.0.3-3` | `bn_BD` | bn_BD  |
-| `hunspell-bo` | `0.4.0-1` | `bo` | bo  |
-| `hunspell-br` | `0.12-2` | `br_FR` | br_FR  |
-| `hunspell-bs` | `1%3a6.0.3-3` | `bs_BA` | bs_BA  |
-| `hunspell-ca` | `3.0.2+repack1-2` | `ca` | Catalan  |
-| `hunspell-ca` | `3.0.2+repack1-2` | `ca_ES-valencia` | Catalan  |
-| `hunspell-cs` | `1%3a6.0.3-3` | `cs_CZ` | cs_CZ  |
-| `hunspell-da` | `1%3a6.0.3-3` | `da_DK` | Danish  |
+| `hunspell-af` | `1%3a6.0.3-3` | `af_ZA` | Afrikaans |
+| `hunspell-an` | `0.2-2` | `an_ES` | Aragonese |
+| `hunspell-ar` | `3.2-1` | `ar` | Arabic |
+| `hunspell-be` | `0.53-3` | `be_BY` | Belarusian |
+| `hunspell-bg` | `1%3a6.0.3-3` | `bg_BG` | Bulgarian |
+| `hunspell-bn` | `1%3a6.0.3-3` | `bn_BD` | Bengali |
+| `hunspell-bo` | `0.4.0-1` | `bo` | Classical Tibetan |
+| `hunspell-br` | `0.12-2` | `br_FR` | Breton |
+| `hunspell-bs` | `1%3a6.0.3-3` | `bs_BA` | Bosnian |
+| `hunspell-ca` | `3.0.2+repack1-2` | `ca` | Catalan |
+| `hunspell-ca` | `3.0.2+repack1-2` | `ca_ES-valencia` | Valencian |
+| `hunspell-cs` | `1%3a6.0.3-3` | `cs_CZ` | Czech |
+| `hunspell-da` | `1%3a6.0.3-3` | `da_DK` | Danish |
 | `hunspell-de-at` | `20161207-4` | `de_AT` | Austrian German |
 | `hunspell-de-at-frami` | `1%3a6.0.3-3` | `de_AT_frami` | Austrian German |
 | `hunspell-de-ch` | `20161207-4` | `de_CH` | Swiss German |
 | `hunspell-de-ch-frami` | `1%3a6.0.3-3` | `de_CH_frami` | Swiss German |
-| `hunspell-de-de` | `20161207-4` | `de_DE` | German  |
-| `hunspell-de-de-frami` | `1%3a6.0.3-3` | `de_DE_frami` | German  |
-| `hunspell-dz` | `0.1.0-1` | `dz` | Dzongkha  |
+| `hunspell-de-de` | `20161207-4` | `de_DE` | German |
+| `hunspell-de-de-frami` | `1%3a6.0.3-3` | `de_DE_frami` | German |
+| `hunspell-dz` | `0.1.0-1` | `dz` | Dzongkha |
 | `hunspell-el` | `1%3a6.0.3-3` | `el_GR` | Modern Greek |
 | `hunspell-en-au` | `1%3a2017.08.24` | `en_AU` | Australian English |
 | `hunspell-en-ca` | `1%3a2017.08.24` | `en_CA` | Canadian English |
 | `hunspell-en-gb` | `1%3a6.0.3-3` | `en_GB` | British English |
 | `hunspell-en-us` | `1%3a2017.08.24` | `en_US` | American English |
-| `hunspell-en-za` | `1%3a6.0.3-3` | `en_ZA` | en_ZA  |
-| `hunspell-es` | `1%3a6.0.3-3` | `es_ES` | Spanish  |
-| `hunspell-eu` | `0.5.20151110-2` | `eu` | eu  |
-| `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr` | French  |
+| `hunspell-en-za` | `1%3a6.0.3-3` | `en_ZA` | South African English |
+| `hunspell-es` | `1%3a6.0.3-3` | `es_ES` | Spanish |
+| `hunspell-eu` | `0.5.20151110-2` | `eu` | Basque |
+| `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr` | French |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB` | Scottish Gaelic |
-| `hunspell-gl-es` | `13.10-1` | `gl_ES` | Galician  |
-| `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN` | gu_IN  |
-| `hunspell-gug` | `1%3a6.0.3-3` | `gug_PY` | gug_PY  |
-| `hunspell-he` | `1%3a6.0.3-3` | `he_IL` | he_IL  |
-| `hunspell-hi` | `1%3a6.0.3-3` | `hi_IN` | hi_IN  |
-| `hunspell-hr` | `1%3a6.0.3-3` | `hr_HR` | hr_HR  |
-| `hunspell-hu` | `1%3a6.0.3-3` | `hu_HU` | hu_HU  |
-| `hunspell-is` | `1%3a6.0.3-3` | `is_IS` | Icelandic  |
-| `hunspell-it` | `1%3a6.0.3-3` | `it_IT` | Italian  |
-| `hunspell-kk` | `1.1-2` | `kk_KZ` | Kazakh  |
-| `hunspell-kmr` | `1%3a6.0.3-3` | `kmr_Latn` | Kurmanji  |
-| `hunspell-ko` | `0.7.1-1` | `ko` | Korean  |
-| `hunspell-lo` | `1%3a6.0.3-3` | `lo_LA` | Laotian  |
-| `hunspell-lt` | `1%3a6.0.3-3` | `lt_LT` | Lithuanian  |
-| `hunspell-ml` | `0.1-2` | `ml_IN` | Malayalam  |
-| `hunspell-ne` | `1%3a6.0.3-3` | `ne_NP` | ne_NP  |
-| `hunspell-nl` | `2%3a2.10-6` | `nl` | Dutch  |
-| `hunspell-no` | `1%3a6.0.3-3` | `nb_NO` | Bokmål  |
-| `hunspell-no` | `1%3a6.0.3-3` | `nn_NO` | Nynorsk  |
-| `hunspell-oc` | `1%3a6.0.3-3` | `oc_FR` | Occitan  |
-| `hunspell-pl` | `1%3a6.0.3-3` | `pl_PL` | Polish  |
-| `hunspell-pt-br` | `1%3a6.0.3-3` | `pt_BR` | Brazilian  |
-| `hunspell-pt-pt` | `1%3a6.0.3-3` | `pt_PT` | Portuguese  |
-| `hunspell-ro` | `1%3a6.0.3-3` | `ro_RO` | Romanian  |
-| `hunspell-ru` | `1%3a6.0.3-3` | `ru_RU` | Russian  |
+| `hunspell-gl-es` | `13.10-1` | `gl_ES` | Galician |
+| `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN` | Gujarati |
+| `hunspell-gug` | `1%3a6.0.3-3` | `gug_PY` | Guarani |
+| `hunspell-he` | `1%3a6.0.3-3` | `he_IL` | Hebrew |
+| `hunspell-hi` | `1%3a6.0.3-3` | `hi_IN` | Hindi |
+| `hunspell-hr` | `1%3a6.0.3-3` | `hr_HR` | Croatian |
+| `hunspell-hu` | `1%3a6.0.3-3` | `hu_HU` | Hungarian |
+| `hunspell-is` | `1%3a6.0.3-3` | `is_IS` | Icelandic |
+| `hunspell-it` | `1%3a6.0.3-3` | `it_IT` | Italian |
+| `hunspell-kk` | `1.1-2` | `kk_KZ` | Kazakh |
+| `hunspell-kmr` | `1%3a6.0.3-3` | `kmr_Latn` | Kurmanji (Latin script) |
+| `hunspell-ko` | `0.7.1-1` | `ko` | Korean |
+| `hunspell-lo` | `1%3a6.0.3-3` | `lo_LA` | Laotian |
+| `hunspell-lt` | `1%3a6.0.3-3` | `lt_LT` | Lithuanian |
+| `hunspell-ml` | `0.1-2` | `ml_IN` | Malayalam |
+| `hunspell-ne` | `1%3a6.0.3-3` | `ne_NP` | Nepalese |
+| `hunspell-nl` | `2%3a2.10-6` | `nl` | Dutch |
+| `hunspell-no` | `1%3a6.0.3-3` | `nb_NO` | Bokmål |
+| `hunspell-no` | `1%3a6.0.3-3` | `nn_NO` | Nynorsk |
+| `hunspell-oc` | `1%3a6.0.3-3` | `oc_FR` | Occitan |
+| `hunspell-pl` | `1%3a6.0.3-3` | `pl_PL` | Polish |
+| `hunspell-pt-br` | `1%3a6.0.3-3` | `pt_BR` | Brazilian |
+| `hunspell-pt-pt` | `1%3a6.0.3-3` | `pt_PT` | Portuguese |
+| `hunspell-ro` | `1%3a6.0.3-3` | `ro_RO` | Romanian |
+| `hunspell-ru` | `1%3a6.0.3-3` | `ru_RU` | Russian |
 | `hunspell-se` | `1.0~beta6.20081222-1.2` | `se` | North Sámi |
-| `hunspell-si` | `1%3a6.0.3-3` | `si_LK` | Sinhala  |
-| `hunspell-sk` | `1%3a6.0.3-3` | `sk_SK` | Slovak  |
-| `hunspell-sl` | `1%3a6.0.3-3` | `sl_SI` | sl_SI  |
-| `hunspell-sr` | `1%3a6.0.3-3` | `sr_Latn_RS` | sr_Latn_RS  |
-| `hunspell-sr` | `1%3a6.0.3-3` | `sr_RS` | sr_RS  |
-| `hunspell-sv` | `1%3a6.0.3-3` | `sv_FI` | sv_FI  |
-| `hunspell-sv` | `1%3a6.0.3-3` | `sv_SE` | Swedish  |
-| `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | Swahili  |
-| `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | Telugu  |
-| `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | Thai  |
-| `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | Ukrainian  |
-| `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek  |
-| `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | Vietnamese  |
-| `myspell-eo` | `2.1.2000.02.25-55` | `eo` | Esperanto  |
-| `myspell-et` | `1%3a20030606-27` | `et_EE` | Estonian  |
-| `myspell-fa` | `0.20070816-3` | `fa_IR` | Farsi  |
-| `myspell-fo` | `0.4.2-11` | `fo` | Faroese  |
-| `myspell-ga` | `2.0-25` | `ga_IE` | Irish  |
+| `hunspell-si` | `1%3a6.0.3-3` | `si_LK` | Sinhala |
+| `hunspell-sk` | `1%3a6.0.3-3` | `sk_SK` | Slovak |
+| `hunspell-sl` | `1%3a6.0.3-3` | `sl_SI` | Slovene |
+| `hunspell-sr` | `1%3a6.0.3-3` | `sr_Latn_RS` | Serbian (Latin script) |
+| `hunspell-sr` | `1%3a6.0.3-3` | `sr_RS` | Serbian (Cyrillic script) |
+| `hunspell-sv` | `1%3a6.0.3-3` | `sv_FI` | Finland Swedish |
+| `hunspell-sv` | `1%3a6.0.3-3` | `sv_SE` | Swedish |
+| `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | Swahili |
+| `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | Telugu |
+| `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | Thai |
+| `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | Ukrainian |
+| `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek |
+| `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | Vietnamese |
+| `myspell-eo` | `2.1.2000.02.25-55` | `eo` | Esperanto |
+| `myspell-et` | `1%3a20030606-27` | `et_EE` | Estonian |
+| `myspell-fa` | `0.20070816-3` | `fa_IR` | Farsi |
+| `myspell-fo` | `0.4.2-11` | `fo` | Faroese |
+| `myspell-ga` | `2.0-25` | `ga_IE` | Irish |
 | `myspell-gv` | `0.50-13` | `gv_GB` | Manx Gaelic |
-| `myspell-hy` | `0.20.0-2` | `hy_AM` | Armenian  |
-| `myspell-lv` | `0.9.6-5` | `lv_LV` | Latvian  |
-| `myspell-nr` | `20070206-4ubuntu3` | `nr_ZA` | Ndebele  |
+| `myspell-hy` | `0.20.0-2` | `hy_AM` | Armenian |
+| `myspell-lv` | `0.9.6-5` | `lv_LV` | Latvian |
+| `myspell-nr` | `20070206-4ubuntu3` | `nr_ZA` | Ndebele |
 | `myspell-ns` | `20070206-4ubuntu3` | `ns_ZA` | Northern Sotho |
-| `myspell-sq` | `1.6.4-1` | `sq_AL` | Albanian  |
-| `myspell-ss` | `20070206-4ubuntu3` | `ss_ZA` | Swazi  |
+| `myspell-sq` | `1.6.4-1` | `sq_AL` | Albanian |
+| `myspell-ss` | `20070206-4ubuntu3` | `ss_ZA` | Swazi |
 | `myspell-st` | `20070206-5ubuntu2` | `st_ZA` | Southern Sotho |
-| `myspell-tl` | `0.4-0-17` | `tl` | Tagalog  |
-| `myspell-tn` | `20070206-4ubuntu3` | `tn_ZA` | Tswana  |
-| `myspell-ts` | `20070207-4ubuntu3` | `ts_ZA` | Tsonga  |
-| `myspell-ve` | `20070206-3ubuntu2` | `ve_ZA` | Venda  |
-| `myspell-xh` | `20070206-4ubuntu3` | `xh_ZA` | Xhosa  |
-| `myspell-zu` | `20070207-5ubuntu2` | `zu_ZA` | Zulu  |
+| `myspell-tl` | `0.4-0-17` | `tl` | Tagalog |
+| `myspell-tn` | `20070206-4ubuntu3` | `tn_ZA` | Tswana |
+| `myspell-ts` | `20070207-4ubuntu3` | `ts_ZA` | Tsonga |
+| `myspell-ve` | `20070206-3ubuntu2` | `ve_ZA` | Venda |
+| `myspell-xh` | `20070206-4ubuntu3` | `xh_ZA` | Xhosa |
+| `myspell-zu` | `20070207-5ubuntu2` | `zu_ZA` | Zulu |
 
 ## Affix files
 
