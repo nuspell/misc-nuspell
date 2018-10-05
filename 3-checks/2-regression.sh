@@ -1,5 +1,8 @@
 #!/usr/bin/env sh
 
+# description: runs verification tests within regression testing
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
 
 # Lock file
 if [ -e lock ]; then
@@ -43,19 +46,6 @@ if [ ! -e builds ]; then
 fi
 
 
-# Downloading git repo
-if [ ! -d nuspell ]; then
-	git clone https://github.com/nuspell/nuspell.git >> log 2>> log
-fi
-
-
-# Updating repo
-cd nuspell
-git reset --hard HEAD >> ../log 2>> ../log
-git pull -r >> ../log 2>> ../log
-cd ..
-
-
 # Fill worklist with example list
 if [ ! -s worklist ]; then
 	echo 'WARNING: No worklist with SHAs found, using worklist with example SHAs'
@@ -63,19 +53,60 @@ if [ ! -s worklist ]; then
 fi
 
 
+# Downloading git repo
+if [ ! -d nuspell ]; then
+	git clone https://github.com/nuspell/nuspell.git >> log 2>> log
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Could not clone git repo'
+		rm -f lock
+		exit 1
+	fi
+fi
+
+
+# Updating repo
+cd nuspell
+git reset --hard HEAD >> ../log 2>> ../log
+if [ $? -ne 0 ]; then
+	echo 'ERROR: Could not reset git repo to HEAD'
+	cd ..
+	rm -f lock
+	exit 1
+fi
+git pull -r >> ../log 2>> ../log
+if [ $? -ne 0 ]; then
+	echo 'ERROR: Could not update git repo'
+	cd ..
+	rm -f lock
+	exit 1
+fi
+cd ..
+pwd
+
+
 # Iterating commit SHAs
 for sha in `cat worklist`; do
 	echo 'INFO: Verfying commit '$sha
+	pwd
 	if [ `grep -c $sha blacklist` -ne 0 ]; then
 		echo 'WARNING: Omitting blacklisted commit '$sha
 		continue
 	fi
+	cd nuspell
 	# only build when previously build executable is not available
 	if [ ! -e builds/$sha ]; then
-		cd nuspell
 
 		# Reset to the desired commit SHA
 		git reset --hard $sha >> ../log 2>> ../log
+		if [ $? -ne 0 ]; then
+			echo 'ERROR: Could not reset git repo to '$sha
+			cd ..
+			# Add commit SHA to blacklist
+			echo $sha >> blacklist
+			cat blacklist|sort|uniq > blacklist.tmp
+			mv -f blacklist.tmp blacklist
+			continue
+		fi
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Resetting to commit '$sha' results in an error'
 			cd ..
@@ -143,10 +174,18 @@ for sha in `cat worklist`; do
 			cd ../..
 		fi
 	fi
-
 	timestamp=`git log $sha --date=raw|head -n 3|tail -n 1|awk '{print $2}'`
-	cd ..
+	if [ $? -ne 0 ]; then
+		echo 'ERROR: Could not retrieve timestamp from git log'
+		cd ..
+		# Add commit SHA to blacklist
+		echo $sha >> blacklist
+		cat blacklist|sort|uniq > blacklist.tmp
+		mv -f blacklist.tmp blacklist
+		continue
+	fi
 	handle=`echo $sha|sed -e 's/^\(.......\).*/\1/'`
+	cd ..
 
 
 	# Run the text executable for all affix files with gathered word lists
@@ -159,9 +198,9 @@ for sha in `cat worklist`; do
 			echo 'Testing '$language' on '$wordsin' words'
 #			mkdir -p regression/$machine/$language
 			# Add commit SHA, commit timestamp and run timestamp to result
-			echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine.tsv
+			echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine.ssv
 			result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
-			echo $result >> $machine.tsv
+			echo $result >> $machine.ssv
 			# Double check if number of words in word list and number of words tested are identical
 			wordsout=`echo $result | awk '{print $1}'`
 			if [ $wordsin -ne $wordsout ]; then

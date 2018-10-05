@@ -78,6 +78,7 @@ fi
 echo '| Package | Version | Filename | File Type | Lines |' >> ../Dictionary-Files.md
 echo '|---|---|---|---|--:|' >> ../Dictionary-Files.md
 for file in `find . -type f -name '*.dic'|sort`; do
+	# package, version and filename
 	echo -n $file|sed -e 's/\/usr\/share\/hunspell//'|sed -e 's/^\.\//| `/'|sed -e 's/\//` | `/g'|sed -e 's/$/` | /' >> ../Dictionary-Files.md
 	affname=`basename $file .aff`
 	filename=`basename $file .dic`

@@ -1,5 +1,9 @@
 #!/usr/bin/env sh
 
+# description: gathers word lists for verification and regression testing
+# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# author: Sander van Geloven
+
 if [ ! -d ../1-support/files -o ! -d ../1-support/utf8 ]; then
 	echo 'ERROR: Run the scripts in ../1-support/ first.'
     exit 1
