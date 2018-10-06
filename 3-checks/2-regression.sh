@@ -54,18 +54,19 @@ fi
 
 
 # Downloading git repo
-if [ ! -d nuspell ]; then
+if [ ! -d tmp-nuspell ]; then
 	git clone https://github.com/nuspell/nuspell.git >> log 2>> log
 	if [ $? -ne 0 ]; then
 		echo 'ERROR: Could not clone git repo'
 		rm -f lock
 		exit 1
 	fi
+	mv nuspell tmp-nuspell
 fi
 
 
 # Updating repo
-cd nuspell
+cd tmp-nuspell
 git reset --hard HEAD >> ../log 2>> ../log
 if [ $? -ne 0 ]; then
 	echo 'ERROR: Could not reset git repo to HEAD'
@@ -81,18 +82,20 @@ if [ $? -ne 0 ]; then
 	exit 1
 fi
 cd ..
-pwd
 
 
 # Iterating commit SHAs
 for sha in `cat worklist`; do
 	echo 'INFO: Verfying commit '$sha
-	pwd
+	if [ `grep -c $sha $machine.ssv` -ne 0 ]; then
+		echo 'WARNING: Omitting already verified commit '$sha
+		continue
+	fi
 	if [ `grep -c $sha blacklist` -ne 0 ]; then
 		echo 'WARNING: Omitting blacklisted commit '$sha
 		continue
 	fi
-	cd nuspell
+	cd tmp-nuspell
 	# only build when previously build executable is not available
 	if [ ! -e builds/$sha ]; then
 

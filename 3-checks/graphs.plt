@@ -15,7 +15,7 @@ set multiplot layout 2,1 title 'Regression testing Nuspell vs. Hunspell' font ',
 #set style data lines
 #set timefmt '%d/%m/%y\t%H%M'
 set xlabel 'commit date and time'
-set xtics 1 rotate
+set xtics 1 rotate by -45
 
 set ylabel 'verification'
 set yrange [0:]
