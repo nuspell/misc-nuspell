@@ -2,12 +2,14 @@
 
 from csv import reader, writer
 from glob import glob
+from operator import itemgetter
 from sys import maxsize, float_info 
 from statistics import mean, stdev
 from subprocess import getoutput
 
+
 def main():
-	# iterate os with hostname
+	# iterate filename
 	for filename in glob('*_*.ssv'):
 		basename = filename[:-4]
 		os, hostname = basename.split('_')
@@ -137,16 +139,16 @@ def main():
 				 	
 			if lang not in data[timestamp]['precisions']:
 				 data[timestamp]['precisions'][lang] = precision
-				 if accuracy < data[timestamp]['precision_min']:
+				 if precision < data[timestamp]['precision_min']:
 				 	data[timestamp]['precision_min'] = precision
-				 if accuracy > data[timestamp]['precision_max']:
+				 if precision > data[timestamp]['precision_max']:
 				 	data[timestamp]['precision_max'] = precision
 				 	
 			if lang not in data[timestamp]['speedups']:
 				 data[timestamp]['speedups'][lang] = speedup
-				 if accuracy < data[timestamp]['speedup_min']:
+				 if speedup < data[timestamp]['speedup_min']:
 				 	data[timestamp]['speedup_min'] = speedup
-				 if accuracy > data[timestamp]['speedup_max']:
+				 if speedup > data[timestamp]['speedup_max']:
 				 	data[timestamp]['speedup_max'] = speedup
 		# iterate values
 		
@@ -246,64 +248,64 @@ def main():
 			
 			line = []
 			line.append(timestamp)
-			line.append(values['sha'][:7]) # handle
+			line.append(values['sha'][:7])  # handle
 			line.append(values['languages'])
 			
 			line.append('{}'.format(values['words_min']))
 			line.append('{}'.format(values['words_max']))
-			line.append('{0:1.3f}'.format(values['words_mean']))
-			line.append('{0:1.3f}'.format(values['words_stdev']))
-			line.append('{0:1.3f}'.format(max(values['words_mean'] - values['words_stdev'], values['words_min'])))
-			line.append('{0:1.3f}'.format(min(values['words_mean'] + values['words_stdev'], values['words_max'])))
+			line.append('{:.1f}'.format(values['words_mean']))
+			line.append('{:.1f}'.format(values['words_stdev']))
+			line.append('{:.1f}'.format(max(values['words_mean'] - values['words_stdev'], values['words_min'])))
+			line.append('{:.1f}'.format(min(values['words_mean'] + values['words_stdev'], values['words_max'])))
 			
-			line.append('{0:1.3f}'.format(values['true_pos_rate_min']))
-			line.append('{0:1.3f}'.format(values['true_pos_rate_max']))
-			line.append('{0:1.3f}'.format(values['true_pos_rate_mean']))
-			line.append('{0:1.3f}'.format(values['true_pos_rate_stdev']))
-			line.append('{0:1.3f}'.format(max(values['true_pos_rate_mean'] - values['true_pos_rate_stdev'], values['true_pos_rate_min'])))
-			line.append('{0:1.3f}'.format(min(values['true_pos_rate_mean'] + values['true_pos_rate_stdev'], values['true_pos_rate_max'])))
+			line.append('{:1.3f}'.format(values['true_pos_rate_min']))
+			line.append('{:1.3f}'.format(values['true_pos_rate_max']))
+			line.append('{:1.3f}'.format(values['true_pos_rate_mean']))
+			line.append('{:1.3f}'.format(values['true_pos_rate_stdev']))
+			line.append('{:1.3f}'.format(max(values['true_pos_rate_mean'] - values['true_pos_rate_stdev'], values['true_pos_rate_min'])))
+			line.append('{:1.3f}'.format(min(values['true_pos_rate_mean'] + values['true_pos_rate_stdev'], values['true_pos_rate_max'])))
 			
-			line.append('{0:1.3f}'.format(values['true_neg_rate_min']))
-			line.append('{0:1.3f}'.format(values['true_neg_rate_max']))
-			line.append('{0:1.3f}'.format(values['true_neg_rate_mean']))
-			line.append('{0:1.3f}'.format(values['true_neg_rate_stdev']))
-			line.append('{0:1.3f}'.format(max(values['true_neg_rate_mean'] - values['true_neg_rate_stdev'], values['true_neg_rate_min'])))
-			line.append('{0:1.3f}'.format(min(values['true_neg_rate_mean'] + values['true_neg_rate_stdev'], values['true_neg_rate_max'])))
+			line.append('{:01.3f}'.format(values['true_neg_rate_min']))
+			line.append('{:01.3f}'.format(values['true_neg_rate_max']))
+			line.append('{:01.3f}'.format(values['true_neg_rate_mean']))
+			line.append('{:01.3f}'.format(values['true_neg_rate_stdev']))
+			line.append('{:01.3f}'.format(max(values['true_neg_rate_mean'] - values['true_neg_rate_stdev'], values['true_neg_rate_min'])))
+			line.append('{:01.3f}'.format(min(values['true_neg_rate_mean'] + values['true_neg_rate_stdev'], values['true_neg_rate_max'])))
 			
-			line.append('{0:1.3f}'.format(values['false_pos_rate_min']))
-			line.append('{0:1.3f}'.format(values['false_pos_rate_max']))
-			line.append('{0:1.3f}'.format(values['false_pos_rate_mean']))
-			line.append('{0:1.3f}'.format(values['false_pos_rate_stdev']))
-			line.append('{0:1.3f}'.format(max(values['false_pos_rate_mean'] - values['false_pos_rate_stdev'], values['false_pos_rate_min'])))
-			line.append('{0:1.3f}'.format(min(values['false_pos_rate_mean'] + values['false_pos_rate_stdev'], values['false_pos_rate_max'])))
+			line.append('{:01.3f}'.format(values['false_pos_rate_min']))
+			line.append('{:01.3f}'.format(values['false_pos_rate_max']))
+			line.append('{:01.3f}'.format(values['false_pos_rate_mean']))
+			line.append('{:01.3f}'.format(values['false_pos_rate_stdev']))
+			line.append('{:01.3f}'.format(max(values['false_pos_rate_mean'] - values['false_pos_rate_stdev'], values['false_pos_rate_min'])))
+			line.append('{:01.3f}'.format(min(values['false_pos_rate_mean'] + values['false_pos_rate_stdev'], values['false_pos_rate_max'])))
 			
-			line.append('{0:1.3f}'.format(values['false_neg_rate_min']))
-			line.append('{0:1.3f}'.format(values['false_neg_rate_max']))
-			line.append('{0:1.3f}'.format(values['false_neg_rate_mean']))
-			line.append('{0:1.3f}'.format(values['false_neg_rate_stdev']))
-			line.append('{0:1.3f}'.format(max(values['false_neg_rate_mean'] - values['false_neg_rate_stdev'], values['false_neg_rate_min'])))
-			line.append('{0:1.3f}'.format(min(values['false_neg_rate_mean'] + values['false_neg_rate_stdev'], values['false_neg_rate_max'])))
+			line.append('{:01.3f}'.format(values['false_neg_rate_min']))
+			line.append('{:01.3f}'.format(values['false_neg_rate_max']))
+			line.append('{:01.3f}'.format(values['false_neg_rate_mean']))
+			line.append('{:01.3f}'.format(values['false_neg_rate_stdev']))
+			line.append('{:01.3f}'.format(max(values['false_neg_rate_mean'] - values['false_neg_rate_stdev'], values['false_neg_rate_min'])))
+			line.append('{:01.3f}'.format(min(values['false_neg_rate_mean'] + values['false_neg_rate_stdev'], values['false_neg_rate_max'])))
 			
-			line.append('{0:1.3f}'.format(values['accuracy_min']))
-			line.append('{0:1.3f}'.format(values['accuracy_max']))
-			line.append('{0:1.3f}'.format(values['accuracy_mean']))
-			line.append('{0:1.3f}'.format(values['accuracy_stdev']))
-			line.append('{0:1.3f}'.format(max(values['accuracy_mean'] - values['accuracy_stdev'], values['accuracy_min'])))
-			line.append('{0:1.3f}'.format(min(values['accuracy_mean'] + values['accuracy_stdev'], values['accuracy_max'])))
+			line.append('{:01.3f}'.format(values['accuracy_min']))
+			line.append('{:01.3f}'.format(values['accuracy_max']))
+			line.append('{:01.3f}'.format(values['accuracy_mean']))
+			line.append('{:01.3f}'.format(values['accuracy_stdev']))
+			line.append('{:01.3f}'.format(max(values['accuracy_mean'] - values['accuracy_stdev'], values['accuracy_min'])))
+			line.append('{:01.3f}'.format(min(values['accuracy_mean'] + values['accuracy_stdev'], values['accuracy_max'])))
 			
-			line.append('{0:1.3f}'.format(values['precision_min']))
-			line.append('{0:1.3f}'.format(values['precision_max']))
-			line.append('{0:1.3f}'.format(values['precision_mean']))
-			line.append('{0:1.3f}'.format(values['precision_stdev']))
-			line.append('{0:1.3f}'.format(max(values['precision_mean'] - values['precision_stdev'], values['precision_min'])))
-			line.append('{0:1.3f}'.format(min(values['precision_mean'] + values['precision_stdev'], values['precision_max'])))
+			line.append('{:01.3f}'.format(values['precision_min']))
+			line.append('{:01.3f}'.format(values['precision_max']))
+			line.append('{:01.3f}'.format(values['precision_mean']))
+			line.append('{:01.3f}'.format(values['precision_stdev']))
+			line.append('{:01.3f}'.format(max(values['precision_mean'] - values['precision_stdev'], values['precision_min'])))
+			line.append('{:01.3f}'.format(min(values['precision_mean'] + values['precision_stdev'], values['precision_max'])))
 
-			line.append('{0:1.2f}'.format(values['speedup_min']))
-			line.append('{0:1.2f}'.format(values['speedup_max']))
-			line.append('{0:1.2f}'.format(values['speedup_mean']))
-			line.append('{0:1.2f}'.format(values['speedup_stdev']))
-			line.append('{0:1.2f}'.format(max(values['speedup_mean'] - values['speedup_stdev'], values['speedup_min'])))
-			line.append('{0:1.2f}'.format(min(values['speedup_mean'] + values['speedup_stdev'], values['speedup_max'])))
+			line.append('{:01.2f}'.format(values['speedup_min']))
+			line.append('{:01.2f}'.format(values['speedup_max']))
+			line.append('{:01.2f}'.format(values['speedup_mean']))
+			line.append('{:01.2f}'.format(values['speedup_stdev']))
+			line.append('{:01.2f}'.format(max(values['speedup_mean'] - values['speedup_stdev'], values['speedup_min'])))
+			line.append('{:01.2f}'.format(min(values['speedup_mean'] + values['speedup_stdev'], values['speedup_max'])))
 			average.writerow(line)
 
 		latest = writer(open('{}-latest.tsv'.format(basename), 'w'), delimiter='\t')
@@ -321,9 +323,9 @@ def main():
 		line.append('lang')
 		line.append('language')
 		latest.writerow(line)
-		timestamp = sorted(data)[-1]
+		timestamp = sorted(data)[-1]  # latest
 		values = data[timestamp]
-		for lang, v in sorted(values['accuracies'].items()):
+		for lang, v in sorted(values['wordss'].items()):
 			line = []
 			line.append(timestamp)
 			line.append(values['sha'][:7])
@@ -340,8 +342,56 @@ def main():
 			line.append(language)
 			latest.writerow(line)
 
-	# iterate os with hostname
-				
+		if filename == 'linux_yari.ssv':
+			md = open('performance.md', 'w')
+			md.write('''---
+title: Performance
+layout: page
+---
+
+Below are results from the latest verification testing in terms if functional and speedup performance. Here acc. stands for accuracy and prec. for precision.
+
+| Statistics | Words | True Pos. Rate | True Neg. Rate | False Pos. Rate | False Neg. Rate | Acc. | Prec. | Speedup |
+|---|--:|--:|--:|--:|--:|--:|--:|--:|
+''')
+			md.write('| minimum                   | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_min'], values['true_pos_rate_min'], values['true_neg_rate_min'], values['false_pos_rate_min'], values['false_neg_rate_min'], values['accuracy_min'], values['precision_min'], values['speedup_min']))
+			md.write('| mean - std. dev. (capped) | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(max(values['words_mean'] - values['words_stdev'], values['words_min']), max(values['true_pos_rate_mean'] - values['true_pos_rate_stdev'], values['true_pos_rate_min']), max(values['true_neg_rate_mean'] - values['true_neg_rate_stdev'], values['true_neg_rate_min']), max(values['false_pos_rate_mean'] - values['false_pos_rate_stdev'], values['false_pos_rate_min']), max(values['false_neg_rate_mean'] - values['false_neg_rate_stdev'], values['false_neg_rate_min']), max(values['accuracy_mean'] - values['accuracy_stdev'], values['accuracy_min']), max(values['precision_mean'] - values['precision_stdev'], values['precision_min']), max(values['speedup_mean'] - values['speedup_stdev'], values['speedup_min'])))
+			md.write('| mean                      | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_mean'], values['true_pos_rate_mean'], values['true_neg_rate_mean'], values['false_pos_rate_mean'], values['false_neg_rate_mean'], values['accuracy_mean'], values['precision_mean'], values['speedup_mean']))
+			md.write('| mean + std. dev. (capped) | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(min(values['words_mean'] + values['words_stdev'], values['words_max']), min(values['true_pos_rate_mean'] + values['true_pos_rate_stdev'], values['true_pos_rate_max']), min(values['true_neg_rate_mean'] + values['true_neg_rate_stdev'], values['true_neg_rate_max']), min(values['false_pos_rate_mean'] + values['false_pos_rate_stdev'], values['false_pos_rate_max']), min(values['false_neg_rate_mean'] + values['false_neg_rate_stdev'], values['false_neg_rate_max']), min(values['accuracy_mean'] + values['accuracy_stdev'], values['accuracy_max']), min(values['precision_mean'] + values['precision_stdev'], values['precision_max']), min(values['speedup_mean'] + values['speedup_stdev'], values['speedup_max'])))
+			md.write('| maximum                   | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_max'], values['true_pos_rate_max'], values['true_neg_rate_max'], values['false_pos_rate_max'], values['false_neg_rate_max'], values['accuracy_max'], values['precision_max'], values['speedup_max']))
+			# perhaps rotate the table above
+			
+			md.write('''
+			
+Broken down per language, the functional and performance measurements are in the table below.
+			
+| Code | Language | Words | True Pos. Rate | True Neg. Rate | False Pos. Rate | False Neg. Rate | Acc. | Prec. | Speedup |
+|---|---|--:|--:|--:|--:|--:|--:|--:|--:| 
+''')
+
+			for lang, v in sorted(values['wordss'].items()):
+				md.write('| `{}`'.format(lang))
+				language = getoutput('../0-tools/language_support_to_language_name.sh {}'.format(lang))
+				md.write('| {}'.format(language))
+				md.write('| `{:,}`'.format(values['wordss'][lang]))
+				md.write('| `{:01.3f}`'.format(values['true_pos_rates'][lang]))
+				md.write('| `{:01.3f}`'.format(values['true_neg_rates'][lang]))
+				md.write('| `{:01.3f}`'.format(values['false_pos_rates'][lang]))
+				md.write('| `{:01.3f}`'.format(values['false_neg_rates'][lang]))
+				md.write('| `{:01.3f}`'.format(values['accuracies'][lang]))
+				md.write('| `{:01.3f}`'.format(values['precisions'][lang]))
+				md.write('| `{:01.2f}`'.format(values['speedups'][lang]))
+				md.write(' |\n')
+						
+			md.write('''
+			
+Soon this information will also be offered in graphs, showing regression of performance in terms of functionality and speed over key commits to the source code repository.
+
+# See also
+
+Upcoming features improving performance are listed in the project's [roadmap](roadmap.html).
+''')
+	# iterate filename
 
 
 if __name__ == "__main__":
