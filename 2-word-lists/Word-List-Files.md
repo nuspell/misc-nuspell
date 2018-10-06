@@ -38,6 +38,7 @@ The following combinations of affix file and word list file have a different fil
 | Affix File | Affix File Type | Word List File | Word List File Type |
 |---|---|---|---|
 | `ca` | UTF-8, with CRLF line terminators | `catala` | UTF-8 |
+| `ca_ES-valencia` | UTF-8, with CRLF line terminators | `catala` | UTF-8 |
 | `de_CH` | ISO-8859 | `swiss` | UTF-8 |
 | `de_CH_frami` | ISO-8859 | `swiss` | UTF-8 |
 | `de_DE` | ISO-8859 | `ngerman` | UTF-8 |
