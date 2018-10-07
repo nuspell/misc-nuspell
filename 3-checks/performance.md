@@ -7,108 +7,108 @@ Performance can be measured in a variety of ways. For Nuspell, performance is fi
 
 # Verification Nuspell vs. Hunspell
 
-Below are the overall results from the verification testing in terms if functional and speedup performance for the latest version of Nuspell, i.e. commit [`facd49a`](https://github.com/nuspell/nuspell/commit/facd49ae36d7b8fb8d8e2bc9bdba089e1af79268) from 2018-09-26 at 12:04:27.  This is done by using [words lists](https://github.com/nuspell/nuspell/wiki/Word-List-Files) and [dictionaries](https://github.com/nuspell/nuspell/wiki/Dictionary-Files) for 85 different languages.
+Below are the overall results from the [verification testing](https://en.wikipedia.org/wiki/Software_verification) in terms if functional and speedup performance for the latest version of Nuspell, i.e. commit [`367115a`](https://github.com/nuspell/nuspell/commit/367115ad47fe382ad55dede1219977ca3523af14) from 2018-10-06 at 10:34:06.  This is done by using [words lists](https://github.com/nuspell/nuspell/wiki/Word-List-Files) and [dictionaries](https://github.com/nuspell/nuspell/wiki/Dictionary-Files) for 85 different languages.
 
 | metric statistics | minimum | mean - std. (capped) | mean | mean + std. (capped) | maximum |
 |---|--:|--:|--:|--:|--:|
-| **words tested** | `18`| `18`| `275,377`| `749,666`| `3,802,878` |
-| **true positive rate** | `0.411` | `0.863` | `0.961` | `1.000` | `1.000` |
-| **true negative rate** | `0.000` | `0.000` | `0.036` | `0.134` | `0.589` |
-| **false positive rate** | `0.000` | `0.000` | `0.000` | `0.001` | `0.004` |
-| **false negative rate** | `0.000` | `0.000` | `0.003` | `0.018` | `0.098` |
 | **accuracy** | `0.902` | `0.982` | `0.997` | `1.000` | `1.000` |
 | **precision** | `0.996` | `0.999` | `1.000` | `1.000` | `1.000` |
-| **speedup** | `0.43` | `0.89` | `1.27` | `1.66` | `2.20` |
+| **speedup** | `0.43` | `0.90` | `1.27` | `1.65` | `2.24` |
+| <small>words tested</small> | <small>`18`</small> | <small>`18`</small> | <small>`275,377`</small> | <small>`749,666`</small> | <small>`3,802,878`</small> |
+| <small>true positive rate</small> | <small>`0.411`</small> | <small>`0.863`</small> | <small>`0.961`</small> | <small>`1.000`</small> | <small>`1.000`</small> |
+| <small>true negative rate</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.036`</small> | <small>`0.134`</small> | <small>`0.589`</small> |
+| <small>false positive rate</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.001`</small> | <small>`0.004`</small> |
+| <small>false negative rate</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.003`</small> | <small>`0.018`</small> | <small>`0.098`</small> |
 
 Broken down per language, the functional and performance measurements are in the table below.
 			
-| language | code | words tested | true positive rate | true negative rate | false positive rate | false negative rate | accuracy | precision | speedup |
+| language | code | accuracy | precision | speedup | <small>words tested</small> | <small>true positive rate</small> | <small>true negative rate</small> | <small>false positive rate</small> | <small>false negative rate</small> |
 |---|---|--:|--:|--:|--:|--:|--:|--:|--:|
-| Afrikaans | `af_ZA` | `125,470`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.17` |
-| Aragonese | `an_ES` | `20,535`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.20` |
-| Arabic | `ar` | `108,362`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.77` |
-| Belarusian | `be_BY` | `81,516`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.54` |
-| Bulgarian | `bg_BG` | `867,136`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.25` |
-| Bengali | `bn_BD` | `110,750`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.69` |
-| Classical Tibetan | `bo` | `376`| `0.918` | `0.082` | `0.000` | `0.000` | `1.000` | `1.000` | `1.62` |
-| Breton | `br_FR` | `464,631`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.58` |
-| Bosnian | `bs_BA` | `30,442`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.19` |
-| Catalan | `ca` | `655,679`| `0.968` | `0.004` | `0.000` | `0.028` | `0.972` | `1.000` | `0.97` |
-| Valencian | `ca_ES-valencia` | `655,778`| `0.968` | `0.004` | `0.000` | `0.028` | `0.972` | `1.000` | `0.75` |
-| Czech | `cs_CZ` | `165,085`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.20` |
-| Danish | `da_DK` | `390,462`| `0.942` | `0.052` | `0.004` | `0.002` | `0.994` | `0.996` | `0.62` |
-| Austrian German | `de_AT` | `71,983`| `0.700` | `0.300` | `0.000` | `0.000` | `1.000` | `1.000` | `0.46` |
-| Austrian German | `de_AT_frami` | `250,806`| `0.677` | `0.323` | `0.000` | `0.000` | `1.000` | `1.000` | `0.43` |
-| Swiss German | `de_CH` | `381,038`| `0.943` | `0.057` | `0.000` | `0.000` | `1.000` | `1.000` | `0.62` |
-| Swiss German | `de_CH_frami` | `559,483`| `0.855` | `0.145` | `0.000` | `0.000` | `1.000` | `1.000` | `0.55` |
-| German | `de_DE` | `380,890`| `0.943` | `0.057` | `0.000` | `0.000` | `1.000` | `1.000` | `0.62` |
-| German | `de_DE_frami` | `559,844`| `0.856` | `0.144` | `0.000` | `0.000` | `1.000` | `1.000` | `0.55` |
-| Dzongkha | `dz` | `401`| `0.925` | `0.075` | `0.000` | `0.000` | `1.000` | `1.000` | `1.60` |
-| Modern Greek | `el_GR` | `828,785`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.46` |
-| Australian English | `en_AU` | `49,426`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.53` |
-| Canadian English | `en_CA` | `112,517`| `0.977` | `0.023` | `0.000` | `0.000` | `1.000` | `1.000` | `1.27` |
-| British English | `en_GB` | `135,843`| `0.882` | `0.118` | `0.000` | `0.000` | `1.000` | `1.000` | `1.01` |
-| American English | `en_US` | `112,568`| `0.976` | `0.024` | `0.000` | `0.000` | `1.000` | `1.000` | `1.23` |
-| South African English | `en_ZA` | `53,537`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.37` |
-| Esperanto | `eo` | `1,015,192`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `0.90` |
-| Spanish | `es_ES` | `96,510`| `0.736` | `0.264` | `0.000` | `0.000` | `1.000` | `1.000` | `0.61` |
-| Estonian | `et_EE` | `282,173`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.13` |
-| Basque | `eu` | `106,346`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.12` |
-| Farsi | `fa_IR` | `331,788`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.62` |
-| Faroese | `fo` | `425,136`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.12` |
-| French | `fr` | `191,661`| `0.996` | `0.004` | `0.000` | `0.000` | `1.000` | `1.000` | `2.20` |
-| Irish | `ga_IE` | `65,424`| `0.998` | `0.002` | `0.000` | `0.000` | `1.000` | `1.000` | `1.09` |
-| Scottish Gaelic | `gd_GB` | `334,794`| `0.992` | `0.008` | `0.000` | `0.000` | `1.000` | `1.000` | `1.63` |
-| Galician | `gl_ES` | `551,230`| `0.411` | `0.589` | `0.000` | `0.000` | `1.000` | `1.000` | `1.05` |
-| Gujarati | `gu_IN` | `168,952`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.72` |
-| Guarani | `gug_PY` | `4,215`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.90` |
-| Manx Gaelic | `gv_GB` | `32,358`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.18` |
-| Hebrew | `he_IL` | `469,730`| `0.974` | `0.026` | `0.000` | `0.000` | `1.000` | `1.000` | `1.62` |
-| Hindi | `hi_IN` | `15,983`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.92` |
-| Croatian | `hr_HR` | `53,395`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.22` |
-| Hungarian | `hu_HU` | `89,071`| `0.979` | `0.021` | `0.000` | `0.000` | `1.000` | `1.000` | `1.51` |
-| Armenian | `hy_AM` | `63,766`| `0.999` | `0.001` | `0.000` | `0.000` | `1.000` | `1.000` | `2.09` |
-| Icelandic | `is_IS` | `191,571`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.63` |
-| Italian | `it_IT` | `192,565`| `0.996` | `0.004` | `0.000` | `0.000` | `1.000` | `1.000` | `1.25` |
-| Kazakh | `kk_KZ` | `54,063`| `0.907` | `0.000` | `0.000` | `0.093` | `0.907` | `1.000` | `1.09` |
-| Kurmanji (Latin script) | `kmr_Latn` | `4,735`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.87` |
-| Laotian | `lo_LA` | `18`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.14` |
-| Lithuanian | `lt_LT` | `82,627`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.17` |
-| Latvian | `lv_LV` | `155,631`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.19` |
-| Malayalam | `ml_IN` | `142,402`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.75` |
-| Bokmål | `nb_NO` | `939,921`| `0.954` | `0.045` | `0.001` | `0.000` | `0.999` | `0.999` | `1.04` |
-| Nepalese | `ne_NP` | `34,604`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.61` |
-| Dutch | `nl` | `362,822`| `0.965` | `0.035` | `0.000` | `0.000` | `1.000` | `1.000` | `0.58` |
-| Nynorsk | `nn_NO` | `627,973`| `0.999` | `0.001` | `0.000` | `0.000` | `1.000` | `1.000` | `1.36` |
-| Ndebele | `nr_ZA` | `12,746`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.20` |
-| Northern Sotho | `ns_ZA` | `4,934`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.12` |
-| Occitan | `oc_FR` | `55,588`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.12` |
-| Polish | `pl_PL` | `3,802,878`| `0.990` | `0.010` | `0.000` | `0.000` | `1.000` | `1.000` | `1.10` |
-| Brazilian | `pt_BR` | `569,136`| `0.894` | `0.008` | `0.000` | `0.098` | `0.902` | `1.000` | `0.89` |
-| Portuguese | `pt_PT` | `419,585`| `0.985` | `0.015` | `0.000` | `0.000` | `1.000` | `1.000` | `1.21` |
-| Romanian | `ro_RO` | `173,205`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.59` |
-| Russian | `ru_RU` | `146,269`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.18` |
-| North Sámi | `se` | `527,510`| `0.546` | `0.454` | `0.000` | `0.000` | `1.000` | `1.000` | `0.66` |
-| Sinhala | `si_LK` | `30,319`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.66` |
-| Slovak | `sk_SK` | `246,224`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.58` |
-| Slovene | `sl_SI` | `246,856`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.27` |
-| Albanian | `sq_AL` | `229,505`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.21` |
-| Serbian (Latin script) | `sr_Latn_RS` | `222,281`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.49` |
-| Serbian (Cyrillic script) | `sr_RS` | `222,288`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.73` |
-| Swazi | `ss_ZA` | `18,969`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.24` |
-| Southern Sotho | `st_ZA` | `6,456`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.19` |
-| Finland Swedish | `sv_FI` | `151,274`| `0.977` | `0.023` | `0.000` | `0.000` | `1.000` | `1.000` | `1.15` |
-| Swedish | `sv_SE` | `247,754`| `0.968` | `0.032` | `0.000` | `0.000` | `1.000` | `1.000` | `1.00` |
-| Swahili | `sw_TZ` | `67,900`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.14` |
-| Tagalog | `tl` | `16,365`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.24` |
-| Tswana | `tn_ZA` | `10,865`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.23` |
-| Tsonga | `ts_ZA` | `28,354`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.23` |
-| Ukrainian | `uk_UA` | `1,486,067`| `0.878` | `0.122` | `0.000` | `0.000` | `1.000` | `1.000` | `1.51` |
-| Uzbek | `uz_UZ` | `97,000`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.51` |
-| Venda | `ve_ZA` | `8,785`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.72` |
-| Vietnamese | `vi_VN` | `6,631`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `2.06` |
-| Xhosa | `xh_ZA` | `18,121`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.26` |
-| Zulu | `zu_ZA` | `73,194`| `1.000` | `0.000` | `0.000` | `0.000` | `1.000` | `1.000` | `1.11` |
+| Afrikaans | `af_ZA` | `1.000` | `1.000` | `1.15` | <small>`125,470`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Aragonese | `an_ES` | `1.000` | `1.000` | `1.21` | <small>`20,535`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Arabic | `ar` | `1.000` | `1.000` | `2.00` | <small>`108,362`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Belarusian | `be_BY` | `1.000` | `1.000` | `1.52` | <small>`81,516`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Bulgarian | `bg_BG` | `1.000` | `1.000` | `1.29` | <small>`867,136`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Bengali | `bn_BD` | `1.000` | `1.000` | `1.65` | <small>`110,750`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Classical Tibetan | `bo` | `1.000` | `1.000` | `1.77` | <small>`376`</small> | <small>`0.918`</small> | <small>`0.082`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Breton | `br_FR` | `1.000` | `1.000` | `1.59` | <small>`464,631`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Bosnian | `bs_BA` | `1.000` | `1.000` | `1.13` | <small>`30,442`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Catalan | `ca` | `0.972` | `1.000` | `0.99` | <small>`655,679`</small> | <small>`0.968`</small> | <small>`0.004`</small> | <small>`0.000`</small> | <small>`0.028`</small> |
+| Valencian | `ca_ES-valencia` | `0.972` | `1.000` | `1.00` | <small>`655,778`</small> | <small>`0.968`</small> | <small>`0.004`</small> | <small>`0.000`</small> | <small>`0.028`</small> |
+| Czech | `cs_CZ` | `1.000` | `1.000` | `1.23` | <small>`165,085`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Danish | `da_DK` | `0.994` | `0.996` | `0.64` | <small>`390,462`</small> | <small>`0.942`</small> | <small>`0.052`</small> | <small>`0.004`</small> | <small>`0.002`</small> |
+| Austrian German | `de_AT` | `1.000` | `1.000` | `0.47` | <small>`71,983`</small> | <small>`0.700`</small> | <small>`0.300`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Austrian German | `de_AT_frami` | `1.000` | `1.000` | `0.43` | <small>`250,806`</small> | <small>`0.677`</small> | <small>`0.323`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Swiss German | `de_CH` | `1.000` | `1.000` | `0.64` | <small>`381,038`</small> | <small>`0.943`</small> | <small>`0.057`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Swiss German | `de_CH_frami` | `1.000` | `1.000` | `0.57` | <small>`559,483`</small> | <small>`0.855`</small> | <small>`0.145`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| German | `de_DE` | `1.000` | `1.000` | `0.64` | <small>`380,890`</small> | <small>`0.943`</small> | <small>`0.057`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| German | `de_DE_frami` | `1.000` | `1.000` | `0.55` | <small>`559,844`</small> | <small>`0.856`</small> | <small>`0.144`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Dzongkha | `dz` | `1.000` | `1.000` | `1.81` | <small>`401`</small> | <small>`0.925`</small> | <small>`0.075`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Modern Greek | `el_GR` | `1.000` | `1.000` | `1.42` | <small>`828,785`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Australian English | `en_AU` | `1.000` | `1.000` | `1.59` | <small>`49,426`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Canadian English | `en_CA` | `1.000` | `1.000` | `1.28` | <small>`112,517`</small> | <small>`0.977`</small> | <small>`0.023`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| British English | `en_GB` | `1.000` | `1.000` | `1.03` | <small>`135,843`</small> | <small>`0.882`</small> | <small>`0.118`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| American English | `en_US` | `1.000` | `1.000` | `1.34` | <small>`112,568`</small> | <small>`0.976`</small> | <small>`0.024`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| South African English | `en_ZA` | `1.000` | `1.000` | `1.15` | <small>`53,537`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Esperanto | `eo` | `1.000` | `1.000` | `0.92` | <small>`1,015,192`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Spanish | `es_ES` | `1.000` | `1.000` | `0.63` | <small>`96,510`</small> | <small>`0.736`</small> | <small>`0.264`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Estonian | `et_EE` | `1.000` | `1.000` | `1.16` | <small>`282,173`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Basque | `eu` | `1.000` | `1.000` | `1.11` | <small>`106,346`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Farsi | `fa_IR` | `1.000` | `1.000` | `1.65` | <small>`331,788`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Faroese | `fo` | `1.000` | `1.000` | `1.10` | <small>`425,136`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| French | `fr` | `1.000` | `1.000` | `2.24` | <small>`191,661`</small> | <small>`0.996`</small> | <small>`0.004`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Irish | `ga_IE` | `1.000` | `1.000` | `1.09` | <small>`65,424`</small> | <small>`0.998`</small> | <small>`0.002`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Scottish Gaelic | `gd_GB` | `1.000` | `1.000` | `1.47` | <small>`334,794`</small> | <small>`0.992`</small> | <small>`0.008`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Galician | `gl_ES` | `1.000` | `1.000` | `1.01` | <small>`551,230`</small> | <small>`0.411`</small> | <small>`0.589`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Gujarati | `gu_IN` | `1.000` | `1.000` | `1.75` | <small>`168,952`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Guarani | `gug_PY` | `1.000` | `1.000` | `1.50` | <small>`4,215`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Manx Gaelic | `gv_GB` | `1.000` | `1.000` | `1.18` | <small>`32,358`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Hebrew | `he_IL` | `1.000` | `1.000` | `1.64` | <small>`469,730`</small> | <small>`0.974`</small> | <small>`0.026`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Hindi | `hi_IN` | `1.000` | `1.000` | `1.75` | <small>`15,983`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Croatian | `hr_HR` | `1.000` | `1.000` | `1.26` | <small>`53,395`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Hungarian | `hu_HU` | `1.000` | `1.000` | `1.48` | <small>`89,071`</small> | <small>`0.979`</small> | <small>`0.021`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Armenian | `hy_AM` | `1.000` | `1.000` | `2.02` | <small>`63,766`</small> | <small>`0.999`</small> | <small>`0.001`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Icelandic | `is_IS` | `1.000` | `1.000` | `1.58` | <small>`191,571`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Italian | `it_IT` | `1.000` | `1.000` | `1.24` | <small>`192,565`</small> | <small>`0.996`</small> | <small>`0.004`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Kazakh | `kk_KZ` | `0.907` | `1.000` | `1.05` | <small>`54,063`</small> | <small>`0.907`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.093`</small> |
+| Kurmanji (Latin script) | `kmr_Latn` | `1.000` | `1.000` | `1.85` | <small>`4,735`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Laotian | `lo_LA` | `1.000` | `1.000` | `1.08` | <small>`18`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Lithuanian | `lt_LT` | `1.000` | `1.000` | `1.15` | <small>`82,627`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Latvian | `lv_LV` | `1.000` | `1.000` | `1.26` | <small>`155,631`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Malayalam | `ml_IN` | `1.000` | `1.000` | `1.65` | <small>`142,402`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Bokmål | `nb_NO` | `0.999` | `0.999` | `1.06` | <small>`939,921`</small> | <small>`0.954`</small> | <small>`0.045`</small> | <small>`0.001`</small> | <small>`0.000`</small> |
+| Nepalese | `ne_NP` | `1.000` | `1.000` | `1.69` | <small>`34,604`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Dutch | `nl` | `1.000` | `1.000` | `0.59` | <small>`362,822`</small> | <small>`0.965`</small> | <small>`0.035`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Nynorsk | `nn_NO` | `1.000` | `1.000` | `1.43` | <small>`627,973`</small> | <small>`0.999`</small> | <small>`0.001`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Ndebele | `nr_ZA` | `1.000` | `1.000` | `1.18` | <small>`12,746`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Northern Sotho | `ns_ZA` | `1.000` | `1.000` | `1.21` | <small>`4,934`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Occitan | `oc_FR` | `1.000` | `1.000` | `1.12` | <small>`55,588`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Polish | `pl_PL` | `1.000` | `1.000` | `1.12` | <small>`3,802,878`</small> | <small>`0.990`</small> | <small>`0.010`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Brazilian | `pt_BR` | `0.902` | `1.000` | `0.89` | <small>`569,136`</small> | <small>`0.894`</small> | <small>`0.008`</small> | <small>`0.000`</small> | <small>`0.098`</small> |
+| Portuguese | `pt_PT` | `1.000` | `1.000` | `1.29` | <small>`419,585`</small> | <small>`0.985`</small> | <small>`0.015`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Romanian | `ro_RO` | `1.000` | `1.000` | `1.57` | <small>`173,205`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Russian | `ru_RU` | `1.000` | `1.000` | `1.18` | <small>`146,269`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| North Sámi | `se` | `1.000` | `1.000` | `0.69` | <small>`527,510`</small> | <small>`0.546`</small> | <small>`0.454`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Sinhala | `si_LK` | `1.000` | `1.000` | `1.67` | <small>`30,319`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Slovak | `sk_SK` | `1.000` | `1.000` | `1.60` | <small>`246,224`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Slovene | `sl_SI` | `1.000` | `1.000` | `1.31` | <small>`246,856`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Albanian | `sq_AL` | `1.000` | `1.000` | `1.19` | <small>`229,505`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Serbian (Latin script) | `sr_Latn_RS` | `1.000` | `1.000` | `1.54` | <small>`222,281`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Serbian (Cyrillic script) | `sr_RS` | `1.000` | `1.000` | `1.73` | <small>`222,288`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Swazi | `ss_ZA` | `1.000` | `1.000` | `1.22` | <small>`18,969`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Southern Sotho | `st_ZA` | `1.000` | `1.000` | `1.12` | <small>`6,456`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Finland Swedish | `sv_FI` | `1.000` | `1.000` | `1.14` | <small>`151,274`</small> | <small>`0.977`</small> | <small>`0.023`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Swedish | `sv_SE` | `1.000` | `1.000` | `1.03` | <small>`247,754`</small> | <small>`0.968`</small> | <small>`0.032`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Swahili | `sw_TZ` | `1.000` | `1.000` | `1.10` | <small>`67,900`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Tagalog | `tl` | `1.000` | `1.000` | `1.28` | <small>`16,365`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Tswana | `tn_ZA` | `1.000` | `1.000` | `1.18` | <small>`10,865`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Tsonga | `ts_ZA` | `1.000` | `1.000` | `1.24` | <small>`28,354`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Ukrainian | `uk_UA` | `1.000` | `1.000` | `1.52` | <small>`1,486,067`</small> | <small>`0.878`</small> | <small>`0.122`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Uzbek | `uz_UZ` | `1.000` | `1.000` | `1.49` | <small>`97,000`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Venda | `ve_ZA` | `1.000` | `1.000` | `1.68` | <small>`8,785`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Vietnamese | `vi_VN` | `1.000` | `1.000` | `1.99` | <small>`6,631`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Xhosa | `xh_ZA` | `1.000` | `1.000` | `1.27` | <small>`18,121`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Zulu | `zu_ZA` | `1.000` | `1.000` | `1.10` | <small>`73,194`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 
 			
 Soon this information will also be offered in graphs, showing regression of performance in terms of functionality and speed over key commits to the source code repository.
