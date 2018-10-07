@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from csv import reader, writer
+from datetime import datetime
 from glob import glob
 from operator import itemgetter
 from sys import maxsize, float_info 
@@ -349,39 +350,45 @@ title: Performance
 layout: page
 ---
 
-Below are results from the latest verification testing in terms if functional and speedup performance. Here acc. stands for accuracy and prec. for precision.
+Performance can be measured in a variety of ways. For Nuspell, performance is firstly measured in terms of correctness of spell checking functionality and speedup compared to Hunspell.
 
-| Statistics | Words | True Pos. Rate | True Neg. Rate | False Pos. Rate | False Neg. Rate | Acc. | Prec. | Speedup |
-|---|--:|--:|--:|--:|--:|--:|--:|--:|
-''')
-			md.write('| minimum                   | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_min'], values['true_pos_rate_min'], values['true_neg_rate_min'], values['false_pos_rate_min'], values['false_neg_rate_min'], values['accuracy_min'], values['precision_min'], values['speedup_min']))
-			md.write('| mean - std. dev. (capped) | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(max(values['words_mean'] - values['words_stdev'], values['words_min']), max(values['true_pos_rate_mean'] - values['true_pos_rate_stdev'], values['true_pos_rate_min']), max(values['true_neg_rate_mean'] - values['true_neg_rate_stdev'], values['true_neg_rate_min']), max(values['false_pos_rate_mean'] - values['false_pos_rate_stdev'], values['false_pos_rate_min']), max(values['false_neg_rate_mean'] - values['false_neg_rate_stdev'], values['false_neg_rate_min']), max(values['accuracy_mean'] - values['accuracy_stdev'], values['accuracy_min']), max(values['precision_mean'] - values['precision_stdev'], values['precision_min']), max(values['speedup_mean'] - values['speedup_stdev'], values['speedup_min'])))
-			md.write('| mean                      | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_mean'], values['true_pos_rate_mean'], values['true_neg_rate_mean'], values['false_pos_rate_mean'], values['false_neg_rate_mean'], values['accuracy_mean'], values['precision_mean'], values['speedup_mean']))
-			md.write('| mean + std. dev. (capped) | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(min(values['words_mean'] + values['words_stdev'], values['words_max']), min(values['true_pos_rate_mean'] + values['true_pos_rate_stdev'], values['true_pos_rate_max']), min(values['true_neg_rate_mean'] + values['true_neg_rate_stdev'], values['true_neg_rate_max']), min(values['false_pos_rate_mean'] + values['false_pos_rate_stdev'], values['false_pos_rate_max']), min(values['false_neg_rate_mean'] + values['false_neg_rate_stdev'], values['false_neg_rate_max']), min(values['accuracy_mean'] + values['accuracy_stdev'], values['accuracy_max']), min(values['precision_mean'] + values['precision_stdev'], values['precision_max']), min(values['speedup_mean'] + values['speedup_stdev'], values['speedup_max'])))
-			md.write('| maximum                   | `{:,.1f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.2f}` |\n'.format(values['words_max'], values['true_pos_rate_max'], values['true_neg_rate_max'], values['false_pos_rate_max'], values['false_neg_rate_max'], values['accuracy_max'], values['precision_max'], values['speedup_max']))
-			# perhaps rotate the table above
-			
+# Verification Nuspell vs. Hunspell
+
+Below are the overall results from the verification testing in terms if functional and speedup performance for the latest version of Nuspell, i.e. commit [`{}`](https://github.com/nuspell/nuspell/commit/{}) from {}.  This is done by using [words lists](https://github.com/nuspell/nuspell/wiki/Word-List-Files) and [dictionaries](https://github.com/nuspell/nuspell/wiki/Dictionary-Files) for {} different languages.
+
+| metric statistics | minimum | mean - std. (capped) | mean | mean + std. (capped) | maximum |
+|---|--:|--:|--:|--:|--:|
+'''.format(values['sha'][:7], values['sha'], datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S').replace(' ' , ' at '), len(values['wordss'])))
+
+			md.write('| **words tested** | `{:,}`| `{:,.0f}`| `{:,.0f}`| `{:,.0f}`| `{:,}` |\n'.format(values['words_min'], max(values['words_mean'] - values['words_stdev'], values['words_min']), values['words_mean'], min(values['words_mean'] + values['words_stdev'], values['words_max']), values['words_max']))
+			md.write('| **true positive rate** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format(values['true_pos_rate_min'], max(values['true_pos_rate_mean'] - values['true_pos_rate_stdev'], values['true_pos_rate_min']), values['true_pos_rate_mean'], min(values['true_pos_rate_mean'] + values['true_pos_rate_stdev'], values['true_pos_rate_max']), values['true_pos_rate_max'])) 
+			md.write('| **true negative rate** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format(values['true_neg_rate_min'], max(values['true_neg_rate_mean'] - values['true_neg_rate_stdev'], values['true_neg_rate_min']), values['true_neg_rate_mean'], min(values['true_neg_rate_mean'] + values['true_neg_rate_stdev'], values['true_neg_rate_max']), values['true_neg_rate_max']))
+			md.write('| **false positive rate** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format(values['false_pos_rate_min'], max(values['false_pos_rate_mean'] - values['false_pos_rate_stdev'], values['false_pos_rate_min']), values['false_pos_rate_mean'], min(values['false_pos_rate_mean'] + values['false_pos_rate_stdev'], values['false_pos_rate_max']), values['false_pos_rate_max']))
+			md.write('| **false negative rate** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format(values['false_neg_rate_min'], max(values['false_neg_rate_mean'] - values['false_neg_rate_stdev'], values['false_neg_rate_min']), values['false_neg_rate_mean'], min(values['false_neg_rate_mean'] + values['false_neg_rate_stdev'], values['false_neg_rate_max']), values['false_neg_rate_max']))
+			md.write('| **accuracy** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format(values['accuracy_min'], max(values['accuracy_mean'] - values['accuracy_stdev'], values['accuracy_min']), values['accuracy_mean'], min(values['accuracy_mean'] + values['accuracy_stdev'], values['accuracy_max']), values['accuracy_max']))
+			md.write('| **precision** | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` | `{:01.3f}` |\n'.format( values['precision_min'], max(values['precision_mean'] - values['precision_stdev'], values['precision_min']), values['precision_mean'], min(values['precision_mean'] + values['precision_stdev'], values['precision_max']), values['precision_max']))
+			md.write('| **speedup** | `{:01.2f}` | `{:01.2f}` | `{:01.2f}` | `{:01.2f}` | `{:01.2f}` |\n'.format(values['speedup_min'], max(values['speedup_mean'] - values['speedup_stdev'], values['speedup_min']), values['speedup_mean'], min(values['speedup_mean'] + values['speedup_stdev'], values['speedup_max']), values['speedup_max']))
+
 			md.write('''
-			
 Broken down per language, the functional and performance measurements are in the table below.
 			
-| Code | Language | Words | True Pos. Rate | True Neg. Rate | False Pos. Rate | False Neg. Rate | Acc. | Prec. | Speedup |
-|---|---|--:|--:|--:|--:|--:|--:|--:|--:| 
+| language | code | words tested | true positive rate | true negative rate | false positive rate | false negative rate | accuracy | precision | speedup |
+|---|---|--:|--:|--:|--:|--:|--:|--:|--:|
 ''')
 
 			for lang, v in sorted(values['wordss'].items()):
-				md.write('| `{}`'.format(lang))
 				language = getoutput('../0-tools/language_support_to_language_name.sh {}'.format(lang))
-				md.write('| {}'.format(language))
+				md.write('| {} '.format(language))
+				md.write('| `{}` '.format(lang))
 				md.write('| `{:,}`'.format(values['wordss'][lang]))
-				md.write('| `{:01.3f}`'.format(values['true_pos_rates'][lang]))
-				md.write('| `{:01.3f}`'.format(values['true_neg_rates'][lang]))
-				md.write('| `{:01.3f}`'.format(values['false_pos_rates'][lang]))
-				md.write('| `{:01.3f}`'.format(values['false_neg_rates'][lang]))
-				md.write('| `{:01.3f}`'.format(values['accuracies'][lang]))
-				md.write('| `{:01.3f}`'.format(values['precisions'][lang]))
-				md.write('| `{:01.2f}`'.format(values['speedups'][lang]))
-				md.write(' |\n')
+				md.write('| `{:01.3f}` '.format(values['true_pos_rates'][lang]))
+				md.write('| `{:01.3f}` '.format(values['true_neg_rates'][lang]))
+				md.write('| `{:01.3f}` '.format(values['false_pos_rates'][lang]))
+				md.write('| `{:01.3f}` '.format(values['false_neg_rates'][lang]))
+				md.write('| `{:01.3f}` '.format(values['accuracies'][lang]))
+				md.write('| `{:01.3f}` '.format(values['precisions'][lang]))
+				md.write('| `{:01.2f}` '.format(values['speedups'][lang]))
+				md.write('|\n')
 						
 			md.write('''
 			
