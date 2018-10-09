@@ -260,6 +260,9 @@ th | th_TH)
 tl)
 	echo 'Tagalog'
 	;;
+tlh)
+	echo 'Klingon'
+	;;
 tn | tn_ZA)
 	echo 'Tswana'
 	;;
