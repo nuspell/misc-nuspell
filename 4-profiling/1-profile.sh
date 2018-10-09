@@ -3,23 +3,25 @@
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 
 run_profilers() {
-    mkdir $dst
-    cd $dst
-    head -n $num ../../../words/linux/$dst/gathered > gathered
-    start=`date +%s`
-    perf record -g ../../../nuspell_profiling/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> perf_stderr > /dev/null
-    valgrind --tool=callgrind ../../../nuspell_profiling/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> callgrind_stderr > /dev/null
-    end=`date +%s`
-    echo $end-$start|bc > time-$hostname
-    cd ..
+	mkdir $dst
+	cd $dst
+	pwd
+	exit 1
+	head -n $num ../../../words/linux/$dst/gathered > gathered
+	start=`date +%s`
+	perf record -g ../../../profiling_nuspell/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> perf_stderr > /dev/null
+	valgrind --tool=callgrind ../../../profiling_nuspell/src/nuspell/nuspell -i UTF-8 -d $dic gathered 2> callgrind_stderr > /dev/null
+	end=`date +%s`
+	echo $end-$start|bc > time-$hostname
+	cd ..
 }
 
 platform=`../0-tools/platform.sh`
 hostname=`hostname`
 
-if [ ! -d words/$platform ]; then
+if [ ! -d ../3-checks/gathered ]; then
 	echo 'ERROR: Run the script ./1-prepare.sh first.'
-    exit 1
+	exit 1
 fi
 
 if [ -e profiling/$platform ]; then
@@ -29,14 +31,14 @@ else
 fi
 
 updated=0
-if [ -e nuspell_profiling ]; then
-	cd nuspell_profiling
+if [ -e profiling_nuspell ]; then
+	cd profiling_nuspell
 	updated=`git pull -r|grep -c 'Already up to date.'`
 else
 	rm -rf nuspell
 	git clone https://github.com/hunspell/nuspell.git
-	mv nuspell nuspell_profiling
-	cd nuspell_profiling
+	mv nuspell profiling_nuspell
+	cd profiling_nuspell
 fi
 
 commit=`git log|head -n 1|awk '{print $2}'`
