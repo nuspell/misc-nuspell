@@ -260,7 +260,7 @@ th | th_TH)
 tl)
 	echo 'Tagalog'
 	;;
-tlh)
+tlh | tlh_Latn)
 	echo 'Klingon'
 	;;
 tn | tn_ZA)

@@ -34,7 +34,7 @@ for file in `find */*/usr/share/dict -type f|sort`; do
 	encoding=`file $file|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'`
 	echo -n $encoding' | `' >> ../Word-List-Files.md
 	echo `wc -l $file|awk '{print $1}'`'` |' >> ../Word-List-Files.md
-	if [ $filename = american-english -o $filename = british-english -o $filename = canadian-english -o $filename = catalan -o $filename = catala -o $filename = danish -o $filename = dutch -o $filename = esperanto -o $filename = french -o $filename = galician-minimos -o $filename = italian -o $filename = ngerman -o $filename = polish -o $filename = portuguese -o $filename = spanish -o $filename = swiss -o $filename = ukrainian ]; then #TODO catala can disappear when reversed link bug is fixed
+	if [ $filename = american-english -o $filename = british-english -o $filename = canadian-english -o $filename = catalan -o $filename = catala -o $filename = danish -o $filename = dutch -o $filename = esperanto -o $filename = french -o $filename = galician-minimos -o $filename = italian -o $filename = klingon-latin -o $filename = ngerman -o $filename = polish -o $filename = portuguese -o $filename = spanish -o $filename = swiss -o $filename = ukrainian ]; then #TODO catala can disappear when reversed link bug is fixed
 			cp $file ../utf8/$filename.txt
 	elif [ $filename = brazilian -o $filename = faroese -o $filename = gaelic -o $filename = irish -o $filename = manx -o $filename = bokmaal -o $filename = nynorsk -o $filename = swedish ]; then
 		iconv -f ISO-8859-1 -t UTF-8//IGNORE $file -o ../utf8/$filename.txt
@@ -63,6 +63,8 @@ for file in `find */*/usr/share/dict -type f|sort`; do
 done
 
 cd ..
+
+echo >> Word-List-Files.md
 
 echo '## File types' >> Word-List-Files.md
 echo >> Word-List-Files.md

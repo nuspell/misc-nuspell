@@ -162,6 +162,8 @@ for file in `find . -type f -name '*.dic'|sort`; do
 
 done
 
+echo >> ../Dictionary-Files.md
+
 echo '## File types' >> ../Dictionary-Files.md
 echo >> ../Dictionary-Files.md
 echo 'The following pairs of affix file and dictionary file have a different file type. This might be a problem in some cases.' >> ../Dictionary-Files.md

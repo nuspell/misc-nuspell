@@ -87,20 +87,21 @@ if [ $platform = linux ]; then
         fi
     done
 
-    # Double check for overlapping packages
-    for i in $MD; do
-        I=`echo $i|sed 's/myspell-//'`
-        for j in $HD; do
-            J=`echo $j|sed 's/hunspell-//'`
-            if [ $I = $J ]; then
-                echo 'ERROR: Overlapping packages '$i' and '$j
-                exit
-            fi
-        done
-    done
+	# Double check for overlapping packages
+	for i in $MD; do
+		I=`echo $i|sed 's/myspell-//'`
+		for j in $HD; do
+			J=`echo $j|sed 's/hunspell-//'`
+			if [ $I = $J ]; then
+				echo 'ERROR: Overlapping packages '$i' and '$j
+				exit
+			fi
+		done
+	done
 
-    # Download packages
+	# Download packages
 	apt-get download $MD $HD
+	cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` .
 
 elif [ $platform = freebsd ]; then
 

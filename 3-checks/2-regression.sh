@@ -100,18 +100,10 @@ for sha in `cat worklist`; do
 	if [ ! -e builds/$sha ]; then
 
 		# Reset to the desired commit SHA
+echo X
 		git reset --hard $sha >> ../log 2>> ../log
 		if [ $? -ne 0 ]; then
-			echo 'ERROR: Could not reset git repo to '$sha
-			cd ..
-			# Add commit SHA to blacklist
-			echo $sha >> blacklist
-			cat blacklist|sort|uniq > blacklist.tmp
-			mv -f blacklist.tmp blacklist
-			continue
-		fi
-		if [ $? -ne 0 ]; then
-			echo 'ERROR: Resetting to commit '$sha' results in an error'
+			echo 'ERROR: Failed to reset git repo to '$sha
 			cd ..
 			# Add commit SHA to blacklist
 			echo $sha >> blacklist
@@ -121,6 +113,7 @@ for sha in `cat worklist`; do
 		fi
 
 		# Build application
+echo X
 		autoreconf -vfi >> ../log 2>> ../log
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Failed to automatically reconfigure nuspell'
@@ -131,6 +124,7 @@ for sha in `cat worklist`; do
 			mv -f blacklist.tmp blacklist
 			continue
 		fi
+echo X
 		./configure CXXFLAGS='-O2 -fno-omit-frame-pointer' CPPFLAGS='-DHUNSPELL_WARNING_ON' >> ../log 2>> ../log
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Failed to configure nuspell'
@@ -141,6 +135,7 @@ for sha in `cat worklist`; do
 			mv -f blacklist.tmp blacklist
 			continue
 		fi
+echo X
 		if [ `grep -c $sha ../whitelist` -eq 0 ]; then
 			make -j >> ../log 2>> ../log
 			if [ $? -ne 0 ]; then
@@ -152,6 +147,7 @@ for sha in `cat worklist`; do
 				mv -f blacklist.tmp blacklist
 				continue
 			fi
+echo X
 			make -j check >> ../log 2>> ../log
 			if [ $? -ne 0 ]; then
 				echo 'ERROR: Failed to check nuspell'
@@ -198,6 +194,7 @@ for sha in `cat worklist`; do
 		language=`basename $affix .aff`
 		if [ -e gathered/$language/words ]; then
 			wordsin=`cat gathered/$language/words.total`
+echo Y `pwd` $wordsin
 			echo 'Testing '$language' on '$wordsin' words'
 #			mkdir -p regression/$machine/$language
 			# Add commit SHA, commit timestamp and run timestamp to result
@@ -206,6 +203,13 @@ for sha in `cat worklist`; do
 			echo $result >> $machine.ssv
 			# Double check if number of words in word list and number of words tested are identical
 			wordsout=`echo $result | awk '{print $1}'`
+echo Z `pwd` $wordsout $result
+			if [ -z $wordsin ]; then
+				echo 'ERROR: Number of words in is not defined for '$language
+			fi
+			if [ -z $wordsout ]; then
+				echo 'ERROR: Number of words out is not defined for '$language
+			fi
 			if [ $wordsin -ne $wordsout ]; then
 				echo 'ERROR: Number of words in ('$wordsin') and number of results out ('$wordsout') do not match for '$language
 			fi
