@@ -134,7 +134,13 @@ pt | pt_PT)
 sv | sv_SE)
 	echo $1'\twswedish\tswedish'
 	;;
+til)
+	echo $1'\twtilburgs\ttilburgs'
+	;;
 tlh)
+	echo $1'\twklingon\tklingon'
+	;;
+tlh_Latn)
 	echo $1'\twklingon\tklingon-latin'
 	;;
 uk | uk_UA)

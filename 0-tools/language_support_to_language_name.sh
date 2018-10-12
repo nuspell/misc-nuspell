@@ -179,6 +179,9 @@ lv | lv_LV)
 ml | ml_IN)
 	echo 'Malayalam'
 	;;
+ms)
+	echo 'Malay'
+	;;
 nb | nb_NO)
 	echo 'Bokmål'
 	;;
@@ -256,6 +259,9 @@ te | te_IN)
 	;;
 th | th_TH)
 	echo 'Thai'
+	;;
+tib)
+	echo 'Tilburgs'
 	;;
 tl)
 	echo 'Tagalog'
