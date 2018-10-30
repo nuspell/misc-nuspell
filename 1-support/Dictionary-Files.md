@@ -8,7 +8,7 @@ Some available packages are omitted from this overview and testing framework. Pa
 
 ## Languages
 
-A total of 89 different languages are available for Hunspell.
+A total of 90 different languages are available for Hunspell.
 
 | Package | Version | Filename | Language |
 |---|---|---|---|
@@ -78,7 +78,8 @@ A total of 89 different languages are available for Hunspell.
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | Swahili |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | Telugu |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | Thai |
-| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn` | Klingon |
+| `hunspell-tlh` | `1.0.0` | `tlh` | Klingon |
+| `hunspell-tlh` | `1.0.0` | `tlh_Latn` | Klingon |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | Ukrainian |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | Vietnamese |
@@ -104,7 +105,7 @@ A total of 89 different languages are available for Hunspell.
 
 ## Affix files
 
-A total of 89 different affix files are available for Hunspell. Affix files which are made available via symbolic links are excluded. Note that each affix file has a unique name. Normally, these are installed in `/usr/share/hunspell/`.
+A total of 90 different affix files are available for Hunspell. Affix files which are made available via symbolic links are excluded. Note that each affix file has a unique name. Normally, these are installed in `/usr/share/hunspell/`.
 
 | Package | Version | Filename | File Type | Intended Encoding | Lines |
 |---|---|---|---|---|--:|
@@ -174,7 +175,8 @@ A total of 89 different affix files are available for Hunspell. Affix files whic
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | ASCII | ISO8859-1 | `27` |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | UTF-8 | UTF-8 | `2` |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | ISO-8859 | TIS-620 | `7` |
-| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn` | UTF-8 | UTF-8 | `108` |
+| `hunspell-tlh` | `1.0.0` | `tlh` | UTF-8 | UTF-8 | `107` |
+| `hunspell-tlh` | `1.0.0` | `tlh_Latn` | UTF-8 | UTF-8 | `110` |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | UTF-8 | UTF-8 | `4495` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | ASCII | UTF-8 | `1` |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | UTF-8 | UTF-8 | `42` |
@@ -200,7 +202,7 @@ A total of 89 different affix files are available for Hunspell. Affix files whic
 
 ## Dictionary files
 
-A total of 91 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
+A total of 92 different dictionary files are available for Hunspell. Dictionary files which are made available via symbolic links are excluded. Note that each dictionary file has a unique name. Normally, these are installed in `/usr/share/hunspell/`. Note that medical extention dictionary files, see `-med`, `_med` and `_MED`, do not have their own affix file. These dictionaries can be loaded additionally.
 
 | Package | Version | Filename | File Type | Lines |
 |---|---|---|---|--:|
@@ -272,7 +274,8 @@ A total of 91 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ.dic` | ASCII | `67901` |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN.dic` | UTF-8 | `125084` |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH.dic` | ISO-8859 | `38870` |
-| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn.dic` | ASCII | `3645` |
+| `hunspell-tlh` | `1.0.0` | `tlh.dic` | UTF-8 | `3806` |
+| `hunspell-tlh` | `1.0.0` | `tlh_Latn.dic` | ASCII | `3806` |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA.dic` | UTF-8 | `111403` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ.dic` | UTF-8 | `97001` |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN.dic` | UTF-8 | `6632` |

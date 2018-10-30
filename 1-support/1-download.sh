@@ -101,7 +101,7 @@ if [ $platform = linux ]; then
 
 	# Download packages
 	apt-get download $MD $HD
-	cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` .
+	cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` . # temporary workaround
 
 elif [ $platform = freebsd ]; then
 

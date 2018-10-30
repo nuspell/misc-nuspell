@@ -17,6 +17,9 @@ cd packages
 names=''
 #for package in `ls ../../1-support/files/|sort`; do
 	for language in `find ../../1-support/files/*/*/usr/share/hunspell/ -type f -name '*\.aff'|sed 's/.*hunspell\/\(.*\)\.aff$/\1/'|sort`; do
+		if [ $language = tlh_Latn -o $language = tlh ]; then # temporary workaround
+			continue
+		fi
 		word_list=`../../0-tools/language_support_to_word_list_name.sh $language|sed 's/\(.*\) .*/\1/'`
 	        if [ `echo $word_list|grep -c ERROR` = 0 ]; then
     			names=$names' '`echo $word_list|awk '{print $2}'`
@@ -28,7 +31,7 @@ if [ $platform = linux ]; then
 
 #	sudo apt-get update
 	apt-get download $names
-	cp -f `ls ../../../klingon/packages/wklingon_*_all.deb|sort -n|tail -1` .
+	cp -f `ls ../../../klingon/packages/wklingon_*_all.deb|sort -n|tail -1` . # temporary workaround
 
 elif [ $platform = freebsd ]; then
 

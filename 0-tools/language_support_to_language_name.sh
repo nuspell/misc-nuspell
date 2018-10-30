@@ -266,8 +266,11 @@ tib)
 tl)
 	echo 'Tagalog'
 	;;
-tlh | tlh_Latn)
+tlh)
 	echo 'Klingon'
+	;;
+tlh_Latn)
+	echo 'Klingon (Latin script)'
 	;;
 tn | tn_ZA)
 	echo 'Tswana'
