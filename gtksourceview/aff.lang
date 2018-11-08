@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ This file is part of GtkSourceView
+
+ Authors: Pander
+ Copyright (C) 2018 Pander <pander@users.sourceforge.net>
+ URL https://raw.githubusercontent.com/nuspell/misc-nuspell/master/gtksourceview/aff.lang
+ Repository https://github.com/nuspell/misc-nuspell
+ Bugs/requests https://github.com/nuspell/misc-nuspell/issues
+
+ GtkSourceView is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ GtkSourceView is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with this library; if not, see <http://www.gnu.org/licenses/>.
+
+ PLEASE, DO NOT CHANGE THE ORDER OF THIS FILE, FOR MAINTENANCE IT IS KEPT
+ IDENTICAL TO OTHER SYNTAX HIGHLIGHTING FILES. SEE ALSO THE REPOSITORY.
+
+-->
+<language id="aff" name="Affix file for Nuspell and Hunspell" version="2.0" _section="Other">
+  <metadata>
+    <property name="mimetypes">text/plain</property>
+    <property name="globs">*.aff</property>
+    <property name="line-comment-start">#</property>
+  </metadata>
+
+  <styles>
+    <style id="comment"           name="Comment"               map-to="def:comment"/>
+    <style id="keyword"           name="Keyword"               map-to="def:keyword"/>
+    <style id="type"              name="Data Type"             map-to="def:type"/>
+    <style id="decimal"           name="Decimal number"        map-to="def:decimal"/>
+    <style id="warning"           name="Warning"               map-to="def:warning"/>
+    <style id="error"             name="Error"                 map-to="def:error"/>
+  </styles>
+
+  <definitions>
+
+    <context id="comment" style-ref="comment">
+      <match>(?&lt;=^|\s)#.*$</match>
+    </context>
+
+    <context id="decimal" style-ref="decimal">
+      <match extended="true">
+        (?&lt;![\w\.])
+        (0|[1-9][0-9]*)
+        (?![\w\.])
+      </match>
+    </context>
+
+    <context id="keywords" style-ref="keyword">
+      <!--no arguments-->
+      <keyword>CHECKCOMPOUNDDUP</keyword>
+      <keyword>CHECKCOMPOUNDREP</keyword>
+      <keyword>CHECKCOMPOUNDCASE</keyword>
+      <keyword>CHECKCOMPOUNDTRIPLE</keyword>
+      <keyword>NOSPLITSUGS</keyword>
+      <keyword>ONLYMAXDIFF</keyword>
+      <keyword>CHECKSHARPS</keyword>
+      <keyword>FULLSTRIP</keyword>
+      <keyword>SIMPLIFIEDTRIPLE</keyword>
+
+      <!--numeric argument-->
+      <keyword>MAXNGRAMSUGS</keyword>
+      <keyword>COMPOUNDMIN</keyword>
+      <keyword>MAXCPDSUGS</keyword>
+      <keyword>MAXDIFF</keyword>
+      <keyword>COMPOUNDWORDMAX</keyword>
+
+      <!--string argument-->
+      <keyword>SET</keyword>
+      <keyword>TRY</keyword>
+      <keyword>LANG</keyword>
+      <keyword>IGNORE</keyword>
+
+      <!--flag type argument-->
+      <keyword>FLAG</keyword>
+
+      <!--one flag argument-->
+      <keyword>WARN</keyword>
+      <keyword>NOSUGGEST</keyword>
+      <keyword>COMPOUNDFLAG</keyword>
+      <keyword>COMPOUNDBEGIN</keyword>
+      <keyword>COMPOUNDMIDDLE</keyword>
+      <keyword>COMPOUNDEND</keyword>
+      <keyword>ONLYINCOMPOUND</keyword>
+      <keyword>COMPOUNDPERMITFLAG</keyword>
+      <keyword>COMPOUNDFORBIDFLAG</keyword>
+      <keyword>COMPOUNDROOT</keyword>
+      <keyword>KEEPCASE</keyword>
+      <keyword>FORCEUCASE</keyword>
+      <keyword>FORBIDDENWORD</keyword>
+      <keyword>NEEDAFFIX</keyword>
+      <keyword>CIRCUMFIX</keyword>
+
+      <!--one or more flags arguments-->
+      <keyword>SYLLABLENUM</keyword>
+
+      <!--spanning multiple lines-->
+      <keyword>ICONV</keyword>
+      <keyword>OCONV</keyword>
+      <keyword>BREAK</keyword>
+      <keyword>REP</keyword>
+      <keyword>KEY</keyword>
+      <keyword>MAP</keyword>
+      <keyword>AM</keyword>
+      <keyword>AF</keyword>
+      <keyword>PHONE</keyword>
+      <keyword>COMPOUNDRULE</keyword>
+      <keyword>CHECKCOMPOUNDPATTERN</keyword>
+      <keyword>PFX</keyword>
+      <keyword>SFX</keyword>
+      <keyword>COMPOUNDSYLLABLE</keyword>
+    </context>
+
+    <context id="warnings" style-ref="warning">
+      <keyword>WORDCHARS</keyword>
+      <keyword>HOME</keyword>
+      <keyword>VERSION</keyword>
+      <keyword>SUBSTANDARD</keyword>
+      <keyword>ONLYROOT</keyword>
+      <keyword>LANGCODE</keyword>
+      <keyword>COMPOUNDFIRST</keyword>
+      <keyword>COMPOUNDLAST</keyword>
+      <keyword>COMPOUNDMORESUFFIXES</keyword>
+      <keyword>GENERATE</keyword>
+      <keyword>HU_KOTOHANGZO</keyword>
+      <keyword>LEFTHYPHENMIN</keyword>
+    </context>
+
+    <context id="errors" style-ref="error">
+      <keyword>PSEUDOROOT</keyword>
+      <keyword>LEMMA_PRESENT</keyword>
+    </context>
+
+    <!--below is simply case insensitive-->
+    <!--mix of values for FLAG and SET-->
+    <context id="types" style-ref="type">
+      <keyword>double</keyword>
+      <keyword>DOUBLE</keyword>
+      <keyword>long</keyword>
+      <keyword>LONG</keyword>
+      <keyword>num</keyword>
+      <keyword>NUM</keyword>
+      <keyword>utf-8</keyword>
+      <keyword>UTF-8</keyword>
+      <keyword>iso8859-1</keyword>
+      <keyword>ISO8859-1</keyword>
+      <keyword>iso8859-2</keyword>
+      <keyword>ISO8859-2</keyword>
+      <keyword>iso8859-3</keyword>
+      <keyword>ISO8859-3</keyword>
+      <keyword>iso8859-4</keyword>
+      <keyword>ISO8859-4</keyword>
+      <keyword>iso8859-5</keyword>
+      <keyword>ISO8859-5</keyword>
+      <keyword>iso8859-6</keyword>
+      <keyword>ISO8859-6</keyword>
+      <keyword>iso8859-7</keyword>
+      <keyword>ISO8859-7</keyword>
+      <keyword>iso8859-8</keyword>
+      <keyword>ISO8859-8</keyword>
+      <keyword>iso8859-9</keyword>
+      <keyword>ISO8859-9</keyword>
+      <keyword>iso8859-10</keyword>
+      <keyword>ISO8859-10</keyword>
+      <keyword>iso8859-11</keyword>
+      <keyword>ISO8859-11</keyword>
+      <keyword>iso8859-12</keyword>
+      <keyword>ISO8859-12</keyword>
+      <keyword>iso8859-13</keyword>
+      <keyword>ISO8859-13</keyword>
+      <keyword>iso8859-14</keyword>
+      <keyword>ISO8859-14</keyword>
+      <keyword>iso8859-15</keyword>
+      <keyword>ISO8859-15</keyword>
+      <keyword>cp1251</keyword>
+      <keyword>CP1251</keyword>
+      <keyword>koi8-r</keyword>
+      <keyword>KOI8-R</keyword>
+      <keyword>tis-620</keyword>
+      <keyword>TIS-620</keyword>
+    </context>
+
+    <!--Main context-->
+    <context id="aff" class="no-spell-check">
+      <include>
+        <context ref="comment"/>
+        <context ref="decimal"/>
+        <context ref="keywords"/>
+        <context ref="warnings"/>
+        <context ref="errors"/>
+        <context ref="types"/>
+      </include>
+    </context>
+
+  </definitions>
+</language>
