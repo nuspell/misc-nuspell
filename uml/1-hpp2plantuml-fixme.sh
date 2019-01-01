@@ -8,8 +8,4 @@ cd plantuml
 
 hpp2plantuml -i "../../../nuspell/src/nuspell/*.hxx" -o 99-source-generated-class-diagram.pu -t 99-source-generated-class-diagram.jinja
 
-#TODO https://github.com/thibaultmarin/hpp2plantuml/issues/4
-#TODO https://github.com/thibaultmarin/hpp2plantuml/issues/5
-#sed -i -e 's/@startuml/# DO NOT EDIT, THIS FILE HAS BEEN GENERATED\n\n@startuml\n!include skin.iuml\n\ntitle Nuspell/' 99-source-generated-class-diagram.pu
-
 cd ..
