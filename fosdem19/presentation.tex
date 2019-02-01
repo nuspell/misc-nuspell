@@ -1,0 +1,460 @@
+\documentclass{beamer}
+\hypersetup{colorlinks=true}
+\graphicspath{{./images/}}
+\usefonttheme{professionalfonts}
+\usefonttheme{serif}
+\usepackage{fontspec}
+\setmainfont{Roboto Slab}
+\usepackage{multicol}
+
+\title{Nuspell: the new spell checker}
+\subtitle{FOSS spell checker implemented in C++14 with aid of Mozilla.}
+\author{Sander van Geloven}
+\institute{FOSDEM, Brussels}
+\date{February 2, 2019}
+\keywords{spell checking, spell checker, spelling, Nuspell}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section*{Outline}
+\begin{frame}
+\tableofcontents
+\end{frame}
+
+
+
+\section{Nuspell}
+
+\begin{frame}{Nuspell}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Nuspell is
+\\\mbox{}
+\begin{itemize}
+\item spell checker
+\\\mbox{}
+\item free and open source software with LGPL
+\\\mbox{}
+\item library and command-line tool
+\\\mbox{}
+\item written in C++14
+\end{itemize}
+\end{column}
+\begin{column}{0.5\textwidth}
+\begin{figure}
+\def
+\centering\svgwidth{.5\columnwidth}
+\input{images/logo-nuspell.pdf_tex}
+\end{figure}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}{Nuspell – Team}
+Our team currently consists of\\\mbox{}
+\begin{itemize}
+\item Dimitrij Mijoski
+\begin{itemize}
+\item lead software developer
+\item \href{https://github.com/dimztimz}{github.com/dimztimz}
+\end{itemize}
+\mbox{}
+\item Sander van Geloven
+\begin{itemize}
+\item information analyst
+\item \href{http://hellebaard.nl}{hellebaard.nl}
+\item \href{https://linkedin.com/in/svgeloven}{linkedin.com/in/svgeloven}
+\item \href{https://github.com/PanderMusubi}{github.com/PanderMusubi}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Nuspell – Spell Checking}
+Spell checking is \alert{not trivial}
+\begin{itemize}
+\item much more than searching an exhaustive word list
+\item dependent of language, character encoding and locale
+\item involves case conversion, affixing, compounding, etc.
+\item suggestions for spelling, typing and phonetic errors
+\item long history over decades with \texttt{spell}, \texttt{ispell}, \texttt{aspell}, \texttt{myspell}, \texttt{hunspell} and now \texttt{nuspell}
+\end{itemize}
+\mbox{}\\
+See also my talk at FOSDEM 2016 \href{https://archive.fosdem.org/2016/schedule/event/integrating\_spell\_and\_grammar\_checking}{archive.fosdem.org/2016/\\schedule/event/integrating\_spell\_and\_grammar\_checking}
+\end{frame}
+
+\begin{frame}{Nuspell – Goals}
+Nuspell's goals are
+\begin{itemize}
+\item a drop-in replacement for browsers, office suites, etc.
+\item backwards compatibility MySpell and Hunspell format
+\item improved maintainability
+\item minimal dependencies
+\item maximum portability
+\item improved performance
+\item suitable for further optimizations
+\end{itemize}
+\mbox{}\\
+Realized with an object-oriented C++ implementation.
+\end{frame}
+
+\begin{frame}{Nuspell – Features}
+Nuspell supports
+\begin{itemize}
+\item many character encodings
+\item compounding
+\item affixing
+\item complex morphology
+\item suggestions
+\item personal dictionaries
+\item 167 (regional) languages via 89 existing dictionaries
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Nuspell – Support}
+Mozilla Open Source Support (MOSS) funded in 2018 the creation of Nuspell. Thanks to Gerv Markham$^†$ and Mehan Jayasuriya. See \href{https://mozilla.org/moss}{mozilla.org/moss} for more information.
+\begin{figure}
+\centering
+\def\svgwidth{.75\columnwidth}
+\input{images/logo-mozilla.pdf_tex}
+\end{figure}
+Verification Hunspell has a mean precision of 1.000 and accuracy of 0.997. Perfect match 70\% of tested languages. On average checking 30\% faster and suggestions 8x faster.
+\end{frame}
+
+
+
+\section{Workings}
+
+\begin{frame}{Workings – Spell Checking}
+Spell checking is \alert{highly complex} and unfortunately not suitable for a lightning talk. It mainly concerns
+\begin{itemize}
+\item searching strings
+\item using simple regular expressions
+\item locale-dependent case detection and conversion
+\item finding and using break patterns
+\item performing input and output conversions
+\item matching, stripping and adding (multiple) affixes, mostly in reverse
+\item compounding in several ways, mostly in reverse
+\item locale-dependent tokenization of plain text
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Workings – Case Conversion}
+Examples of non-trivial case detection and conversion
+\begin{itemize}
+\item \texttt{to\_title("\alert{i}stanbul")} $\rightarrow$ \hfill English \texttt{"\alert{I}stanbul"}\\
+\hfill Turkish \texttt{"\alert{İ}stanbul"}\\
+\texttt{to\_upper("D\alert{i}yarbak\alert{ı}r")} $\rightarrow$ \hfill English \texttt{"D\alert{I}YARBAK\alert{I}R"}\\
+\hfill Turkish \texttt{"D\alert{İ}YARBAK\alert{I}R"}\\
+\item \texttt{to\_upper("{\fontspec{DejaVu Sans Mono}\alert{σ}ίγμα}")} $\rightarrow$ \hfill Greek \texttt{"{\fontspec{DejaVu Sans Mono}\alert{Σ}ΙΓΜΑ}"}\\
+\texttt{to\_upper("{\fontspec{DejaVu Sans Mono}\alert{ς}ίγμα}")} $\rightarrow$ \hfill Greek \texttt{"{\fontspec{DejaVu Sans Mono}\alert{Σ}ΙΓΜΑ}"}\\
+\texttt{to\_lower("{\fontspec{DejaVu Sans Mono}\alert{Σ}ΙΓΜΑ}")} $\rightarrow$ \hfill Greek \texttt{"{\fontspec{DejaVu Sans Mono}\alert{ς}ίγμα}"}\\
+\item \texttt{to\_upper("Stra\alert{ß}e"} $\rightarrow$ \hfill English \texttt{Stra\alert{ß}e"}\\
+\texttt{to\_upper("Stra\alert{ß}e"} $\rightarrow$ \hfill German \texttt{STRA\alert{SS}E"}
+\item \texttt{to\_title("\alert{ij}sselmeeer")} $\rightarrow$ \hfill English \texttt{"\alert{Ij}sselmeer"}\\
+\texttt{to\_title("\alert{ij}sselmeeer")} $\rightarrow$ \hfill Dutch \texttt{"\alert{IJ}sselmeer"}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Workings – Suggestions}
+Suggestions are currently found in the following order
+\begin{enumerate}
+\item replacement table \hfill \texttt{h\alert{[ëê]}llo $\rightarrow$ h\alert{e}llo}
+\item mapping table \hfill \texttt{he\alert{łło\$} $\rightarrow$ he\alert{llo}}
+\item extra character \hfill \texttt{h\alert{h}ello $\rightarrow$ hello}
+\item keyboard layout \hfill \texttt{h\alert{r}llo $\rightarrow$ h\alert{e}llo}
+\item bad character \hfill \texttt{hell\alert{ø} $\rightarrow$ hell\alert{o}}
+\item forgotten character \hfill \texttt{hllo $\rightarrow$ h\alert{e}llo}
+\item phonetic mapping \hfill \texttt{\alert{\^{}el}lo $\rightarrow$ \alert{hel}lo}
+\end{enumerate}
+\end{frame}
+
+%\begin{frame}{Suggestions – 4 Keyboard}
+%The KEY option in the affix file has lists of characters which are adjacent on a keyboard. By substituting these candidates for typing errors, suggestions can be found.
+%\\\mbox{}\\
+%\texttt{KEY qwertyuiop|azsxdcfvgbhnjmk\\
+%b\alert{w}er $\rightarrow$ b\alert{e}er\\
+%\alert{v}or $\rightarrow$ \alert{f}or}
+%\\\mbox{}\\
+%Suggestion are found by
+%\begin{itemize}
+%\item iterating characters in TRY
+%\begin{itemize}
+%\item iterating characters in word
+%\begin{itemize}
+%\item replacing char in word with char from TRY
+%\item adding as suggestion if spelled correctly
+%\end{itemize}
+%\end{itemize}
+%\item limiting search by maximum suggestions and timeout
+%\item using order of TRY for priority
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Suggestions – 5 Bad Character}
+%The TRY option in the affix file has characters that may be used to try to find suggestions. These are used here as substitution for bad (unlikely or unsupported) characters.
+%\\\mbox{}\\
+%\texttt{TRY ahlo\\
+%hall\alert{ø} $\rightarrow$ hall\alert{o}}
+%\\\mbox{}\\
+%Suggestion are found by
+%\begin{itemize}
+%\item iterating characters in TRY
+%\begin{itemize}
+%\item iterating characters in word
+%\begin{itemize}
+%\item replacing char in word with char from TRY
+%\item adding as suggestion if spelled correctly
+%\end{itemize}
+%\end{itemize}
+%\item limiting search by maximum suggestions and timeout
+%\item using order of TRY for priority
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Suggestions – 6 Forgotten Character}
+%The TRY option in the affix file has characters that may be used to try to find suggestions.
+%\\\mbox{}\\
+%\texttt{TRY ahlo\\
+%hllo $\rightarrow$ h\alert{a}llo}
+%\\\mbox{}\\
+%Suggestion are found by
+%\begin{itemize}
+%\item iterating characters in TRY
+%\begin{itemize}
+%\item iterating characters in word
+%\begin{itemize}
+%\item inserting char from TRY in word
+%\item adding as suggestion if spelled correctly
+%\end{itemize}
+%\end{itemize}
+%\item limiting search by maximum suggestions and timeout
+%\item using order of TRY for priority
+%\end{itemize}
+%\end{frame}
+%
+%\begin{frame}{Suggestions – 7 Phonetic }
+%The PHONE option in the affix file is for languages without a pronunciation-based orthography. It can transform words with case-insensitive regex-like instructions.
+%\\\mbox{}\\
+%\texttt{PHONE S(CK)OO\^{} SCHOO\\
+%\alert{scoo}l $\rightarrow$ \alert{schoo}l\\
+%\alert{skoo}l $\rightarrow$ \alert{schoo}l}
+%\\\mbox{}\\
+%Suggestion are found by
+%\begin{itemize}
+%\item converting word to upper case
+%\item replace word via PHONE table
+%\item if word has changed
+%\begin{itemize}
+%\item converting word back to lower case
+%\item adding as suggestion if spelled correctly
+%\end{itemize}
+%\item limiting search by maximum suggestions
+%\end{itemize}
+%\end{frame}
+
+\begin{frame}{Workings – Initialization}
+Initialize Nuspell in four steps in C++\\\mbox{}
+\begin{itemize}
+\item find, get and load dictionary\\
+\texttt{auto find = Finder::\alert{search\_all\_dirs\_for\_dicts}();\\
+auto path = find.\alert{get\_dictionary\_path}("en\_US");\\
+auto dic = Dictionary::\alert{load\_from\_path}(path);}
+\\\mbox{}
+\item associate currently active locale\\
+\texttt{boost::locale::generator gen;\\
+auto loc = gen("");\\
+dic.\alert{imbue}(loc);}
+\end{itemize}
+\mbox{}\\
+These steps are more simple when using the API.
+\end{frame}
+
+\begin{frame}{Workings – Usage}
+Use Nuspell by simply calling to\\\mbox{}
+\begin{itemize}
+\item check spelling\\
+\texttt{auto spelling = false;\\
+spelling = dic.\alert{spell}(word);}
+\\\mbox{}
+\item find suggestions\\
+\texttt{auto suggestions = List\_Strings();\\
+dic.\alert{suggest}(word, suggestions);}
+\end{itemize}
+\end{frame}
+
+
+
+\section{Technologies}
+
+\begin{frame}{Technologies – Libraries}
+Libraries used in run-time
+\\\mbox{}
+\begin{itemize}
+\item C++14 library\\
+e.g. GNU Standard C++ Library\\
+\href{https://gcc.gnu.org/}{libstdc++} ≥ 7.0
+\\\mbox{}
+\item Boost.Locale\\
+C++ facilities for localization\\
+\href{https://www.boost.org/doc/libs/1_69_0/libs/locale/doc/html/index.html}{boost-locale} ≥ 1.62
+\\\mbox{}
+\item International Components for Unicode (ICU)\\
+a C++ library for Unicode and locale support\\
+\href{http://site.icu-project.org/}{icu} ≥ 57.1
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Technologies – Compilers}
+Currently supported compilers to build Nuspell
+\begin{itemize}
+\item GNU GCC compiler \href{https://gcc.gnu.org/}{g++} ≥ 7.0
+\item LLVM Clang compiler \href{https://clang.llvm.org/}{clang} ≥ 6.0
+\end{itemize}
+\mbox{}\\
+Upcoming supported compilers
+\begin{itemize}
+\item MinGW with MSYS \href{http://mingw.org/}{mingw}
+\item GNU GCC compiler 6.0 (backport)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Technologies – Tools}
+Tools used for development
+\begin{itemize}
+\item build tools such as Autoconf, Automake, Make, Libtool and pkg-config
+\item QtCreator for development and debugging, also possible with gdb and other command-line tools
+\item unit testing with Catch2
+\item continuous integration with Travis for GCC and Clang and coming soon AppVeyor for MinGW
+\item profiling with Callgrind, KCachegrind, Perf and Hotspot
+\item API documentation generation with Doxygen
+\item code coverage reporting with LCOV and genhtml
+\end{itemize}
+\end{frame}
+
+
+
+\section{Upcomming}
+
+\begin{frame}{Upcoming – Next Version}
+\begin{multicols}{2}
+Next version will have improved
+\begin{itemize}
+\item \alert{performance}
+\item compounding
+\item suggestions
+\item API
+\item command-line tool
+\item documentation
+\item testing
+\end{itemize}
+Nuspell will then also be
+\begin{itemize}
+\item migrated to CMake
+\item integrated with web browsers
+\item offering ports and packages
+\item offering language bindings
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Upcoming – Ports and Packages}
+\begin{multicols}{2}
+Supported
+\begin{itemize}
+\item Ubuntu ≥ 18.04 LTS (Bionic Beaver)
+\item Debian ≥ 9 (Stretch)
+\end{itemize}
+\mbox{}\\
+Tested
+\begin{itemize}
+\item FreeBSD ≥ 11
+\end{itemize}
+\mbox{}\\
+Help wanted
+\begin{itemize}
+\item Android
+\item Arch Linux
+\item CentOS
+\item Fedora
+\item Gentoo
+\item iOS
+\item Linux Mint
+\item macOS
+\item NetBSD
+\item OpenBSD
+\item openSUSE
+\item Slackware
+\item Windows
+\item ...
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Upcoming – Language Bindings}
+\begin{multicols}{2}
+Supported
+\begin{itemize}
+\item C++
+\item C
+\end{itemize}
+\mbox{}\\
+Help wanted
+\begin{itemize}
+\item C\#
+\item Go
+\item Java
+\item JavaScript
+\item Lua
+\item Objective-C
+\item Perl
+\item PHP
+\item Ruby
+\item Rust
+\item Python
+\item Scala
+\item ...
+\end{itemize}
+\end{multicols}
+\end{frame}
+
+\begin{frame}{Upcoming – Miscellaneous}
+Other ways to help are
+\begin{itemize}
+\item fix bugs in dictionaries and word lists
+\item improve dictionaries and word lists
+\item contribute word lists with errors and corrections
+\item integrate Nuspell with IDEs, text editors and editors for HTML, XML, JSON, YAML, \TeX{}, etc.
+\item integrate Nuspell with Enchant e.g. for GtkSpell
+\item sponsor our team
+\item join our team
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Upcoming – Info and Contact}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+\href{https://nuspell.github.io}{nuspell.github.io}
+\\\mbox{}\\
+\href{https://twitter.com/nuspell1}{twitter.com/nuspell1}
+\\\mbox{}\\
+\href{https://facebook.com/nuspell}{facebook.com/nuspell}
+\\\mbox{}\\
+\href{https://fosstodon.org/@nuspell}{fosstodon.org/@nuspell}
+\end{column}
+\begin{column}{0.5\textwidth}
+Big thank you to Dimitrij.
+\\\mbox{}\\
+\href{mailto:sander@hellebaard.nl?subject=Nuspell}{Contact} us to support the development, porting and maintenance of Nuspell.
+\\\mbox{}\\
+Thanks for your attention.
+\end{column}
+\end{columns}
+\end{frame}
+
+
+
+\end{document}
