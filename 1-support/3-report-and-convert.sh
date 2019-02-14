@@ -123,6 +123,9 @@ for file in `find . -type f -name '*.dic'|sort`; do
 		echo 'ERROR'
 		exit 1
 	fi
+	if [ $filename = fy_NL -a -z $Encoding ]; then #FIXME
+		Encoding=ISO8859-1
+	fi
 	echo '\t'$Encoding
 	if [ $Encoding = UTF-8 ]; then
 		cp $file ../utf8/$filename.txt

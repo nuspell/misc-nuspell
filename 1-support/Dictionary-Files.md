@@ -41,6 +41,7 @@ A total of 90 different languages are available for Hunspell.
 | `hunspell-es` | `1%3a6.0.3-3` | `es_ES` | Spanish |
 | `hunspell-eu` | `0.5.20151110-2` | `eu` | Basque |
 | `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr` | French |
+| `hunspell-fy` | `2014` | `fy_NL` | ERROR: Unsupported language code fy_NL |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB` | Scottish Gaelic |
 | `hunspell-gl-es` | `13.10-1` | `gl_ES` | Galician |
 | `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN` | Gujarati |
@@ -78,8 +79,7 @@ A total of 90 different languages are available for Hunspell.
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | Swahili |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | Telugu |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | Thai |
-| `hunspell-tlh` | `1.0.0` | `tlh` | Klingon |
-| `hunspell-tlh` | `1.0.0` | `tlh_Latn` | Klingon |
+| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn` | Klingon (Latin script) |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | Ukrainian |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | Vietnamese |
@@ -138,6 +138,7 @@ A total of 90 different affix files are available for Hunspell. Affix files whic
 | `hunspell-es` | `1%3a6.0.3-3` | `es_ES` | UTF-8 | UTF-8 | `6891` |
 | `hunspell-eu` | `0.5.20151110-2` | `eu` | ISO-8859 | ISO-8859-1 | `94543` |
 | `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr` | UTF-8 | UTF-8 | `10918` |
+| `hunspell-fy` | `2014` | `fy_NL` | ISO-8859 |  | `233221` |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB` | UTF-8 | UTF-8 | `374` |
 | `hunspell-gl-es` | `13.10-1` | `gl_ES` | UTF-8 | UTF-8 | `12353` |
 | `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN` | UTF-8 | UTF-8 | `2` |
@@ -175,8 +176,7 @@ A total of 90 different affix files are available for Hunspell. Affix files whic
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ` | ASCII | ISO8859-1 | `27` |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN` | UTF-8 | UTF-8 | `2` |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH` | ISO-8859 | TIS-620 | `7` |
-| `hunspell-tlh` | `1.0.0` | `tlh` | UTF-8 | UTF-8 | `107` |
-| `hunspell-tlh` | `1.0.0` | `tlh_Latn` | UTF-8 | UTF-8 | `110` |
+| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn` | UTF-8 | UTF-8 | `108` |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA` | UTF-8 | UTF-8 | `4495` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | ASCII | UTF-8 | `1` |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN` | UTF-8 | UTF-8 | `42` |
@@ -237,6 +237,7 @@ A total of 92 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-es` | `1%3a6.0.3-3` | `es_ES.dic` | UTF-8 | `58947` |
 | `hunspell-eu` | `0.5.20151110-2` | `eu.dic` | ISO-8859 | `144690` |
 | `hunspell-fr-comprehensive` | `1%3a6.2-1` | `fr.dic` | UTF-8 | `82599` |
+| `hunspell-fy` | `2014` | `fy_NL.dic` | ISO-8859 | `299504` |
 | `hunspell-gd` | `1%3a6.0.3-3` | `gd_GB.dic` | UTF-8 | `331834` |
 | `hunspell-gl-es` | `13.10-1` | `gl_ES.dic` | UTF-8 | `53933` |
 | `hunspell-gu` | `1%3a6.0.3-3` | `gu_IN.dic` | UTF-8 | `168957` |
@@ -274,8 +275,7 @@ A total of 92 different dictionary files are available for Hunspell. Dictionary 
 | `hunspell-sw` | `1%3a6.0.3-3` | `sw_TZ.dic` | ASCII | `67901` |
 | `hunspell-te` | `1%3a6.0.3-3` | `te_IN.dic` | UTF-8 | `125084` |
 | `hunspell-th` | `1%3a6.0.3-3` | `th_TH.dic` | ISO-8859 | `38870` |
-| `hunspell-tlh` | `1.0.0` | `tlh.dic` | UTF-8 | `3806` |
-| `hunspell-tlh` | `1.0.0` | `tlh_Latn.dic` | ASCII | `3806` |
+| `hunspell-tlh` | `1.0.0-1` | `tlh_Latn.dic` | ASCII | `3645` |
 | `hunspell-uk` | `1%3a6.0.3-3` | `uk_UA.dic` | UTF-8 | `111403` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ.dic` | UTF-8 | `97001` |
 | `hunspell-vi` | `1%3a6.0.3-3` | `vi_VN.dic` | UTF-8 | `6632` |
