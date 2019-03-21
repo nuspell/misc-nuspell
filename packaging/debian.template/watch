@@ -1,0 +1,3 @@
+version=2
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/nuspell-$1\.tar\.gz/ \
+  https://github.com/nuspell/nuspell/tags .*/v?(\d\S*)\.tar\.gz
