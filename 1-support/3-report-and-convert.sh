@@ -102,7 +102,7 @@ for file in `find . -type f -name '*.dic'|sort`; do
 	# an_ES https://github.com/apertium/apertium-arg/issues
 	# mkr_Latn
 	# es_ES not problem but better not
-	if [ `grep -c '/$' $file` -ne 0 -a $filename != 'es_ES' ]; then
+	if [ `grep -c '/$' $file` -ne 0 -a $filename != es_ES ]; then
 		echo 'WARNING: Removing trailing slash in '$file >> ../warnings.txt
 		sed -i -e 's/\/$//' $file
 	fi
@@ -112,29 +112,31 @@ for file in `find . -type f -name '*.dic'|sort`; do
 		# intended encoding
 		# https://bugs.documentfoundation.org/show_bug.cgi?id=117392
 		# bug bg_BG.aff:SET microsoft-cp1251 -> CP1251
-		Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
+		if [ $filename = fy_NL ]; then
+			#TODO missing SET in affix file
+			Encoding=ISO8859-1
+		else
+			Encoding=`grep SET $affix|grep -v ^#|head -n 1|awk '{print toupper($2)}'|sed -e 's/ISO-/ISO/'|sed -e 's/MICROSOFT-//'|tr -d '[:space:]'`
+		fi
 
 		# autoskip medial when no aff file exists
 		#TODO check match crude
 		#TODO check iconv
-	elif [ $filename = de_med -o $filename = en_MED ]; then
+	elif [ $filename = de_med -o $filename = en_med_glut ]; then
 		Encoding=ISO8859-1
 	else
-		echo 'ERROR'
+		echo 'ERROR: Unsupported encoding detection.'
 		exit 1
-	fi
-	if [ $filename = fy_NL -a -z $Encoding ]; then #FIXME
-		Encoding=ISO8859-1
 	fi
 	echo '\t'$Encoding
 	if [ $Encoding = UTF-8 ]; then
 		cp $file ../utf8/$filename.txt
-		if [ $filename != de_med -a $filename != en_MED ]; then
+		if [ $filename != de_med -a $filename != en_med_glut ]; then
 			cp $affix ../utf8/
 		fi
 	else
 		iconv -f $Encoding -t UTF-8//IGNORE $file > ../utf8/$filename.txt
-		if [ $filename != de_med -a $filename != en_MED ]; then
+		if [ $filename != de_med -a $filename != en_med_glut ]; then
 			iconv -f $Encoding -t UTF-8//IGNORE $affix > ../utf8/$affname
 		fi
 	fi
@@ -144,7 +146,7 @@ for file in `find . -type f -name '*.dic'|sort`; do
 		flip -b -u ../utf8/$filename.txt
 		echo 'WARNING: Fixing line terminators in '$file >> ../warnings.txt
 	fi
-	if [ $filename != de_med -a $filename != en_MED ]; then
+	if [ $filename != de_med -a $filename != en_med_glut ]; then
 	new_encoding=`file ../utf8/$affname|sed -e 's/^.*: //'`
 	if [ "$new_encoding" = 'UTF-8 Unicode text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode text, with CRLF, LF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF line terminators' -o "$new_encoding" = 'UTF-8 Unicode (with BOM) text, with CRLF, LF line terminators' ]; then
 		flip -b -u ../utf8/$affname
@@ -179,7 +181,9 @@ for aff in `find . -type f -name '*.aff'|sort`; do
 	dic=`echo $aff|sed -e 's/\.aff$/\.dic/'`
 	dic_type=`file $dic|sed -e 's/^.*: //'|sed -e 's/, with very long lines//'`
 	if [ "$aff_type" != "$dic_type" ]; then
-		if [ "$aff_type" = 'ASCII text' -a "$dic_type" = 'UTF-8 Unicode text' ] || [ "$aff_type" = 'UTF-8 Unicode text' -a "$dic_type" = 'ASCII text' ]; then
+		if [ "$aff_type" = 'ASCII text' -a "$dic_type" = 'UTF-8 Unicode text' ]; then
+			echo -n
+		elif [ "$aff_type" = 'UTF-8 Unicode text' -a "$dic_type" = 'ASCII text' ]; then
 			echo -n
 		else
 			echo '| `'$language'` | '$aff_type' | '$dic_type' |' >> ../Dictionary-Files.md

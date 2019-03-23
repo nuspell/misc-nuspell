@@ -57,4 +57,10 @@ elif [ $platform = freebsd ]; then
 
 fi
 
+#TODO temporary workaround until package request has been completed
+if [ -e ../../../fy ]; then
+	mkdir -p hunspell-fy/20160722/usr/share/hunspell
+	cp ../../../fy/fy_NL.* hunspell-fy/20160722/usr/share/hunspell
+fi
+
 cd ..

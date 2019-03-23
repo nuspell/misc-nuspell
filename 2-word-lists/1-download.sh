@@ -31,7 +31,10 @@ if [ $platform = linux ]; then
 
 #	sudo apt-get update
 	apt-get download $names
-	cp -f `ls ../../../klingon/packages/wklingon_*_all.deb|sort -n|tail -1` . # temporary workaround
+	#TODO temporary workaround until package request has been completed
+	if [ -e ../../../klingon/packages ]; then
+		cp -f `ls ../../../klingon/packages/wklingon_*_all.deb|sort -n|tail -1` .
+	fi
 
 elif [ $platform = freebsd ]; then
 

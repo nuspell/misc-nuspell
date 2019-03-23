@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 start=`date +%s`
 echo aspell en_US
 cat ../2-word-lists/utf8/american-english.txt|aspell -d en_US list > aspell-en_US.txt

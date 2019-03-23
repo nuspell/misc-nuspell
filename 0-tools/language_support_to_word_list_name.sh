@@ -33,7 +33,7 @@ bg | bg_BG)
 	echo $1'\twbulgarian\tbulgarian'
 	;;
 ca | ca_ES | ca_ES-valencia)
-	echo $1'\twcatalan\tcatala'  #FIXME Reverse symbolic link and file.
+	echo $1'\twcatalan\tcatalan'
 	;;
 da | da_DK)
 	echo $1'\twdanish\tdanish'

@@ -29,7 +29,6 @@ if [ $platform = linux ]; then
         myspell-ga
         myspell-gv
         myspell-hy
-        myspell-lv
         myspell-nr
         myspell-ns
         myspell-sq
@@ -101,7 +100,10 @@ if [ $platform = linux ]; then
 
 	# Download packages
 	apt-get download $MD $HD
-	cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` . # temporary workaround
+	#TODO temporary workaround until package request has been completed
+	if [ -e ../../../klingon/packages ]; then
+		cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` .
+	fi
 
 elif [ $platform = freebsd ]; then
 

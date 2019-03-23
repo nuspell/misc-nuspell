@@ -100,7 +100,7 @@ for sha in `cat worklist`; do
 	if [ ! -e builds/$sha ]; then
 
 		# Reset to the desired commit SHA
-echo X
+echo X1
 		git reset --hard $sha >> ../log 2>> ../log
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Failed to reset git repo to '$sha
@@ -113,54 +113,48 @@ echo X
 		fi
 
 		# Build application
-echo X
-		autoreconf -vfi >> ../log 2>> ../log
-		if [ $? -ne 0 ]; then
-			echo 'ERROR: Failed to automatically reconfigure nuspell'
-			cd ..
-			# Add commit SHA to blacklist
-			echo $sha >> blacklist
-			cat blacklist|sort|uniq > blacklist.tmp
-			mv -f blacklist.tmp blacklist
-			continue
+echo X2
+		if [ ! -e build ]; then
+			mkdir build
 		fi
-echo X
-		./configure CXXFLAGS='-O2 -fno-omit-frame-pointer' CPPFLAGS='-DHUNSPELL_WARNING_ON' >> ../log 2>> ../log
+		cd build
+		cmake ..
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Failed to configure nuspell'
-			cd ..
+			cd ../..
 			# Add commit SHA to blacklist
 			echo $sha >> blacklist
 			cat blacklist|sort|uniq > blacklist.tmp
 			mv -f blacklist.tmp blacklist
 			continue
 		fi
-echo X
-		if [ `grep -c $sha ../whitelist` -eq 0 ]; then
-			make -j >> ../log 2>> ../log
+echo X3
+		if [ `grep -c $sha ../../whitelist` -eq 0 ]; then
+			make -j >> ../../log 2>> ../../log
 			if [ $? -ne 0 ]; then
 				echo 'ERROR: Failed to build nuspell'
-				cd ..
+				cd ../..
 				# Add commit SHA to blacklist
 				echo $sha >> blacklist
 				cat blacklist|sort|uniq > blacklist.tmp
 				mv -f blacklist.tmp blacklist
 				continue
 			fi
-echo X
-			make -j check >> ../log 2>> ../log
+echo X4
+			make -j test >> ../../log 2>> ../../log
 			if [ $? -ne 0 ]; then
-				echo 'ERROR: Failed to check nuspell'
-				cd ..
+				echo 'ERROR: Failed to testcd  nuspell'
+				cd ../..
 				# Add commit SHA to blacklist
 				echo $sha >> blacklist
 				cat blacklist|sort|uniq > blacklist.tmp
 				mv -f blacklist.tmp blacklist
 				continue
 			fi
+			cd ..
 		else
 			# Faster building for whitelisted commit
-			cd src/hunspell
+			cd ../src/hunspell
 			make -j libhunspell.a >> ../../../log 2>> ../../../log
 			cd ../nuspell
 			if [ -e verify.cxx ]; then
@@ -186,6 +180,7 @@ echo X
 	handle=`echo $sha|sed -e 's/^\(.......\).*/\1/'`
 	cd ..
 
+echo RRR `pwd`
 
 	# Run the text executable for all affix files with gathered word lists
 	for path in `find ../1-support/files -type f -name '*.aff'|sort`; do
@@ -202,6 +197,7 @@ echo Y `pwd` $wordsin
 			result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
 			echo $result >> $machine.ssv
 			# Double check if number of words in word list and number of words tested are identical
+echo R3 $result
 			wordsout=`echo $result | awk '{print $1}'`
 echo Z `pwd` $wordsout $result
 			if [ -z $wordsin ]; then

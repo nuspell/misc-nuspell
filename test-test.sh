@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 cd 1-support
 ./1-download.sh
 ./2-extract.sh
@@ -9,9 +11,7 @@ cd 2-word-lists
 ./3-report-and-convert.sh
 cd ..
 cd 3-checks
-./1-prepare.sh
-./2-reference.sh
-./3-regression.sh
-./4-report.py
-./5-profile.sh
+./1-gather.sh
+#./2-regression.sh
+#./4-render.sh
 cd ..

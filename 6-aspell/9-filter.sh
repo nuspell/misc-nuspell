@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 cat random.txt|aspell -d en_US list > 1.txt
 cat 1.txt|aspell -d nl list > 2.txt
 

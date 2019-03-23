@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 echo `wc -l ../2-word-lists/utf8/american-english.txt|awk '{print $1}'`+`wc -l ../2-word-lists/utf8/dutch.txt|awk '{print $1}'`+`wc -l ../2-word-lists/utf8/polish.txt|awk '{print $1}'`+`wc -l ../2-word-lists/utf8/ukrainian.txt|awk '{print $1}'`|bc > total
 
 echo `wc -l aspell-en_US.txt|awk '{print $1}'`+`wc -l aspell-nl.txt|awk '{print $1}'`+`wc -l aspell-pl_PL.txt|awk '{print $1}'`+`wc -l aspell-uk_UA.txt|awk '{print $1}'`|bc > aspell.correct

@@ -1,3 +1,5 @@
+#!/usr/bin/env sh
+
 #start=`date +%s`
 echo aspell en_US
 #cat part.txt|aspell -a -d en_US check > aspell-filtered-en_US.txt
