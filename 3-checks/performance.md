@@ -101,7 +101,7 @@ Broken down per language, the functional and performance measurements are in the
 | Swedish | `sv_SE` | `1.000` | `1.000` | `1.01` | <small>`247,754`</small> | <small>`0.968`</small> | <small>`0.032`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 | Swahili | `sw_TZ` | `1.000` | `1.000` | `1.13` | <small>`67,900`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 | Tagalog | `tl` | `1.000` | `1.000` | `1.25` | <small>`16,365`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
-| Klingon | `tlh_Latn` | `1.000` | `1.000` | `1.61` | <small>`3,644`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
+| Klingon (Latin script) | `tlh_Latn` | `1.000` | `1.000` | `1.61` | <small>`3,644`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 | Tswana | `tn_ZA` | `1.000` | `1.000` | `1.25` | <small>`10,865`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 | Tsonga | `ts_ZA` | `1.000` | `1.000` | `1.20` | <small>`28,354`</small> | <small>`1.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> | <small>`0.000`</small> |
 | Ukrainian | `uk_UA` | `1.000` | `1.000` | `1.49` | <small>`1,486,067`</small> | <small>`0.878`</small> | <small>`0.122`</small> | <small>`0.000`</small> | <small>`0.000`</small> |

@@ -1,7 +1,7 @@
 Source: nuspell
 Priority: optional
 Maintainer: Pander <pander@users.sourceforge.net>
-Build-Depends: debhelper (>= 10), cmake, make, git, libicu-dev, g++
+Build-Depends: debhelper (>= 10), cmake, make, git, libicu-dev, g++, ronn
 Standards-Version: 3.9.6
 Section: text
 Homepage: http://nuspell.github.io/

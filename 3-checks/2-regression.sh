@@ -100,7 +100,6 @@ for sha in `cat worklist`; do
 	if [ ! -e builds/$sha ]; then
 
 		# Reset to the desired commit SHA
-echo X1
 		git reset --hard $sha >> ../log 2>> ../log
 		if [ $? -ne 0 ]; then
 			echo 'ERROR: Failed to reset git repo to '$sha
@@ -113,7 +112,6 @@ echo X1
 		fi
 
 		# Build application
-echo X2
 		if [ ! -e build ]; then
 			mkdir build
 		fi
@@ -128,8 +126,7 @@ echo X2
 			mv -f blacklist.tmp blacklist
 			continue
 		fi
-echo X3
-		if [ `grep -c $sha ../../whitelist` -eq 0 ]; then
+#		if [ `grep -c $sha ../../whitelist` -eq 0 ]; then
 			make -j >> ../../log 2>> ../../log
 			if [ $? -ne 0 ]; then
 				echo 'ERROR: Failed to build nuspell'
@@ -140,7 +137,6 @@ echo X3
 				mv -f blacklist.tmp blacklist
 				continue
 			fi
-echo X4
 			make -j test >> ../../log 2>> ../../log
 			if [ $? -ne 0 ]; then
 				echo 'ERROR: Failed to testcd  nuspell'
@@ -151,21 +147,10 @@ echo X4
 				mv -f blacklist.tmp blacklist
 				continue
 			fi
+
+			cp -f tests/verify ../../builds/$sha
 			cd ..
-		else
-			# Faster building for whitelisted commit
-			cd ../src/hunspell
-			make -j libhunspell.a >> ../../../log 2>> ../../../log
-			cd ../nuspell
-			if [ -e verify.cxx ]; then
-				make -j verify >> ../../../log 2>> ../../../log
-				cp verify ../../../builds/$sha
-			else
-				make -j regress >> ../../../log 2>> ../../../log
-				cp regress ../../../builds/$sha
-			fi
-			cd ../..
-		fi
+#		fi
 	fi
 	timestamp=`git log $sha --date=raw|head -n 3|tail -n 1|awk '{print $2}'`
 	if [ $? -ne 0 ]; then
@@ -180,7 +165,6 @@ echo X4
 	handle=`echo $sha|sed -e 's/^\(.......\).*/\1/'`
 	cd ..
 
-echo RRR `pwd`
 
 	# Run the text executable for all affix files with gathered word lists
 	for path in `find ../1-support/files -type f -name '*.aff'|sort`; do
@@ -189,7 +173,6 @@ echo RRR `pwd`
 		language=`basename $affix .aff`
 		if [ -e gathered/$language/words ]; then
 			wordsin=`cat gathered/$language/words.total`
-echo Y `pwd` $wordsin
 			echo 'Testing '$language' on '$wordsin' words'
 #			mkdir -p regression/$machine/$language
 			# Add commit SHA, commit timestamp and run timestamp to result
@@ -197,9 +180,7 @@ echo Y `pwd` $wordsin
 			result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
 			echo $result >> $machine.ssv
 			# Double check if number of words in word list and number of words tested are identical
-echo R3 $result
 			wordsout=`echo $result | awk '{print $1}'`
-echo Z `pwd` $wordsout $result
 			if [ -z $wordsin ]; then
 				echo 'ERROR: Number of words in is not defined for '$language
 			fi

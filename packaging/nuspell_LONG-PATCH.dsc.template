@@ -11,7 +11,7 @@ Homepage: http://nuspell.github.io/
 Standards-Version: 3.9.6
 Vcs-Browser: https://github.com/nuspell/nuspell
 Vcs-Git: https://github.com/nuspell/nuspell.git
-Build-Depends: debhelper (>= 10), cmake, make, git, libicu-dev, g++
+Build-Depends: debhelper (>= 10), cmake, make, git, libicu-dev, g++, ronn
 Package-List:
  nuspell deb text optional arch=any
  libnuspell-SHORT-PATCH deb libs optional arch=any
