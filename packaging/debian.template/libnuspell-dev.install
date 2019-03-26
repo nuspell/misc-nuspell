@@ -2,5 +2,3 @@ debian/tmp/usr/lib/*/*.so
 debian/tmp/usr/lib/*/*.a
 debian/tmp/usr/include
 debian/tmp/usr/lib/*/pkgconfig
-#debian/tmp/usr/share/man/man3/nuspell.3
-#debian/tmp/usr/share/man/man5/nuspell.5
