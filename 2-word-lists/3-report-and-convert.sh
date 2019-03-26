@@ -16,7 +16,7 @@ echo >> ../Word-List-Files.md
 
 echo '## Word List Files' >> ../Word-List-Files.md
 echo >> ../Word-List-Files.md
-echo 'A total of '`find */*/usr/share/dict -type f|wc -l`' different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted. Please, note that for many of the files not yet in Unicode format, bug reports have already been filed and most of those have already been fixed in upcoming releases of the packages by which these files get shipped. See also [[Dictionaries-and-Contacts]].' >> ../Word-List-Files.md
+echo 'A total of '`find */*/usr/share/dict -type f|wc -l`' different word list files are available. Word list files which are made available via symbolic links are excluded. Note that each word list file has a unique name. Normally, these are installed in `/usr/share/dict/`. Note that medical word lists such as `wgerman-medical` and non-standard length word lists such as `wamerican-huge`, `wamerican-insane`, `wamerican-large`, `wamerican-small`, `wbritish-huge`, `wbritish-insane`, `wbritish-large`, `wbritish-small`, `wcanadian-huge`, `wcanadian-insane`, `wcanadian-large`, `wcanadian-small` and `scowl` are omitted. Please, note that for many of the files not yet in Unicode format, bug reports have already been filed and most of those have already been fixed in upcoming releases of the packages by which these files get shipped. See also [Dictionaries and Contacts](https://github.com/nuspell/nuspell/wiki/Dictionaries-and-Contacts).' >> ../Word-List-Files.md
 echo >> ../Word-List-Files.md
 
 if [ -d ../utf8 ]; then
@@ -68,7 +68,7 @@ echo >> Word-List-Files.md
 
 echo '## File types' >> Word-List-Files.md
 echo >> Word-List-Files.md
-echo 'The following combinations of affix file and word list file have a different file type. This might be a problem in some cases. Please, note that for many of these differences bug reports have already been filed and most of the issues have already be taken care of in upcoming releases of the packages by which these files get shipped. See also [[Dictionaries-and-Contacts]].' >> Word-List-Files.md
+echo 'The following combinations of affix file and word list file have a different file type. This might be a problem in some cases. Please, note that for many of these differences bug reports have already been filed and most of the issues have already be taken care of in upcoming releases of the packages by which these files get shipped. See also [Dictionaries and Contacts](https://github.com/nuspell/nuspell/wiki/Dictionaries-and-Contacts).' >> Word-List-Files.md
 echo >> Word-List-Files.md
 echo '| Affix File | Affix File Type | Word List File | Word List File Type |' >> Word-List-Files.md
 echo '|---|---|---|---|' >> Word-List-Files.md
