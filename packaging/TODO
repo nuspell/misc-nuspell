@@ -1,3 +1,0 @@
-How is libnuspell dependecy set for package nuspell?
-
-How to change the rules file to use cmake? See also https://salsa.debian.org/debian/re2/blob/debian/debian/rules

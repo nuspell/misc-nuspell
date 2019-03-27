@@ -21,7 +21,7 @@ Description: spell checker (development)
  dictionaries and affix files, a.k.a. language support. Nuspell offers also
  suggestions and personal dictionaries.
  .
- This package contains the headers and the static library.
+ This package contains the headers.
 
 Package: libnuspell-SHORT-PATCH
 Section: libs
