@@ -1,12 +1,12 @@
 Source: nuspell
 Priority: optional
 Maintainer: Pander <pander@users.sourceforge.net>
-Build-Depends: debhelper (>= 10), cmake, make, git, libicu-dev, g++, ronn
-Standards-Version: 3.9.6
+Build-Depends: debhelper (>= 11), cmake, make, git, libicu-dev, g++, ronn
+Standards-Version: 4.1.3
 Section: text
 Homepage: http://nuspell.github.io/
-Vcs-Git: https://github.com/nuspell/nuspell.git
 Vcs-Browser: https://github.com/nuspell/nuspell
+Vcs-Git: https://github.com/nuspell/nuspell.git
 
 Package: libnuspell-dev
 Section: libdevel
