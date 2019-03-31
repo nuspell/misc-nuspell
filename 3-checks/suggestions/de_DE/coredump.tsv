@@ -1,0 +1,503 @@
+Authorisierung	Autorisierung
+Billiard	Billard
+Bisquit	Biskuit
+Brilliant	Brillant
+Diphterie	Diphtherie
+Extase	Ekstase
+Gallerie	Galerie
+Gallionsfigur	Galionsfigur
+Gingko	Ginkgo
+Gries	Grieß
+Jojo	Jo-Jo
+Yo-Yo	Jo-Jo
+Looser	Loser
+Millenium	Millennium
+Paradontose	Parodontitis
+Parodontose	Parodontitis
+Reeling	Reling
+Standart	Standard
+Stehgreif	Stegreif
+Velour	Velours
+Boing	Boeing
+Entgeld	Entgelt
+Kehrpaket	CARE-Paket
+Lotos	Lotus
+Addresse	Adresse
+Diphtong	Diphthong
+karthesisch	kartesisch
+Kokusnuss	Kokosnuss
+Lybien	Libyen
+Manhatten	Manhattan
+Overtüre	Ouvertüre
+Phillipinen	Philippinen
+Phillippinen	Philippinen
+Rythmus	Rhythmus
+Sovjetunion	Sowjetunion
+Verließ	Verlies
+abschiednehmen	Abschied nehmen
+wars	war's
+awa	ach was
+[aA]lsallerersten?s", w -> Arrays.asList(w.replaceFirst("lsallerersten?s", "ls allererstes"), w.replaceFirst("lsallerersten?s", "ls Allererstes"))
+(an|auf|ein|zu)gehangen(e[mnrs]?)?$", "hangen", "hängt"
+[oO]key", "ey$", "ay"
+packet	Paket
+Allalei	Allerlei
+geupdated	upgedatet
+gefaked	gefakt
+[pP]roblemhaft(e[nmrs]?)?", w -> Arrays.asList(w.replaceFirst("haft", "behaftet"), w.replaceFirst("haft", "atisch"))
+rosane[mnrs]?$", w -> Arrays.asList("rosa", w.replaceFirst("^rosan", "rosafarben"))
+Erbung	Erbschaft
+Energiesparung	Energieeinsparung
+Abbrechung	Abbruch
+Abbrechungen	Abbrüche
+Urteilung	Verurteilung
+allmöglichen	alle möglichen
+Krankenhausen", w -> Arrays.asList("Krankenhäusern", "Krankenhäuser")
+vorr?auss?etzlich", w -> Arrays.asList("voraussichtlich", "vorausgesetzt")
+nichtmals", w -> Arrays.asList("nicht mal", "nicht einmal")
+eingepeilt", "angepeilt"
+gekukt", "geguckt"
+überhaut", "überhaupt"
+nacher", "nachher"
+jeztz	jetzt
+[wW]ah?rscheindlichkeit", "Wahrscheinlichkeit"
+Hijab	Hidschāb
+näste	nächs
+Germanistikern	Germanisten
+Germanistikerin(nen)?", "Germanistiker", "Germanist"
+[eE]rhöherung(en)?", "[eE]rhöherung", "Erhöhung"
+[vV]orallendingen", "orallendingen", "or allen Dingen"
+[aA]ufjedenfall", "jedenfall$", " jeden Fall"
+^funk?z[ou]nier.+", "funk?z[ou]nier", "funktionier"
+[wW]öruber", "öru", "orü"
+[lL]einensamens?", "[lL]einen", "Lein"
+Feinleiner[ns]?", "Feinlei", "Fineli"
+Oldheimer[ns]?", "he", "t"
+unternehmensl[uü]stig(e[mnrs]?)?", "mensl[uü]st", "mungslust" // "unternehmenslüstig" -> "unternehmungslustig"
+proff?ess?ional(e[mnrs]?)?", "ff?ess?ional", "fessionell"
+zuverlässlich(e[mnrs]?)?", "lich", "ig"
+revalierend(e[mnrs]?)?", "^reval", "rivalis"
+verhäuft(e[mnrs]?)?", "^ver", "ge"
+stürmig(e[mnrs]?)?", "mig", "misch"
+größeste[mnrs]?", "ßes", "ß"
+naheste[mnrs]?", "nahe", "näch"
+gesundlich(e[mnrs]?)?", "lich", "heitlich"
+eckel(e|t(en?)?|st)?", "^eck", "ek"
+unhervorgesehen(e[mnrs]?)?", "hervor", "vorher"
+entt?euscht(e[mnrs]?)?", "entt?eusch", "enttäusch"
+Phählen?", "^Ph", "Pf"
+Kattermesser[ns]?", "Ka", "Cu"
+gehe?rr?t(e[mnrs]?)?", "he?rr?", "ehr" // "geherte" -> "geehrte"
+gehrter?", "^ge", "gee"
+[nN]amenhaft(e[mnrs]?)?", "amen", "am"
+hom(o?e|ö)ophatisch(e[mnrs]?)?", "hom(o?e|ö)ophat", "homöopath"
+Geschwindlichkeit(en)?", "lich", "ig"
+Investion", "Investition"
+Pakur", w -> Arrays.asList("Parcours", "Parkuhr")
+Erstsemesterin", w -> Arrays.asList("Erstsemester", "Erstsemesters")
+Erstsemesterinnen", w -> Arrays.asList("Erstsemester", "Erstsemestern")
+kreativlos(e[nmrs]?)?", w -> Arrays.asList(w.replaceFirst("kreativ", "fantasie"), w.replaceFirst("kreativ", "einfalls"), w.replaceFirst("kreativlos", "unkreativ"), w.replaceFirst("kreativlos", "uninspiriert"))
+Kreativlosigkeit	Unkreativität
+hinundher	hin und her
+misverständniss	Missverständnis
+warheit	Wahrheit
+pokemon	Pokémon
+kreigt	kriegt
+Fritöse	Fritteuse
+unerkennlich	unkenntlich
+rückgenglich	rückgängig
+emmens	immens
+verhing	verhängte
+verhingen	verhängten
+fangte	fing
+fangten	fingen
+schließte	schloss
+schließten	schlossen
+past	passt
+eingetragt	eingetragen
+getrunkt	getrunken
+veräht	verrät
+helfte	half
+helften	halfen
+befehlte	befahl
+befehlten	befahlens
+lügte	log
+lügten	logen
+bratete	briet
+brateten", "brieten"
+gefahl", "gefiel"
+Komplexibilität", "Komplexität"
+abbonement", "Abonnement"
+perse", "per se"
+Schwitch", "Switch"
+[aA]nwesenzeiten", "Anwesenheitszeiten"
+[gG]eizigkeit", "Geiz"
+[fF]leißigkeit", "Fleiß"
+[bB]equemheit", "Bequemlichkeit"
+[mM]issionarie?sie?rung", "Missionierung"
+[sS]chee?selonge?", "Chaiselongue"
+Re[kc]amiere", "Récamière"
+Singel", "Single"
+legen[td]lich", "lediglich"
+ein[ua]ndhalb", "eineinhalb"
+[mM]illion(en)?mal", w -> Collections.singletonList(StringTools.uppercaseFirstChar(w.replaceFirst("mal", " Mal")))
+Opelarena", "Opel Arena"
+Toll-Collect", "Toll Collect"
+[pP][qQ]-Formel", "p-q-Formel"
+desweitere?[nm]", "des Weiteren"
+handzuhaben", "zu handhaben"
+nachvollzuziehe?n", "nachzuvollziehen"
+Porto?folien", "Portfolios"
+[sS]chwie?ri?chkeiten", "Schwierigkeiten"
+[üÜ]bergrifflichkeiten", "Übergriffigkeiten"
+[aA]r?th?rie?th?is", "Arthritis"
+zugesand", "zugesandt"
+weibt", "weißt"
+instande?zusetzen", "instand zu setzen"
+Lia(si|is)onen", "Liaisons"
+[cC]asemana?ge?ment", "Case Management"
+[aA]nn?[ou]ll?ie?rung", "Annullierung"
+[sS]charm", "Charme"
+[zZ]auberlich(e[mnrs]?)?", w -> Arrays.asList(w.replaceFirst("lich", "isch"), w.replaceFirst("lich", "haft"))
+([uU]n)?proff?esionn?ell?(e[mnrs]?)?", "proff?esionn?ell?", "professionell"
+[kK]inderlich(e[mnrs]?)?", "inder", "ind"
+[wW]iedersprichs?t", "ieder", "ider"
+[kK]önntes", "es$", "est"
+[aA]ssess?oare?s?", "[aA]ssess?oare?", "Accessoire"
+indifiziert(e[mnrs]?)?", "ind", "ident"
+dreite[mnrs]?", "dreit", "dritt"
+verblüte[mnrs]?", "blü", "blüh"
+Einzigste[mnrs]?", "zigst", "zig"
+(aller)?einzigste[mnrs]?", "(aller)?einzigst", "einzig"
+[iI]nterkurell(e[nmrs]?)?", "ku", "kultu"
+[iI]ntersannt(e[mnrs]?)?", "sannt", "essant"
+ubera(g|sch)end(e[nmrs]?)?", "uber", "überr"
+[wW]olt$", "lt", "llt"
+[zZ]uende", "ue", "u E"
+[iI]nbälde", "nb", "n B"
+[lL]etztenendes", "ene", "en E"
+[nN]achwievor", "wievor", " wie vor"
+[zZ]umbeispiel", "beispiel", " Beispiel"
+[gG]ottseidank", "[gG]ottseidank", "Gott sei Dank"
+[gG]rundauf", "[gG]rundauf", "Grund auf"
+[aA]nsichtnach", "[aA]nsicht", "Ansicht "
+[uU]nswar", "swar", "d zwar"
+[wW]aschte(s?t)?", "aschte", "usch"
+[wW]aschten", "ascht", "usch"
+Probiren?", "ir", "ier"
+[gG]esetztreu(e[nmrs]?)?", "tz", "tzes"
+[wW]ikich(e[nmrs]?)?", "k", "rkl"
+[uU]naufbesichtigt(e[nmrs]?)?", "aufbe", "beauf"
+[nN]utzvoll(e[nmrs]?)?", "utzvoll", "ützlich"
+Lezte[mnrs]?", "Lez", "Letz"
+Letze[mnrs]?", "Letz", "Letzt"
+[nN]i[vw]os?", "[nN]i[vw]o", "Niveau"
+[dD]illetant(en)?", "[dD]ille", "Dilet"
+Makeups?", "up", "-up"
+Add-?Ons?", "Add-?On", "Add-on"
+Addons?", "on", "-on"
+Internetkaffees?", "kaffee", "café"
+[gG]ehorsamkeitsverweigerung(en)?", "[gG]ehorsamkeit", "Gehorsam"
+[wW]ochende[ns]?", "[wW]ochend", "Wochenend"
+[wWkKdD]an$", "n$", "nn"
+geh?neh?m[ie]gung(en)?", "geh?neh?m[ie]gung", "Genehmigung"
+Korrigierung(en)?", "igierung", "ektur"
+[kK]orregierung(en)?", "[kK]orregierung", "Korrektur"
+[kK]orrie?girung(en)?", "[kK]orrie?girung", "Korrektur"
+[nN]ocheimal", "eimal", " einmal"
+[aA]benzu", "enzu", " und zu"
+[kK]onflikation(en)?", "[kK]onfli", "Kompli"
+[mM]itanader", "ana", "einan"
+[mM]itenand", "enand", "einander"
+[jJ]edwillige[mnrs]?", "willig", "wed"
+[qQ]ualitäts?bewußt(e[mnrs]?)?", "ts?bewußt", "tsbewusst"
+[vV]oraussichtig(e[nmrs]?)?", "sichtig", "sichtlich"
+[gG]leichrechtig(e[nmrs]?)?", "rechtig", "berechtigt"
+[uU]nnützlich(e[nmrs]?)?", "nützlich", "nütz"
+[uU]nzerbrechbar(e[nmrs]?)?", "bar", "lich"
+kolegen?", "ko", "Kol"
+tableten?", "tablet", "Tablett"
+verswinde(n|s?t)", "^vers", "versch"
+unverantwortungsvoll(e[nmrs]?)?", "unverantwortungsvoll", "verantwortungslos"
+[gG]erechtlichkeit", "[gG]erechtlich", "Gerechtig"
+[zZ]uverlässlichkeit", "lich", "ig"
+[uU]nverzeilig(e[mnrs]?)?", "zeilig", "zeihlich"
+[zZ]uk(ue?|ü)nftlich(e[mnrs]?)?", "uk(ue?|ü)nftlich", "ukünftig"
+[fF]olklorisch(e[nmrs]?)?", "isch", "istisch"
+[eE]infühlsvoll(e[nmrs]?)?", "voll", "am"
+Unstimmlichkeit(en)?", "lich", "ig"
+Strebergartens?", "Stre", "Schre"
+[hH]ähern(e[mnrs]?)?", "ähern", "ären"
+todesbedroh(end|lich)(e[nmrs]?)?", "todes", "lebens"
+^[uU]nabsichtig(e[nmrs]?)?", "ig", "lich"
+[aA]ntisemitistisch(e[mnrs]?)?", "tist", "t"
+[uU]nvorsehbar(e[mnrs]?)?", "vor", "vorher"
+([eE]r|[bB]e|unter|[aA]uf)?hälst", "hälst", "hältst"
+[wW]ohlfühlseins?", w -> Arrays.asList("Wellness", w.replaceFirst("[wW]ohlfühlsein", "Wohlbefinden"), w.replaceFirst("[wW]ohlfühlsein", "Wohlfühlen"))
+[sS]chmett?e?rling(s|en?)?", "[sS]chmett?e?rling", "Schmetterling"
+^[eE]inlamie?nie?r(st|en?|(t(e[nmrs]?)?))?", "^einlamie?nie?r", "laminier"
+[bB]ravurös(e[nrms]?)?", "vur", "vour"
+[aA]ss?ecoires?", "[aA]ss?ec", "Access"
+[aA]ufwechse?lungsreich(er|st)?(e[nmrs]?)?", "ufwechse?lung", "bwechslung"
+Inordnung	Ordnung
+Wienerschnitzels	Wieners
+Schwarzwälderkirschtorten	Schwarzwälderk
+([üÜ]ber|[uU]unter)durs?chnitt?lich(e[nmrs]?)?", "s?chnitt?", "chschnitt"
+[dD]urs?chnitt?lich(e[nmrs]?)?", "s?chnitt?", "chschnitt"
+[dD]urs?chnitts?", "s?chnitt", "chschnitt"
+[hH]öchstwahrlich(e[mnrs]?)?", "wahr", "wahrschein"
+[oO]rganisativ(e[nmrs]?)?", "tiv", "torisch"
+[kK]ontaktfreundlich(e[nmrs]?)?", "ndlich", "dig"
+Helfer?s-Helfer[ns]?", "Helfer?s-H", "Helfersh"
+[iI]ntell?igentsbestien?", "[iI]ntell?igents", "Intelligenz"
+[aA]vantgardisch(e[mnrs]?)?", "gard", "gardist"
+[gG]ewohnheitsbedürftig(e[mnrs]?)?", "wohnheit", "wöhnung"
+[eE]infühlungsvoll(e[mnrs]?)?", "fühlungsvoll", "fühlsam"
+[vV]erwant(e[mnrs]?)?", "want", "wandt"
+[äÄaAeE]rtzten?", "[äÄaAeE]rt", "Är"
+rumänern?", "rumäner", "Rumäne"
+[vV]ersantdienstleister[ns]?", "[vV]ersant", "Versand"
+[pP]atrolier(s?t|t?en?)", "atrolier", "atrouillier"
+känzel(n|s?t)", "känzel", "cancel"
+gekänzelt", "gecancelt"
+aufgesteht", "aufgestanden"
+ganichts", "gar nichts"
+gesich", "Gesicht"
+glass", "Glas"
+muter", "Mutter"
+[pP]appa", "Papa"
+dier", "dir"
+Referenz-Nr", "Referenz-Nr."
+Matrikelnr.", "Matrikel-Nr."
+Rekrutings?prozess", "Recruitingprozess"
+sumarum", "summarum"
+änderen", w -> Arrays.asList("ändern", "anderen")
+wanderen", w -> Arrays.asList("wandern", "Wanderern")
+Dutzen", w -> Arrays.asList("Duzen", "Dutzend")
+patien", w -> Arrays.asList("Partien", "Patient")
+Teammitgliederinnen", w -> Arrays.asList("Teammitgliedern", "Teammitglieder")
+Wissbegierigkeit", w -> Arrays.asList("Wissbegier", "Wissbegierde")
+Nabend	'n Abend
+giebts	gibt's
+kaffeeteria	Cafeteria
+kaffeeterien	Cafeterien
+berücksicht	berücksichtigt
+nix	nichts
+must	musst
+kaffe	Kaffee
+zetel	Zettel
+wiedaholung	Wiederholung
+viedersehen	wiedersehen
+präventiert	verhindert
+prwventieren	verhindern
+zurverfügung	zur Verfügung
+Verwahrlosigkeit	Verwahrlosung
+organisazion	Organisation
+Organisative	Organisation
+Emalliearbeit	Emaillearbeit
+apetitt	Appetit
+bezuggenommen	Bezug genommen
+mägt	mögt
+frug	fragte
+gesäht	gesät
+verennt	verrennt
+überrant	überrannt"
+Gallop	Galopp
+Stop	Stopp
+Schertz	Scherz
+dreiundhalb	dreieinhalb
+geschied	geschieht
+Aku	Akku
+Migrationspackt", "Migrationspakt"
+[zZ]ulaufror", "Zulaufrohr"
+[gG]ebrauchss?puhren", "Gebrauchsspuren"
+[pP]reisnachlassung", "Preisnachlass"
+[mM]edikamentation", "Medikation"
+n[ei]gliche", "Negligé"
+palletten?", w -> Arrays.asList(w.replaceFirst("pall", "Pal"), w.replaceFirst("pa", "Pai"))
+Geräuch", w -> Arrays.asList("Geräusch", "Gesträuch")
+[sS]chull?igung", "Entschuldigung"
+Geerte", "geehrte"
+versichen", "versichern"
+hobb?ies", "Hobbys"
+Begierigkeiten", "Begehrlichkeiten"
+selblosigkeit", "Selbstlosigkeit"
+gestyled", "gestylt"
+umstimigkeiten", "Unstimmigkeiten"
+unann?äh?ml?ichkeiten", "Unannehmlichkeiten"
+unn?ann?ehmichkeiten", "Unannehmlichkeiten"
+übertr[äa]gte", "übertrug"
+übertr[äa]gten", "übertrugen"
+überträgt(e[mnrs]?)?", "^überträgt", "übertragen"
+[iI]nterresent(e[mnrs]?)?", "rresent", "ressant"
+Simkartenleser[ns]?", "^Simkartenl", "SIM-Karten-L"
+Hilfstmittel[ns]?", "^Hilfst", "Hilfs"
+trationell(e[mnrs]?)?", "^tra", "tradi"
+[bB]erreichs?", "^[bB]er", "Be"
+[fF]uscher[ns]?", "^[fF]u", "Pfu"
+[uU]nausweichbar(e[mnrs]?)?", "bar", "lich"
+ausgewöh?nlich(e[mnrs]?)?", "^ausgewöh?n", "außergewöhn"
+achsial(e[mnrs]?)?", "^achs", "ax"
+famielen?", "^famiel", "Famili"
+miter[ns]?", "^mi", "Mie"
+besig(t(e[mnrs]?)?|en?)", "sig", "sieg"
+[vV]erziehr(t(e[mnrs]?)?|en?)", "ieh", "ie"
+^[pP]iek(s?t|en?)", "iek", "ik"
+[hH]eilei[td]s?", "[hH]eilei[td]", "Highlight"
+[mM]atschscheiben?", "[mM]atschsch", "Mattsch"
+schafen?", w -> Arrays.asList(w.replaceFirst("sch", "schl"), w.replaceFirst("af", "arf"), w.replaceFirst("af", "aff"))
+[hH]ofen?", "of", "off"
+[sS]ommerverien?", "[sS]ommerverien?", "Sommerferien"
+[rR]ecourcen?", "[rR]ec", "Ress"
+[fF]amm?ill?i?[aä]risch(e[mnrs]?)?", "amm?ill?i?[aä]risch", "amiliär"
+Sim-Karten?", "^Sim", "SIM"
+Spax-Schrauben?", "^Spax", "SPAX"
+Aleine	Alleine
+Kaput	Kaputt
+[fF]estell(s?t|en?)", "est", "estst"
+(Baden-)?Würtenbergs?", "Würten", "Württem"
+Betriebsratzimmer[ns]?", "rat", "rats"
+Rechts?schreibungsfehler[ns]?", "Rechts?schreibungs", "Rechtschreib"
+Open[aA]ir-Konzert(en?)?", "Open[aA]ir", "Open-Air"
+Jugenschuhen?", "Jug", "Jung"
+ausiehst	aussiehst
+unterbemittel(nd|t)(e[nmrs]?)?", "unterbemittel(nd|t)", "minderbemittelt"
+[xX]te[mnrs]?", "te", "-te"
+verheielt(e[mnrs]?)?", "heiel", "heil"
+Kohleaustiegs?", "aus", "auss"
+[jJ]urististisch(e[mnrs]?)?", "istist", "ist"
+gehäckelt(e[nmrs]?)?", "ck", "k"
+deutsprachig(e[nmrs]?)?", "deut", "deutsch"
+angesehend(st)?e[nmrs]?", "end", "en"
+[vV]erharkt(e[mnrs]?)?", "ar", "a"
+[dD]esöfterer?[nm]", "öfterer?[nm]", " Öfteren"
+[dD]esweitere?[mn]", "weitere?[mn]", " Weiteren"
+Einkaufstachen?", "ch", "sch"
+Bortmesser[ns]?", "Bor", "Bro"
+Makeupstylist(in(nen)?|en)?", "Makeups", "Make-up-S"
+Fee?dbäcks?", "Fee?dbäck", "Feedback"
+Rollade", w -> Arrays.asList("Rollladen", "Roulade")
+aufgewägt", "aufgewogen"
+[rR]eflektion", "Reflexion"
+momentmal", "Moment mal"
+satzt", "Satz"
+Büff?(ee|é)", w -> Arrays.asList("Buffet", "Büfett")
+[fF]rühstücksb[uü]ff?(é|ee)", "Frühstücksbuffet"
+[aA]lterego", "Alter Ego"
+Copyride", "Copyright"
+Analysierung", "Analyse"
+Exel", "Excel"
+Glücklichkeit", "Glück"
+Begierigkeit", "Begierde"
+voralem", "vor allem"
+Unorganisation", w -> Arrays.asList("Desorganisation", "Unorganisiertheit")
+Cand(el|le)lightdinner", "Candle-Light-Dinner"
+wertgelegt", "Wert gelegt"
+Deluxe", "de luxe"
+antuhen", "antun"
+komen", "kommen"
+genißen", "genießen"
+Stationskrankenpflegerin", "Stationsschwester"
+[iIüÜuU]b[ea]w[ae]isung", "Überweisung"
+[bB]oxhorn", "Bockshorn"
+[zZ]oolophie", "Zoophilie"
+Makieren", "Markieren"
+Altersheimer", "Alzheimer"
+gesen", "gesehen"
+Neugierigkeit", w -> Arrays.asList("Neugier", "Neugierde")
+[kK]onn?ekt?schen", "Connection"
+E-Maul	E-Mail
+E-Mauls	E-Mails
+E-Mal	E-Mail
+E-Mals	E-Mails
+[nN]ah?richt", "Nachricht"
+[nN]ah?richten", "Nachrichten"
+Getrixe", "Getrickse"
+Ausage", "Aussage"
+gelessen", "gelesen"
+Kanst", "Kannst"
+Unwohlbefinden", "Unwohlsein"
+leiwagen", "Leihwagen"
+krahn", "Kran"
+[hH]ifi", "Hi-Fi"
+chouch", "Couch"
+eh?rgeit?z", "Ehrgeiz"
+solltes", "solltest"
+geklabt", "geklappt"
+angefangt", "angefangen"
+beinhält", "beinhaltet"
+einhaltest", "einhältst"
+übersäht", "übersät"
+staats?angehoe?rigkeit", "Staatsangehörigkeit"
+[uU]nangeneh?mheiten", "Unannehmlichkeiten"
+Humuspaste", "Hummuspaste"
+afarung", "Erfahrung"
+bescheid?t", "Bescheid"
+[mM]iteillung", "Mitteilung"
+Revisionierung", "Revision"
+[eE]infühlvermögen", "Einfühlungsvermögen"
+[sS]peziellisierung", "Spezialisierung"
+[cC]hangse", "Chance"
+untergangen", "untergegangen"
+geliegt", "gelegen"
+BluRay", "Blu-ray"
+Freiwilligerin", "Freiwillige"
+Mitgliederinnen", w -> Arrays.asList("Mitglieder", "Mitgliedern")
+Hautreinheiten", "Hautunreinheiten"
+Durfüh?rung", "Durchführung"
+tuhen	tun
+tuhe	tue
+tip	Tipp
+ccm	cm³
+Kilimandjaro	Kilimandscharo
+Kilimandaro	Kilimandscharo
+herausfordung	Herausforderung
+berücksichtung	Berücksichtigung
+artz	Arzt
+thelepathie	Telepathie
+Wi-?Fi-Dire[ck]t", "Wi-Fi Direct"
+gans	ganz
+Pearl-Harbour	Pearl Harbor
+autonomität	Autonomie
+[fF]r[uü]h?st[uü]c?k", "Frühstück"
+(ge)?fr[uü]h?st[uü](c?k|g)t", "fr[uü]h?st[uü](c?k|g)t", "frühstückt"
+zucc?h?inis?", "Zucchini"
+mitag	Mittag
+Lexion	Lexikon
+motorisation	Motorisierung
+formalisation	Formalisierung
+ausprache	Aussprache
+menegment	Management
+[gG]ebrauspuren", "Gebrauchsspuren"
+viedeo", "Video"
+[hH]erstammung", "Abstammung"
+[iI]nstall?atör", "Installateur"
+maletriert", "malträtiert"
+abgeschaffen", "abgeschafft"
+Verschiden", "Verschieden"
+Anschovis", "Anchovis"
+Bravur", "Bravour"
+Grisli", "Grizzly"
+Grislibär", "Grizzlybär"
+Grislibären", "Grizzlybären"
+Frotté", "Frottee"
+Joga", "Yoga"
+Kalvinismus", "Calvinismus"
+Kollier", "Collier"
+Kolliers", "Colliers"
+Ketschup", "Ketchup"
+Kommunikee", "Kommuniqué"
+Negligee", "Negligé"
+Nessessär", "Necessaire"
+passee", "passé"
+Varietee", "Varieté"
+Varietees", "Varietés"
+Wandalismus", "Vandalismus"
+Campagne", "Kampagne"
+Campagnen", "Kampagnen"
+Jockei", "Jockey"
+Roulett", "Roulette"
+[hH]ats", "ats", "at es"
+wieviele?", "wieviel", "wie viel"
+As", "Ass"
+[bB]i[sß](s?[ij]|ch)en", "bisschen"

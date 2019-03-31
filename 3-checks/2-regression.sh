@@ -23,10 +23,6 @@ if [ ! -d gathered ]; then
     exit 1
 fi
 
-#if [ ! -e regression/$machine ]; then
-#	mkdir -p regression/$machine
-#fi
-
 if [ ! -e blacklist ]; then
 	touch blacklist
 fi
@@ -97,7 +93,7 @@ for sha in `cat worklist`; do
 	fi
 	cd verification_nuspell
 	# only build when previously build executable is not available
-	if [ ! -e builds/$sha ]; then
+	if [ ! -e ../builds/$sha ]; then
 
 		# Reset to the desired commit SHA
 		git reset --hard $sha >> ../log 2>> ../log
@@ -165,7 +161,6 @@ for sha in `cat worklist`; do
 	handle=`echo $sha|sed -e 's/^\(.......\).*/\1/'`
 	cd ..
 
-
 	# Run the text executable for all affix files with gathered word lists
 	for path in `find ../1-support/files -type f -name '*.aff'|sort`; do
 		dictionary=`echo $path|sed -e 's/\.aff//'`
@@ -174,10 +169,16 @@ for sha in `cat worklist`; do
 		if [ -e gathered/$language/words ]; then
 			wordsin=`cat gathered/$language/words.total`
 			echo 'Testing '$language' on '$wordsin' words'
-#			mkdir -p regression/$machine/$language
 			# Add commit SHA, commit timestamp and run timestamp to result
 			echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine.ssv
-			result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
+			if [ -e suggestions/$language/real.tsv ]; then
+				wordsin=$(($wordsin + `wc -l suggestions/$language/real.tsv |awk '{print $1}'`))
+				result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words -C suggestions/$language/real.tsv 2> errors/$language |tail -n 1`
+#TODO check segfault via $?
+			else
+				result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
+#TODO check segfault via $?
+			fi
 			echo $result >> $machine.ssv
 			# Double check if number of words in word list and number of words tested are identical
 			wordsout=`echo $result | awk '{print $1}'`
@@ -189,6 +190,12 @@ for sha in `cat worklist`; do
 			fi
 			if [ $wordsin -ne $wordsout ]; then
 				echo 'ERROR: Number of words in ('$wordsin') and number of results out ('$wordsout') do not match for '$language
+			fi
+			if [ -e gathered/$language/synt.tsv ]; then
+				echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine-synt.ssv
+				result=`builds/$sha -i UTF-8 -d $dictionary /dev/null -C gathered/$language/synt.tsv 2>> errors/$language |tail -n 1`
+#TODO check segfault via $?
+				echo $result >> $machine-synt.ssv
 			fi
 		fi
 	done

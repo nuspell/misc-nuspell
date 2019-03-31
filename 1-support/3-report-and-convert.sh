@@ -130,7 +130,12 @@ for file in `find . -type f -name '*.dic'|sort`; do
 	fi
 	echo '\t'$Encoding
 	if [ $Encoding = UTF-8 ]; then
+#TODO filter out filenames, see https://bugs.documentfoundation.org/show_bug.cgi?id=117389
+if [ $filename = ar ]; then
+cat $file | grep -v '#' | grep -v : | grep -v \.dic > ../utf8/$filename.txt
+else
 		cp $file ../utf8/$filename.txt
+fi
 		if [ $filename != de_med -a $filename != en_med_glut ]; then
 			cp $affix ../utf8/
 		fi
