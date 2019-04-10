@@ -101,12 +101,13 @@ if [ $PKGM = dpkg ]; then
 	cp -a ../../templates/dpkg/nuspell_LONG-PATCH.dsc $FILE
 	replace
 	dpkg_sums
+	#TODO Sign the .dsc file
 
 	# List generated files
 	echo 'INFO: Generated debian, '$FILE' and '$ARCH
 
-	# Create source file
-	dpkg-source --build ../$OS #FIXME
+	# Create source package file
+	dpkg-source --build ../$OS #FIXME Results in error that needs fixing.
 fi
 
 # Return to start directory
