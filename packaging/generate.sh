@@ -69,6 +69,7 @@ echo 'INFO: Downloaded '$ORIG
 
 # Do package manager speicific actions
 if [ $PKGM = dpkg ]; then
+	# Generate debian directory
 	rm -rf debian
 	cp -a ../../templates/dpkg/debian .
 	cd debian
@@ -91,15 +92,20 @@ if [ $PKGM = dpkg ]; then
 	rmdir 'nuspell-'$LONG
 	cd ..
 
+	# Create .debian.tar.xz archive with Debian related files
 	ARCH='nuspell_'$LONG'-'$PATCH'.debian.tar.xz'
 	tar cfJ $ARCH debian
 
+	# Create Debian description file .dsc
 	FILE='nuspell_'$LONG'-'$PATCH'.dsc'
 	cp -a ../../templates/dpkg/nuspell_LONG-PATCH.dsc $FILE
 	replace
 	dpkg_sums
 
+	# List generated files
 	echo 'INFO: Generated debian, '$FILE' and '$ARCH
+
+	# Create source file
 	dpkg-source --build ../$OS #FIXME
 fi
 
