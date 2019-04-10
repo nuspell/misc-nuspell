@@ -40,11 +40,15 @@ dpkg_sums() {
 
 # Get operating system and package manager
 OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`
-PKGM=`grep ^ID_LIKE= /etc/os-release|awk -F = '{print $2}'`
-if [ $PKGM = debian ]; then
+if [ $OS = debian ]; then
+	LIKE=debian
+else
+	LIKE=`grep ^ID_LIKE= /etc/os-release|awk -F = '{print $2}'`
+fi
+if [ $LIKE = debian ]; then
 	PKGM=dpkg
 else
-	echo 'ERROR: Unsupported package manager '$PKGM
+	echo 'ERROR: Unsupported package manager'
 	exit
 fi
 
