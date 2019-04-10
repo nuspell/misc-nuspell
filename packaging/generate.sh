@@ -1,23 +1,21 @@
 #!/usr/bin/env sh
 
+# Set version information
 SHORT=2.2
 LONG=$SHORT.0
 PATCH=0
-ORIG='nuspell_'$LONG'.orig.tar.gz'
 
-echo 'SHORT: '$SHORT
-echo 'LONG:  '$LONG
-echo 'PATCH: '$PATCH
-
+# Replace version information in any template file
 replace() {
 	sed -i -e 's/LONG/'$LONG'/g' $FILE
 	sed -i -e 's/SHORT/'$SHORT'/g' $FILE
 	sed -i -e 's/PATCH/'$PATCH'/g' $FILE
 }
 
-sums() {
-	ORGFILE='nuspell_'$LONG'.orig.tar.gz'
-	DEBFILE='nuspell_'$LONG'-'$PATCH'.debian.tar.xz'
+# Replace version information in a dsc template file
+dpkg_sums() {
+	ORGFILE=$ORIG
+	DEBFILE=$ARCH
 
 	ORGSIZE=`ls -l $ORGFILE|awk '{print $5}'`
 	DEBSIZE=`ls -l $DEBFILE|awk '{print $5}'`
@@ -40,33 +38,66 @@ sums() {
 	sed -i -e 's/DEBMD5/'$DEBMD5'/g' $FILE
 }
 
+# Get operating system and package manager
+OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`
+PKGM=`grep ^ID_LIKE= /etc/os-release|awk -F = '{print $2}'`
+if [ $PKGM = debian ]; then
+	PKGM=dpkg
+else
+	echo 'ERROR: Unsupported package manager '$PKGM
+	exit
+fi
+
+# Display variables
+echo 'OS:\t'$OS
+echo 'PKGM:\t'$PKGM
+echo 'SHORT:\t'$SHORT
+echo 'LONG:\t'$LONG
+echo 'PATCH:\t'$PATCH
+
+# Do generic actions
+mkdir -p packages/$OS
+echo 'INFO: Working directory is pacakges/'$OS
+cd packages/$OS
+ORIG='nuspell_'$LONG'.orig.tar.gz'
 wget -q 'https://github.com/nuspell/nuspell/archive/v'$LONG'.tar.gz' -O $ORIG
+echo 'INFO: Downloaded '$ORIG
 
-rm -rf debian
-cp -a debian.template debian
-cd debian
+# Do package manager speicific actions
+if [ $PKGM = dpkg ]; then
+	rm -rf debian
+	cp -a ../../templates/dpkg/debian .
+	cd debian
 
-FILE=control
-replace
+	FILE=control
+	replace
 
-FILE=rules
-replace
+	FILE=rules
+	replace
 
-FILE=libnuspell-SHORT-PATCH.shlibs
-replace
-mv -f libnuspell-SHORT-PATCH.shlibs 'libnuspell-'$SHORT'-'$PATCH'.shlibs'
+	FILE=libnuspell-SHORT-PATCH.shlibs
+	replace
+	mv -f libnuspell-SHORT-PATCH.shlibs 'libnuspell-'$SHORT'-'$PATCH'.shlibs'
 
-mv -f libnuspell-SHORT-PATCH.install 'libnuspell-'$SHORT'-'$PATCH'.install'
+	mv -f libnuspell-SHORT-PATCH.install 'libnuspell-'$SHORT'-'$PATCH'.install'
 
-tar xf ../$ORIG 'nuspell-'$LONG'/LICENSES'
-mv 'nuspell-'$LONG'/LICENSES' copyright
+	tar xf ../$ORIG 'nuspell-'$LONG'/LICENSES'
+	mv 'nuspell-'$LONG'/LICENSES' copyright
 
-rmdir 'nuspell-'$LONG
-cd ..
+	rmdir 'nuspell-'$LONG
+	cd ..
 
-tar cfJ 'nuspell_'$LONG'-'$PATCH'.debian.tar.xz' debian
+	ARCH='nuspell_'$LONG'-'$PATCH'.debian.tar.xz'
+	tar cfJ $ARCH debian
 
-FILE='nuspell_'$LONG'-'$PATCH'.dsc'
-cp nuspell_LONG-PATCH.dsc.template $FILE
-replace
-sums
+	FILE='nuspell_'$LONG'-'$PATCH'.dsc'
+	cp -a ../../templates/dpkg/nuspell_LONG-PATCH.dsc $FILE
+	replace
+	dpkg_sums
+
+	echo 'INFO: Generated debian, '$FILE' and '$ARCH
+	dpkg-source --build ../$OS #FIXME
+fi
+
+# Return to start directory
+cd ../..

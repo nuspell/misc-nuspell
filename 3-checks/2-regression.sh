@@ -23,6 +23,9 @@ if [ ! -d gathered ]; then
     exit 1
 fi
 
+if [ ! -e $machine.ssv ]; then
+	touch $machine.ssv
+fi
 if [ ! -e blacklist ]; then
 	touch blacklist
 fi
@@ -176,7 +179,8 @@ for sha in `cat worklist`; do
 				result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words -C suggestions/$language/real.tsv 2> errors/$language |tail -n 1`
 #TODO check segfault via $?
 			else
-				result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
+results=$wordsin
+echo #				result=`builds/$sha -i UTF-8 -d $dictionary gathered/$language/words 2> errors/$language |tail -n 1`
 #TODO check segfault via $?
 			fi
 			echo $result >> $machine.ssv
@@ -191,12 +195,12 @@ for sha in `cat worklist`; do
 			if [ $wordsin -ne $wordsout ]; then
 				echo 'ERROR: Number of words in ('$wordsin') and number of results out ('$wordsout') do not match for '$language
 			fi
-			if [ -e gathered/$language/synt.tsv ]; then
-				echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine-synt.ssv
-				result=`builds/$sha -i UTF-8 -d $dictionary /dev/null -C gathered/$language/synt.tsv 2>> errors/$language |tail -n 1`
+#LATER			if [ -e gathered/$language/synt.tsv ]; then
+#				echo -n $sha' '$timestamp' '$language' '$run' ' >> $machine-synt.ssv
+#				result=`builds/$sha -i UTF-8 -d $dictionary /dev/null -C gathered/$language/synt.tsv 2>> errors/$language |tail -n 1`
 #TODO check segfault via $?
-				echo $result >> $machine-synt.ssv
-			fi
+#				echo $result >> $machine-synt.ssv
+#			fi
 		fi
 	done
 
