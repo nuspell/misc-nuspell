@@ -94,6 +94,7 @@ if [ $PKGM = dpkg ]; then
 
 	# Create .debian.tar.xz archive with Debian related files
 	ARCH='nuspell_'$LONG'-'$PATCH'.debian.tar.xz'
+	rm -f $ARCH
 	tar cfJ $ARCH debian
 
 	# Create Debian description file .dsc
