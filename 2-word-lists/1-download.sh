@@ -17,7 +17,7 @@ cd packages
 names=''
 #for package in `ls ../../1-support/files/|sort`; do
 	for language in `find ../../1-support/files/*/*/usr/share/hunspell/ -type f -name '*\.aff'|sed 's/.*hunspell\/\(.*\)\.aff$/\1/'|sort`; do
-		if [ $language = tlh_Latn -o $language = tlh -o $language = fy ]; then # TODO temporary workaround
+		if [ $language = tlh_Latn -o $language = tlh -o $language = fy_NL ]; then # TODO temporary workaround
 			continue
 		fi
 		word_list=`../../0-tools/language_support_to_word_list_name.sh $language|sed 's/\(.*\) .*/\1/'`

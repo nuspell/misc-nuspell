@@ -84,6 +84,9 @@ eo)
 es | es_ES)
 	echo $1'\twspanish\tspanish'
 	;;
+fy | fy_NL)
+	echo $1'\twfrisian\tfrisian'
+	;;
 fo | fo_FO)
 	echo $1'\twfaroese\tfaroese'
 	;;
@@ -108,6 +111,9 @@ gl | gl_ES)
 gv | gv_GB)
 	echo $1'\twmanx\tmanx'
 	;;
+#id | id_ID)
+#	echo $1'\twindonesian\tindonesian'
+#	;;
 #FIXME    it_CH)
 it | it_IT)
 	echo $1'\twitalian\titalian'
@@ -143,6 +149,9 @@ tlh)
 tlh_Latn)
 	echo $1'\twklingon\tklingon-latin'
 	;;
+#tr | tr_TR)
+#	echo $1'\twturkish\tturkish'
+#	;;
 uk | uk_UA)
 	echo $1'\twukrainian\tukrainian'
 	;;

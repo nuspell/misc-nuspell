@@ -41,7 +41,7 @@ A total of 92 different languages are available for Hunspell.
 | `hunspell-es` | `1%3a6.2.0-1` | `es_ES` | Spanish |
 | `hunspell-eu` | `0.5.20151110-4` | `eu` | Basque |
 | `hunspell-fr-comprehensive` | `1%3a6.3-2` | `fr` | French |
-| `hunspell-fy` | `1.0.0` | `fy_NL` | ERROR: Unsupported language code fy_NL |
+| `hunspell-fy` | `1.0.0` | `fy_NL` | Frisian |
 | `hunspell-gd` | `1%3a6.2.0-1` | `gd_GB` | Scottish Gaelic |
 | `hunspell-gu` | `1%3a6.2.0-1` | `gu_IN` | Gujarati |
 | `hunspell-gug` | `1%3a6.2.0-1` | `gug_PY` | Guarani |
@@ -49,7 +49,7 @@ A total of 92 different languages are available for Hunspell.
 | `hunspell-hi` | `1%3a6.2.0-1` | `hi_IN` | Hindi |
 | `hunspell-hr` | `1%3a6.2.0-1` | `hr_HR` | Croatian |
 | `hunspell-hu` | `1%3a6.2.0-1` | `hu_HU` | Hungarian |
-| `hunspell-id` | `1%3a6.2.0-1` | `id_ID` | ERROR: Unsupported language code id_ID |
+| `hunspell-id` | `1%3a6.2.0-1` | `id_ID` | Indonesian |
 | `hunspell-is` | `1%3a6.2.0-1` | `is_IS` | Icelandic |
 | `hunspell-it` | `1%3a6.2.0-1` | `it_IT` | Italian |
 | `hunspell-kk` | `1.1-2` | `kk_KZ` | Kazakh |
@@ -82,7 +82,7 @@ A total of 92 different languages are available for Hunspell.
 | `hunspell-th` | `1%3a6.2.0-1` | `th_TH` | Thai |
 | `hunspell-tlh` | `1.0.4` | `tlh` | Klingon |
 | `hunspell-tlh` | `1.0.4` | `tlh_Latn` | Klingon (Latin script) |
-| `hunspell-tr` | `1%3a6.2.0-1` | `tr_TR` | ERROR: Unsupported language code tr_TR |
+| `hunspell-tr` | `1%3a6.2.0-1` | `tr_TR` | Turkisch |
 | `hunspell-uk` | `1%3a6.2.0-1` | `uk_UA` | Ukrainian |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek |
 | `hunspell-vi` | `1%3a6.2.0-1` | `vi_VN` | Vietnamese |

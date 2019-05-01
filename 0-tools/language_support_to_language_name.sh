@@ -119,6 +119,9 @@ fo | fo_FO)
 fr | fr_FR | fr_BE | fr_CA | fr_CH | fr_LU | fr_MC)
 	echo 'French'
 	;;
+fy | fy_NL)
+	echo 'Frisian'
+	;;
 ga | ga_IE)
 	echo 'Irish'
 	;;
@@ -151,6 +154,9 @@ hu | hu_HU)
 	;;
 hy | hy_AM)
 	echo 'Armenian'
+	;;
+id | id_ID)
+	echo 'Indonesian'
 	;;
 is | is_IS)
 	echo 'Icelandic'
@@ -277,6 +283,9 @@ tn | tn_ZA)
 	;;
 ts | ts_ZA)
 	echo 'Tsonga'
+	;;
+tr | tr_TR)
+	echo 'Turkisch'
 	;;
 uk | uk_UA)
 	echo 'Ukrainian'
