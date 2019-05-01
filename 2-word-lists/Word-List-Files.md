@@ -7,31 +7,31 @@ A total of 27 different word list files are available. Word list files which are
 | Package | Version | Filename | Filetype | Lines |
 |---|---|---|---|--:|
 | `wamerican` | `2018.04.16-1` | `american-english` | UTF-8 | `102401` |
-| `wbrazilian` | `3.0~beta4-21` | `brazilian` | UTF-8 | `275502` |
+| `wbrazilian` | `3.0~beta4-22` | `brazilian` | UTF-8 | `275502` |
 | `wbritish` | `2018.04.16-1` | `british-english` | UTF-8 | `101921` |
-| `wbulgarian` | `4.1-3ubuntu1` | `bulgarian` | ISO-8859 | `867136` |
+| `wbulgarian` | `4.1-7` | `bulgarian` | UTF-8 | `820252` |
 | `wcanadian` | `2018.04.16-1` | `canadian-english` | UTF-8 | `102332` |
 | `wcatalan` | `0.20111230b-12` | `catalan` | UTF-8 | `612509` |
 | `wdanish` | `1.6.36-11` | `danish` | UTF-8 | `313013` |
 | `wdutch` | `1%3a2.10-6` | `dutch` | UTF-8 | `345339` |
-| `wesperanto` | `2.1.2000.02.25-56` | `esperanto` | UTF-8 | `1057057` |
+| `wesperanto` | `2.1.2000.02.25-57` | `esperanto` | UTF-8 | `1057057` |
 | `wfaroese` | `0.4.2-13` | `faroese` | UTF-8 | `425136` |
-| `wfrench` | `1.2.3-11build1` | `french` | UTF-8 | `139719` |
+| `wfrench` | `1.2.4-1` | `french` | UTF-8 | `345730` |
+| `wfrisian` | `1.0.0` | `frisian` | UTF-8 | `317522` |
 | `wgaelic` | `0.50-13` | `gaelic` | UTF-8 | `15670` |
-| `wgalician-minimos` | `0.5-45` | `galician-minimos` | UTF-8 | `515385` |
 | `wirish` | `2.0-27` | `irish` | UTF-8 | `16370` |
 | `witalian` | `1.10` | `italian` | UTF-8 | `116758` |
-| `wklingon` | `1.0.1` | `klingon` | UTF-8 | `3699` |
-| `wklingon` | `1.0.1` | `klingon-latin` | ASCII | `3699` |
+| `wklingon` | `1.0.4` | `klingon` | UTF-8 | `3712` |
+| `wklingon` | `1.0.4` | `klingon-latin` | ASCII | `3712` |
 | `wmanx` | `0.50-16` | `manx` | ISO-8859 | `32358` |
-| `wngerman` | `20161207-5` | `ngerman` | UTF-8 | `356008` |
+| `wngerman` | `20161207-7` | `ngerman` | UTF-8 | `356008` |
 | `wnorwegian` | `2.2-4` | `bokmaal` | ISO-8859 | `935405` |
 | `wnorwegian` | `2.2-4` | `nynorsk` | ISO-8859 | `627719` |
 | `wpolish` | `20180621-1` | `polish` | UTF-8 | `4076873` |
-| `wportuguese` | `20171225-2` | `portuguese` | UTF-8 | `430985` |
+| `wportuguese` | `20171225-3` | `portuguese` | UTF-8 | `430985` |
 | `wspanish` | `1.0.28` | `spanish` | UTF-8 | `86016` |
 | `wswedish` | `1.4.5-2.2` | `swedish` | ISO-8859 | `121426` |
-| `wswiss` | `20161207-5` | `swiss` | UTF-8 | `356108` |
+| `wswiss` | `20161207-7` | `swiss` | UTF-8 | `356108` |
 | `wukrainian` | `1.7.1-2` | `ukrainian` | UTF-8 | `1485662` |
 
 ## File types

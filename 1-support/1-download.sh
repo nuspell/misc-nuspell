@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
-
 # description: downloads packages with Hunspell language support
 # license: https://github.com/hunspell/nuspell/blob/master/LICENSES
 # author: Sander van Geloven
@@ -51,6 +50,8 @@ if [ $platform = linux ]; then
         hunspell-fr-classical
         hunspell-fr-modern
         hunspell-fr-revised
+	hunspell-fy
+	hunspell-tlh
         hunspell-gl'
 
     # Check is Myspell packages for download are available
@@ -101,9 +102,15 @@ if [ $platform = linux ]; then
 	# Download packages
 	apt-get download $MD $HD
 	#TODO temporary workaround until package request has been completed
-	if [ -e ../../../klingon/packages ]; then
-		cp -f `ls ../../../klingon/packages/hunspell-tlh_*_all.deb|sort -n|tail -1` .
-	fi
+	#TODO once fixed, update also variable HS above
+	# Frisian
+	wget https://raw.githubusercontent.com/PanderMusubi/frisian/master/packages/hunspell-fy_latest_all.deb
+	wget `echo https://raw.githubusercontent.com/PanderMusubi/frisian/master/packages/|awk -F 'hunspell-fy_latest_all.deb' '{print $1}'``cat hunspell-fy_latest_all.deb`
+	rm -f hunspell-fy_latest_all.deb
+	# Klingon
+	wget https://raw.githubusercontent.com/PanderMusubi/klingon/master/packages/hunspell-tlh_latest_all.deb
+	wget `echo https://raw.githubusercontent.com/PanderMusubi/klingon/master/packages/|awk -F 'hunspell-tlh_latest_all.deb' '{print $1}'``cat hunspell-tlh_latest_all.deb`
+	rm -f hunspell-tlh_latest_all.deb
 
 elif [ $platform = freebsd ]; then
 
