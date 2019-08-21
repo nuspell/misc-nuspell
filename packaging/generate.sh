@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Set version information
-SHORT=2.2
+SHORT=2.3
 LONG=$SHORT.0
 PATCH=0
 
@@ -86,8 +86,8 @@ if [ $PKGM = dpkg ]; then
 
 	mv -f libnuspell-SHORT-PATCH.install 'libnuspell-'$SHORT'-'$PATCH'.install'
 
-	tar xf ../$ORIG 'nuspell-'$LONG'/LICENSES'
-	mv 'nuspell-'$LONG'/LICENSES' copyright
+	tar xf ../$ORIG 'nuspell-'$LONG'/COPYING'
+	mv 'nuspell-'$LONG'/COPYING' copyright
 
 	rmdir 'nuspell-'$LONG
 	cd ..
