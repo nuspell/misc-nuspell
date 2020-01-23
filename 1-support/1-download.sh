@@ -74,8 +74,7 @@ if [ $platform = linux ]; then
     # Check if skip package is still offered for download
     for i in $HS; do
         if [ `echo $HA|grep -c $i` -eq 0 ]; then
-            echo 'ERROR: Package '$i' to skip is not available'
-            exit
+            echo 'WARNING: Package '$i' to skip is not available'
         else
             echo 'Skipping package '$i'...'
         fi

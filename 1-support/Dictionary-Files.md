@@ -12,80 +12,80 @@ A total of 92 different languages are available for Hunspell.
 
 | Package | Version | Filename | Language |
 |---|---|---|---|
-| `hunspell-af` | `1%3a6.2.0-1` | `af_ZA` | Afrikaans |
+| `hunspell-af` | `1%3a6.3.1-1` | `af_ZA` | Afrikaans |
 | `hunspell-an` | `0.2-4` | `an_ES` | Aragonese |
 | `hunspell-ar` | `3.2-1.1` | `ar` | Arabic |
 | `hunspell-be` | `0.53-3` | `be_BY` | Belarusian |
-| `hunspell-bg` | `1%3a6.2.0-1` | `bg_BG` | Bulgarian |
-| `hunspell-bn` | `1%3a6.2.0-1` | `bn_BD` | Bengali |
+| `hunspell-bg` | `1%3a6.3.1-1` | `bg_BG` | Bulgarian |
+| `hunspell-bn` | `1%3a6.3.1-1` | `bn_BD` | Bengali |
 | `hunspell-bo` | `0.4.0-1` | `bo` | Classical Tibetan |
 | `hunspell-br` | `0.12-2` | `br_FR` | Breton |
-| `hunspell-bs` | `1%3a6.2.0-1` | `bs_BA` | Bosnian |
+| `hunspell-bs` | `1%3a6.3.1-1` | `bs_BA` | Bosnian |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca` | Catalan |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca_ES-valencia` | Valencian |
-| `hunspell-cs` | `1%3a6.2.0-1` | `cs_CZ` | Czech |
-| `hunspell-da` | `1%3a6.2.0-1` | `da_DK` | Danish |
+| `hunspell-cs` | `1%3a6.3.1-1` | `cs_CZ` | Czech |
+| `hunspell-da` | `1%3a6.3.1-1` | `da_DK` | Danish |
 | `hunspell-de-at` | `20161207-7` | `de_AT` | Austrian German |
-| `hunspell-de-at-frami` | `1%3a6.2.0-1` | `de_AT_frami` | Austrian German |
+| `hunspell-de-at-frami` | `1%3a6.3.1-1` | `de_AT_frami` | Austrian German |
 | `hunspell-de-ch` | `20161207-7` | `de_CH` | Swiss German |
-| `hunspell-de-ch-frami` | `1%3a6.2.0-1` | `de_CH_frami` | Swiss German |
+| `hunspell-de-ch-frami` | `1%3a6.3.1-1` | `de_CH_frami` | Swiss German |
 | `hunspell-de-de` | `20161207-7` | `de_DE` | German |
-| `hunspell-de-de-frami` | `1%3a6.2.0-1` | `de_DE_frami` | German |
+| `hunspell-de-de-frami` | `1%3a6.3.1-1` | `de_DE_frami` | German |
 | `hunspell-dz` | `0.1.0-1` | `dz` | Dzongkha |
-| `hunspell-el` | `1%3a6.2.0-1` | `el_GR` | Modern Greek |
+| `hunspell-el` | `1%3a6.3.1-1` | `el_GR` | Modern Greek |
 | `hunspell-en-au` | `1%3a2018.04.16-1` | `en_AU` | Australian English |
 | `hunspell-en-ca` | `1%3a2018.04.16-1` | `en_CA` | Canadian English |
-| `hunspell-en-gb` | `1%3a6.2.0-1` | `en_GB` | British English |
+| `hunspell-en-gb` | `1%3a6.3.1-1` | `en_GB` | British English |
 | `hunspell-en-us` | `1%3a2018.04.16-1` | `en_US` | American English |
-| `hunspell-en-za` | `1%3a6.2.0-1` | `en_ZA` | South African English |
-| `hunspell-es` | `1%3a6.2.0-1` | `es_ES` | Spanish |
+| `hunspell-en-za` | `1%3a6.3.1-1` | `en_ZA` | South African English |
+| `hunspell-es` | `1%3a6.3.1-1` | `es_ES` | Spanish |
 | `hunspell-eu` | `0.5.20151110-4` | `eu` | Basque |
-| `hunspell-fr-comprehensive` | `1%3a6.3-2` | `fr` | French |
+| `hunspell-fr-comprehensive` | `1%3a6.4.1-1` | `fr` | French |
 | `hunspell-fy` | `1.0.0` | `fy_NL` | Frisian |
-| `hunspell-gd` | `1%3a6.2.0-1` | `gd_GB` | Scottish Gaelic |
-| `hunspell-gu` | `1%3a6.2.0-1` | `gu_IN` | Gujarati |
-| `hunspell-gug` | `1%3a6.2.0-1` | `gug_PY` | Guarani |
-| `hunspell-he` | `1%3a6.2.0-1` | `he_IL` | Hebrew |
-| `hunspell-hi` | `1%3a6.2.0-1` | `hi_IN` | Hindi |
-| `hunspell-hr` | `1%3a6.2.0-1` | `hr_HR` | Croatian |
-| `hunspell-hu` | `1%3a6.2.0-1` | `hu_HU` | Hungarian |
-| `hunspell-id` | `1%3a6.2.0-1` | `id_ID` | Indonesian |
-| `hunspell-is` | `1%3a6.2.0-1` | `is_IS` | Icelandic |
-| `hunspell-it` | `1%3a6.2.0-1` | `it_IT` | Italian |
+| `hunspell-gd` | `1%3a6.3.1-1` | `gd_GB` | Scottish Gaelic |
+| `hunspell-gu` | `1%3a6.3.1-1` | `gu_IN` | Gujarati |
+| `hunspell-gug` | `1%3a6.3.1-1` | `gug_PY` | Guarani |
+| `hunspell-he` | `1%3a6.3.1-1` | `he_IL` | Hebrew |
+| `hunspell-hi` | `1%3a6.3.1-1` | `hi_IN` | Hindi |
+| `hunspell-hr` | `1%3a6.3.1-1` | `hr_HR` | Croatian |
+| `hunspell-hu` | `1%3a6.3.1-1` | `hu_HU` | Hungarian |
+| `hunspell-id` | `1%3a6.3.1-1` | `id_ID` | Indonesian |
+| `hunspell-is` | `1%3a6.3.1-1` | `is_IS` | Icelandic |
+| `hunspell-it` | `1%3a6.3.1-1` | `it_IT` | Italian |
 | `hunspell-kk` | `1.1-2` | `kk_KZ` | Kazakh |
-| `hunspell-kmr` | `1%3a6.2.0-1` | `kmr_Latn` | Kurmanji (Latin script) |
-| `hunspell-ko` | `0.7.1-1` | `ko` | Korean |
-| `hunspell-lo` | `1%3a6.2.0-1` | `lo_LA` | Laotian |
-| `hunspell-lt` | `1%3a6.2.0-1` | `lt_LT` | Lithuanian |
+| `hunspell-kmr` | `1%3a6.3.1-1` | `kmr_Latn` | Kurmanji (Latin script) |
+| `hunspell-ko` | `0.7.90-1` | `ko` | Korean |
+| `hunspell-lo` | `1%3a6.3.1-1` | `lo_LA` | Laotian |
+| `hunspell-lt` | `1%3a6.3.1-1` | `lt_LT` | Lithuanian |
 | `hunspell-lv` | `1.3.0-5` | `lv_LV` | Latvian |
 | `hunspell-ml` | `0.1-2` | `ml_IN` | Malayalam |
-| `hunspell-ne` | `1%3a6.2.0-1` | `ne_NP` | Nepalese |
+| `hunspell-ne` | `1%3a6.3.1-1` | `ne_NP` | Nepalese |
 | `hunspell-nl` | `2%3a2.10-6` | `nl` | Dutch |
-| `hunspell-no` | `1%3a6.2.0-1` | `nb_NO` | Bokmål |
-| `hunspell-no` | `1%3a6.2.0-1` | `nn_NO` | Nynorsk |
-| `hunspell-oc` | `1%3a6.2.0-1` | `oc_FR` | Occitan |
-| `hunspell-pl` | `1%3a6.2.0-1` | `pl_PL` | Polish |
-| `hunspell-pt-br` | `1%3a6.2.0-1` | `pt_BR` | Brazilian |
-| `hunspell-pt-pt` | `1%3a6.2.0-1` | `pt_PT` | Portuguese |
-| `hunspell-ro` | `1%3a6.2.0-1` | `ro_RO` | Romanian |
-| `hunspell-ru` | `1%3a6.2.0-1` | `ru_RU` | Russian |
+| `hunspell-no` | `1%3a6.3.1-1` | `nb_NO` | Bokmål |
+| `hunspell-no` | `1%3a6.3.1-1` | `nn_NO` | Nynorsk |
+| `hunspell-oc` | `1%3a6.3.1-1` | `oc_FR` | Occitan |
+| `hunspell-pl` | `1%3a6.3.1-1` | `pl_PL` | Polish |
+| `hunspell-pt-br` | `1%3a6.3.1-1` | `pt_BR` | Brazilian |
+| `hunspell-pt-pt` | `1%3a6.3.1-1` | `pt_PT` | Portuguese |
+| `hunspell-ro` | `1%3a6.3.1-1` | `ro_RO` | Romanian |
+| `hunspell-ru` | `1%3a6.3.1-1` | `ru_RU` | Russian |
 | `hunspell-se` | `1.0~beta6.20081222-1.2` | `se` | North Sámi |
-| `hunspell-si` | `1%3a6.2.0-1` | `si_LK` | Sinhala |
-| `hunspell-sk` | `1%3a6.2.0-1` | `sk_SK` | Slovak |
-| `hunspell-sl` | `1%3a6.2.0-1` | `sl_SI` | Slovene |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_Latn_RS` | Serbian (Latin script) |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_RS` | Serbian (Cyrillic script) |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_FI` | Finland Swedish |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_SE` | Swedish |
-| `hunspell-sw` | `1%3a6.2.0-1` | `sw_TZ` | Swahili |
-| `hunspell-te` | `1%3a6.2.0-1` | `te_IN` | Telugu |
-| `hunspell-th` | `1%3a6.2.0-1` | `th_TH` | Thai |
-| `hunspell-tlh` | `1.0.4` | `tlh` | Klingon |
-| `hunspell-tlh` | `1.0.4` | `tlh_Latn` | Klingon (Latin script) |
-| `hunspell-tr` | `1%3a6.2.0-1` | `tr_TR` | Turkisch |
-| `hunspell-uk` | `1%3a6.2.0-1` | `uk_UA` | Ukrainian |
+| `hunspell-si` | `1%3a6.3.1-1` | `si_LK` | Sinhala |
+| `hunspell-sk` | `1%3a6.3.1-1` | `sk_SK` | Slovak |
+| `hunspell-sl` | `1%3a6.3.1-1` | `sl_SI` | Slovene |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_Latn_RS` | Serbian (Latin script) |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_RS` | Serbian (Cyrillic script) |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_FI` | Finland Swedish |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_SE` | Swedish |
+| `hunspell-sw` | `1%3a6.3.1-1` | `sw_TZ` | Swahili |
+| `hunspell-te` | `1%3a6.3.1-1` | `te_IN` | Telugu |
+| `hunspell-th` | `1%3a6.3.1-1` | `th_TH` | Thai |
+| `hunspell-tlh` | `1.0.6` | `tlh` | Klingon |
+| `hunspell-tlh` | `1.0.6` | `tlh_Latn` | Klingon (Latin script) |
+| `hunspell-tr` | `1%3a6.3.1-1` | `tr_TR` | Turkisch |
+| `hunspell-uk` | `1%3a6.3.1-1` | `uk_UA` | Ukrainian |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | Uzbek |
-| `hunspell-vi` | `1%3a6.2.0-1` | `vi_VN` | Vietnamese |
+| `hunspell-vi` | `1%3a6.3.1-1` | `vi_VN` | Vietnamese |
 | `myspell-eo` | `2.1.2000.02.25-57` | `eo` | Esperanto |
 | `myspell-et` | `1%3a20030606-30` | `et_EE` | Estonian |
 | `myspell-fa` | `0.20070816-3.1` | `fa_IR` | Farsi |
@@ -111,80 +111,80 @@ A total of 92 different affix files are available for Hunspell. Affix files whic
 
 | Package | Version | Filename | File Type | Intended Encoding | Lines |
 |---|---|---|---|---|--:|
-| `hunspell-af` | `1%3a6.2.0-1` | `af_ZA` | ISO-8859 | ISO8859-1 | `209` |
+| `hunspell-af` | `1%3a6.3.1-1` | `af_ZA` | UTF-8 | UTF-8 | `241` |
 | `hunspell-an` | `0.2-4` | `an_ES` | ISO-8859 | ISO8859-1 | `1248` |
 | `hunspell-ar` | `3.2-1.1` | `ar` | UTF-8 | UTF-8 | `26907` |
 | `hunspell-be` | `0.53-3` | `be_BY` | UTF-8 | UTF-8 | `957` |
-| `hunspell-bg` | `1%3a6.2.0-1` | `bg_BG` | UTF-8 | UTF-8 | `1709` |
-| `hunspell-bn` | `1%3a6.2.0-1` | `bn_BD` | UTF-8 | UTF-8 | `2` |
+| `hunspell-bg` | `1%3a6.3.1-1` | `bg_BG` | UTF-8 | UTF-8 | `1709` |
+| `hunspell-bn` | `1%3a6.3.1-1` | `bn_BD` | UTF-8 | UTF-8 | `2` |
 | `hunspell-bo` | `0.4.0-1` | `bo` | UTF-8 | UTF-8 | `73` |
 | `hunspell-br` | `0.12-2` | `br_FR` | UTF-8 | UTF-8 | `433` |
-| `hunspell-bs` | `1%3a6.2.0-1` | `bs_BA` | ISO-8859 | ISO8859-2 | `1028` |
+| `hunspell-bs` | `1%3a6.3.1-1` | `bs_BA` | ISO-8859 | ISO8859-2 | `1028` |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca` | UTF-8, with CRLF line terminators | UTF-8 | `14026` |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca_ES-valencia` | UTF-8, with CRLF line terminators | UTF-8 | `14076` |
-| `hunspell-cs` | `1%3a6.2.0-1` | `cs_CZ` | ISO-8859 | ISO8859-2 | `2597` |
-| `hunspell-da` | `1%3a6.2.0-1` | `da_DK` | UTF-8, with very long lines | UTF-8 | `1529` |
+| `hunspell-cs` | `1%3a6.3.1-1` | `cs_CZ` | ISO-8859 | ISO8859-2 | `2597` |
+| `hunspell-da` | `1%3a6.3.1-1` | `da_DK` | UTF-8, with very long lines | UTF-8 | `1614` |
 | `hunspell-de-at` | `20161207-7` | `de_AT` | ISO-8859 | ISO8859-1 | `729` |
-| `hunspell-de-at-frami` | `1%3a6.2.0-1` | `de_AT_frami` | ISO-8859 | ISO8859-1 | `729` |
+| `hunspell-de-at-frami` | `1%3a6.3.1-1` | `de_AT_frami` | ISO-8859 | ISO8859-1 | `729` |
 | `hunspell-de-ch` | `20161207-7` | `de_CH` | ISO-8859 | ISO8859-1 | `729` |
-| `hunspell-de-ch-frami` | `1%3a6.2.0-1` | `de_CH_frami` | ISO-8859 | ISO8859-1 | `729` |
+| `hunspell-de-ch-frami` | `1%3a6.3.1-1` | `de_CH_frami` | ISO-8859 | ISO8859-1 | `729` |
 | `hunspell-de-de` | `20161207-7` | `de_DE` | ISO-8859 | ISO8859-1 | `729` |
-| `hunspell-de-de-frami` | `1%3a6.2.0-1` | `de_DE_frami` | ISO-8859 | ISO8859-1 | `729` |
+| `hunspell-de-de-frami` | `1%3a6.3.1-1` | `de_DE_frami` | ISO-8859 | ISO8859-1 | `729` |
 | `hunspell-dz` | `0.1.0-1` | `dz` | UTF-8 | UTF-8 | `183` |
-| `hunspell-el` | `1%3a6.2.0-1` | `el_GR` | ISO-8859 | ISO8859-7 | `820` |
+| `hunspell-el` | `1%3a6.3.1-1` | `el_GR` | ISO-8859 | ISO8859-7 | `820` |
 | `hunspell-en-au` | `1%3a2018.04.16-1` | `en_AU` | UTF-8 | UTF-8 | `205` |
 | `hunspell-en-ca` | `1%3a2018.04.16-1` | `en_CA` | UTF-8 | UTF-8 | `205` |
-| `hunspell-en-gb` | `1%3a6.2.0-1` | `en_GB` | UTF-8 | UTF-8 | `1184` |
+| `hunspell-en-gb` | `1%3a6.3.1-1` | `en_GB` | UTF-8 | UTF-8 | `1216` |
 | `hunspell-en-us` | `1%3a2018.04.16-1` | `en_US` | UTF-8 | UTF-8 | `205` |
-| `hunspell-en-za` | `1%3a6.2.0-1` | `en_ZA` | UTF-8 | UTF-8 | `1441` |
-| `hunspell-es` | `1%3a6.2.0-1` | `es_ES` | UTF-8 | UTF-8 | `6898` |
+| `hunspell-en-za` | `1%3a6.3.1-1` | `en_ZA` | UTF-8 | UTF-8 | `1441` |
+| `hunspell-es` | `1%3a6.3.1-1` | `es_ES` | UTF-8 | UTF-8 | `6899` |
 | `hunspell-eu` | `0.5.20151110-4` | `eu` | ISO-8859 | ISO-8859-1 | `94543` |
-| `hunspell-fr-comprehensive` | `1%3a6.3-2` | `fr` | UTF-8 | UTF-8 | `10919` |
+| `hunspell-fr-comprehensive` | `1%3a6.4.1-1` | `fr` | UTF-8 | UTF-8 | `10999` |
 | `hunspell-fy` | `1.0.0` | `fy_NL` | UTF-8 | UTF-8 | `233238` |
-| `hunspell-gd` | `1%3a6.2.0-1` | `gd_GB` | UTF-8 | UTF-8 | `374` |
-| `hunspell-gu` | `1%3a6.2.0-1` | `gu_IN` | UTF-8 | UTF-8 | `2` |
-| `hunspell-gug` | `1%3a6.2.0-1` | `gug_PY` | UTF-8 | UTF-8 | `11` |
-| `hunspell-he` | `1%3a6.2.0-1` | `he_IL` | UTF-8 | UTF-8 | `3370` |
-| `hunspell-hi` | `1%3a6.2.0-1` | `hi_IN` | UTF-8 | UTF-8 | `2` |
-| `hunspell-hr` | `1%3a6.2.0-1` | `hr_HR` | UTF-8 | UTF-8 | `3907` |
-| `hunspell-hu` | `1%3a6.2.0-1` | `hu_HU` | Non-ISO extended-ASCII, with very long lines, with LF, NEL line terminators | UTF-8 | `50700` |
-| `hunspell-id` | `1%3a6.2.0-1` | `id_ID` | ASCII | ISO8859-1 | `762` |
-| `hunspell-is` | `1%3a6.2.0-1` | `is_IS` | UTF-8 | UTF-8 | `14739` |
-| `hunspell-it` | `1%3a6.2.0-1` | `it_IT` | ISO-8859 | ISO8859-15 | `3407` |
+| `hunspell-gd` | `1%3a6.3.1-1` | `gd_GB` | UTF-8 | UTF-8 | `374` |
+| `hunspell-gu` | `1%3a6.3.1-1` | `gu_IN` | UTF-8 | UTF-8 | `2` |
+| `hunspell-gug` | `1%3a6.3.1-1` | `gug_PY` | UTF-8 | UTF-8 | `11` |
+| `hunspell-he` | `1%3a6.3.1-1` | `he_IL` | UTF-8 | UTF-8 | `3370` |
+| `hunspell-hi` | `1%3a6.3.1-1` | `hi_IN` | UTF-8 | UTF-8 | `2` |
+| `hunspell-hr` | `1%3a6.3.1-1` | `hr_HR` | UTF-8 | UTF-8 | `3907` |
+| `hunspell-hu` | `1%3a6.3.1-1` | `hu_HU` | Non-ISO extended-ASCII, with very long lines, with LF, NEL line terminators | UTF-8 | `50700` |
+| `hunspell-id` | `1%3a6.3.1-1` | `id_ID` | ASCII | ISO8859-1 | `762` |
+| `hunspell-is` | `1%3a6.3.1-1` | `is_IS` | UTF-8 | UTF-8 | `14739` |
+| `hunspell-it` | `1%3a6.3.1-1` | `it_IT` | ISO-8859 | ISO8859-15 | `3407` |
 | `hunspell-kk` | `1.1-2` | `kk_KZ` | UTF-8 (with BOM), with CRLF line terminators | UTF-8 | `2646` |
-| `hunspell-kmr` | `1%3a6.2.0-1` | `kmr_Latn` | UTF-8 | UTF-8 | `234` |
-| `hunspell-ko` | `0.7.1-1` | `ko` | UTF-8, with very long lines | UTF-8 | `122134` |
-| `hunspell-lo` | `1%3a6.2.0-1` | `lo_LA` | ASCII | UTF-8 | `1` |
-| `hunspell-lt` | `1%3a6.2.0-1` | `lt_LT` | ISO-8859 | ISO8859-13 | `2723` |
+| `hunspell-kmr` | `1%3a6.3.1-1` | `kmr_Latn` | UTF-8 | UTF-8 | `234` |
+| `hunspell-ko` | `0.7.90-1` | `ko` | UTF-8, with very long lines | UTF-8 | `122133` |
+| `hunspell-lo` | `1%3a6.3.1-1` | `lo_LA` | ASCII | UTF-8 | `1` |
+| `hunspell-lt` | `1%3a6.3.1-1` | `lt_LT` | ISO-8859 | ISO8859-13 | `2723` |
 | `hunspell-lv` | `1.3.0-5` | `lv_LV` | UTF-8 | UTF-8 | `4007` |
 | `hunspell-ml` | `0.1-2` | `ml_IN` | ASCII | UTF-8 | `1` |
-| `hunspell-ne` | `1%3a6.2.0-1` | `ne_NP` | UTF-8 | UTF-8 | `574` |
+| `hunspell-ne` | `1%3a6.3.1-1` | `ne_NP` | UTF-8 | UTF-8 | `574` |
 | `hunspell-nl` | `2%3a2.10-6` | `nl` | UTF-8 | UTF-8 | `1438` |
-| `hunspell-no` | `1%3a6.2.0-1` | `nb_NO` | ISO-8859 | ISO8859-1 | `636` |
-| `hunspell-no` | `1%3a6.2.0-1` | `nn_NO` | ISO-8859 | ISO8859-1 | `511` |
-| `hunspell-oc` | `1%3a6.2.0-1` | `oc_FR` | ISO-8859 | ISO8859-15 | `763` |
-| `hunspell-pl` | `1%3a6.2.0-1` | `pl_PL` | ISO-8859 | ISO8859-2 | `7286` |
-| `hunspell-pt-br` | `1%3a6.2.0-1` | `pt_BR` | ISO-8859, with CRLF line terminators | ISO8859-1 | `27371` |
-| `hunspell-pt-pt` | `1%3a6.2.0-1` | `pt_PT` | UTF-8 | UTF-8 | `1436` |
-| `hunspell-ro` | `1%3a6.2.0-1` | `ro_RO` | UTF-8 | UTF-8 | `1847` |
-| `hunspell-ru` | `1%3a6.2.0-1` | `ru_RU` | ISO-8859 | KOI8-R | `1633` |
+| `hunspell-no` | `1%3a6.3.1-1` | `nb_NO` | ISO-8859 | ISO8859-1 | `636` |
+| `hunspell-no` | `1%3a6.3.1-1` | `nn_NO` | ISO-8859 | ISO8859-1 | `511` |
+| `hunspell-oc` | `1%3a6.3.1-1` | `oc_FR` | ISO-8859 | ISO8859-15 | `763` |
+| `hunspell-pl` | `1%3a6.3.1-1` | `pl_PL` | ISO-8859 | ISO8859-2 | `7286` |
+| `hunspell-pt-br` | `1%3a6.3.1-1` | `pt_BR` | ISO-8859, with CRLF line terminators | ISO8859-1 | `27371` |
+| `hunspell-pt-pt` | `1%3a6.3.1-1` | `pt_PT` | UTF-8 | UTF-8 | `1436` |
+| `hunspell-ro` | `1%3a6.3.1-1` | `ro_RO` | UTF-8 | UTF-8 | `1847` |
+| `hunspell-ru` | `1%3a6.3.1-1` | `ru_RU` | ISO-8859 | KOI8-R | `1633` |
 | `hunspell-se` | `1.0~beta6.20081222-1.2` | `se` | UTF-8, with very long lines | UTF-8 | `376018` |
-| `hunspell-si` | `1%3a6.2.0-1` | `si_LK` | UTF-8 | UTF-8 | `10032` |
-| `hunspell-sk` | `1%3a6.2.0-1` | `sk_SK` | UTF-8 | UTF-8 | `2539` |
-| `hunspell-sl` | `1%3a6.2.0-1` | `sl_SI` | ISO-8859 | ISO8859-2 | `565` |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_Latn_RS` | UTF-8 | UTF-8 | `20` |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_RS` | UTF-8 | UTF-8 | `28` |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_FI` | UTF-8 | UTF-8 | `856` |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_SE` | UTF-8 | UTF-8 | `856` |
-| `hunspell-sw` | `1%3a6.2.0-1` | `sw_TZ` | ASCII | ISO8859-1 | `27` |
-| `hunspell-te` | `1%3a6.2.0-1` | `te_IN` | UTF-8 | UTF-8 | `2` |
-| `hunspell-th` | `1%3a6.2.0-1` | `th_TH` | ISO-8859 | TIS-620 | `7` |
-| `hunspell-tlh` | `1.0.4` | `tlh` | UTF-8 | UTF-8 | `107` |
-| `hunspell-tlh` | `1.0.4` | `tlh_Latn` | UTF-8 | UTF-8 | `110` |
-| `hunspell-tr` | `1%3a6.2.0-1` | `tr_TR` | UTF-8 | UTF-8 | `19400` |
-| `hunspell-uk` | `1%3a6.2.0-1` | `uk_UA` | UTF-8 | UTF-8 | `4495` |
+| `hunspell-si` | `1%3a6.3.1-1` | `si_LK` | UTF-8 | UTF-8 | `10032` |
+| `hunspell-sk` | `1%3a6.3.1-1` | `sk_SK` | UTF-8 | UTF-8 | `2539` |
+| `hunspell-sl` | `1%3a6.3.1-1` | `sl_SI` | ISO-8859 | ISO8859-2 | `565` |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_Latn_RS` | UTF-8, with CRLF line terminators | UTF-8 | `37521` |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_RS` | UTF-8, with CRLF line terminators | UTF-8 | `37521` |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_FI` | UTF-8 | UTF-8 | `856` |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_SE` | UTF-8 | UTF-8 | `856` |
+| `hunspell-sw` | `1%3a6.3.1-1` | `sw_TZ` | ASCII | ISO8859-1 | `27` |
+| `hunspell-te` | `1%3a6.3.1-1` | `te_IN` | UTF-8 | UTF-8 | `2` |
+| `hunspell-th` | `1%3a6.3.1-1` | `th_TH` | UTF-8 | UTF-8 | `13` |
+| `hunspell-tlh` | `1.0.6` | `tlh` | UTF-8 | UTF-8 | `107` |
+| `hunspell-tlh` | `1.0.6` | `tlh_Latn` | UTF-8 | UTF-8 | `110` |
+| `hunspell-tr` | `1%3a6.3.1-1` | `tr_TR` | UTF-8 | UTF-8 | `19400` |
+| `hunspell-uk` | `1%3a6.3.1-1` | `uk_UA` | UTF-8 | UTF-8 | `4495` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ` | ASCII | UTF-8 | `1` |
-| `hunspell-vi` | `1%3a6.2.0-1` | `vi_VN` | UTF-8 | UTF-8 | `42` |
+| `hunspell-vi` | `1%3a6.3.1-1` | `vi_VN` | UTF-8 | UTF-8 | `42` |
 | `myspell-eo` | `2.1.2000.02.25-57` | `eo` | ISO-8859 | ISO8859-3 | `1449` |
 | `myspell-et` | `1%3a20030606-30` | `et_EE` | ISO-8859 | ISO8859-15 | `9330` |
 | `myspell-fa` | `0.20070816-3.1` | `fa_IR` | ASCII | UTF-8 | `1` |
@@ -210,82 +210,82 @@ A total of 94 different dictionary files are available for Hunspell. Dictionary 
 
 | Package | Version | Filename | File Type | Lines |
 |---|---|---|---|--:|
-| `hunspell-af` | `1%3a6.2.0-1` | `af_ZA.dic` | ISO-8859 | `125473` |
+| `hunspell-af` | `1%3a6.3.1-1` | `af_ZA.dic` | UTF-8 | `105124` |
 | `hunspell-an` | `0.2-4` | `an_ES.dic` | data | `20862` |
 | `hunspell-ar` | `3.2-1.1` | `ar.dic` | UTF-8 | `170813` |
 | `hunspell-be` | `0.53-3` | `be_BY.dic` | UTF-8 | `82080` |
-| `hunspell-bg` | `1%3a6.2.0-1` | `bg_BG.dic` | UTF-8 | `78239` |
-| `hunspell-bn` | `1%3a6.2.0-1` | `bn_BD.dic` | UTF-8 | `110751` |
+| `hunspell-bg` | `1%3a6.3.1-1` | `bg_BG.dic` | UTF-8 | `78239` |
+| `hunspell-bn` | `1%3a6.3.1-1` | `bn_BD.dic` | UTF-8 | `110751` |
 | `hunspell-bo` | `0.4.0-1` | `bo.dic` | UTF-8 | `379` |
 | `hunspell-br` | `0.12-2` | `br_FR.dic` | UTF-8 | `465038` |
-| `hunspell-bs` | `1%3a6.2.0-1` | `bs_BA.dic` | ISO-8859 | `30543` |
+| `hunspell-bs` | `1%3a6.3.1-1` | `bs_BA.dic` | ISO-8859 | `30543` |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca.dic` | UTF-8, with CRLF line terminators | `130620` |
 | `hunspell-ca` | `3.0.3+repack1-1` | `ca_ES-valencia.dic` | UTF-8, with CRLF line terminators | `130743` |
-| `hunspell-cs` | `1%3a6.2.0-1` | `cs_CZ.dic` | ISO-8859 | `166566` |
-| `hunspell-da` | `1%3a6.2.0-1` | `da_DK.dic` | UTF-8 | `161316` |
+| `hunspell-cs` | `1%3a6.3.1-1` | `cs_CZ.dic` | ISO-8859 | `166566` |
+| `hunspell-da` | `1%3a6.3.1-1` | `da_DK.dic` | UTF-8 | `156832` |
 | `hunspell-de-at` | `20161207-7` | `de_AT.dic` | ISO-8859 | `75874` |
-| `hunspell-de-at-frami` | `1%3a6.2.0-1` | `de_AT_frami.dic` | ISO-8859 | `258243` |
+| `hunspell-de-at-frami` | `1%3a6.3.1-1` | `de_AT_frami.dic` | ISO-8859 | `258243` |
 | `hunspell-de-ch` | `20161207-7` | `de_CH.dic` | ISO-8859 | `75704` |
-| `hunspell-de-ch-frami` | `1%3a6.2.0-1` | `de_CH_frami.dic` | ISO-8859 | `257827` |
+| `hunspell-de-ch-frami` | `1%3a6.3.1-1` | `de_CH_frami.dic` | ISO-8859 | `257827` |
 | `hunspell-de-de` | `20161207-7` | `de_DE.dic` | ISO-8859 | `75608` |
-| `hunspell-de-de-frami` | `1%3a6.2.0-1` | `de_DE_frami.dic` | ISO-8859 | `258218` |
+| `hunspell-de-de-frami` | `1%3a6.3.1-1` | `de_DE_frami.dic` | ISO-8859 | `258218` |
 | `hunspell-de-med` | `20160103-3` | `de_med.dic` | ISO-8859 | `9972` |
 | `hunspell-dz` | `0.1.0-1` | `dz.dic` | UTF-8 | `405` |
-| `hunspell-el` | `1%3a6.2.0-1` | `el_GR.dic` | ISO-8859 | `828807` |
+| `hunspell-el` | `1%3a6.3.1-1` | `el_GR.dic` | ISO-8859 | `828807` |
 | `hunspell-en-au` | `1%3a2018.04.16-1` | `en_AU.dic` | ASCII | `49638` |
 | `hunspell-en-ca` | `1%3a2018.04.16-1` | `en_CA.dic` | ASCII | `49446` |
-| `hunspell-en-gb` | `1%3a6.2.0-1` | `en_GB.dic` | UTF-8 | `87484` |
+| `hunspell-en-gb` | `1%3a6.3.1-1` | `en_GB.dic` | UTF-8 | `90099` |
 | `hunspell-en-med` | `0.0.20140410-1` | `en_med_glut.dic` | UTF-8 | `90159` |
 | `hunspell-en-us` | `1%3a2018.04.16-1` | `en_US.dic` | ASCII | `49270` |
-| `hunspell-en-za` | `1%3a6.2.0-1` | `en_ZA.dic` | UTF-8 | `53542` |
-| `hunspell-es` | `1%3a6.2.0-1` | `es_ES.dic` | UTF-8 | `67197` |
+| `hunspell-en-za` | `1%3a6.3.1-1` | `en_ZA.dic` | UTF-8 | `53542` |
+| `hunspell-es` | `1%3a6.3.1-1` | `es_ES.dic` | UTF-8 | `67496` |
 | `hunspell-eu` | `0.5.20151110-4` | `eu.dic` | ISO-8859 | `144690` |
-| `hunspell-fr-comprehensive` | `1%3a6.3-2` | `fr.dic` | UTF-8 | `83189` |
+| `hunspell-fr-comprehensive` | `1%3a6.4.1-1` | `fr.dic` | UTF-8 | `83548` |
 | `hunspell-fy` | `1.0.0` | `fy_NL.dic` | UTF-8 | `299499` |
-| `hunspell-gd` | `1%3a6.2.0-1` | `gd_GB.dic` | UTF-8 | `331834` |
-| `hunspell-gu` | `1%3a6.2.0-1` | `gu_IN.dic` | UTF-8 | `168957` |
-| `hunspell-gug` | `1%3a6.2.0-1` | `gug_PY.dic` | UTF-8 | `4217` |
-| `hunspell-he` | `1%3a6.2.0-1` | `he_IL.dic` | UTF-8 | `469751` |
-| `hunspell-hi` | `1%3a6.2.0-1` | `hi_IN.dic` | UTF-8 | `15991` |
-| `hunspell-hr` | `1%3a6.2.0-1` | `hr_HR.dic` | UTF-8 | `53661` |
-| `hunspell-hu` | `1%3a6.2.0-1` | `hu_HU.dic` | UTF-8 | `93813` |
-| `hunspell-id` | `1%3a6.2.0-1` | `id_ID.dic` | ASCII | `31133` |
-| `hunspell-is` | `1%3a6.2.0-1` | `is_IS.dic` | UTF-8 | `193171` |
-| `hunspell-it` | `1%3a6.2.0-1` | `it_IT.dic` | ISO-8859 | `95186` |
+| `hunspell-gd` | `1%3a6.3.1-1` | `gd_GB.dic` | UTF-8 | `331834` |
+| `hunspell-gu` | `1%3a6.3.1-1` | `gu_IN.dic` | UTF-8 | `168957` |
+| `hunspell-gug` | `1%3a6.3.1-1` | `gug_PY.dic` | UTF-8 | `4217` |
+| `hunspell-he` | `1%3a6.3.1-1` | `he_IL.dic` | UTF-8 | `469751` |
+| `hunspell-hi` | `1%3a6.3.1-1` | `hi_IN.dic` | UTF-8 | `15991` |
+| `hunspell-hr` | `1%3a6.3.1-1` | `hr_HR.dic` | UTF-8 | `53661` |
+| `hunspell-hu` | `1%3a6.3.1-1` | `hu_HU.dic` | UTF-8 | `93813` |
+| `hunspell-id` | `1%3a6.3.1-1` | `id_ID.dic` | ASCII | `31133` |
+| `hunspell-is` | `1%3a6.3.1-1` | `is_IS.dic` | UTF-8 | `193171` |
+| `hunspell-it` | `1%3a6.3.1-1` | `it_IT.dic` | ISO-8859 | `95186` |
 | `hunspell-kk` | `1.1-2` | `kk_KZ.dic` | UTF-8 (with BOM), with CRLF line terminators | `54063` |
-| `hunspell-kmr` | `1%3a6.2.0-1` | `kmr_Latn.dic` | UTF-8 | `4760` |
-| `hunspell-ko` | `0.7.1-1` | `ko.dic` | UTF-8 | `102252` |
-| `hunspell-lo` | `1%3a6.2.0-1` | `lo_LA.dic` | UTF-8 | `11207` |
-| `hunspell-lt` | `1%3a6.2.0-1` | `lt_LT.dic` | ISO-8859 | `83259` |
+| `hunspell-kmr` | `1%3a6.3.1-1` | `kmr_Latn.dic` | UTF-8 | `4760` |
+| `hunspell-ko` | `0.7.90-1` | `ko.dic` | UTF-8 | `101541` |
+| `hunspell-lo` | `1%3a6.3.1-1` | `lo_LA.dic` | UTF-8 | `11207` |
+| `hunspell-lt` | `1%3a6.3.1-1` | `lt_LT.dic` | ISO-8859 | `83259` |
 | `hunspell-lv` | `1.3.0-5` | `lv_LV.dic` | UTF-8 | `66494` |
 | `hunspell-ml` | `0.1-2` | `ml_IN.dic` | UTF-8 | `142592` |
-| `hunspell-ne` | `1%3a6.2.0-1` | `ne_NP.dic` | UTF-8, with CRLF, LF line terminators | `39925` |
+| `hunspell-ne` | `1%3a6.3.1-1` | `ne_NP.dic` | UTF-8, with CRLF, LF line terminators | `39925` |
 | `hunspell-nl` | `2%3a2.10-6` | `nl.dic` | UTF-8 | `173579` |
-| `hunspell-no` | `1%3a6.2.0-1` | `nb_NO.dic` | ISO-8859 | `334170` |
-| `hunspell-no` | `1%3a6.2.0-1` | `nn_NO.dic` | ISO-8859 | `234330` |
-| `hunspell-oc` | `1%3a6.2.0-1` | `oc_FR.dic` | ISO-8859 | `56579` |
-| `hunspell-pl` | `1%3a6.2.0-1` | `pl_PL.dic` | ISO-8859 | `308305` |
-| `hunspell-pt-br` | `1%3a6.2.0-1` | `pt_BR.dic` | Non-ISO extended-ASCII, with CRLF line terminators | `312369` |
-| `hunspell-pt-pt` | `1%3a6.2.0-1` | `pt_PT.dic` | UTF-8 | `44214` |
-| `hunspell-ro` | `1%3a6.2.0-1` | `ro_RO.dic` | UTF-8 | `180888` |
-| `hunspell-ru` | `1%3a6.2.0-1` | `ru_RU.dic` | ISO-8859, with CRLF, LF line terminators | `146270` |
+| `hunspell-no` | `1%3a6.3.1-1` | `nb_NO.dic` | ISO-8859 | `334170` |
+| `hunspell-no` | `1%3a6.3.1-1` | `nn_NO.dic` | ISO-8859 | `234330` |
+| `hunspell-oc` | `1%3a6.3.1-1` | `oc_FR.dic` | ISO-8859 | `56579` |
+| `hunspell-pl` | `1%3a6.3.1-1` | `pl_PL.dic` | ISO-8859 | `308305` |
+| `hunspell-pt-br` | `1%3a6.3.1-1` | `pt_BR.dic` | Non-ISO extended-ASCII, with CRLF line terminators | `312369` |
+| `hunspell-pt-pt` | `1%3a6.3.1-1` | `pt_PT.dic` | UTF-8 | `44214` |
+| `hunspell-ro` | `1%3a6.3.1-1` | `ro_RO.dic` | UTF-8 | `180888` |
+| `hunspell-ru` | `1%3a6.3.1-1` | `ru_RU.dic` | ISO-8859, with CRLF, LF line terminators | `146270` |
 | `hunspell-se` | `1.0~beta6.20081222-1.2` | `se.dic` | UTF-8 | `527512` |
-| `hunspell-si` | `1%3a6.2.0-1` | `si_LK.dic` | UTF-8, with very long lines | `30320` |
-| `hunspell-sk` | `1%3a6.2.0-1` | `sk_SK.dic` | UTF-8 | `247006` |
-| `hunspell-sl` | `1%3a6.2.0-1` | `sl_SI.dic` | ISO-8859 | `246857` |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_Latn_RS.dic` | UTF-8 | `222289` |
-| `hunspell-sr` | `1%3a6.2.0-1` | `sr_RS.dic` | UTF-8 | `222289` |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_FI.dic` | UTF-8 | `151839` |
-| `hunspell-sv` | `1%3a6.2.0-1` | `sv_SE.dic` | UTF-8 | `152176` |
-| `hunspell-sw` | `1%3a6.2.0-1` | `sw_TZ.dic` | ASCII | `67901` |
-| `hunspell-te` | `1%3a6.2.0-1` | `te_IN.dic` | UTF-8 | `125084` |
-| `hunspell-th` | `1%3a6.2.0-1` | `th_TH.dic` | ISO-8859 | `38870` |
-| `hunspell-tlh` | `1.0.4` | `tlh.dic` | UTF-8 | `3898` |
-| `hunspell-tlh` | `1.0.4` | `tlh_Latn.dic` | ASCII | `3898` |
-| `hunspell-tr` | `1%3a6.2.0-1` | `tr_TR.dic` | UTF-8, with very long lines | `371170` |
-| `hunspell-uk` | `1%3a6.2.0-1` | `uk_UA.dic` | UTF-8 | `111403` |
+| `hunspell-si` | `1%3a6.3.1-1` | `si_LK.dic` | UTF-8, with very long lines | `30320` |
+| `hunspell-sk` | `1%3a6.3.1-1` | `sk_SK.dic` | UTF-8 | `247006` |
+| `hunspell-sl` | `1%3a6.3.1-1` | `sl_SI.dic` | ISO-8859 | `246857` |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_Latn_RS.dic` | UTF-8, with CRLF line terminators | `251550` |
+| `hunspell-sr` | `1%3a6.3.1-1` | `sr_RS.dic` | UTF-8, with CRLF line terminators | `251550` |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_FI.dic` | UTF-8 | `151839` |
+| `hunspell-sv` | `1%3a6.3.1-1` | `sv_SE.dic` | UTF-8 | `152176` |
+| `hunspell-sw` | `1%3a6.3.1-1` | `sw_TZ.dic` | ASCII | `67901` |
+| `hunspell-te` | `1%3a6.3.1-1` | `te_IN.dic` | UTF-8 | `125084` |
+| `hunspell-th` | `1%3a6.3.1-1` | `th_TH.dic` | UTF-8 | `51683` |
+| `hunspell-tlh` | `1.0.6` | `tlh.dic` | UTF-8 | `4062` |
+| `hunspell-tlh` | `1.0.6` | `tlh_Latn.dic` | ASCII | `4062` |
+| `hunspell-tr` | `1%3a6.3.1-1` | `tr_TR.dic` | UTF-8, with very long lines | `371170` |
+| `hunspell-uk` | `1%3a6.3.1-1` | `uk_UA.dic` | UTF-8 | `111403` |
 | `hunspell-uz` | `0.6-4` | `uz_UZ.dic` | UTF-8 | `97001` |
-| `hunspell-vi` | `1%3a6.2.0-1` | `vi_VN.dic` | UTF-8 | `6632` |
+| `hunspell-vi` | `1%3a6.3.1-1` | `vi_VN.dic` | UTF-8 | `6632` |
 | `myspell-eo` | `2.1.2000.02.25-57` | `eo.dic` | ISO-8859 | `18219` |
 | `myspell-et` | `1%3a20030606-30` | `et_EE.dic` | ISO-8859 | `282174` |
 | `myspell-fa` | `0.20070816-3.1` | `fa_IR.dic` | UTF-8 | `331789` |
