@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Set version information
-SHORT=2.3
+SHORT=3.0
 LONG=$SHORT.0
 PATCH=0
 
@@ -60,6 +60,7 @@ echo 'LONG:\t'$LONG
 echo 'PATCH:\t'$PATCH
 
 # Do generic actions
+rm -rf packages/$OS
 mkdir -p packages/$OS
 echo 'INFO: Working directory is pacakges/'$OS
 cd packages/$OS
@@ -67,10 +68,9 @@ ORIG='nuspell_'$LONG'.orig.tar.gz'
 wget -q 'https://github.com/nuspell/nuspell/archive/v'$LONG'.tar.gz' -O $ORIG
 echo 'INFO: Downloaded '$ORIG
 
-# Do package manager speicific actions
+# Do package manager specific actions
 if [ $PKGM = dpkg ]; then
 	# Generate debian directory
-	rm -rf debian
 	cp -a ../../templates/dpkg/debian .
 	cd debian
 
