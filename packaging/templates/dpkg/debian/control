@@ -1,9 +1,9 @@
 Source: nuspell
 Priority: optional
 Maintainer: Pander <pander@users.sourceforge.net>
-Build-Depends: debhelper (>= 11), cmake, make, git, ronn, g++,
- libboost-locale-dev, libicu-dev
-Standards-Version: 4.3.0
+Build-Depends: debhelper, debhelper-compat (>= 12),
+ cmake, git, ronn, libboost-locale-dev, libicu-dev
+Standards-Version: 4.5.0
 Section: text
 Homepage: http://nuspell.github.io/
 Vcs-Browser: https://github.com/nuspell/nuspell

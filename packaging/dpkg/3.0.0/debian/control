@@ -1,0 +1,79 @@
+Source: nuspell
+Priority: optional
+Maintainer: Pander <pander@users.sourceforge.net>
+Build-Depends: debhelper, debhelper-compat (= 12),
+ cmake, git, ronn, libboost-locale-dev, libicu-dev
+Standards-Version: 4.5.0
+Section: text
+Homepage: http://nuspell.github.io/
+Vcs-Browser: https://github.com/nuspell/nuspell
+Vcs-Git: https://github.com/nuspell/nuspell.git
+
+Package: libnuspell-dev
+Section: libdevel
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends},
+ libnuspell-3.0 (= ${binary:Version})
+Multi-Arch: same
+Description: spell checker (development)
+ Nuspell is a free and open source spell checker that is written in modern C++.
+ It is designed for languages with rich morphology and complex word compounding.
+ .
+ Main features are:
+  - Full unicode support backed by ICU
+  - Backward compatibility with Hunspell dictionary file format
+  - Twofold affix stripping (for agglutinative languages, like Azeri,
+    Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compounds (for example, Hungarian, Germand and Dutch)
+  - Support language specific features (for example, special casing of
+    Azeri and Turkish dotted i, or German sharp s)
+  - Handle conditional affixes, circumfixes, fogemorphemes, forbidden
+    words, pseudoroots and homonyms.
+ .
+ This package contains the development files.
+
+Package: libnuspell-3.0
+Section: libs
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Recommends: hunspell-en-us
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Description: spell checker (shared library)
+ Nuspell is a free and open source spell checker that is written in modern C++.
+ It is designed for languages with rich morphology and complex word compounding.
+ .
+ Main features are:
+  - Full unicode support backed by ICU
+  - Backward compatibility with Hunspell dictionary file format
+  - Twofold affix stripping (for agglutinative languages, like Azeri,
+    Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compounds (for example, Hungarian, Germand and Dutch)
+  - Support language specific features (for example, special casing of
+    Azeri and Turkish dotted i, or German sharp s)
+  - Handle conditional affixes, circumfixes, fogemorphemes, forbidden
+    words, pseudoroots and homonyms.
+ .
+ This package contains the shared library.
+
+Package: nuspell
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, hunspell-en-us
+Multi-Arch: foreign
+Description: spell checker (program)
+ Nuspell is a free and open source spell checker that is written in modern C++.
+ It is designed for languages with rich morphology and complex word compounding.
+ .
+ Main features are:
+  - Full unicode support backed by ICU
+  - Backward compatibility with Hunspell dictionary file format
+  - Twofold affix stripping (for agglutinative languages, like Azeri,
+    Basque, Estonian, Finnish, Hungarian, Turkish, etc.)
+  - Support complex compounds (for example, Hungarian, Germand and Dutch)
+  - Support language specific features (for example, special casing of
+    Azeri and Turkish dotted i, or German sharp s)
+  - Handle conditional affixes, circumfixes, fogemorphemes, forbidden
+    words, pseudoroots and homonyms.
+ .
+ This package contains the command-line program.
+

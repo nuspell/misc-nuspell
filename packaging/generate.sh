@@ -60,7 +60,7 @@ echo 'LONG:\t'$LONG
 echo 'PATCH:\t'$PATCH
 
 # Do generic actions
-rm -rf packages/$OS
+#rm -rf packages/$OS
 mkdir -p packages/$OS
 echo 'INFO: Working directory is pacakges/'$OS
 cd packages/$OS
@@ -89,12 +89,12 @@ if [ $PKGM = dpkg ]; then
 	tar xf ../$ORIG 'nuspell-'$LONG'/COPYING'
 	mv 'nuspell-'$LONG'/COPYING' copyright
 
-	rmdir 'nuspell-'$LONG
+#	rmdir 'nuspell-'$LONG
 	cd ..
 
 	# Create .debian.tar.xz archive with Debian related files
 	ARCH='nuspell_'$LONG'-'$PATCH'.debian.tar.xz'
-	rm -f $ARCH
+#	rm -f $ARCH
 	tar cfJ $ARCH debian
 
 	# Create Debian description file .dsc
