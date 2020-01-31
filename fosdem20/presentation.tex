@@ -83,10 +83,7 @@ Spell checking is \alert{not trivial}
 \item long history of decades with \texttt{spell}, \texttt{ispell}, \texttt{aspell}, \texttt{myspell}, \texttt{hunspell} and now \texttt{nuspell}
 \end{itemize}
 \mbox{}\\
-See also my talks at FOSDEM 2019 and FOSDEM 2016 at\\
-\href{https://archive.fosdem.org/2019/schedule/event/nuspell}{archive.fosdem.org/2019/schedule/event/nuspell} and\\
-\href{https://archive.fosdem.org/2016/schedule/event/integrating\_spell\_and\_grammar\_checking}{archive.fosdem.org/2016/\\schedule/event/integrating\_spell\_and\_grammar\_checking}
-
+See also my talks at \href{https://archive.fosdem.org/2019/schedule/event/nuspell}{FOSDEM 2019} and \href{https://archive.fosdem.org/2016/schedule/event/integrating\_spell\_and\_grammar\_checking}{FOSDEM 2016}
 \end{frame}
 
 \begin{frame}{Nuspell – Goals}
@@ -101,34 +98,31 @@ Nuspell's goals are
 \item suitable for further development and optimizations
 \end{itemize}
 \mbox{}\\
-Implemented in object-oriented, templated and modern C++.
+Written in object-oriented, templated and modern C++
 \end{frame}
 
 \begin{frame}{Nuspell – Features}
 Nuspell supports
 \begin{itemize}
 \item many character encodings
-\item compounding
+\item complex word compounding
 \item affixing
-\item complex morphology
+\item rich morphology
 \item suggestions
 \item personal dictionaries
-\item 167 (regional) languages via 89 existing dictionaries
+\item 170 (regional) languages via 90 existing dictionaries
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Nuspell – Support}
-Mozilla Open Source Support (MOSS) funded in 2018 the creation of Nuspell. Thanks to Gerv Markham$^†$ and Mehan Jayasuriya. See \href{https://mozilla.org/moss}{mozilla.org/moss} for more information.
-
-Mozilla Open Source Support (MOSS) funded in 209/2020 the development of Nuspell version 3. Thanks to Mehan Jayasuriya and Bas Schouten. See \href{https://mozilla.org/moss}{mozilla.org/moss} for more information.
-
+Mozilla Open Source Support (MOSS) funded in 2018 the creation of Nuspell. Thanks to Gerv Markham$^†$ and Mehan Jayasuriya. In 2019/2020 MOSS funded the development of Nuspell version 3. Thanks to Mehan Jayasuriya and Bas Schouten. See \href{https://mozilla.org/moss}{mozilla.org/moss} for more information.
 
 \begin{figure}
 \centering
 \def\svgwidth{.75\columnwidth}
 \input{images/logo-mozilla.pdf_tex}
 \end{figure}
-Verification Hunspell has a mean precision of 1.000 and accuracy of 0.997. Perfect match 70\% of tested languages. On average checking 30\% faster and suggestions 8× faster.
+Verification Hunspell has a mean precision of 1.000 and accuracy of 0.999. Perfect match 90\% of languages. \alert{Speed*.}
 \end{frame}
 
 
@@ -168,76 +162,49 @@ Examples of non-trivial case detection and conversion
 
 \begin{frame}{Workings – Suggestions}
 \begin{enumerate}
-\item upper case* \hfill \texttt{TODOh\alert{[ëê]}llo $\rightarrow$ TODOh\alert{e}llo}
+\item upper case* \hfill \texttt{\alert{floss} $\rightarrow$ \alert{FLOSS}}
 \item replacement table \hfill \texttt{h\alert{[ëê]}llo $\rightarrow$ h\alert{e}llo}
 \item mapping table \hfill \texttt{he\alert{łło\$} $\rightarrow$ he\alert{llo}}
-\item adjacent swap* \hfill \texttt{TODOh\alert{h}ello $\rightarrow$ TODOhello}
-\item distant swap* \hfill \texttt{TODOh\alert{h}ello $\rightarrow$ TODOhello}
+\item adjacent swap* \hfill \texttt{\alert{eh}l\alert{ol} $\rightarrow$ \alert{he}l\alert{lo}}
+\item distant swap* \hfill \texttt{\alert{l}e\alert{h}lo $\rightarrow$ \alert{h}e\alert{l}lo}
 \item keyboard layout \hfill \texttt{h\alert{r}llo $\rightarrow$ h\alert{e}llo}
 \item extra character \hfill \texttt{h\alert{h}ello $\rightarrow$ hello}
 \item forgotten character \hfill \texttt{hllo $\rightarrow$ h\alert{e}llo}
-\item move character* \hfill \texttt{TODOhell\alert{ø} $\rightarrow$ TODOhell\alert{o}}
+\item move character* \hfill \texttt{h\alert{l}l\alert{e}o $\rightarrow$ h\alert{e}l\alert{l}o}
 \item bad character \hfill \texttt{hell\alert{ø} $\rightarrow$ hell\alert{o}}
-\item doubled two characters* \hfill \texttt{TODOhell\alert{ø} $\rightarrow$ TODOhell\alert{o}}
-\item two words suggest* \hfill \texttt{TODOhell\alert{ø} $\rightarrow$ TODOhell\alert{o}}
+\item doubled two characters* \hfill \texttt{\alert{iriri}dium $\rightarrow$ \alert{iri}dium}
+\item two words suggest* \hfill \texttt{run\alert{-time} $\rightarrow$ run\alert{. Time}}
 \item phonetic mapping \hfill \texttt{\alert{\^{}el}lo $\rightarrow$ \alert{hel}lo}
 \end{enumerate}
-\end{frame}
-
-\begin{frame}{WorkingsTODO – Dependencies}
-\begin{itemize}
-\item \tiny \texttt{\alert{gspell}: balsa, corebird, evince, evolution, geary, gedit, gnome-builder, gnome-recipes, gnome-software, gnote, gtranslator, latexila, osmo, polari}
-\item \tiny \texttt{\alert{ispell}: bgoffice, dsdo, eo-spell, eoconv, eog, eog-plugins, espa-nol, espctag, espeak, espeak-ng, espeakedit, espeakup, esperanza, espresso, esptool, hkgerman, hkl, hl-todo-el, hlbr, hlbrw, ifrench, ifrench-gut, ifrit, ifscheme, ifstat, iftop, ifupdown, ifupdown-extra, ifupdown-multi, ifupdown2, ifuse, igal2, igdiscover, igmpproxy, ignition-cmake, ignition-cmake2, ignition-common, ignition-fuel-tools, ignition-math2, ignition-math4, ignition-msgs, ignition-transport, ignore-me, igor, igraph, igtf-policy-bundle, ii, ii-esu, iio-sensor-proxy, ippl, ippusbxd, iprange, iproute2, iprutils, ips, ipset, ipsvd, iptables, iptables-converter, iptables-netflow, iptables-optimizer, iptables-persistent, iptotal, iptraf-ng, iptstate, iptux, iputils, ipv6calc, ipv6pref, ipv6toolkit, ipvsadm, ipwatchd, ipwatchd-gnotify, ipxe, ipxe-qemu-256k-compat, irda-utils, irqbalance, irssi, isc-dhcp, isl, ispellcat, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, iucode-tool, iw, jackd2, m17n-lib, magyarispell, norwegian, petname, pkg-perl-tools, pkg-php-tools, pkgconf, pkgdiff, pkgsel, pkgsync, pktanon, pktools, pktstat, softcatala-spell}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{WorkingsTODO – Dependencies}
-\begin{itemize}
-\item \tiny \texttt{\alert{python3-enchant}: mwic, ocrfeeder, pygtkspellcheck, python-autobahn, python-avro, python-aws-requests-auth, python-aws-xray-sdk, python-axolotl, python-axolotl-curve25519, python-azure, python-azure-devtools, python-azure-storage, python-b2sdk, python-babelgladeextractor, python-backcall, python-backports-abc, python-backports-shutil-get-terminal-size, python-backports.tempfile, python-backports.weakref, python-base58, python-txaio, python-txosc, python-typeguard, python-typing, python-typing-extensions, python-tz, python-tzlocal, sphinxcontrib-spelling, translate-toolkit, translation-finder, translatoid, transmageddon, transmission, transmission-el, transmission-remote-cli, transmission-remote-gtk, transmissionrpc, transrate-tools, transtermhp, trapperkeeper-clojure, trapperkeeper-metrics-clojure, trapperkeeper-scheduler-clojure, trapperkeeper-status-clojure, trapperkeeper-webserver-jetty9-clojure, trash-cli, traverso, travis, trayer, tre, tree, tree-puzzle, tree-style-tab, virtaal}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{WorkingsTODO – Dependencies}
-\begin{itemize}
-\item \tiny \texttt{\alert{hunspell}: aegisub, calibre, chromium, chromium-browser, codeblocks, codelite, dict-af, dict-nr, dict-ns, dict-ss, dict-st, dict-tn, dict-ts, dict-ve, dict-xh, dict-zu, dictd, dutch, dv4l, dvbackup, dvbcut, dvblast, dvbsnoop, dvbstream, dvbstreamer, dvbtune, dvcs-autosync, dvd+rw-tools, dvd-slideshow, dvdauthor, dvdbackup, dwz, e2fsprogs, ebtables, ec2-hibinit-agent, ed, edk2, efibootmgr, efivar, eject, elfutils, emacs, emacsen-common, enchant, enchant-2, entrypoints, eo-spell, eoconv, eog, eog-plugins, espa-nol, espctag, espeak, espeak-ng, espeakedit, espeakup, esperanza, espresso, esptool, featherpad, focuswriter, ghostwriter, goldendict, gwaei, hspell, hunspell-bo, hunspell-dz, ifrench, ifrench-gut, ifrit, ifscheme, ifstat, iftop, ifupdown, ifupdown-extra, ifupdown-multi, ifupdown2, ifuse, igaelic, igal2, igdiscover, igerman98, igmpproxy, ignition-cmake, ignition-cmake2, ignition-common, ignition-fuel-tools, ignition-math2, ignition-math4, ignition-msgs, ignition-transport, ignore-me, igor, igraph, igtf-policy-bundle, ii, ii-esu, iio-sensor-proxy, iirish, ispell-czech, ispell-fi, ispell-fo, ispell-gl, ispell-lt, ispell-tl, ispell-uk, ispell.pt, ispellcat, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, iucode-tool, iw, jackd2, libgtk2-spell-perl, libreoffice, libtext-hunspell-perl, link-grammar, lokalize, mudlet, mythes, nixnote2, norwegian, onboard, pkg-perl-tools, pkg-php-tools, pkgconf, pkgdiff, pkgsel, pkgsync, pktanon, pktools, pktstat, plume-creator, psi-plus, pyhunspell, qtvirtualkeyboard-opensource-src, scribus, scribus-ng, sigil, sonnet, sphinxcontrib-spelling, tea, texstudio, texworks, thunderbird}
-\end{itemize}
-\end{frame}
-
-\begin{frame}{WorkingsTODO – Dependencies}
-\begin{itemize}
-\item \tiny \texttt{\alert{libenchant}: abiword, ayttm, bibledit-gtk, bluefish, claws-mail, empathy, evolution, fcitx, fcitx5, geany-plugins, geary, gnome-builder, gnome-subtitles, gspell, gtkhtml4.0, gtkspell, gtkspell3, java-gnome, kadu, kde4libs, kvirc, lifeograph, lyx, ogmrip, php7.1, php7.2, php7.3, pluma, psi, purple-plugin-pack, pyenchant, qtspell, stardict, subtitleeditor, sylpheed, webkit, webkit2gtk, webkitgtk, xneur
-python3-enchant: mwic, ocrfeeder, pygtkspellcheck, python-autobahn, python-avro, python-aws-requests-auth, python-aws-xray-sdk, python-axolotl, python-axolotl-curve25519, python-azure, python-azure-devtools, python-azure-storage, python-b2sdk, python-babelgladeextractor, python-backcall, python-backports-abc, python-backports-shutil-get-terminal-size, python-backports.tempfile, python-backports.weakref, python-base58, python-txaio, python-txosc, python-typeguard, python-typing, python-typing-extensions, python-tz, python-tzlocal, sphinxcontrib-spelling, translate-toolkit, translation-finder, translatoid, transmageddon, transmission, transmission-el, transmission-remote-cli, transmission-remote-gtk, transmissionrpc, transrate-tools, transtermhp, trapperkeeper-clojure, trapperkeeper-metrics-clojure, trapperkeeper-scheduler-clojure, trapperkeeper-status-clojure, trapperkeeper-webserver-jetty9-clojure, trash-cli, traverso, travis, trayer, tre, tree, tree-puzzle, tree-style-tab, virtaal}
-\end{itemize}
 \end{frame}
 
 
 
 \begin{frame}{Workings – Initialization}
-Initialize Nuspell in four steps in C++\\\mbox{}
 \begin{itemize}
-\item find, get and load dictionary\\
-\texttt{auto find = Finder::\alert{search\_all\_dirs\_for\_dicts}();\\
-auto path = find.\alert{get\_dictionary\_path}("en\_US");\\
-auto dic = Dictionary::\alert{load\_from\_path}(path);}
+\item find dictionaries\\
+\texttt{auto find = Finder::\alert{search\_all\_dirs\_for\_dicts}();}
 \\\mbox{}
-\item associate currently active locale\\
-\texttt{boost::locale::generator gen;\\
-auto loc = gen("");\\
-dic.\alert{imbue}(loc);}
+\item get all dictionary paths\\
+\texttt{auto paths = finder.\alert{get\_dir\_paths}();}
+\\\mbox{}
+\item get specific dictionary path\\
+\texttt{auto path = find.\alert{get\_dictionary\_path}("en\_US");}
+\\\mbox{}
+\item load dictionary\\
+\texttt{auto dic = Dictionary::\alert{load\_from\_path}(path);}
 \end{itemize}
-\mbox{}\\
-These steps are more simple when using the API.
 \end{frame}
 
 \begin{frame}{Workings – Usage}
-Use Nuspell by simply calling to\\\mbox{}
+Use Nuspell by simply calling \\\mbox{}
 \begin{itemize}
 \item check spelling\\
 \texttt{auto spelling = false;\\
 spelling = dic.\alert{spell}(word);}
 \\\mbox{}
 \item find suggestions\\
-\texttt{auto suggestions = List\_Strings();\\
+\texttt{auto suggestions = vector<string>();\\
 dic.\alert{suggest}(word, suggestions);}
 \end{itemize}
 \end{frame}
@@ -246,45 +213,20 @@ dic.\alert{suggest}(word, suggestions);}
 
 \section{Technologies}
 
-\begin{frame}{Technologies – Headers}
-Headers used in build process
-\\\mbox{}
-\begin{itemize}
-\item C++17 library\\
-e.g. GNU Standard C++ Library\\
-\href{https://gcc.gnu.org/}{libstdc++} ≥ 7.0
-\\\mbox{}
-\item Boost.Locale\\
-C++ facilities for localization\\
-\href{https://www.boost.org/doc/libs/1_69_0/libs/locale/doc/html/index.html}{boost-locale} ≥ 1.62
-\end{itemize}
-\end{frame}
-
 \begin{frame}{Technologies – Libraries}
-Libraries used in run-time
-\\\mbox{}
 \begin{itemize}
 \item C++17 library\\
 e.g. GNU Standard C++ Library\\
 \href{https://gcc.gnu.org/}{libstdc++} ≥ 7.0
-\\\mbox{}
-\item Boost.Locale\\
-C++ facilities for localization\\
-\href{https://www.boost.org/doc/libs/1_69_0/libs/locale/doc/html/index.html}{boost-locale} ≥ 1.62
 \\\mbox{}
 \item International Components for Unicode (ICU)\\
 a C++ library for Unicode and locale support\\
 \href{http://site.icu-project.org/}{icu} ≥ 57.1
-\end{itemize}
-\end{frame}
-
-\begin{frame}{Technologies – Improvements}
-TODO
 \\\mbox{}
-\begin{itemize}
-\item C++14 → C++17
-\item dropped
-\item default support for UTF8, dropping usage of imbue, locale and codecvt and Bost header file
+\item Boost.Locale\\
+C++ facilities for localization\\
+\href{https://www.boost.org/doc/libs/1_69_0/libs/locale/doc/html/index.html}{boost-locale} ≥ 1.62\\
+only at build-time or by the command-line tool
 \end{itemize}
 \end{frame}
 
@@ -293,20 +235,15 @@ Currently supported compilers to build Nuspell
 \begin{itemize}
 \item GNU GCC compiler \href{https://gcc.gnu.org/}{g++} ≥ 7.0
 \item LLVM Clang compiler \href{https://clang.llvm.org/}{clang} ≥ 5.0
-\item Microsoft Visual C++ compiler \href{https://docs.microsoft.com/en-us/cpp/}{MSVC} ≥ 2017
-\end{itemize}
-\mbox{}\\
-Upcoming supported compilers
-\begin{itemize}
 \item MinGW with MSYS \href{http://mingw.org/}{mingw}
-\item GNU GCC compiler 6.0 (backport)
+\item Microsoft Visual C++ compiler \href{https://docs.microsoft.com/en-us/cpp/}{MSVC} ≥ 2017
 \end{itemize}
 \end{frame}
 
 \begin{frame}{Technologies – Tools}
 Tools used for development
 \begin{itemize}
-\item build tools such as Autoconf, Automake, Make, Libtool and pkg-config
+\item build tools such as CMake
 \item QtCreator for development and debugging, also possible with gdb and other command-line tools
 \item unit testing with Catch2
 \item continuous integration with Travis for GCC and Clang and coming soon AppVeyor for MinGW
@@ -316,31 +253,107 @@ Tools used for development
 \end{itemize}
 \end{frame}
 
+\begin{frame}{Technologies – Improvements}
+\begin{itemize}
+\item migration to CMake
+\item upgrade from C++14 to C++17
+\item API defaults to UTF8, easier API usage
+\item improved compounding and improved suggestions
+\item 3× faster as Hunspell
+\item Enchant integration
+\item Debian/Ubuntu packages
+\end{itemize}
+\mbox{}\\
+Upcoming Firefox integration and more improvements
+\end{frame}
+
+
+
+\section{Dependencies}
+
+\begin{frame}{Dependencies – On gspell}
+balsa, corebird, \alert{evince}, \alert{evolution}, geary, \alert{gedit}, gnome-builder, gnome-recipes, gnome-software, gnote, gtranslator, latexila, osmo, polari\\
+\mbox{}\\
+Package dependencies
+\begin{itemize}
+\item Debian, Ubuntu and Raspbian
+\item build and run-time
+\item dependent and independent of architecture
+\item excluding word lists and spell checking dictionaries
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Dependencies – On enchant}
+abiword, ayttm, bibledit-gtk, bluefish, claws-mail, empathy, \alert{evolution}, fcitx, fcitx5, geany-plugins, geary, gnome-builder, gnome-subtitles, \alert{gspell}, gtkhtml4.0, \alert{gtkspell}, \alert{gtkspell3}, java-gnome, kadu, kde4libs, kvirc, lifeograph, lyx, ogmrip, php7.1, php7.2, php7.3, pluma, psi, purple-plugin-pack, \alert{pyenchant}, \alert{qtspell}, stardict, subtitleeditor, sylpheed, webkit, webkit2gtk, webkitgtk, xneur
+\end{frame}
+
+\begin{frame}{Dependencies – On ispell}
+\small bgoffice, dsdo, eoconv, eog, eog-plugins, espa-nol, espctag, espeak, espeak-ng, espeakedit, espeakup, esperanza, espresso, esptool, hkl, hl-todo-el, hlbr, hlbrw, ifrit, ifscheme, ifstat, iftop, ifupdown, ifupdown-extra, ifupdown-multi, ifupdown2, ifuse, igal2, igdiscover, igmpproxy, ignition-cmake, ignition-cmake2, ignition-common, ignition-fuel-tools, ignition-math2, ignition-math4, ignition-msgs, ignition-transport, ignore-me, igor, igraph, igtf-policy-bundle, ii, ii-esu, iio-sensor-proxy, ippl, ippusbxd, iprange, iproute2, iprutils, ips, ipset, ipsvd, iptables, iptables-converter, iptables-netflow, iptables-optimizer, iptables-persistent, iptotal, iptraf-ng, iptstate, iptux, iputils, ipv6calc, ipv6pref, ipv6toolkit, ipvsadm, ipwatchd, ipwatchd-gnotify, ipxe, ipxe-qemu-256k-compat, irda-utils, irqbalance, irssi, isc-dhcp, isl, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, iucode-tool, iw, jackd2, m17n-lib, petname, pkg-perl-tools, pkg-php-tools, pkgconf, pkgdiff, pkgsel, pkgsync, pktanon, pktools, pktstat, softcatala-spell
+\end{frame}
+
+\begin{frame}{Dependencies – On python3-enchant}
+\small mwic, ocrfeeder, \alert{pygtkspellcheck}, python-autobahn, python-avro, python-aws-requests-auth, python-aws-xray-sdk, python-axolotl, python-axolotl-curve25519, python-azure, python-azure-devtools, python-azure-storage, python-b2sdk, python-babelgladeextractor, python-backcall, python-backports-abc, python-backports-shutil-get-terminal-size, python-backports.tempfile, python-backports.weakref, python-base58, python-txaio, python-txosc, python-typeguard, python-typing, python-typing-extensions, python-tz, python-tzlocal, sphinxcontrib-spelling, translate-toolkit, translation-finder, translatoid, transmageddon, transmission, transmission-el, transmission-remote-cli, transmission-remote-gtk, transmissionrpc, transrate-tools, transtermhp, trapperkeeper-clojure, trapperkeeper-metrics-clojure, trapperkeeper-scheduler-clojure, trapperkeeper-status-clojure, trapperkeeper-webserver-jetty9-clojure, trash-cli, traverso, travis, trayer, tre, tree, tree-puzzle, tree-style-tab, virtaal
+\end{frame}
+
+\begin{frame}{Dependencies – On hunspell}
+\footnotesize aegisub, calibre, chromium, \alert{chromium-browser}, codeblocks, codelite, dictd, dv4l, dvbackup, dvbcut, dvblast, dvbsnoop, dvbstream, dvbstreamer, dvbtune, dvcs-autosync, dvd+rw-tools, dvd-slideshow, dvdauthor, dvdbackup, dwz, e2fsprogs, ebtables, ec2-hibinit-agent, ed, edk2, efibootmgr, efivar, eject, elfutils, emacs, emacsen-common, enchant, \alert{enchant-2}, entrypoints, eoconv, eog, eog-plugins, espa-nol, espctag, espeak, espeak-ng, espeakedit, espeakup, esperanza, espresso, esptool, featherpad, focuswriter, ghostwriter, goldendict, gwaei, \alert{hspell}, ifrit, ifscheme, ifstat, iftop, ifupdown, ifupdown-extra, ifupdown-multi, ifupdown2, ifuse, igaelic, igal2, igdiscover, igmpproxy, ignition-cmake, ignition-cmake2, ignition-common, ignition-fuel-tools, ignition-math2, ignition-math4, ignition-msgs, ignition-transport, ignore-me, igor, igraph, igtf-policy-bundle, ii, ii-esu, iio-sensor-proxy, \alert{ispellcat}, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, iucode-tool, iw, jackd2, libgtk2-spell-perl, libreoffice, libtext-hunspell-perl, link-grammar, lokalize, mudlet, \alert{mythes}, nixnote2, onboard, pkg-perl-tools, pkg-php-tools, pkgconf, pkgdiff, pkgsel, pkgsync, pktanon, pktools, pktstat, plume-creator, psi-plus, \alert{pyhunspell}, qtvirtualkeyboard-opensource-src, scribus, \alert{scribus-ng}, sigil, sonnet, sphinxcontrib-spelling, tea, texstudio, texworks, \alert{thunderbird}
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 1/6}
+\tiny almanah, drivel, evolution, geany-plugins, gimagereader, gitg, gnome-subtitles, gnote, golang-github-mattn-go-gtk, gpdftext, \alert{gtkspellmm}, gummi, hocr, inkscape, inkscape-open-symbols, inkscape-speleo, inkscape-survex-export, inn, inn2, innfeed, innoextract, ino-headers, inosync, inotail, inoticoming, inotify-hookable, inotify-tools, inotifyx, input-pad, input-utils, inputlirc, inputplug, insighttoolkit4, inspectrum, inspircd, insserv, install-mimic, installation-birthday, installation-guide, installation-locale, installation-report, instant, instaparse-clojure, instead, insubstantial, integrit, intel-cmt-cat, intel-compute-runtime, intel-gmmlib, intel-gpu-tools, intel-graphics-compiler, intel-ipsec-mb, intel-media-driver, intel-mediasdk, intel-opencl-clang, intel-processor-trace, intel-vaapi-driver, intel2gas, intelhex, intellij-annotations, intellij-java-compatibility, inteltool, intercal, interchange, interimap, intlfonts, intltool, intltool-debian, invada-studio-plugins, invada-studio-plugins-lv2, invaders, inventor, invesalius, invokebinder, inxi, io-stringy, ioapps, iodine, iog, iok, ion, ionit, ioping, ioport, ioprocess, ioquake3, iotjs, iotop, ip2host, ip4r, ipadic, ipband, ipcalc, ipcheck, ipdb, ipe, ipe-tools, ipe5toxml, iperf, iperf3, ipfm, ipgrab, ipheth, ipig, ipip, ipkungfu, ipmctl, ipmitool, ipmiutil, ipolish, ippl, ippsample, ippusbxd, iprange, iprelay, iprint, iproute2, iprutils, ips, ipsec-tools, ipset, ipsvd, iptables, iptables-converter, iptables-netflow, iptables-optimizer, iptables-persistent, iptotal, iptraf, iptraf-ng, iptstate, iptux, iputils, ipv6calc, ipv6pref, ipv6toolkit, ipvsadm, ipwatchd, ipwatchd-gnotify, ipxe, ipy, ipykernel, ipykernel-py2, ipython, ipython-genutils, ipython-py2, ipywidgets, iqtree, ir.lv2, iraf, iraf-fitsutil, iraf-mscred, iraf-rvsao, iraf-sptable, ircd-hybrid, ircd-irc2, ircd-ircu, ircd-ratbox, ircii, irclog2html, ircmarkers, ircp-tray, irda-utils, iripdb, irker, iroffer, ironic, ironic-discoverd, ironic-inspector, ironic-ui, irony-mode, irqbalance, irrlicht, irsim, irssi, irssi-plugin-robustirc, irssi-plugin-xmpp, irssi-scripts, irstlm, irtt, isa-support, isakmpd, isatapd, isbg, isbnlib, isc-dhcp, isc-kea, iscpy, iscsitarget, isdnutils, iselect, isenkram, isl, isl-0.18, islamic-menus, ismrmrd, isns, iso-codes, iso-flags-svg, iso-scan, isodate, isomaster, isomd5sum, isoqlog, isoquery, isorelax, isort, isospec, \alert{ispell}, \alert{ispellcat}, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, itango, itcl3, itcl4, itk3, itk4, itksnap, itools, itop, its, its-playback-time, itsalltext, itsol, itstool, itypes, iulib, iva, iverilog, ivtools, ivulncheck, ivy, ivy-debian-helper, ivykis, ivyplusplus, iw, iwatch, iwd, iwidgets4, iwyu, ixo-usb-jtag, j4-dmenu-desktop, jaaa, jabber-irc, jabber-muc, jabber-querybot, jabber.py, jabberbot, jabberd2, jablicator, jabref, jabref-plugin-oo, jabsorb, jacal, jack, jack-audio-connection-kit, jack-capture, jack-delay, jack-keyboard, jack-midi-clock, jack-mixer, jack-rack, jack-stdio, jack-tools, jackd-defaults, jackd2, jackeq, jackmeter, jackrabbit, jackson-annotations, jackson-core, jackson-databind, jackson-dataformat-cbor, jackson-dataformat-smile, jackson-dataformat-xml, jackson-dataformat-yaml, jackson-datatype-guava, jackson-datatype-joda, jackson-jaxrs-providers, jackson-jr, jackson-module-afterburner, jackson-module-jaxb-annotations, …
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 2/6}
+\tiny jacksum, jacktrip, jacoco, jade, jaffl, jag, jags, jailer, jailkit, jailtool, jajuk, jakarta-ecs, jakarta-jmeter, jakarta-taglibs-standard, jaligner, jalv, jalview, jam, jam-lib, jama, jameica, jameica-datasource, jameica-util, jamin, jaminid, jamm, jamnntpd, jana, janest-base, janest-ocaml-compiler-libs, janino, jansi, jansi-native, jansson, janus, japa, japi-compliance-checker, japitools, jaraco.itertools, jaranalyzer, jarchivelib, jardiff, jargon, jargon-text, jargoninformatique, jargs, jarisplayer, jarjar, jarjar-maven-plugin, jas, jas-plotter, jasmin-sable, jasper, jasperreports, jasperreports3.7, jasypt, jatl, jattach, jaula, java-allocation-instrumenter, java-atk-wrapper, java-classpath-clojure, java-comment-preprocessor, java-common, java-diff-utils, java-gnome, java-imaging-utilities, java-jmx-clojure, java-policy, java-sdp-api, java-sip-api, java-snmp, java-string-similarity, java-wrappers, java-xmlbuilder, java2html, java3d, java3ds-fileloader, javabeans-activation-framework, javacc, javacc-maven-plugin, javacc4, javafxsvg, javahelp2, javamail, javamorph, javaparser, javapoet, javascript-common, javassist, javatar, javatools, javatuples, javawriter, jawn, jax-maven-plugin, jaxb, jaxb-api, jaxb2-maven-plugin, jaxe, jaxme, jaxml, jaxrpc-api, jaxrs-api, jaxws, jaxws-api, jayatana, jayway-jsonpath, jazip, jbig2dec, jbigkit, jblas, jbofihe, jboss-annotations-1.2-api, jboss-bridger, jboss-classfilewriter, jboss-jdeparser2, jboss-logging, jboss-logging-tools, jboss-logmanager, jboss-modules, jboss-threads, jboss-xnio, jbuilder, jcal, jcc, jcdf, jcharts, jcifs, jclassinfo, jclic, jclicmoodle, jcm, jcodings, jcommander, jcommon-serializer, jconvolver, jcsp, jctools, jd, jdcal, jdeb, jdelay, jdependency, jdim, jdresolve, jdupes, jebl2, jed, jed-extra, jedit, jeepney, jeepyb, jeex, jekyll, jel, jellydoc, jellyfish, jellyfish1, jemalloc, jengelman-shadow, jenkins-commons-jexl, jenkins-constant-pool-scanner, jenkins-crypto-util, jenkins-debian-glue, jenkins-dom4j, jenkins-executable-war, jenkins-htmlunit, jenkins-htmlunit-core-js, jenkins-job-builder, jenkins-json, jenkins-memory-monitor, jenkins-remoting, jenkins-task-reactor, jenkins-test-annotations, jenkins-trilead-ssh2, jenkins-xstream, jep, jerasure, jericho-html, jeromq, jerry, jersey1, jesd, jesred, jester, jetring, jets3t, jetty9, jeuclid, jexcelapi, jfbterm, jffi, jffnms, jflex, jformatstring, jfractionlab, jfsutils, jftp, jfugue, jgit, jglobus, jgraph, jgromacs, jgrowl, jhbuild, jhdf, jhead, jheatchart, jhighlight, jiconfont, jiconfont-font-awesome, jiconfont-swing, jid, jifty, jigdo, jigit, jigl, jigsaw-generator, jigzo, jiipview, jikespg, jimfs, jimtcl, jing-trang, jinja, jinja2, jinja2-mode, jinja2-time, jinput, jirc, jitescript, jitterdebugger, jitterentropy-rngd, jkmeter, jlapack, jless, jlex, jlha-utils, jlibeps, jline, jline2, jlint, jmagick, jmapviewer, jmdns, jmespath.php, jmeters, jmock, jmock2, jmodeltest, jmol, jmtpfs, jmxetric, jnati, jnettop, jni-inchi, jnlp-servlet, jnoise, jnoisemeter, jnr-constants, jnr-enxio, jnr-ffi, jnr-netdb, jnr-posix, jnr-unixsocket, jnr-x86asm, jo, joblib, jocaml, joda-convert, jodconverter, jodconverter-cli, jodd, jodreports, joe, john, jokosher, jool, joptsimple, jose, josm, josql, jove, jovie, joy2key, joystick, jp, jp2a, jpathwatch, jpeginfo, jpegjudge, jpegoptim, jpegpixi, jpilot, jpilot-backup, jpnevulator, jpy, jpylyzer, jq, jqapi, jquery, jquery-areyousure, jquery-at.js, jquery-caret.js, jquery-colorbox, jquery-coolfieldset, jquery-geo, …
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 3/6}
+\tiny jquery-goodies, jquery-i18n-properties, jquery-i18n.js, jquery-jplayer, jquery-jplayer-bluemonday, jquery-jplayer-circleplayer, jquery-jplayer-pinkflag, jquery-lazyload, jquery-migrate-1, jquery-minicolors, jquery-mobile, jquery-reflection, jquery-simpletreemenu, jquery-slugify.js, jquery-tablesorter, jquery-throttle-debounce, jquery-timepicker, jquery-timer.js, jquery-typeahead.js, jquery-ui-themes, jquery-ui-touch-punch.js, jquery-watermark, jquery.sparkline, jqueryui, jreen, jrexx, jruby, jruby-joni, jruby-maven-plugins, jruby-openssl, js-build-tools, js-of-ocaml, js2-mode, js8call, jsamp, jsap, jsbundle-web-interfaces, jsch, jsch-agent-proxy, jscommunicator, jscoverage, jscropperui, jsdebugger, jsdoc-toolkit, jsemver, jshash, jshon, jsilver, jsjac, jsmath, jsmath-fonts, jsmath-fonts-sprite, jsmpp, json-c, json-editor.js, json-glib, json-js, json-schema-validator, json-simple, json-smart, json-spirit, json-static, json-tricks, json-wheel, json11, json4s, jsonb-api, jsonbot, jsonhyperschema-codec, jsonld-java, jsonlint, jsonm, jsonnet, jsonpickle, jsonpipe, jsonrpc-glib, jsonrpclib-pelix, jsoup, jsp-api, jsquery, jsr107cache, jsrender, jss, jssc, jssip, jstest-gtk, jstimezonedetect.js, jsunit, jsurf-alggeo, jsusfx, jsxgraph, jsymphonic, jta, jtb, jtex-base, jtharness, jthread, jtidy, jtreg, jts, jube, juce, judy, juffed, jug, jugglemaster, jugglinglab, juju, juju-deployer, juju-jitsu, juk, juke, julia, julia-factcheck, julius-voxforge, juman, jumpnbump, jumpnbump-levels, junior-doc, junit, junit4, junit5, junitparser, junitperf, junixsocket, junkfilter, junos-eznc, jupp, jupyter-client, jupyter-console, jupyter-core, jupyter-notebook, jupyter-sphinx, jupyter-sphinx-theme, jutils, jvim, jvyamlb, jwchat, jwhois, jwm, jwordsplitter, jws-api, jxgrabkey, jxplorer, jxrlib, jython, jzip, jzlib, jzmq, k2pdfopt, k3b, k3d, k4dirstat, k8temp, kaa-base, kaa-imlib2, kaa-metadata, kabikaboo, kaccessible, kaccounts-integration, kaccounts-providers, kactivities, kactivities-kf5, kactivities-stats, kactivitymanagerd, kaddressbook, kadu, kadu-mime-tex, kaffeine, kafkacat, kajongg, kakasi, kakoune, kalarm, kalarmcal, kalgebra, kali, kalign, kallisto, kalternatives, kalzium, kamailio, kamcli, kamera, kamerka, kamoso, kanagram, kanatest, kanboard-cli, kanif, kanjidic, kanjipad, kanla, kannel, kannel-sqlbox, kanshi, kanyremote, kapidox, kapman, kapptemplate, kaptain, kaptive, karchive, karlyriceditor, kashmir, kasumi, katarakt, kate, kate4, katomic, kauth, kawari8, kazam, kazoo, kbackup, kball, kbd, kbd-chooser, kbdd, kbibtex, kblackbox, kblocks, kblog, kbookmarks, kboot-utils, kbounce, kbreakout, kbruch, kbtin, kbuild, kcachegrind, kcalc, kcalcore, kcalutils, kcc, kcharselect, kcheckers, kcheckgmail, kchmviewer, kcm-fcitx, kcm-gtk, kcmutils, kcodecs, kcollectd, kcolorchooser, kcompletion, kconfig, kconfig-frontends, kconfigwidgets, kcontacts, kcoreaddons, kcov, kcptun, kcrash, kcron, kdav, kdb, kdbg, kdbusaddons, kdc2tiff, kde-base-artwork, kde-baseapps, kde-cli-tools, kde-config-systemd, kde-config-whoopsie, kde-dev-scripts, kde-dev-utils, kde-gtk-config, kde-icons-crystal, kde-l10n, kde-runtime, kde-service-menu-fuseiso, kde-spectacle, kde-style-polyester, kde-wallpapers, kde4libs, kdeartwork, kdebugsettings, kdeclarative, kdeconnect, kdecoration, kded, kdeedu-data, kdegraphics-mobipocket, kdegraphics-thumbnailers, …
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 4/6}
+\tiny kdelibs4support, kdenetwork-filesharing, kdenlive, kdepim-addons, kdepim-runtime, kdepimlibs, kdeplasma-addons, kdesdk-kioslaves, kdesdk-thumbnailers, kdesignerplugin, kdesrc-build, kdesu, kdesudo, kdesvn, kdevelop, kdevelop-pg-qt, kdevelop-php, kdevelop-python, kdevplatform, kdewebkit, kdf, kdgcommons-java, kdiagram, kdialog, kdiamond, kdiff3, kdm-gdmcompat, kdnssd, kdnssd-kf5, kdocker, kdoctools, kdrill, keditbookmarks, kedpm, keepalived, keepass2, keepass2-plugin-keepasshttp, keepassx, keepassxc, keepnote, kelbt, kemoticons, kephra, keras, keras-applications, keras-preprocessing, kerberos-configs, kernel-handbook, kernel-package, kernel-patch-viewos, kernel-wedge, kerneloops, kerneltop, kernsmooth, ketchup, ketm, keurocalc, kexec-tools, kexi, key-chord-el, key-mon, keybinder, keybinder-3.0, keyboardcast, keyboards-rg, keychain, keylaunch, keyman-config, keyman-keyboardprocessor, keymapper, keynav, keyringer, keyrings.alt, keystone, keysync, keytouch-editor, keyutils, kf5-kdepim-apps-libs, kf5-messagelib, kfilemetadata, kfilemetadata-kf5, kfind, kfloppy, kfourinline, kfreebsd-10, kfreebsd-defaults, kfreebsd-kernel-headers, kgamma, kgamma5, kgb, kgb-bot, kgeography, kget, kglobalaccel, kgoldrunner, kgpg, kguiaddons, khal, khangman, khard, khelpcenter, khmer, khmerconverter, kholidays, khotkeys, khronos-api, khronos-opencl-clhpp, khronos-opencl-headers, khronos-opencl-man, khronos-opengl-man4, khtml, ki18n, kicad, kicad-footprints, kicad-packages3d, kicad-symbols, kicad-templates, kickpass, kickseed, kiconthemes, kid, kid3, kidentitymanagement, kidletime, kido, kig, kigo, kiki, kiki-the-nano-bot, kildclient, kile, killbots, killer, kim-api, kimageformats, kimagemapeditor, kimap, kimwitu, kimwitu++, kimwitu-doc, kindleclip, kineticstools, kinfocenter, king, king-probe, kinit, kino, kinput2, kio, kio-extras, kio-ftps, kio-gdrive, kio-gopher, kio-mtp, kipi-plugins, kirigami-gallery, kirigami2, kiriki, kismet, kissplice, kitchen, kitchensink-clojure, kitemmodels, kitemviews, kiten, kitinerary, kitty, kivy, kiwi, kiwisolver, kjobwidgets, kjots, kjs, kjsembed, kjumpingcube, klatexformula, klaus, klavaro, klayout, kldap, kleborate, klein, kleopatra, klettres, klibc, klick, klickety, klines, klog, klone, kluppe, klustakwik, klystrack, kma, kmag, kmahjongg, kmail, kmail-account-wizard, kmailtransport, kmbox, kmc, kmediaplayer, kmenuedit, kmer, kmer-tools, kmerresistance, kmetronome, kmfl-keyboards-mywin, kmflcomp, kmidimon, kmime, kmines, kmix, kmldonkey, kmod, kmodpy, kmousetool, kmouth, kmplayer, kmplot, kmscube, kmymoney, knack, knavalbattle, knetwalk, knews, knewstuff, knights, knitpy, knockd, knocker, knockpy, knopflerfish-osgi, knot, knot-resolver, knotes, knotifications, knotifyconfig, knowl.js, knowledgeroot, knowthelist, knutclient, knxd, ko.tex, ko.tex-extra-hlfont, ko.tex-unfonts, kobodeluxe, kodi, kodi-pvr-argustv, kodi-pvr-dvbviewer, kodi-pvr-hdhomerun, kodi-pvr-hts, kodi-pvr-iptvsimple, kodi-pvr-mediaportal-tvserver, kodi-pvr-mythtv, kodi-pvr-nextpvr, kodi-pvr-njoy, kodi-pvr-vdr-vnsi, kodi-pvr-vuplus, kodi-pvr-wmc, kodi-visualization-spectrum, kodiplatform, koffice-l10n, koji, kolab-webadmin, kolabadmin, kolf, kollision, kolourpaint, kombu, komi, komparator, kompare, kon2, konclude, konfont, konqueror, konquest, konsole, …
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 5/6}
+\tiny konsole4, kontact, kontactinterface, kontrolpack, konversation, konwert, kookbook, kopano-webapp, kopano-webapp-plugin-files, kopanocore, kopete, kore, korganizer, koules, kover, kpackage, kparts, kpartsplugin, kpat, kpatch, kpcli, kpeople, kphotoalbum, kpimtextedit, kpkpass, kplotting, kpmcore, kppp, kprinter4, kproperty, kpty, kqtquickcharts, kquickcharts, kradio4, kraft, kraken, kraken2, krank, kraptor, krb5, krb5-appl, krb5-auth-dialog, krb5-strength, krb5-sync, krdc, krecipes, kredentials, kremotecontrol, krename, kreport, kreversi, krfb, krita, kronolith2, kronometer, kronosnet, krop, kross, kross-interpreters, kruler, krunner, krusader, kryo-serializers, ksaneplugin, kscd, kscreen, kscreenlocker, kservice, ksh, kshisen, kshutdown, ksirk, ksmtp, ksmtuned, ksnakeduel, ksnapshot, kspaceduel, ksplice, ksquares, ksshaskpass, kst, kstars, kstars-data-extra-tycho2, kstart, ksudoku, ksyntax-highlighting, ksysguard, ksystemlog, ktap, kteatime, kterm, ktexteditor, ktextwidgets, kthresher, ktikz, ktimer, ktnef, ktorrent, ktouch, ktouchpadenabler, ktp-accounts-kcm, ktp-approver, ktp-auth-handler, ktp-call-ui, ktp-common-internals, ktp-contact-list, ktp-contact-runner, ktp-desktop-applets, ktp-filetransfer-handler, ktp-kded-integration-module, ktp-legacy-presence-applet, ktp-send-file, ktp-text-ui, ktuberling, kturtle, kubectx, kubernetes, kubernetes-addon-heapster, kubetail, kubrick, kubuntu-debug-installer, kubuntu-docs, kubuntu-driver-manager, kubuntu-meta, kubuntu-notification-helper, kubuntu-patched-l10n, kubuntu-settings, kubuntu-wallpapers, kubuntu-web-shortcuts, kumofs, kunitconversion, kunststoff, kup, kup-backup, kupfer, kuser, kuttypy, kuvert, kvirc, kvkbd, kvmtool, kvpnc, kwalify, kwallet, kwallet-kf5, kwallet-pam, kwalletcli, kwalletmanager, kwartz-client, kwave, kwayland, kwayland-integration, kwidgetsaddons, kwiki, kwin, kwindowsystem, kwordquiz, kwrited, kwstyle, kxd, kxl, kxml2, kxmlgui, kxmlrpcclient, kxstitch, kylin-burner, kylin-display-switch, kylin-greeter, kylin-nm, kylin-video, kyotocabinet, kyototycoon, kytea, kytos-sphinx-theme, kytos-utils, l2tpns, l7-filter-userspace, l7-protocols, labeling, labelme, lablgl, lablgtk-extras, lablgtk2, lablgtk3, lablgtkmathview, lablie, labltk, laborejo, labplot, labrea, laby, lace, lacheck, lacme, ladder, ladish, laditools, ladr, ladspa-sdk, ladvd, lagan, lakai, lam, lamarc, lambda-align, lambda-align2, lambda-term, lambdabot, lame, lammps, landell, landslide, langdrill, langford, languages4translatewiki, laptop-mode-tools, larch, largetifftools, lasagne, laserboy, lasi, last-align, lastpass-cli, laszip, latd, late, latencytop, latex-cjk-chinese-arphic, latex-cjk-japanese-wadalab, latex-coffee-stains, latex-make, latex-mk, latex209, \alert{latex2html}, latex2rtf, latexdiff, latexdraw, latexila, latexmk, latexml, latrace, latte-dock, lattice, latticeextra, lava-coordinator, lavacli, lavapdu, lazarus, lazr.batchnavigator, lazr.config, lazr.delegates, lazr.enum, lazr.lifecycle, lazr.smtptest, lazyarray, lazygal, lazymap-clojure, lbcd, lbfgsb, lbreakout2, lbt, lbzip2, lcab, lcalc, lcas, lcas-lcmaps-gt4-interface, lcd4linux, lcdf-typetools, lcdproc, lcgdm, lcm, lcmaps, lcmaps-plugins-basic, lcmaps-plugins-jobrep, lcmaps-plugins-verify-proxy, lcmaps-plugins-voms, lcov, ldap-account-manager, ldap-auth-client, …
+\end{frame}
+
+\begin{frame}{Dependencies – On gtkspell 6/6}
+\tiny ldap-git-backup, ldap-haskell, ldap2dns, ldap2zone, ldapjdk, ldapscripts, ldaptor, ldapvi, ldc, ldcofonts, ldh-gui-suite, ldif3, ldm, ldm-themes, ldm-ubuntu-themes, ldns, ldp-docbook-stylesheets, ldtp, le, le-dico-de-rene-cougnenc, leaflet, leaflet-geometryutil, leaflet-image, leaflet-markercluster, leafnode, leaktracer, leap-archive-keyring, leatherman, leave, lebiniou, lebiniou-data, lecm, ledger, ledger-autosync, ledger-mode, ledger-wallets-udev, ledger2beancount, ledgersmb, ledit, ledmon, leds-alix, leela-zero, lefse, legacyhuman-theme, legit, leiningen-clojure, lekhonee-gnome, lektor, lemonbar, lemonldap-ng, lensfun, leocad, lepton, lepton-eda, leptonlib, less.js, let-alist, letterize, levee, leveldb-java, leveldb-sharp, lexicon, lfm, lft, lgeneral-data, lgogdownloader, lgooddatepicker, lhasa, lhs2tex, liac-arff, lib3ds, lib3mf, libaacs, libabigail, libaccessors-perl, libaccounts-glib, libaccounts-qt, libace-perl, libacme-bleach-perl, libacme-brainfck-perl, libacme-constant-perl, libacme-damn-perl, libacme-eyedrops-perl, libacme-poe-knee-perl, libacpi, libad9361, libaec, libafs-pag-perl, libai-decisiontree-perl, libai-fann-perl, libajaxtags-java, libalgorithm-c3-perl, libalgorithm-checkdigits-perl, libalgorithm-combinatorics-perl, libalgorithm-dependency-perl, libalgorithm-lbfgs-perl, libalgorithm-munkres-perl, libalgorithm-naivebayes-perl, libalgorithm-numerical-sample-perl, libalgorithm-permute-perl, libalgorithm-svm-perl, libalias-perl, libaliased-perl, libalien-gnuplot-perl, libalien-sdl-perl, libalien-wxwidgets-perl, \alert{libgtk2-spell-perl}, modem-manager-gui, pan, pidgin, poedit, purple-plugin-pack, smuxi, sn, snacc, sylpheed, xchat
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 1/7}
+\tiny alpine, bgoffice, cone, dictd, dsdo, dutch, dv4l, dvbackup, dvbcut, dvblast, dvbsnoop, dvbstream, dvbstreamer, dvbtune, dvcs-autosync, dvd+rw-tools, dvd-slideshow, dvdauthor, dvdbackup, dwz, e2fsprogs, ebtables, ec2-hibinit-agent, ed, edk2, efibootmgr, efivar, eiskaltdcpp, eject, ekg, ekg2, elfutils, emacs, emacsen-common, enchant, \alert{enchant-2}, entrypoints, eo-spell, eoconv, eog, eog-plugins, espa-nol, espctag, espeak, espeak-ng, espeakedit, espeakup, esperanza, espresso, esptool, gnustep-gui, hkgerman, hkl, hl-todo-el, hlbr, hlbrw, \alert{hspell}, igerman98, igmpproxy, ignition-cmake, ignition-cmake2, ignition-common, ignition-fuel-tools, ignition-math2, ignition-math4, ignition-msgs, ignition-transport, ignore-me, igor, igraph, igtf-policy-bundle, ii, ii-esu, iio-sensor-proxy, iirish, inkscape, inkscape-open-symbols, inkscape-speleo, inkscape-survex-export, inn, inn2, innfeed, innoextract, ino-headers, inosync, inotail, inoticoming, inotify-hookable, inotify-tools, inotifyx, input-pad, input-utils, inputlirc, inputplug, insighttoolkit4, inspectrum, inspircd, insserv, install-mimic, installation-birthday, installation-guide, installation-locale, installation-report, instant, instaparse-clojure, instead, insubstantial, integrit, intel-cmt-cat, intel-compute-runtime, intel-gmmlib, intel-gpu-tools, intel-graphics-compiler, intel-ipsec-mb, intel-media-driver, intel-mediasdk, intel-opencl-clang, intel-processor-trace, intel-vaapi-driver, intel2gas, intelhex, intellij-annotations, intellij-java-compatibility, inteltool, intercal, interchange, interimap, intlfonts, intltool, intltool-debian, invada-studio-plugins, invada-studio-plugins-lv2, invaders, inventor, invesalius, invokebinder, inxi, io-stringy, ioapps, iodine, iog, iok, ion, ionit, ioping, ioport, ioprocess, ioquake3, iotjs, iotop, ip2host, ip4r, ipadic, ipband, ipcalc, ipcheck, ipdb, ipe, ipe-tools, ipe5toxml, iperf, iperf3, ipfm, ipgrab, ipheth, ipig, ipip, ipkungfu, ipmctl, ipmitool, ipmiutil, ipolish, ippl, ippsample, ippusbxd, iprange, iprelay, iprint, iproute2, iprutils, ips, ipsec-tools, ipset, ipsvd, iptables, iptables-converter, iptables-netflow, iptables-optimizer, iptables-persistent, iptotal, iptraf, iptraf-ng, iptstate, iptux, iputils, ipv6calc, ipv6pref, ipv6toolkit, ipvsadm, ipwatchd, ipwatchd-gnotify, ipxe, ipy, ipykernel, ipykernel-py2, ipython, ipython-genutils, ipython-py2, ipywidgets, iqtree, ir.lv2, iraf, iraf-fitsutil, iraf-mscred, iraf-rvsao, iraf-sptable, ircd-hybrid, ircd-irc2, ircd-ircu, ircd-ratbox, ircii, irclog2html, ircmarkers, ircp-tray, irda-utils, iripdb, irker, iroffer, ironic, ironic-discoverd, ironic-inspector, ironic-ui, irony-mode, irqbalance, irrlicht, irsim, irssi, irssi-plugin-robustirc, irssi-plugin-xmpp, irssi-scripts, irstlm, irtt, isa-support, isakmpd, isatapd, isbg, isbnlib, isc-dhcp, isc-kea, iscpy, iscsitarget, isdnutils, iselect, isenkram, isl, isl-0.18, islamic-menus, ismrmrd, isns, iso-codes, iso-flags-svg, iso-scan, isodate, isomaster, isomd5sum, isoqlog, isoquery, isorelax, isort, isospec, \alert{ispell}, \alert{ispellcat}, isrcsubmit, isso, istack-commons, istgt, isync, italc, itamae, itango, itcl3, itcl4, itk3, itk4, itksnap, itools, itop, its, its-playback-time, itsalltext, itsol, itstool, itypes, iucode-tool, iulib, iva, iverilog, ivtools, ivulncheck, ivy, ivy-debian-helper, ivykis, ivyplusplus, iw, iwatch, iwd, iwidgets4, iwyu, ixo-usb-jtag, j4-dmenu-desktop, jaaa, jabber-irc, jabber-muc, jabber-querybot, jabber.py, jabberbot, jabberd2, jablicator, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 2/7}
+\tiny jabref, jabref-plugin-oo, jabsorb, jacal, jack, jack-audio-connection-kit, jack-capture, jack-delay, jack-keyboard, jack-midi-clock, jack-mixer, jack-rack, jack-stdio, jack-tools, jackd-defaults, jackd2, jackeq, jackmeter, jackrabbit, jackson-annotations, jackson-core, jackson-databind, jackson-dataformat-cbor, jackson-dataformat-smile, jackson-dataformat-xml, jackson-dataformat-yaml, jackson-datatype-guava, jackson-datatype-joda, jackson-jaxrs-providers, jackson-jr, jackson-module-afterburner, jackson-module-jaxb-annotations, jacksum, jacktrip, jacoco, jade, jaffl, jag, jags, jailer, jailkit, jailtool, jajuk, jakarta-ecs, jakarta-jmeter, jakarta-taglibs-standard, jaligner, jalv, jalview, jam, jam-lib, jama, jameica, jameica-datasource, jameica-util, jamin, jaminid, jamm, jamnntpd, jana, janest-base, janest-ocaml-compiler-libs, janino, jansi, jansi-native, jansson, janus, japa, japi-compliance-checker, japitools, jaraco.itertools, jaranalyzer, jarchivelib, jardiff, jargon, jargon-text, jargoninformatique, jargs, jarisplayer, jarjar, jarjar-maven-plugin, jas, jas-plotter, jasmin-sable, jasper, jasperreports, jasperreports3.7, jasypt, jatl, jattach, jaula, java-allocation-instrumenter, java-atk-wrapper, java-classpath-clojure, java-comment-preprocessor, java-common, java-diff-utils, java-gnome, java-imaging-utilities, java-jmx-clojure, java-policy, java-sdp-api, java-sip-api, java-snmp, java-string-similarity, java-wrappers, java-xmlbuilder, java2html, java3d, java3ds-fileloader, javabeans-activation-framework, javacc, javacc-maven-plugin, javacc4, javafxsvg, javahelp2, javamail, javamorph, javaparser, javapoet, javascript-common, javassist, javatar, javatools, javatuples, javawriter, jawn, jax-maven-plugin, jaxb, jaxb-api, jaxb2-maven-plugin, jaxe, jaxme, jaxml, jaxrpc-api, jaxrs-api, jaxws, jaxws-api, jayatana, jayway-jsonpath, jazip, jbig2dec, jbigkit, jblas, jbofihe, jboss-annotations-1.2-api, jboss-bridger, jboss-classfilewriter, jboss-jdeparser2, jboss-logging, jboss-logging-tools, jboss-logmanager, jboss-modules, jboss-threads, jboss-xnio, jbuilder, jcal, jcc, jcdf, jcharts, jcifs, jclassinfo, jclic, jclicmoodle, jcm, jcodings, jcommander, jcommon-serializer, jconvolver, jcsp, jctools, jd, jdcal, jdeb, jdelay, jdependency, jdim, jdresolve, jdupes, jebl2, jed, jed-extra, jedit, jeepney, jeepyb, jeex, jekyll, jel, jellydoc, jellyfish, jellyfish1, jemalloc, jengelman-shadow, jenkins-commons-jexl, jenkins-constant-pool-scanner, jenkins-crypto-util, jenkins-debian-glue, jenkins-dom4j, jenkins-executable-war, jenkins-htmlunit, jenkins-htmlunit-core-js, jenkins-job-builder, jenkins-json, jenkins-memory-monitor, jenkins-remoting, jenkins-task-reactor, jenkins-test-annotations, jenkins-trilead-ssh2, jenkins-xstream, jep, jerasure, jericho-html, jeromq, jerry, jersey1, jesd, jesred, jester, jetring, jets3t, jetty9, jeuclid, jexcelapi, jfbterm, jffi, jffnms, jflex, jformatstring, jfractionlab, jfsutils, jftp, jfugue, jgit, jglobus, jgraph, jgromacs, jgrowl, jhbuild, jhdf, jhead, jheatchart, jhighlight, jiconfont, jiconfont-font-awesome, jiconfont-swing, jid, jifty, jigdo, jigit, jigl, jigsaw-generator, jigzo, jiipview, jikespg, jimfs, jimtcl, jing-trang, jinja, jinja2, jinja2-mode, jinja2-time, jinput, jirc, jitescript, jitterdebugger, jitterentropy-rngd, jkmeter, jlapack, jless, jlex, jlha-utils, jlibeps, jline, jline2, jlint, jmagick, jmapviewer, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 3/7}
+\tiny jmdns, jmespath.php, jmeters, jmock, jmock2, jmodeltest, jmol, jmtpfs, jmxetric, jnati, jnettop, jni-inchi, jnlp-servlet, jnoise, jnoisemeter, jnr-constants, jnr-enxio, jnr-ffi, jnr-netdb, jnr-posix, jnr-unixsocket, jnr-x86asm, jo, joblib, jocaml, joda-convert, jodconverter, jodconverter-cli, jodd, jodreports, joe, john, jokosher, jool, joptsimple, jose, josm, josql, jove, jovie, joy2key, joystick, jp, jp2a, jpathwatch, jpeginfo, jpegjudge, jpegoptim, jpegpixi, jpilot, jpilot-backup, jpnevulator, jpy, jpylyzer, jq, jqapi, jquery, jquery-areyousure, jquery-at.js, jquery-caret.js, jquery-colorbox, jquery-coolfieldset, jquery-geo, jquery-goodies, jquery-i18n-properties, jquery-i18n.js, jquery-jplayer, jquery-jplayer-bluemonday, jquery-jplayer-circleplayer, jquery-jplayer-pinkflag, jquery-lazyload, jquery-migrate-1, jquery-minicolors, jquery-mobile, jquery-reflection, jquery-simpletreemenu, jquery-slugify.js, jquery-tablesorter, jquery-throttle-debounce, jquery-timepicker, jquery-timer.js, jquery-typeahead.js, jquery-ui-themes, jquery-ui-touch-punch.js, jquery-watermark, jquery.sparkline, jqueryui, jreen, jrexx, jruby, jruby-joni, jruby-maven-plugins, jruby-openssl, js-build-tools, js-of-ocaml, js2-mode, js8call, jsamp, jsap, jsbundle-web-interfaces, jsch, jsch-agent-proxy, jscommunicator, jscoverage, jscropperui, jsdebugger, jsdoc-toolkit, jsemver, jshash, jshon, jsilver, jsjac, jsmath, jsmath-fonts, jsmath-fonts-sprite, jsmpp, json-c, json-editor.js, json-glib, json-js, json-schema-validator, json-simple, json-smart, json-spirit, json-static, json-tricks, json-wheel, json11, json4s, jsonb-api, jsonbot, jsonhyperschema-codec, jsonld-java, jsonlint, jsonm, jsonnet, jsonpickle, jsonpipe, jsonrpc-glib, jsonrpclib-pelix, jsoup, jsp-api, jsquery, jsr107cache, jsrender, jss, jssc, jssip, jstest-gtk, jstimezonedetect.js, jsunit, jsurf-alggeo, jsusfx, jsxgraph, jsymphonic, jta, jtb, jtex-base, jtharness, jthread, jtidy, jtreg, jts, jube, juce, judy, juffed, jug, jugglemaster, jugglinglab, juju, juju-deployer, juju-jitsu, juk, juke, julia, julia-factcheck, julius-voxforge, juman, jumpnbump, jumpnbump-levels, junior-doc, junit, junit4, junit5, junitparser, junitperf, junixsocket, junkfilter, junos-eznc, jupp, jupyter-client, jupyter-console, jupyter-core, jupyter-notebook, jupyter-sphinx, jupyter-sphinx-theme, jutils, jvim, jvyamlb, jwchat, jwhois, jwm, jwordsplitter, jws-api, jxgrabkey, jxplorer, jxrlib, jython, jzip, jzlib, jzmq, k2pdfopt, k3b, k3d, k4dirstat, k8temp, kaa-base, kaa-imlib2, kaa-metadata, kabikaboo, kaccessible, kaccounts-integration, kaccounts-providers, kactivities, kactivities-kf5, kactivities-stats, kactivitymanagerd, kaddressbook, kadu, kadu-mime-tex, kaffeine, kafkacat, kajongg, kakasi, kakoune, kalarm, kalarmcal, kalgebra, kali, kalign, kallisto, kalternatives, kalzium, kamailio, kamcli, kamera, kamerka, kamoso, kanagram, kanatest, kanboard-cli, kanif, kanjidic, kanjipad, kanla, kannel, kannel-sqlbox, kanshi, kanyremote, kapidox, kapman, kapptemplate, kaptain, kaptive, karchive, karlyriceditor, kashmir, kasumi, katarakt, kate, kate4, katomic, kauth, kawari8, kazam, kazoo, kbackup, kball, kbd, kbd-chooser, kbdd, kbibtex, kblackbox, kblocks, kblog, kbookmarks, kboot-utils, kbounce, kbreakout, kbruch, kbtin, kbuild, kcachegrind, kcalc, kcalcore, kcalutils, kcc, kcharselect, kcheckers, kcheckgmail, kchmviewer, kcm-fcitx, kcm-gtk, kcmutils, kcodecs, kcollectd, kcolorchooser, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 4/7}
+\tiny kcompletion, kconfig, kconfig-frontends, kconfigwidgets, kcontacts, kcoreaddons, kcov, kcptun, kcrash, kcron, kdav, kdb, kdbg, kdbusaddons, kdc2tiff, kde-base-artwork, kde-baseapps, kde-cli-tools, kde-config-systemd, kde-config-whoopsie, kde-dev-scripts, kde-dev-utils, kde-gtk-config, kde-icons-crystal, kde-l10n, kde-runtime, kde-service-menu-fuseiso, kde-spectacle, kde-style-polyester, kde-wallpapers, kde4libs, kdeartwork, kdebugsettings, kdeclarative, kdeconnect, kdecoration, kded, kdeedu-data, kdegraphics-mobipocket, kdegraphics-thumbnailers, kdelibs4support, kdenetwork-filesharing, kdenlive, kdepim-addons, kdepim-runtime, kdepimlibs, kdeplasma-addons, kdesdk-kioslaves, kdesdk-thumbnailers, kdesignerplugin, kdesrc-build, kdesu, kdesudo, kdesvn, kdevelop, kdevelop-pg-qt, kdevelop-php, kdevelop-python, kdevplatform, kdewebkit, kdf, kdgcommons-java, kdiagram, kdialog, kdiamond, kdiff3, kdm-gdmcompat, kdnssd, kdnssd-kf5, kdocker, kdoctools, kdrill, keditbookmarks, kedpm, keepalived, keepass2, keepass2-plugin-keepasshttp, keepassx, keepassxc, keepnote, kelbt, kemoticons, kephra, keras, keras-applications, keras-preprocessing, kerberos-configs, kernel-handbook, kernel-package, kernel-patch-viewos, kernel-wedge, kerneloops, kerneltop, kernsmooth, ketchup, ketm, keurocalc, kexec-tools, kexi, key-chord-el, key-mon, keybinder, keybinder-3.0, keyboardcast, keyboards-rg, keychain, keylaunch, keyman-config, keyman-keyboardprocessor, keymapper, keynav, keyringer, keyrings.alt, keystone, keysync, keytouch-editor, keyutils, kf5-kdepim-apps-libs, kf5-messagelib, kfilemetadata, kfilemetadata-kf5, kfind, kfloppy, kfourinline, kfreebsd-10, kfreebsd-defaults, kfreebsd-kernel-headers, kgamma, kgamma5, kgb, kgb-bot, kgeography, kget, kglobalaccel, kgoldrunner, kgpg, kguiaddons, khal, khangman, khard, khelpcenter, khmer, khmerconverter, kholidays, khotkeys, khronos-api, khronos-opencl-clhpp, khronos-opencl-headers, khronos-opencl-man, khronos-opengl-man4, khtml, ki18n, kicad, kicad-footprints, kicad-packages3d, kicad-symbols, kicad-templates, kickpass, kickseed, kiconthemes, kid, kid3, kidentitymanagement, kidletime, kido, kig, kigo, kiki, kiki-the-nano-bot, kildclient, kile, killbots, killer, kim-api, kimageformats, kimagemapeditor, kimap, kimwitu, kimwitu++, kimwitu-doc, kindleclip, kineticstools, kinfocenter, king, king-probe, kinit, kino, kinput2, kio, kio-extras, kio-ftps, kio-gdrive, kio-gopher, kio-mtp, kipi-plugins, kirigami-gallery, kirigami2, kiriki, kismet, kissplice, kitchen, kitchensink-clojure, kitemmodels, kitemviews, kiten, kitinerary, kitty, kivy, kiwi, kiwisolver, kjobwidgets, kjots, kjs, kjsembed, kjumpingcube, klatexformula, klaus, klavaro, klayout, kldap, kleborate, klein, kleopatra, klettres, klibc, klick, klickety, klines, klog, klone, kluppe, klustakwik, klystrack, kma, kmag, kmahjongg, kmail, kmail-account-wizard, kmailtransport, kmbox, kmc, kmediaplayer, kmenuedit, kmer, kmer-tools, kmerresistance, kmetronome, kmfl-keyboards-mywin, kmflcomp, kmidimon, kmime, kmines, kmix, kmldonkey, kmod, kmodpy, kmousetool, kmouth, kmplayer, kmplot, kmscube, kmymoney, knack, knavalbattle, knetwalk, knews, knewstuff, knights, knitpy, knockd, knocker, knockpy, knopflerfish-osgi, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 5/7}
+\tiny knot, knot-resolver, knotes, knotifications, knotifyconfig, knowl.js, knowledgeroot, knowthelist, knutclient, knxd, ko.tex, ko.tex-extra-hlfont, ko.tex-unfonts, kobodeluxe, kodi, kodi-pvr-argustv, kodi-pvr-dvbviewer, kodi-pvr-hdhomerun, kodi-pvr-hts, kodi-pvr-iptvsimple, kodi-pvr-mediaportal-tvserver, kodi-pvr-mythtv, kodi-pvr-nextpvr, kodi-pvr-njoy, kodi-pvr-vdr-vnsi, kodi-pvr-vuplus, kodi-pvr-wmc, kodi-visualization-spectrum, kodiplatform, koffice-l10n, koji, kolab-webadmin, kolabadmin, kolf, kollision, kolourpaint, kombu, komi, komparator, kompare, kon2, konclude, konfont, konqueror, konquest, konsole, konsole4, kontact, kontactinterface, kontrolpack, konversation, konwert, kookbook, kopano-webapp, kopano-webapp-plugin-files, kopanocore, kopete, kore, korganizer, koules, kover, kpackage, kparts, kpartsplugin, kpat, kpatch, kpcli, kpeople, kphotoalbum, kpimtextedit, kpkpass, kplotting, kpmcore, kppp, kprinter4, kproperty, kpty, kqtquickcharts, kquickcharts, kradio4, kraft, kraken, kraken2, krank, kraptor, krb5, krb5-appl, krb5-auth-dialog, krb5-strength, krb5-sync, krdc, krecipes, kredentials, kremotecontrol, krename, kreport, kreversi, krfb, krita, kronolith2, kronometer, kronosnet, krop, kross, kross-interpreters, kruler, krunner, krusader, kryo-serializers, ksaneplugin, kscd, kscreen, kscreenlocker, kservice, ksh, kshisen, kshutdown, ksirk, ksmtp, ksmtuned, ksnakeduel, ksnapshot, kspaceduel, ksplice, ksquares, ksshaskpass, kst, kstars, kstars-data-extra-tycho2, kstart, ksudoku, ksyntax-highlighting, ksysguard, ksystemlog, ktap, kteatime, kterm, ktexteditor, ktextwidgets, kthresher, ktikz, ktimer, ktnef, ktorrent, ktouch, ktouchpadenabler, ktp-accounts-kcm, ktp-approver, ktp-auth-handler, ktp-call-ui, ktp-common-internals, ktp-contact-list, ktp-contact-runner, ktp-desktop-applets, ktp-filetransfer-handler, ktp-kded-integration-module, ktp-legacy-presence-applet, ktp-send-file, ktp-text-ui, ktuberling, kturtle, kubectx, kubernetes, kubernetes-addon-heapster, kubetail, kubrick, kubuntu-debug-installer, kubuntu-docs, kubuntu-driver-manager, kubuntu-meta, kubuntu-notification-helper, kubuntu-patched-l10n, kubuntu-settings, kubuntu-wallpapers, kubuntu-web-shortcuts, kumofs, kunitconversion, kunststoff, kup, kup-backup, kupfer, kuser, kuttypy, kuvert, kvirc, kvkbd, kvmtool, kvpnc, kwalify, kwallet, kwallet-kf5, kwallet-pam, kwalletcli, kwalletmanager, kwartz-client, kwave, kwayland, kwayland-integration, kwidgetsaddons, kwiki, kwin, kwindowsystem, kwordquiz, kwrited, kwstyle, kxd, kxl, kxml2, kxmlgui, kxmlrpcclient, kxstitch, kylin-burner, kylin-display-switch, kylin-greeter, kylin-nm, kylin-video, kyotocabinet, kyototycoon, kytea, kytos-sphinx-theme, kytos-utils, l2tpns, l7-filter-userspace, l7-protocols, labeling, labelme, lablgl, lablgtk-extras, lablgtk2, lablgtk3, lablgtkmathview, lablie, labltk, laborejo, labplot, labrea, laby, lace, lacheck, lacme, ladder, ladish, laditools, ladr, ladspa-sdk, ladvd, lagan, lakai, lam, lamarc, lambda-align, lambda-align2, lambda-term, lambdabot, lame, lammps, landell, landslide, langdrill, langford, languages4translatewiki, laptop-mode-tools, larch, largetifftools, lasagne, laserboy, lasi, last-align, lastpass-cli, laszip, latd, late, latencytop, latex-cjk-chinese-arphic, latex-cjk-japanese-wadalab, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 6/7}
+\tiny latex-coffee-stains, latex-make, latex-mk, latex209, \alert{latex2html}, latex2rtf, latexdiff, latexdraw, latexila, latexmk, latexml, latrace, latte-dock, lattice, latticeextra, lava-coordinator, lavacli, lavapdu, lazarus, lazr.batchnavigator, lazr.config, lazr.delegates, lazr.enum, lazr.lifecycle, lazr.smtptest, lazyarray, lazygal, lazymap-clojure, lbcd, lbfgsb, lbreakout2, lbt, lbzip2, lcab, lcalc, lcas, lcas-lcmaps-gt4-interface, lcd4linux, lcdf-typetools, lcdproc, lcgdm, lcm, lcmaps, lcmaps-plugins-basic, lcmaps-plugins-jobrep, lcmaps-plugins-verify-proxy, lcmaps-plugins-voms, lcov, ldap-account-manager, ldap-auth-client, ldap-git-backup, ldap-haskell, ldap2dns, ldap2zone, ldapjdk, ldapscripts, ldaptor, ldapvi, ldc, ldcofonts, ldh-gui-suite, ldif3, ldm, ldm-themes, ldm-ubuntu-themes, ldns, ldp-docbook-stylesheets, ldtp, le, le-dico-de-rene-cougnenc, leaflet, leaflet-geometryutil, leaflet-image, leaflet-markercluster, leafnode, leaktracer, leap-archive-keyring, leatherman, leave, lebiniou, lebiniou-data, lecm, ledger, ledger-autosync, ledger-mode, ledger-wallets-udev, ledger2beancount, ledgersmb, ledit, ledmon, leds-alix, leela-zero, lefse, legacyhuman-theme, legit, leiningen-clojure, lektor, lemonbar, lemonldap-ng, lensfun, leocad, lepton, lepton-eda, leptonlib, less.js, let-alist, letterize, levee, leveldb-java, leveldb-sharp, lexicon, lfm, lft, lgeneral-data, lgogdownloader, lgooddatepicker, lhasa, lhs2tex, liac-arff, lib3ds, lib3mf, libaacs, libabigail, libaccessors-perl, libaccounts-glib, libaccounts-qt, libace-perl, libacme-bleach-perl, libacme-brainfck-perl, libacme-constant-perl, libacme-damn-perl, libacme-eyedrops-perl, libacme-poe-knee-perl, libacpi, libad9361, libaec, libafs-pag-perl, libai-decisiontree-perl, libai-fann-perl, libajaxtags-java, libalgorithm-c3-perl, libalgorithm-checkdigits-perl, libalgorithm-combinatorics-perl, libalgorithm-dependency-perl, libalgorithm-lbfgs-perl, libalgorithm-munkres-perl, libalgorithm-naivebayes-perl, libalgorithm-numerical-sample-perl, libalgorithm-permute-perl, libalgorithm-svm-perl, libalias-perl, libaliased-perl, libalien-gnuplot-perl, libalien-sdl-perl, libalien-wxwidgets-perl, libdr-tarantool-perl, libpod-wordlist-hanekomu-perl, librcc, \alert{libtext-aspell-perl}, lintian, mc, mcabber, medicalterms, medit, medley-clojure, mednafen, mednaffe, medusa, meep, meep-lam4, meep-mpi-default, meep-mpich2, meep-openmpi, megadown, megaglest, megaglest-data, megatools, meld, meliae, melting, membernator, members, memcached, memcachedb, memchan, memdump, memkind, memleax, memlockd, memoise, memphis, memstat, memtailor, memtest86, memtest86+, memtester, memtool, mencal, mender-cli, mender-client, mendexk, menhir, mensis, menu, menu-cache, menu-l10n, menu-xdg, menulibre, mercator, mercurial, mercurial-buildpackage, mercurial-crecord, mercurial-extension-utils, mercurial-keyring, mercurial-server, mergelog, mergerfs, meritous, merkaartor, merkleeyes, mes, mesa, mesa-demos, mescc-tools, meschach, meshlab, meson, meson-mode, mess-desktop-entries, message-templ, moc, pkg-perl-tools, pkg-php-tools, pkgconf, pkgdiff, pkgsel, pkgsync, pktanon, pktools, pktstat, psi, pumpa, purple-plugin-pack, raspell, recoll, scram, scrapbook, …
+\end{frame}
+
+\begin{frame}{Dependencies – On aspell 7/7}
+\tiny scratch, scratchbox2, screader, screen, screen-message, screen-resolution-extra, screenfetch, screengrab, screenie, screenie-qt, screenkey, screentest, scribus, scribus-template, scriptaculous, scrm, scrollz, scrot, scrounge-ntfs, scrub, scrypt, seabios, seahorse, secureboot-db, sed, \alert{sgml-spell-checker}, softcatala-spell, sonnet, tea, tupi, usbguard, weechat, \alert{xmlcopyeditor}, xuxen-eu-spell, yagf
+\end{frame}
+
 
 
 \section{Upcomming}
-
-\begin{frame}{Upcoming – Next Version}
-\begin{multicols}{2}
-Next version will have improved
-\begin{itemize}
-\item \alert{performance}
-\item compounding
-\item suggestions
-\item API
-\item command-line tool
-\item documentation
-\item testing
-\end{itemize}
-Nuspell will then also be
-\begin{itemize}
-\item migrated to CMake
-\item integrated with web browsers
-\item offering ports and packages
-\item offering language bindings
-\end{itemize}
-\end{multicols}
-\end{frame}
 
 \begin{frame}{Upcoming – Ports and Packages}
 \begin{multicols}{2}
@@ -355,7 +368,7 @@ Tested
 \item FreeBSD ≥ 11
 \end{itemize}
 \mbox{}\\
-Help wanted
+\alert{Help wanted}
 \begin{itemize}
 \item Android
 \item Arch Linux
@@ -363,14 +376,12 @@ Help wanted
 \item Fedora
 \item Gentoo
 \item iOS
-\item Linux Mint
 \item macOS
-\item NetBSD
 \item OpenBSD
 \item openSUSE
 \item Slackware
 \item Windows
-\item ...
+\item …
 \end{itemize}
 \end{multicols}
 \end{frame}
@@ -383,7 +394,7 @@ Supported
 \item C
 \end{itemize}
 \mbox{}\\
-Help wanted
+\alert{Help wanted}
 \begin{itemize}
 \item C\#
 \item Go
@@ -397,7 +408,7 @@ Help wanted
 \item Rust
 \item Python
 \item Scala
-\item ...
+\item …
 \end{itemize}
 \end{multicols}
 \end{frame}
@@ -405,11 +416,11 @@ Help wanted
 \begin{frame}{Upcoming – Miscellaneous}
 Other ways to help are
 \begin{itemize}
-\item fix bugs in dictionaries and word lists
-\item improve dictionaries and word lists
-\item contribute word lists with errors and corrections
+\item remaining fix bugs in dictionaries and word lists
+\item help improve dictionaries and word lists
+\item enable word lists adding of errors with corrections
 \item integrate Nuspell with IDEs, text editors and editors for HTML, XML, JSON, YAML, \TeX{}, etc.
-\item integrate Nuspell with Enchant e.g. for GtkSpell
+\item add packages to distributions such as Debian
 \item sponsor our team
 \item join our team
 \end{itemize}
