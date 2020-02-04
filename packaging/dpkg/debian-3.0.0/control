@@ -58,7 +58,7 @@ Description: spell checker (shared library)
 
 Package: nuspell
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, libnuspell3
+Depends: ${shlibs:Depends}, ${misc:Depends}
 Multi-Arch: foreign
 Description: spell checker (program)
  Nuspell is a free and open source spell checker that is written in modern C++.
