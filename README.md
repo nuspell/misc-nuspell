@@ -5,7 +5,6 @@ This repository contains miscellaneous documentation, charts, tools and test scr
 
 ## 1 Written documentation
 
-* [Internal Specifications](internal-specs.html) ([Source](internal-specs.adoc))
 * Annotated source code in FODT files in the top-level directory. These cannot be viewed in GitHub or a browser and need LibreOffice for proper viewing.
 
 ## 2 Charts
@@ -38,16 +37,6 @@ Tools for generating the docs:
       - Install: `sudo apt install cabal-install && cabal update &&
         cabal install dataflow`
       - Use: `~/.cabal/bin/dataflow`
-5.  [Fabuala](http://drakon.su/programma_fabula_._redaktor_drakon-sxem)
-      - Extranct manually then `wine fabula_0.1b_r001.exe`
-6.  [Zippy git filter](https://bitbucket.org/sippey/zippey)
-
-    After cloning or pulling run this only once to add the zippy filter:
-
-        git config filter.zippey.smudge "$PWD/zippey.py d"
-        git config filter.zippey.clean "$PWD/zippey.py e"
-        rm $(git ls-files drakon)
-        git checkout -- .
 
 
 ## 4 Testing
