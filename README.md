@@ -1,11 +1,14 @@
 # Misc Docs and Charts
 
-This repository contains miscellaneous documentation, charts, tools and test scripts for Hunspell and, its successor, Nuspell.
+This repository contains miscellaneous documentation, charts, tools and test
+scripts for Hunspell and, its successor, Nuspell.
 
 
 ## 1 Written documentation
 
-* Annotated source code in FODT files in the top-level directory. These cannot be viewed in GitHub or a browser and need LibreOffice for proper viewing.
+* [Annotated source code](code-comments/) in FODT files in the top-level
+  directory. These cannot be viewed in GitHub or a browser and need LibreOffice
+  for proper viewing.
 
 ## 2 Charts
 
@@ -21,7 +24,6 @@ Tools for generating the docs:
 
 1.  [Asciidoctor](http://asciidoctor.org/)
       - Install: `sudo apt install asciidoctor`
-      - Use: `asciidoctor internal-specs.adoc`
 2.  Project management tool: [RationalPlan
     Single](https://www.rationalplan.com/on-premise/#single)
       - Install by double clicking the .deb with Ubuntu software center
@@ -32,7 +34,6 @@ Tools for generating the docs:
         ~/.RationalPlan/ ~/.java/.userPrefs/RationalPlan`
 3.  [PlantUML](http://plantuml.com/).
       - Install with: `sudo apt install plantuml`
-      - If needed, manually upgrade `/usr/share/plantuml/plantuml.jar` to at least version 1.2018.1
 4.  [Dataflow](https://github.com/sonyxperiadev/dataflow) for DFD.
       - Install: `sudo apt install cabal-install && cabal update &&
         cabal install dataflow`
