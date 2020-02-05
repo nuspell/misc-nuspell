@@ -4,47 +4,75 @@
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING
 # author: Sander van Geloven
 
-installed () {
+# prerequisits
+check_installed () {
 	if [ ! `dpkg -l $PACKAGE 2>&1 |grep -c 'no packages found matching'` -eq 0 ]; then
 		echo 'Missing package '$PACKAGE
 		exit 1
 	fi
-
 }
-
-# prerequisits
-for PACKAGE in `echo dpkg-dev debhelper fakeroot git g++ cmake libboost-locale-dev libicu-dev ronn`; do
-	installed
+for PACKAGE in `echo \
+		dpkg-dev \
+		debhelper \
+		fakeroot \
+		git \
+		g++ \
+		cmake \
+		libboost-locale-dev \
+		libicu-dev \
+		ronn`; do
+	check_installed
 done
 
-# distrubtion
+# distribution
 OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`_`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
-if [ ! -e $OS ]; then
-	mkdir $OS
-fi
+rm -rf ./$OS
+mkdir $OS
 cd $OS
 
 # files
-VERSION=3.0.0
-ORIG='nuspell_'$VERSION'.orig.tar.gz'
-rm -rf debian.zip nuspell-debian nuspell-$VERSION
+MAJOR=3
+VERSION=$MAJOR.0.0
 wget -q https://github.com/nuspell/nuspell/archive/debian.zip
 unzip -q debian.zip
+rm -f debian.zip
 mv nuspell-debian nuspell-$VERSION
-tar cfz $ORIG nuspell-$VERSION
+tar cfz nuspell_$VERSION.orig.tar.gz nuspell-$VERSION
 
 # package
 cd nuspell-$VERSION
 dpkg-buildpackage
 cd ..
 
-# contents
+# symbols
+dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_libnuspell_tmp
+dpkg-gensymbols -q -v$VERSION -plibfoo -Ptmp_libnuspell_tmp -Olibnuspell$MAJOR.symbols
+rm -rf tmp_libnuspell_tmp
+if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
+	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
+	exit 1
+fi
+if [ `diff nuspell-3.0.0/debian/libnuspell$MAJOR.symbols libnuspell$MAJOR.symbols|wc -l` -ne 0 ]; then
+	echo 'Upgrade nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols with libnuspell'$MAJOR'.symbols'
+	exit 1
+fi
+rm -f libnuspell$MAJOR.symbols
+
+# report
 echo 'Build for '$OS
-for i in *$VERSION*.deb; do
+echo
+ls -lh nuspell_$VERSION-*.dsc
+grep Depends: nuspell_$VERSION-*.dsc
+echo
+ls -lh nuspell_$VERSION.orig.tar.gz
+echo
+ls -lh nuspell_$VERSION-*.debian.tar.xz
+for i in *$VERSION-*.deb; do
 	echo
-	echo $i
+	ls -lh $i
 	dpkg --info $i|grep '^ Depends:'
 	dpkg --info $i|grep '^ Recommends:'
-	dpkg -c $i
+	dpkg -c $i|grep -v /$
 done
+
 cd ..
