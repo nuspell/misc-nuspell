@@ -4,9 +4,14 @@
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING
 # author: Sander van Geloven
 
+# version
+MAJOR=3
+VERSION=$MAJOR.0.0
+# tested on: Debian 10, Ubuntu 19.10,  Raspbian 10
+
 # prerequisits
 check_installed () {
-	if [ ! `dpkg -l $PACKAGE 2>&1 |grep -c 'no packages found matching'` -eq 0 ]; then
+	if [ `dpkg -l $PACKAGE | grep -c ^ii` -eq 0 ]; then
 		echo 'Missing package '$PACKAGE
 		exit 1
 	fi
@@ -15,7 +20,7 @@ for PACKAGE in `echo \
 		dpkg-dev \
 		debhelper \
 		fakeroot \
-		git \
+		wget \
 		g++ \
 		cmake \
 		libboost-locale-dev \
@@ -24,39 +29,50 @@ for PACKAGE in `echo \
 	check_installed
 done
 
-# distribution
-OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`_`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
+# platform
+OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`-`uname -m`
 rm -rf ./$OS
 mkdir $OS
 cd $OS
 
-# files
-MAJOR=3
-VERSION=$MAJOR.0.0
+# orig
+ORIG='nuspell_'$VERSION'.orig.tar.gz'
+wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz -O $ORIG
+tar xf $ORIG
+
+# debian
 wget -q https://github.com/nuspell/nuspell/archive/debian.zip
 unzip -q debian.zip
 rm -f debian.zip
-mv nuspell-debian nuspell-$VERSION
-tar cfz nuspell_$VERSION.orig.tar.gz nuspell-$VERSION
+mv nuspell-debian/debian nuspell-$VERSION
+rm -rf nuspell-debian
 
 # package
 cd nuspell-$VERSION
-dpkg-buildpackage
-cd ..
+dpkg-buildpackage #TODO migrate to sbuild
 
 # symbols
-dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_libnuspell_tmp
-dpkg-gensymbols -q -v$VERSION -plibfoo -Ptmp_libnuspell_tmp -Olibnuspell$MAJOR.symbols
-rm -rf tmp_libnuspell_tmp
+cd ..
+dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
+dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
+rm -rf tmp_symbols_tmp
 if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
 	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
+	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
+	rm -f *nuspell*$VERSION*deb
 	exit 1
 fi
-if [ `diff nuspell-3.0.0/debian/libnuspell$MAJOR.symbols libnuspell$MAJOR.symbols|wc -l` -ne 0 ]; then
-	echo 'Upgrade nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols with libnuspell'$MAJOR'.symbols'
+awk '{print $1}' nuspell-$VERSION/debian/libnuspell$MAJOR.symbols > symbols-debian
+awk '{print $1}' libnuspell$MAJOR.symbols > symbols-current
+if [ `diff symbols-debian symbols-current|wc -l` -ne 0 ]; then
+	diff symbols-debian symbols-current
+	rm -f symbols-debian symbols-current
+	echo 'Outdated file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
+	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
+	rm -f *nuspell*$VERSION*deb
 	exit 1
 fi
-rm -f libnuspell$MAJOR.symbols
+rm -f libnuspell$MAJOR.symbols symbols-debian symbols-current
 
 # report
 echo 'Build for '$OS
