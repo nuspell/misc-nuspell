@@ -10,13 +10,13 @@ VERSION=$MAJOR.0.0
 
 # prerequisits
 check_installed () {
-	if [ ! `dpkg -l $PACKAGE 2>&1 |grep -c 'no packages found matching'` -eq 0 ]; then
+        if [ `dpkg -l $PACKAGE | grep -c ^ii` -eq 0 ]; then
 		echo 'Missing package '$PACKAGE
 		exit 1
 	fi
 }
 for PACKAGE in `echo \
-		scp \
+		openssh-client \
 		dput`; do
 	check_installed
 done
@@ -29,8 +29,11 @@ if [ ! -e $OS ]; then
 fi
 cd $OS
 
-# files
-exit #TODO under development
-dput -c ../dput.cf ppa:nuspell/ppa <source.changes>
+#check
+#gpg --verify nuspell_$VERSION-*.changes
+#gpg --verify nuspell_$VERSION-*.dsc
 
+# upload
+#TODO option -l (lintian) and -f (force)
+dput -l -c ../dput.cf ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ..

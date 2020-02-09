@@ -1,0 +1,5 @@
+[ppa]
+fqdn = ppa.launchpad.net
+method = scp
+incoming = ~nuspell/ubuntu/nuspell/
+login = pander
