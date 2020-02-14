@@ -55,24 +55,24 @@ dpkg-buildpackage #TODO migrate to sbuild
 cd ..
 dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
 dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
-rm -rf tmp_symbols_tmp
-if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
-	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
-	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
-	rm -f *nuspell*$VERSION*deb
-	exit 1
-fi
-awk '{print $1}' nuspell-$VERSION/debian/libnuspell$MAJOR.symbols > symbols-debian
-awk '{print $1}' libnuspell$MAJOR.symbols > symbols-current
-if [ `diff symbols-debian symbols-current|wc -l` -ne 0 ]; then
-	diff symbols-debian symbols-current
-	rm -f symbols-debian symbols-current
-	echo 'Outdated file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
-	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
-	rm -f *nuspell*$VERSION*deb
-	exit 1
-fi
-rm -f libnuspell$MAJOR.symbols symbols-debian symbols-current
+#rm -rf tmp_symbols_tmp
+#if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
+#	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
+#	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
+#	rm -f *nuspell*$VERSION*deb
+#	exit 1
+#fi
+#awk '{print $1}' nuspell-$VERSION/debian/libnuspell$MAJOR.symbols > symbols-debian
+#awk '{print $1}' libnuspell$MAJOR.symbols > symbols-current
+#if [ `diff symbols-debian symbols-current|wc -l` -ne 0 ]; then
+#	diff symbols-debian symbols-current
+#	rm -f symbols-debian symbols-current
+#	echo 'Outdated file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
+#	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
+#	rm -f *nuspell*$VERSION*deb
+#	exit 1
+#fi
+#rm -f libnuspell$MAJOR.symbols symbols-debian symbols-current
 
 # report
 echo 'Build for '$OS
