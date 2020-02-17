@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # description: creates Debian packages
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING
@@ -9,24 +9,25 @@ MAJOR=3
 VERSION=$MAJOR.0.0
 # tested on: Debian 10, Ubuntu 19.10,  Raspbian 10
 
+cd "$(dirname "$0")"
+
 # prerequisits
-check_installed () {
-	if [ `dpkg -l $PACKAGE | grep -c ^ii` -eq 0 ]; then
-		echo 'Missing package '$PACKAGE
+for PKG in \
+	dpkg-dev \
+	debhelper \
+	devscripts \
+	fakeroot \
+	wget \
+	g++ \
+	cmake \
+	libboost-locale-dev \
+	libicu-dev \
+	ronn ;
+do
+	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
+		echo "Missing package $PKG"
 		exit 1
 	fi
-}
-for PACKAGE in `echo \
-		dpkg-dev \
-		debhelper \
-		fakeroot \
-		wget \
-		g++ \
-		cmake \
-		libboost-locale-dev \
-		libicu-dev \
-		ronn`; do
-	check_installed
 done
 
 # platform
@@ -35,17 +36,29 @@ rm -rf ./$OS
 mkdir $OS
 cd $OS
 
-# orig
-ORIG='nuspell_'$VERSION'.orig.tar.gz'
-wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz -O $ORIG
-tar xf $ORIG
+# upstream tar
+TAR=nuspell-$VERSION.tar.gz
+wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz -O $TAR
+tar -xf $TAR
 
-# debian
+# debianize
 cp -r ../debian/ nuspell-$VERSION
+
+# create orig tar with excluded files deleted
+cd nuspell-$VERSION
+mk-origtargz ../$TAR
+cd ..
+rm -rf ./nuspell-$VERSION
+
+# extract new tar and debianize again
+ORIG=nuspell_$VERSION.orig.tar.xz
+tar -xf $ORIG
+cp -r ../debian/ nuspell-$VERSION
+
 
 # package
 cd nuspell-$VERSION
-dpkg-buildpackage #TODO migrate to sbuild
+dpkg-buildpackage
 
 # symbols
 cd ..
