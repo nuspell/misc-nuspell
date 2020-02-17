@@ -1,5 +1,1 @@
-*
-!/.gitignore
-!/build-debian.sh
-!/submit-launchpad.sh
-!/dput.cf
+/ubuntu*

@@ -1,0 +1,19 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+export DEB_BUILD_MAINT_OPTIONS = hardening=+all
+
+# Pending https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=901783 and
+# https://bugs.launchpad.net/ubuntu/+source/catch/+bug/1728575 the testing
+# is disabled, otherwise git is needed to pull in catch2.
+CMAKE_FLAGS = \
+	-DBUILD_TESTING=OFF \
+	-DBUILD_SHARED_LIBS=ON
+
+%:
+	dh $@ --buildsystem=cmake
+
+override_dh_auto_configure:
+	dh_auto_configure -- $(CMAKE_FLAGS)

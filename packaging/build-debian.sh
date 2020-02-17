@@ -41,11 +41,7 @@ wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz -O $ORIG
 tar xf $ORIG
 
 # debian
-wget -q https://github.com/nuspell/nuspell/archive/debian.zip
-unzip -q debian.zip
-rm -f debian.zip
-mv nuspell-debian/debian nuspell-$VERSION
-rm -rf nuspell-debian
+cp -r ../debian/ nuspell-$VERSION
 
 # package
 cd nuspell-$VERSION

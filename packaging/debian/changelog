@@ -1,0 +1,7 @@
+nuspell (3.0.0-1) unstable; urgency=medium
+
+  [ Pander ]
+  * Initial packaging. (Closes: #925921)
+
+ -- Pander <pander@users.sourceforge.net>  Wed, 05 Feb 2020 16:53:25 +0100
+
