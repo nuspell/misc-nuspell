@@ -59,11 +59,11 @@ cp -r ../debian/ nuspell-$VERSION
 # package
 cd nuspell-$VERSION
 dpkg-buildpackage
+cd ..
 
 # symbols
-cd ..
-dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
-dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
+# dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
+# dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
 #rm -rf tmp_symbols_tmp
 #if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
 #	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
@@ -89,7 +89,7 @@ echo
 ls -lh nuspell_$VERSION-*.dsc
 grep Depends: nuspell_$VERSION-*.dsc
 echo
-ls -lh nuspell_$VERSION.orig.tar.gz
+ls -lh $ORIG
 echo
 ls -lh nuspell_$VERSION-*.debian.tar.xz
 for i in *$VERSION-*.deb; do
