@@ -5,6 +5,7 @@ Files-Excluded:
  src/hunspell/*
  src/parsers/*
  src/tools/*
+ tests/suggestiontest/*
 
 Files: *
 Copyright: 2017-2020 Dimitrij Mijoski, Sander van Geloven
