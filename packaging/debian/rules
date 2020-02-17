@@ -13,7 +13,7 @@ CMAKE_FLAGS = \
 	-DBUILD_SHARED_LIBS=ON
 
 %:
-	dh $@ --buildsystem=cmake
+	dh $@
 
 override_dh_auto_configure:
 	dh_auto_configure -- $(CMAKE_FLAGS)
