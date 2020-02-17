@@ -49,6 +49,7 @@ cd nuspell-$VERSION
 mk-origtargz ../$TAR
 cd ..
 rm -rf ./nuspell-$VERSION
+rm $TAR
 
 # extract new tar and debianize again
 ORIG=nuspell_$VERSION.orig.tar.xz
