@@ -1,1 +1,6 @@
-/ubuntu*
+*
+!/.gitignore
+!/build-debian.sh
+!/submit-launchpad.sh
+!/build-fedora.sh
+!/dput.cf

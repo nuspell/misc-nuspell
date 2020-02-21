@@ -25,7 +25,7 @@ for PKG in \
 	ronn ;
 do
 	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
-		echo "Missing package $PKG"
+		echo 'Missing package '$PKG
 		exit 1
 	fi
 done
@@ -42,30 +42,38 @@ wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz -O $TAR
 tar -xf $TAR
 
 # debianize
-cp -r ../debian/ nuspell-$VERSION
+cp -a ../debian/ nuspell-$VERSION
 
 # create orig tar with excluded files deleted
 cd nuspell-$VERSION
 mk-origtargz ../$TAR
 cd ..
 rm -rf ./nuspell-$VERSION
-rm $TAR
+rm -f $TAR
 
 # extract new tar and debianize again
 ORIG=nuspell_$VERSION.orig.tar.xz
 tar -xf $ORIG
-cp -r ../debian/ nuspell-$VERSION
+cp -a ../debian/ nuspell-$VERSION
 
 
 # package
 cd nuspell-$VERSION
+if [ `grep -c $VERSION debian/files` -lt 1 ]; then
+	echo 'Missing version '$VERSION' in debian/files'
+	exit 1
+fi
+if [ `grep -c $VERSION debian/changelog` -lt 1 ]; then
+	echo 'Missing version '$VERSION' in debian/changelog'
+	exit 1
+fi
 dpkg-buildpackage
 cd ..
 
 # symbols
-# dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
-# dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
-#rm -rf tmp_symbols_tmp
+dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
+dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -O../$OS\_libnuspell$MAJOR.symbols
+rm -rf tmp_symbols_tmp
 #if [ ! -e nuspell-$VERSION/debian/libnuspell$MAJOR.symbols ]; then
 #	echo 'Missing file nuspell-'$VERSION'/debian/libnuspell'$MAJOR'.symbols'
 #	echo 'Top-level directory has newly generated libnuspell'$MAJOR'.symbols which need to be added to debian directory in proper repo and build packages again'
