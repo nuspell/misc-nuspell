@@ -1,5 +1,6 @@
 *
 !/.gitignore
+!/debian
 !/build-debian.sh
 !/submit-launchpad.sh
 !/build-fedora.sh
