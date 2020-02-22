@@ -7,18 +7,19 @@
 # version
 MAJOR=3
 VERSION=$MAJOR.0.0
+# tested on: Ubuntu 19.10
+
+cd "$(dirname "$0")"
 
 # prerequisits
-check_installed () {
-        if [ `dpkg -l $PACKAGE | grep -c ^ii` -eq 0 ]; then
-		echo 'Missing package '$PACKAGE
+for PKG in \
+	openssh-client \
+	dput ;
+do
+	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
+		echo 'Missing package '$PKG
 		exit 1
 	fi
-}
-for PACKAGE in `echo \
-		openssh-client \
-		dput`; do
-	check_installed
 done
 
 # platform

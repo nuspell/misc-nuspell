@@ -7,12 +7,14 @@
 # version
 MAJOR=3
 VERSION=$MAJOR.0.0
-# tested on: Debian 10, Ubuntu 19.10,  Raspbian 10
+# tested on: Ubuntu 19.10, Ubuntu 18.04, Debian 10, Raspbian 10
+REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
 
 cd "$(dirname "$0")"
 
 # prerequisits
 for PKG in \
+	build-essential \
 	dpkg-dev \
 	debhelper \
 	devscripts \
@@ -25,13 +27,20 @@ for PKG in \
 	ronn ;
 do
 	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
-		echo 'Missing package '$PKG
-		exit 1
+		if [ $PKG = ronn -a $REL = 'ubuntu-bionic' ]; then
+			if [ `dpkg -l ruby-ronn | grep -c ^ii` -eq 0 ]; then
+				echo 'Missing package ruby-ronn'
+				exit 1
+			fi
+		else
+			echo 'Missing package '$PKG
+			exit 1
+		fi
 	fi
 done
 
 # platform
-OS=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`-`uname -m`
+OS=$REL-`uname -m`
 rm -rf ./$OS
 mkdir $OS
 cd $OS
@@ -43,6 +52,13 @@ tar -xf $TAR
 
 # debianize
 cp -a ../debian/ nuspell-$VERSION
+if [ $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
+	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
+fi
+if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
+	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
+fi
 
 # create orig tar with excluded files deleted
 cd nuspell-$VERSION
@@ -53,9 +69,19 @@ rm -f $TAR
 
 # extract new tar and debianize again
 ORIG=nuspell_$VERSION.orig.tar.xz
+if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
+	gunzip < nuspell_$VERSION.orig.tar.gz | xz > $ORIG
+	rm -f nuspell_$VERSION.orig.tar.gz
+fi
 tar -xf $ORIG
 cp -a ../debian/ nuspell-$VERSION
-
+if [ $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
+	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
+fi
+if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
+	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
+fi
 
 # package
 cd nuspell-$VERSION
