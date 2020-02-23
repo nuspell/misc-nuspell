@@ -71,8 +71,11 @@ if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
 	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
 fi
-if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
+if [ $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
+fi
+if [ $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
 fi
 
 # create orig tar with excluded files deleted
@@ -99,8 +102,11 @@ if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
 	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
 fi
-if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
+if [ $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
+fi
+if [ $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
 fi
 
 # package
