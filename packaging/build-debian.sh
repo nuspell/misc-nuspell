@@ -7,8 +7,15 @@
 # version
 MAJOR=3
 VERSION=$MAJOR.0.0
-# tested on: Ubuntu 19.10, Ubuntu 18.04, Debian 10, Raspbian 10
-REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
+
+# tested on:
+# - ubuntu-eoan-x86_64
+# - ubuntu-bionic-x86_64
+# - debian-buster-x86_64
+# - raspbian-buster-armv7l
+CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
+REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
+OS=$REL-`uname -m`
 
 cd "$(dirname "$0")"
 
@@ -40,7 +47,6 @@ do
 done
 
 # platform
-OS=$REL-`uname -m`
 rm -rf ./$OS
 mkdir $OS
 cd $OS
@@ -52,6 +58,7 @@ tar -xf $TAR
 
 # debianize
 cp -a ../debian/ nuspell-$VERSION
+sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
 	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
@@ -75,6 +82,7 @@ if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
 fi
 tar -xf $ORIG
 cp -a ../debian/ nuspell-$VERSION
+sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
 	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
