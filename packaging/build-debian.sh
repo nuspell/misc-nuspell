@@ -27,6 +27,7 @@ for PKG in \
 	devscripts \
 	fakeroot \
 	wget \
+	libgpgmepp6 \
 	g++ \
 	cmake \
 	libboost-locale-dev \
