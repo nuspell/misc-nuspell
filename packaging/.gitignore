@@ -1,5 +1,6 @@
 *
 !/.gitignore
+!/README.md
 !/debian
 !/build-debian.sh
 !/submit-launchpad.sh

@@ -34,18 +34,6 @@ if [ ! -e $OS-source ]; then
 fi
 cd $OS-source
 
-#check
-gpg --verify nuspell_$VERSION-*.changes
-if [ $? -ne 0 ]; then
-	echo 'Missing invalid signature for 'nuspell_$VERSION-*.changes
-	exit 1
-fi
-gpg --verify nuspell_$VERSION-*.dsc
-if [ $? -ne 0 ]; then
-	echo 'Missing invalid signature for 'nuspell_$VERSION-*.dsc
-	exit 1
-fi
-
 # upload
 dput -l -c ../dput.cf ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../..
