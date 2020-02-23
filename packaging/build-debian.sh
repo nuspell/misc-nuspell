@@ -8,16 +8,19 @@
 MAJOR=3
 VERSION=$MAJOR.0.0
 
-# tested on:
-# - ubuntu-eoan-x86_64
-# - ubuntu-bionic-x86_64
-# - debian-buster-x86_64
-# - raspbian-buster-armv7l
+cd "$(dirname "$0")"
+
+# platform
 CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
 REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
 OS=$REL-`uname -m`
-
-cd "$(dirname "$0")"
+BUILD=$VERSION
+if [ $REL = 'ubuntu-bionic' ]; then
+	BUILD=$VERSION-1~ppa1~ubuntu18.04.1
+fi
+if [ $REL = 'ubuntu-eoan' ]; then
+	BUILD=$VERSION-1~ppa1~ubuntu19.10.1
+fi
 
 # prerequisits
 for PKG in \
@@ -47,7 +50,7 @@ do
 	fi
 done
 
-# platform
+# output directories
 rm -rf ./$OS-source ./$OS-any
 mkdir $OS-source $OS-any
 cd $OS-source
@@ -59,6 +62,10 @@ tar -xf $TAR
 
 # debianize
 cp -a ../debian/ nuspell-$VERSION
+if [ $REL = 'ubuntu-eoan' -o $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
+	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
+fi
 sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
@@ -83,6 +90,10 @@ if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
 fi
 tar -xf $ORIG
 cp -a ../debian/ nuspell-$VERSION
+if [ $REL = 'ubuntu-eoan' -o $REL = 'ubuntu-bionic' ]; then
+	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
+	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
+fi
 sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
