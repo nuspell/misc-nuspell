@@ -1,5 +1,5 @@
 [ppa]
 fqdn = ppa.launchpad.net
 method = sftp
-incoming = ~nuspell/ubuntu/nuspell/
+incoming = ~nuspell/ubuntu/ppa/
 login = pander
