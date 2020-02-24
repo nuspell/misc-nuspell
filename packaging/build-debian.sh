@@ -18,9 +18,6 @@ BUILD=$VERSION
 if [ $REL = 'ubuntu-bionic' ]; then
 	BUILD=$VERSION-0ppa2~ubuntu1804
 fi
-if [ $REL = 'ubuntu-cosmic' ]; then
-	BUILD=$VERSION-0ppa2~ubuntu1810
-fi
 if [ $REL = 'ubuntu-disco' ]; then
 	BUILD=$VERSION-0ppa2~ubuntu1904
 fi
@@ -80,7 +77,7 @@ fi
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
 fi
-if [ $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' ]; then
+if [ $REL = 'ubuntu-disco' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.3.0/' nuspell-$VERSION/debian/control
 fi
 if [ $REL = 'ubuntu-eoan' ]; then
@@ -114,7 +111,7 @@ fi
 if [ $REL = 'ubuntu-bionic' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
 fi
-if [ $REL = 'ubuntu-cosmic' -o $REL = 'ubuntu-disco' ]; then
+if [ $REL = 'ubuntu-disco' ]; then
 	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.3.0/' nuspell-$VERSION/debian/control
 fi
 if [ $REL = 'ubuntu-eoan' ]; then

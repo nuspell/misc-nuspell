@@ -30,8 +30,9 @@ Then run
 
 Building has been successfully tested on
 * Ubuntu ([PPA](https://launchpad.net/~nuspell/+archive/ubuntu/ppa/+packages))
-    * 19.10 Eoan on x86_64
-    * 18.04 Bionic on x86_64
+    * 19.10 Eoan on amd64 (x86_64), arm64, armhf, i386
+    * 19.04 Disco on amd64 (x86_64), arm64, armhf, i386
+    * 18.04 Bionic on amd64 (x86_64), arm64, armhf, i386
 * Debian
     * 10 Buster on x86_64
 * Raspbian
