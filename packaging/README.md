@@ -29,10 +29,13 @@ Then run
     ./build-debian.sh
 
 Building has been successfully tested on
-* ubuntu-eoan-x86_64
-* ubuntu-bionic-x86_64
-* debian-buster-x86_64
-* raspbian-buster-armv7l
+* Ubuntu ([PPA](https://launchpad.net/~nuspell/+archive/ubuntu/ppa/+packages))
+    * 19.10 Eoan on x86_64
+    * 18.04 Bionic on x86_64
+* Debian
+    * 10 Buster on x86_64
+* Raspbian
+    * 10 Buster on armv7l
 
 Note that the build script does not yet support other patch
 levels than 1 (`-1`).

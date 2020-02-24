@@ -16,10 +16,10 @@ REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
 OS=$REL-`uname -m`
 BUILD=$VERSION
 if [ $REL = 'ubuntu-bionic' ]; then
-	BUILD=$VERSION-0~ppa1~ubuntu1804
+	BUILD=$VERSION-0ppa1~ubuntu1804
 fi
 if [ $REL = 'ubuntu-eoan' ]; then
-	BUILD=$VERSION-0~ppa1~ubuntu1910
+	BUILD=$VERSION-0ppa1~ubuntu1910
 fi
 
 # prerequisits
