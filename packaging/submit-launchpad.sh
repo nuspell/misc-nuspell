@@ -15,7 +15,6 @@ cd "$(dirname "$0")"
 
 # prerequisits
 for PKG in \
-	openssh-client \
 	dput ;
 do
 	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then

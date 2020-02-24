@@ -1,5 +1,0 @@
-[ppa]
-fqdn = ppa.launchpad.net
-method = ftp
-incoming = ~nuspell/ubuntu/ppa/
-login = pander

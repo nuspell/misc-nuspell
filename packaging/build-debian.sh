@@ -19,27 +19,15 @@ REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
 for PKG in \
 	build-essential \
 	dpkg-dev \
-	debhelper \
 	devscripts \
 	fakeroot \
 	wget \
 	libgpgmepp6 \
-	g++ \
-	cmake \
-	libboost-locale-dev \
-	libicu-dev \
-	ronn ;
+	g++ ;
 do
 	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
-		if [ $PKG = ronn -a $REL = 'ubuntu-bionic' ]; then
-			if [ `dpkg -l ruby-ronn | grep -c ^ii` -eq 0 ]; then
-				echo 'Missing package ruby-ronn'
-				exit 1
-			fi
-		else
-			echo 'Missing package '$PKG
-			exit 1
-		fi
+		echo 'Missing package '$PKG
+		exit 1
 	fi
 done
 
