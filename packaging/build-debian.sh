@@ -13,17 +13,7 @@ cd "$(dirname "$0")"
 # platform
 CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
 REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
-OS=$REL-`uname -m`
-BUILD=$VERSION
-if [ $REL = 'ubuntu-bionic' ]; then
-	BUILD=$VERSION-0ppa2~ubuntu1804
-fi
-if [ $REL = 'ubuntu-disco' ]; then
-	BUILD=$VERSION-0ppa2~ubuntu1904
-fi
-if [ $REL = 'ubuntu-eoan' ]; then
-	BUILD=$VERSION-0ppa2~ubuntu1910
-fi
+# OS=$REL-`uname -m`
 
 # prerequisits
 for PKG in \
@@ -54,9 +44,9 @@ do
 done
 
 # output directories
-rm -rf ./$OS-source ./$OS-any
-mkdir $OS-source $OS-any
-cd $OS-source
+rm -rf debian-build bionic-ppa-build eoan-ppa-build
+mkdir debian-build bionic-ppa-build eoan-ppa-build
+cd debian-build
 
 # upstream tar
 TAR=nuspell-$VERSION.tar.gz
@@ -65,91 +55,47 @@ tar -xf $TAR
 
 # debianize
 cp -a ../debian/ nuspell-$VERSION
-if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
-	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
-	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
-fi
-sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
-if [ $REL = 'ubuntu-bionic' ]; then
-	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
-	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-bionic' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-disco' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.3.0/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-eoan' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
-fi
 
 # create orig tar with excluded files deleted
 cd nuspell-$VERSION
+ORIG=nuspell_$VERSION.orig.tar.xz
 mk-origtargz ../$TAR
 cd ..
-rm -rf ./nuspell-$VERSION
-rm -f $TAR
-
-# extract new tar and debianize again
-ORIG=nuspell_$VERSION.orig.tar.xz
 if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
 	gunzip < nuspell_$VERSION.orig.tar.gz | xz > $ORIG
 	rm -f nuspell_$VERSION.orig.tar.gz
 fi
+rm -rf ./nuspell-$VERSION
+rm -f $TAR
+
+# extract new tar and debianize again
 tar -xf $ORIG
 cp -a ../debian/ nuspell-$VERSION
-if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
-	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
-	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
-fi
-sed -i 's/ unstable;/ '$CODENAME';/g' nuspell-$VERSION/debian/changelog
-if [ $REL = 'ubuntu-bionic' ]; then
-	sed -i 's/debhelper-compat (= 12)/debhelper-compat (= 11)/' nuspell-$VERSION/debian/control
-	sed -i 's/, ronn/, ruby-ronn/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-bionic' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.1.4/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-disco' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.3.0/' nuspell-$VERSION/debian/control
-fi
-if [ $REL = 'ubuntu-eoan' ]; then
-	sed -i 's/Standards-Version: 4.5.0/Standards-Version: 4.4.0/' nuspell-$VERSION/debian/control
-fi
 
 # package
-cp -a * ../$OS-any
 cd nuspell-$VERSION
-if [ `grep -c $VERSION debian/files` -lt 1 ]; then
-	echo 'Missing version '$VERSION' in debian/files'
-	exit 1
-fi
-if [ `grep -c $VERSION debian/changelog` -lt 1 ]; then
+if ! grep -c $VERSION debian/changelog ; then
 	echo 'Missing version '$VERSION' in debian/changelog'
 	exit 1
 fi
-dpkg-buildpackage -S
-cd ../../$OS-any/nuspell-$VERSION
-dpkg-buildpackage -B
+dpkg-buildpackage
 cd ..
 
 # symbols
-dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
-dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
-rm -rf tmp_symbols_tmp
+# dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
+# dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
+# rm -rf tmp_symbols_tmp
 
 # report
-cd ..
-echo 'Build for '$OS
+echo 'Build for Debian'
 echo
-ls -lh $OS-source/nuspell_$VERSION-*.dsc
-grep Depends: $OS-source/nuspell_$VERSION-*.dsc
+ls -lh nuspell_$VERSION-*.dsc
+grep Depends: nuspell_$VERSION-*.dsc
 echo
-ls -lh $OS-source/$ORIG
+ls -lh $ORIG
 echo
-ls -lh $OS-source/nuspell_$VERSION-*.debian.tar.xz
-for i in $OS-any/*$VERSION-*.deb; do
+ls -lh nuspell_$VERSION-*.debian.tar.xz
+for i in *$VERSION-*.deb; do
 	echo
 	ls -lh $i
 	dpkg --info $i|grep '^ Depends:'
@@ -157,4 +103,19 @@ for i in $OS-any/*$VERSION-*.deb; do
 	dpkg -c $i|grep -v /$
 done
 
+cd ../bionic-ppa-build
+cp ../debian-build/$ORIG .
+tar -xf $ORIG
+cd nuspell-$VERSION
+cp -a ../../debian .
+cp -a ../../bionic-ppa/* debian
+debuild -S
 cd ..
+
+cd ../eoan-ppa-build
+cp ../debian-build/$ORIG .
+tar -xf $ORIG
+cd nuspell-$VERSION
+cp -a ../../debian debian
+cp -a ../../eoan-ppa/* debian
+debuild -S

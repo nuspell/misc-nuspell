@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+#!/bin/sh
 
 # description: upload Debian package to Launchpad
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING
@@ -10,9 +10,6 @@ VERSION=$MAJOR.0.0
 
 # tested on:
 # - ubuntu-eoan-x86_64
-CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
-REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
-OS=$REL-`uname -m`
 
 cd "$(dirname "$0")"
 
@@ -27,13 +24,7 @@ do
 	fi
 done
 
-# platform
-if [ ! -e $OS-source ]; then
-	echo 'Missing directory '$OS-source
-	exit 1
-fi
-cd $OS-source
-
-# upload
-dput -l -c ../dput.cf ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../..
+cd bionic-ppa-build
+dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
+cd ../bionic-ppa-build
+dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
