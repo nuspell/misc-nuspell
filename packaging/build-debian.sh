@@ -18,6 +18,12 @@ BUILD=$VERSION
 if [ $REL = 'ubuntu-bionic' ]; then
 	BUILD=$VERSION-0ppa2~ubuntu1804
 fi
+if [ $REL = 'ubuntu-cosmic' ]; then
+	BUILD=$VERSION-0ppa2~ubuntu1810
+fi
+if [ $REL = 'ubuntu-disco' ]; then
+	BUILD=$VERSION-0ppa2~ubuntu1904
+fi
 if [ $REL = 'ubuntu-eoan' ]; then
 	BUILD=$VERSION-0ppa2~ubuntu1910
 fi
@@ -62,7 +68,7 @@ tar -xf $TAR
 
 # debianize
 cp -a ../debian/ nuspell-$VERSION
-if [ $REL = 'ubuntu-eoan' -o $REL = 'ubuntu-bionic' ]; then
+if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
 	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
 	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
 fi
@@ -93,7 +99,7 @@ if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
 fi
 tar -xf $ORIG
 cp -a ../debian/ nuspell-$VERSION
-if [ $REL = 'ubuntu-eoan' -o $REL = 'ubuntu-bionic' ]; then
+if [ $REL = 'ubuntu-bionic' -o $REL = 'ubuntu-disco' -o $REL = 'ubuntu-eoan' ]; then
 	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/changelog
 	sed -i 's/('$VERSION'-1)/('$BUILD')/' nuspell-$VERSION/debian/files
 fi
