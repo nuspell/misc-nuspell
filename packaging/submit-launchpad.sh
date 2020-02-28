@@ -23,7 +23,7 @@ do
 	fi
 done
 
-cd bionic-ppa-build
+cd build/bionic-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../bionic-ppa-build
+cd ../eoan-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes

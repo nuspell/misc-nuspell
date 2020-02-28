@@ -10,11 +10,6 @@ VERSION=$MAJOR.0.0
 
 cd "$(dirname "$0")"
 
-# platform
-CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
-REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
-# OS=$REL-`uname -m`
-
 # prerequisits
 for PKG in \
 	build-essential \
@@ -32,9 +27,9 @@ do
 done
 
 # output directories
-rm -rf debian-build bionic-ppa-build eoan-ppa-build
-mkdir debian-build bionic-ppa-build eoan-ppa-build
-cd debian-build
+rm -rf build
+mkdir build
+cd build
 
 # upstream tar
 TAR=nuspell-$VERSION.tar.gz
@@ -56,17 +51,52 @@ fi
 rm -rf ./nuspell-$VERSION
 rm -f $TAR
 
-# extract new tar and debianize again
+# create source build for sending to Debian Mentors
+mkdir debian-src
+cd debian-src
+cp ../$ORIG .
 tar -xf $ORIG
-cp -a ../debian/ nuspell-$VERSION
-
-# package
+cp -a ../../debian/ nuspell-$VERSION
 cd nuspell-$VERSION
-if ! grep -c $VERSION debian/changelog ; then
-	echo 'Missing version '$VERSION' in debian/changelog'
-	exit 1
-fi
-dpkg-buildpackage
+debuild -S
+cd ../..
+
+# create source build for sending to Launchpad
+mkdir bionic-ppa-src
+cd bionic-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/      nuspell-$VERSION
+cp -a ../../bionic-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
+# create source build for sending to Launchpad
+mkdir eoan-ppa-src
+cd eoan-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/    nuspell-$VERSION
+cp -a ../../eoan-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
+# Bellow follow full binary builds, meant for local testing
+
+# platform
+# CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
+# REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
+# OS=$REL-`uname -m`
+
+mkdir debian-bin
+cd debian-bin
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/ nuspell-$VERSION
+cd nuspell-$VERSION
+debuild
 cd ..
 
 # symbols
@@ -90,20 +120,3 @@ for i in *$VERSION-*.deb; do
 	dpkg --info $i|grep '^ Recommends:'
 	dpkg -c $i|grep -v /$
 done
-
-cd ../bionic-ppa-build
-cp ../debian-build/$ORIG .
-tar -xf $ORIG
-cd nuspell-$VERSION
-cp -a ../../debian .
-cp -a ../../bionic-ppa/* debian
-debuild -S
-cd ..
-
-cd ../eoan-ppa-build
-cp ../debian-build/$ORIG .
-tar -xf $ORIG
-cd nuspell-$VERSION
-cp -a ../../debian debian
-cp -a ../../eoan-ppa/* debian
-debuild -S
