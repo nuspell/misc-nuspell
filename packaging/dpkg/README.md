@@ -28,18 +28,18 @@ Then run
 
     ./build-debian.sh
 
+to create source and binary packages.
+
 Building has been successfully tested on
 * Ubuntu ([PPA](https://launchpad.net/~nuspell/+archive/ubuntu/ppa/+packages))
+    * 20.04 Focal on amd64 (x86_64), arm64, armhf
     * 19.10 Eoan on amd64 (x86_64), arm64, armhf, i386
     * 19.04 Disco on amd64 (x86_64), arm64, armhf, i386
     * 18.04 Bionic on amd64 (x86_64), arm64, armhf, i386
 * Debian
-    * 10 Buster on x86_64
+    * 10 Buster on amd64 (x86_64)
 * Raspbian
-    * 10 Buster on armv7l
-
-Note that the build script does not yet support other patch
-levels than 1 (`-1`).
+    * 10 Buster on armhf (armv7l)
 
 ## Fedora
 
