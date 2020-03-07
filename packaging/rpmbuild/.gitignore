@@ -1,0 +1,4 @@
+/SOURCES/*
+/RPMS/*
+/BUILD/*
+/BUILDROOT/*

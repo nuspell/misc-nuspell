@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# description: creates Debian packages
+# description: creates deb packages
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING
 # author: Sander van Geloven
 

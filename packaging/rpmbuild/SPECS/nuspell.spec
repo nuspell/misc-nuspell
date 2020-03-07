@@ -6,7 +6,6 @@ Source:    https://github.com/nuspell/nuspell/archive/v%{version}.tar.gz
 URL:       https://nuspell.github.io/
 License:   LGPLv3+
 BuildRequires: cmake make gcc-c++ libicu-devel boost-devel rubygem-ronn
-BuildRequires: perl-generators
 Requires:  hunspell-en-US
 
 %description
@@ -35,21 +34,19 @@ Includes and definitions for developing with Nuspell
 %setup -q
 
 %build
-%cmake . -DBUILD_SHARED_LIBS=ON -DBUILD_TESTING=OFF -DCMAKE_INSTALL_PREFIX=$RPM_BUILD_ROOT
-%cmake --build . --target all
+# all cmake command should have ` .` at the end to avoid errors
+%cmake -DBUILD_SHARED_LIBS=ON -DBUILD_TESTING=OFF .
+%cmake --target all --build .
 
 # for profiling, use https://github.com/nuspell/homebrew-nuspell/blob/master/Formula/nuspell.rb#L54
 
-# for check, use `cmake --build . --target test` and remove above `-DBUILD_TESTING=OFF`
+# for check, use `cmake --target test --build .` and remove above `-DBUILD_TESTING=OFF`
 
 %install
-rm -rf $RPM_BUILD_ROOT
-%cmake --build . --target install
-%find_lang %{name}
-
+%cmake --target install --build .
 %ldconfig_scriptlets
 
-%files -f %{name}.lang
+%files
 %doc README.md COPYING COPYING.LESSER CHANGELOG.md AUTHORS
 %{_libdir}/*.so.*
 %{_bindir}/nuspell
