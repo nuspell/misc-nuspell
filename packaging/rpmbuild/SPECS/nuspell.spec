@@ -34,17 +34,12 @@ Includes and definitions for developing with Nuspell
 %setup -q
 
 %build
-# all cmake command should have ` .` at the end to avoid errors
 %cmake -DBUILD_SHARED_LIBS=ON -DBUILD_TESTING=OFF .
-%cmake --target all --build .
+%make_build
 
-# for profiling, use https://github.com/nuspell/homebrew-nuspell/blob/master/Formula/nuspell.rb#L54
-
-# for check, use `cmake --target test --build .` and remove above `-DBUILD_TESTING=OFF`
 
 %install
-%cmake --target install --build .
-%ldconfig_scriptlets
+%make_install
 
 %files
 %doc README.md COPYING COPYING.LESSER CHANGELOG.md AUTHORS

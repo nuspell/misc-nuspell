@@ -23,10 +23,21 @@ do
 done
 
 # output directories
-#rm -rf build
-#mkdir build
-#cd build
-cd rpmbuild
+if [ ! -e BUILD ]; then
+	mkdir BUILD
+fi
+if [ ! -e BUILDROOT ]; then
+	mkdir BUILDROOT
+fi
+if [ ! -e RPMS ]; then
+	mkdir RPMS
+fi
+if [ ! -e SOURCES ]; then
+	mkdir SOURCES
+fi
+if [ ! -e SRPMS ]; then
+	mkdir SRPMS
+fi
 
 # upstream tar
 cd SOURCES
@@ -39,10 +50,4 @@ rpmbuild -bs nuspell.spec
 rpmlint nuspell.spec ../SRPMS/nuspell-$VERSION-*.src.rpm
 rpmbuild -bb nuspell
 rpmlint nuspell.spec ../RPMS/*/nuspell*
-cd ..
-
-#cd SRPMS
-#rpmbuild -rb ../SRPMS/nuspell-$VERSION-*.src.rpm
-#cd ..
-
 cd ..
