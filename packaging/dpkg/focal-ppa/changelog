@@ -1,0 +1,7 @@
+nuspell (3.0.0-0ppa2~ubuntu2004) focal; urgency=medium
+
+  [ Pander ]
+  * Initial packaging. (Closes: #925921)
+
+ -- Pander <pander@users.sourceforge.net>  Sat, 22 Feb 2020 23:33:25 +0100
+

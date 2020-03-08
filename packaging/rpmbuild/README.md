@@ -19,6 +19,7 @@ Build manually with
     LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib64
     export LD_LIBRARY_PATH
     nuspell -h
+    nuspell -D
 
 ## Building source and binary packages
 
@@ -33,8 +34,12 @@ Note that this will do work in `~/rpmbuild`
 
 Additional checks can be donw with
 
+    cd ~
     sudo mock --verbose SRPMS/nuspell-3.0.0-0.src.rpm
     rpmbuild -rb SRPMS/nuspell-$VERSION-*.src.rpm
+    sudo rpm -U RPMS/*/nuspell-$VERSION-*.*.rpm
+    nuspell -h
+    nuspell -D
 
 Notes on spec file:
 * all cmake commands should have ` .` at the end to avoid errors

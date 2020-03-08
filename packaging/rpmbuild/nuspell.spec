@@ -42,7 +42,8 @@ Includes and definitions for developing with Nuspell
 %make_install
 
 %files
-%doc README.md COPYING COPYING.LESSER CHANGELOG.md AUTHORS
+%doc README.md CHANGELOG.md AUTHORS
+%license COPYING.LESSER
 %{_libdir}/*.so.*
 %{_bindir}/nuspell
 %{_mandir}/man1/nuspell.1.gz
