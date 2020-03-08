@@ -26,7 +26,7 @@ or for older systems, install
 
 Then run
 
-    ./build-debian.sh
+    ./build.sh
 
 to create source and binary packages.
 

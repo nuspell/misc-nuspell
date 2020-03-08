@@ -1,4 +1,4 @@
-nuspell (3.0.0-0) unstable; urgency=medium
+nuspell (3.0.0-0ppa2~ubuntu1904) disco; urgency=medium
 
   [ Pander ]
   * Initial packaging. (Closes: #925921)

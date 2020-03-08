@@ -8,9 +8,6 @@
 MAJOR=3
 VERSION=$MAJOR.0.0
 
-# tested on:
-# - ubuntu-eoan-x86_64
-
 cd "$(dirname "$0")"
 
 # prerequisits
@@ -25,5 +22,9 @@ done
 
 cd build/bionic-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
+cd build/disco-ppa-src
+dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../eoan-ppa-src
+dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
+cd ../focal-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes

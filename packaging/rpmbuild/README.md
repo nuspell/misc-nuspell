@@ -27,7 +27,9 @@ Build source and binary packages with
     sudo dnf install rpm-build
     git clone https://github.com/nuspell/misc-nuspell.git
     cd misc-nuspell/package/rpmbuild
-    ./build-fedora.sh
+    ./build.sh
+
+Note that this will do work in `~/rpmbuild`
 
 Additional checks can be donw with
 

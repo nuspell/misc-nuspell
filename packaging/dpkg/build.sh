@@ -73,12 +73,34 @@ debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
+mkdir disco-ppa-src
+cd disco-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/      nuspell-$VERSION
+cp -a ../../disco-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
+# create source build for sending to Launchpad
 mkdir eoan-ppa-src
 cd eoan-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/    nuspell-$VERSION
 cp -a ../../eoan-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
+# create source build for sending to Launchpad
+mkdir focal-ppa-src
+cd focal-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/    nuspell-$VERSION
+cp -a ../../focal-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..

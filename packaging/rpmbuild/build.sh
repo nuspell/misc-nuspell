@@ -23,31 +23,22 @@ do
 done
 
 # output directories
-if [ ! -e BUILD ]; then
-	mkdir BUILD
+if [ ! -e ~/rpmbuild/SOURCES ]; then
+	mkdir -p ~/rpmbuild/SOURCES
 fi
-if [ ! -e BUILDROOT ]; then
-	mkdir BUILDROOT
+if [ ! -e ~/rpmbuild/SPECS ]; then
+	mkdir -p ~/rpmbuild/SPECS
 fi
-if [ ! -e RPMS ]; then
-	mkdir RPMS
-fi
-if [ ! -e SOURCES ]; then
-	mkdir SOURCES
-fi
-if [ ! -e SRPMS ]; then
-	mkdir SRPMS
-fi
+cp -a nuspell.spec ~/rpmbuild/SPECS
 
 # upstream tar
-cd SOURCES
+cd ~/rpmbuild/SOURCES
 wget -q https://github.com/nuspell/nuspell/archive/v$VERSION.tar.gz
-cd ..
 
 # build
-cd SPECS
+cd ../SPECS
+rpmlint nuspell.spec
 rpmbuild -bs nuspell.spec
-rpmlint nuspell.spec ../SRPMS/nuspell-$VERSION-*.src.rpm
-rpmbuild -bb nuspell
-rpmlint nuspell.spec ../RPMS/*/nuspell*
-cd ..
+rpmlint ../SRPMS/nuspell-$VERSION-*.src.rpm
+rpmbuild -bb nuspell.spec
+rpmlint ../RPMS/*/nuspell*-$VERSION-*.*.rpm
