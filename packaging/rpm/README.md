@@ -46,3 +46,7 @@ Notes on spec file:
 * for profiling, use https://github.com/nuspell/homebrew-nuspell/blob/master/Formula/nuspell.rb#L54 and https://src.fedoraproject.org/rpms/hunspell/blob/master/f/hunspell.spec
 * for make check, remove `-DBUILD_TESTING=OFF` and use https://docs.fedoraproject.org/en-US/packaging-guidelines/CMake/
 
+## Inclusion Fedora
+
+Temporarily, a `.src.rpm` will be here to get this package included into Fedora.
+See https://fedoraproject.org/wiki/Package_Review_Process
