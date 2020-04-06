@@ -1,26 +1,8 @@
 #!/usr/bin/env sh
 
-# description: Converts a Hunspell language support in terms of Debian/Ubuntu
-# package language code and Hunspell's dictionary language code to a wordlist
-# package name and wordlist file name. The Hunspell dictionary language code
-# can be found in filenames in .aff or .dic files in /usr/share/hunspell/. The
-# wordlist filenames can be found in /usr/share/dict/*. For example, package
-# en-us with language en_US is converted to wordlist package name wamerican
-# and wordlist filename american-english. Another example is de-ch-frami with
-# de_CH_frami which converts to wswiss swiss.
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
-# author: Pander <pander@users.sourceforge.net>
-
-#TODO Rewrite this scripts as Python 3 script in order for analyse.py to use
-# it and make it platform independent.
-
-#TODO Support all Hunspell languages and dictionary files.
-# wogerman wgerman-medical
-# wmanx
-# dict-freedict-afr-eng dict-freedict-ara-eng dict-freedict-bre-fra
-# dict-freedict-isl-eng dict-freedict-lit-eng dict-freedict-nno-nob
-# dict-freedict-oci-cat
-# apertium-arg apertium-br-fr apertium-eu-en apertium-kaz apertium-nno
+# description: Converts language code of a dictionary filename to language name
+# license: https://github.com/nuspell/nuspell/blob/master/COPYING.LESSER
+# author: Sander van Geloven
 
 if [ $# -ne 1 ]
 then
@@ -74,7 +56,7 @@ de_AT | de_AT_frami)
 de_CH | de_CH_frami)
 	echo 'Swiss German'
 	;;
-de_DE | de_DE_frami | de_BE | de_LU)
+de_DE | de_DE_frami | de_de-1901 | de_BE | de_LU)
 	echo 'German'
 	;;
 dz)
@@ -149,7 +131,7 @@ hi | hi_IN)
 hr | hr_HR)
 	echo 'Croatian'
 	;;
-hu | hu_HU)
+hu | hu_HU | hu_HU_u8)
 	echo 'Hungarian'
 	;;
 hy | hy_AM)

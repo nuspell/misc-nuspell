@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # description: create histograms for Hunspell language support
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
+# license: https://github.com/nuspell/nuspell/blob/master/COPYING.LESSER
 # author: Sander van Geloven
 
 if [ ! -d utf8 ]; then
@@ -14,7 +14,7 @@ cd utf8
 for i in *.txt; do
     filename=`basename $i .txt`
     echo $filename
-    ../../0-tools/histogram.py $i > $filename-historgram.md
+    ../../tools/histogram.py $i > $filename-historgram.md
 done
 
 cd ..
