@@ -51,7 +51,7 @@ for i in $(ls|sort); do
 		if [ ! -e $AFF ]; then
 			continue
 		fi
-		echo '| `'$i'` | `'$LANG'` | '$(grep SET $AFF|grep -v ^#|head -n 1|awk '{print $2}'|tr -d '[:space:]')' | '$(file $AFF|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'|sed -e 's/with //g'|sed -e 's/ line terminators//')' | '$(file $DIC|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'|sed -e 's/with //g'|sed -e 's/ line terminators//')' |' >> ../../Dictionary-Files.md
+		echo '| `'$i'` | `'$LANG'` | '$(grep SET $AFF|grep -v ^#|head -n 1|awk '{print $2}'|tr -d '[:space:]')' | '$(file $AFF|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'|sed -e 's/ very//'|sed -e 's/with //g'|sed -e 's/ line terminators//')' | '$(file $DIC|sed -e 's/^.*: //'|sed -e 's/ Unicode//'|sed -e 's/ text//'|sed -e 's/ very//'|sed -e 's/with //g'|sed -e 's/ line terminators//')' |' >> ../../Dictionary-Files.md
 	done
 	cd ..
 done

@@ -56,7 +56,7 @@ de_AT | de_AT_frami)
 de_CH | de_CH_frami)
 	echo 'Swiss German'
 	;;
-de_DE | de_DE_frami | de_de-1901 | de_BE | de_LU)
+de_DE | de_DE_frami | de_DE-1901 | de_BE | de_LU)
 	echo 'German'
 	;;
 dz)

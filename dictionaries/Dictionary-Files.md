@@ -84,7 +84,7 @@ A total of 108 different dictionaries are available, which are listed in the tab
 | `hunspell-vi_1%3a6.3.1-1` | `vi_VN` | Vietnamese | `42` | `6632` |
 | `myspell-cs_20040229-5.2` | `cs_CZ` | Czech | `2598` | `304139` |
 | `myspell-da_1.6.36-11` | `da_DK` | Danish | `618` | `97980` |
-| `myspell-de-de-1901_1%3a2-35` | `de_DE-1901` | ERROR: Unsupported language code de_DE-1901 | `560` | `74981` |
+| `myspell-de-de-1901_1%3a2-35` | `de_DE-1901` | German | `560` | `74981` |
 | `myspell-en-au_2.1-5.4` | `en_AU` | Australian English | `1143` | `45564` |
 | `myspell-eo_2.1.2000.02.25-57` | `eo` | Esperanto | `1449` | `18219` |
 | `myspell-es_1.11-15` | `es` | Spanish | `5890` | `56339` |
@@ -97,7 +97,7 @@ A total of 108 different dictionaries are available, which are listed in the tab
 | `myspell-gd_0.50-13` | `gd_GB` | Scottish Gaelic | `6` | `15671` |
 | `myspell-gv_0.50-16` | `gv_GB` | Manx Gaelic | `6` | `32359` |
 | `myspell-hu_1.6.1-2` | `hu_HU` | Hungarian | `24540` | `88879` |
-| `myspell-hu_1.6.1-2` | `hu_HU_u8` | ERROR: Unsupported language code hu_HU_u8 | `24540` | `88879` |
+| `myspell-hu_1.6.1-2` | `hu_HU_u8` | Hungarian | `24540` | `88879` |
 | `myspell-hy_0.20.0-2` | `hy_AM` | Armenian | `1008` | `63808` |
 | `myspell-nr_20070206-4ubuntu3` | `nr_ZA` | Ndebele | `22` | `12747` |
 | `myspell-ns_20070206-4ubuntu3` | `ns_ZA` | Northern Sotho | `21` | `4935` |
@@ -129,7 +129,7 @@ The table below shows the intended file type as is found in the affix file after
 | `hunspell-ca_3.0.3+repack1-1` | `ca` | UTF-8 | UTF-8, CRLF | UTF-8, CRLF |
 | `hunspell-ca_3.0.3+repack1-1` | `ca_ES-valencia` | UTF-8 | UTF-8, CRLF | UTF-8, CRLF |
 | `hunspell-cs_1%3a6.3.1-1` | `cs_CZ` | ISO8859-2 | ISO-8859 | ISO-8859 |
-| `hunspell-da_1%3a6.3.1-1` | `da_DK` | UTF-8 | UTF-8, very long lines | UTF-8 |
+| `hunspell-da_1%3a6.3.1-1` | `da_DK` | UTF-8 | UTF-8, long lines | UTF-8 |
 | `hunspell-de-at-frami_1%3a6.3.1-1` | `de_AT_frami` | ISO8859-1 | ISO-8859 | ISO-8859 |
 | `hunspell-de-at_20161207-7` | `de_AT` | ISO8859-1 | ISO-8859 | ISO-8859 |
 | `hunspell-de-ch-frami_1%3a6.3.1-1` | `de_CH_frami` | ISO8859-1 | ISO-8859 | ISO-8859 |
@@ -157,13 +157,13 @@ The table below shows the intended file type as is found in the affix file after
 | `hunspell-he_1%3a6.3.1-1` | `he_IL` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-hi_1%3a6.3.1-1` | `hi_IN` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-hr_1%3a6.3.1-1` | `hr_HR` | UTF-8 | UTF-8 | UTF-8 |
-| `hunspell-hu_1%3a6.3.1-1` | `hu_HU` | UTF-8 | Non-ISO extended-ASCII, very long lines, LF, NEL | UTF-8 |
+| `hunspell-hu_1%3a6.3.1-1` | `hu_HU` | UTF-8 | Non-ISO extended-ASCII, long lines, LF, NEL | UTF-8 |
 | `hunspell-id_1%3a6.3.1-1` | `id_ID` | ISO8859-1 | ASCII | ASCII |
 | `hunspell-is_1%3a6.3.1-1` | `is_IS` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-it_1%3a6.3.1-1` | `it_IT` | ISO8859-15 | ISO-8859 | ISO-8859 |
 | `hunspell-kk_1.1-2` | `kk_KZ` | UTF-8 | UTF-8 (BOM), CRLF | UTF-8 (BOM), CRLF |
 | `hunspell-kmr_1%3a6.3.1-1` | `kmr_Latn` | UTF-8 | UTF-8 | UTF-8 |
-| `hunspell-ko_0.7.90-1` | `ko` | UTF-8 | UTF-8, very long lines | UTF-8 |
+| `hunspell-ko_0.7.90-1` | `ko` | UTF-8 | UTF-8, long lines | UTF-8 |
 | `hunspell-lo_1%3a6.3.1-1` | `lo_LA` | UTF-8 | ASCII | UTF-8 |
 | `hunspell-lt_1%3a6.3.1-1` | `lt_LT` | ISO8859-13 | ISO-8859 | ISO-8859 |
 | `hunspell-lv_1.3.0-5` | `lv_LV` | UTF-8 | UTF-8 | UTF-8 |
@@ -178,8 +178,8 @@ The table below shows the intended file type as is found in the affix file after
 | `hunspell-pt-pt_1%3a6.3.1-1` | `pt_PT` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-ro_1%3a6.3.1-1` | `ro_RO` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-ru_1%3a6.3.1-1` | `ru_RU` | KOI8-R | ISO-8859 | ISO-8859, CRLF, LF |
-| `hunspell-se_1.0~beta6.20081222-1.2` | `se` | UTF-8 | UTF-8, very long lines | UTF-8 |
-| `hunspell-si_1%3a6.3.1-1` | `si_LK` | UTF-8 | UTF-8 | UTF-8, very long lines |
+| `hunspell-se_1.0~beta6.20081222-1.2` | `se` | UTF-8 | UTF-8, long lines | UTF-8 |
+| `hunspell-si_1%3a6.3.1-1` | `si_LK` | UTF-8 | UTF-8 | UTF-8, long lines |
 | `hunspell-sk_1%3a6.3.1-1` | `sk_SK` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-sl_1%3a6.3.1-1` | `sl_SI` | ISO8859-2 | ISO-8859 | ISO-8859 |
 | `hunspell-sr_1%3a6.3.1-1` | `sr_Latn_RS` | UTF-8 | UTF-8, CRLF | UTF-8, CRLF |
@@ -191,7 +191,7 @@ The table below shows the intended file type as is found in the affix file after
 | `hunspell-th_1%3a6.3.1-1` | `th_TH` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-tlh_1.0.6` | `tlh` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-tlh_1.0.6` | `tlh_Latn` | UTF-8 | UTF-8 | ASCII |
-| `hunspell-tr_1%3a6.3.1-1` | `tr_TR` | UTF-8 | UTF-8 | UTF-8, very long lines |
+| `hunspell-tr_1%3a6.3.1-1` | `tr_TR` | UTF-8 | UTF-8 | UTF-8, long lines |
 | `hunspell-uk_1%3a6.3.1-1` | `uk_UA` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-uz_0.6-4` | `uz_UZ` | UTF-8 | ASCII | UTF-8 |
 | `hunspell-vi_1%3a6.3.1-1` | `vi_VN` | UTF-8 | UTF-8 | UTF-8 |
