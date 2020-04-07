@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-# description: Converts language code of a dictionary filename to language name
+# description: Converts language code of a dictionary to language name
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING.LESSER
 # author: Sander van Geloven
 
@@ -176,7 +176,7 @@ nb | nb_NO)
 ne | ne_NP)
 	echo 'Nepalese'
 	;;
-nl | nl_NL | nl_BE)
+nl | nl_NL | nl_BE | nl_SR | nl_AN | nl_AW)
 	echo 'Dutch'
 	;;
 nn | nn_NO)

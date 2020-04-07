@@ -1,26 +1,8 @@
 #!/usr/bin/env sh
 
-# description: Converts a Hunspell language support in terms of Debian/Ubuntu
-# package language code and Hunspell's dictionary language code to a wordlist
-# package name and wordlist file name. The Hunspell dictionary language code
-# can be found in filenames in .aff or .dic files in /usr/share/hunspell/. The
-# wordlist filenames can be found in /usr/share/dict/*. For example, package
-# en-us with language en_US is converted to wordlist package name wamerican
-# and wordlist filename american-english. Another example is de-ch-frami with
-# de_CH_frami which converts to wswiss swiss.
-# license: https://github.com/hunspell/nuspell/blob/master/LICENSES
-# author: Pander <pander@users.sourceforge.net>
-
-#TODO Rewrite this scripts as Python 3 script in order for analyse.py to use
-# it and make it platform independent.
-
-#TODO Support all Hunspell languages and dictionary files.
-# wogerman wgerman-medical
-# wmanx
-# dict-freedict-afr-eng dict-freedict-ara-eng dict-freedict-bre-fra
-# dict-freedict-isl-eng dict-freedict-lit-eng dict-freedict-nno-nob
-# dict-freedict-oci-cat
-# apertium-arg apertium-br-fr apertium-eu-en apertium-kaz apertium-nno
+# description: Converts language code of a dictionary to word list name
+# license: https://github.com/nuspell/nuspell/blob/master/COPYING.LESSER
+# author: Sander van Geloven
 
 if [ $# -ne 1 ]
 then
@@ -41,10 +23,11 @@ da | da_DK)
 de_CH | de_CH_frami)
 	echo $1'\twswiss\tswiss'
 	;;
-#FIXME    de_BE)
-#FIXME    de_LU)
-de_DE | de_DE_frami)
+de_DE | de_DE_frami | de_AT | de_AT_frami | de_BE | de_LU)
 	echo $1'\twngerman\tngerman'
+	;;
+de_DE-1901)
+	echo $1'\twogerman\togerman'
 	;;
 en_CA)
 	# wcanadian-huge wcanadian-insane wcanadian-large wcanadian-small
@@ -61,27 +44,7 @@ en_US)
 eo)
 	echo $1'\twesperanto\tesperanto'
 	;;
-#FIXME    es_AR)
-#FIXME    es_BO)
-#FIXME    es_CL)
-#FIXME    es_CO)
-#FIXME    es_CR)
-#FIXME    es_CU)
-#FIXME    es_DO)
-#FIXME    es_EC)
-#FIXME    es_GT)
-#FIXME    es_HN)
-#FIXME    es_MX)
-#FIXME    es_NI)
-#FIXME    es_PA)
-#FIXME    es_PE)
-#FIXME    es_PR)
-#FIXME    es_PY)
-#FIXME    es_SV)
-#FIXME    es_US)
-#FIXME    es_UY)
-#FIXME    es_VE)
-es | es_ES)
+es | es_ES | es_AR | es_BO | es_CL | es_CO | es_CR | es_CU | es_DO | es_EC | es_GT | es_HN | es_MX | es_NI | es_PA | es_PE | es_PR | es_PY | es_SV | es_US | es_UY | es_VE)
 	echo $1'\twspanish\tspanish'
 	;;
 fy | fy_NL)
@@ -90,13 +53,7 @@ fy | fy_NL)
 fo | fo_FO)
 	echo $1'\twfaroese\tfaroese'
 	;;
-#FIXME    fr_BE)
-#FIXME    fr_CA)
-#FIXME    fr_CH)
-#FIXME    fr_FR)
-#FIXME    fr_LU)
-#FIXME    fr_MC)
-fr)
+fr | fr_BE | fr_CA | fr_CH | fr_FR | fr_LU | fr_MC)
 	echo $1'\twfrench\tfrench'
 	;;
 ga_IE)
@@ -114,11 +71,10 @@ gv | gv_GB)
 #id | id_ID)
 #	echo $1'\twindonesian\tindonesian'
 #	;;
-#FIXME    it_CH)
-it | it_IT)
+it | it_IT | it_CH)
 	echo $1'\twitalian\titalian'
 	;;
-nl | nl_NL | nl_BE)
+nl | nl_NL | nl_BE | nl_SR | nl_AN | nl_AW)
 	echo $1'\twdutch\tdutch'
 	;;
 nb_NO)
@@ -156,7 +112,7 @@ uk | uk_UA)
 	echo $1'\twukrainian\tukrainian'
 	;;
 *)
-	echo 'ERROR: Unsupported package '$1
+	echo 'ERROR: Unsupported language code '$1
 	exit 1
 	;;
 esac

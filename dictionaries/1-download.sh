@@ -4,12 +4,14 @@
 # license: https://github.com/nuspell/nuspell/blob/master/COPYING.LESSER
 # author: Sander van Geloven
 
-if [ -e packages ]; then
-	rm -f packages/*
+set -e
+cd $(dirname "$0")
+if [ -e downloads ]; then
+	rm -f downloads/*
 else
-    mkdir packages
+    mkdir downloads
 fi
-cd packages
+cd downloads
 
 # Only package names which start with myspell-, hunspell- or nuspell-,
 # except any dummy transitional packages or packages with tools.
