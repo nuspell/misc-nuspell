@@ -1,0 +1,27 @@
+app: Nuspell
+
+ingredients:
+  dist: bionic
+  sources:
+    - deb http://ppa.launchpad.net/nuspell/ppa/ubuntu bionic main
+
+script:
+  - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png
+  - mv -f logo-white-512x512.png nuspell.png
+  - mkdir -p usr/share/icons/hicolor/512x512/apps/
+  - cp -f nuspell.png usr/share/icons/hicolor/512x512/apps/
+  - cat > nuspell.desktop <<\EOF
+  - [Desktop Entry]
+  - Categories=Development;Utility;TextEditor;
+  - Encoding=UTF-8
+  - Name=Nuspell
+  - GenericName=Spell Checker
+  - Comment=spell checking library and command-line tool
+  - Exec=nuspell %u
+  - Icon=nuspell
+  - Terminal=false
+  - StartupNotify=false
+  - Type=Application
+  - EOF
+  - mkdir -p usr/share/applications/
+  - cp -f nuspell.desktop usr/share/applications/

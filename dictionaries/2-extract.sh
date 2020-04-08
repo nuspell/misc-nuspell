@@ -28,9 +28,9 @@ hunspell-fr'
 # Skip additional dictionaries without affix file
 SKIP_ADDITIONAL='hunspell-de-med
 hunspell-en-med'
-# Skip dictionaries with file format errors
+# Temporary skip dictionaries with file format errors
 SKIP_FORMAT='myspell-hu
-hunspell-hu'
+hunspell-hu' # https://github.com/hunspell/hunspell/issues/559
 
 for i in $(ls ../downloads/*.deb|sort); do
 	TMP=$(basename $i)

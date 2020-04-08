@@ -106,7 +106,7 @@ A total of 105 different dictionaries are available, which are listed in the tab
 | `myspell-tn_20070206-4ubuntu3` | `tn_ZA` | Tswana | `21` | `10866` |
 | `myspell-ts_20070207-4ubuntu3` | `ts_ZA` | Tsonga | `21` | `28355` |
 | `myspell-uk_1.7.1-2` | `uk_UA` | Ukrainian | `4810` | `126310` |
-| `myspell-ve_20070206-3ubuntu2` | `ve_ZA` | Venda | `21` | `8787` |
+| `myspell-ve_20070206-3ubuntu2` | `ve_ZA` | Venda | `2` | `8787` |
 | `myspell-xh_20070206-4ubuntu3` | `xh_ZA` | Xhosa | `21` | `18122` |
 | `myspell-zu_20070207-5ubuntu2` | `zu_ZA` | Zulu | `21212` | `73250` |
 

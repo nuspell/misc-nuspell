@@ -106,7 +106,7 @@ A total of 105 different dictionaries are available, which are listed in the tab
 | `myspell-tn_20070206-4ubuntu3` | `tn_ZA` | ISO8859-2 | ISO-8859 | ASCII |
 | `myspell-ts_20070207-4ubuntu3` | `ts_ZA` | ISO8859-1 | ASCII | ASCII |
 | `myspell-uk_1.7.1-2` | `uk_UA` | UTF-8 | UTF-8 | UTF-8 |
-| `myspell-ve_20070206-3ubuntu2` | `ve_ZA` | UTF-8 | ISO-8859 | UTF-8 |
+| `myspell-ve_20070206-3ubuntu2` | `ve_ZA` | UTF-8 | UTF-8 | UTF-8 |
 | `myspell-xh_20070206-4ubuntu3` | `xh_ZA` | ISO8859-1 | ASCII | ASCII |
 | `myspell-zu_20070207-5ubuntu2` | `zu_ZA` | ISO8859-1 | ASCII | ASCII |
 
