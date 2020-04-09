@@ -8,7 +8,7 @@ Make sure that `Nuspell.yml` refers to the latest Ubuntu LTS release and run:
 
     ./build.sh.
 
-which will create an AppImage in the `out` directory.
+which will create an AppImage in the `out` directory and test it too.
 
 ## Clean up
 
