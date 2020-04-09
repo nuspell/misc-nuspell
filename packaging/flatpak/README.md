@@ -4,13 +4,17 @@ Building a Flatpak can best be done in a CI environment such as Travis.
 
 ## Requirements
 
-Install:
+Install for Flatpak:
 
     sudo apt-get install flatpak-builder
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
     flatpak install -y flathub
     flatpak install -y org.freedesktop.Platform//18.08 org.freedesktop.Sdk//18.08
 #    flatpak install -y org.gnome.Platform//3.32 org.gnome.Sdk//3.32
+
+Installf for Boost:
+
+    sudo apt-get install elfutils
 
 ## Build
 
