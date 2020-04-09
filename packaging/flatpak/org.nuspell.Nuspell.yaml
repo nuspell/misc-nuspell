@@ -4,10 +4,80 @@ runtime-version: '18.08'
 sdk: org.freedesktop.Sdk
 command: nuspell
 modules:
- - name: nuspell
-   buildsystem: cmake
-   sources:
-     - sha256: 188f0048160b57e47a37506f035b8f624e9046150c311f1a743870cd222effd1
-       type: archive
-       url: https://github.com/nuspell/nuspell/archive/v3.1.0.tar.gz
-#TODOrename-icon: nuspell
+  - name: boost
+    build-commands:
+#TODO possible to update only certain modules?
+      - git submodule -b . update --init
+      - ./bootstrap.sh --prefix=/app --with-libraries=locale
+#TODO stuck at Error: module boost: autogen did not create configure 
+     - ./b2 --with-locale link=shared
+      - ./b2 --with-locale link=shared install
+    sources:
+      - type: git
+        url: https://github.com/boostorg/boost.git
+        branch: boost-1.65.1
+#    cleanup:
+#      - /include
+#  - name: ronn
+#    build-commands:
+#      - gem install ronn-ng
+#OR
+#https://lists.freedesktop.org/archives/flatpak/2018-April/001095.html
+#OR
+#https://github.com/flatpak/flatpak-builder-tools/tree/master/rubygems
+#OR
+#    sources:
+#      - type: archive
+#        url: https://github.com/apjanke/ronn-ng/archive/v0.9.0.tar.gz
+#        sha256: cbbc6dff1ed88d16fd686b3f01aa4c17e302617146cfc44c9f34a263c1b73bfc
+  - name: nuspell
+    modules:
+      - boost
+    buildsystem: cmake
+    config-opts:
+      - -DBUILD_TESTING=OFF
+      - -DBUILD_SHARED_LIBS=ON
+    sources:
+      - type: archive
+        url: https://github.com/nuspell/nuspell/archive/v3.1.0.tar.gz
+        sha256: 188f0048160b57e47a37506f035b8f624e9046150c311f1a743870cd222effd1
+#TODO rename-icon: nuspell
+
+
+
+
+#OLD STUFF
+#    modules:
+#      - name: boost-build
+#        sources:
+#          - type: archive
+#            url: https://github.com/boostorg/build/archive/boost-1.65.1.tar.gz
+#            sha256: c8ade2e4c3d46f0843474373c14e1d2ec5b47b9ab52605bc4819ac156ed40691
+#      - name: boost-locale
+#        sources:
+#          - type: archive
+#            url: https://github.com/boostorg/locale/archive/boost-1.65.1.tar.gz
+#            sha256: b1a85c20d1b8fe2c63d3a73671b8f29664316e332f8ffd9bec7e31f77e9590fe
+#    buildsystem: simple
+
+
+
+
+#      - cd tools/build
+#      - tar xf ../../../../downloads/c8ade2e4c3d46f0843474373c14e1d2ec5b47b9ab52605bc4819ac156ed40691/boost-1.65.1.tar.gz
+#      - mv build-boost-1.65.1/* .
+#      - rm -rf build-boost-1.65.1
+#      - cd ../../libs/locale
+#      - tar xf ../../../../downloads/b1a85c20d1b8fe2c63d3a73671b8f29664316e332f8ffd9bec7e31f77e9590fe/boost-1.65.1.tar.gz
+#      - mv locale-boost-1.65.1/* .
+#      - rm -rf locale-boost-1.65.1
+#      - cd ../..
+#      - git clone https://github.com/boostorg/boost.git --branch boost-1.65.1
+#      - cd boost
+
+
+
+#      - type: archive
+#        url: https://github.com/boostorg/boost/archive/boost-1.65.1.tar.gz
+#        sha256: e5e344aaa94f9cf6a7fe99e518d89f776bbbf02100965ec96207853553ce8700
+

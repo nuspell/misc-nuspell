@@ -8,11 +8,13 @@ set -e
 cd "$(dirname "$0")"
 
 # prerequisits
-#TODO if [ -z which flatpak-builder ]; then
-#	echo ERROR
+if [ -z $(which flatpak-builder) ]; then
+	echo 'Missing executable flatpak-builder'
+	exit 1
+fi
 
 # build
-flatpak-builder build-dir org.nuspell.Nuspell.yaml
+flatpak-builder --force-clean build-dir org.nuspell.Nuspell.yaml
 
 # test
 flatpak-builder --run build-dir org.nuspell.Nuspell.yaml nuspell -D

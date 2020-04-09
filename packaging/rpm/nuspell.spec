@@ -1,6 +1,6 @@
 Name:      nuspell
 Summary:   A spell checker library and command-line tool
-Version:   3.0.0
+Version:   3.1.0
 Release:   0%{?dist}
 Source:    https://github.com/nuspell/nuspell/archive/v%{version}.tar.gz
 URL:       https://nuspell.github.io/
@@ -55,6 +55,9 @@ Includes and definitions for developing with Nuspell
 %{_libdir}/cmake/%{name}
 
 %changelog
+* Thu Apr 09 2020 Pander <pander@users.sourceforge.net> - 3.1.0-0
+- Bumped version
+
 * Thu Mar 05 2020 Pander <pander@users.sourceforge.net> - 3.0.0-0
 - Initial contribution
 
