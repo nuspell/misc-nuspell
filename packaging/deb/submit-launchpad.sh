@@ -6,8 +6,9 @@
 
 # version
 MAJOR=3
-VERSION=$MAJOR.0.0
+VERSION=$MAJOR.1.0
 
+set -e
 cd "$(dirname "$0")"
 
 # prerequisits
