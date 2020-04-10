@@ -15,18 +15,6 @@ modules:
         branch: boost-1.65.1
 #    cleanup:
 #      - /include
-#  - name: ronn
-#    build-commands:
-#      - gem install ronn-ng
-#OR
-#https://lists.freedesktop.org/archives/flatpak/2018-April/001095.html
-#OR
-#https://github.com/flatpak/flatpak-builder-tools/tree/master/rubygems
-#OR
-#    sources:
-#      - type: archive
-#        url: https://github.com/apjanke/ronn-ng/archive/v0.9.0.tar.gz
-#        sha256: cbbc6dff1ed88d16fd686b3f01aa4c17e302617146cfc44c9f34a263c1b73bfc
   - name: nuspell
     modules:
       - boost
@@ -34,6 +22,9 @@ modules:
     config-opts:
       - -DBUILD_TESTING=OFF
       - -DBUILD_SHARED_LIBS=ON
+      - -DBOOST_ROOT=/app
+#      - -DBOOST_LIBRARYDIR=/app/lib
+#      - -DBOOST_INCLUDEDIR=/app/include/boost
     sources:
       - type: archive
         url: https://github.com/nuspell/nuspell/archive/v3.1.0.tar.gz
