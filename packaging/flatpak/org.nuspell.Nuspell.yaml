@@ -5,10 +5,10 @@ sdk: org.freedesktop.Sdk
 command: nuspell
 modules:
   - name: boost
-#TODO is the next line needed?
+#TODO is the next line needed when simple is default?
     buildsystem: simple
     build-commands:
-      - git submodule update --init --recursive && ./bootstrap.sh --prefix=/app --with-libraries=locale && ./b2 link=shared install
+      - git submodule update --init --recursive && ./bootstrap.sh --prefix=/app --with-libraries=locale && ./b2 link=shared install #FIXME doesn't work without &&
     sources:
       - type: git
         url: https://github.com/boostorg/boost.git
@@ -22,11 +22,12 @@ modules:
     config-opts:
       - -DBUILD_TESTING=OFF
       - -DBUILD_SHARED_LIBS=ON
-      - -DBOOST_ROOT=/app
-#      - -DBOOST_LIBRARYDIR=/app/lib
-#      - -DBOOST_INCLUDEDIR=/app/include/boost
+      - -DBOOST_ROOT=/app #FIXME Boost not picked up by Nuspell build
+#should not be needed      - -DBOOST_LIBRARYDIR=/app/lib
+#should not be needed      - -DBOOST_INCLUDEDIR=/app/include/boost
     sources:
       - type: archive
         url: https://github.com/nuspell/nuspell/archive/v3.1.0.tar.gz
         sha256: 188f0048160b57e47a37506f035b8f624e9046150c311f1a743870cd222effd1
 #TODO rename-icon: nuspell
+#TODO add application launcher
