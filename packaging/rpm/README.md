@@ -8,9 +8,9 @@
 
 Build manually with
 
-    wget https://github.com/nuspell/nuspell/archive/v3.0.0.tar.gz
-    tar xf v3.0.0.tar.gz
-    cd nuspell-3.0.0
+    wget https://github.com/nuspell/nuspell/archive/v3.1.0.tar.gz
+    tar xf v3.1.0.tar.gz
+    cd nuspell-3.1.0
     mkdir build
     cd build
     cmake .. -DBUILD_SHARED_LIBS=ON -DBUILD_TESTING=OFF
@@ -32,10 +32,10 @@ Build source and binary packages with
 
 Note that this will do work in `~/rpmbuild`
 
-Additional checks can be donw with
+Additional checks can be done with
 
     cd ~
-    sudo mock --verbose SRPMS/nuspell-3.0.0-0.src.rpm
+    sudo mock --verbose SRPMS/nuspell-3.1.0-0.src.rpm
     rpmbuild -rb SRPMS/nuspell-$VERSION-*.src.rpm
     sudo rpm -U RPMS/*/nuspell-$VERSION-*.*.rpm
     nuspell -h
