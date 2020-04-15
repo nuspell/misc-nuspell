@@ -23,9 +23,10 @@ done
 
 cd build/bionic-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd build/disco-ppa-src
+cd ../../build/disco-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../eoan-ppa-src
+cd ../../build/eoan-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../focal-ppa-src
+cd ../../build/focal-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
+cd ../..

@@ -41,6 +41,12 @@ Building has been successfully tested on
 * Raspbian
     * 10 Buster on armhf (armv7l)
 
-## Fedora
+## PPA
 
-TODO
+For uploading Ubuntu source packages to the PPA on Launchpad, install `dput` and
+then run:
+
+    ./submit-launchpad.sh
+
+In case the dput lintian rejects a too new or too old Standards-Version, build
+and submit from a (virtual) system for that specific distribution release.
