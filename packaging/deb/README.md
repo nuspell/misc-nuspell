@@ -5,16 +5,16 @@
 Install the following packages
 
     build-essential \
+    cmake \
     dpkg-dev \
     debhelper \
     devscripts \
     fakeroot \
-    wget \
     g++ \
     libgpgmepp6 \
-    cmake \
     libboost-locale-dev \
-    libicu-dev
+    libicu-dev \
+    wget
 
 for newer operating systems, also install
 

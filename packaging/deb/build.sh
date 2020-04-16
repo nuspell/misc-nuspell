@@ -14,12 +14,14 @@ cd "$(dirname "$0")"
 # prerequisits
 for PKG in \
 	build-essential \
+	cmake \
 	dpkg-dev \
+	debhelper \
 	devscripts \
 	fakeroot \
-	wget \
+	g++ \
 	libgpgmepp6 \
-	g++ ;
+	wget ;
 do
 	if [ `dpkg -l $PKG | grep -c ^ii` -eq 0 ]; then
 		echo 'Missing package '$PKG
