@@ -18,8 +18,7 @@ script:
   - cp -f nuspell.png usr/share/icons/hicolor/512x512/apps/
   - cat > nuspell.desktop <<\EOF
   - [Desktop Entry]
-  - Categories=Development;Utility;TextEditor;
-  - Encoding=UTF-8
+  - Categories=TextEditor;Utility
   - Name=Nuspell
   - GenericName=Spell Checker
   - Comment=spell checking library and command-line tool

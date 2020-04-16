@@ -12,9 +12,15 @@ if [ -z $(which flatpak-builder) ]; then
 	echo 'Missing executable flatpak-builder'
 	exit 1
 fi
+desktop-file-validate org.nuspell.Nuspell.desktop
+
+# clean
+if [ -e .flatpak-builder ]; then
+	rm -rf .flatpak-builder
+fi
 
 # build
-flatpak-builder --force-clean build-dir org.nuspell.Nuspell.yaml
+flatpak-builder --force-clean build-dir org.nuspell.Nuspell.json
 
 # test
-flatpak-builder --run build-dir org.nuspell.Nuspell.yaml nuspell -D
+flatpak-builder --run build-dir org.nuspell.Nuspell.json nuspell -D
