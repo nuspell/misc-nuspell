@@ -1,11 +1,20 @@
-# AppImage
+# Snap
 
 Building an AppImage can best be done in a CI environment such as Travis. See
 also files for Flatpak and keep these in sync.
 
 ## Requirements
 
-The build step will take care of requirements.
+Install Snap:
+
+    sudo apt-get install snapd
+
+Test with:
+
+    snap version
+    snap find 'spell checker'
+    snap info languagetool
+    snap list
 
 ## Build
 
