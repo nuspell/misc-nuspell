@@ -18,7 +18,7 @@ Test with:
 
 ## Initialization
 
-To start for the first time, run:
+To start for the first time, run in the top-level directory:
 
     sudo snap install snapcraft --classic
 
@@ -36,7 +36,11 @@ From the top-level directory or from the `snap` directory, run:
 
 When asked to setup support for multipass, answer yes with `y`.
 
+Note that the `snap` directory has to be in the top-level directory. This is
+required for building with snapcraft.io
 
+Additionally, the NuspellDevOps user needs to have admin rights to this
+repository in order to use this build service.
 
 
 snap refresh
@@ -45,16 +49,6 @@ snap find nuspell
 snap info nuspell
 snap install nuspell
 snap remove nuspell
-
-
-
-Make sure that `Nuspell.yml` refers to the latest Ubuntu LTS release and run:
-
-    ./build.sh.
-
-which will create an AppImage in the `out` directory and test it too. Note that
-in the YAML file, the desktop launcher and icon file are to be copied, not only
-moved.
 
 ## Clean up
 
