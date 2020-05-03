@@ -16,7 +16,37 @@ Test with:
     snap info languagetool
     snap list
 
+## Initialization
+
+To start for the first time, run:
+
+    sudo snap install snapcraft --classic
+
+which will create a directory called `snap` with a file called `snapcraft.yaml`.
+
 ## Build
+
+Login to Snapcraft via Ubuntu One with:
+
+    sudo snap login NUSPELL_DEVOPS_EMAIL_ADDRESS
+
+From the top-level directory or from the `snap` directory, run:
+
+    snapcraft
+
+When asked to setup support for multipass, answer yes with `y`.
+
+
+
+
+snap refresh
+snap list nuspell
+snap find nuspell
+snap info nuspell
+snap install nuspell
+snap remove nuspell
+
+
 
 Make sure that `Nuspell.yml` refers to the latest Ubuntu LTS release and run:
 
