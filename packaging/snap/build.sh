@@ -15,5 +15,4 @@ fi
 
 # build
 cd ../..
-snapcraft clean
 snapcraft

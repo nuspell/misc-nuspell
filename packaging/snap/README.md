@@ -34,30 +34,32 @@ From the top-level directory or from the `snap` directory, run:
 
     snapcraft
 
-When asked to setup support for multipass, answer yes with `y`.
+When asked to setup support for multipass, answer yes with `y`. This to build it
+locally. Test with:
+
+    sudo snap install nuspell_3.1.0_amd64.snap --dangerous --devmode
 
 Note that the `snap` directory has to be in the top-level directory. This is
 required for building with snapcraft.io
 
 Additionally, the NuspellDevOps user needs to have admin rights to this
-repository in order to use this build service.
+repository in order to use this build service. That is the way to build and
+distribute this Snap, see below.
 
+Practical commands are:
 
-snap refresh
-snap list nuspell
-snap find nuspell
-snap info nuspell
-snap install nuspell
-snap remove nuspell
+    snap list nuspell
+    snap find nuspell
+    snap info nuspell
+    snap install nuspell
+    snap remove nuspell
 
 ## Clean up
 
 Clean up can be done with:
 
-    rm -rf Nuspell
+    snapcraft clean nuspell
 
 ## Publish
 
-Publish the AppImage by:
-- updating the [apps at AppImageHub](https://github.com/AppImage/appimage.github.io/tree/master/apps)
-- updating the [recipes at pkg2appimage](https://github.com/AppImage/pkg2appimage/tree/master/recipes)
+Publish the Snap via the webinterface in https://snapcraft.io/nuspell/

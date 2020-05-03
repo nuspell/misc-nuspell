@@ -39,3 +39,4 @@ Clean up can be done with:
 
 Publish the Flatpak by:
 - updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr)
+- updating the [recipes at pkg2appimage](https://github.com/AppImage/pkg2appimage/tree/master/recipes)
