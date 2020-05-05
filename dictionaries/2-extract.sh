@@ -63,12 +63,21 @@ done
 find ./ -name 'hyph*.dic' -exec rm -f  {} \;
 
 # Temporary fix for https://github.com/nuspell/nuspell/issues/30
-find ./ -name lv_LV.aff -exec sed -e 's/|^cz]īt/[^cz]īt/' -i {} \;
+#OLD FIX find ./ -name lv_LV.aff -exec sed -e 's/|^cz]īt/[^cz]īt/' -i {} \;
+wget https://sourceforge.net/projects/openoffice-lv/files/openoffice-lv/lv_LV-1.4.0/lv_LV-1.4.0.zip/download
+rm -rf hunspell-lv_*
+mkdir hunspell-lv_1.4.0-0
+cd hunspell-lv_1.4.0-0
+unzip -q ../download
+rm -f *.txt *.bat *.sh hyph_*.dic
+cd ..
+rm -f download
 
 # Temporary fix for incorrect ISO-8859-? file type
 echo "SET UTF-8\nTRY aeoltinghmškswrpbdufyMcSjTBDLNPKRAvCEz-GIHOFWJV'xUYZqXŠQéÉè" > tmp
 find ./ -name ve_ZA.aff -exec cp -f tmp {} \;
 rm -f tmp
+
 
 echo 'Consider the output below for extra packages to skip'
 echo 'Empty directories:'
