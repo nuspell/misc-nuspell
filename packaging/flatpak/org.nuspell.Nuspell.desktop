@@ -1,5 +1,5 @@
 [Desktop Entry]
-Categories=TextEditor;Utility
+Categories=TextEditor;Utility;
 Name=Nuspell
 GenericName=Spell Checker
 Comment=spell checking library and command-line tool
