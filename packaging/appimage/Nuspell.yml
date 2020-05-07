@@ -18,13 +18,13 @@ script:
   - cp -f nuspell.png usr/share/icons/hicolor/512x512/apps/
   - cat > nuspell.desktop <<\EOF
   - [Desktop Entry]
-  - Categories=TextEditor;Utility
+  - Categories=TextEditor;Utility;
   - Name=Nuspell
   - GenericName=Spell Checker
   - Comment=spell checking library and command-line tool
   - Exec=nuspell %u
   - Icon=nuspell
-  - Terminal=false
+  - Terminal=true
   - StartupNotify=false
   - Type=Application
   - EOF
