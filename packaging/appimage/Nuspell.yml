@@ -10,12 +10,13 @@ ingredients:
     - deb http://archive.ubuntu.com/ubuntu/ bionic-security main universe
   ppas:
     - nuspell/ppa
+  script:
+    - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O nuspell.png
 
 script:
-  - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png
-  - mv -f logo-white-512x512.png nuspell.png
   - mkdir -p usr/share/icons/hicolor/512x512/apps/
-  - cp -f nuspell.png usr/share/icons/hicolor/512x512/apps/
+  - cp -f ../nuspell.png usr/share/icons/hicolor/512x512/apps/
+  - ln -sf usr/share/icons/hicolor/512x512/apps/nuspell.png nuspell.png
   - cat > nuspell.desktop <<\EOF
   - [Desktop Entry]
   - Categories=TextEditor;Utility;
