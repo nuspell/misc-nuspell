@@ -6,7 +6,7 @@
 
 # version
 MAJOR=3
-VERSION=$MAJOR.1.0
+VERSION=$MAJOR.1.1
 
 set -e
 cd "$(dirname "$0")"
