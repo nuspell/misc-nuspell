@@ -47,7 +47,7 @@ cd nuspell-$VERSION
 ORIG=nuspell_$VERSION.orig.tar.xz
 mk-origtargz ../$TAR
 cd ..
-if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least ubuntu-bionic
+if [ -e nuspell_$VERSION.orig.tar.gz ]; then # for at least Ubuntu Bionic 1804
 	gunzip < nuspell_$VERSION.orig.tar.gz | xz > $ORIG
 	rm -f nuspell_$VERSION.orig.tar.gz
 fi
@@ -65,34 +65,34 @@ debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir bionic-ppa-src
-cd bionic-ppa-src
+mkdir 1804-ppa-src
+cd 1804-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/      nuspell-$VERSION
-cp -a ../../bionic-ppa/* nuspell-$VERSION/debian
+cp -a ../../1804-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir eoan-ppa-src
-cd eoan-ppa-src
+mkdir 1910-ppa-src
+cd 1910-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../eoan-ppa/* nuspell-$VERSION/debian
+cp -a ../../1910-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir focal-ppa-src
-cd focal-ppa-src
+mkdir 2004-ppa-src
+cd 2004-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../focal-ppa/* nuspell-$VERSION/debian
+cp -a ../../2004-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..

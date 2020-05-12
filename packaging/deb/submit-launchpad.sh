@@ -6,7 +6,7 @@
 
 # version
 MAJOR=3
-VERSION=$MAJOR.1.0
+VERSION=$MAJOR.1.1
 
 set -e
 cd "$(dirname "$0")"
@@ -21,10 +21,10 @@ do
 	fi
 done
 
-cd build/bionic-ppa-src
+cd build/1804-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../../build/eoan-ppa-src
+cd ../../build/1910-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../../build/focal-ppa-src
+cd ../../build/2004-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../..
