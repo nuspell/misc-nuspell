@@ -2,9 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Nuspell
 Source: https://github.com/nuspell/nuspell/
 Files-Excluded:
- src/hunspell/*
- src/parsers/*
- src/tools/*
+ external/*
  tests/suggestiontest/*
 
 Files: *
