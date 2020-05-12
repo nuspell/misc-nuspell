@@ -21,8 +21,8 @@ script:
   - [Desktop Entry]
   - Categories=TextEditor;Utility;
   - Name=Nuspell
-  - GenericName=Spell Checker
-  - Comment=spell checking library and command-line tool
+  - GenericName=Spellchecker
+  - Comment=spellchecking library and command-line tool
   - Exec=nuspell %u
   - Icon=nuspell
   - Terminal=true

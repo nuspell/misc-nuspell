@@ -12,7 +12,7 @@ Install for Flatpak:
     flatpak install -y flathub
     flatpak install -y org.freedesktop.Platform//18.08 org.freedesktop.Sdk//18.08
 
-Installf for Boost:
+Install for Boost:
 
     sudo apt-get install elfutils
 
