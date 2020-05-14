@@ -5,6 +5,6 @@ GenericName=Spellchecker
 Comment=Spellchecking library and command-line tool
 Exec=nuspell %u
 Icon=org.nuspell.Nuspell
-Terminal=false
+Terminal=true
 StartupNotify=false
 Type=Application

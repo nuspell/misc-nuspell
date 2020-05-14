@@ -9,12 +9,16 @@ Install for Flatpak:
 
     sudo apt-get install flatpak-builder
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    flatpak install -y flathub
-    flatpak install -y org.freedesktop.Platform//18.08 org.freedesktop.Sdk//18.08
-
+    flatpak install -y flathub org.freedesktop.appstream-glib
+    flatpak install -y org.freedesktop.Platform//19.08 org.freedesktop.Sdk//19.08
+    
 Install for Boost:
 
     sudo apt-get install elfutils
+
+##
+
+https://www.freedesktop.org/software/appstream/metainfocreator/#/consoleapp
 
 ## Build
 
