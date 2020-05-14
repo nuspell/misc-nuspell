@@ -27,7 +27,7 @@
     </ul>
   </description>
   
-  <icon type="stock">org.nuspell.Nuspell</icon>
+  <!--icon type="stock">org.nuspell.Nuspell</icon-->
   
   <categories>
     <category>Office</category>
