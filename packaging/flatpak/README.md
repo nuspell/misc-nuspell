@@ -38,4 +38,4 @@ Clean up can be done with:
 ## Publish
 
 Publish the Flatpak by:
-- updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr)
+- updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr) which is pending https://github.com/flathub/flathub/pull/1502
