@@ -1,0 +1,59 @@
+version: 1
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: org.nuspell.Nuspell # see AppImageBuilderBionic.yml
+    name: Nuspell
+    icon: utilities-terminal # see AppImageBuilderBionic.yml
+    version: latest
+    exec: usr/bin/nuspell
+    exec_args: $@
+  runtime:
+    env:
+      APPDIR_LIBRARY_PATH: $APPDIR/usr/lib/x86_64-linux-gnu:$APPDIR/lib/x86_64-linux-gnu
+  apt:
+    arch: amd64
+    sources:
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse'
+      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse'
+      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse'
+      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
+    - sourceline: 'deb [arch=amd64] http://ppa.launchpad.net/nuspell/ppa/ubuntu focal main'
+      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xab26d6e9b07627ab'
+    include:
+    - nuspell
+    exclude: []
+  files:
+    exclude:
+    - usr/share/man
+    - usr/share/doc/*/README.*
+    - usr/share/doc/*/changelog.*
+    - usr/share/doc/*/NEWS.*
+    - usr/share/doc/*/TODO.*
+  test:
+#    fedora:
+#      image: appimagecrafters/tests-env:fedora-30
+#      command: './AppRun -D'
+#      use_host_x: False
+#    debian:
+#      image: appimagecrafters/tests-env:debian-stable
+#      command: './AppRun -D'
+#      use_host_x: False
+#    arch:
+#      image: appimagecrafters/tests-env:archlinux-latest
+#      command: './AppRun -D'
+#      use_host_x: False
+#    centos:
+#      image: appimagecrafters/tests-env:centos-7
+#      command: './AppRun -D'
+#      use_host_x: False
+    ubuntu:
+      image: appimagecrafters/tests-env:ubuntu-xenial
+      command: './AppRun -D'
+      use_host_x: False
+AppImage:
+  arch: x86_64
+  update-information: None
+  sign-key: None
