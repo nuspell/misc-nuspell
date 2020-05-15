@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="console-application">
   <id>org.nuspell.Nuspell</id>
-  
+
   <name>Nuspell</name>
   <summary>spelling checker</summary>
-  
+
   <metadata_license>MIT</metadata_license>
   <project_license>LGPL-3.0+</project_license>
-  
+
   <description>
     <p>
       Nuspell is a fast and safe spelling checker software program. It is designed for languages with rich morphology and complex word compounding. Nuspell is written in modern C++ and it supports Hunspell dictionaries.
@@ -27,14 +27,35 @@
     </ul>
   </description>
   
-  <!--icon type="stock">org.nuspell.Nuspell</icon-->
-  
+  <url type="homepage">https://nuspell.github.io/</url>
+  <url type="bugtracker">https://github.com/nuspell/nuspell/issues</url>
+
+  <keywords>
+    <keyword>spell checker</keyword>
+    <keyword>spelling checker</keyword>
+    <keyword>spellchecker</keyword>
+    <keyword>spellingchecker</keyword>
+  </keywords>
+
+  <screenshots>
+    <screenshot>
+      <image type="source">
+        https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/cover.png
+      </image>
+    </screenshot>
+  </screenshots>
+
   <categories>
     <category>Office</category>
     <category>Dictionary</category>
   </categories>
-  
+
   <provides>
+    <library>libnuspell.so.3</library>
     <binary>nuspell</binary>
   </provides>
+  
+  <releases>
+    <release date="2020-05-04" version="3.1.1"/>
+  </releases>
 </component>

@@ -16,21 +16,22 @@ Install for Boost:
 
     sudo apt-get install elfutils
 
-##
+## Validate
 
-https://www.freedesktop.org/software/appstream/metainfocreator/#/consoleapp
+The desktop file is generated from the JSON file. The specific lines can be
+saved to a temporary file and validated with `desktop-file-validate`. Other
+validation is done by the build script.
 
 ## Build
 
-Make sure the version number and checksum of Nuspell in
+Make sure the version number, release dates and checksums in
 `org.nuspell.Nuspell.json` are up to date and `runtime-version` refers to the
 proper release as seen above. Then run:
 
     ./build.sh
 
 which will create a Flatpak and test it too. The warning `Ronn not found` can be
-ignored. Note that in the JSON file, the desktop launcher and icon file are to
-be copied, not only moved.
+ignored. The end of the build script will also run a test.
 
 ## Clean up
 
