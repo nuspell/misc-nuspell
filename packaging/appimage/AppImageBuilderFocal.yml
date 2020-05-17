@@ -1,10 +1,14 @@
 version: 1
+script:
+- rm -rf ./AppDir
+- mkdir -p ./AppDir/usr/share/icons/hicolor/512x512/apps/
+- wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O ./AppDir/usr/share/icons/hicolor/512x512/apps/org.nuspell.Nuspell.png
 AppDir:
   path: ./AppDir
   app_info:
-    id: org.nuspell.Nuspell # see AppImageBuilderBionic.yml
+    id: org.nuspell.Nuspell
     name: Nuspell
-    icon: utilities-terminal # see AppImageBuilderBionic.yml
+    icon: org.nuspell.Nuspell
     version: latest
     exec: usr/bin/nuspell
     exec_args: $@

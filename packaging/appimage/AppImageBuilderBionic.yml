@@ -1,38 +1,14 @@
 version: 1
+script:
+- rm -rf ./AppDir
+- mkdir -p ./AppDir/usr/share/icons/hicolor/512x512/apps/
+- wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O ./AppDir/usr/share/icons/hicolor/512x512/apps/org.nuspell.Nuspell.png
 AppDir:
   path: ./AppDir
   app_info:
-# current id results in:
-#WARNING:root:Unable to locate the application desktop entry: org.nuspell.Nuspell.desktop
-# this becomes an error when building without skipping the test
-#INFO:root:Running test: ubuntu
-#INFO:root:-----------------------------
-#INFO:TEST CASE 'ubuntu':Executing: ./AppRun -D
-#ERROR:appimage-builder:Tests failed
-#ERROR:appimage-builder:Execution failed. Error message: ('Connection aborted.', FileNotFoundError(2, 'No such file or #directory'))
     id: org.nuspell.Nuspell
     name: Nuspell
-    icon: utilities-terminal
-#    icon: org.nuspell.Nuspell
-# icon above results in:
-#INFO:root:Generating metadata
-#INFO:root:___________________
-#INFO:root:Looking app icon at: /tmp/AppDir/usr/share/icons
-#INFO:root:Looking app icon at: /usr/share/icons
-#Traceback (most recent call last):
-#  File "/usr/local/bin/appimage-builder", line 18, in <module>
-#    __main__();
-#  File "/usr/local/lib/python3.6/dist-packages/AppImageBuilder/__main__.py", line 63, in __main__
-#    builder.build()
-#  File "/usr/local/lib/python3.6/dist-packages/AppImageBuilder/app_dir/builder.py", line 69, in build
-#    self._write_bundle_information()
-#  File "/usr/local/lib/python3.6/dist-packages/AppImageBuilder/app_dir/builder.py", line 100, in _write_bundle_information
-#    self._bundle_app_dir_icon()
-#  File "/usr/local/lib/python3.6/dist-packages/AppImageBuilder/app_dir/builder.py", line 106, in _bundle_app_dir_icon
-#    icon_bundler.bundle_icon()
-#  File "/usr/local/lib/python3.6/dist-packages/AppImageBuilder/app_dir/metadata/icon_bundler.py", line 29, in bundle_icon
-#    raise IconBundler.Error("Unable to find any app icon named: %s" % self.icon)
-#AppImageBuilder.app_dir.metadata.icon_bundler.Error: Unable to find any app icon named: org.nuspell.Nuspell
+    icon: org.nuspell.Nuspell
     version: latest
     exec: usr/bin/nuspell
     exec_args: $@
