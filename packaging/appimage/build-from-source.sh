@@ -22,11 +22,13 @@ cmake ../nuspell-$VERSION -DBUILD_SHARED_LIBS=1 -DBUILD_TESTING=0 \
       -DCMAKE_INSTALL_LIBDIR=lib
 make -j2
 cd ..
+#mkdir -p ./AppDir/usr/share/metainfo
+#cp ../../appstream/org.nuspell.Nuspell.metainfo.xml ./AppDir/usr/share/metainfo/org.nuspell.Nuspell.appdata.xml
 export VERSION
 LD_PRELOAD=
 ./linuxdeploy-x86_64.AppImage \
 	--appdir=AppDir -e build/src/nuspell/nuspell \
-	-d ../../flatpak/org.nuspell.Nuspell.desktop \
+	-d ../org.nuspell.Nuspell.desktop \
 	-i org.nuspell.Nuspell.png -o appimage
 
 #test

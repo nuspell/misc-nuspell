@@ -1,3 +1,10 @@
+# for appimage builder
 /Nuspell*.AppImage
 /AppDir
 /appimage-builder-cache
+
+# for pkg2appimage (build from deb old)
+/master.zip
+/pkg2appimage-master
+/Nuspell
+/out
