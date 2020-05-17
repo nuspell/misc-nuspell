@@ -1,32 +1,50 @@
-# AppImage
+# AppImageBuilder
 
 Building an AppImage can best be done in a CI environment such as Travis. See
 also files for Flatpak and keep these in sync.
 
 ## Requirements
 
-The build step will take care of requirements.
+Install:
+
+    sudo apt install -y python3-pip python3-setuptools patchelf desktop-file-utils libgdk-pixbuf2.0-dev
+    sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /usr/local/bin/appimagetool
+    sudo chmod +x /usr/local/bin/appimagetool
+    sudo pip3 install appimage-builder
 
 ## Build
 
-Make sure that `Nuspell.yml` refers to the latest Ubuntu LTS release and run:
+Build on Ubuntu Focal with:
 
-    ./build.sh.
+   appimage-builder --recipe AppImageBuilderFocal.yml --skip-test
 
-which will create an AppImage in the `out` directory and test it too. Note that
-in the YAML file, the desktop launcher and icon file are to be copied, not only
-moved.
+Build on Ubuntu Bionic with:
 
-To build not from the PPA, use the script `./build-from-source.sh`.
+   appimage-builder --recipe AppImageBuilderBionic.yml --skip-test
 
-## Clean up
+Not sure if need to fix this warning:
+
+    WARNING:appimagetool:WARNING: AppStream upstream metadata is missing, please consider creating it
+
+See also comments in YML file for Bionic.
+
+
+## Test
+
+Testing can be done with:
+
+    ./Nuspell-latest-x86_64.AppImage -D
+
+which should list the dictionaries installed on the host system, not inside the
+AppImage.
+
+## Cleanup
 
 Clean up can be done with:
 
-    rm -rf Nuspell
+    rm -rf AppDir appimage-builder-cache Nuspell*.AppImage
 
 ## Publish
 
 Publish the AppImage by:
 - updating the [apps at AppImageHub](https://github.com/AppImage/appimage.github.io/tree/master/apps)
-- updating the [recipes at pkg2appimage](https://github.com/AppImage/pkg2appimage/tree/master/recipes) which is pending https://github.com/AppImage/pkg2appimage/pull/421

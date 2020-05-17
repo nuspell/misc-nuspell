@@ -1,5 +1,3 @@
-/master.zip
-/pkg2appimage-master
-/Nuspell
-/out
-/*.AppImage
+/Nuspell*.AppImage
+/AppDir
+/appimage-builder-cache
