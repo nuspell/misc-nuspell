@@ -1,5 +1,6 @@
 # for appimage builder
 /Nuspell*.AppImage
+/Nuspell*.AppImage.digest
 /AppDir
 /appimage-builder-cache
 

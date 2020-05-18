@@ -11,12 +11,12 @@ ingredients:
   ppas:
     - nuspell/ppa
   script:
-    - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O nuspell.png
+    - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O org.nuspell.Nuspell.png
 
 script:
   - mkdir -p usr/share/icons/hicolor/512x512/apps/
-  - cp -f ../nuspell.png usr/share/icons/hicolor/512x512/apps/
-  - ln -sf usr/share/icons/hicolor/512x512/apps/nuspell.png nuspell.png
+  - cp -f ../org.nuspell.Nuspell.png usr/share/icons/hicolor/512x512/apps/
+  - ln -sf usr/share/icons/hicolor/512x512/apps/org.nuspell.Nuspell.png org.nuspell.Nuspell.png
   - cat > nuspell.desktop <<\EOF
   - [Desktop Entry]
   - Categories=TextEditor;Utility;
@@ -24,7 +24,7 @@ script:
   - GenericName=Spellchecker
   - Comment=spellchecking library and command-line tool
   - Exec=nuspell %u
-  - Icon=nuspell
+  - Icon=org.nuspell.Nuspell
   - Terminal=true
   - StartupNotify=false
   - Type=Application

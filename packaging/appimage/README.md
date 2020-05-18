@@ -11,32 +11,27 @@ Install:
     sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /usr/local/bin/appimagetool
     sudo chmod +x /usr/local/bin/appimagetool
     sudo pip3 install appimage-builder
+    sudo apt-get install docker.io
 
-## Build
+## Build and Test
 
-Build on Ubuntu Focal with:
+To build and test, run:
 
-   appimage-builder --recipe AppImageBuilderFocal.yml --skip-test
+    ./build.sh
+    
+This will build for several Ubuntu LTS releases, for test purposes. Probably,
+the build of the oldest LTS version should be published for download.
 
-Build on Ubuntu Bionic with:
-
-   appimage-builder --recipe AppImageBuilderBionic.yml --skip-test
-
-Not sure if need to fix this warning:
+The warning:
 
     WARNING:appimagetool:WARNING: AppStream upstream metadata is missing, please consider creating it
 
-See also comments in YML file for Bionic.
+has been temporarily suppressed by commenting out the metadata copy in YML. This
+results in another warning:
 
+    WARNING:root:Unable to locate the application desktop entry: org.nuspell.Nuspell.desktop
 
-## Test
-
-Testing can be done with:
-
-    ./Nuspell-latest-x86_64.AppImage -D
-
-which should list the dictionaries installed on the host system, not inside the
-AppImage.
+which can be ignored.
 
 ## Cleanup
 
@@ -47,4 +42,5 @@ Clean up can be done with:
 ## Publish
 
 Publish the AppImage by:
+- adding to the Nuspell release on GitHub
 - updating the [apps at AppImageHub](https://github.com/AppImage/appimage.github.io/tree/master/apps)
