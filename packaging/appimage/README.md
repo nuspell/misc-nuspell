@@ -1,7 +1,4 @@
-# AppImageBuilder
-
-Building an AppImage can best be done in a CI environment such as Travis. See
-also files for Flatpak and keep these in sync.
+# AppImage
 
 ## Requirements
 
@@ -11,27 +8,18 @@ Install:
     sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /usr/local/bin/appimagetool
     sudo chmod +x /usr/local/bin/appimagetool
     sudo pip3 install appimage-builder
-    sudo apt-get install docker.io
+    sudo apt install docker.io
 
 ## Build and Test
 
-To build and test, run:
+To build AppImage, run:
 
     ./build.sh
     
-This will build for several Ubuntu LTS releases, for test purposes. Probably,
-the build of the oldest LTS version should be published for download.
+To test the portability of the appimage on various Linux distributions in docker
+containers run:
 
-The warning:
-
-    WARNING:appimagetool:WARNING: AppStream upstream metadata is missing, please consider creating it
-
-has been temporarily suppressed by commenting out the metadata copy in YML. This
-results in another warning:
-
-    WARNING:root:Unable to locate the application desktop entry: org.nuspell.Nuspell.desktop
-
-which can be ignored.
+    ./test.sh
 
 ## Cleanup
 
