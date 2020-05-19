@@ -15,7 +15,7 @@ if [ ! -e pkg2appimage-master ]; then
 fi
 
 # build
-pkg2appimage-master/pkg2appimage Nuspell.yml
+pkg2appimage-master/pkg2appimage Old-Nuspell.yml
 cd out
 for i in *glibc*.AppImage; do
 	mv $i $(echo $i|sed -e 's/\.glibc[0-9\.]*//')
