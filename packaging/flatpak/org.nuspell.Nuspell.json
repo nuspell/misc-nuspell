@@ -34,7 +34,8 @@
       "sources": [
         {
           "type": "file",
-          "path": "org.nuspell.Nuspell.metainfo.xml"
+          "url": "https://raw.githubusercontent.com/nuspell/misc-nuspell/master/packaging/appstream/org.nuspell.Nuspell.metainfo.xml",
+          "sha256": "74192287234e8f03aff1fc86e4d0adfe2e68ffb743e4451838e4d13f26389e79"
         },
         {
           "type": "file",
