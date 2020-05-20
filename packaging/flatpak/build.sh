@@ -19,7 +19,7 @@ if [ -e .flatpak-builder ]; then
 fi
 
 # validate
-appstreamcli validate org.nuspell.Nuspell.metainfo.xml
+appstreamcli validate ../appstream/org.nuspell.Nuspell.metainfo.xml
 
 # build
 flatpak-builder --force-clean build-dir org.nuspell.Nuspell.json

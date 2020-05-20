@@ -43,4 +43,10 @@ Clean up can be done with:
 ## Publish
 
 Publish the Flatpak by:
-- updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr) which is pending https://github.com/flathub/flathub/pull/1502
+- updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr) of which latest contribution is in [PR](https://github.com/flathub/flathub/pull/1502)
+
+Flathub can be tested with:
+
+    flatpak install --user https://dl.flathub.org/build-repo/19544/org.nuspell.Nuspell.flatpakref
+    ~/.local/share/flatpak/exports/bin/org.nuspell.Nuspell -D
+    flatpak uninstall org.nuspell.Nuspell
