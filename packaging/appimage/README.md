@@ -9,6 +9,9 @@ Install:
     sudo chmod +x /usr/local/bin/appimagetool
     sudo pip3 install appimage-builder
     sudo apt install docker.io
+    sudo addgroup YOURUSERNAME docker
+
+The last line enables running the docker tests with a normal user account.
 
 ## Build and Test
 
@@ -30,5 +33,5 @@ Clean up can be done with:
 ## Publish
 
 Publish the AppImage by:
-- adding to the Nuspell release on GitHub
+- adding to the Nuspell release on [GitHub](https://github.com/nuspell/nuspell/releases)
 - updating the [apps at AppImageHub](https://github.com/AppImage/appimage.github.io/tree/master/apps)

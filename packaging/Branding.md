@@ -1,3 +1,5 @@
+# Branding
+
 [Packaging Nuspell](https://github.com/nuspell/nuspell/wiki/Nuspell-packaged-binaries)
 requires specific types of descriptions. To facilitate this, here are ready-made
 descriptions of Nuspell. Please, contact us if you see something is missing.
