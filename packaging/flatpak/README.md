@@ -9,8 +9,8 @@ Install for Flatpak:
 
     sudo apt-get install flatpak-builder
     flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-    flatpak install -y flathub org.freedesktop.appstream-glib
-    flatpak install -y org.freedesktop.Platform//19.08 org.freedesktop.Sdk//19.08
+    flatpak install -y --user flathub org.freedesktop.appstream-glib
+    flatpak install -y --user org.freedesktop.Platform//19.08 org.freedesktop.Sdk//19.08
     
 Install for Boost:
 
@@ -45,8 +45,8 @@ Clean up can be done with:
 Publish the Flatpak by:
 - updating the [apps at Flathub](https://github.com/flathub/flathub/tree/new-pr) of which latest contribution is in [PR](https://github.com/flathub/flathub/pull/1502)
 
-Flathub can be tested with:
+Flathub can be tested with (the exact URL is in the PR after a succesful build):
 
-    flatpak install --user https://dl.flathub.org/build-repo/19544/org.nuspell.Nuspell.flatpakref
+    flatpak install -y --user https://dl.flathub.org/build-repo/19877/org.nuspell.Nuspell.flatpakref
     ~/.local/share/flatpak/exports/bin/org.nuspell.Nuspell -D
-    flatpak uninstall org.nuspell.Nuspell
+    flatpak uninstall -y org.nuspell.Nuspell
