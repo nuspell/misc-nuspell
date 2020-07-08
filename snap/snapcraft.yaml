@@ -1,6 +1,6 @@
 name: nuspell
 base: core18
-version: '3.1.1'
+version: '3.1.2'
 summary: spellchecker
 description: |
   Nuspell is a fast and safe spelling checker software program. It is designed
@@ -17,7 +17,7 @@ parts:
       - -DBUILD_TESTING=OFF
       - -DBUILD_SHARED_LIBS=ON
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/v3.1.1.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/v3.1.2.tar.gz
     build-packages:
       - g++
       - cmake

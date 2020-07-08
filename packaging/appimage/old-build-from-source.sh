@@ -12,7 +12,7 @@ fi
 if [ ! -e org.nuspell.Nuspell.png ]; then
 	wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png -O org.nuspell.Nuspell.png
 fi
-VERSION=3.1.1
+VERSION=3.1.2
 wget https://github.com/nuspell/nuspell/archive/v${VERSION}.tar.gz -O - | tar -xz
 rm -rf build AppDir
 mkdir build

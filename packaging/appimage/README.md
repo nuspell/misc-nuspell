@@ -5,13 +5,16 @@
 Install:
 
     sudo apt install -y python3-pip python3-setuptools patchelf desktop-file-utils libgdk-pixbuf2.0-dev
-    sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /usr/local/bin/appimagetool
+    sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-i686.AppImage -O /usr/local/bin/appimagetool
     sudo chmod +x /usr/local/bin/appimagetool
-    sudo pip3 install appimage-builder
+    sudo pip3 install -U appimage-builder
     sudo apt install docker.io
     sudo addgroup YOURUSERNAME docker
 
 The last line enables running the docker tests with a normal user account.
+
+This build methoed uses Nuspell source files from Launchpad. Any version upgrade
+should be done there firstly.
 
 ## Build and Test
 
@@ -23,6 +26,22 @@ To test the portability of the appimage on various Linux distributions in docker
 containers run:
 
     ./test.sh
+
+## Troubleshooting
+
+When this error occurs:
+
+    FileNotFoundError: [Errno 2] No such file or directory: '/home/USERNAME/WORKSPACE/misc-nuspell/packaging/appimage/AppDir/usr/local/lib/x86_64-linux-gnu/libapprun_hooks.so'
+
+a workaround is:
+
+    cd AppDir/usr
+    mkdir local
+    cd local
+    ln -s ../lib
+
+See also this [issue](https://github.com/AppImage/AppImageKit/issues/1060) which
+is currently blocking building a new AppImage.
 
 ## Cleanup
 
