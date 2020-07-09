@@ -5,7 +5,7 @@
 Install:
 
     sudo apt install -y python3-pip python3-setuptools patchelf desktop-file-utils libgdk-pixbuf2.0-dev
-    sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-i686.AppImage -O /usr/local/bin/appimagetool
+    sudo wget https://github.com/AppImage/AppImageKit/releases/download/continuous/appimagetool-x86_64.AppImage -O /usr/local/bin/appimagetool
     sudo chmod +x /usr/local/bin/appimagetool
     sudo pip3 install -U appimage-builder
     sudo apt install docker.io
