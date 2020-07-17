@@ -40,9 +40,6 @@ a workaround is:
     cd local
     ln -s ../lib
 
-See also this [issue](https://github.com/AppImage/AppImageKit/issues/1060) which
-is currently blocking building a new AppImage.
-
 ## Cleanup
 
 Clean up can be done with:

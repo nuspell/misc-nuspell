@@ -75,8 +75,8 @@ A total of 105 different dictionaries are available, which are listed in the tab
 | `hunspell-sw_1%3a6.4.3-1` | `sw_TZ` | ISO8859-1 | ASCII | ASCII |
 | `hunspell-te_1%3a6.4.3-1` | `te_IN` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-th_1%3a6.4.3-1` | `th_TH` | UTF-8 | UTF-8 | UTF-8 |
-| `hunspell-tlh_1.0.6` | `tlh` | UTF-8 | UTF-8 | UTF-8 |
-| `hunspell-tlh_1.0.6` | `tlh_Latn` | UTF-8 | UTF-8 | ASCII |
+| `hunspell-tlh_1.0.7` | `tlh` | UTF-8 | UTF-8 | UTF-8 |
+| `hunspell-tlh_1.0.7` | `tlh_Latn` | UTF-8 | UTF-8 | ASCII |
 | `hunspell-tr_1%3a6.4.3-1` | `tr_TR` | UTF-8 | UTF-8 | UTF-8, long lines |
 | `hunspell-uk_1%3a6.4.3-1` | `uk_UA` | UTF-8 | UTF-8 | UTF-8 |
 | `hunspell-uz_0.6-4` | `uz_UZ` | UTF-8 | ASCII | UTF-8 |

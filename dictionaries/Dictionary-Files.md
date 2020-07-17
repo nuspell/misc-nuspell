@@ -75,8 +75,8 @@ A total of 105 different dictionaries are available, which are listed in the tab
 | `hunspell-sw_1%3a6.4.3-1` | `sw_TZ` | Swahili | `27` | `67901` |
 | `hunspell-te_1%3a6.4.3-1` | `te_IN` | Telugu | `2` | `125084` |
 | `hunspell-th_1%3a6.4.3-1` | `th_TH` | Thai | `13` | `51683` |
-| `hunspell-tlh_1.0.6` | `tlh` | Klingon | `107` | `4062` |
-| `hunspell-tlh_1.0.6` | `tlh_Latn` | Klingon (Latin script) | `110` | `4062` |
+| `hunspell-tlh_1.0.7` | `tlh` | Klingon | `109` | `4153` |
+| `hunspell-tlh_1.0.7` | `tlh_Latn` | Klingon (Latin script) | `112` | `4153` |
 | `hunspell-tr_1%3a6.4.3-1` | `tr_TR` | Turkisch | `19400` | `371170` |
 | `hunspell-uk_1%3a6.4.3-1` | `uk_UA` | Ukrainian | `4495` | `111403` |
 | `hunspell-uz_0.6-4` | `uz_UZ` | Uzbek | `1` | `97001` |
