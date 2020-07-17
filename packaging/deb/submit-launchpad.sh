@@ -21,12 +21,12 @@ do
 	fi
 done
 
-cd build/1804-ppa-src
-dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../../build/1910-ppa-src
+cd build/2010-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../../build/2004-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
-cd ../../build/2010-ppa-src
+cd ../../build/1910-ppa-src
+dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
+cd ../../build/1804-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../..

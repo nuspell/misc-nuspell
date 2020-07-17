@@ -65,23 +65,12 @@ debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir 1804-ppa-src
-cd 1804-ppa-src
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/      nuspell-$VERSION
-cp -a ../../1804-ppa/* nuspell-$VERSION/debian
-cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# create source build for sending to Launchpad
-mkdir 1910-ppa-src
-cd 1910-ppa-src
+mkdir 2010-ppa-src
+cd 2010-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../1910-ppa/* nuspell-$VERSION/debian
+cp -a ../../2010-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..
@@ -98,12 +87,23 @@ debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir 2010-ppa-src
-cd 2010-ppa-src
+mkdir 1910-ppa-src
+cd 1910-ppa-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../2004-ppa/* nuspell-$VERSION/debian
+cp -a ../../1910-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
+# create source build for sending to Launchpad
+mkdir 1804-ppa-src
+cd 1804-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/      nuspell-$VERSION
+cp -a ../../1804-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..
