@@ -32,8 +32,9 @@ to create source and binary packages.
 
 Building has been successfully tested on
 * Ubuntu ([PPA](https://launchpad.net/~nuspell/+archive/ubuntu/ppa/+packages))
+    * 20.10 Groovy on amd64 (x86_64), arm64, armhf
     * 20.04 Focal on amd64 (x86_64), arm64, armhf
-    * 19.10 Eoan on amd64 (x86_64), arm64, armhf, i386
+    * 19.10 Eoan on amd64 (x86_64), arm64, armhf, i386 (until 3.1.2. no longer supported)
     * 19.04 Disco on amd64 (x86_64), arm64, armhf, i386 (until 3.0.0, no longer supported)
     * 18.04 Bionic on amd64 (x86_64), arm64, armhf, i386
 * Debian
