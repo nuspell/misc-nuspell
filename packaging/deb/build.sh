@@ -97,6 +97,17 @@ cd nuspell-$VERSION
 debuild -S
 cd ../..
 
+# create source build for sending to Launchpad
+mkdir 2010-ppa-src
+cd 2010-ppa-src
+cp ../$ORIG .
+tar -xf $ORIG
+cp -a ../../debian/    nuspell-$VERSION
+cp -a ../../2004-ppa/* nuspell-$VERSION/debian
+cd nuspell-$VERSION
+debuild -S
+cd ../..
+
 # Bellow follow full binary builds, meant for local testing
 
 # platform
