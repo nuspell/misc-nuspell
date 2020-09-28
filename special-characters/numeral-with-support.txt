@@ -1,8 +1,0 @@
-*
-# xxxx1 0
-*
-# 2yyy 0
-*
-& aaaa3yyy 1 0: aaaa3bbb
-# xxxx3bbb 0
-# xxxx3yyy 0

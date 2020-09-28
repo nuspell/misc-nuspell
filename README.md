@@ -42,9 +42,15 @@ Tools for generating the docs:
 
 ## 4 Testing
 
-See the following README.md files on testing in the following order:
-1. [1-support/README.md](1-support/README.md) on language support for Hunspell
-2. [2-word-lists/README.md](2-word-lists/README.md) on word lists which can be used for testing
-3. [3-checks/README.md](3-checks/README.md) on performance and regression testing
+Testing has been moved to a separate repository. The remaining directories
+`dictionaries` and `wordlists` will be migrated soon.
 
-All shells scripts run at least in sh, bash, ksh and zsh.
+
+## 5 Talks
+
+In the directories `fosdem19` and `fosdem20`, talks on Nuspell can be found.
+
+
+## 6 Packaging
+
+See the directories `packaging` and `snap` for packaging.

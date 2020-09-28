@@ -1,3 +1,6 @@
+# THIS DIRECTORY IS BEING MIGRATED, DO NOT USE, NO NOT REMOVE
+
+
 # Testing - 1 Language Support (1-support)
 
 This directory holds downloaded and processed Ubuntu packages containing language support for Hunspell and Nuspell. These are packages containing dictionary files and affix files.
