@@ -87,17 +87,6 @@ debuild -S
 cd ../..
 
 # create source build for sending to Launchpad
-mkdir 1910-ppa-src
-cd 1910-ppa-src
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../1910-ppa/* nuspell-$VERSION/debian
-cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# create source build for sending to Launchpad
 mkdir 1804-ppa-src
 cd 1804-ppa-src
 cp ../$ORIG .
