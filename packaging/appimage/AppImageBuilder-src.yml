@@ -1,0 +1,78 @@
+version: 1
+script:
+- rm -rf ./AppDir
+#- mkdir -p ./AppDir/usr/share/metainfo/
+#- cp ../appstream/org.nuspell.Nuspell.metainfo.xml ./AppDir/usr/share/metainfo/org.nuspell.Nuspell.appdata.xml
+- mkdir -p ./AppDir/usr/share/applications
+- cp org.nuspell.Nuspell.desktop ./AppDir/usr/share/applications
+- mkdir -p ./AppDir/usr/share/icons/hicolor/512x512/apps/
+- wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png
+  -O ./AppDir/usr/share/icons/hicolor/512x512/apps/org.nuspell.Nuspell.png
+- |
+  set -e
+  VERSION=3.1.1
+  wget https://github.com/nuspell/nuspell/archive/v${VERSION}.tar.gz -O - | tar -xz
+  rm -rf build
+  mkdir build
+  cd build
+  cmake ../nuspell-${VERSION} -DBUILD_SHARED_LIBS=1 -DBUILD_TESTING=0 \
+        -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+  make -j `nproc`
+  make install DESTDIR=../AppDir
+  cd ..
+AppDir:
+  path: ./AppDir
+  app_info:
+    id: org.nuspell.Nuspell
+    name: Nuspell
+    icon: org.nuspell.Nuspell
+    version: 3.1.1
+    exec: usr/bin/nuspell
+    exec_args: $@
+  apt:
+    arch: amd64
+    sources:
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse'
+      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse'
+    include:
+#    - libicu66
+    - libboost-locale1.71.0
+    exclude: []
+  files:
+    exclude:
+    - usr/share/man
+    - usr/share/doc/*/README.*
+    - usr/share/doc/*/changelog.*
+    - usr/share/doc/*/NEWS.*
+    - usr/share/doc/*/TODO.*
+  test:
+    fedora:
+      image: appimagecrafters/tests-env:fedora-30
+      command: './AppRun -D'
+      use_host_x: False
+    debian:
+      image: appimagecrafters/tests-env:debian-stable
+      command: './AppRun -D'
+      use_host_x: False
+    arch:
+      image: appimagecrafters/tests-env:archlinux-latest
+      command: './AppRun -D'
+      use_host_x: False
+    centos:
+      image: appimagecrafters/tests-env:centos-7
+      command: './AppRun -D'
+      use_host_x: False
+    ubuntu:
+      image: appimagecrafters/tests-env:ubuntu-bionic
+      command: './AppRun -D'
+      use_host_x: False
+    ubuntu2:
+      image: appimagecrafters/tests-env:ubuntu-xenial
+      command: './AppRun -D'
+      use_host_x: False
+AppImage:
+  arch: x86_64
+  update-information: None
+  sign-key: none
