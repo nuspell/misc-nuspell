@@ -5,8 +5,8 @@
 # author: Sander van Geloven
 
 # version
-MAJOR=3
-VERSION=$MAJOR.1.2
+MAJOR=4
+VERSION=$MAJOR.0.0
 
 set -e
 cd "$(dirname "$0")"

@@ -17,9 +17,8 @@ Package: libnuspell-dev
 Section: libdevel
 Architecture: any
 Depends: ${misc:Depends}
-       , libnuspell3 (= ${binary:Version})
+       , libnuspell4 (= ${binary:Version})
        , libicu-dev
-       , libboost-dev
 Multi-Arch: same
 Description: spelling checker (development)
  Nuspell is a fast and safe spelling checker software program. It is designed
@@ -42,7 +41,7 @@ Description: spelling checker (development)
  .
  This package contains the development files.
 
-Package: libnuspell3
+Package: libnuspell4
 Section: libs
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}

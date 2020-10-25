@@ -1,3 +1,10 @@
+nuspell (4.0.0-0ppa1~ubuntu2004) focal; urgency=medium
+
+  [ Pander ]
+  * Bumped version.
+
+ -- Pander <pander@users.sourceforge.net>  Tue, 25 Oct 2020 11:06:35 +0100
+
 nuspell (3.1.2-0ppa1~ubuntu2004) focal; urgency=medium
 
   [ Pander ]
