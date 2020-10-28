@@ -15,6 +15,7 @@ parts:
     plugin: cmake
     configflags:
       - -DBUILD_TESTING=OFF
+      - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
     source: https://github.com/nuspell/nuspell/archive/v4.0.0.tar.gz
     build-packages:
