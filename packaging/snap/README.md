@@ -37,7 +37,10 @@ From the top-level directory or from the `snap` directory, run:
 When asked to setup support for multipass, answer yes with `y`. This to build it
 locally. Test with:
 
-    sudo snap install nuspell_3.1.0_amd64.snap --dangerous --devmode
+    sudo snap install nuspell_4.0.0_amd64.snap --dangerous
+
+The dangerous option omits signature searching. Do not use the devmode option
+as the application will not run in strict confinement.
 
 Note that the `snap` directory has to be in the top-level directory. This is
 required for building with snapcraft.io

@@ -1,6 +1,7 @@
 name: nuspell
 base: core18
 version: '4.0.0'
+license: LGPL-3.0
 summary: spellchecker
 description: |
   Nuspell is a fast and safe spelling checker software program. It is designed
@@ -9,6 +10,16 @@ description: |
 
 grade: stable
 confinement: strict
+
+plugs:
+  hunspell-dictionaries:
+    interface: content
+    default-provider: hunspell-dictionaries-1-6-1804
+    target: $SNAP/usr/share/hunspell
+
+#layout:
+#  /usr/share/hunspell:
+#    bind: $SNAP/usr/share/hunspell
 
 parts:
   nuspell:
@@ -27,8 +38,10 @@ parts:
     stage-packages:
       - libboost-locale1.65.1
       - libicu60
-      - hunspell-en-us
+#      - hunspell-en-us
 
 apps:
   nuspell:
     command: bin/nuspell
+#    environment:
+#      DICPATH: $SNAP/usr/share/hunspell
