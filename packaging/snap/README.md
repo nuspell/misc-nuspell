@@ -21,6 +21,7 @@ Test with:
 To start for the first time, run in the top-level directory:
 
     sudo snap install snapcraft --classic
+    sudo snap install hunspell-dictionaries-1-6-1804
 
 which will create a directory called `snap` with a file called `snapcraft.yaml`.
 
@@ -55,7 +56,7 @@ Practical commands are:
     snap find nuspell
     snap info nuspell
     snap install nuspell
-    snap remove nuspell
+    snap remove --purge nuspell
 
 ## Clean up
 
