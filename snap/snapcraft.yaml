@@ -11,20 +11,20 @@ description: |
 grade: stable
 confinement: strict
 
-# Not yet found by nuspell -D
-#plugs:
-#  hunspell-dictionaries-plug:
-#    interface: content
-#    default-provider: hunspell-dictionaries-1-6-1804
-#    target: $SNAP/usr/share/hunspell
-#    read:
-#      - $SNAP/usr/share/hunspell
+plugs:
+  hunspell-dictionaries:
+    interface: content
+    default-provider: hunspell-dictionaries-1-6-1804
+    target: $SNAP/usr/share/hunspell
 
-# Offers /usr/share/hunspell (conflicts with dicts installed with apt and
-# duplicates the content of /snap/nuspell/x1/usr/share/hunspell)
-#layout:
-#  /usr/share/hunspell:
-#    bind: $SNAP/usr/share/hunspell
+#TODO Add dictionaries installed by apt in /usr/share/hunspell to search.
+#
+# First approach: /usr/share/hunspell as $SNAP_USER_DATA/.local/share/hunspell
+# but $SNAP_USER_DATA is not allowed in layout..bind. (Error in snap doc.)
+#
+# Second approach: /usr/share/hunspell as $SNAP/usr/share/hunspell which could
+# not get working. Complication $SNAP/usr/share/hunspell needed by plug..target.
+# Good to try get this working with plug and hunspell-en-us commented out.
 
 parts:
   nuspell:
@@ -44,13 +44,13 @@ parts:
       - libboost-locale1.65.1
       - libicu60
       - hunspell-en-us
-      - hunspell-da # Installs in /snap/nuspell/x1/usr/share/hunspell (good)
 
 apps:
   nuspell:
     command: bin/nuspell
-#    plugs: # see above
-#      - hunspell-dictionaries-plug
-    environment: # Offers /snap/nuspell/x1/usr/share/hunspell (good)
+    plugs:
+      - hunspell-dictionaries
+    # By default $SNAP_USER_DATA/.local/share/hunspell is also searched.
+    environment: # Add $SNAP/usr/share/hunspell to search.
       DICPATH: $SNAP/usr/share/hunspell
 

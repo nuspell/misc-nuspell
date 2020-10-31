@@ -39,6 +39,7 @@ When asked to setup support for multipass, answer yes with `y`. This to build it
 locally. Test with:
 
     sudo snap install nuspell_4.0.0_amd64.snap --dangerous
+    sudo snap connect nuspell:hunspell-dictionaries hunspell-dictionaries-1-6-1804:hunspell-dictionaries
 
 The dangerous option omits signature searching. Do not use the devmode option
 as the application will not run in strict confinement.
