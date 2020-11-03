@@ -33,13 +33,13 @@ parts:
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/v4.0.0.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/v4.0.1.tar.gz
     build-packages:
       - g++
       - cmake
       - libboost-locale-dev
       - libicu-dev
-      - ruby-ronn
+      - pandoc
     stage-packages:
       - libboost-locale1.65.1
       - libicu60
