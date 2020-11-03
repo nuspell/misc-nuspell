@@ -4,9 +4,9 @@ Maintainer: Pander <pander@users.sourceforge.net>
 Build-Depends: debhelper
        , debhelper-compat (= 11)
        , cmake
-       , ruby-ronn
        , libboost-locale-dev
        , libicu-dev
+       , pandoc
 Standards-Version: 4.1.4
 Section: text
 Homepage: https://nuspell.github.io/
