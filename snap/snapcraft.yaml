@@ -19,9 +19,11 @@ plugs:
     # snap connect ...
     # TODO: Request on the snap forum for automatic connection
     target: $SNAP/usr/share/hunspell
-  system-dictionaries:
-    interface: system-files
-    read: [ /usr/share/hunspell ]
+#  system-dictionaries:
+#    interface: system-files
+#    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
+#    # the hostfs thingy is needed to access system /usr
+#    read: [ /var/lib/snapd/hostfs/usr/share/hunspell ]
 
 parts:
   nuspell:
@@ -51,7 +53,7 @@ apps:
     command: bin/nuspell
     plugs:
       - hunspell-dictionaries
-      - system-dictionaries
+#      - system-dictionaries
     environment: # Add $SNAP/usr/share/hunspell to search.
       DICPATH: $SNAP/usr/share/hunspell
 
