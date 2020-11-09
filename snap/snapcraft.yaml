@@ -44,6 +44,10 @@ parts:
       - libboost-locale1.65.1
       - libicu60
       - hunspell-en-us
+    prime:
+      - -include
+      - -lib/cmake
+      - -lib/pkgconfig
 
 apps:
   nuspell:
