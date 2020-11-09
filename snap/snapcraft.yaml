@@ -14,17 +14,14 @@ confinement: strict
 plugs:
   hunspell-dictionaries:
     interface: content
-    default-provider: hunspell-dictionaries-1-6-1804
+    default-provider: hunspell-dictionaries-1-6-1804 # this snap gets installed
+    # by default on "snap install nuspell". Still a manual connection is needed:
+    # snap connect ...
+    # TODO: Request on the snap forum for automatic connection
     target: $SNAP/usr/share/hunspell
-
-#TODO Add dictionaries installed by apt in /usr/share/hunspell to search.
-#
-# First approach: /usr/share/hunspell as $SNAP_USER_DATA/.local/share/hunspell
-# but $SNAP_USER_DATA is not allowed in layout..bind. (Error in snap doc.)
-#
-# Second approach: /usr/share/hunspell as $SNAP/usr/share/hunspell which could
-# not get working. Complication $SNAP/usr/share/hunspell needed by plug..target.
-# Good to try get this working with plug and hunspell-en-us commented out.
+  system-dictionaries:
+    interface: system-files
+    read: [ /usr/share/hunspell ]
 
 parts:
   nuspell:
@@ -54,7 +51,7 @@ apps:
     command: bin/nuspell
     plugs:
       - hunspell-dictionaries
-    # By default $SNAP_USER_DATA/.local/share/hunspell is also searched.
+      - system-dictionaries
     environment: # Add $SNAP/usr/share/hunspell to search.
       DICPATH: $SNAP/usr/share/hunspell
 
