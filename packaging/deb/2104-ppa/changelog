@@ -1,3 +1,10 @@
+nuspell (4.1.0-0ppa1~ubuntu2104) hirsute; urgency=medium
+
+  [ Pander ]
+  * Bumped version.
+
+ -- Pander <pander@users.sourceforge.net>  Tue, 19 Nov 2020 22:16:32 +0100
+
 nuspell (4.0.1-0ppa1~ubuntu2104) hirsute; urgency=medium
 
   [ Pander ]

@@ -6,7 +6,7 @@
 
 # version
 MAJOR=4
-VERSION=$MAJOR.0.1
+VERSION=$MAJOR.1.0
 
 set -e
 cd "$(dirname "$0")"
@@ -131,6 +131,5 @@ for i in *$VERSION-*.deb; do
 	echo
 	ls -lh $i
 	dpkg --info $i|grep '^ Depends:'
-	dpkg --info $i|grep '^ Recommends:'
 	dpkg -c $i|grep -v /$
 done
