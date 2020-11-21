@@ -19,6 +19,7 @@ plugs:
     # snap connect ...
     # TODO: Request on the snap forum for automatic connection
     target: $SNAP/usr/share/hunspell
+# I sent a build with bellow uncommented and triggered a manual review process. Not it is commented again.
 #  system-dictionaries:
 #    interface: system-files
 #    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
