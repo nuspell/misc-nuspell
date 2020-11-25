@@ -19,12 +19,13 @@ plugs:
     # snap connect ...
     # TODO: Request on the snap forum for automatic connection
     target: $SNAP/usr/share/hunspell
-# I sent a build with bellow uncommented and triggered a manual review process. Not it is commented again.
-#  system-dictionaries:
-#    interface: system-files
-#    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
-#    # the hostfs thingy is needed to access system /usr
-#    read: [ /var/lib/snapd/hostfs/usr/share/hunspell ]
+# Using this interface bellow triggers manual review process,
+# it can be seen in the snap's dashboard -> section Releases.
+  hostfs-usr-share-hunspell:
+    interface: system-files
+    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
+    # the hostfs thingy is needed to access system /usr
+    read: [ /var/lib/snapd/hostfs/usr/share/hunspell ]
 
 parts:
   nuspell:
@@ -54,7 +55,6 @@ apps:
     command: bin/nuspell
     plugs:
       - hunspell-dictionaries
-#      - system-dictionaries
-    environment: # Add $SNAP/usr/share/hunspell to search.
-      DICPATH: $SNAP/usr/share/hunspell
-
+      - hostfs-usr-share-hunspell
+    environment:
+      DICPATH: "$SNAP/usr/share/hunspell:/var/lib/snapd/hostfs/usr/share/hunspell"
