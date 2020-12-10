@@ -21,11 +21,12 @@ plugs:
     target: $SNAP/usr/share/hunspell
 # Using this interface bellow triggers manual review process,
 # it can be seen in the snap's dashboard -> section Releases.
-  hostfs-usr-share-hunspell:
-    interface: system-files
-    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
-    # the hostfs thingy is needed to access system /usr
-    read: [ /var/lib/snapd/hostfs/usr/share/hunspell ]
+# Nobody has responded for some time, thus don't use system-files interface.
+#  hostfs-usr-share-hunspell:
+#    interface: system-files
+#    # https://forum.snapcraft.io/t/access-to-system-header-files-for-a-strictly-confined-snap/11662
+#    # the hostfs thingy is needed to access system /usr
+#    read: [ /var/lib/snapd/hostfs/usr/share/hunspell ]
 
 parts:
   nuspell:
@@ -55,6 +56,5 @@ apps:
     command: bin/nuspell
     plugs:
       - hunspell-dictionaries
-      - hostfs-usr-share-hunspell
     environment:
-      DICPATH: "$SNAP/usr/share/hunspell:/var/lib/snapd/hostfs/usr/share/hunspell"
+      DICPATH: "$SNAP/usr/share/hunspell"
