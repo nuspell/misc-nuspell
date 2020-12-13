@@ -38,7 +38,7 @@ to see how to build it.
 
 ## Snappy (universal Linux package)
 
-See the directory [snap/](snap).
+See the directory [../snap/](../snap).
 
 ## RPM (Fedora, openSUSE, etc.)
 
