@@ -7,9 +7,9 @@ myspell-fr
 hunspell-fr-comprehensive
 hunspell-fr-revised
 hunspell-fr-modern
-hunspell-de-de
-hunspell-de-at
-hunspell-de-ch"
+hunspell-de-de-frami
+hunspell-de-at-frami
+hunspell-de-ch-frami"
 dicts=$(apt-cache search --names-only ^hunspell-dictionary$ | awk '{print $1}' |
-        grep --fixed-strings --invert-match "$exclude")
+        grep --fixed-strings --invert-match --line-regexp "$exclude")
 apt-get install $wordlists $dicts
