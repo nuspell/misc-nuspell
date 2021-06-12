@@ -1,6 +1,6 @@
 name: nuspell
 base: core18
-version: '4.2.0'
+version: '5.0.0'
 license: LGPL-3.0
 summary: spellchecker
 description: |
@@ -15,9 +15,9 @@ plugs:
   hunspell-dictionaries:
     interface: content
     default-provider: hunspell-dictionaries-1-6-1804 # this snap gets installed
-    # by default on "snap install nuspell". Still a manual connection is needed:
+    # by default on "snap install nuspell". A manual connection is needed:
     # snap connect ...
-    # TODO: Request on the snap forum for automatic connection
+    # Request on the snap forum for automatic connection. Now DONE.
     target: $SNAP/usr/share/hunspell
 # Using this interface bellow triggers manual review process,
 # it can be seen in the snap's dashboard -> section Releases.
@@ -35,7 +35,7 @@ parts:
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/v4.2.0.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/v5.0.0.tar.gz
     build-packages:
       - g++
       - cmake
@@ -49,9 +49,40 @@ parts:
       - -lib/cmake
       - -lib/pkgconfig
 
+  # Stage snap for fixing the Glibc locales
+  # https://forum.snapcraft.io/t/the-locales-launch-stage-snap/10296
+  locales-launch:
+    source: https://github.com/Lin-Buo-Ren/locales-launch.git
+    source-tag: v1.0.0
+    plugin: dump
+    stage-packages:
+      # For localedef(1)
+      - libc-bin
+
+      # For locale data used by localedef(1)
+      - locales
+
+      # All pre-generated locale data
+      # DISABLED: Lots of duplicate data will be included in snap when this is staged, unless the target machine has no resource to generate them in runtime otherwise not using it
+      #
+      #   Lack of compiled locales breaks gettext based localisation - snapcraft - snapcraft.io
+      #   https://forum.snapcraft.io/t/lack-of-compiled-locales-breaks-gettext-based-localisation/3758
+      #
+      #- locales-all
+
+    stage:
+      - bin/locales-launch
+      - etc/locale.alias
+      - usr/bin/localedef
+      - usr/share/doc/locales
+      - usr/share/i18n
+      - usr/share/locale
+
+
+
 apps:
   nuspell:
-    command: bin/nuspell
+    command: bin/locales-launch "${SNAP}"/bin/nuspell
     plugs:
       - hunspell-dictionaries
     environment:
