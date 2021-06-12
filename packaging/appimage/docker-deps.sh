@@ -1,8 +1,6 @@
 set -e # -e for automatic error handling
+# if we need newer cmake https://apt.kitware.com/
+# if we need newer GCC https://launchpad.net/~ubuntu-toolchain-r/+archive/ubuntu/test
+# The command add-apt-repository is part of the package software-properties-common
 apt-get update
-apt-get install -y apt-transport-https ca-certificates gnupg software-properties-common wget
-add-apt-repository -y ppa:ubuntu-toolchain-r/test
-wget -O - https://apt.kitware.com/keys/kitware-archive-latest.asc 2>/dev/null | gpg --dearmor - | tee /etc/apt/trusted.gpg.d/kitware.gpg >/dev/null
-apt-add-repository -y 'deb https://apt.kitware.com/ubuntu/ xenial main'
-apt-get update
-apt-get install -y build-essential g++-7 cmake libicu-dev
+apt-get install -y wget g++ make cmake libicu-dev
