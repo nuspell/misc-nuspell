@@ -82,7 +82,8 @@ parts:
 
 apps:
   nuspell:
-    command: bin/locales-launch "${SNAP}"/bin/nuspell
+    command-chain: [ bin/locales-launch ]
+    command: bin/nuspell
     plugs:
       - hunspell-dictionaries
     environment:
