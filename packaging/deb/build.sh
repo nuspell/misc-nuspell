@@ -5,8 +5,8 @@
 # author: Sander van Geloven
 
 # version
-MAJOR=4
-VERSION=$MAJOR.1.0
+MAJOR=5
+VERSION=$MAJOR.0.0
 
 set -e
 cd "$(dirname "$0")"
@@ -60,17 +60,6 @@ cd debian-src
 cp ../$ORIG .
 tar -xf $ORIG
 cp -a ../../debian/ nuspell-$VERSION
-cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# create source build for sending to Launchpad
-mkdir 2010-ppa-src
-cd 2010-ppa-src
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../2010-ppa/* nuspell-$VERSION/debian
 cd nuspell-$VERSION
 debuild -S
 cd ../..

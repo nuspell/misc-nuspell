@@ -1,3 +1,9 @@
+nuspell (5.0.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Dimitrij <CHANGE@THIS.EMAIL>  Sun, 20 Jun 2021 22:22:22 +0100
+
 nuspell (4.1.0-1) unstable; urgency=medium
 
   [ Pander ]

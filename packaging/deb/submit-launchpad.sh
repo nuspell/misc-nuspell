@@ -5,8 +5,8 @@
 # author: Sander van Geloven
 
 # version
-MAJOR=4
-VERSION=$MAJOR.1.0
+MAJOR=5
+VERSION=$MAJOR.0.0
 
 set -e
 cd "$(dirname "$0")"
@@ -21,8 +21,6 @@ do
 	fi
 done
 
-cd build/2010-ppa-src
-dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../../build/2004-ppa-src
 dput -l ppa:nuspell/ppa nuspell_$VERSION-*.changes
 cd ../../build/1804-ppa-src
