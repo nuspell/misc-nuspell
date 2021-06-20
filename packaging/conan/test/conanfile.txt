@@ -1,7 +1,0 @@
-[requires]
-icu/67.1@
-boost/1.71.0@
-nuspell/4.1.0@
-
-[generators]
-cmake
