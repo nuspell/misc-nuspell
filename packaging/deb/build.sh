@@ -1,12 +1,6 @@
-#!/bin/sh
-
-# description: creates deb packages
-# license: https://github.com/nuspell/nuspell/blob/master/COPYING
-# author: Sander van Geloven
-
 # version
 MAJOR=5
-VERSION=$MAJOR.0.0
+VERSION=$MAJOR.0.1
 
 set -e
 cd "$(dirname "$0")"
@@ -54,71 +48,10 @@ fi
 rm -rf ./nuspell-$VERSION
 rm -f $TAR
 
-# create source build for sending to Debian Mentors
-mkdir debian-src
-cd debian-src
-cp ../$ORIG .
 tar -xf $ORIG
-cp -a ../../debian/ nuspell-$VERSION
+# debianize new ORIG
+cp -a ../debian/ nuspell-$VERSION
 cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# create source build for sending to Launchpad
-mkdir 2004-ppa-src
-cd 2004-ppa-src
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/    nuspell-$VERSION
-cp -a ../../2004-ppa/* nuspell-$VERSION/debian
-cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# create source build for sending to Launchpad
-mkdir 1804-ppa-src
-cd 1804-ppa-src
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/      nuspell-$VERSION
-cp -a ../../1804-ppa/* nuspell-$VERSION/debian
-cd nuspell-$VERSION
-debuild -S
-cd ../..
-
-# Bellow follow full binary builds, meant for local testing
-
-# platform
-# CODENAME=`grep ^VERSION_CODENAME= /etc/os-release|awk -F = '{print $2}'`
-# REL=`grep ^ID= /etc/os-release|awk -F = '{print $2}'`-$CODENAME
-# OS=$REL-`uname -m`
-
-mkdir debian-bin
-cd debian-bin
-cp ../$ORIG .
-tar -xf $ORIG
-cp -a ../../debian/ nuspell-$VERSION
-cd nuspell-$VERSION
-debuild
+dpkg-buildpackage --no-sign
+# debuild -S # use debuild for sending to debian, launchpad etc.
 cd ..
-
-# symbols
-# dpkg-deb -x libnuspell$MAJOR\_$VERSION-*.deb tmp_symbols_tmp
-# dpkg-gensymbols -q -v$VERSION -plibnuspell$MAJOR -Ptmp_symbols_tmp -Olibnuspell$MAJOR.symbols
-# rm -rf tmp_symbols_tmp
-
-# report
-echo 'Build for Debian'
-echo
-ls -lh nuspell_$VERSION-*.dsc
-grep Depends: nuspell_$VERSION-*.dsc
-echo
-ls -lh $ORIG
-echo
-ls -lh nuspell_$VERSION-*.debian.tar.xz
-for i in *$VERSION-*.deb; do
-	echo
-	ls -lh $i
-	dpkg --info $i|grep '^ Depends:'
-	dpkg -c $i|grep -v /$
-done

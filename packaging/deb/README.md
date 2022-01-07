@@ -34,13 +34,3 @@ Building has been successfully tested on
     * 10 Buster on amd64 (x86_64) (3.0.0 / 4.0.0)
 * Raspbian
     * 10 Buster on armhf (armv7l) (3.0.0 / 4.0.0)
-
-## PPA
-
-For uploading Ubuntu source packages to the PPA on Launchpad, install `dput` and
-then run:
-
-    ./submit-launchpad.sh
-
-In case the dput lintian rejects a too new or too old Standards-Version, build
-and submit from a (virtual) system for that specific distribution release.

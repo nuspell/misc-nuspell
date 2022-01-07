@@ -8,27 +8,36 @@ script:
 - mkdir -p ./AppDir/usr/share/icons/hicolor/512x512/apps/
 - wget https://raw.githubusercontent.com/nuspell/nuspell.github.io/master/assets/images/logo-white-512x512.png
   -O ./AppDir/usr/share/icons/hicolor/512x512/apps/org.nuspell.Nuspell.png
+- |
+  set -e
+  VERSION=5.0.1
+  wget https://github.com/nuspell/nuspell/archive/v${VERSION}.tar.gz -O - | tar -xz
+  rm -rf build
+  mkdir build
+  cd build
+  cmake ../nuspell-${VERSION} -DBUILD_TESTING=0 \
+        -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/usr
+  make -j `nproc`
+  make install DESTDIR=../AppDir
+  cd ..
 AppDir:
   path: ./AppDir
   app_info:
     id: org.nuspell.Nuspell
     name: Nuspell
     icon: org.nuspell.Nuspell
-    version: 3.1.2
+    version: 5.0.1
     exec: usr/bin/nuspell
     exec_args: $@
   apt:
     arch: amd64
     sources:
-# To switch to focal, just replace bionic to focal in the few lines below.
-    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu bionic main restricted universe multiverse'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal main restricted universe multiverse'
       key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x3b4fe6acc0b21f32'
-    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu bionic-updates main restricted universe multiverse'
-    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu bionic-security main restricted universe multiverse'
-    - sourceline: 'deb [arch=amd64] http://ppa.launchpad.net/nuspell/ppa/ubuntu bionic main'
-      key_url: 'https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xab26d6e9b07627ab'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-updates main restricted universe multiverse'
+    - sourceline: 'deb [arch=amd64] http://archive.ubuntu.com/ubuntu focal-security main restricted universe multiverse'
     include:
-    - nuspell
+    - libicu66
     exclude: []
   files:
     exclude:
