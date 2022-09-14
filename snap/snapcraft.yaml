@@ -36,7 +36,7 @@ parts:
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/v5.1.0.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/v5.1.1.tar.gz
     build-packages:
       - g++
       - cmake
@@ -86,5 +86,6 @@ apps:
     command: usr/bin/nuspell
     plugs:
       - hunspell-dictionaries
+      - home
     environment:
       DICPATH: "$SNAP/usr/share/hunspell"
