@@ -1,6 +1,6 @@
 name: nuspell
 base: core20
-version: '5.1.0'
+version: '5.1.1'
 license: LGPL-3.0
 summary: spellchecker
 description: |
