@@ -1,6 +1,6 @@
 name: nuspell
 base: core20
-version: '5.1.1'
+version: '5.1.2'
 license: LGPL-3.0
 summary: spellchecker
 description: |
@@ -36,7 +36,7 @@ parts:
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/v5.1.1.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/v5.1.2.tar.gz
     build-packages:
       - g++
       - cmake
