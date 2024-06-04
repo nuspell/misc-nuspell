@@ -12,12 +12,15 @@ grade: stable
 confinement: strict
 
 plugs:
+# https://forum.snapcraft.io/t/the-hunspell-dictionaries-content-snaps/7160
   hunspell-dictionaries:
     interface: content
     default-provider: hunspell-dictionaries-1-6-1804 # this snap gets installed
     # by default on "snap install nuspell". A manual connection is needed:
     # snap connect ...
     # Request on the snap forum for automatic connection. Now DONE.
+    # NOTE updating this to hunspell-dictionaries-1-7-2004 will require new
+    # request for automatic connection.
     target: $SNAP/usr/share/hunspell
 # Using this interface bellow triggers manual review process,
 # it can be seen in the snap's dashboard -> section Releases.
