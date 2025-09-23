@@ -1,5 +1,5 @@
 name: nuspell
-base: core20
+base: core22
 version: '5.1.6'
 license: LGPL-3.0
 summary: spellchecker
@@ -46,7 +46,7 @@ parts:
       - cmake
       - libicu-dev
     stage-packages:
-      - libicu66
+      - libicu70
       - hunspell-en-us
     prime:
       - -include
