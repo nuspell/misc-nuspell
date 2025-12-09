@@ -1,6 +1,6 @@
 name: nuspell
-base: core22
-version: '5.1.6'
+base: core24
+version: '5.1.7'
 license: LGPL-3.0
 summary: spellchecker
 description: |
@@ -40,14 +40,17 @@ parts:
       - -DBUILD_DOCS=OFF
       - -DCMAKE_BUILD_TYPE=Release
     source-type: tar
-    source: https://github.com/nuspell/nuspell/archive/refs/tags/v5.1.6.tar.gz
+    source: https://github.com/nuspell/nuspell/archive/refs/tags/v5.1.7.tar.gz
     build-packages:
       - g++
       - cmake
       - libicu-dev
     stage-packages:
-      - libicu70
+      - libicu74
       - hunspell-en-us
+    stage:
+      - -usr/lib/*/libicuio.so.74.2
+      - -usr/lib/*/libicutest.so.74.2
     prime:
       - -include
       - -lib/cmake
