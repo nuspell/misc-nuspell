@@ -49,8 +49,10 @@ parts:
       - libicu74
       - hunspell-en-us
     stage:
-      - -usr/lib/*/libicuio.so.74.2
-      - -usr/lib/*/libicutest.so.74.2
+      - -usr/lib/*/libicui18n.so.*
+      - -usr/lib/*/libicuio.so.*
+      - -usr/lib/*/libicutest.so.*
+      - -usr/lib/*/libicutu.so.*
     prime:
       - -include
       - -lib/cmake
