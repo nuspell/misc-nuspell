@@ -1,5 +1,5 @@
 name: nuspell
-base: core24
+base: core22
 version: '5.1.7'
 license: LGPL-3.0
 summary: spellchecker
@@ -34,6 +34,7 @@ plugs:
 parts:
   nuspell:
     plugin: cmake
+    cmake-generator: Ninja
     cmake-parameters:
       - -DCMAKE_INSTALL_PREFIX=/usr
       - -DBUILD_TESTING=OFF
@@ -46,7 +47,7 @@ parts:
       - cmake
       - libicu-dev
     stage-packages:
-      - libicu74
+      - libicu70
       - hunspell-en-us
     stage:
       - -usr/lib/*/libicui18n.so.*
