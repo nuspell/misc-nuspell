@@ -54,10 +54,9 @@ parts:
       - -usr/lib/*/libicuio.so.*
       - -usr/lib/*/libicutest.so.*
       - -usr/lib/*/libicutu.so.*
-    prime:
-      - -include
-      - -lib/cmake
-      - -lib/pkgconfig
+      - -usr/include
+      - -usr/lib/*/cmake
+      - -usr/lib/*/pkgconfig
 
   # Stage snap for fixing the Glibc locales
   # https://forum.snapcraft.io/t/the-locales-launch-stage-snap/10296
